@@ -1,0 +1,60 @@
+{
+  "last_run_started": "2026-08-18T21:56:08.879951+00:00",
+  "last_run_finished": "2026-08-18T21:58:24.293826+00:00",
+  "duration_seconds": 135.4,
+  "collectors": {
+    "pubmed": {
+      "count": 60,
+      "seconds": 4.3,
+      "error": null
+    },
+    "biorxiv": {
+      "count": 39,
+      "seconds": 58.9,
+      "error": null
+    },
+    "arxiv": {
+      "count": 60,
+      "seconds": 0.7,
+      "error": null
+    },
+    "chemrxiv": {
+      "count": 8,
+      "seconds": 0.9,
+      "error": null
+    },
+    "scielo": {
+      "count": 2,
+      "seconds": 2.8,
+      "error": null
+    },
+    "nature": {
+      "count": 0,
+      "seconds": 16.4,
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\AryelBezerra\\Documents\\Alchemia LTDA\\alchemia-ai\\alchemia-news\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"C:\\Users\\AryelBezerra\\Documents\\Alchemia LTDA\\alchemia-ai\\alchemia-news\\pipeline\\collectors\\feed_collector.py\", line 246, in collect_nature_feeds\n    return _collect_section(\"nature_feeds\", \"journal\")\n  File \"C:\\Users\\AryelBezerra\\Documents\\Alchemia LTDA\\alchemia-ai\\alchemia-news\\pipeline\\collectors\\feed_collector.py\", line 241, in _collect_section\n    raise RuntimeError(f\"{len(falhas)}/{len(feeds)} feed(s) de '{secao}' falharam: \" + \" | \".join(falhas))\nRuntimeError: 3/5 feed(s) de 'nature_feeds' falharam: Nature — Drug Discovery subject: resposta é uma página anti-bot (Client Challenge), não um feed | Nature Biotechnology: resposta é uma página anti-bot (Client Challenge), não um feed | Nature Machine Intelligence: resposta é uma página anti-bot (Client Challenge), não um feed\n"
+    },
+    "newsletters": {
+      "count": 28,
+      "seconds": 21.4,
+      "error": null
+    },
+    "googlenews": {
+      "count": 878,
+      "seconds": 13.8,
+      "error": null
+    },
+    "companies": {
+      "count": 1043,
+      "seconds": 15.9,
+      "error": null
+    }
+  },
+  "totals": {
+    "articles": 243,
+    "news": 1882,
+    "companies_activity": 1045,
+    "new_articles_this_run": 29,
+    "new_news_this_run": 27,
+    "new_companies_activity_this_run": 24
+  }
+}

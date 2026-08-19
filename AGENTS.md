@@ -1,0 +1,670 @@
+# AGENTS.md — alchemia-news
+
+Documento canônico deste setor, criado em **2026-08-17**. Padrão aberto `AGENTS.md` (lido
+nativamente por Claude Code, Codex, Cursor e 20+ ferramentas — ver
+`alchemia-ai/alchemia-agents/docs/specs/2026-08-12-harness-world-standard.md`). `CLAUDE.md` deste
+diretório importa este arquivo via `@AGENTS.md` e nunca duplica conteúdo.
+
+**Nota de origem:** este arquivo não existia até hoje, apesar de o setor já ter pipeline rodando e
+dashboard construído — o próprio `.gitignore` deste repositório já referenciava "ver AGENTS.md
+deste setor" numa linha de comentário, apontando para um arquivo inexistente. Corrigido agora.
+
+---
+
+## O que é
+
+`alchemia-news` é a plataforma de **inteligência de notícias e literatura** do nicho da Alchemia
+Solutions — CADD (Computer-Aided Drug Design), AI Drug Discovery, engenharia de proteínas/
+anticorpos/vacinas. Coleta metadado público de fontes acadêmicas e de imprensa 3x/dia (alvo), e
+serve tudo num dashboard Next.js.
+
+**Não é um setor de negócio tradicional** — é infraestrutura de monitoramento, mesma classe de
+`alchemia-brain`. Não toca dado molecular; não tem relação com o schema de `alchemia-database`
+nem com o pipeline `alchemia-athanor`.
+
+**Spec canônica (Portão de Revisão aprovado pelo fundador em 2026-08-17):**
+`docs/specs/2026-08-17-alchemia-news-intelligence-platform.md`. Onde este arquivo divergir da
+spec, **este arquivo descreve o que está em disco hoje** e a spec descreve o que foi aprovado —
+as divergências reais estão listadas em "Estado real vs. spec" abaixo, não escondidas.
+
+## Estrutura real em disco (verificada 2026-08-17)
+
+```
+alchemia-news/
+├── AGENTS.md · CLAUDE.md          ← este arquivo + import Claude-específico
+├── .gitignore                     ← ignora .venv, node_modules, .next, .env, logs
+├── docs/specs/
+│   └── 2026-08-17-alchemia-news-intelligence-platform.md   (aprovada)
+├── pipeline/                      ← coleta determinística, sem LLM
+│   ├── run_all.py                 (142 linhas — orquestrador)
+│   ├── requirements.txt           (requests, PyYAML, feedparser)
+│   ├── collectors/                (8 coletores + common.py, 1.094 linhas)
+│   ├── config/                    (4 YAMLs — fontes, empresas, recursos, keywords)
+│   └── data/                      ← saída JSON consumida pelo dashboard
+└── dashboard/                     ← Next.js 16 App Router, TypeScript, Tailwind
+    ├── app/                       (6 rotas)
+    ├── components/                (5 componentes)
+    └── lib/data.ts · lib/types.ts
+```
+
+Total de código Python: **1.236 linhas** em 10 arquivos.
+
+## Pipeline — os oito coletores
+
+Nenhum LLM participa da coleta. Filtro de relevância é **keyword + fonte, determinístico** — toda
+entrada carrega o termo/fonte que a trouxe (`keywords_matched`), nunca uma classificação opaca.
+Isso é requisito de spec, não detalhe de implementação: é o que impede o setor de fabricar
+relevância.
+
+| Coletor | Método real | Por que assim |
+|---|---|---|
+| `pubmed_collector` | NCBI E-utils (`esearch`/`efetch`) direto | 200 OK verificado |
+| `biorxiv_collector` | API `api.biorxiv.org/details/biorxiv` | Não filtra por keyword no servidor — pagina por data, filtra no cliente |
+| `arxiv_collector` | `export.arxiv.org/api/query` (q-bio) | 200 OK verificado |
+| `chemrxiv_collector` | **Proxy via Crossref**, prefixo DOI `10.26434` | ChemRxiv direto responde **403** |
+| `scielo_collector` | **Proxy via Crossref**, prefixo DOI `10.1590` | `search.scielo.org` direto responde **403** |
+| `feed_collector` | RSS (Nature Reviews Drug Discovery, Nature/Drug Discovery) | Feeds temáticos — sem filtro de keyword |
+| `googlenews_collector` | `news.google.com/rss/search?q=...` | Endpoint **não-oficial**, sem SLA público — tratado como melhor esforço, falha silenciosa não derruba o pipeline |
+| `companies_collector` | RSS/página das 22 empresas de referência | Fallback manual quando não há feed |
+
+**Configuração viva** (editável sem tocar em Python): 22 empresas monitoradas (Schrödinger,
+Isomorphic Labs, Insilico Medicine, Adaptyv Bio, Rowan Scientific, Anthropic/Claude Science…),
+9 bancos/ferramentas de referência (COCONUT, BrNPDB, ChEMBL 37, ZINC 20, Enamine, Molport…),
+41 termos-tópico, além de queries dedicadas de PubMed/arXiv/Google News (pt e en).
+
+### Execução real registrada (não estimada)
+
+`pipeline/data/runs/20260817T171445Z-pipeline_run.json` e `pipeline/data/meta.json`:
+
+| | Primeira execução (17:14Z) | Segunda execução (17:15Z) |
+|---|---|---|
+| Duração | 38,8 s | 20,5 s |
+| Artigos | 128 (128 novos) | 128 (**0 novos**) |
+| Notícias | 1.709 (1.709 novas) | 1.709 (**0 novas**) |
+| Atividade de empresas | 938 (938 novas) | 938 (**0 novas**) |
+
+**A segunda execução prova a deduplicação** (chave por DOI/URL normalizado) — critério de sucesso
+da spec, verificado de fato, não presumido.
+
+**Ressalva real:** `biorxiv` retornou **0 itens** na execução completa e foi `skipped` na segunda.
+Não está confirmado se isso é comportamento correto (janela incremental de 3 dias, nada novo no
+nicho) ou falha silenciosa. **Não investigado nesta rodada** — ver "Pendências".
+
+### Como rodar
+
+```bash
+cd alchemia-ai/alchemia-news && python -m pipeline.run_all
+```
+
+Backfill mais profundo de bioRxiv (job separado, sob demanda, caro):
+
+```bash
+python -m pipeline.run_all --biorxiv-days 180
+```
+
+Pular coletores para depuração: `--skip companies,scielo`.
+
+**Ambiente:** o venv deste setor é `pipeline/.venv`, criado próprio. O Python pré-instalado do
+ambiente de automação (`hermes-agent/venv`) **não tem `pip` funcional** — verificado, não
+presumido. Nunca presuma um ambiente compartilhado.
+
+## Dashboard
+
+Next.js **16.2.11** + React **19.2.8** + Tailwind **3.4.19** + TypeScript 5.9.3 (mesmas majors já
+validadas no `website/` de `alchemia-database` — decisão reaproveitada, não reaberta). Node ≥ 20.9.
+
+Seis rotas: `/` (Home), `/noticias`, `/artigos`, `/empresas` (+ `/empresas/[slug]`),
+`/bancos-ferramentas`, `/sobre`.
+
+`lib/data.ts` lê os JSONs **em tempo de requisição** via server components
+(`fs.readFileSync` sobre `../pipeline/data`) — qualquer execução nova do pipeline aparece no
+dashboard **sem rebuild**. É design deliberado; não troque por import estático.
+
+## Licenciamento e LGPD — o que este setor pode e não pode fazer
+
+- **Armazena só metadado público**: título, autores, data, fonte, URL, e o resumo curto quando a
+  própria API o entrega como metadado público (ex. abstract do PubMed).
+- **Nunca redistribui texto completo de artigo.** Nunca faz scraping de PDF pago ou paywall. O
+  dashboard **sempre linka para a fonte original**, nunca reproduz o artigo de terceiro.
+- **Nenhum dado pessoal é coletado** — só metadado institucional de publicação/notícia
+  corporativa. Sem formulário, sem e-mail de usuário. LGPD não é acionada na configuração atual.
+- **Redes sociais estão fora de escopo** por decisão explícita do fundador (2026-08-17). Se uma
+  fase futura adicionar LinkedIn/X/Instagram, isso exige **nova análise LGPD antes de
+  implementar** — não presuma resolvido.
+- **Anti-overclaiming:** um agregador nunca é exaustivo. A página `/sobre` e o rodapé devem sempre
+  declarar fontes cobertas, data da última coleta e limitações conhecidas. Nunca alegar "todas as
+  notícias" — mesma disciplina já imposta a `alchemia-growth` e `alchemia-database`.
+
+## Estado real vs. spec — divergências verificadas em 2026-08-17
+
+A spec está marcada como aprovada e vários dos seus Critérios de Sucesso **ainda não foram
+cumpridos**. Registrado aqui para que nenhuma sessão futura presuma que o setor está fechado:
+
+1. 🔴 **Sub-agente e skill nunca foram criados.** A spec exige o sub-agente `alchemia-news` +
+   skill `news-intelligence-pipeline`, com `check_runtime_integrity.py` passando em **13 agentes /
+   20 skills**. Real em disco: **12 agentes / 19 skills**, e uma busca por `alchemia-news` em todo
+   `alchemia-ai/alchemia-agents/` retorna **zero ocorrências**. O harness não conhece este setor.
+2. 🔴 **Nenhum cron job existe.** A spec exige cron 3x/dia criado *e* disparado com sucesso real.
+   O `cron/jobs.json` do Hermes contém **apenas os 2 jobs do pipeline F1** (08h e 18h); nenhum job
+   de `alchemia-news` existe em nenhum dos quatro perfis. As duas execuções registradas foram
+   manuais. **A cadência 3x/dia não está acontecendo.**
+3. 🟡 **Caminho do runner divergente.** A spec cita `pipeline/collectors/run_all.py`; o arquivo
+   real é `pipeline/run_all.py`. Um agente seguindo a spec ao pé da letra não encontra o script.
+4. 🟡 **`dashboard/package.json` tem a chave `"overrides"` duplicada.** JSON não permite chaves
+   repetidas — a última vence, então o override de `js-yaml` para `4.3.1` é **silenciosamente
+   descartado** e só o de `postcss` tem efeito. `js-yaml` fica na `4.1.0` da dependência direta.
+   Corrigir fundindo as duas chaves num único objeto.
+5. 🟡 **Risco de deploy na Vercel.** `vercel.json` builda a partir de `dashboard/`, mas
+   `lib/data.ts` lê `process.cwd()/../pipeline/data` — **fora da raiz do deploy**. Como
+   `readJsonSafe` tem fallback silencioso para `[]`, o site publicado renderizaria **vazio, sem
+   erro**. Precisa de decisão de arquitetura antes de publicar (copiar os JSONs no build, mover o
+   `pipeline/data` para dentro de `dashboard/public`, ou servir por API).
+6. 🟡 **`biorxiv` com 0 itens**, ver acima.
+
+## Pendências (nenhuma resolvida nesta rodada)
+
+- Criar sub-agente + skill e atualizar `check_runtime_integrity.py` (itens 1 acima).
+- Criar o cron 3x/dia e **disparar uma vez de verdade**, confirmando output real (item 2).
+- Corrigir `package.json` (item 4) e decidir a arquitetura de deploy (item 5).
+- Confirmar se `biorxiv` 0-itens é correto ou falha silenciosa (item 6).
+- Fase 2 (backlog): resumo/tradução PT assistida por IA **sob demanda**, nunca na coleta
+  automática; score de relevância ponderado no lugar do keyword booleano.
+- Fase 3 (backlog, fora de escopo por decisão do fundador): redes sociais.
+
+## Addendum — 2026-08-17 (mais tarde): crons no ar, bug real do `run_all.py` corrigido — a seção "Estado real vs. spec" acima está parcialmente desatualizada
+
+A lista "Estado real vs. spec" acima foi escrita de manhã. Correções datadas, item por item:
+
+| Item de cima | Estado agora |
+|---|---|
+| 1. Sub-agente + skill no harness (12/19 vs. 13/20) | ✅ **resolvido** — ver abaixo |
+| 2. "Nenhum cron job existe / a cadência 3x/dia não está acontecendo" | ✅ **resolvido** — ver abaixo |
+| 3. Caminho do runner divergente | ✅ **resolvido, e era pior do que parecia** — ver abaixo |
+| 4. `package.json` com `"overrides"` duplicado | ⏳ segue aberto |
+| 5. Risco de deploy na Vercel (`../pipeline/data` fora da raiz) | ⏳ segue aberto |
+| 6. `biorxiv` com 0 itens | ⏳ segue sem diagnóstico |
+
+**Crons existem e disparam.** Três jobs `--no-agent --script` no perfil Hermes **`baker-bot`**,
+às **07h/13h/19h** (`Brazil/East`), rodando `pipeline/digest.py` (novo). O gateway do `baker-bot`
+está no ar, então a cadência é real — não só registrada. Arquitetura, justificativa do modo
+`--no-agent` e IDs dos jobs: `alchemia-ai/alchemia-bots/AGENTS.md` e a spec daquele setor. A
+entrega ainda é `local`; vira `discord:<channel_id>` quando o Axel subir.
+
+**O item 3 não era só divergência de caminho — era um bug real, e foi corrigido.**
+`pipeline/run_all.py` inseria `Path(__file__).parent.parent` no `sys.path`, então
+`from collectors import …` só funcionava ao invocar o arquivo **por caminho**
+(`python pipeline/run_all.py`). **O modo documentado no docstring do próprio arquivo,
+`python -m pipeline.run_all`, quebrava com `ModuleNotFoundError`** — e é justamente o modo que o
+cron usa. Corrigido para `.parent`, com comentário no código explicando; verificado de ponta a
+ponta (39,0 s, +14 notícias, +9 itens de empresa).
+
+**O harness passou a conhecer este setor.** `.claude/agents/alchemia-news.md` e
+`.claude/skills/news-intelligence-pipeline/SKILL.md` foram criados (2026-08-17 17:10), levando as
+contagens a **13 sub-agentes / 20 skills** — exatamente o que a spec exigia. Verificado por
+listagem direta e por `harness/check_runtime_integrity.py`, que já foi atualizado para os números
+novos e **passa** neles. Isso fecha o último Critério de Sucesso estrutural desta spec; o único
+item que o checker ainda acusa é o bearer token do plugin Obsidian em texto puro, que é
+escalonamento ao fundador (rotação), não deste setor.
+
+**`pipeline/digest.py` é novo neste setor.** Resume o delta de cada execução em formato compacto
+(contagem por coletor + destaques com fonte, link e o termo que trouxe cada item) e **imprime nada
+quando não há novidade** — o Hermes trata stdout vazio como tick silencioso, então um canal não
+recebe três mensagens diárias dizendo "nada mudou". Ele nunca despeja a base inteira.
+
+## Rodando o dashboard localmente (sem deploy)
+
+**Decisão do fundador (2026-08-17): por enquanto o dashboard roda só local — nada de deploy na
+Vercel ainda.** O `vercel.json` e o hook `prebuild` (`scripts/copy-pipeline-data.js`) continuam no
+repositório e funcionando, prontos para quando essa decisão mudar; só não há publicação.
+
+Dois modos, ambos a partir de `alchemia-ai/alchemia-news/dashboard/`:
+
+```bash
+npm run dev      # desenvolvimento, hot reload — use ao mexer no front
+npm run build && npm run start   # produção local, mais rápido para só consultar
+```
+
+Abre em `http://localhost:3000`. Há também `.claude/launch.json` na raiz da empresa com a
+configuração `alchemia-news-dashboard`, para subir o servidor pelo próprio harness.
+
+**Não é preciso rebuildar quando o pipeline roda.** `lib/data.ts` lê os JSONs **em tempo de
+requisição** (server components), então uma coleta nova aparece ao recarregar a página — inclusive
+no modo `start`. É design deliberado.
+
+**Verificado ao vivo em 2026-08-17** (build de produção, `next start`): as **7 rotas** respondem
+200 — `/`, `/noticias`, `/artigos`, `/empresas`, `/empresas/[slug]`, `/bancos-ferramentas`,
+`/sobre` — e a home mostrou **163 artigos · 1.738 notícias · 954 menções de empresas**, com a
+duração real da última coleta. Os 163 artigos (contra 128 pela manhã) são a confirmação prática de
+que a correção de paginação do `biorxiv_collector` funcionou.
+
+### Auto-refresh (novo, 2026-08-17, a pedido do fundador)
+
+`components/AutoRefresh.tsx` — client component montado no `layout.tsx`, portanto **vale em todas
+as rotas**. Chama `router.refresh()` a cada **60 s**.
+
+Por que `router.refresh()` e não `<meta http-equiv="refresh">`: o primeiro **revalida os server
+components** (que leem `pipeline/data/*.json` a cada requisição) e troca a árvore no lugar,
+**preservando scroll e estado de cliente**; o segundo recarrega a página inteira e joga o usuário
+de volta ao topo. Todas as rotas são `ƒ` (server-rendered on demand) no build, que é a condição
+para isso funcionar.
+
+Duas decisões que evitam trabalho inútil: **pausa quando a aba fica oculta**
+(`visibilitychange`) e **revalida imediatamente ao voltar** para a aba, em vez de esperar o
+próximo tick.
+
+**Honestidade sobre o que isso é:** não é streaming nem websocket. O dado só muda quando o
+pipeline roda (3x/dia). O intervalo curto existe para a mudança aparecer sozinha logo após a
+coleta — mesma disciplina anti-overclaiming de `.claude/skills/realtime-dashboard/SKILL.md`, cuja
+convenção ("nunca prometa polling que não existe") o `LiveClock.tsx` já citava. Como o polling
+passou a existir, o comentário e o `title` daquele componente foram atualizados na mesma rodada,
+para o que se anuncia continuar sendo exatamente o que acontece.
+
+Para mudar o intervalo: `<AutoRefresh intervalMs={30_000} />` no `layout.tsx`.
+
+## Regras invioláveis (herdadas da raiz da empresa)
+
+- **Nunca fabricar números.** Toda contagem citada em qualquer documento vem de leitura real do
+  JSON/config, nunca de estimativa ou memória.
+- **Nunca sobrescrever silenciosamente** documento com valor de auditoria (specs, este arquivo,
+  changelog do vault) — correção entra como **addendum datado**, corpo original preservado.
+- **Nenhum comando git de escrita em remoto** (`commit`/`push`/`tag`/`init`) por nenhum agente —
+  escalar ao fundador. `status`/`diff`/`log` são permitidos. Este diretório **não tem `.git`
+  hoje**, consistente com a decisão de fase de desenvolvimento do fundador (backup = Google Drive).
+- **Nenhuma operação destrutiva** sem confirmação explícita.
+- Toda entrega/decisão deste setor recebe registro datado e linkado em `alchemia-brain`
+  (`02-Harness/alchemia-news.md` + `99-Changelog/AAAA-MM-DD.md`).
+
+## Addendum — 2026-08-17 (mais tarde, perfil Hermes `default`): retomada de operação — 4 itens da seção "Estado real vs. spec" resolvidos
+
+A seção "Estado real vs. spec" acima documentava 6 divergências. Nesta rodada, 4 foram resolvidas
+e verificadas por execução real (não presumidas):
+
+1. ✅ **Sub-agente + skill criados.** `alchemia-ai/alchemia-agents/.claude/agents/alchemia-news.md`
+   + `.claude/skills/news-intelligence-pipeline/SKILL.md`, com manifest, mirror `.claude/` (raiz) e
+   mirror `.codex/` (TOML + `config.toml`). `harness/check_runtime_integrity.py` atualizado para
+   **13 agentes/20 skills** e passa.
+2. 🟡 **Cron parcialmente resolvido, mas com achado novo.** Um cron 3x/dia foi criado e disparado
+   com sucesso real no perfil Hermes `default` (`05511d259e81`, `0 6,14,22 * * *`,
+   `last_status: ok`). **Descoberto depois, ao ler `alchemia-brain/02-Harness/alchemia-news.md`:**
+   o perfil `baker-bot` já tinha três jobs próprios para a mesma coleta (`0 7,13,19 * * *`,
+   `--no-agent`), criados em sessão anterior no mesmo dia — perfis Hermes não compartilham
+   `cronjob(action='list')` entre si, então esta sessão não tinha visibilidade disso até revisar o
+   vault. **Resultado real: o pipeline roda 6x/dia, não 3x, em dois mecanismos diferentes.**
+   Decisão de qual manter (ou consolidar) pendente do fundador — nenhum dos dois jobs foi
+   removido/pausado unilateralmente.
+3. ✅ **Caminho do runner já era `pipeline/run_all.py`** (item 3 antigo já estava correto, era só
+   a spec que citava um caminho diferente — sem ação necessária).
+4. ✅ **`package.json` duplicado corrigido.** `js-yaml` subiu para `4.3.1` como dependência direta;
+   `overrides` ficou só com `postcss`. Verificado com `npm install` real sem erro `EOVERRIDE`.
+5. ✅ **Risco de deploy Vercel mitigado.** Hook `prebuild`
+   (`dashboard/scripts/copy-pipeline-data.js`) copia os JSONs/YAMLs para
+   `dashboard/.pipeline-data/`; `lib/data.ts` prioriza o caminho ao vivo (`../pipeline/data`) e cai
+   para o snapshot só quando ele não existir. Verificado com `npm run build && npm run start`
+   reais.
+6. ✅ **`biorxiv` 0-itens era falha silenciosa real, não comportamento correto.** A API pagina em
+   blocos de **~30 itens**, não 100 como `biorxiv_collector.py` assumia — o cursor avançava rápido
+   demais e o corte de "última página" (`len(collection) < 100`) interrompia o loop já na primeira
+   página. Corrigido (`cursor += len(collection)`, corte por coleção vazia). Verificado: janela de
+   30 dias foi de 0 para 36 itens relevantes de 498 preprints varridos; execução de produção
+   seguinte trouxe **35 artigos novos** (contra 0 nas duas execuções anteriores a esta correção).
+
+Também corrigido nesta rodada, fora da lista original: `dashboard/app/empresas/[slug]/page.tsx`
+estava incompatível com Next.js 15+ (`params` como `Promise`, não objeto síncrono) — toda página de
+empresa retornava 404 silencioso mesmo com a empresa existindo em `companies.yaml`. Verificado com
+`curl` real em todas as 7 rotas do dashboard após a correção (200 em todas).
+
+Ver `alchemia-brain/02-Harness/alchemia-news.md` e `alchemia-brain/99-Changelog/2026-08-17.md`
+(continuação datada da mesma sessão) para o registro completo, incluindo o achado do cron
+duplicado entre perfis.
+
+## Addendum — 2026-08-18: o setor passa a alimentar `alchemia-science` — radar diário de pesquisa e colheita de PDF open access
+
+Auditoria completa de `alchemia-ai` (news + bots) a pedido do fundador. Este addendum cobre o que
+mudou **neste setor**; o do `alchemia-bots` cobre as rotinas, e
+`docs/specs/2026-08-18-research-library-integration.md` tem a decisão completa.
+
+### O que passou a existir
+
+`pipeline/research_export.py` (novo, ~560 linhas) exporta **o dia inteiro** do `alchemia-news`
+para `alchemia-science/research/AAAA-MM-DD-alchemia-news-radar.md` — todos os artigos, notícias e
+atividade de empresas daquela data, mais a saúde real dos 8 coletores lida de `meta.json`. E, para
+cada artigo, tenta resgatar o **texto completo**: se houver rota open access **confirmada naquela
+execução** (arXiv · bioRxiv/medRxiv · Unpaywall `is_oa` · Europe PMC `isOpenAccess`), o PDF entra
+em `alchemia-science/alchemia-library/` já registrado em `manifest.csv` e `alchemia-library.json`;
+se não houver, o artigo entra **só como markdown, com o motivo literal**. Artigo de paywall nunca
+é baixado — é a classe de decisão que a cultura da empresa manda escalar, não automatizar.
+
+Verificado por execução real, não presumido: radares de **2026-08-17** (174 KB) e **2026-08-18**
+gerados; as quatro rotas exercidas contra a rede (arXiv 200 `%PDF`; bioRxiv 6,3 MB; Unpaywall
+`cc-by`; Europe PMC consultada, `isOpenAccess=N` no lote do dia); reexecução idempotente
+(`ja_na_biblioteca=2, baixado=0`); `run_alchemia_news.cmd` rodando a cadeia completa e saindo 0.
+
+**ChemRxiv, achado reverificado:** responde **403** também na `public-api`, não só no acesso
+direto — e o prefixo `10.26434` não é indexado pelo Unpaywall. O texto completo do ChemRxiv só sai
+manualmente pelo navegador. O radar reporta esse motivo específico em vez de um "não encontrado"
+genérico.
+
+### Dois bugs reais corrigidos no pipeline
+
+**1. `common.normalize_url()` deformava URL e não removia o `utm_`.** A implementação antiga
+fatiava a string à mão: com qualquer parâmetro **antes** do tracking (`?id=7&utm_source=rss`), ela
+remontava como `?id=7?utm_source=rss` — dois `?`, e o `utm_source` **sobrevivia**. Como essa
+função alimenta `dedupe_key()`, a mesma matéria chegando com `utm_source` diferente geraria duas
+chaves e entraria **duas vezes** na base. Reescrita com `urllib.parse` (tracking removido de
+verdade, parâmetros reordenados, fragmento descartado).
+
+**Honestidade sobre o impacto:** medido antes de corrigir — **zero** das 3.044 entradas da base
+muda de chave, porque nenhuma URL do corpus atual tem parâmetro antes de um `utm_` (links do
+Google News são `?oc=5`, DOIs não têm query). O bug era real mas **ainda não tinha disparado**.
+Nenhuma migração foi necessária e nenhuma duplicata precisou ser colapsada. O `oc=5` do Google
+News é deliberadamente **mantido**: é constante naquela fonte, não distingue nada, e removê-lo só
+quebraria a URL.
+
+**2. Artigos de PubMed chegavam sem `keywords_matched`.** Eram os únicos — a `pubmed_query` já é
+do nicho, então o coletor nunca aplicava `match_keywords`. Mas a spec deste setor exige que *toda
+entrada carregue o termo que a trouxe*, e sem isso um artigo de PubMed no radar não podia ser
+justificado a posteriori. Corrigido: os tópicos são casados contra título+resumo **sem descartar
+nada** (nenhum item é filtrado por não casar) — é rastreabilidade, não filtro. Medido depois:
+**56 de 60** itens passaram a carregar termo; os 4 restantes entraram pela query do PubMed sem
+casar tópico do `keywords.yaml`, o que é justamente o sinal útil de termo candidato a ser
+adicionado.
+
+### Correção a duas afirmações que este próprio arquivo carregava
+
+- **O addendum de 2026-08-17 ("retomada de operação", item 2) registra que o pipeline roda "6x/dia,
+  não 3x, em dois mecanismos diferentes", com a decisão de consolidar pendente do fundador.
+  Isso não é mais verdade.** Verificado nesta data lendo os `cron/jobs.json` de cada perfil: os 4
+  jobs do Hermes estão **`enabled: false`**, e o job duplicado do perfil `default`
+  (`05511d259e81`) **não existe mais** — o perfil foi reconstruído após o incidente do
+  `hermes update --force`. O `default` hoje só tem os 3 jobs pessoais de F1. A cadência real é
+  **3x/dia, num mecanismo só** (Windows Task Scheduler, `LastTaskResult=0`). A pendência está
+  resolvida por consequência, não por decisão — mas está resolvida.
+- Os itens 4 e 5 de "Estado real vs. spec" (`package.json` com `overrides` duplicado; `lib/data.ts`
+  lendo fora da raiz de deploy) seguem corretamente marcados como resolvidos no addendum de
+  2026-08-17 — **reconfirmados por leitura direta nesta data** (uma única chave `overrides`; o
+  hook `prebuild` e o fallback para `.pipeline-data/` estão no lugar).
+
+### Como rodar
+
+```bash
+cd alchemia-ai/alchemia-news
+python -m pipeline.research_export                    # o dia de hoje, com colheita
+python -m pipeline.research_export --date 2026-08-17  # refaz/backfill um dia anterior
+python -m pipeline.research_export --no-pdf           # só o markdown
+python -m pipeline.research_export --dry-run          # não escreve nada
+```
+
+Tetos, todos ajustáveis por flag: `--max-pdf 6` por execução · `--max-mb 60` por arquivo ·
+`--max-total-mb 150` por execução · **`--min-free-gb 20`**, piso de espaço livre abaixo do qual a
+colheita é pulada por inteiro e o radar registra o motivo (memória da crise de disco de
+2026-08-09). O que passa do teto é **reportado como adiado**, nunca truncado em silêncio.
+
+`pipeline/data/discord/` é novo: guarda a cópia verbatim do que o Axel publicou, para o radar
+poder incluir a seção "Publicado no Discord" sem perdê-la quando o markdown é regenerado (o radar
+é derivado, reescrito por inteiro a cada execução). Ver o `README.md` daquele diretório.
+
+### Pendência real desta rodada
+
+**~75 artigos de 2026-08-17 com rota aberta ficaram adiados pelo teto de `--max-pdf`.** Nada foi
+descartado — eles reaparecem enquanto não estiverem na biblioteca, e o backfill acontece sozinho
+ao longo dos próximos ciclos. Forçar de uma vez (`--date 2026-08-17 --max-pdf 20`) é decisão do
+fundador: o custo é disco.
+
+Ver `alchemia-brain/02-Harness/alchemia-news-state.md` e
+`alchemia-brain/99-Changelog/2026-08-18.md`.
+
+### Continuação 2026-08-18: dashboard atualizado, sem vulnerabilidade, rodando em `localhost:3000`
+
+A pedido do fundador ("atualize todo o app e deixe ele ativo no meu localhost completamente
+atualizado"), na mesma sessão da integração acima.
+
+**2 vulnerabilidades ALTAS fechadas.** `npm audit` acusava `sharp <0.35.0` (CVE-2026-33327,
+-33328, -35590, -35591, herdadas do libvips), puxado transitivamente pelo Next **16.2.11**.
+Corrigido subindo para **Next 16.3.1**. Estado real após a atualização: **`found 0
+vulnerabilities`**.
+
+**O que subiu, e o que deliberadamente não subiu.** Atualizados dentro da mesma major, sem risco
+de quebra: `next` 16.2.11→**16.3.1**, `postcss` 8.5.23→**8.5.26**, `autoprefixer`
+10.4.21→**10.5.4**, `@types/react` 19.2.17→**19.2.18**, `@types/react-dom` 19.2.3→**19.2.4**.
+**Não** atualizados, por serem major com quebra real e exigirem migração própria — não é
+manutenção, é projeto: `tailwindcss` 3.4.19→4.3.3 (o v4 muda o modelo de configuração inteiro),
+`typescript` 5.9.3→7.0.2, `@types/node` 24→26 (o Node desta máquina é **v22**; os tipos da 26
+descreveriam uma runtime que não existe aqui), `js-yaml` 4.3.1→5.3.0 (pin deliberado deste setor
+desde o incidente de `overrides` de 2026-08-17).
+
+**Armadilha real encontrada no caminho, vale registrar:** subir o `postcss` falhou duas vezes com
+`EOVERRIDE` — o bloco `overrides` do `package.json` pinava `8.5.23` enquanto a `devDependency`
+tentava ir para `8.5.26`, e o npm compara os dois. É o **mesmo** `EOVERRIDE` que este setor já
+enfrentou em 2026-08-17 com o `js-yaml`. Regra prática para a próxima vez: **ao mexer num pacote
+que aparece em `overrides`, mude os dois lugares na mesma edição.** O npm também reintroduziu
+`^` nas versões que instalou; revertido para pin exato, que é a convenção deste `package.json`.
+
+**Bug real de exibição, corrigido:** `common.strip_html()` removia tags mas **não decodificava
+entidades HTML** — todo resumo vindo do Google News aparecia na home com `&nbsp;&nbsp;` literal
+antes do nome da fonte. Corrigido com `html.unescape()`, aplicado **antes** do filtro de tags (a
+ordem importa: decodificar depois transformaria um `&lt;script&gt;` numa tag de verdade já fora do
+alcance do filtro — verificado com esse caso exato no teste). Os itens já gravados foram
+normalizados de uma vez: **2.826 campos** de `title`/`summary` nos três JSONs; entidades restantes
+nos arquivos servidos: **0**.
+
+**Verificação real, não presumida.** `npm run build` limpo no Next 16.3.1; as **7 rotas
+respondendo 200** (`/`, `/noticias`, `/artigos`, `/empresas`, `/empresas/[slug]`,
+`/bancos-ferramentas`, `/sobre`); **zero erro no console**; todas as rotas seguem `ƒ`
+(server-rendered on demand), que é a condição para o dashboard refletir uma coleta nova **sem
+rebuild**. Home mostrando o dado ao vivo: **212 artigos · 1.820 notícias · 1.017 menções de
+empresas**, última coleta 87,9 s.
+
+**Como o fundador sobe de novo depois de fechar:** `alchemia-news-dashboard` no
+`.claude/launch.json` da raiz (porta 3000, `npm run start`), ou
+`alchemia-news-dashboard-dev` (porta 3001, hot reload). Deploy na Vercel segue **adiado por
+decisão do fundador** — nada mudou nisso.
+
+### Continuação 2026-08-18: primeira execução agendada real do Baker expôs um defeito de concorrência — corrigido
+
+O fundador rodou "Run now" na tarefa `alchemia-news-baker-curadoria`. **A rotina funcionou como
+projetada** — leu `meta.json`, viu coleta de 11 min antes e não redisparou, checou 8/8 coletores
+(notando corretamente que `nature` com 0 itens sem erro **não** é o padrão de regressão do
+`biorxiv`), rodou o `research_export`, colheu +1 PDF do bioRxiv, `check_sync` OK, atualizou a nota
+de estado do vault com números reais, e **não mexeu em nenhuma config** (conservador, como manda a
+regra de 1–2 adições/dia só com padrão observado).
+
+**Mas uma checagem manual feita em paralelo, às 11:08:03, acusou a biblioteca fora de sincronia:
+56 PDFs em disco, 55 no manifest.** Reconferindo 59 segundos depois: **56/56/56, OK**. Não era
+corrupção — era a biblioteca sendo lida **no meio de uma escrita**. O PDF foi gravado às 11:07:39 e
+o manifest só às 11:08:11.
+
+**A causa é um defeito real na primeira versão do `research_export`,** não um acaso:
+
+1. **Escrita em lote.** O PDF ia para o disco dentro do laço, mas `gravar_biblioteca()` só era
+   chamado **depois de todos os downloads**. Com o teto de 6 PDFs, isso é uma janela de **minutos**
+   em que disco e manifest discordam — e um processo morto no meio deixaria órfão **permanente**.
+2. **Nenhuma exclusão mútua.** A colheita faz read-modify-write de `manifest.csv` e
+   `alchemia-library.json`. Duas execuções sobrepostas — cenário **normal**, não exótico: Task
+   Scheduler às 12:40 fazendo backfill lento + Baker às 12:50 — leriam a mesma versão e a segunda
+   reescreveria **sem** as entradas da primeira, deixando PDF órfão para sempre.
+3. **Consequência operacional pior que as duas:** a rotina do Baker é instruída a **reportar ao
+   fundador** um `check_sync` que falha. Sem distinguir "biblioteca quebrada" de "colheita
+   rodando", ele geraria **alarme falso 3x/dia** — e alarme falso recorrente treina todo mundo a
+   ignorar o alarme de verdade, que é exatamente o que este guarda-corpo existe para evitar.
+
+**Três correções, todas testadas contra os casos reais:**
+
+- **Commit imediato por download.** `gravar_biblioteca()` roda logo após cada PDF, não em lote no
+  fim. A janela caiu de minutos para milissegundos, e uma queda perde no máximo o item em voo.
+- **Lock exclusivo** (`alchemia-library/.harvest.lock`, criação atômica com `O_EXCL`, obsoleto
+  após 45 min para uma queda não travar a colheita para sempre). Quem não pega o lock **não falha
+  e não espera**: pula só a colheita, registra o motivo no radar do dia, e o markdown sai normal.
+  Os PDFs não colhidos reaparecem na execução seguinte — mesma disciplina do teto de `--max-pdf`.
+- **`check_sync` ciente do lock.** Com colheita em andamento, divergência vira `EM ANDAMENTO` e
+  **exit 0** (estado transitório esperado); com o lock liberado ou obsoleto, segue sendo **exit 1**.
+
+**Verificado por teste real, não por leitura:** órfão sem lock → exit **1**; mesmo órfão com lock
+ativo → exit **0**; mesmo órfão com lock forjado a 46 min → exit **1** (obsoleto não mascara);
+`research_export` com lock de outro processo → pula a colheita, gera o radar, registra o motivo,
+exit **0**; sem lock → colhe normal e libera o lock no fim. Cadeia completa do wrapper: exit 0,
+`check_sync --hashes` OK em **56/56/56**.
+
+**Correção menor, mesmo caminho:** os avisos impressos no `stdout` levavam emoji e acento direto.
+O Task Scheduler roda em console **cp1252** — um `⏭️` ali levanta `UnicodeEncodeError` e derruba a
+execução inteira por causa de um caractere decorativo. Agora o stdout é transliterado (NFKD, acento
+removido mas letra preservada: "execucao", não "execuo"), enquanto o markdown do radar segue com
+emoji e acentuação completos.
+
+## Addendum — 2026-08-18 (fontes): poda das improdutivas, newsletters do nicho, e um zero
+## silencioso do `nature` que durava o dia inteiro
+
+A pedido do fundador: remover fontes que rendem 0, incluir newsletters da área
+(`longevity.technology`, `nature.com/nrd`, `drughunter.com` "e as mais relevantes"), e consolidar
+tudo no app e nos markdowns para o Axel montar a mensagem do Discord.
+
+### 🔴 O achado que mudou o plano: `nature` estava falhando em silêncio
+
+Antes de mexer em qualquer fonte, o rendimento real foi medido. O coletor `nature` foi de
+**38 → 8 → 0** ao longo de 2026-08-18, com `error: null` nas três medições. Não era "nada novo":
+o nature.com aplica **desafio anti-bot** e devolve **HTTP 200 com uma página HTML**. O caminho do
+código engolia isso perfeitamente — `http_get` não vê erro (é 200), `ET.fromstring` quebra, o
+fallback do `feedparser` acha 0 entradas, e o coletor reporta `count: 0, error: null`.
+
+Isso é pior que uma falha: a rotina do Baker é instruída a investigar `error`, e **nunca havia
+erro para investigar**. O mesmo padrão do bug de paginação do bioRxiv, que passou dias despercebido.
+
+**Três correções no `feed_collector`:**
+
+1. **Detecção de página anti-bot** (`Client Challenge`, `Just a moment...`, Cloudflare etc.) →
+   levanta `FeedIndisponivel`. Resposta HTML ou vazia onde se espera XML também levanta.
+2. **Falha de feed sobe como erro da seção**, depois de todos serem tentados — os feeds que
+   funcionaram na rodada não são perdidos, mas `meta.json` passa a registrar `error` de verdade.
+3. **Espaçamento entre requisições do mesmo host** (`delay_seconds`, 4 s para nature.com) — a
+   rajada era a causa provável do desafio.
+
+**Efeito verificado na execução seguinte:** `nature` continua em 0, mas agora com
+`error: "4/5 feed(s) de 'nature_feeds' falharam: ... resposta é uma página anti-bot"`. O bloqueio é
+do lado da fonte; o que mudou é que ele **aparece**.
+
+### Segundo bug do parser, encontrado ao adicionar o Fierce Biotech
+
+O feed do Fierce tem **markup aninhado dentro do `<title>`**, então `child.text` vinha vazio e os
+**25 itens eram descartados por "título vazio"** — outro zero sem erro. Corrigido com um helper
+`_texto()` que usa `itertext()` (mesma técnica que o coletor do PubMed já usava). Também foram
+acrescentados a `parse_date_safe` os formatos de data reais desses feeds (`"Aug 18, 2026 8:14am"`).
+
+### Poda: 2 removidas, 2 mantidas com justificativa
+
+Rendimento medido sobre os 1.017 itens acumulados. Quatro fontes em zero, mas **por dois motivos
+diferentes** — e a distinção importa:
+
+| Fonte | Itens | Decisão |
+|---|---|---|
+| `genix-ai` | 0 | **removida** — o Google News não acha notícia nenhuma sobre a empresa |
+| `ai4pharma` | 0 | **removida** — idem |
+| `nvidia` | 0 | **mantida** — o feed funciona (6 itens); é o `filter_relevance` cortando um blog generalista |
+| `microsoft-research` | 0 | **mantida** — idem (3 itens) |
+
+As duas mantidas são **vigias que ainda não dispararam**: quando a NVIDIA anunciar algo de
+BioNeMo, ou a MSR algo de descoberta de fármacos, o filtro deixa passar. Custam 2 requisições por
+execução. Removê-las é decisão do fundador — mas seria remover um alarme, não uma fonte morta.
+
+De 22 empresas monitoradas para **20**.
+
+### Newsletters: 5 adicionadas, 7 verificadas e rejeitadas
+
+Seção nova `newsletter_feeds` no `sources.yaml`, coletor `newsletters` no `run_all`. **Toda URL foi
+testada ao vivo** (HTTP 200 + contagem real de `<item>`/`<entry>`) antes de entrar — nenhuma foi
+presumida a partir do domínio.
+
+| Feed | URL | Filtro | Itens/30d |
+|---|---|---|---|
+| **Drug Hunter** | `drughunter.com/rss.xml` | sem filtro (curadoria do nicho) | **22** |
+| **Longevity.Technology** | `longevity.technology/feed/` | com filtro | **6** |
+| Fierce Biotech | `fiercebiotech.com/rss/xml` | com filtro | 0 hoje (25 entradas, nenhuma do nicho) |
+| BioPharma Dive | `biopharmadive.com/feeds/news/` | com filtro | 0 hoje |
+| Labiotech | `labiotech.eu/feed/` | com filtro | 0 hoje |
+
+Mais três periódicos na seção `nature_feeds` (mesmo host, mesmo espaçamento): Nature
+Biotechnology, Nature Machine Intelligence, Nature Chemical Biology — todos com filtro próprio.
+
+**Rejeitados, com o motivo registrado no próprio YAML** para ninguém retentar o mesmo 403 daqui a
+um mês: Endpoints News (403), In the Pipeline/Derek Lowe (403, duas rotas), Science Translational
+Medicine (403), Drug Discovery Today (403), C&EN (404, três rotas), Chemistry World (202 sem
+itens), J. Cheminformatics (anti-bot). São veículos relevantes — o bloqueio é do lado deles.
+
+**`nature.com/nrd` já estava configurado** desde 2026-08-17; o pedido do fundador estava atendido
+antes desta rodada, e o que faltava era ele **funcionar** (ver o zero silencioso acima).
+
+### Duas decisões de calibração, ambas medidas
+
+**Janela de data (`window_days: 30`) é obrigatória em feed de newsletter.** Drug Hunter devolveu
+**284** entradas e Longevity.Technology **1.500** numa única chamada — o arquivo inteiro. Sem
+janela, a primeira execução teria quase dobrado a base de notícias com conteúdo velho.
+
+**`filter_relevance` por feed, não por seção.** Longevity.Technology sem filtro traz **159
+itens/mês**; com filtro, **6**. O primeiro número inundaria o radar e o Discord, onde cabem ~5
+itens por post. A fonte segue coberta, como o fundador pediu — só entra o que toca o nicho.
+
+### Consolidação no app e nos markdowns
+
+- **`source_type: newsletter`** é um tipo novo, com rótulo ("Newsletter") e cor próprios no
+  dashboard. Newsletter curada tem sinal muito maior que resultado de Google News e precisa ser
+  distinguível.
+- **Radar diário** (`alchemia-science/research/`) ganhou a seção **"Newsletters do nicho"**,
+  posicionada **antes** de "Notícias" — é a de maior sinal do dia.
+- **Feed do Axel** ganhou a mesma seção, com a disputa de deduplicação ajustada para
+  `companies → newsletters → articles → news` (a newsletter vence a notícia genérica quando o
+  mesmo item aparece nos dois).
+- **Prompt do Axel** passou a ter quatro seções e uma **regra de prioridade explícita**: se não
+  couber tudo nos 2.000 caracteres, corta Notícias e Empresas antes de Newsletters e Artigos.
+
+### Verificado por execução real
+
+Pipeline completo: **9 coletores**, 127,1 s, `newsletters: 28`. As sete rotas do dashboard em 200,
+com "Drug Hunter (22)" e "Fierce Biotech (33)" já aparecendo como filtro de fonte em `/noticias`.
+Feed do Axel: quatro seções populadas, **zero link repetido** entre elas. E a coleta agendada das
+12:40 do Task Scheduler rodou sozinha em cima das fontes novas, com `+0 novos` — o dedupe
+funcionando sobre o que esta sessão já havia coletado.
+
+## Addendum — 2026-08-18 (dashboard): o app não é um serviço; e o contador de empresas do painel
+## estava chumbado em `22`
+
+**Por que a porta 3000 não estava ativa.** O dashboard não roda como serviço nem tem autostart: a
+Tarefa Agendada `Alchemia News - Coleta` (única tarefa do setor no Task Scheduler) executa **só o
+pipeline Python** e escreve os JSONs — nada nela sobe o Next.js. O servidor é iniciado à mão por
+sessão (`npm run start` na `dashboard/`, `.claude/launch.json` da raiz da empresa) e morre junto
+com a árvore de processos daquela sessão. Verificado nesta rodada: nenhum listener em `:3000`, e
+todos os processos `node` da máquina eram do Hermes. Não havia falha do app — só ninguém servindo.
+
+Subido de novo nesta rodada e verificado: `Ready in 4.3s`, as 7 rotas em **200**
+(`/`, `/artigos`, `/noticias`, `/empresas`, `/empresas/[slug]`, `/bancos-ferramentas`, `/sobre`),
+e os números do painel batendo exatamente com `pipeline/data/meta.json` da coleta das 15:42Z
+(214 artigos / 1.855 notícias / 1.021 menções / 127,1 s) — a leitura em tempo de requisição
+(`export const dynamic = 'force-dynamic'`) funcionando como projetado, sem rebuild.
+
+**🔴 Achado corrigido: número fabricado na home.** `app/page.tsx:43` trazia
+`hint={`${topCompanies.length ? '22' : '0'} empresas monitoradas`}` — o **22 era literal no
+código**, não uma contagem. A poda de fontes de hoje (addendum "fontes" acima) levou
+`companies.yaml` de 22 para **20**, e o painel seguia exibindo 22. É exatamente a classe de erro
+que a regra "nunca fabricar números" existe para impedir, dentro do app cujo propósito é reportar
+números. Corrigido para `getCompanies().length` (a função já existia em `lib/data.ts` e lê o YAML
+real); `typecheck` limpo, `build` limpo, home renderizando **20 empresas monitoradas**.
+
+Vale a suspeita geral: qualquer outro literal numérico na camada de apresentação deste app deve
+ser tratado como suspeito até provar que vem de contagem real.
+
+### Correção ao addendum acima, mesma data: subir pelo preview do agente **não** deixa o app no ar
+
+O parágrafo acima ("subido de novo nesta rodada e verificado") estava correto **no instante em que
+foi escrito** e enganoso um minuto depois: o servidor iniciado pela ferramenta de preview do agente
+é filho do job object da sessão e **morre quando o turno termina**. Confirmado logo em seguida —
+porta 3000 sem listener de novo, lista de previews vazia.
+
+**Forma que funciona de verdade** (usada nesta rodada, servidor de pé em `:3000`, PID do `node` do
+`next start` = 3544, log em `logs/dashboard.log`): criar o processo pelo **serviço WMI**, cujo pai
+é o `WmiPrvSE` e não a sessão do agente —
+
+```
+powershell -NoProfile -Command "Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{CommandLine='cmd /c cd /d \"<...>\alchemia-news\dashboard\" && npm run start > \"<...>\alchemia-news\logs\dashboard.log\" 2>&1'}"
+```
+
+É o mesmo princípio já registrado para job longo no WSL (`setsid`+`nohup`): processo em segundo
+plano simples morre em silêncio junto com a sessão que o criou. Sobrevive ao fim da sessão, **não**
+sobrevive a reboot/logoff — para isso seria preciso uma Tarefa Agendada com gatilho "ao logon",
+que **não** foi criada (decisão do fundador, muda o comportamento da máquina a cada logon).

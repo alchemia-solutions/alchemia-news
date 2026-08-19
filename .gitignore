@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pipeline/.venv/
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+dashboard/.next/
+dashboard/out/
+dashboard/.turbo/
+npm-debug.log*
+
+# Logs e execução (dado real de output, não fonte -- ver AGENTS.md deste setor)
+pipeline/logs/*.log
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+
+# Env reais (só .example é versionado)
+.env
+.env.local
+dashboard/.env.local
+
+# Snapshot de deploy gerado por scripts/copy-pipeline-data.js (prebuild) -- nunca fonte de
+# trabalho, sempre regenerado do pipeline/data e pipeline/config reais.
+dashboard/.pipeline-data/

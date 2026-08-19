@@ -1,0 +1,101 @@
+# Termos que definem o nicho da Alchemia Solutions para filtro de relevância e construção de
+# queries. Editável sem tocar em código Python — qualquer coletor que precise de um filtro de
+# relevância client-side importa esta lista via common.load_keywords().
+#
+# "topics" é usado para: (1) filtro de relevância em feeds genéricos (empresas grandes cujo
+# conteúdo não é 100% do nicho, ex. OpenAI/NVIDIA/Microsoft/Anthropic/DeepMind); (2) tag
+# `keywords_matched` em cada item coletado, para auditabilidade (nunca uma classificação opaca —
+# ver spec 2026-08-17, Critérios de Sucesso).
+topics:
+  - drug discovery
+  - drug design
+  - computer-aided drug design
+  - CADD
+  - AI drug discovery
+  - virtual screening
+  - molecular docking
+  - de novo drug design
+  - generative chemistry
+  - protein engineering
+  - protein design
+  - protein language model
+  - antibody engineering
+  - antibody design
+  - vaccine design
+  - AlphaFold
+  - RFdiffusion
+  - ADMET
+  - cheminformatics
+  - molecular dynamics
+  - QSAR
+  - target identification
+  - natural products chemistry
+  - biotech AI
+  - foundation model biology
+  - genomics AI
+  - computational chemistry
+  - drug repurposing
+  - small molecule design
+  - biologics design
+  - structure-based drug design
+  - fragment-based drug design
+  - deep learning chemistry
+  - machine learning drug discovery
+  - diffusion model protein
+  - docking software
+  - free energy perturbation
+  - ADMET prediction
+  - chemical space exploration
+  - active learning chemistry
+  - drug-likeness
+
+# Query compacta usada pelo coletor PubMed (E-utils), ancorada no nicho de IA+CADD — evita o
+# ruído de "drug discovery" genérico (majoritariamente clínico/regulatório, não computacional).
+pubmed_query: >-
+  ("computer-aided drug design"[Title/Abstract] OR "CADD"[Title/Abstract] OR
+  "virtual screening"[Title/Abstract] OR "molecular docking"[Title/Abstract] OR
+  "de novo drug design"[Title/Abstract] OR "generative chemistry"[Title/Abstract] OR
+  "protein design"[Title/Abstract] OR "protein language model"[Title/Abstract] OR
+  "antibody engineering"[Title/Abstract] OR "structure-based drug design"[Title/Abstract] OR
+  ((drug discovery[Title/Abstract]) AND (artificial intelligence[Title/Abstract] OR
+  machine learning[Title/Abstract] OR deep learning[Title/Abstract])) OR
+  ((vaccine design[Title/Abstract]) AND (artificial intelligence[Title/Abstract] OR
+  machine learning[Title/Abstract])))
+
+# Query do arXiv (Atom API) -- categorias relevantes + termos do nicho no título/resumo.
+arxiv_categories:
+  - q-bio.BM
+  - q-bio.QM
+  - q-bio.MN
+arxiv_query_terms:
+  - drug discovery
+  - drug design
+  - molecular docking
+  - protein design
+  - protein structure prediction
+  - de novo design
+  - generative model molecule
+  - antibody design
+  - virtual screening
+  - cheminformatics
+
+# Frases em português usadas nas passadas Google News em pt-BR (foco Brasil/instituições).
+google_news_queries_pt:
+  - '"inteligência artificial" "descoberta de fármacos"'
+  - '"inteligência artificial" "design de fármacos"'
+  - 'biologia computacional (fármacos OR medicamentos)'
+  - '"Instituto Butantan" (pesquisa OR vacina OR "inteligência artificial")'
+  - '"Fiocruz" ("inteligência artificial" OR vacina OR fármaco)'
+
+# Frases em inglês para a rotação Google News genérica (não ligada a uma empresa específica).
+google_news_queries_en:
+  - '"AI drug discovery"'
+  - '"computer-aided drug design"'
+  - '"generative chemistry" AI'
+  - '"protein design" AI'
+  - '"de novo drug design"'
+  - '"antibody engineering" AI'
+  - '"virtual screening" AI pharma'
+  - '"AlphaFold" drug discovery'
+  - '"AI vaccine design"'
+  - '"molecular docking" AI'

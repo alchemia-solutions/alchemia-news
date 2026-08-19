@@ -1,0 +1,11 @@
+npm notice run alchemia-news-dashboard@0.1.0 start
+npm notice run next start
+▲ Next.js 16.3.1
+- Local:         http://localhost:3000
+- Network:       http://10.5.0.2:3000
+✓ Ready in 1274ms
+✓ Running next.config.js took 59ms
+(node:3544) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 drain listeners added to [Gzip]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3544) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 drain listeners added to [Gzip]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:3544) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 drain listeners added to [Gzip]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit

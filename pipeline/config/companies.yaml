@@ -1,0 +1,174 @@
+# Empresas e instituições monitoradas -- página "Empresas" do dashboard.
+# method: "rss" (feed real, confirmado ao vivo) | "google_news" (fallback via busca, quando o
+# site não expõe RSS público estável, ou quando o feed real existe mas é ruído demais sem query).
+# filter_relevance: quando true, o item só entra se casar com pipeline/config/keywords.yaml
+# (usado para players grandes cujo conteúdo não é 100% do nicho). Quando false, todo item do
+# feed/query entra (empresas cujo negócio inteiro já é o nicho).
+#
+# category usada para agrupar/filtrar na página Empresas:
+#   ai_drug_discovery | cadd_platform | biotech_ai | big_tech_ai | br_institution | bioinformatics_resource
+
+companies:
+  - slug: schrodinger
+    name: "Schrödinger"
+    url: "https://www.schrodinger.com/life-science/"
+    category: cadd_platform
+    method: google_news
+    query: '"Schrodinger" (drug discovery OR "molecular design" OR "computational chemistry" OR pharmaceutical)'
+    filter_relevance: false
+    logo_hint: "S"
+
+  - slug: isomorphic-labs
+    name: "Isomorphic Labs"
+    url: "https://www.isomorphiclabs.com/"
+    category: ai_drug_discovery
+    method: google_news
+    query: '"Isomorphic Labs"'
+    filter_relevance: false
+
+  - slug: adaptyv-bio
+    name: "Adaptyv Bio"
+    url: "https://www.adaptyvbio.com/"
+    category: biotech_ai
+    method: google_news
+    query: '"Adaptyv Bio"'
+    filter_relevance: false
+
+
+  - slug: rowan-scientific
+    name: "Rowan Scientific"
+    url: "https://www.rowansci.com/"
+    category: cadd_platform
+    method: google_news
+    query: '"Rowan Scientific"'
+    filter_relevance: false
+
+  - slug: insilico-medicine
+    name: "Insilico Medicine"
+    url: "https://insilico.com/"
+    category: ai_drug_discovery
+    method: google_news
+    query: '"Insilico Medicine"'
+    filter_relevance: false
+
+  - slug: pharma-ai
+    name: "Pharma.AI"
+    url: "https://pharma.ai/"
+    category: ai_drug_discovery
+    method: google_news
+    query: '"Pharma.AI" Insilico'
+    filter_relevance: false
+
+  - slug: claude-science
+    name: "Claude Science (Anthropic)"
+    url: "https://claude.com/product/claude-science"
+    category: big_tech_ai
+    method: google_news
+    query: '"Claude Science" Anthropic'
+    filter_relevance: false
+
+  - slug: expasy
+    name: "ExPASy (SIB)"
+    url: "https://www.expasy.org/"
+    category: bioinformatics_resource
+    method: google_news
+    query: '"ExPASy" OR "SIB Swiss Institute of Bioinformatics"'
+    filter_relevance: false
+
+  - slug: biosolveit
+    name: "BioSolveIt"
+    url: "https://www.biosolveit.de/"
+    category: cadd_platform
+    method: rss
+    feed_url: "https://www.biosolveit.de/feed/"
+    filter_relevance: false
+
+
+  - slug: recursion
+    name: "Recursion Pharmaceuticals"
+    url: "https://www.recursion.com/"
+    category: biotech_ai
+    method: google_news
+    query: '"Recursion Pharmaceuticals"'
+    filter_relevance: false
+
+  - slug: iktos
+    name: "Iktos"
+    url: "https://iktos.ai/"
+    category: ai_drug_discovery
+    method: google_news
+    query: '"Iktos"'
+    filter_relevance: false
+
+  - slug: lila-sciences
+    name: "Lila Sciences"
+    url: "https://lila.ai/"
+    category: big_tech_ai
+    method: google_news
+    query: '"Lila Sciences"'
+    filter_relevance: false
+
+  - slug: vecura
+    name: "Vecura"
+    url: "https://vecura.com/en"
+    category: biotech_ai
+    method: google_news
+    query: '"Vecura" (biotech OR bio OR drug OR "cell therapy" OR "gene therapy")'
+    filter_relevance: false
+
+  - slug: google-deepmind
+    name: "Google DeepMind"
+    url: "https://deepmind.google/"
+    category: big_tech_ai
+    method: google_news
+    query: '"Google DeepMind" (protein OR AlphaFold OR "drug discovery" OR biology OR chemistry)'
+    filter_relevance: false
+
+  - slug: anthropic
+    name: "Anthropic"
+    url: "https://www.anthropic.com/"
+    category: big_tech_ai
+    method: google_news
+    query: '"Anthropic" (science OR biology OR "drug discovery" OR "Claude Science" OR chemistry)'
+    filter_relevance: false
+
+  - slug: openai
+    name: "OpenAI"
+    url: "https://openai.com/"
+    category: big_tech_ai
+    method: rss
+    feed_url: "https://openai.com/news/rss.xml"
+    filter_relevance: true
+
+  - slug: nvidia
+    name: "NVIDIA (Healthcare/BioNeMo)"
+    url: "https://www.nvidia.com/en-us/clara/"
+    category: big_tech_ai
+    method: rss
+    feed_url: "https://blogs.nvidia.com/feed/"
+    filter_relevance: true
+
+  - slug: microsoft-research
+    name: "Microsoft Research"
+    url: "https://www.microsoft.com/en-us/research/"
+    category: big_tech_ai
+    method: rss
+    feed_url: "https://www.microsoft.com/en-us/research/feed/"
+    filter_relevance: true
+
+  - slug: butantan
+    name: "Instituto Butantan"
+    url: "https://butantan.gov.br/"
+    category: br_institution
+    method: google_news
+    query: '"Instituto Butantan"'
+    hl_gl: {hl: "pt-BR", gl: "BR", ceid: "BR:pt"}
+    filter_relevance: false
+
+  - slug: fiocruz
+    name: "Fiocruz"
+    url: "https://portal.fiocruz.br/"
+    category: br_institution
+    method: rss
+    feed_url: "https://agencia.fiocruz.br/rss.xml"
+    filter_relevance: false

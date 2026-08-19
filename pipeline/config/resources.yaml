@@ -1,0 +1,90 @@
+# Diretório curado de bancos de moléculas e ferramentas de CADD -- página "Bancos & Ferramentas"
+# do dashboard. Conteúdo estático (não coletado automaticamente) porque são recursos de
+# referência, não fontes de notícia -- mas cada entrada é cruzada em tempo de exibição no
+# dashboard contra os artigos/notícias coletados (match por nome), para mostrar menções recentes.
+#
+# type: molecule_database | cadd_tool | tool_directory
+
+resources:
+  - slug: coconut
+    name: "COCONUT"
+    full_name: "COlleCtion of Open Natural prodUcTs"
+    url: "https://coconut.naturalproducts.net/"
+    type: molecule_database
+    description: >-
+      Banco aberto de produtos naturais (CC0), uma das três fontes originais do Alchemia
+      Database v1 e fonte onboarded pelo Alchemia Athanor.
+    license_note: "CC0"
+
+  - slug: brnpdb
+    name: "BrNPDB"
+    full_name: "Brazilian Natural Products Database (antigo NuBBE)"
+    url: "https://brnpdb.fcfrp.usp.br/"
+    type: molecule_database
+    description: >-
+      Banco de produtos naturais brasileiros mantido pela FCFRP-USP. Licenciado publicamente
+      CC BY-NC-ND 4.0, com parceria oficial que autoriza redistribuição/derivados pela Alchemia.
+    license_note: "CC BY-NC-ND 4.0 (parceria oficial permite redistribuição/derivados)"
+
+  - slug: nci-next
+    name: "NCI NExT & Diversity Sets"
+    full_name: "NCI Development Therapeutics Program — Screening Libraries"
+    url: "https://dctd.cancer.gov/drug-discovery-development/services/next/resources/screening-libraries"
+    type: molecule_database
+    description: "Bibliotecas de screening do NCI (domínio público), usadas no MVP do Alchemia Database."
+    license_note: "Domínio público"
+
+  - slug: chembl
+    name: "ChEMBL 37"
+    full_name: "ChEMBL Database, release 37"
+    url: "https://www.ebi.ac.uk/chembl/"
+    type: molecule_database
+    description: >-
+      Banco de bioatividade mantido pelo EMBL-EBI. Matéria-prima reservada para v2.0+ do Alchemia
+      Database -- licença CC BY-SA (cláusula share-alike) segue não resolvida para incorporação
+      ao inventário curado ou uso comercial (ver decisões internas do setor alchemia-athanor).
+    license_note: "CC BY-SA — não resolvido para uso comercial/redistribuição própria"
+
+  - slug: molport
+    name: "Molport"
+    full_name: "Molport Chemical Marketplace"
+    url: "https://www.molport.com/shop/index"
+    type: molecule_database
+    description: "Catálogo comercial agregador de fornecedores de compostos para triagem/compra."
+    license_note: "Termos comerciais — não resolvido"
+
+  - slug: enamine
+    name: "Enamine"
+    full_name: "Enamine Ltd."
+    url: "https://enamine.net/"
+    type: molecule_database
+    description: "Fornecedor comercial de building blocks e bibliotecas de screening (REAL Space)."
+    license_note: "Termos comerciais — não resolvido"
+
+  - slug: iracema
+    name: "Iracema"
+    full_name: "Iracema Natural Products Database"
+    url: "https://iracema.fcf.usp.br/"
+    type: molecule_database
+    description: "Banco de produtos naturais mantido pela FCF-USP, fonte onboarded pelo Alchemia Athanor."
+    license_note: "Ver PROVENANCE.md do Athanor"
+
+  - slug: zinc20
+    name: "ZINC 20"
+    full_name: "ZINC — Free Database of Commercially-available Compounds"
+    url: "https://zinc.docking.org/"
+    type: molecule_database
+    description: >-
+      Banco público de bilhões de compostos comercialmente disponíveis, prontos para docking
+      (a escala de referência do setor — ver ZINC-22 nas notas internas de posicionamento).
+    license_note: "Uso acadêmico gratuito — ver termos do site"
+
+  - slug: click2drug
+    name: "Click2Drug"
+    full_name: "Click2Drug — Directory of Computer-Aided Drug Design Tools"
+    url: "https://www.click2drug.org/"
+    type: tool_directory
+    description: >-
+      Diretório de referência (mantido pelo SIB/ExPASy) com centenas de ferramentas de CADD
+      catalogadas por categoria (docking, QSAR, ADMET, de novo design, etc).
+    license_note: "Diretório público de referência"

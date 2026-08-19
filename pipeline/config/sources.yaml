@@ -1,0 +1,124 @@
+# Fontes acadêmicas/institucionais de artigos e preprints. Cada entrada é consumida por um
+# coletor específico em pipeline/collectors/. Ver docs/specs/2026-08-17-*.md para o porquê de
+# cada método (acesso direto vs. proxy via Crossref) -- verificado ao vivo nesta empresa, não
+# presumido.
+
+pubmed:
+  enabled: true
+  base_url: "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
+  reldate_days: 200 # ~6.5 meses -- folga sobre os 6 meses pedidos
+  retmax: 60
+  contact_tool: "AlchemiaNewsBot/1.0 (contato: company@alchemia.solutions)"
+
+biorxiv:
+  enabled: true
+  base_url: "https://api.biorxiv.org/details/biorxiv"
+  # bioRxiv não filtra por palavra-chave no servidor -- pagina por data e filtramos no cliente.
+  # Backfill completo de 6 meses é caro (centenas de preprints/dia em TODAS as categorias de
+  # biologia); default é uma janela curta para runs incrementais rápidos (3x/dia). Backfill mais
+  # profundo é feito via `python run_all.py --biorxiv-days 180` sob demanda (job separado).
+  incremental_days: 3
+  default_backfill_days: 14
+  max_pages: 60
+
+arxiv:
+  enabled: true
+  base_url: "https://export.arxiv.org/api/query"
+  window_days: 200
+  max_results: 60
+
+chemrxiv_via_crossref:
+  enabled: true
+  base_url: "https://api.crossref.org/works"
+  doi_prefix: "10.26434" # Cambridge Open Engage -- confirmado ao vivo nesta sessão
+  window_days: 200
+  rows: 60
+  # ChemRxiv cobre toda a química, não só o nicho -- filtro de keyword é aplicado no cliente
+  # (título) usando pipeline/config/keywords.yaml::topics.
+  filter_relevance: true
+
+scielo_via_crossref:
+  enabled: true
+  base_url: "https://api.crossref.org/works"
+  doi_prefix: "10.1590" # SciELO Brasil -- confirmado ao vivo nesta sessão
+  window_days: 200
+  rows: 60
+  crossref_query: "drug design OR drug discovery OR molecular docking OR virtual screening OR cheminformatics"
+  filter_relevance: true
+
+# Periódicos da Nature. Agrupados por HOST de propósito: nature.com aplica desafio anti-bot
+# quando recebe requisições em rajada — foi a causa provável da queda 38 -> 8 -> 0 observada em
+# 2026-08-18, que passava como `count: 0, error: null` (falha silenciosa, corrigida no
+# feed_collector na mesma data). `delay_seconds` espaça as requisições do mesmo host.
+# Removidos em 2026-08-18 (rodada da noite, Baker) — bloqueados por página anti-bot (Client
+# Challenge) em 100% das execuções medidas hoje com log de erro capturado (15:37Z, 15:42Z, 21:58Z):
+#   - Nature — Drug Discovery subject (nature.com/subjects/drug-discovery.rss)
+#   - Nature Machine Intelligence (nature.com/natmachintell.rss)
+# Como qualquer feed que falha derruba a seção inteira (todos os 5 descartados, não só os que
+# falharam), manter esses dois na lista fazia o coletor `nature` reportar count:0 quase toda
+# execução mesmo quando os outros 3 respondiam normalmente. Os 3 mantidos abaixo tiveram sucesso
+# em pelo menos 1 das 3 medições (bloqueio parcial/intermitente do lado deles, não 100%) — se
+# voltarem a falhar de forma consistente, reavaliar. Se algum dos dois removidos voltar a expor
+# feed aberto, é só reacrescentar.
+nature_feeds:
+  enabled: true
+  delay_seconds: 4
+  feeds:
+    - name: "Nature Reviews Drug Discovery"
+      url: "https://www.nature.com/nrd.rss"
+    # Adicionados 2026-08-18. Mais amplo que o primeiro, por isso com filtro de relevância
+    # próprio — senão entram artigos de biotecnologia fora do nicho de CADD.
+    - name: "Nature Biotechnology"
+      url: "https://www.nature.com/nbt.rss"
+      filter_relevance: true
+    - name: "Nature Chemical Biology"
+      url: "https://www.nature.com/nchembio.rss"
+      filter_relevance: true
+  filter_relevance: false # padrão da seção: o primeiro já é temático do nicho
+
+# Newsletters e veículos editoriais do nicho — adicionados 2026-08-18 a pedido do fundador.
+# Todos verificados ao vivo nesta data (HTTP 200 + contagem real de <item>/<entry>) antes de
+# entrar aqui; nenhuma URL foi presumida.
+#
+# Regra do `filter_relevance` por feed: veículo CURADO do nicho entra sem filtro (perderia
+# conteúdo bom); veículo GENERALISTA de biotech/pharma entra com filtro, senão inunda a base.
+newsletter_feeds:
+  enabled: true
+  delay_seconds: 1.5
+  window_days: 30 # newsletters servem o arquivo inteiro; sem janela a base incharia de conteudo velho
+  filter_relevance: true # padrão conservador; cada feed abaixo decide o seu
+  feeds:
+    - name: "Drug Hunter"
+      url: "https://drughunter.com/rss.xml"
+      filter_relevance: false # curadoria de med chem/descoberta — todo item é do nicho
+    - name: "Longevity.Technology"
+      url: "https://longevity.technology/feed/"
+      filter_relevance: true # veiculo de longevidade: sem filtro traria ~159 itens/mes (medido
+                             # 2026-08-18), inundando radar e Discord. Com filtro, entra so o que
+                             # toca o nicho -- a fonte segue coberta, como o fundador pediu.
+    - name: "Fierce Biotech"
+      url: "https://www.fiercebiotech.com/rss/xml"
+      filter_relevance: true # generalista de biotech
+    - name: "BioPharma Dive"
+      url: "https://www.biopharmadive.com/feeds/news/"
+      filter_relevance: true # generalista de pharma
+    - name: "Labiotech"
+      url: "https://www.labiotech.eu/feed/"
+      filter_relevance: true # generalista de biotech europeia
+#
+# Verificados e REJEITADOS nesta mesma rodada (não presumir que faltou tentar):
+#   - Endpoints News (endpts.com/feed/) ............... HTTP 403
+#   - In the Pipeline / Derek Lowe (science.org) ...... HTTP 403 (duas rotas testadas)
+#   - Science Translational Medicine (science.org) .... HTTP 403
+#   - Drug Discovery Today (sciencedirect) ............ HTTP 403
+#   - C&EN (cen.acs.org) ............................. HTTP 404 (três rotas testadas)
+#   - Chemistry World ................................ HTTP 202 sem itens
+#   - J. Cheminformatics (biomedcentral) ............. desafio anti-bot
+# Todos são veículos relevantes; o bloqueio é do lado deles, não falta de interesse. Se algum
+# passar a expor feed aberto, é só acrescentar aqui.
+
+google_news_general:
+  enabled: true
+  hl_gl:
+    - {hl: "en-US", gl: "US", ceid: "US:en", query_set: "google_news_queries_en"}
+    - {hl: "pt-BR", gl: "BR", ceid: "BR:pt", query_set: "google_news_queries_pt"}

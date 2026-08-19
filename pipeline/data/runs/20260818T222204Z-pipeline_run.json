@@ -1,0 +1,44 @@
+{
+  "last_run_started": "2026-08-18T22:21:56.258200+00:00",
+  "last_run_finished": "2026-08-18T22:22:04.725936+00:00",
+  "duration_seconds": 8.5,
+  "collectors": {
+    "pubmed": {
+      "skipped": true
+    },
+    "biorxiv": {
+      "skipped": true
+    },
+    "arxiv": {
+      "skipped": true
+    },
+    "chemrxiv": {
+      "skipped": true
+    },
+    "scielo": {
+      "skipped": true
+    },
+    "nature": {
+      "count": 0,
+      "seconds": 8.4,
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\AryelBezerra\\Documents\\Alchemia LTDA\\alchemia-ai\\alchemia-news\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"C:\\Users\\AryelBezerra\\Documents\\Alchemia LTDA\\alchemia-ai\\alchemia-news\\pipeline\\collectors\\feed_collector.py\", line 246, in collect_nature_feeds\n    return _collect_section(\"nature_feeds\", \"journal\")\n  File \"C:\\Users\\AryelBezerra\\Documents\\Alchemia LTDA\\alchemia-ai\\alchemia-news\\pipeline\\collectors\\feed_collector.py\", line 241, in _collect_section\n    raise RuntimeError(f\"{len(falhas)}/{len(feeds)} feed(s) de '{secao}' falharam: \" + \" | \".join(falhas))\nRuntimeError: 3/3 feed(s) de 'nature_feeds' falharam: Nature Reviews Drug Discovery: resposta é uma página anti-bot (Client Challenge), não um feed | Nature Biotechnology: resposta é uma página anti-bot (Client Challenge), não um feed | Nature Chemical Biology: resposta é uma página anti-bot (Client Challenge), não um feed\n"
+    },
+    "newsletters": {
+      "skipped": true
+    },
+    "googlenews": {
+      "skipped": true
+    },
+    "companies": {
+      "skipped": true
+    }
+  },
+  "totals": {
+    "articles": 243,
+    "news": 1882,
+    "companies_activity": 1045,
+    "new_articles_this_run": 0,
+    "new_news_this_run": 0,
+    "new_companies_activity_this_run": 0
+  }
+}
