@@ -1,0 +1,635 @@
+# Catálogo curado de canais de fomento à pesquisa, inovação e startups relevantes para a
+# Alchemia Solutions -- alimenta a página "/fomento" do dashboard. Conteúdo estático (não
+# coletado automaticamente), transcrito e resumido em palavras próprias a partir de
+# `canais-editais-fomento-brasil.md` (guia de referência do fundador, ago/2026, arquivo original
+# em C:\Users\AryelBezerra\Downloads\). Cada entrada tem link para o portal oficial -- valores,
+# prazos e regras mudam a cada edição: sempre confirmar no canal oficial antes de qualquer decisão
+# de submissão (mesmo aviso que o próprio guia carrega). Nenhum dado aqui é "aberto agora" --
+# monitoramento ativo de chamadas é Fase 2 (backlog), não implementada.
+#
+# Ver docs/specs/2026-08-19-funding-opportunities-and-app-restructure.md para o schema completo.
+#
+# scope: federal | estadual_sp | saude | universidade_ict | fundacao_privada | internacional
+#
+# priority_alchemia herdado da seção 9 do guia ("Notas específicas para uma organização de
+# biotech/CADD com projeto em oncologia molecular", que já ranqueia "alta"/"média" para 10 itens
+# específicos) -- nunca inventado por esta curadoria. "complementar" é usado só para canais que a
+# seção 9 do guia não classifica (a nota de cada entrada deixa isso explícito).
+#
+# Requisitos estruturais gerais que o guia lista como transversais a boa parte dos editais
+# federais/estaduais (seção 9, bloco "Estruturais") e que não estão repetidos em toda entrada:
+# manter CNPJ com CNAE de P&D, Currículo Lattes atualizado dos pesquisadores-chave, e -- para
+# qualquer edital com dado de paciente -- aprovação em CEP/CONEP e registro na Plataforma Brasil
+# (prazo de 60-120 dias, frequentemente o gargalo real, não a submissão em si).
+
+funding_channels:
+  # ---------------------------------------------------------------------------------------------
+  # 1. FEDERAL
+  # ---------------------------------------------------------------------------------------------
+  - slug: cnpq
+    name: "CNPq"
+    full_name: "Conselho Nacional de Desenvolvimento Científico e Tecnológico"
+    scope: federal
+    portal_url: "https://www.gov.br/cnpq/pt-br"
+    calls_url: "https://www.gov.br/cnpq/pt-br/chamadas/abertas-para-submissao"
+    programs:
+      - name: "RHAE — Pesquisador na Empresa"
+        note: "Bolsas de RH para empresas — muito relevante para startups"
+      - name: "Chamada Universal"
+        note: "A mais ampla; ciclos historicamente bienais"
+      - name: "Bolsas de Produtividade (PQ) e Desenvolvimento Tecnológico (DT)"
+        note: "Geralmente abrem no 2º semestre"
+      - name: "INCT — Institutos Nacionais de Ciência e Tecnologia"
+        note: "Grandes ciclos plurianuais"
+      - name: "PIBIC / PIBITI / PIBIC-Af"
+        note: "Via cota institucional — checar edital interno da ICT parceira"
+      - name: "Chamadas CNPq/Decit-SCTIE/MS, CNPq/MCTI/FNDCT, CNPq/ERC, BRICS-STI"
+        note: "Executadas via CNPq — a linha de Saúde das Mulheres vive aqui, ver entrada ministerio-saude-decit"
+    priority_alchemia: complementar
+    priority_note: >-
+      Não classificado individualmente na seção 9 do guia (que prioriza especificamente a linha
+      CNPq/Decit-SCTIE/MS — Saúde das Mulheres, coberta na entrada "ministerio-saude-decit") —
+      incluído por cobertura, sem prioridade própria herdada.
+    requires: ["Currículo Lattes atualizado", "muitas chamadas exigem ICT parceira formalizada"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: capes
+    name: "CAPES"
+    full_name: "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior"
+    scope: federal
+    portal_url: "https://www.gov.br/capes/pt-br"
+    calls_url: "https://www.gov.br/capes/pt-br/assuntos/editais-e-resultados-capes"
+    programs:
+      - name: "Plataforma Bertha Lutz — oportunidades abertas"
+        note: "https://bertha.capes.gov.br/oportunidades"
+      - name: "PrInt / CAPES-Global.Edu"
+        note: "Internacionalização institucional"
+      - name: "PDPG — Programa de Desenvolvimento da Pós-Graduação"
+        note: "Estratégico, emergencial, industrial"
+      - name: "Editais bilaterais (DAAD, COFECUB, Humboldt, Fulbright, AmSud, PEC-PG)"
+        note: "Cooperação internacional"
+      - name: "CAPES-Epidemias, CAPES-Ciências do Mar, CAPES-Biologia Computacional"
+        note: "Chamadas temáticas"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 do guia — foco majoritário em pós-graduação/internacionalização, fora do escopo direto de captação de P&D empresarial."
+    requires: ["vínculo com programa de pós-graduação/ICT"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: finep
+    name: "FINEP"
+    full_name: "Financiadora de Estudos e Projetos"
+    scope: federal
+    portal_url: "http://www.finep.gov.br"
+    calls_url: "http://www.finep.gov.br/chamadas-publicas/chamadaspublicas?situacao=aberta"
+    programs:
+      - name: "Mais Inovação Brasil — eixo Saúde/CEIS"
+        note: "Subvenção econômica em fluxo contínuo até esgotar orçamento — guarda-chuva do Plano Nova Indústria Brasil"
+      - name: "Finep Startup"
+        note: "Investimento direto em startups via valores mobiliários"
+      - name: "Subvenção Econômica direta e descentralizada"
+        note: "Via parceiros estaduais"
+      - name: "PROINFRA / CT-INFRA"
+        note: "Infraestrutura de pesquisa para ICTs"
+      - name: "Tecnova / Centelha"
+        note: "Parceria com FAPs estaduais — Centelha é a porta de entrada para ideias em estágio inicial"
+      - name: "FIPs (incl. FIP Startup IA)"
+        note: "Fundos de Investimento em Participações"
+    priority_alchemia: alta
+    priority_note: >-
+      Prioridade alta do guia (seção 9, item 3): "FINEP Mais Inovação — eixo Saúde/CEIS — subvenção
+      econômica, várias chamadas em fluxo contínuo; ideal para desenvolvimento de kit diagnóstico
+      nacional."
+    requires: ["CNPJ ativo", "projeto de base tecnológica"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: mcti
+    name: "MCTI"
+    full_name: "Ministério da Ciência, Tecnologia e Inovação"
+    scope: federal
+    portal_url: "https://www.gov.br/mcti/pt-br"
+    calls_url: "https://www.gov.br/mcti/pt-br/acesso-a-informacao/editais-e-chamadas"
+    programs:
+      - name: "Lei do Bem"
+        note: "Benefício fiscal automático (não é edital) para empresas em lucro real com P&D interno — relatório anual FORMP&D com prazo em julho"
+      - name: "Lei de Informática"
+        note: "Incentivo fiscal setorial"
+      - name: "FNDCT"
+        note: "Fundo executado por FINEP e CNPq"
+    priority_alchemia: media
+    priority_note: >-
+      Prioridade média do guia (seção 9, item 9): "Lei do Bem — se a empresa apurar lucro real:
+      dedução direta dos gastos de P&D" — para uma biotech com P&D interno, "costuma ser a
+      captação de melhor relação custo/benefício" (nota do guia na seção 1.4).
+    requires: ["empresa em regime de lucro real (para Lei do Bem)"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: embrapii
+    name: "EMBRAPII"
+    full_name: "Empresa Brasileira de Pesquisa e Inovação Industrial"
+    scope: federal
+    portal_url: "https://embrapii.org.br"
+    calls_url: "https://embrapii.org.br/chamadas-publicas/"
+    programs:
+      - name: "Contratação direta de Unidade EMBRAPII credenciada"
+        note: "Sem edital — a EMBRAPII banca até 1/3 do projeto, com contrapartida da empresa e da ICT"
+      - name: "Centros de Competência"
+        note: "Temáticos — já houve em biodiversidade brasileira, hidrogênio, etc."
+    priority_alchemia: alta
+    priority_note: >-
+      Prioridade alta do guia (seção 9, item 5): "EMBRAPII — via Unidade credenciada em
+      saúde/biotecnologia; contratação direta, sem edital" — "um dos caminhos mais rápidos de PD&I
+      subsidiado no Brasil."
+    requires: ["Unidade EMBRAPII credenciada disposta a contratar o projeto", "contrapartida financeira da empresa"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: bndes
+    name: "BNDES"
+    full_name: "Banco Nacional de Desenvolvimento Econômico e Social"
+    scope: federal
+    portal_url: "https://www.bndes.gov.br/wps/portal/site/home/onde-atuamos/inovacao"
+    calls_url: "https://www.bndes.gov.br/wps/portal/site/home/transparencia/chamadas-publicas-selecoes-publicas"
+    programs:
+      - name: "BNDES Garagem"
+        note: "Aceleração de negócios de impacto — https://garagem.bndes.gov.br"
+      - name: "BNDES Funtec"
+        note: "Não reembolsável para ICTs, com empresa âncora"
+      - name: "Chamada BNDES-Finep"
+        note: "Atração/expansão de Centros de PD&I no país (Nova Indústria Brasil)"
+      - name: "BNDES Finem Inovação"
+        note: "Linhas de crédito para inovação"
+    priority_alchemia: media
+    priority_note: >-
+      Prioridade média do guia (seção 9, item 8): "BNDES Funtec / Finep ICT — se houver ICT âncora
+      no consórcio."
+    requires: ["ICT âncora no consórcio (para Funtec)"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: sebrae
+    name: "Sebrae"
+    full_name: "Serviço Brasileiro de Apoio às Micro e Pequenas Empresas — ecossistema de empreendedorismo"
+    scope: federal
+    portal_url: "https://sebraestartups.com.br"
+    calls_url: "https://programas.sebraestartups.com.br"
+    programs:
+      - name: "InovAtiva Brasil"
+        note: "MDIC + Sebrae + CERTI — ciclos semestrais, gratuito (ver também entrada correspondente em corporate_programs.yaml)"
+      - name: "Startup Brasil"
+        note: "MCTI/CNPq"
+      - name: "PIPE Sebrae"
+        note: "FAPESP + Sebrae-SP — até R$ 1,5 mi da FAPESP + R$ 250 mil do Sebrae, combinável com o PIPE (ver entrada fapesp)"
+      - name: "Catalisa ICT / ALI (Agentes Locais de Inovação) / Prêmio Sebrae Startups / Inova Startups / Ideiaz"
+        note: "Programas recorrentes do ecossistema"
+    priority_alchemia: complementar
+    priority_note: >-
+      Não ranqueado como item independente na seção 9 — o guia menciona o PIPE Sebrae como
+      combinação "combinável" ao item 1 (FAPESP PIPE, prioridade alta), sem dar ao Sebrae uma
+      prioridade própria.
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: mdic
+    name: "MDIC"
+    full_name: "Ministério do Desenvolvimento, Indústria, Comércio e Serviços — programas industriais"
+    scope: federal
+    portal_url: "https://www.gov.br/mdic/pt-br"
+    calls_url: "https://www.gov.br/mdic/pt-br/composicao/se/cndi/nova-industria-brasil"
+    programs:
+      - name: "Nova Indústria Brasil"
+        note: "Política industrial guarda-chuva, inclusive das chamadas Mais Inovação da FINEP"
+      - name: "Rota 2030"
+        note: "Automotivo/mobilidade"
+      - name: "ENIMPACTO"
+        note: "Negócios de impacto"
+      - name: "ApexBrasil"
+        note: "Internacionalização de empresas"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 — programas majoritariamente fora do escopo direto de biotech/CADD."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: aneel
+    name: "ANEEL — P&D Regulado"
+    full_name: "Agência Nacional de Energia Elétrica — Programa de P&D do setor elétrico"
+    scope: federal
+    portal_url: "https://www.gov.br/aneel/pt-br"
+    calls_url: "https://www.gov.br/aneel/pt-br/assuntos/pesquisa-e-desenvolvimento"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 — setor elétrico, fora do escopo direto de biotech/CADD."
+    requires: ["projeto ligado ao setor elétrico"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: anp-pd
+    name: "ANP — P&D&I"
+    full_name: "Agência Nacional do Petróleo, Gás Natural e Biocombustíveis — cláusula de investimento em P&D&I"
+    scope: federal
+    portal_url: "https://www.gov.br/anp/pt-br"
+    calls_url: "https://www.gov.br/anp/pt-br/assuntos/pesquisa-desenvolvimento-inovacao"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 — setor de petróleo/gás, fora do escopo direto de biotech/CADD."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: ans-inovacao
+    name: "ANS — Programas de Indução"
+    full_name: "Agência Nacional de Saúde Suplementar"
+    scope: federal
+    portal_url: "https://www.gov.br/ans/pt-br"
+    calls_url: "https://www.gov.br/ans/pt-br"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 do guia — incluído por cobertura (agência reguladora com obrigação legal de P&D em saúde suplementar)."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: anatel-funttel
+    name: "ANATEL / FUNTTEL"
+    full_name: "Fundo para o Desenvolvimento Tecnológico das Telecomunicações"
+    scope: federal
+    portal_url: "https://www.gov.br/anatel/pt-br"
+    calls_url: "https://www.gov.br/anatel/pt-br"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 — setor de telecomunicações, fora do escopo direto de biotech/CADD."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: outros-orgaos-federais
+    name: "Outros órgãos federais com editais de pesquisa"
+    full_name: "EMBRAPA, MEC, Ministério do Meio Ambiente/Fundo Amazônia, INPI, Defesa (Marinha/Exército/FAB), FUNDEP/Rede Petro"
+    scope: federal
+    portal_url: "https://www.embrapa.br"
+    calls_url: "https://www.in.gov.br"
+    programs:
+      - name: "EMBRAPA"
+        note: "Agropecuária — https://www.embrapa.br"
+      - name: "Ministério da Educação (MEC)"
+        note: "https://www.gov.br/mec/pt-br"
+      - name: "Ministério do Meio Ambiente / Fundo Amazônia"
+        note: "https://www.gov.br/mma/pt-br"
+      - name: "INPI"
+        note: "Propriedade intelectual — programas de apoio — https://www.gov.br/inpi/pt-br"
+      - name: "Marinha / Exército / FAB"
+        note: "PD&I de defesa e dual use — https://www.gov.br/defesa/pt-br"
+      - name: "FUNDEP / Rede Petro"
+        note: "https://fundep.ufmg.br"
+      - name: "Diário Oficial da União"
+        note: "Fonte legal de todo edital federal — https://www.in.gov.br"
+    priority_alchemia: complementar
+    priority_note: "Aggregado de órgãos não classificados individualmente na seção 9 do guia — incluído por cobertura."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  # ---------------------------------------------------------------------------------------------
+  # 2. ESTADO DE SÃO PAULO
+  # ---------------------------------------------------------------------------------------------
+  - slug: fapesp
+    name: "FAPESP"
+    full_name: "Fundação de Amparo à Pesquisa do Estado de São Paulo"
+    scope: estadual_sp
+    portal_url: "https://fapesp.br"
+    calls_url: "https://fapesp.br/2185/chamadas-de-propostas-2026"
+    programs:
+      - name: "PIPE — Pesquisa Inovativa em Pequenas Empresas"
+        note: "Carro-chefe: Fase 1 (viabilidade, ~R$375 mil), Fase 2 (desenvolvimento, R$1,5 mi+), Fase 3 via parceiros"
+      - name: "PIPE Sebrae / PIPE Invest"
+        note: "PIPE + gestão do Sebrae-SP / conexão com investidores"
+      - name: "PITE"
+        note: "Parceria para Inovação Tecnológica — ICT + empresa cofinanciadora"
+      - name: "PAPPE / Subvenção"
+        note: "Em parceria com a FINEP"
+      - name: "CEPID"
+        note: "Centros de Pesquisa, Inovação e Difusão — 11 anos, grande porte"
+      - name: "CPE / ERC"
+        note: "Centros de Pesquisa em Engenharia com empresa âncora — ex. GSK-FAPESP em oncologia"
+      - name: "CPA"
+        note: "Centros de Pesquisa Aplicada — ex. IA aplicada à Saúde"
+      - name: "Auxílio Regular / Temático / Jovem Pesquisador / Projeto Inicial π"
+        note: "Formatos individuais/de grupo, do projeto pontual (Auxílio Regular) ao grande porte (Temático, até 5 anos)"
+      - name: "Políticas Públicas (PPPP)"
+        note: "Pesquisa aplicada com parceiro governamental, até R$500 mil/ano"
+      - name: "Consórcio Genomas de São Paulo"
+        note: "Sequenciamento subsidiado, até 2.000 amostras/projeto — altamente relevante para genômica clínica"
+      - name: "eScience e Data Science / Equipamentos Multiusuários (EMU)"
+        note: "Chamadas temáticas / infraestrutura compartilhada"
+      - name: "Acordos internacionais bilaterais"
+        note: "NWO, JSPS, DFG, ANR, NSF/NIH, UKRI e outros — https://fapesp.br/acordos"
+    priority_alchemia: alta
+    priority_note: >-
+      Prioridade alta do guia (seção 9, itens 1 e 4): "FAPESP PIPE Fase 1 → Fase 2 — desenhado
+      exatamente para empresa de base tecnológica sediada em SP" e "Consórcio Genomas de São Paulo
+      — sequenciamento subsidiado de até 2.000 amostras por projeto."
+    requires: ["empresa/proponente sediado em SP (para PIPE)"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: governo-sp-inovacao
+    name: "Governo do Estado de SP — órgãos de inovação"
+    full_name: "SCTI, InvestSP, Desenvolve SP, Agência SP, SPAI"
+    scope: estadual_sp
+    portal_url: "https://www.inovacao.sp.gov.br"
+    calls_url: "https://www.agenciasp.sp.gov.br"
+    programs:
+      - name: "SP Global Tech"
+        note: "Aceleração para internacionalização (SCTI + InvestSP) — seleciona ~100 startups/ano, ~20 para missões internacionais (SXSW, Web Summit, London Tech Week); inscrições geralmente no 4º trimestre"
+      - name: "Desenvolve SP — linhas Inovação"
+        note: "Crédito com garantias facilitadas, inclusive pré-operacional, até R$15 mi"
+      - name: "Programa Paulista de Inovação"
+        note: "Apoio ao SPAI (Sistema Paulista de Ambientes de Inovação)"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 do guia — incluído por cobertura do ecossistema estadual."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: parques-incubadoras-sp
+    name: "Parques tecnológicos e incubadoras de SP"
+    full_name: "Rede SPAI de parques, incubadoras e centros de inovação paulistas"
+    scope: estadual_sp
+    portal_url: "https://www.inovacao.sp.gov.br"
+    calls_url: "https://www.inovacao.sp.gov.br"
+    programs:
+      - name: "Parque Tecnológico de São José dos Campos"
+        note: "https://pqtec.org.br"
+      - name: "Supera Parque (Ribeirão Preto)"
+        note: "Forte em saúde/biotech — ver entrada dedicada supera-parque em corporate_programs.yaml"
+      - name: "CIETEC/IPEN-USP (São Paulo)"
+        note: "https://cietec.org.br"
+      - name: "Parque Tecnológico de Sorocaba"
+        note: "https://pqtec.com.br"
+      - name: "Parque Científico e Tecnológico da Unicamp"
+        note: "https://parque.unicamp.br"
+      - name: "Habitat Botucatu / Unesp"
+        note: "https://www.unesp.br"
+      - name: "Inova Barretos / Hospital de Amor"
+        note: "https://hospitaldeamor.com.br"
+      - name: "ANPROTEC"
+        note: "Rede nacional de incubadoras — https://anprotec.org.br"
+    priority_alchemia: complementar
+    priority_note: "Não classificado individualmente na seção 9 do guia — cobertura da seção 2.3."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  # ---------------------------------------------------------------------------------------------
+  # 3. UNIVERSIDADES E ICTs
+  # ---------------------------------------------------------------------------------------------
+  - slug: usp-auspin
+    name: "USP — AUSPIN"
+    full_name: "Agência USP de Inovação"
+    scope: universidade_ict
+    portal_url: "https://auspin.usp.br"
+    calls_url: "https://auspin.usp.br/editais/"
+    programs:
+      - name: "Ciência que Transforma"
+        note: "Linha A até R$25 mil / Linha B até R$50 mil — preparatório para PIPE/FAPESP"
+      - name: "PROBASE"
+        note: "Fomento à Pesquisa de Base e Livre Iniciativa"
+      - name: "USP Innovation Connect / PGI"
+        note: "Conexão com mercado / Programa de Formação em Gestão da Inovação"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 do guia — incluído por cobertura (relevante para vínculo de ICT parceira, requisito estrutural citado na seção 9)."
+    requires: ["vínculo institucional com a USP"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: outras-ict-nacionais
+    name: "Outras ICTs paulistas e nacionais"
+    full_name: "Unicamp, Unesp, UFSCar, UFABC, ITA, Instituto Mauá, Fiocruz, INCA e a rede CONFAP"
+    scope: universidade_ict
+    portal_url: "https://confap.org.br"
+    calls_url: "https://news.confap.org.br"
+    programs:
+      - name: "Inova Unicamp"
+        note: "https://www.inova.unicamp.br"
+      - name: "Unesp — AUIN"
+        note: "https://www.auin.unesp.br"
+      - name: "UFSCar — Agência de Inovação / UFABC — InovaUFABC"
+        note: "https://www.inovacao.ufscar.br · https://inova.ufabc.edu.br"
+      - name: "ITA/IEAv / Instituto Mauá de Tecnologia"
+        note: "https://www.ita.br · https://maua.br"
+      - name: "Fiocruz — editais e chamadas"
+        note: "https://portal.fiocruz.br/editais"
+      - name: "INCA — pesquisa"
+        note: "https://www.inca.gov.br/pesquisa"
+      - name: "CONFAP (rede das FAPs estaduais)"
+        note: "Chamadas nacionais conjuntas — https://confap.org.br"
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 9 do guia — incluído por cobertura (relevante para vínculo de ICT parceira)."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  # ---------------------------------------------------------------------------------------------
+  # 4. SAÚDE E CIÊNCIAS DA VIDA
+  # ---------------------------------------------------------------------------------------------
+  - slug: ministerio-saude-decit
+    name: "Ministério da Saúde / Decit-SCTIE"
+    full_name: "Departamento de Ciência e Tecnologia — Secretaria de Ciência, Tecnologia, Inovação e Complexo da Saúde"
+    scope: saude
+    portal_url: "https://www.gov.br/saude/pt-br"
+    calls_url: "https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/chamamentos-publicos"
+    programs:
+      - name: "Chamadas CNPq/Decit-SCTIE/MS — Saúde das Mulheres"
+        note: "Linha explícita de câncer de mama, colo do útero, colorretal e mortalidade materna"
+      - name: "Terapias avançadas e baseadas em ácidos nucleicos / Pesquisas inovadoras em vacinas"
+        note: "Chamadas recorrentes executadas via CNPq"
+      - name: "Doenças raras, oncologia, saúde digital, IA aplicada ao SUS"
+        note: "Chamadas recorrentes executadas via CNPq"
+      - name: "PPSUS — Programa Pesquisa para o SUS"
+        note: "Descentralizado via FAPs estaduais — em SP, via FAPESP (prioridade média do guia, seção 9 item 6)"
+      - name: "SEIDIGI — Saúde Digital"
+        note: "Chamamentos de soluções"
+    priority_alchemia: alta
+    priority_note: >-
+      Prioridade alta do guia (seção 9, item 2): "Chamadas CNPq/Decit-SCTIE/MS — Saúde das
+      Mulheres — há linha explícita de câncer de mama; exige parceria com ICT e proponente
+      doutor." O guia também lista PPSUS (item 6) sob este mesmo canal com prioridade média.
+    requires: ["vínculo do proponente com ICT", "proponente com título de doutor (na maioria dos editais)"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: proadi-sus
+    name: "PROADI-SUS"
+    full_name: "Programa de Apoio ao Desenvolvimento Institucional do SUS — editais dos hospitais de excelência"
+    scope: saude
+    portal_url: "https://hospitais.proadi-sus.org.br"
+    calls_url: "https://hospitais.proadi-sus.org.br/editais"
+    programs:
+      - name: "A.C. Camargo Cancer Center"
+        note: "https://accamargo.org.br"
+      - name: "Einstein Hospital Israelita"
+        note: "https://einstein.br"
+      - name: "Hospital Sírio-Libanês"
+        note: "https://hospitalsiriolibanes.org.br"
+      - name: "Hospital Alemão Oswaldo Cruz"
+        note: "https://hospitaloswaldocruz.org.br"
+      - name: "HCor"
+        note: "https://hcor.com.br"
+      - name: "Hospital Moinhos de Vento"
+        note: "https://hmv.org.br"
+      - name: "Beneficência Portuguesa de SP"
+        note: "https://bpsp.org.br"
+    priority_alchemia: media
+    priority_note: >-
+      Prioridade média do guia (seção 9, item 7): "PROADI-SUS — parceria com A.C. Camargo, Einstein
+      ou Sírio-Libanês para estudo multicêntrico."
+    requires: ["parceria formal com um dos 7 hospitais do programa"]
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: aceleradoras-hubs-saude
+    name: "Aceleradoras e hubs corporativos de saúde (fomento/inovação aberta)"
+    full_name: "Eretz.bio, InovaHC, Hospital de Amor, Dasa/Fleury, Roche, Bayer G4A, Merck/MSD, J&J JLABS, Novartis Biome e marketplaces de desafios"
+    scope: saude
+    portal_url: "https://distrito.me"
+    calls_url: "https://openstartups.net"
+    programs:
+      - name: "Eretz.bio (Einstein)"
+        note: "Fluxo contínuo — ver entrada completa eretz-bio em corporate_programs.yaml"
+      - name: "InovaHC (HCFMUSP)"
+        note: "https://inovahc.hc.fm.usp.br"
+      - name: "Hospital de Amor — Núcleo de Inovação (Barretos)"
+        note: "https://hospitaldeamor.com.br"
+      - name: "Dasa / Grupo Fleury"
+        note: "Programas de inovação aberta"
+      - name: "Roche Brasil / Bayer G4A / Merck-MSD / J&J JLABS / Novartis Biome"
+        note: "Programas corporativos de parceria — ver corporate_programs.yaml para o detalhe internacional equivalente"
+      - name: "Distrito / 100 Open Startups"
+        note: "Marketplace de desafios corporativos"
+    priority_alchemia: complementar
+    priority_note: >-
+      Não listado como item independente na seção 9 deste guia — Eretz.bio aparece com
+      prioridade própria (alta) na seção 10 do guia 2 (corporate_programs.yaml), fonte primária
+      deste tipo de programa.
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  # ---------------------------------------------------------------------------------------------
+  # 5. FUNDAÇÕES PRIVADAS E TERCEIRO SETOR
+  # ---------------------------------------------------------------------------------------------
+  - slug: serrapilheira
+    name: "Instituto Serrapilheira"
+    full_name: "Instituto Serrapilheira — ciência básica de fronteira"
+    scope: fundacao_privada
+    portal_url: "https://serrapilheira.org"
+    calls_url: "https://serrapilheira.org"
+    priority_alchemia: complementar
+    priority_note: >-
+      Não classificado na seção 9 do guia (que foca em captação aplicada/translacional) — o guia
+      o descreve na seção 5 como "o edital privado mais competitivo do país", relevante para
+      componente de ciência básica do pipeline, mas sem prioridade própria herdada.
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: outras-fundacoes-privadas
+    name: "Outras fundações privadas e terceiro setor"
+    full_name: "Boticário, Lemann, TIM, Ling, Estudar, Maria Cecília Souto Vidigal, iCS, Bunge, Votorantim/Itaú Social/Telefônica Vivo, SBPC/ABC"
+    scope: fundacao_privada
+    portal_url: "https://portal.sbpcnet.org.br"
+    calls_url: "https://www.abc.org.br"
+    programs:
+      - name: "Fundação Grupo Boticário"
+        note: "Biodiversidade e conservação"
+      - name: "Fundação Lemann / Instituto Ling / Fundação Estudar"
+        note: "Educação, formação e bolsas de liderança"
+      - name: "Instituto TIM"
+        note: "Ciência, tecnologia e educação"
+      - name: "Fundação Maria Cecília Souto Vidigal"
+        note: "Primeira infância"
+      - name: "Instituto Clima e Sociedade (iCS)"
+        note: "Clima"
+      - name: "Fundação Bunge"
+        note: "Prêmios científicos"
+      - name: "Instituto Votorantim / Itaú Social / Fundação Telefônica Vivo"
+        note: "Impacto social"
+      - name: "SBPC / ABC"
+        note: "Divulgação de oportunidades das sociedades científicas"
+    priority_alchemia: complementar
+    priority_note: "Não classificadas na seção 9 do guia — focos majoritariamente fora de biotech/CADD; incluídas por cobertura."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  # ---------------------------------------------------------------------------------------------
+  # 6. INTERNACIONAL
+  # ---------------------------------------------------------------------------------------------
+  - slug: horizon-europe
+    name: "Horizon Europe"
+    full_name: "Programa-quadro de Pesquisa e Inovação da União Europeia"
+    scope: internacional
+    portal_url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal"
+    calls_url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal"
+    programs:
+      - name: "Consórcios internacionais"
+        note: "Maior programa de P&I do mundo; grupos brasileiros elegíveis como parceiros de consórcio"
+    priority_alchemia: complementar
+    priority_note: "Guia não classifica esta fonte nas seções 9/10 (aparece só listada na seção 6, tabela de fontes internacionais) — incluída por cobertura obrigatória do catálogo, sem prioridade herdada."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: nih-fogarty
+    name: "NIH / Fogarty International Center"
+    full_name: "National Institutes of Health (EUA) — subawards, colaborações e Fogarty International Center"
+    scope: internacional
+    portal_url: "https://grants.nih.gov"
+    calls_url: "https://www.fic.nih.gov"
+    programs:
+      - name: "NSF — chamadas conjuntas com FAPESP"
+        note: "https://www.nsf.gov"
+    priority_alchemia: complementar
+    priority_note: "Guia não classifica esta fonte nas seções 9/10 — incluída por cobertura obrigatória do catálogo, sem prioridade herdada."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: wellcome-trust
+    name: "Wellcome Trust"
+    full_name: "Wellcome Trust (Reino Unido) — saúde global, doenças infecciosas, saúde mental"
+    scope: internacional
+    portal_url: "https://wellcome.org/grant-funding"
+    calls_url: "https://wellcome.org/grant-funding"
+    priority_alchemia: complementar
+    priority_note: "Não classificado nas seções 9/10 do guia — incluído por cobertura."
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: czi-eoss
+    name: "CZI EOSS"
+    full_name: "Chan Zuckerberg Initiative — Essential Open Source Software for Science"
+    scope: internacional
+    portal_url: "https://chanzuckerberg.com/eoss"
+    calls_url: "https://chanzuckerberg.com/eoss"
+    priority_alchemia: media
+    priority_note: >-
+      Prioridade média do guia (seção 9, item 10): "CZI EOSS — se houver componente de software
+      científico open source (base molecular aberta)" — relevante para o Alchemia Database.
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"
+
+  - slug: outras-fontes-internacionais
+    name: "Outras fontes internacionais"
+    full_name: "ERC (via CNPq), Gates Foundation, Susan G. Komen, AACR, UICC, IDRC, Newton Fund, DAAD, JSPS"
+    scope: internacional
+    portal_url: "https://erc.europa.eu"
+    calls_url: "https://erc.europa.eu"
+    programs:
+      - name: "ERC — European Research Council"
+        note: "Via chamadas CNPq/ERC — visitas de pesquisadores"
+      - name: "Bill & Melinda Gates Foundation — Grand Challenges"
+        note: "Há edição Brasil — https://gcgh.grandchallenges.org"
+      - name: "Susan G. Komen"
+        note: "Câncer de mama — grants internacionais limitados"
+      - name: "AACR / UICC"
+        note: "Grants, fellowships e bolsas em oncologia"
+      - name: "IDRC (Canadá)"
+        note: "Desenvolvimento e saúde global"
+      - name: "Newton Fund / British Council, DAAD (Alemanha), JSPS (Japão)"
+        note: "Cooperação bilateral"
+    priority_alchemia: complementar
+    priority_note: >-
+      Não classificadas individualmente nas seções 9/10 do guia. Nota: o guia também lista Google
+      for Startups, Microsoft Founders Hub, AWS Activate e NVIDIA Inception na mesma tabela da
+      seção 6 — esses quatro têm entrada própria, mais detalhada e com prioridade herdada da seção
+      10, em corporate_programs.yaml (fonte primária desse tipo de programa).
+    source_guide: canais-editais-fomento-brasil.md
+    last_reviewed: "2026-08-19"

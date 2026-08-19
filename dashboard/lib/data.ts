@@ -2,7 +2,7 @@ import 'server-only';
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
-import type { CompanyConfig, NewsItem, PipelineMeta, ResourceConfig } from './types';
+import type { CompanyConfig, CorporateProgram, FundingChannel, NewsItem, PipelineMeta, ResourceConfig } from './types';
 
 // Este dashboard lê os JSONs produzidos pelo pipeline Python em tempo de requisição
 // (server components, sem client-side fetch) -- qualquer execução nova do pipeline aparece aqui
@@ -68,6 +68,49 @@ export function getResources(): ResourceConfig[] {
     {}
   );
   return parsed.resources ?? [];
+}
+
+// Fase 2 (2026-08-19) -- mesmo padrão de readYamlSafe já usado por getResources(). Catálogo
+// estático, curado a partir dos dois guias de referência do fundador; nenhuma coleta/LLM
+// envolvida. Ver docs/specs/2026-08-19-funding-opportunities-and-app-restructure.md.
+export function getFundingChannels(): FundingChannel[] {
+  const parsed = readYamlSafe<{ funding_channels?: FundingChannel[] }>(
+    path.join(CONFIG_DIR, 'funding_channels.yaml'),
+    {}
+  );
+  return parsed.funding_channels ?? [];
+}
+
+export function getCorporatePrograms(): CorporateProgram[] {
+  const parsed = readYamlSafe<{ corporate_programs?: CorporateProgram[] }>(
+    path.join(CONFIG_DIR, 'corporate_programs.yaml'),
+    {}
+  );
+  return parsed.corporate_programs ?? [];
+}
+
+export interface NewsletterEdition {
+  date: string;
+  content: string;
+}
+
+// Rota /newsletter (2026-08-19) -- somente leitura. `pipeline/data/newsletter/AAAA-MM-DD.md` é
+// populado por outro setor (alchemia-bots), rodando em paralelo -- este dashboard nunca escreve
+// aqui. Se o diretório não existir ainda, ou estiver vazio, retorna null sem quebrar a rota (ver
+// app/newsletter/page.tsx, estado vazio).
+export function getLatestNewsletter(): NewsletterEdition | null {
+  const dir = path.join(DATA_DIR, 'newsletter');
+  try {
+    if (!fs.existsSync(dir)) return null;
+    const files = fs.readdirSync(dir).filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f));
+    if (files.length === 0) return null;
+    files.sort(); // nome AAAA-MM-DD.md ordena lexicograficamente na mesma ordem que a data
+    const latest = files[files.length - 1];
+    const content = fs.readFileSync(path.join(dir, latest), 'utf-8');
+    return { date: latest.replace(/\.md$/, ''), content };
+  } catch {
+    return null;
+  }
 }
 
 export function timeAgo(iso: string | null | undefined): string {

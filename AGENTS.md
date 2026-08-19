@@ -668,3 +668,208 @@ powershell -NoProfile -Command "Invoke-CimMethod -ClassName Win32_Process -Metho
 plano simples morre em silêncio junto com a sessão que o criou. Sobrevive ao fim da sessão, **não**
 sobrevive a reboot/logoff — para isso seria preciso uma Tarefa Agendada com gatilho "ao logon",
 que **não** foi criada (decisão do fundador, muda o comportamento da máquina a cada logon).
+
+## Addendum — 2026-08-19: Fase 2 especificada (editais de fomento + programas corporativos + reestruturação do app); repositório GitHub privado confirmado
+
+A pedido do fundador, esta rodada abre a **Fase 2** do setor (já prevista como backlog na spec
+fundacional): adicionar ao app editais de fomento à pesquisa e programas corporativos para
+startups, usando dois guias de referência fornecidos pelo fundador
+(`guia-captacao-programas-corporativos-startups.md`, `canais-editais-fomento-brasil.md`), mais
+reestruturação das páginas/navegação com assets interativos, consolidando o `alchemia-news` como
+ferramenta de uso da empresa inteira. Spec nova, **em revisão** (Portão de Revisão pendente):
+`docs/specs/2026-08-19-funding-opportunities-and-app-restructure.md`. Resumo da decisão de
+arquitetura: dois catálogos estáticos novos (`funding_channels.yaml`, `corporate_programs.yaml`),
+seguindo exatamente o padrão já validado de `resources.yaml` — **não** uma extensão de `common.Item`
+(catálogo de referência tem forma diferente de evento datado que se acumula e deduplica). Deploy com
+acesso privado via URL é explicitamente Fase 4, fora do escopo de implementação desta spec, por
+pedido do fundador ("posteriormente").
+
+**Achado da auditoria desta rodada, agora resolvido:** esta própria auditoria tinha encontrado
+`alchemia-ai/alchemia-news/.git` real (branch `main`, um commit `ccc83d7 "first commit"`, remoto
+`github.com/alchemia-solutions/alchemia-news.git`) sem nenhum documento do setor mencionar isso.
+**Confirmado pelo fundador nesta conversa:** o repositório é **privado**, e o commit/push inicial
+foi ação dele mesmo, fora de qualquer sessão de agente — consistente com a política de git de toda
+a empresa (nenhum agente executa comando git de escrita em remoto). Este é o destino de hospedagem
+planejado para o deploy da Fase 4 (ainda não executado).
+
+**Spec companheira, setor irmão:** `alchemia-ai/alchemia-bots/docs/specs/
+2026-08-19-axel-newsletter-upgrade.md` (também em revisão) — upgrade da mensagem do Axel de
+"título+fonte+link" para newsletter completa com resumo estruturado e insights, consumindo o mesmo
+dado deste setor (incluindo, quando implementada, a seção de oportunidades desta spec).
+`alchemia-bots` ganhou sub-agente dedicado nesta mesma rodada (não tinha nenhum até hoje) — ver
+`alchemia-ai/alchemia-agents/.claude/agents/alchemia-bots.md`.
+
+Ver `alchemia-brain/02-Harness/alchemia-news.md` e `alchemia-brain/99-Changelog/2026-08-19.md`.
+
+## Addendum — 2026-08-19 (mais tarde): gate de acesso da diretoria (`dashboard/proxy.ts`), pronto para o deploy privado na Vercel
+
+A pedido do fundador, o deploy privado (Fase 4 da spec acima, antes "posteriormente") começou nesta
+mesma data. Decisão: **gate de acesso no próprio app**, não a proteção nativa da Vercel — no plano
+Hobby, "Vercel Authentication" só protege URLs de preview, o domínio de produção fica público;
+proteger produção de verdade exigiria upgrade para Pro. Gate no app funciona em qualquer plano.
+
+`dashboard/proxy.ts` — Basic Auth via `SITE_AUTH_USER`/`SITE_AUTH_PASSWORD` (variáveis de ambiente,
+nunca no código). **Só entra em vigor quando `process.env.VERCEL` existe** (setado automaticamente
+pela Vercel) — `npm run dev`/`npm run start` local continuam sem gate, como sempre. **Falha
+fechada por design:** se as duas variáveis não estiverem configuradas no projeto Vercel, o site
+fica bloqueado para todo mundo até serem definidas — nunca abre por esquecimento de configuração.
+
+**Nota técnica real, específica desta versão do Next.js:** o arquivo se chama `proxy.ts`, não
+`middleware.ts` — no Next.js 16, `middleware` foi **deprecado e renomeado para `proxy`** (mesma
+API, export renomeado). Confirmado lendo `node_modules/next/dist/docs/.../proxy.md` antes de
+escrever qualquer código — o próprio `dashboard/AGENTS.md` deste repositório já avisa para não
+confiar em memória de treino sobre a API desta versão.
+
+**Bug real encontrado e corrigido antes de aplicar:** a primeira versão usava travessão (—,
+U+2014) dentro do valor do header `WWW-Authenticate` — headers HTTP só aceitam ByteString (Latin1),
+e isso quebrava com `500 Internal Server Error` em vez do `401` esperado (`TypeError: Cannot
+convert argument to a ByteString`). Trocado por hífen ASCII. **Verificado com servidor de produção
+real** (`npm run build` + `npm run start`, `VERCEL=1` simulado), 5 cenários: sem credencial → 401;
+credencial errada → 401; credencial certa → 200; `VERCEL=1` sem as variáveis configuradas → 401
+(fail-closed); sem `VERCEL` (dev local) → 200 sem credencial nenhuma.
+
+**Dado dinâmico e frescor do deploy:** confirmado que `pipeline/data/*.json`,
+`pipeline/data/newsletter/*.md` e os dois catálogos YAML **não estão no `.gitignore`** — são
+versionados de propósito. Consequência prática: qualquer `git push` (de código ou só de dado)
+dispara um redeploy automático na Vercel (integração padrão GitHub↔Vercel) — não foi necessário
+nenhum Deploy Hook novo para a Fase 4 funcionar no nível de "atualizar quando eu quiser".
+Atualização automática 3x/dia (sem intervenção manual) não foi implementada nesta rodada — exigiria
+automatizar `git push`, e nenhum agente tem permissão de escrever em remoto (regra fixa da
+empresa); decisão de automatizar isso (ou não) fica com o fundador.
+
+Ver `alchemia-brain/02-Harness/alchemia-news.md` (a atualizar) e a instrução completa de deploy
+dada ao fundador nesta mesma conversa.
+
+## Addendum — 2026-08-19 (implementação): Fase 1 da spec de fomento/programas entregue —
+## dois catálogos novos, duas rotas novas, três assets interativos, newsletter (leitura), sidebar
+## em 3 grupos
+
+Continuação da mesma data — a spec `docs/specs/2026-08-19-funding-opportunities-and-app-restructure.md`
+(Portão de Revisão `[x]` aprovado pelo fundador) teve sua Fase 1 implementada nesta rodada. Números
+abaixo vêm de leitura real (`yaml.safe_load` + contagem de entradas), `npm run typecheck`/
+`npm run build` reais e `curl` real contra um servidor de produção subido só para verificação
+(porta 3100, parado ao final — este setor segue sem serviço persistente, decisão de 2026-08-17
+inalterada) — nada estimado.
+
+**Dois catálogos novos, estáticos, curados a partir dos dois guias do fundador** (transcrição em
+palavras próprias, nunca cópia extensa verbatim — risco 1 da spec):
+
+- `pipeline/config/funding_channels.yaml` — **28 entradas** (`federal`: 13 · `internacional`: 5 ·
+  `estadual_sp`: 3 · `saude`: 3 · `universidade_ict`: 2 · `fundacao_privada`: 2), cobrindo todo o
+  mínimo exigido pelo Critério de Sucesso (CNPq, CAPES, FINEP, MCTI, EMBRAPII, BNDES, Sebrae/
+  InovAtiva, 4 agências reguladoras, FAPESP com 12 modalidades listadas em `programs`, USP/AUSPIN,
+  PROADI-SUS com os 7 hospitais, Serrapilheira, Horizon Europe, NIH/Fogarty) e mais. `priority_alchemia`:
+  4 `alta` + 4 `media` + 20 `complementar` — herdado literalmente da seção 9 do guia
+  (`canais-editais-fomento-brasil.md`); todo item sem classificação explícita naquela seção recebe
+  `complementar` com nota dizendo isso, nunca uma prioridade inventada.
+- `pipeline/config/corporate_programs.yaml` — **24 entradas** (`cloud_credits`: 6 ·
+  `hub_corporativo`: 5 · `accelerator_equity`: 4 · `accelerator_no_equity`: 4 ·
+  `habitat_nacional`: 3 · `saas_discount`: 2), cobrindo o mínimo exigido (Google for Startups
+  Cloud, AWS Activate, Microsoft Founders Hub, NVIDIA Inception, CNPEM/LNBio, SUPERA, Eretz.bio,
+  Cubo Itaú, InovAtiva Brasil) e mais. `priority_alchemia`: 4 `alta` + 3 `media` + 17
+  `complementar` — mapeamento explícito dos 3 blocos da seção 10 do guia
+  (`guia-captacao-programas-corporativos-startups.md`): "Prioridade máxima"→`alta`, "Prioridade
+  alta"→`media`, "Complementares"→`complementar` (documentado no cabeçalho do próprio YAML, para
+  não perder essa distinção); itens fora da seção 10 recebem `complementar` com nota própria.
+
+**`dashboard/lib/types.ts`**: `FundingChannel`/`CorporateProgram` (+ tipos auxiliares
+`FundingScope`/`CorporateProgramCategory`/`CorporateProgramRegion`/`PriorityAlchemia` e 4 mapas de
+label) — interfaces próprias, deliberadamente **não** um union type de `ItemKind`, conforme a
+decisão de arquitetura da spec.
+
+**`dashboard/lib/data.ts`**: `getFundingChannels()`/`getCorporatePrograms()`, mesmo padrão
+`readYamlSafe` de `getResources()`; `getLatestNewsletter()` novo (lê `pipeline/data/newsletter/
+AAAA-MM-DD.md` mais recente por nome de arquivo, `null` se o diretório não existir/estiver vazio —
+sem quebrar a rota).
+
+**Rotas novas** (`dashboard/app/fomento/page.tsx`, `dashboard/app/programas/page.tsx`,
+`dashboard/app/newsletter/page.tsx`), mesmo padrão de `bancos-ferramentas/page.tsx`
+(`force-dynamic`, agrupamento, `PageHeader`) + seção "★ Recomendado para a Alchemia" (itens com
+`priority_alchemia: alta`) em cada uma das duas primeiras.
+
+**Três componentes interativos novos**, todos client components com estado em `localStorage`,
+nenhum backend novo:
+
+- `components/OpportunityFilterBar.tsx` — filtro por categoria/escopo + prioridade + busca
+  textual. Decisão de design não prevista originalmente na spec, registrada aqui porque molda a
+  arquitetura: Server Components não podem passar **funções** como prop para Client Components (a
+  fronteira RSC só serializa dado + elementos React já renderizados), então este componente não
+  recebe um "render prop" de cartão — cada página server-renderiza o cartão de cada item e passa
+  metadado de filtragem (`category`/`priority`/`searchText`) junto com o nó já renderizado
+  (`node: React.ReactNode`); o componente só decide, no cliente, quais nós mostrar/esconder.
+- `components/DocumentChecklist.tsx` — os 12 itens da seção 11 do guia de programas corporativos
+  ("Prepare uma vez, reutilize sempre"), uma chave só de `localStorage`
+  (`alchemia-news:document-checklist`), deliberadamente compartilhada entre `/fomento` e
+  `/programas` — é preparo único da empresa, não algo por página.
+- `components/StatusTracker.tsx` — 5 estados (não aplicado/em preparação/submetido/aprovado/
+  rejeitado) por `slug` de oportunidade, `localStorage` chaveado por slug
+  (`alchemia-news:opportunity-status:<slug>`), embutido em cada cartão via
+  `FundingChannelCard.tsx`/`CorporateProgramCard.tsx` (dois componentes server-safe novos, sem
+  `'use client'`, no mesmo espírito de `ItemCard.tsx` já existente).
+
+**`components/MarkdownLite.tsx`** (novo, não listado na spec original mas necessário para a rota
+`/newsletter`): renderizador de Markdown mínimo, **sem dependência nova** (nenhum pacote npm
+adicionado) — suficiente para títulos, listas, negrito/itálico, links, `código` e `---`; não é um
+parser CommonMark completo. Decisão deliberada: a spec não especifica o formato exato que
+`alchemia-bots` vai gravar em `pipeline/data/newsletter/*.md`, e este setor não tem acesso de
+escrita a `alchemia-ai/alchemia-bots/` para coordenar antecipadamente — um parser mínimo e
+sem-dependência é o que reduz risco de quebra por formato inesperado, sem acoplar a um pacote
+externo para um caso de uso simples.
+
+**`components/Sidebar.tsx`** reorganizado em 3 grupos com `<h3>` de seção — "Inteligência de
+Mercado" (Notícias, Artigos & Papers, Empresas, Bancos & Ferramentas), "Captação de Recursos"
+(Fomento, Programas), "Comunicação" (Newsletter) — mais "Painel" como item de topo (fora dos
+grupos, antes deles) e "Sobre" como item de rodapé (fora dos grupos, depois deles), preservando a
+posição visual que "Sobre" já tinha. **Nota de nomenclatura:** a spec original (seção "Estado
+Alvo", ponto 5) previa só 2 grupos, sem "Comunicação"/Newsletter — o prompt de implementação desta
+rodada pediu explicitamente 3 grupos incluindo Newsletter; tratado como extensão explícita da spec
+pelo fundador nesta mesma conversa, não como divergência não resolvida.
+
+**`app/sobre/page.tsx`**: nova seção "Fomento e programas corporativos" descrevendo os dois
+catálogos como curadoria estática (não coletada), com o qualificador "direcional — confirmar
+sempre na fonte/portal oficial"; parágrafo de abertura reescrito para descrever o app como
+ferramenta da **empresa inteira**, não só do setor que o mantém; duas linhas novas em "O que este
+painel NÃO faz (ainda)" cobrindo o escopo real do `localStorage` (checklist/tracker são por
+navegador, não multiusuário) e da rota `/newsletter` (somente leitura, populada por outro setor).
+
+**Verificação real, não presumida:**
+
+- `npm run typecheck` — limpo, exit 0, zero erro.
+- `npm run build` — `Compiled successfully in 15.1s`; as **10 rotas de página** do App Router
+  (`/`, `/artigos`, `/bancos-ferramentas`, `/empresas`, `/empresas/[slug]`, `/fomento`,
+  `/newsletter`, `/noticias`, `/programas`, `/sobre`) todas `ƒ` (server-rendered on demand) — a
+  condição para refletir o pipeline/YAML sem rebuild, preservada.
+- Servidor de produção subido só para este teste (`next start -p 3100`, parado ao final): as
+  **9 rotas de página estática** (excluindo a dinâmica `/empresas/[slug]`, inalterada nesta rodada)
+  responderam **200** via `curl` real.
+- **Critério de Sucesso "dado lido do YAML, não hardcoded" verificado ao vivo**: editado
+  temporariamente `name: "CNPq"` → `"CNPq-VERIFICACAO-TEMP"` em `funding_channels.yaml` com o
+  servidor já no ar (sem restart) — a mudança apareceu em `/fomento` na requisição seguinte;
+  revertido e reconfirmado (`grep` mostrando `CNPq-VERIFICACAO-TEMP` some, `CNPq` volta), YAML
+  re-parseado depois (28 entradas, `cnpq.name == "CNPq"`) para confirmar que a edição/reversão não
+  corrompeu o arquivo.
+- Checklist/tracker testados por leitura de código + `localStorage`, não por clique manual em
+  navegador real nesta sessão (harness sem acesso a browser interativo) — a lógica de
+  leitura/escrita (`JSON.stringify`/`JSON.parse`, chave por slug, placeholder de mesma altura
+  pré-hidratação) foi revisada linha a linha, mas o Critério de Sucesso "testado manualmente:
+  clicar, marcar, recarregar" da spec **não foi exercitado por clique humano nesta rodada** — fica
+  como verificação recomendada ao fundador antes de considerar este item 100% fechado.
+- `alchemia-ai/alchemia-agents/harness/check_runtime_integrity.py` — **OK** (`14 agentes/20 skills`
+  Claude e Codex, 6 `AGENTS.md` canônicos, mirror íntegro, configs sem token literal) — nenhum
+  arquivo de harness foi tocado nesta rodada; o número de agentes subiu para 14 por trabalho
+  paralelo de outra sessão (`alchemia-bots`, ver addendum acima), não por esta implementação.
+
+**Não implementado nesta rodada, por escopo explícito da Fase 1** (nada disso é pendência
+silenciosa — todos já listados como Fase 2/3/4 na spec): monitoramento ativo de "chamadas abertas"
+com timestamp de verificação; persistência multiusuário do tracker de status; deploy privado com
+URL. `pipeline/data/newsletter/` segue vazio nesta sessão (setor `alchemia-bots` popula em
+paralelo) — a rota `/newsletter` foi verificada apenas no estado vazio ("Nenhuma newsletter
+publicada ainda."), nunca com conteúdo real, porque nenhuma edição existia no momento do teste.
+
+**Arquivos criados:** `pipeline/config/funding_channels.yaml`, `pipeline/config/corporate_programs.yaml`,
+`dashboard/app/fomento/page.tsx`, `dashboard/app/programas/page.tsx`, `dashboard/app/newsletter/page.tsx`,
+`dashboard/components/OpportunityFilterBar.tsx`, `dashboard/components/DocumentChecklist.tsx`,
+`dashboard/components/StatusTracker.tsx`, `dashboard/components/FundingChannelCard.tsx`,
+`dashboard/components/CorporateProgramCard.tsx`, `dashboard/components/MarkdownLite.tsx`.
+**Arquivos editados:** `dashboard/lib/types.ts`, `dashboard/lib/data.ts`,
+`dashboard/components/Sidebar.tsx`, `dashboard/app/sobre/page.tsx`, este arquivo (`AGENTS.md`).

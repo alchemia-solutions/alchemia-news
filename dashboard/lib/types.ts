@@ -37,6 +37,95 @@ export interface ResourceConfig {
   license_note: string;
 }
 
+// Fase 2 (2026-08-19) -- editais de fomento e programas corporativos. Família de dado separada
+// de `NewsItem`/`ResourceConfig`: catálogo de referência de vida longa, não evento datado que se
+// acumula/dedupe. Ver docs/specs/2026-08-19-funding-opportunities-and-app-restructure.md,
+// "Arquitetura/Stack" -- deliberadamente NÃO é um union type de ItemKind.
+
+export type FundingScope =
+  | 'federal'
+  | 'estadual_sp'
+  | 'saude'
+  | 'universidade_ict'
+  | 'fundacao_privada'
+  | 'internacional';
+
+export type PriorityAlchemia = 'alta' | 'media' | 'complementar';
+
+export interface FundingProgramNote {
+  name: string;
+  note: string;
+}
+
+export interface FundingChannel {
+  slug: string;
+  name: string;
+  full_name: string;
+  scope: FundingScope;
+  portal_url: string;
+  calls_url: string;
+  programs?: FundingProgramNote[];
+  priority_alchemia: PriorityAlchemia;
+  priority_note: string;
+  requires?: string[];
+  source_guide: string;
+  last_reviewed: string;
+}
+
+export type CorporateProgramCategory =
+  | 'cloud_credits'
+  | 'saas_discount'
+  | 'accelerator_no_equity'
+  | 'accelerator_equity'
+  | 'habitat_nacional'
+  | 'hub_corporativo';
+
+export type CorporateProgramRegion = 'global' | 'brasil' | 'sp';
+
+export interface CorporateProgram {
+  slug: string;
+  name: string;
+  category: CorporateProgramCategory;
+  region: CorporateProgramRegion;
+  portal_url: string;
+  benefit_summary: string;
+  eligibility_summary: string;
+  priority_alchemia: PriorityAlchemia;
+  priority_note: string;
+  source_guide: string;
+  last_reviewed: string;
+}
+
+export const FUNDING_SCOPE_LABELS: Record<FundingScope, string> = {
+  federal: 'Federal',
+  estadual_sp: 'Estadual — São Paulo',
+  saude: 'Saúde',
+  universidade_ict: 'Universidades & ICTs',
+  fundacao_privada: 'Fundações Privadas',
+  internacional: 'Internacional',
+};
+
+export const CORPORATE_CATEGORY_LABELS: Record<CorporateProgramCategory, string> = {
+  cloud_credits: 'Créditos de Nuvem',
+  saas_discount: 'SaaS para Startups',
+  accelerator_no_equity: 'Aceleradora (sem equity)',
+  accelerator_equity: 'Aceleradora (com equity)',
+  habitat_nacional: 'Habitat/Parque Nacional',
+  hub_corporativo: 'Hub Corporativo',
+};
+
+export const CORPORATE_REGION_LABELS: Record<CorporateProgramRegion, string> = {
+  global: 'Global',
+  brasil: 'Brasil',
+  sp: 'São Paulo',
+};
+
+export const PRIORITY_LABELS: Record<PriorityAlchemia, string> = {
+  alta: 'Recomendado para a Alchemia',
+  media: 'Prioridade média',
+  complementar: 'Complementar',
+};
+
 export interface CollectorResult {
   count?: number;
   seconds?: number;

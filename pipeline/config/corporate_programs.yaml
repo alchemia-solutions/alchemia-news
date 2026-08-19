@@ -1,0 +1,467 @@
+# Catálogo curado de programas corporativos para startups (créditos de nuvem, SaaS, aceleradoras,
+# parques tecnológicos, hubs de inovação) relevantes para a Alchemia Solutions -- alimenta a
+# página "/programas" do dashboard. Conteúdo estático (não coletado automaticamente), transcrito e
+# resumido em palavras próprias a partir de `guia-captacao-programas-corporativos-startups.md`
+# (guia de referência do fundador, ago/2026, arquivo original em
+# C:\Users\AryelBezerra\Downloads\). Cada entrada tem link para o portal oficial.
+#
+# Aviso do próprio guia (seção 0), preservado aqui: "os tetos de crédito mudam a cada trimestre e
+# variam por tier, região e elegibilidade. Os números são direcionais... confirme sempre na página
+# oficial antes de planejar orçamento em cima deles." Nenhum valor citado nesta UI deve aparecer
+# sem esse qualificador.
+#
+# Ver docs/specs/2026-08-19-funding-opportunities-and-app-restructure.md para o schema completo.
+#
+# category: cloud_credits | saas_discount | accelerator_no_equity | accelerator_equity |
+#           habitat_nacional | hub_corporativo
+# region: global | brasil | sp
+#
+# priority_alchemia herdado da seção 10 do guia ("Aderência ao perfil de biotech/CADD com projeto
+# em oncologia molecular"), que tem 3 blocos explícitos: "Prioridade máxima" (mapeado para
+# `alta`), "Prioridade alta" (mapeado para `media`) e "Complementares" (mapeado para
+# `complementar`) -- essa é a única forma de encaixar os 3 blocos do guia nos 3 valores do schema
+# sem inventar nada; cada `priority_note` cita o bloco original por extenso para nunca perder essa
+# distinção. Programas não mencionados na seção 10 recebem `complementar` com nota explícita de
+# que não foram ranqueados pelo guia (não confundir com o bloco "Complementares" do próprio guia).
+
+corporate_programs:
+  # ---------------------------------------------------------------------------------------------
+  # PARTE I — PROGRAMAS INTERNACIONAIS
+  # 1. Créditos de nuvem e computação
+  # ---------------------------------------------------------------------------------------------
+  - slug: google-for-startups-cloud
+    name: "Google for Startups Cloud Program"
+    category: cloud_credits
+    region: global
+    portal_url: "https://cloud.google.com/startup"
+    benefit_summary: >-
+      Maior teto publicado do mercado em 2026 para startups AI-first. Três tiers direcionais:
+      Start (até ~US$2.000 em créditos GCP/Firebase), Scale (até ~US$200.000 em 2 anos) e AI-First
+      (até ~US$350.000 em 2 anos). Cobre Vertex AI, Gemini/Gemma, TPUs, BigQuery, GKE, Cloud Run e
+      storage — modelos de terceiros são cobrados à parte. Atenção ao "penhasco do ano 2": a
+      cobertura costuma cair de ~100% para ~20% no segundo ano.
+    eligibility_summary: >-
+      Start: startup de tecnologia, fundada há menos de 5 anos, sem investidor institucional.
+      Scale: rodada pré-seed a Série A institucional (SAFE conta; grants governamentais,
+      crowdfunding, anjo e F&F não contam). AI-First: uso de Vertex AI/Gemini como base do
+      produto, funding VC seed–Série A, fundada há menos de 10 anos, sem ter recebido mais de
+      US$5.000 em créditos GCP prévios.
+    priority_alchemia: alta
+    priority_note: >-
+      Bloco "Prioridade máxima" do guia (seção 10, item 4) — "se houver componente AI-first no
+      produto, mapear o caminho até o tier de US$350 mil."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: aws-activate
+    name: "AWS Activate"
+    category: cloud_credits
+    region: global
+    portal_url: "https://aws.amazon.com/activate"
+    benefit_summary: >-
+      Três tiers direcionais: Founders (autoatendimento, sem VC/aceleradora, créditos na casa de
+      US$1.000–5.000), Portfolio (até ~US$100.000, exige "Organization ID" de VC/aceleradora/
+      incubadora parceira) e Generative AI (até ~US$300.000 para startups de IA qualificadas).
+      Programas relacionados: AWS for Health / Healthcare Accelerator, AWS Health Equity
+      Initiative.
+    eligibility_summary: >-
+      Site funcional com domínio próprio, e-mail corporativo no domínio, deck/descrição do
+      produto, data de fundação, headcount. O tier Portfolio exige Organization ID — entrar no
+      NVIDIA Inception é uma das formas de destravá-lo (ver entrada nvidia-inception).
+    priority_alchemia: complementar
+    priority_note: >-
+      Não classificado na seção 10 do guia (aparece como passo 3 da sequência de "credit
+      stacking" da seção 8) — incluído por cobertura obrigatória do catálogo, sem prioridade
+      própria herdada.
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: microsoft-founders-hub
+    name: "Microsoft for Startups Founders Hub"
+    category: cloud_credits
+    region: global
+    portal_url: "https://www.microsoft.com/startups"
+    benefit_summary: >-
+      O programa mais acessível dos três grandes — não exige VC nem aceleradora para começar.
+      Estágios direcionais: Ideate (~US$1.000, autoaplicação imediata), Build (~US$5.000–25.000,
+      após verificação de negócio), Grow (~US$25.000–50.000), Scale (~US$120.000–150.000, via
+      Investor Network/código de aceleradora). Além dos créditos Azure: GitHub Enterprise, M365
+      Business Premium, LinkedIn Premium, Azure OpenAI Service e sessões com especialistas
+      técnicos.
+    eligibility_summary: >-
+      Exige conta Microsoft pessoal (MSA), não corporativa/escolar. Verificação de negócio em até
+      90 dias, sob pena de perder parte dos créditos. Créditos começam a expirar a partir da
+      ativação — não ativar antes de estar pronto para consumir. Não cobre licenças M365,
+      Dynamics, Power BI Pro nem Azure Marketplace.
+    priority_alchemia: alta
+    priority_note: >-
+      Bloco "Prioridade máxima" do guia (seção 10, item 2) — "tier de entrada imediato, sem
+      exigência de investidor; cobre infraestrutura enquanto os editais públicos não saem."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: nvidia-inception
+    name: "NVIDIA Inception"
+    category: cloud_credits
+    region: global
+    portal_url: "https://www.nvidia.com/en-us/startups/"
+    benefit_summary: >-
+      Gratuito, sem equity, sem prazo e sem coorte. Créditos do Deep Learning Institute, preço
+      preferencial em hardware/software, acesso a NIM/SDKs, créditos de nuvem via parceiros (rotas
+      documentadas para AWS Activate e Nebius), Inception Capital Connect (rede de VCs), badge e
+      co-marketing. Stack BioNeMo (modelos de linguagem para proteínas, docking, geração
+      molecular) e Clara (imagem médica, genômica) — diretamente aplicável a CADD.
+    eligibility_summary: >-
+      Empresa constituída em qualquer país (CNPJ brasileiro elegível), menos de 10 anos de
+      fundação, pelo menos um desenvolvedor no time, site funcional. Receita não é requisito.
+      Não elegíveis: consultorias/software houses terceirizadas, empresas de criptomoedas,
+      provedores de nuvem, revendas, capital aberto. Regra de ouro: candidatar-se como empresa de
+      produto de IA, nunca como prestadora de serviço — principal causa de rejeição. Decisão em
+      2–4 semanas; perfil deve ser atualizado a cada 6 meses para manter elegibilidade.
+    priority_alchemia: alta
+    priority_note: >-
+      Bloco "Prioridade máxima" do guia (seção 10, item 1) — "fazer nas próximas semanas";
+      "acesso ao stack BioNeMo/Clara é diretamente aplicável a descoberta de fármacos assistida
+      por computador. Sem custo, sem equity, sem prazo."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: outros-provedores-cloud
+    name: "Outros provedores de infraestrutura de nuvem"
+    category: cloud_credits
+    region: global
+    portal_url: "https://www.oracle.com/startup/"
+    benefit_summary: >-
+      Programas de crédito/infraestrutura de provedores menores ou especializados: Oracle for
+      Startups (OCI, GPUs), IBM for Startups (Watsonx), Cloudflare for Startups (rede, edge, R2),
+      DigitalOcean Hatch (early stage), Scaleway Startup Program (GPU, soberania de dados na UE),
+      Nebius/ex-Yandex Cloud (GPU, parceiro do NVIDIA Inception), Lambda Labs (GPU cloud), MongoDB
+      for Startups, Snowflake Startup Program, Databricks for Startups, Hugging Face (Hub,
+      Spaces, Inference), GitHub for Startups (Enterprise gratuito).
+    eligibility_summary: "Varia por provedor — em geral autoinscrição via formulário 'for Startups' de cada produto, sem exigência de VC."
+    priority_alchemia: complementar
+    priority_note: "Não classificados individualmente na seção 10 do guia — cobertura da seção 1.5."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: provedores-modelos-ia
+    name: "Provedores de modelos de IA"
+    category: cloud_credits
+    region: global
+    portal_url: "https://openai.com/business"
+    benefit_summary: >-
+      OpenAI, Anthropic (Claude Platform), Google AI/Gemini API, Mistral AI, Cohere — créditos de
+      modelo distribuídos principalmente através de aceleradoras, VCs parceiros e marketplaces de
+      nuvem (Bedrock na AWS, Azure OpenAI na Microsoft, Vertex/Gemini no Google), e menos por
+      programa autoaplicável direto.
+    eligibility_summary: "Varia por provedor — o guia recomenda acessar créditos de modelo via programa de nuvem em vez de negociar direto."
+    priority_alchemia: complementar
+    priority_note: "Não classificados na seção 10 do guia — cobertura da seção 1.6."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  # ---------------------------------------------------------------------------------------------
+  # 2. Ferramentas SaaS
+  # ---------------------------------------------------------------------------------------------
+  - slug: benchling-for-startups
+    name: "Benchling for Startups"
+    category: saas_discount
+    region: global
+    portal_url: "https://www.benchling.com/startups"
+    benefit_summary: "ELN/LIMS (gestão de dados de laboratório) com condições de startup para ciências da vida."
+    eligibility_summary: "Startup de biotech em estágio inicial — condições específicas no site oficial."
+    priority_alchemia: complementar
+    priority_note: >-
+      Bloco "Complementares" do guia (seção 10, item 9) — "se ainda não houver gestão
+      estruturada de dados de bancada."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: saas-startups-diversas
+    name: "Ferramentas SaaS com programa de startup (diversas)"
+    category: saas_discount
+    region: global
+    portal_url: "https://stripe.com/atlas"
+    benefit_summary: >-
+      Individualmente pequenos, somados costumam representar R$50–150 mil/ano de economia real
+      (guia, seção 2): Stripe Atlas/for Startups (constituição nos EUA), HubSpot for Startups (até
+      90% de desconto no 1º ano), Notion, Figma, Atlassian (Jira/Confluence), Twilio, Zendesk,
+      Segment, Slack, Airtable/Linear/Vercel, LabArchives/Dotmatics (dados de laboratório).
+    eligibility_summary: "Varia por ferramenta — em geral autoinscrição via formulário 'for Startups' de cada produto."
+    priority_alchemia: complementar
+    priority_note: >-
+      Não classificadas individualmente na seção 10 do guia — "baixo esforço, retorno imediato"
+      (passo 5 da sequência de credit-stacking, seção 8).
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  # ---------------------------------------------------------------------------------------------
+  # 3. Aceleradoras e programas corporativos internacionais (saúde/deep tech)
+  # ---------------------------------------------------------------------------------------------
+  - slug: y-combinator
+    name: "Y Combinator"
+    category: accelerator_equity
+    region: global
+    portal_url: "https://www.ycombinator.com"
+    benefit_summary: "Aceleradora de referência global, aporte por equity, ciclos duas vezes ao ano."
+    eligibility_summary: "Processo seletivo competitivo por ciclo."
+    priority_alchemia: complementar
+    priority_note: "Não citada na seção 10 do guia — cobertura do ecossistema internacional (seção 3)."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: techstars
+    name: "Techstars"
+    category: accelerator_equity
+    region: global
+    portal_url: "https://www.techstars.com"
+    benefit_summary: "Rede global de aceleração, com verticais de saúde."
+    eligibility_summary: "Processo seletivo por programa/vertical."
+    priority_alchemia: complementar
+    priority_note: "Não citada na seção 10 do guia — cobertura do ecossistema internacional (seção 3)."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: indiebio
+    name: "IndieBio (SOSV)"
+    category: accelerator_equity
+    region: global
+    portal_url: "https://indiebio.co"
+    benefit_summary: "A aceleradora de biotech por excelência, segundo o guia — referência global em aceleração de biotech, com aporte."
+    eligibility_summary: "Processo seletivo competitivo, foco em biotech em estágio inicial."
+    priority_alchemia: complementar
+    priority_note: >-
+      Bloco "Complementares" do guia (seção 10, item 10, junto com Nucleate) — "se houver
+      intenção de captação internacional."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: nucleate
+    name: "Nucleate"
+    category: accelerator_no_equity
+    region: global
+    portal_url: "https://www.nucleate.org"
+    benefit_summary: "Sem equity, voltado a fundadores acadêmicos em biologia."
+    eligibility_summary: "Fundadores com origem acadêmica em ciências da vida."
+    priority_alchemia: complementar
+    priority_note: >-
+      Bloco "Complementares" do guia (seção 10, item 10, junto com IndieBio) — "se houver
+      intenção de captação internacional."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: illumina-accelerator
+    name: "Illumina Accelerator"
+    category: accelerator_equity
+    region: global
+    portal_url: "https://www.illumina.com/company/accelerator.html"
+    benefit_summary: "Foco em genômica, com acesso a sequenciamento."
+    eligibility_summary: "Startups com componente de geração própria de dados de sequenciamento em escala."
+    priority_alchemia: complementar
+    priority_note: >-
+      Bloco "Complementares" do guia (seção 10, item 11) — "se o roadmap incluir geração própria
+      de dados de sequenciamento em escala."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: jlabs
+    name: "Johnson & Johnson JLABS"
+    category: accelerator_no_equity
+    region: global
+    portal_url: "https://jlabs.jnjinnovation.com"
+    benefit_summary: "Incubação sem equity em ciências da vida."
+    eligibility_summary: "Startups de ciências da vida — critérios específicos no site oficial."
+    priority_alchemia: complementar
+    priority_note: "Não citada na seção 10 do guia — cobertura do ecossistema internacional de saúde (seção 3)."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: outras-aceleradoras-corporativas-saude
+    name: "Outras aceleradoras e programas corporativos de saúde"
+    category: accelerator_no_equity
+    region: global
+    portal_url: "https://www.g4a.health"
+    benefit_summary: >-
+      Bayer G4A (digital health, parceria comercial), Roche/Genentech (inovação aberta), Novartis
+      Biome (digital health), Merck/MSD Digital Sciences (IA e dados), AstraZeneca (parcerias
+      externas em oncologia), Amgen/Pfizer (inovação aberta), Plug and Play Health (corporate
+      matchmaking), MassChallenge HealthTech (sem equity), Google for Startups Accelerator LatAm/
+      AI, Microsoft AI for Health (grants de IA para saúde), AWS Healthcare Accelerator (coortes
+      temáticas), AWS IMAGINE Grant (para organizações sem fins lucrativos).
+    eligibility_summary: "Varia por programa — em geral chamadas/coortes temáticas com inscrição própria; ver cada site."
+    priority_alchemia: complementar
+    priority_note: "Não classificadas individualmente na seção 10 do guia — cobertura do ecossistema internacional de saúde (seção 3)."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  # ---------------------------------------------------------------------------------------------
+  # PARTE II — PROGRAMAS NACIONAIS
+  # ---------------------------------------------------------------------------------------------
+  - slug: cnpem-lnbio
+    name: "CNPEM / LNBio"
+    category: habitat_nacional
+    region: brasil
+    portal_url: "https://cnpem.br"
+    benefit_summary: >-
+      "A infraestrutura de pesquisa mais poderosa disponível a empresas brasileiras" (Campinas,
+      organização social supervisionada pelo MCTI). Duas vias de acesso: (1) chamada pública do
+      Sirius para tempo de feixe — acadêmica, gratuita, avaliação por pares, contrapartida de
+      publicação aberta; (2) Assessoria de Inovação (AIN) para empresas — contratação de projetos
+      colaborativos com sigilo e propriedade intelectual negociada, sem edital. O LNBio oferece
+      proteômica por espectrometria de massas, caracterização de proteínas (ITC/DSF), RMN,
+      cristalografia (linhas MANACÁ do Sirius) e triagem de compostos — parceiro natural para
+      validação experimental de predições computacionais de CADD.
+    eligibility_summary: >-
+      Via Sirius: pesquisadores de instituições brasileiras e de países da América Latina/Caribe,
+      com contrapartida de publicação aberta dos resultados. Via AIN: prospecção e negociação
+      direta com empresas, sem edital formal — processo de relacionamento longo, "comece cedo"
+      (recomendação do guia).
+    priority_alchemia: alta
+    priority_note: >-
+      Aparece duas vezes na seção 10 do guia: bloco "Prioridade máxima" (item 3, via AIN) — "abrir
+      conversa sobre validação experimental de predições computacionais" — e bloco "Prioridade
+      alta" (item 7, via chamada do Sirius). Usada a classificação mais alta das duas menções
+      (alta = "Prioridade máxima" no mapeamento desta curadoria).
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: supera-parque
+    name: "SUPERA Parque de Inovação e Tecnologia"
+    category: habitat_nacional
+    region: sp
+    portal_url: "https://www.superaparque.com.br"
+    benefit_summary: >-
+      Convênio Prefeitura de Ribeirão Preto + USP (gestão FIPASE), vocação declarada em saúde,
+      biotecnologia, TI e agronegócio — melhor aderência a healthtech/biotech fora do eixo São
+      Paulo capital. ~378 mil m² dentro do campus USP-RP, ~94 empresas instaladas (59 na
+      incubadora) em 2026. Incubação gratuita — Jornada SUPERA, ~24 meses, 3 módulos (Projeto →
+      Startup → Empresa) — com mentorias individuais, capacitações técnicas, infraestrutura
+      física, SUPERALab (inovação aberta) e International Office; ou Membership (acesso à rede sem
+      incubação, para empresas já constituídas).
+    eligibility_summary: >-
+      Processo seletivo periódico (historicamente semestral; selecionou 12 startups em 2026),
+      cinco etapas: inscrição online → entrevistas comportamentais/de negócios → elaboração da
+      proposta → banca → análise final. Candidatos não selecionados recebem mentoria individual
+      de feedback — o guia recomenda se inscrever mesmo sem certeza de aprovação.
+    priority_alchemia: media
+    priority_note: >-
+      Bloco "Prioridade alta" do guia (seção 10, item 5) — "vocação explícita em saúde e biotech,
+      dentro do campus da USP-RP, geograficamente próximo ao polo oncológico de Barretos; o selo
+      de incubação é reconhecido em avaliação de PIPE/FAPESP."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: parques-habitats-nacionais
+    name: "Parques tecnológicos e habitats de inovação (Brasil, fora do SUPERA)"
+    category: habitat_nacional
+    region: brasil
+    portal_url: "https://www.inovacao.sp.gov.br"
+    benefit_summary: >-
+      Em SP: Parque Científico e Tecnológico da Unicamp (Inova Unicamp/Incamp), Parque Tecnológico
+      de São José dos Campos (aeroespacial/defesa/saúde), CIETEC (IPEN/USP — uma das maiores
+      incubadoras do país, forte em saúde e nuclear), Parque Tecnológico de Sorocaba, Parque
+      Tecnológico de Botucatu/Unesp (biotecnologia/saúde animal), ParqTec São Carlos
+      (instrumentação/materiais/óptica), Habitat de Barretos/Hospital de Amor (oncologia). Fora de
+      SP: Porto Digital (Recife), Tecnopuc (Porto Alegre), Sapiens Parque (Florianópolis), BH-TEC
+      (Belo Horizonte), Parque Tecnológico Itaipu (Foz do Iguaçu), Tecnoparq/UFV (Viçosa).
+      Catálogos oficiais: SPAI (SP) e ANPROTEC (rede nacional).
+    eligibility_summary: "Varia por parque — em geral processo seletivo próprio de cada habitat; ver site de cada um."
+    priority_alchemia: complementar
+    priority_note: "Não classificados individualmente na seção 10 do guia — cobertura da seção 6."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: eretz-bio
+    name: "Eretz.bio"
+    category: hub_corporativo
+    region: sp
+    portal_url: "https://www.eretz.bio"
+    benefit_summary: >-
+      Incubadora de healthtechs do Hospital Israelita Albert Einstein, em fluxo contínuo (365
+      dias/ano). Base de 2.000+ startups mapeadas. Roda desafios temáticos de inovação aberta e,
+      junto ao Centro de Competência EMBRAPII-Einstein em Terapias Avançadas, chamadas com
+      financiamento real (já houve aporte de R$750 mil + bolsa de residência em inovação de R$12
+      mil/mês) — acesso à infraestrutura tecnológica do Einstein e a coortes clínicas.
+    eligibility_summary: "Fluxo contínuo — sem ciclo fixo de inscrição declarado no guia; critérios detalhados no portal."
+    priority_alchemia: media
+    priority_note: >-
+      Bloco "Prioridade alta" do guia (seção 10, item 6) — "as chamadas conjuntas com o Centro de
+      Competência Embrapii em Terapias Avançadas trazem dinheiro de verdade, não só mentoria."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: inovahc
+    name: "InovaHC (HCFMUSP)"
+    category: hub_corporativo
+    region: sp
+    portal_url: "https://inovahc.hc.fm.usp.br"
+    benefit_summary: "Núcleo de inovação do maior complexo hospitalar da América Latina — via de validação clínica."
+    eligibility_summary: "Não detalhado no guia — ver critérios no portal."
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 10 do guia — cobertura da seção 7 (hubs de saúde)."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: hubs-saude-corporativos-br
+    name: "Outros hubs corporativos de saúde no Brasil"
+    category: hub_corporativo
+    region: brasil
+    portal_url: "https://hospitaldeamor.com.br"
+    benefit_summary: >-
+      Hospital de Amor/Barretos (oncologia, pesquisa clínica, biobanco), A.C. Camargo Cancer
+      Center (oncologia, pesquisa translacional, PROADI-SUS), Sírio-Libanês/Hospital Alemão
+      Oswaldo Cruz/HCor (inovação aberta e PROADI-SUS), Dasa e Grupo Fleury (diagnóstico/genômica/
+      medicina de precisão), Hermes Pardini/Sabin (laboratorial), Bionexo/Hospital Care (cadeia de
+      saúde).
+    eligibility_summary: "Varia por instituição — em geral parceria ou desafio de inovação aberta; ver cada site."
+    priority_alchemia: complementar
+    priority_note: "Não classificados individualmente na seção 10 do guia — cobertura da seção 7 (saúde e ciências da vida)."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: cubo-itau
+    name: "Cubo Itaú"
+    category: hub_corporativo
+    region: sp
+    portal_url: "https://cubo.network"
+    benefit_summary: >-
+      Maior hub de empreendedorismo tecnológico da América Latina, foco em inovação aberta B2B.
+      Verticais: Cubo Health, Agro, ESG, Mobility, Maritime. Tem trilha digital para quem não está
+      em São Paulo.
+    eligibility_summary: "Não é aceleradora — seleciona startups com produto validado e faturamento."
+    priority_alchemia: complementar
+    priority_note: "Não classificado na seção 10 do guia — incluído por cobertura obrigatória do catálogo (seção 7, hubs multissetoriais)."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: inovativa-brasil
+    name: "InovAtiva Brasil"
+    category: accelerator_no_equity
+    region: brasil
+    portal_url: "https://inovativabrasil.com.br"
+    benefit_summary: >-
+      Maior programa gratuito de aceleração do país (MDIC + Sebrae + CERTI). O certificado conta
+      como vínculo de aceleradora reconhecida em vários programas de crédito de nuvem (ver
+      "credit stacking", seção 8 do guia).
+    eligibility_summary: "Gratuito, nacional — critérios de cada ciclo no portal."
+    priority_alchemia: media
+    priority_note: 'Bloco "Prioridade alta" do guia (seção 10, item 8).'
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"
+
+  - slug: hubs-multissetoriais-br
+    name: "Hubs corporativos multissetoriais no Brasil"
+    category: hub_corporativo
+    region: brasil
+    portal_url: "https://distrito.me"
+    benefit_summary: >-
+      Distrito (radar de programas e desafios corporativos), 100 Open Startups (marketplace de
+      desafios corporativos, ranking anual), Google for Startups Campus/Programas Brasil (coortes
+      regionais), Wayra/Vivo-Telefónica (CVC + aceleração), Oxigênio Aceleradora/Porto Seguro
+      (aceleração corporativa), ACE Ventures/Endeavor/Bossa Invest (aceleração e capital), SENAI
+      ISI (PD&I industrial contratada), ABStartups (associação, eventos e conexões).
+    eligibility_summary: "Varia por programa — em geral inscrição/candidatura própria de cada hub; ver cada site."
+    priority_alchemia: complementar
+    priority_note: "Não classificados individualmente na seção 10 do guia — cobertura da seção 7 (hubs multissetoriais)."
+    source_guide: guia-captacao-programas-corporativos-startups.md
+    last_reviewed: "2026-08-19"

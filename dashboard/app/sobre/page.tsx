@@ -14,11 +14,35 @@ export default function SobrePage() {
         <section className="alchemia-card p-5">
           <h2 className="mb-2 font-mono text-[13px] uppercase tracking-wide text-cyan-accent">O que é</h2>
           <p className="text-[14px] leading-relaxed text-slate-300">
-            O Alchemia News é o painel interno de inteligência de mercado da Alchemia Solutions —
-            reúne notícias e artigos científicos publicados sobre Computer-Aided Drug Design (CADD),
-            AI Drug Discovery, engenharia de proteínas/anticorpos/vacinas e o nicho de empresas que
-            investem nessa interseção entre IA e biologia/química. O pipeline de coleta roda de forma
-            autônoma 3x ao dia (manhã, tarde e noite).
+            O Alchemia News nasceu como o radar de nicho do setor que o mantém e, a partir da Fase 2
+            (2026-08-19), passou a ser uma ferramenta de uso da <strong className="text-slate-100">empresa
+            inteira</strong> — reúne notícias e artigos científicos sobre Computer-Aided Drug Design
+            (CADD), AI Drug Discovery e engenharia de proteínas/anticorpos/vacinas; canais de editais
+            de fomento à pesquisa (federal, estadual, saúde, universidades, fundações privadas,
+            internacional) e programas corporativos para startups (créditos de nuvem, SaaS,
+            aceleradoras, parques tecnológicos, hubs de inovação); e a newsletter publicada pela
+            rotina do Axel. O pipeline de coleta de notícias/artigos roda de forma autônoma 3x ao dia
+            (manhã, tarde e noite); os catálogos de fomento e programas corporativos são curadoria
+            estática, não coletada automaticamente — ver seção específica abaixo.
+          </p>
+        </section>
+
+        <section className="alchemia-card p-5">
+          <h2 className="mb-2 font-mono text-[13px] uppercase tracking-wide text-cyan-accent">
+            Fomento e programas corporativos (Fomento / Programas)
+          </h2>
+          <p className="text-[14px] leading-relaxed text-slate-300">
+            As páginas <strong className="text-slate-100">Fomento</strong> e{' '}
+            <strong className="text-slate-100">Programas</strong> são catálogos curados, transcritos e
+            resumidos em palavras próprias a partir de dois guias de referência compilados pelo
+            fundador, não coletados automaticamente. A priorização "Recomendado para a Alchemia" em
+            cada página reproduz — sem inventar nada novo — a priorização que os próprios guias já
+            fazem para o perfil de biotech/CADD/oncologia molecular da empresa.
+          </p>
+          <p className="mt-2 font-mono text-[12px] text-status-start">
+            ⚠ Direcional — confirmar sempre na fonte/portal oficial. Valores, tetos de crédito,
+            critérios de elegibilidade e prazos mudam por edição/trimestre e podem estar desatualizados
+            em relação ao momento em que você está lendo.
           </p>
         </section>
 
@@ -57,6 +81,16 @@ export default function SobrePage() {
               <strong className="text-slate-100">ChemRxiv e SciELO</strong> bloqueiam acesso direto (HTTP 403)
               desta rede — os dois são cobertos via o índice público do Crossref (que indexa os DOIs de
               ambos), não pela API/site oficial diretamente.
+            </li>
+            <li>
+              <strong className="text-slate-100">Checklist de documentos e status de candidatura</strong>{' '}
+              (páginas Fomento/Programas) são salvos em <code>localStorage</code>, só neste navegador —
+              não é multiusuário nem sincronizado entre pessoas/máquinas nesta fase (Fase 1).
+            </li>
+            <li>
+              <strong className="text-slate-100">Newsletter</strong> é somente leitura aqui — quem publica
+              é a rotina do Axel (setor <code>alchemia-bots</code>); se nenhuma edição existir ainda, a
+              página mostra um estado vazio em vez de quebrar.
             </li>
           </ul>
         </section>
