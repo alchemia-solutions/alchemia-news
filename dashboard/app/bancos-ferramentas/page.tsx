@@ -4,9 +4,10 @@ import { RESOURCE_TYPE_LABELS } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
-export default function BancosFerramentasPage() {
+export default async function BancosFerramentasPage() {
   const resources = getResources();
-  const allText = [...getArticles(), ...getNews()];
+  const [articles, news] = await Promise.all([getArticles(), getNews()]);
+  const allText = [...articles, ...news];
 
   const byType = resources.reduce<Record<string, typeof resources>>((acc, r) => {
     (acc[r.type] ??= []).push(r);

@@ -5,13 +5,13 @@ import { SOURCE_TYPE_LABELS } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
-export default function ArtigosPage({
+export default async function ArtigosPage({
   searchParams,
 }: {
-  searchParams: { fonte?: string };
+  searchParams: Promise<{ fonte?: string }>;
 }) {
-  const all = getArticles();
-  const fonteFiltro = searchParams.fonte;
+  const all = await getArticles();
+  const fonteFiltro = (await searchParams).fonte;
   const filtered = fonteFiltro ? all.filter((i) => i.source === fonteFiltro) : all;
 
   const sourceCounts = Object.entries(

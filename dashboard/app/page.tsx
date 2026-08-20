@@ -6,10 +6,9 @@ import { getArticles, getCompanies, getCompaniesActivity, getNews, getPipelineMe
 
 export const dynamic = 'force-dynamic'; // sempre lê o JSON mais recente do pipeline, nunca cacheia estático
 
-export default function HomePage() {
+export default async function HomePage() {
   const meta = getPipelineMeta();
-  const news = getNews();
-  const articles = getArticles();
+  const [news, articles] = await Promise.all([getNews(), getArticles()]);
   const companiesActivity = getCompaniesActivity();
   const companies = getCompanies();
 

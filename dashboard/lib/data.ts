@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
 import type { CompanyConfig, CorporateProgram, FundingChannel, NewsItem, PipelineMeta, ResourceConfig } from './types';
+import { fetchItemsByKind } from './supabase';
 
 // Este dashboard lê os JSONs produzidos pelo pipeline Python em tempo de requisição
 // (server components, sem client-side fetch) -- qualquer execução nova do pipeline aparece aqui
@@ -38,12 +39,19 @@ function readYamlSafe<T>(filePath: string, fallback: T): T {
   }
 }
 
-export function getArticles(): NewsItem[] {
-  return readJsonSafe<NewsItem[]>(path.join(DATA_DIR, 'articles.json'), []);
+// 2026-08-20 -- lê do Supabase (tabela `items`, kind='article'/'news'), não mais de
+// pipeline/data/articles.json e news.json. Isso é o que elimina a espera de
+// redeploy: pipeline/sync_supabase.py escreve no Supabase logo após cada coleta, e
+// este dashboard lê em tempo de requisição. Os JSONs locais continuam sendo
+// escritos pelo pipeline (nada mudou lá) e continuam servindo companies_activity/
+// meta/config -- só articles/news trocaram de fonte de leitura aqui. Ver
+// dashboard/lib/supabase.ts.
+export async function getArticles(): Promise<NewsItem[]> {
+  return fetchItemsByKind('article');
 }
 
-export function getNews(): NewsItem[] {
-  return readJsonSafe<NewsItem[]>(path.join(DATA_DIR, 'news.json'), []);
+export async function getNews(): Promise<NewsItem[]> {
+  return fetchItemsByKind('news');
 }
 
 export function getCompaniesActivity(): NewsItem[] {

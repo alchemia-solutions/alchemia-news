@@ -873,3 +873,88 @@ publicada ainda."), nunca com conteúdo real, porque nenhuma edição existia no
 `dashboard/components/CorporateProgramCard.tsx`, `dashboard/components/MarkdownLite.tsx`.
 **Arquivos editados:** `dashboard/lib/types.ts`, `dashboard/lib/data.ts`,
 `dashboard/components/Sidebar.tsx`, `dashboard/app/sobre/page.tsx`, este arquivo (`AGENTS.md`).
+
+## Addendum — 2026-08-20: integração Supabase para `articles`/`news` -- elimina a espera de
+## redeploy, mas fica em três pontas reais até o fundador completar a parte dele
+
+A pedido do fundador, o dashboard deixa de depender de `git push` + redeploy para refletir uma
+coleta nova, para `articles`/`news` (escopo desta rodada -- empresas/editais/programas/newsletter
+continuam em arquivo, decisão do fundador). Arquitetura: Supabase roda **em paralelo** aos JSONs
+locais, não no lugar deles -- `pipeline/run_all.py` continua escrevendo `articles.json`/`news.json`
+exatamente como antes (nada mudou lá), e uma etapa nova espelha o resultado já mesclado para uma
+tabela `items` (Postgres gerenciado, projeto `texszxmvolbiduhrrdsq`); o dashboard passa a ler
+`articles`/`news` de lá, não mais do arquivo.
+
+**🔴 Achado real desta rodada: o MCP do Supabase, que o fundador configurou via
+`claude mcp add --scope project` dentro deste diretório, nunca carregou nesta sessão.** MCP
+projeto-scoped é lido do `.mcp.json` do diretório onde a sessão da Claude Code abre -- esta sessão
+abriu na raiz da empresa (`Alchemia LTDA/`), não aqui, então o `alchemia-news/.mcp.json` nunca foi
+lido. Confirmado por busca direta nas ferramentas MCP carregadas na sessão: zero ferramenta
+`mcp__supabase__*` disponível. Consequência prática: **nenhuma tabela foi criada/verificada ao vivo
+no Supabase nesta rodada**, e a chave publishable/anon real (pública por design, mas cujo valor
+não foi fornecido nem pôde ser lido via MCP) não pôde ser preenchida em `.env.local`. Para uma
+próxima rodada usar o MCP de verdade, a sessão precisa abrir com `alchemia-ai/alchemia-news/` como
+diretório de projeto (ou o `.mcp.json` precisa ser replicado na raiz, mesmo padrão já usado para
+`obsidian-alchemia-brain`/`hermes`).
+
+**O que foi entregue, verificado sem o MCP:**
+
+- `supabase/migrations/20260820033359_create_items_table.sql` -- tabela `items` (schema revisado
+  do rascunho do fundador, mesmas colunas), RLS habilitado, policy de leitura pública, sem policy
+  de escrita para `anon` (só `service_role`, que ignora RLS, escreve). **Não aplicada** -- a
+  integração GitHub↔Supabase já configurada aplica migrações automaticamente ao `git push` para
+  `main` (lendo esta mesma pasta `supabase/`); até lá, ou até uma sessão com o MCP real rodar a
+  migração diretamente, a tabela não existe no projeto.
+- `pipeline/sync_supabase.py` -- upsert em lote via REST (`requests`, sem driver novo),
+  `on_conflict=dedupe_key`, `Prefer: resolution=merge-duplicates`. Lê `SUPABASE_SERVICE_ROLE_KEY`
+  de `os.environ` (nunca hardcoded); sem ela, pula com aviso e sai 0 -- nunca derruba a cadeia.
+  **Testado de verdade com `--dry-run` contra o dado real local:** 2.284 itens sincronizariam
+  (312 artigos + 1.972 notícias). Sem a tabela existir e sem a `service_role` key, a escrita real
+  no Supabase **não foi exercitada** nesta rodada.
+- `alchemia-ai/alchemia-bots/scripts/run_alchemia_news.cmd` ganhou a **Etapa 3**, chamando o script
+  acima com log próprio (`cron-supabase.log`, já coberto pelo `.gitignore` existente
+  `pipeline/logs/*.log`). Mesma politica de falha das etapas 1/2: cada etapa roda mesmo se a
+  anterior falhou, e só a Etapa 1 (coleta) manda no código de saída da cadeia.
+- `dashboard/lib/supabase.ts` (novo) + `dashboard/lib/data.ts` (`getArticles()`/`getNews()`
+  viraram `async`, leem `fetchItemsByKind()` em vez de `fs.readFileSync`) -- paginado em blocos de
+  1000 linhas (limite padrão do PostgREST por resposta), porque `news` já tem 1.972 itens hoje e só
+  cresce. `@supabase/supabase-js` instalado como dependência **pinada** (`2.112.3`, sem `^`, mesma
+  convenção do resto do `package.json`) via `npm install --save-exact`.
+- Os 4 call sites (`app/page.tsx`, `app/artigos/page.tsx`, `app/noticias/page.tsx`,
+  `app/bancos-ferramentas/page.tsx`) viraram `async function` com `await`/`Promise.all`.
+
+**Bug real, pré-existente, encontrado e corrigido no caminho (fora do escopo original, mas nos
+mesmos arquivos que esta rodada já tornou `async`):** `/noticias` e `/artigos` acessavam
+`searchParams.fonte` de forma síncrona -- no Next.js 16, `searchParams` é uma `Promise`, mesma
+classe do bug já documentado neste arquivo (addendum 2026-08-17) para `/empresas/[slug]`. Gerava
+warning real no dev server (`sync-dynamic-apis`), nunca corrigido porque ninguém tinha reaberto
+esses dois arquivos desde a migração do Next. Corrigido (`searchParams: Promise<{ fonte?: string
+}>`, `await searchParams`); verificado que o warning some no log do dev server ao vivo.
+
+**Verificação real feita, e o que ficou de fora por depender do fundador:**
+
+- `npm run typecheck` e `npm run build` limpos (as 10 rotas de página seguem `ƒ`, condição para
+  refletir dado novo sem rebuild -- preservada).
+- **Servidor de dev do próprio fundador, já rodando em `:3000` de uma sessão anterior, não foi
+  derrubado** -- verificado que era de fato este dashboard antes de qualquer ação, e usado como
+  alvo de verificação (hot reload captou as mudanças sozinho). As 4 rotas tocadas responderam
+  `200`; o log do dev server confirmou o fallback gracioso (`"Supabase não configurado ...
+  retornando lista vazia"`) em vez de qualquer erro 500 -- comportamento esperado, já que
+  `NEXT_PUBLIC_SUPABASE_URL`/`NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` ainda não existem em nenhum
+  `.env.local` real.
+- `dashboard/.env.local.example` criado (URL real do projeto, que não é segredo; placeholder para a
+  publishable key). **Não escrevi `.env.local` real** -- não tenho o valor da chave.
+
+**Três coisas que só o fundador pode fechar, nessa ordem:**
+
+1. Aplicar a migração -- via `git push` (a integração já cuida do resto) ou rodando a sessão com o
+   MCP do Supabase carregado (cwd em `alchemia-ai/alchemia-news/`) e aplicando direto.
+2. Preencher `dashboard/.env.local` (copiar de `.env.local.example`) com a publishable key real, e
+   configurar as mesmas duas variáveis (`NEXT_PUBLIC_SUPABASE_URL`/`..._PUBLISHABLE_KEY`) no
+   projeto Vercel quando o deploy acontecer.
+3. Configurar `SUPABASE_SERVICE_ROLE_KEY` como variável de ambiente de usuário do Windows (mesmo
+   padrão já usado para `OBSIDIAN_MCP_TOKEN`) -- sem ela, a Etapa 3 do cron segue pulando
+   silenciosamente, e a tabela nunca recebe dado novo mesmo depois de criada.
+
+Até os três passos acima, o dashboard mostra `articles`/`news` vazios (fallback gracioso, não
+erro) -- os JSONs locais continuam existindo e corretos, só não são mais a fonte que o dashboard lê.

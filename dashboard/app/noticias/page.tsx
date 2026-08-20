@@ -4,13 +4,13 @@ import { getNews } from '@/lib/data';
 
 export const dynamic = 'force-dynamic';
 
-export default function NoticiasPage({
+export default async function NoticiasPage({
   searchParams,
 }: {
-  searchParams: { fonte?: string };
+  searchParams: Promise<{ fonte?: string }>;
 }) {
-  const all = getNews();
-  const fonteFiltro = searchParams.fonte;
+  const all = await getNews();
+  const fonteFiltro = (await searchParams).fonte;
   const filtered = fonteFiltro ? all.filter((i) => i.source === fonteFiltro) : all;
 
   const sourceCounts = Object.entries(
