@@ -11,8 +11,20 @@ import type { ItemKind, NewsItem } from './types';
 //
 // Chave `anon`/`publishable` -- pública por design, só permite SELECT (RLS da
 // tabela `items`, ver supabase/migrations/). Nunca a service_role aqui.
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const SUPABASE_PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+//
+// Nomes de env var aceitos em ordem de prioridade -- este módulo é `server-only`
+// (nunca entra no bundle do navegador), então o prefixo NEXT_PUBLIC_ não é
+// tecnicamente necessário aqui; ele foi a convenção documentada originalmente
+// (AGENTS.md deste setor), mas a integração nativa Supabase<->Vercel provisiona
+// `SUPABASE_URL`/`NEXT_PUBLIC_SUPABASE_ANON_KEY` automaticamente ao conectar um
+// projeto -- aceitar os dois nomes evita ter que renomear nada manualmente,
+// local ou na Vercel. A URL do projeto não é segredo, por isso tem fallback
+// fixo (mesmo valor hardcoded em pipeline/sync_supabase.py); a chave não tem,
+// porque seu valor real não é conhecido de antemão.
+const SUPABASE_URL =
+  process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL ?? 'https://texszxmvolbiduhrrdsq.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 let cachedClient: SupabaseClient | null = null;
 
@@ -36,8 +48,8 @@ export async function fetchItemsByKind(kind: ItemKind): Promise<NewsItem[]> {
   const supabase = getClient();
   if (!supabase) {
     console.error(
-      'Supabase não configurado (NEXT_PUBLIC_SUPABASE_URL/NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ausentes) -- ' +
-        `retornando lista vazia para kind=${kind}.`
+      'Supabase não configurado (nenhuma de NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY/NEXT_PUBLIC_SUPABASE_ANON_KEY ' +
+        `presente) -- retornando lista vazia para kind=${kind}.`
     );
     return [];
   }
