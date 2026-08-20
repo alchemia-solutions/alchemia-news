@@ -32,6 +32,7 @@ except ImportError as exc:  # pragma: no cover - dependência declarada em requi
     ) from exc
 
 PIPELINE_DIR = Path(__file__).resolve().parent.parent
+REPO_ROOT = PIPELINE_DIR.parent
 CONFIG_DIR = PIPELINE_DIR / "config"
 DATA_DIR = PIPELINE_DIR / "data"
 STATE_DIR = DATA_DIR / "state"
@@ -48,6 +49,20 @@ def log(msg: str) -> None:
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     line = f"[{ts}] {msg}"
     print(line, flush=True)
+
+
+def sanitize_local_path(text: str) -> str:
+    """Troca o caminho absoluto local (inclui o usuário do SO) por um marcador portável.
+
+    Achado real em 2026-08-20: `traceback.format_exc()` sempre inclui o caminho absoluto de
+    onde o processo roda -- e esse texto acaba gravado em `meta.json`/`pipeline/data/runs/*.json`,
+    que são versionados de propósito (auditoria). Como o repositório é público desde hoje, isso
+    vazava o usuário do Windows do fundador em texto puro. Sanitiza sem perder o resto do
+    traceback (linha, função, mensagem), que continua útil para investigar `error` não-nulo.
+    """
+    if not text:
+        return text
+    return text.replace(str(REPO_ROOT), "<alchemia-news>")
 
 
 def load_yaml(name: str) -> Any:

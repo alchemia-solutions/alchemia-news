@@ -49,7 +49,10 @@ def _run_collector(name: str, fn, *args, **kwargs) -> tuple[list[dict], float, s
     try:
         items = fn(*args, **kwargs)
     except Exception:  # noqa: BLE001
-        error = traceback.format_exc(limit=4)
+        # Sanitizado antes de logar/retornar -- este `error` acaba em meta.json/
+        # pipeline/data/runs/*.json, que são commitados de propósito (auditoria), e o
+        # repositório é público. Ver common.sanitize_local_path.
+        error = common.sanitize_local_path(traceback.format_exc(limit=4))
         common.log(f"[{name}] FALHOU:\n{error}")
         items = []
     elapsed = time.time() - start
