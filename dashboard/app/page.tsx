@@ -2,13 +2,23 @@ import Link from 'next/link';
 import LiveClock from '@/components/LiveClock';
 import StatCard from '@/components/StatCard';
 import ItemCard from '@/components/ItemCard';
-import { getArticles, getCompanies, getCompaniesActivity, getNews, getPipelineMeta } from '@/lib/data';
+import { getArticles, getArticlesCount, getCompanies, getCompaniesActivity, getNews, getNewsCount, getPipelineMeta } from '@/lib/data';
 
-export const dynamic = 'force-dynamic'; // sempre lê o JSON mais recente do pipeline, nunca cacheia estático
+// Achado de performance (2026-08-20): medido ao vivo em ~2.3s/requisição antes desta
+// correção -- esta página busca news+articles inteiros do Supabase (Promise.all) só para
+// exibir 9 itens depois de misturar/ordenar. `force-dynamic` refazia isso em toda
+// requisição. `revalidate` cacheia por até 5 min -- o pipeline só sincroniza 3x/dia, então
+// não há frescor real perdido. Ver o mesmo achado em app/noticias e app/artigos.
+export const revalidate = 300;
 
 export default async function HomePage() {
   const meta = getPipelineMeta();
-  const [news, articles] = await Promise.all([getNews(), getArticles()]);
+  const [news, articles, newsTotal, articlesTotal] = await Promise.all([
+    getNews(),
+    getArticles(),
+    getNewsCount(),
+    getArticlesCount(),
+  ]);
   const companiesActivity = getCompaniesActivity();
   const companies = getCompanies();
 
@@ -38,8 +48,8 @@ export default async function HomePage() {
       </div>
 
       <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4">
-        <StatCard label="Artigos & Preprints" value={articles.length} hint="PubMed · bioRxiv · arXiv · ChemRxiv · SciELO" accent="cyan" />
-        <StatCard label="Notícias" value={news.length} hint="Google News · Nature · feeds" accent="progress" />
+        <StatCard label="Artigos & Preprints" value={articlesTotal} hint="PubMed · bioRxiv · arXiv · ChemRxiv · SciELO" accent="cyan" />
+        <StatCard label="Notícias" value={newsTotal} hint="Google News · Nature · feeds" accent="progress" />
         <StatCard label="Menções de Empresas" value={companiesActivity.length} hint={`${companies.length} empresas monitoradas`} accent="done" />
         <StatCard
           label="Última coleta (duração)"

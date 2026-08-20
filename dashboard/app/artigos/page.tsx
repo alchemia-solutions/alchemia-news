@@ -3,7 +3,14 @@ import ItemCard from '@/components/ItemCard';
 import { getArticles } from '@/lib/data';
 import { SOURCE_TYPE_LABELS } from '@/lib/types';
 
-export const dynamic = 'force-dynamic';
+// Achado de performance (2026-08-20): esta página consulta a tabela `items` inteira no
+// Supabase a cada requisição (ver lib/supabase.ts). `force-dynamic` fazia isso rodar de
+// novo em TODO clique, mesmo sem nenhum dado novo -- o pipeline só sincroniza 3x/dia, então
+// não há ganho real em reconsultar a cada request. `revalidate` deixa o Next.js servir a
+// mesma resposta cacheada por até 5 min e só then regenerar em segundo plano -- reduz o
+// custo de ~0.85s/request para quase zero na maioria das visitas, sem perder frescor
+// perceptível (a maior mudança entre execuções do pipeline é de horas, não minutos).
+export const revalidate = 300;
 
 export default async function ArtigosPage({
   searchParams,
@@ -25,7 +32,7 @@ export default async function ArtigosPage({
     <div>
       <PageHeader
         title="Artigos & Papers"
-        description="Artigos publicados e preprints dos últimos ~6 meses no nicho de Computer-Aided Drug Design e AI Drug Discovery — PubMed, bioRxiv, arXiv, ChemRxiv e SciELO (os dois últimos via índice Crossref, já que o acesso direto a esses dois é bloqueado nesta rede)."
+        description="Artigos publicados e preprints dos últimos ~6 meses no nicho de Computer-Aided Drug Design e AI Drug Discovery — PubMed, bioRxiv, arXiv, ChemRxiv e SciELO (os dois últimos via índice Crossref, já que o acesso direto a esses dois é bloqueado nesta rede). Mostrando os mais recentes (não o histórico completo)."
       />
 
       <div className="mb-6 flex flex-wrap gap-2">
@@ -35,7 +42,7 @@ export default async function ArtigosPage({
             !fonteFiltro ? 'border-cyan-accent bg-cyan-accent/10 text-cyan-accent' : 'border-white/10 text-slate-400 hover:border-white/30'
           }`}
         >
-          Todas ({all.length})
+          Recentes ({all.length})
         </a>
         {sourceCounts.map(([source, count]) => (
           <a

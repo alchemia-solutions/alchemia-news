@@ -2,7 +2,13 @@ import PageHeader from '@/components/PageHeader';
 import ItemCard from '@/components/ItemCard';
 import { getNews } from '@/lib/data';
 
-export const dynamic = 'force-dynamic';
+// Achado de performance (2026-08-20): medido ao vivo em ~3.1s/requisição antes desta
+// correção -- esta página consultava a tabela `news` inteira (~2.000 linhas) no Supabase
+// a cada clique (`force-dynamic`), sem nenhum cache. O pipeline só sincroniza 3x/dia, então
+// reconsultar a cada request não trazia frescor real. `revalidate` serve a mesma resposta
+// cacheada por até 5 min e regenera em segundo plano -- ver o mesmo achado em
+// app/artigos/page.tsx e app/page.tsx.
+export const revalidate = 300;
 
 export default async function NoticiasPage({
   searchParams,
@@ -24,7 +30,7 @@ export default async function NoticiasPage({
     <div>
       <PageHeader
         title="Notícias"
-        description="Cobertura agregada de notícias sobre CADD, AI Drug Discovery e o nicho da Alchemia — Google News, feeds de periódicos e blogs oficiais. Cada card linka direto para a fonte original; nenhum conteúdo de terceiro é reproduzido aqui."
+        description="Cobertura agregada de notícias sobre CADD, AI Drug Discovery e o nicho da Alchemia — Google News, feeds de periódicos e blogs oficiais. Cada card linka direto para a fonte original; nenhum conteúdo de terceiro é reproduzido aqui. Mostrando as mais recentes (não o histórico completo)."
       />
 
       <div className="mb-6 flex flex-wrap gap-2">
@@ -34,7 +40,7 @@ export default async function NoticiasPage({
             !fonteFiltro ? 'border-cyan-accent bg-cyan-accent/10 text-cyan-accent' : 'border-white/10 text-slate-400 hover:border-white/30'
           }`}
         >
-          Todas ({all.length})
+          Recentes ({all.length})
         </a>
         {sourceCounts.slice(0, 14).map(([source, count]) => (
           <a

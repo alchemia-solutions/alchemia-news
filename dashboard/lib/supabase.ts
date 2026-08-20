@@ -39,12 +39,21 @@ function getClient(): SupabaseClient | null {
 const ITEM_COLUMNS =
   'kind,title,url,source,source_type,published_date,collected_at,authors,summary,doi,company_slug,keywords_matched,extra,dedupe_key';
 
-// O PostgREST limita cada resposta a 1000 linhas por padrão -- menor que o total
-// real de `news` hoje (1.800+ e crescendo 3x/dia). Sem paginação, uma leitura
-// perderia itens em silêncio à medida que a base cresce.
 const PAGE_SIZE = 1000;
 
-export async function fetchItemsByKind(kind: ItemKind): Promise<NewsItem[]> {
+// Achado de performance real (2026-08-20, medido ao vivo): buscar `news` inteiro
+// (~2.000 linhas, ~2,4MB de JSON) em toda requisição media ~3.1s e estourava o
+// limite de 2MB por entrada do `unstable_cache` (a tentativa de cache falhava em
+// silêncio, sem erro, e a página voltava a buscar tudo de novo a cada visita).
+// Nenhuma tela deste dashboard tem paginação -- renderiza a lista inteira que
+// recebe -- então limitar aqui é o que resolve as duas coisas de uma vez: cabe no
+// cache e reduz o tempo de resposta de verdade, não só desloca o custo.
+// `DEFAULT_LIMIT` é "os mais recentes N", nunca "todos" -- os textos de UI que
+// consomem este resultado (app/page.tsx, app/noticias, app/artigos) dizem
+// "Recentes (N)", nunca "Todas (N)", para não alegar completude que não existe.
+export const DEFAULT_ITEM_LIMIT = 500;
+
+export async function fetchItemsByKind(kind: ItemKind, limit: number = DEFAULT_ITEM_LIMIT): Promise<NewsItem[]> {
   const supabase = getClient();
   if (!supabase) {
     console.error(
@@ -56,13 +65,14 @@ export async function fetchItemsByKind(kind: ItemKind): Promise<NewsItem[]> {
 
   const rows: NewsItem[] = [];
   let from = 0;
-  for (;;) {
+  while (rows.length < limit) {
+    const pageEnd = Math.min(from + PAGE_SIZE, limit) - 1;
     const { data, error } = await supabase
       .from('items')
       .select(ITEM_COLUMNS)
       .eq('kind', kind)
       .order('published_date', { ascending: false, nullsFirst: false })
-      .range(from, from + PAGE_SIZE - 1);
+      .range(from, pageEnd);
 
     if (error) {
       console.error(`Supabase: falha ao ler items (kind=${kind}):`, error.message);
@@ -70,8 +80,26 @@ export async function fetchItemsByKind(kind: ItemKind): Promise<NewsItem[]> {
     }
     if (!data || data.length === 0) break;
     rows.push(...(data as unknown as NewsItem[]));
-    if (data.length < PAGE_SIZE) break;
+    if (data.length < pageEnd - from + 1) break; // última página real veio menor que o pedido
     from += PAGE_SIZE;
   }
   return rows;
+}
+
+// Contagem exata sem transferir nenhuma linha (`head: true`) -- usada onde o número
+// precisa ser o total real (ex.: StatCard da home), não o tamanho da lista limitada
+// que `fetchItemsByKind` devolve para renderização. Mesmo princípio de honestidade
+// já aplicado nos textos "Recentes (N)" das páginas /noticias e /artigos.
+export async function countItemsByKind(kind: ItemKind): Promise<number> {
+  const supabase = getClient();
+  if (!supabase) return 0;
+  const { count, error } = await supabase
+    .from('items')
+    .select('*', { count: 'exact', head: true })
+    .eq('kind', kind);
+  if (error) {
+    console.error(`Supabase: falha ao contar items (kind=${kind}):`, error.message);
+    return 0;
+  }
+  return count ?? 0;
 }

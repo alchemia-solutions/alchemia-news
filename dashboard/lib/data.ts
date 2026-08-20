@@ -2,8 +2,9 @@ import 'server-only';
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
-import type { CompanyConfig, CorporateProgram, FundingChannel, NewsItem, PipelineMeta, ResourceConfig } from './types';
-import { fetchItemsByKind } from './supabase';
+import { unstable_cache } from 'next/cache';
+import type { CompanyConfig, CorporateProgram, FundingChannel, ItemKind, NewsItem, PipelineMeta, ResourceConfig } from './types';
+import { countItemsByKind, fetchItemsByKind } from './supabase';
 
 // Este dashboard lê os JSONs produzidos pelo pipeline Python em tempo de requisição
 // (server components, sem client-side fetch) -- qualquer execução nova do pipeline aparece aqui
@@ -46,12 +47,47 @@ function readYamlSafe<T>(filePath: string, fallback: T): T {
 // escritos pelo pipeline (nada mudou lá) e continuam servindo companies_activity/
 // meta/config -- só articles/news trocaram de fonte de leitura aqui. Ver
 // dashboard/lib/supabase.ts.
+//
+// Achado de performance (2026-08-20, medido ao vivo): /noticias e /artigos usam
+// `searchParams` (filtro por fonte), o que força renderização dinâmica no Next.js e
+// ignora `export const revalidate` da página inteira (só funciona em rota sem
+// searchParams/cookies/headers -- ver app/page.tsx). Por isso o cache é aplicado
+// aqui, na função de busca em si, com `unstable_cache` -- ainda suportado nesta
+// versão (substituído por `use cache`/Cache Components, que exige flag experimental
+// não habilitada neste projeto; ver node_modules/next/dist/docs/.../unstable_cache.md).
+// `kind` entra no array de keyParts porque unstable_cache também usa os argumentos
+// da função na chave, mas ser explícito evita qualquer colisão entre 'article'/'news'.
+const getCachedItemsByKind = unstable_cache(
+  async (kind: ItemKind) => fetchItemsByKind(kind),
+  ['items-by-kind'],
+  { revalidate: 300 }
+);
+
 export async function getArticles(): Promise<NewsItem[]> {
-  return fetchItemsByKind('article');
+  return getCachedItemsByKind('article');
 }
 
 export async function getNews(): Promise<NewsItem[]> {
-  return fetchItemsByKind('news');
+  return getCachedItemsByKind('news');
+}
+
+// Contagem exata (não o tamanho da lista limitada acima) -- para números que
+// precisam ser o total real, como os StatCard da home. `count: 'exact', head: true`
+// no Postgres não transfere nenhuma linha, então é barato mesmo sem cache -- ainda
+// assim cacheado pela mesma janela de 5min, para não gerar uma consulta extra por
+// requisição à toa.
+const getCachedCountByKind = unstable_cache(
+  async (kind: ItemKind) => countItemsByKind(kind),
+  ['items-count-by-kind'],
+  { revalidate: 300 }
+);
+
+export async function getArticlesCount(): Promise<number> {
+  return getCachedCountByKind('article');
+}
+
+export async function getNewsCount(): Promise<number> {
+  return getCachedCountByKind('news');
 }
 
 export function getCompaniesActivity(): NewsItem[] {
