@@ -1,11 +1,13 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-// Gate de acesso da diretoria — só entra em vigor no deploy real da Vercel (process.env.VERCEL),
-// nunca em `npm run dev`/`npm run start` local, para não atrapalhar o uso interno já existente.
-// Falha fechada por design: se SITE_AUTH_USER/SITE_AUTH_PASSWORD não estiverem configuradas na
-// Vercel, o site fica bloqueado para todo mundo (inclusive o fundador) até serem definidas —
-// nunca abre por engano por falta de configuração. Ver AGENTS.md deste setor, addendum 2026-08-19.
+// Gate de acesso da diretoria — só entra em vigor quando NODE_ENV=production (setado pelo próprio
+// Next.js em qualquer `next build`/`next start`, em qualquer plataforma -- não depende de detectar
+// Vercel/Cloudflare/etc especificamente). `npm run dev` local continua sem gate, sem atrapalhar o
+// uso interno já existente. Falha fechada por design: se SITE_AUTH_USER/SITE_AUTH_PASSWORD não
+// estiverem configuradas no ambiente de produção, o site fica bloqueado para todo mundo (inclusive
+// o fundador) até serem definidas — nunca abre por engano por falta de configuração. Ver AGENTS.md
+// deste setor, addendum 2026-08-19.
 
 function isAuthorized(request: NextRequest): boolean {
   const expectedUser = process.env.SITE_AUTH_USER;
@@ -30,7 +32,7 @@ function isAuthorized(request: NextRequest): boolean {
 }
 
 export function proxy(request: NextRequest) {
-  if (!process.env.VERCEL) {
+  if (process.env.NODE_ENV !== 'production') {
     return NextResponse.next();
   }
 
