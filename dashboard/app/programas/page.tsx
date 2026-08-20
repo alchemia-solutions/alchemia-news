@@ -8,8 +8,8 @@ import { CORPORATE_CATEGORY_LABELS } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
-export default function ProgramasPage() {
-  const programs = getCorporatePrograms();
+export default async function ProgramasPage() {
+  const programs = await getCorporatePrograms();
   const recommended = programs.filter((p) => p.priority_alchemia === 'alta');
 
   const entries: OpportunityFilterEntry[] = programs.map((program) => ({

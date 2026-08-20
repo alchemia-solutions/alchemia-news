@@ -4,7 +4,18 @@ import path from 'path';
 import yaml from 'js-yaml';
 import { unstable_cache } from 'next/cache';
 import type { CompanyConfig, CorporateProgram, FundingChannel, ItemKind, NewsItem, PipelineMeta, ResourceConfig } from './types';
-import { countItemsByKind, fetchItemsByKind } from './supabase';
+import {
+  countItemsByKind,
+  fetchAllNewsletters,
+  fetchCompanies,
+  fetchCompanyActivity,
+  fetchCorporatePrograms,
+  fetchFundingChannels,
+  fetchItemsByKind,
+  fetchNewsletterByDate,
+  fetchPipelineMeta,
+  fetchResources,
+} from './supabase';
 
 // Este dashboard lê os JSONs produzidos pelo pipeline Python em tempo de requisição
 // (server components, sem client-side fetch) -- qualquer execução nova do pipeline aparece aqui
@@ -90,34 +101,70 @@ export async function getNewsCount(): Promise<number> {
   return getCachedCountByKind('news');
 }
 
-export function getCompaniesActivity(): NewsItem[] {
+// Fase 2 (2026-08-20, mais tarde) -- expande a leitura do Supabase para o resto do
+// dashboard (antes só articles/news). "sem precisar commitar nada depois" era o
+// pedido explícito do fundador -- companies/resources/funding_channels/
+// corporate_programs/meta/newsletter agora vêm todos do Supabase, sincronizados
+// pelo pipeline (ou pela rotina do Axel, no caso da newsletter) 3x/dia. Os arquivos
+// locais (readJsonSafe/readYamlSafe acima) viram **rede de segurança**: se o
+// Supabase não responder ou a tabela vier vazia, cai para o último snapshot local
+// conhecido em vez de mostrar a página em branco -- mesmo princípio já usado no
+// fallback pipeline ao vivo -> `.pipeline-data` (ver DATA_DIR/CONFIG_DIR acima).
+// Todas cacheadas por 5min via unstable_cache, mesmo padrão de getArticles/getNews.
+
+const getCachedCompanyActivity = unstable_cache(
+  async () => fetchCompanyActivity(),
+  ['company-activity'],
+  { revalidate: 300 }
+);
+
+export async function getCompaniesActivity(): Promise<NewsItem[]> {
+  const rows = await getCachedCompanyActivity();
+  if (rows.length > 0) return rows;
   return readJsonSafe<NewsItem[]>(path.join(DATA_DIR, 'companies_activity.json'), []);
 }
 
-export function getPipelineMeta(): PipelineMeta | null {
+const getCachedPipelineMeta = unstable_cache(
+  async () => fetchPipelineMeta(),
+  ['pipeline-meta'],
+  { revalidate: 300 }
+);
+
+export async function getPipelineMeta(): Promise<PipelineMeta | null> {
+  const meta = await getCachedPipelineMeta();
+  if (meta) return meta;
   return readJsonSafe<PipelineMeta | null>(path.join(DATA_DIR, 'meta.json'), null);
 }
 
-export function getCompanies(): CompanyConfig[] {
-  const parsed = readYamlSafe<{ companies?: CompanyConfig[] }>(
-    path.join(CONFIG_DIR, 'companies.yaml'),
-    {}
-  );
+const getCachedCompanies = unstable_cache(async () => fetchCompanies(), ['companies-catalog'], { revalidate: 300 });
+
+export async function getCompanies(): Promise<CompanyConfig[]> {
+  const rows = await getCachedCompanies();
+  if (rows.length > 0) return rows;
+  const parsed = readYamlSafe<{ companies?: CompanyConfig[] }>(path.join(CONFIG_DIR, 'companies.yaml'), {});
   return parsed.companies ?? [];
 }
 
-export function getResources(): ResourceConfig[] {
-  const parsed = readYamlSafe<{ resources?: ResourceConfig[] }>(
-    path.join(CONFIG_DIR, 'resources.yaml'),
-    {}
-  );
+const getCachedResources = unstable_cache(async () => fetchResources(), ['resources-catalog'], { revalidate: 300 });
+
+export async function getResources(): Promise<ResourceConfig[]> {
+  const rows = await getCachedResources();
+  if (rows.length > 0) return rows;
+  const parsed = readYamlSafe<{ resources?: ResourceConfig[] }>(path.join(CONFIG_DIR, 'resources.yaml'), {});
   return parsed.resources ?? [];
 }
 
-// Fase 2 (2026-08-19) -- mesmo padrão de readYamlSafe já usado por getResources(). Catálogo
-// estático, curado a partir dos dois guias de referência do fundador; nenhuma coleta/LLM
-// envolvida. Ver docs/specs/2026-08-19-funding-opportunities-and-app-restructure.md.
-export function getFundingChannels(): FundingChannel[] {
+// Fase 2 (2026-08-19) -- catálogo estático, curado a partir dos dois guias de referência do
+// fundador; nenhuma coleta/LLM envolvida. Ver docs/specs/2026-08-19-funding-opportunities-and-app-restructure.md.
+const getCachedFundingChannels = unstable_cache(
+  async () => fetchFundingChannels(),
+  ['funding-channels-catalog'],
+  { revalidate: 300 }
+);
+
+export async function getFundingChannels(): Promise<FundingChannel[]> {
+  const rows = await getCachedFundingChannels();
+  if (rows.length > 0) return rows;
   const parsed = readYamlSafe<{ funding_channels?: FundingChannel[] }>(
     path.join(CONFIG_DIR, 'funding_channels.yaml'),
     {}
@@ -125,7 +172,15 @@ export function getFundingChannels(): FundingChannel[] {
   return parsed.funding_channels ?? [];
 }
 
-export function getCorporatePrograms(): CorporateProgram[] {
+const getCachedCorporatePrograms = unstable_cache(
+  async () => fetchCorporatePrograms(),
+  ['corporate-programs-catalog'],
+  { revalidate: 300 }
+);
+
+export async function getCorporatePrograms(): Promise<CorporateProgram[]> {
+  const rows = await getCachedCorporatePrograms();
+  if (rows.length > 0) return rows;
   const parsed = readYamlSafe<{ corporate_programs?: CorporateProgram[] }>(
     path.join(CONFIG_DIR, 'corporate_programs.yaml'),
     {}
@@ -138,23 +193,58 @@ export interface NewsletterEdition {
   content: string;
 }
 
-// Rota /newsletter (2026-08-19) -- somente leitura. `pipeline/data/newsletter/AAAA-MM-DD.md` é
-// populado por outro setor (alchemia-bots), rodando em paralelo -- este dashboard nunca escreve
-// aqui. Se o diretório não existir ainda, ou estiver vazio, retorna null sem quebrar a rota (ver
-// app/newsletter/page.tsx, estado vazio).
-export function getLatestNewsletter(): NewsletterEdition | null {
+function listLocalNewsletterFiles(): string[] {
   const dir = path.join(DATA_DIR, 'newsletter');
   try {
-    if (!fs.existsSync(dir)) return null;
-    const files = fs.readdirSync(dir).filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f));
-    if (files.length === 0) return null;
-    files.sort(); // nome AAAA-MM-DD.md ordena lexicograficamente na mesma ordem que a data
-    const latest = files[files.length - 1];
-    const content = fs.readFileSync(path.join(dir, latest), 'utf-8');
-    return { date: latest.replace(/\.md$/, ''), content };
+    if (!fs.existsSync(dir)) return [];
+    return fs
+      .readdirSync(dir)
+      .filter((f) => /^\d{4}-\d{2}-\d{2}\.md$/.test(f))
+      .sort()
+      .reverse(); // mais recente primeiro -- nome AAAA-MM-DD.md ordena lexicograficamente como data
+  } catch {
+    return [];
+  }
+}
+
+function readLocalNewsletter(dateStr: string): NewsletterEdition | null {
+  const dir = path.join(DATA_DIR, 'newsletter');
+  try {
+    const content = fs.readFileSync(path.join(dir, `${dateStr}.md`), 'utf-8');
+    return { date: dateStr, content };
   } catch {
     return null;
   }
+}
+
+const getCachedAllNewsletters = unstable_cache(async () => fetchAllNewsletters(), ['all-newsletters'], {
+  revalidate: 300,
+});
+
+// Rota /newsletter (lista) -- 2026-08-20 (mais tarde): virou uma lista navegável por
+// data, não mais só a edição mais recente com o texto inteiro exposto (achado do
+// fundador: mostrar prévia, abrir completo só ao clicar -- ver app/newsletter/page.tsx
+// e app/newsletter/[date]/page.tsx). Lê do Supabase (tabela `newsletters`, escrita pela
+// rotina do Axel); cai para a lista de arquivos locais se a tabela vier vazia.
+export async function getNewsletters(): Promise<NewsletterEdition[]> {
+  const fromSupabase = await getCachedAllNewsletters();
+  if (fromSupabase.length > 0) return fromSupabase;
+  return listLocalNewsletterFiles()
+    .map((file) => readLocalNewsletter(file.replace(/\.md$/, '')))
+    .filter((edition): edition is NewsletterEdition => edition !== null);
+}
+
+const getCachedNewsletterByDate = unstable_cache(
+  async (dateStr: string) => fetchNewsletterByDate(dateStr),
+  ['newsletter-by-date'],
+  { revalidate: 300 }
+);
+
+// Rota /newsletter/[date] (detalhe) -- conteúdo completo de uma edição específica.
+export async function getNewsletterByDate(dateStr: string): Promise<NewsletterEdition | null> {
+  const fromSupabase = await getCachedNewsletterByDate(dateStr);
+  if (fromSupabase) return fromSupabase;
+  return readLocalNewsletter(dateStr);
 }
 
 export function timeAgo(iso: string | null | undefined): string {
@@ -172,6 +262,36 @@ export function timeAgo(iso: string | null | undefined): string {
   if (diffD < 30) return `${diffD}d atrás`;
   const diffMonth = Math.floor(diffD / 30);
   return `${diffMonth}mês atrás`;
+}
+
+// Prévia curta de uma edição de newsletter para a lista (/newsletter) -- extrai a
+// linha de metadado ("_Atualizado às HH:MM · N achados..._") como subtítulo, e as
+// primeiras ~200 caracteres de texto corrido depois dela como resumo, com sintaxe de
+// markdown removida (não precisa de MarkdownLite para um trecho curto e sem link).
+export function previewNewsletter(content: string): { meta: string; excerpt: string } {
+  const lines = content.replace(/\r\n/g, '\n').split('\n');
+  const metaLine = lines.find((l) => l.trim().startsWith('_Atualizado'));
+  const meta = metaLine ? metaLine.trim().replace(/^_|_$/g, '') : '';
+
+  const bodyLines = lines
+    .filter((l) => {
+      const t = l.trim();
+      if (!t) return false;
+      if (t.startsWith('#')) return false; // títulos
+      if (t === metaLine?.trim()) return false;
+      if (/^(---|\*\*\*)$/.test(t)) return false;
+      return true;
+    })
+    .join(' ')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const excerpt = bodyLines.length > 220 ? `${bodyLines.slice(0, 220).trimEnd()}…` : bodyLines;
+  return { meta, excerpt };
 }
 
 export function formatDate(iso: string | null | undefined): string {

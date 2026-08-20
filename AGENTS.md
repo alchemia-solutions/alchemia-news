@@ -740,6 +740,132 @@ empresa); decisão de automatizar isso (ou não) fica com o fundador.
 Ver `alchemia-brain/02-Harness/alchemia-news.md` (a atualizar) e a instrução completa de deploy
 dada ao fundador nesta mesma conversa.
 
+## Addendum — 2026-08-20 (performance): três causas reais de lentidão achadas e corrigidas com
+## medição real, não suposição
+
+A pedido do fundador ("está muito lento pra abrir as páginas"), medi (`curl -w %{time_total}`,
+build de produção local) antes de mudar qualquer coisa. Números reais: `/noticias` **3,1s** por
+requisição (repetido, sem melhora — nada cacheava), `/` **2,3s**, `/artigos` **0,85s** (tabela
+menor, confirma que o tamanho da tabela era o fator).
+
+**Três causas reais, todas no código introduzido pela integração Supabase (addendum anterior,
+mesma data):**
+1. `dashboard/lib/supabase.ts` buscava a tabela `items` **inteira** por `kind` em toda
+   requisição — `/noticias` trazia as ~2.000 linhas de `news` só para renderizar uma lista, sem
+   paginação nem limite.
+2. A consulta ordena por `published_date`, mas a migração original só indexou `kind` e
+   `collected_at` — todo request fazia sort completo sem índice.
+3. Toda página usava `force-dynamic` — zero cache, mesmo pedido repetido em segundos recomeçava
+   do zero.
+
+**Corrigido:**
+- `supabase/migrations/20260820143134_add_published_date_index.sql` — índice que faltava.
+- `fetchItemsByKind()` ganhou limite padrão de 500 itens (antes: sem limite) — `DEFAULT_ITEM_LIMIT`
+  em `lib/supabase.ts`. Rótulos de UI mudaram de "Todas (N)" para "Recentes (N)" em `/noticias` e
+  `/artigos`, para não alegar completude que deixou de existir.
+- `countItemsByKind()` (novo) — contagem exata via `count: 'exact', head: true` (não transfere
+  linha nenhuma), usada nos `StatCard` da home para o total continuar real mesmo com a lista
+  limitada.
+- `getArticles()`/`getNews()`/`getArticlesCount()`/`getNewsCount()` agora passam por
+  `unstable_cache` (`next/cache`, ainda suportado nesta versão — ver
+  `node_modules/next/dist/docs/.../unstable_cache.md`; substituído por `use cache`/Cache
+  Components, que exige flag experimental não habilitada neste projeto), revalidação de 5 min.
+  **Achado real ao aplicar:** a primeira tentativa (sem o limite de 500) estourava o teto de 2MB
+  por entrada do `unstable_cache` (payload de `news` media 2,39MB) — o cache falhava em silêncio
+  e a página voltava a buscar tudo. O limite de 500 resolveu as duas coisas juntas: cabe no cache
+  e reduz o tempo de resposta.
+- `/` (sem `searchParams`) virou página estática com `revalidate`. `/noticias`/`/artigos` usam
+  `searchParams` (filtro por fonte) — isso força renderização dinâmica no Next.js e ignora
+  `revalidate` de página inteira, por isso o cache foi aplicado na função de busca em si, não na
+  página.
+
+**Medido de novo depois da correção, mesma máquina:** `/noticias` 3,1s → 0,35-0,39s (fria) →
+0,11-0,12s (com cache). `/` 2,3s → 0,015-0,019s. `/artigos` 0,85s → ~0,09-0,10s. Confirmado depois
+do `git push` do fundador e da migração aplicar de verdade no banco de produção (mesma faixa de
+tempo se manteve).
+
+**Achado adicional, corrigido no mesmo ciclo:** a rotina do Baker nunca verificava se a
+sincronização com o Supabase estava de fato funcionando — ver addendum de hoje em
+`alchemia-ai/alchemia-bots/AGENTS.md`.
+
+**Limitação registrada, não resolvida:** `/noticias` e `/artigos` agora mostram só os 500 itens
+mais recentes de cada tipo, não o histórico completo — não há paginação na interface hoje. Se o
+fundador quiser acesso ao histórico completo, precisa de paginação real (client-side ou rotas
+`?page=N`), não implementada nesta rodada.
+
+## Addendum — 2026-08-20 (Fase 3 do Supabase): expansão completa — todo o dashboard lê do banco,
+## nada além de código exige `git push` para atualizar
+
+A pedido do fundador ("quero tudo... atualizado diariamente e depositado no Supabase... sem
+precisar commitar nada depois"), a integração que cobria só `articles`/`news` (addendum anterior)
+foi expandida para o resto do dashboard.
+
+**`companies_activity` não ganhou tabela própria, de propósito.** Confirmado por leitura direta:
+seus itens já são o mesmo formato de `items` (`kind='news'`, `company_slug` preenchido) e já
+chegam à tabela via a sincronização existente de `news.json` (o pipeline deposita todo item de
+empresa nos dois arquivos locais, de propósito, desde antes desta integração). Criar uma tabela
+paralela duplicaria dado sem necessidade — `dashboard/lib/supabase.ts` ganhou
+`fetchCompanyActivity()`, um filtro `company_slug IS NOT NULL` sobre a mesma tabela `items`
+(índice novo `items_company_slug_idx`).
+
+**Seis novos alvos de sincronização** (migração
+`supabase/migrations/20260820145152_expand_remaining_tables.sql`):
+- `companies` (espelha `companies.yaml`), `resources` (`resources.yaml`), `funding_channels`
+  (`funding_channels.yaml`), `corporate_programs` (`corporate_programs.yaml`), `pipeline_meta`
+  (linha única, espelha `meta.json`) — todos sincronizados por `pipeline/sync_supabase.py`
+  (reescrito com uma função genérica `_upsert()`/`_sync_catalog()` reaproveitada pelos quatro
+  catálogos, `--only <tabela>` para sincronizar um alvo isolado).
+- `newsletters` (chave primária `date`) — **não** entra no `sync_supabase.py`: é conteúdo
+  interpretativo gerado pela rotina do Axel mais tarde no dia (a etapa 3 do cron roda logo após a
+  coleta, antes de a newsletter do dia existir). Sincronizado por um script novo e separado,
+  `alchemia-ai/alchemia-bots/scripts/sync_newsletter.py` — ver addendum de hoje em
+  `alchemia-ai/alchemia-bots/AGENTS.md`.
+
+**`dashboard/lib/data.ts` — todos os getters que liam arquivo local viraram assíncronos**, lendo
+primeiro do Supabase (cacheado 5min via `unstable_cache`, mesmo padrão de `getArticles`/`getNews`)
+e **caindo para o arquivo local só se a tabela vier vazia** (rede de segurança: Supabase fora do
+ar, ou migração aplicada mas sincronização ainda não rodou hoje). Sete páginas precisaram de
+ajuste de `async`/`await` para acompanhar (`empresas`, `empresas/[slug]`, `fomento`, `programas`,
+`newsletter`, `sobre`, `bancos-ferramentas`, e a home).
+
+**Verificado, não presumido:** `npm run typecheck` e `npm run build` limpos; as 10 rotas
+retornaram `200` num build de produção local, com as tabelas novas **ainda não existindo** no
+Supabase real (confirmado pelo próprio erro no console: `Could not find the table
+'public.pipeline_meta'`) — prova viva de que a rede de segurança funciona: conteúdo real
+(Schrödinger, FINEP) renderizou via fallback para os arquivos locais, nenhuma página quebrou.
+`pipeline/sync_supabase.py --dry-run` confirmou as contagens reais antes de qualquer escrita: 2.366
+itens, 20 empresas, 9 recursos, 28 canais de fomento, 24 programas.
+
+**Pendente, depende do fundador:** a migração `*_expand_remaining_tables.sql` só aplica de verdade
+depois do próximo `git push` (integração GitHub↔Supabase, mesmo mecanismo já usado para o índice
+de `published_date`). Até lá, todas as sete tabelas/consultas novas operam 100% via a rede de
+segurança de arquivo local — comportamento correto, não um bug.
+
+Ver `alchemia-ai/alchemia-bots/AGENTS.md` (addendum de hoje, script `sync_newsletter.py` e
+atualização da rotina do Axel).
+
+## Addendum — 2026-08-20 (mais tarde ainda): `/newsletter` virou lista navegável por data
+
+A pedido do fundador ("organizar por data e horário... não ter o texto inteiro no começo, só
+quando clicar"), `/newsletter` deixou de mostrar só a edição mais recente com o conteúdo inteiro
+exposto.
+
+- `/newsletter` — lista todas as edições (`getNewsletters()`, tabela `newsletters` inteira — poucas
+  linhas, uma por dia, sem necessidade de paginação como `items`), cada uma como card com data,
+  a linha `_Atualizado às HH:MM..._` já embutida no markdown como subtítulo, e uma prévia curta
+  (`previewNewsletter()`, ~220 caracteres de texto corrido, markdown removido).
+- `/newsletter/[date]` (rota nova) — conteúdo completo de uma edição específica, só carregado ao
+  clicar. `notFound()` para data que não existe.
+- Filtro por "horário" não foi implementado como campo estruturado — a tabela `newsletters` guarda
+  uma linha por **dia** (o conteúdo acumula as três rodadas do dia num só documento, por decisão de
+  spec anterior), não uma por execução. O horário de cada atualização já fica visível na linha
+  `_Atualizado às..._` de cada edição, mas não é uma coluna consultável separadamente — se o
+  fundador quiser filtrar por horário de verdade, precisa de uma decisão de schema nova (guardar
+  granularidade por execução, não por dia), não implementada nesta rodada.
+
+**Verificado com servidor de produção real:** `/newsletter` → 200 com link pra edição de hoje;
+`/newsletter/2026-08-20` → 200 com "Insight Alchemia" renderizado; `/newsletter/1999-01-01` → 404.
+
 ## Addendum — 2026-08-19 (implementação): Fase 1 da spec de fomento/programas entregue —
 ## dois catálogos novos, duas rotas novas, três assets interativos, newsletter (leitura), sidebar
 ## em 3 grupos

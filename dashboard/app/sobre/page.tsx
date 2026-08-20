@@ -3,8 +3,8 @@ import { getPipelineMeta } from '@/lib/data';
 
 export const dynamic = 'force-dynamic';
 
-export default function SobrePage() {
-  const meta = getPipelineMeta();
+export default async function SobrePage() {
+  const meta = await getPipelineMeta();
 
   return (
     <div>

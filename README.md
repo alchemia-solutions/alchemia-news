@@ -138,19 +138,29 @@ npm run build && npm run start      # simula produção (gate de acesso ativo, v
 
 ## Banco de dados (Supabase)
 
-Desde 2026-08-20, **artigos e notícias** passaram a ser lidos direto de um Postgres gerenciado
-(Supabase) — não mais só do arquivo local. Isso elimina a espera de redeploy para o site refletir
-uma coleta nova: o pipeline sincroniza logo após coletar, e o dashboard lê em tempo de requisição.
+Desde 2026-08-20, **todo o conteúdo do dashboard** (artigos, notícias, atividade de empresas,
+editais de fomento, programas corporativos, newsletter e os números do painel) é lido direto de um
+Postgres gerenciado (Supabase) — não mais do arquivo local. Isso elimina a espera de redeploy para
+o site refletir dado novo: o pipeline (e, para a newsletter, a rotina do Axel) sincroniza logo após
+gerar o conteúdo, e o dashboard lê em tempo de requisição, com cache de 5 min.
 
-- **Escrita:** `pipeline/sync_supabase.py`, via API REST do Supabase (upsert em lote, chave
-  `dedupe_key`) — não adiciona nenhum driver de banco novo ao pipeline.
+- **Escrita:** `pipeline/sync_supabase.py` (articles/news/companies/resources/funding_channels/
+  corporate_programs/meta, 3x/dia, parte do cron) e
+  `alchemia-ai/alchemia-bots/scripts/sync_newsletter.py` (newsletter, logo após a rotina do Axel
+  gerá-la) — ambos via API REST do Supabase, sem driver de banco novo.
 - **Leitura:** `dashboard/lib/supabase.ts`, via `@supabase/supabase-js`, chave `anon`/`publishable`
   (pública por design, acesso restrito a leitura por Row Level Security).
-- **Escopo atual:** só a tabela `items` (`kind: 'article'|'news'`). Empresas, editais, programas e
-  newsletter continuam em arquivo — os JSONs locais nunca deixaram de ser gerados, o Supabase é
-  espelho, não substituição.
+- **Tabelas:** `items` (`kind: 'article'|'news'`, também usada para atividade de empresas via
+  filtro `company_slug IS NOT NULL`), `companies`, `resources`, `funding_channels`,
+  `corporate_programs`, `newsletters`, `pipeline_meta`.
+- **Rede de segurança:** todo getter em `dashboard/lib/data.ts` cai para o arquivo/config local se
+  a tabela correspondente vier vazia (Supabase fora do ar, ou sincronização ainda não rodou hoje) —
+  nenhuma página quebra ou mostra tela em branco por causa disso.
 - **Schema:** `supabase/migrations/` — aplicado automaticamente pela integração GitHub↔Supabase a
   cada `git push` para `main`. Nunca editado direto pelo painel do Supabase.
+
+**O que ainda exige `git push`:** só código (novas rotas, ajustes visuais, correções) — nenhum
+conteúdo de dado depende mais de commit para aparecer no site publicado.
 
 ### Variáveis de ambiente necessárias
 

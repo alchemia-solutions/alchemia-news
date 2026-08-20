@@ -12,15 +12,15 @@ import { getArticles, getArticlesCount, getCompanies, getCompaniesActivity, getN
 export const revalidate = 300;
 
 export default async function HomePage() {
-  const meta = getPipelineMeta();
-  const [news, articles, newsTotal, articlesTotal] = await Promise.all([
+  const [meta, news, articles, newsTotal, articlesTotal, companiesActivity, companies] = await Promise.all([
+    getPipelineMeta(),
     getNews(),
     getArticles(),
     getNewsCount(),
     getArticlesCount(),
+    getCompaniesActivity(),
+    getCompanies(),
   ]);
-  const companiesActivity = getCompaniesActivity();
-  const companies = getCompanies();
 
   const latestMixed = [...news, ...articles]
     .sort((a, b) => (b.published_date ?? '').localeCompare(a.published_date ?? ''))

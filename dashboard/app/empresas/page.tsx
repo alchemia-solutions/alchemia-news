@@ -5,9 +5,8 @@ import { CATEGORY_LABELS } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
-export default function EmpresasPage() {
-  const companies = getCompanies();
-  const activity = getCompaniesActivity();
+export default async function EmpresasPage() {
+  const [companies, activity] = await Promise.all([getCompanies(), getCompaniesActivity()]);
 
   const countBySlug = activity.reduce<Record<string, number>>((acc, item) => {
     if (item.company_slug) acc[item.company_slug] = (acc[item.company_slug] ?? 0) + 1;

@@ -1,6 +1,14 @@
 import 'server-only';
 import { createClient, type SupabaseClient } from '@supabase/supabase-js';
-import type { ItemKind, NewsItem } from './types';
+import type {
+  CompanyConfig,
+  CorporateProgram,
+  FundingChannel,
+  ItemKind,
+  NewsItem,
+  PipelineMeta,
+  ResourceConfig,
+} from './types';
 
 // Leitura de `articles`/`news` (tabela única `items`, coluna `kind`) direto do
 // Supabase -- substitui a leitura de pipeline/data/articles.json e news.json (ver
@@ -102,4 +110,109 @@ export async function countItemsByKind(kind: ItemKind): Promise<number> {
     return 0;
   }
   return count ?? 0;
+}
+
+// Fase 2 (2026-08-20, mais tarde) -- expande a leitura do Supabase para o resto do
+// dashboard. `companies_activity` NÃO tem tabela própria: seus itens já são o mesmo
+// formato de `items` (kind='news', company_slug preenchido), sincronizados junto de
+// news.json. Aqui é só um filtro sobre a mesma tabela (índice
+// `items_company_slug_idx`, ver migração `*_expand_remaining_tables.sql`).
+export async function fetchCompanyActivity(limit: number = DEFAULT_ITEM_LIMIT): Promise<NewsItem[]> {
+  const supabase = getClient();
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from('items')
+    .select(ITEM_COLUMNS)
+    .not('company_slug', 'is', null)
+    .order('published_date', { ascending: false, nullsFirst: false })
+    .limit(limit);
+  if (error) {
+    console.error('Supabase: falha ao ler atividade de empresas:', error.message);
+    return [];
+  }
+  return (data as unknown as NewsItem[]) ?? [];
+}
+
+async function fetchCatalog<T>(table: string, orderBy: string): Promise<T[]> {
+  const supabase = getClient();
+  if (!supabase) return [];
+  const { data, error } = await supabase.from(table).select('*').order(orderBy, { ascending: true });
+  if (error) {
+    console.error(`Supabase: falha ao ler ${table}:`, error.message);
+    return [];
+  }
+  return (data as unknown as T[]) ?? [];
+}
+
+export async function fetchCompanies(): Promise<CompanyConfig[]> {
+  return fetchCatalog<CompanyConfig>('companies', 'name');
+}
+
+export async function fetchResources(): Promise<ResourceConfig[]> {
+  return fetchCatalog<ResourceConfig>('resources', 'name');
+}
+
+export async function fetchFundingChannels(): Promise<FundingChannel[]> {
+  return fetchCatalog<FundingChannel>('funding_channels', 'name');
+}
+
+export async function fetchCorporatePrograms(): Promise<CorporateProgram[]> {
+  return fetchCatalog<CorporateProgram>('corporate_programs', 'name');
+}
+
+export async function fetchPipelineMeta(): Promise<PipelineMeta | null> {
+  const supabase = getClient();
+  if (!supabase) return null;
+  const { data, error } = await supabase.from('pipeline_meta').select('*').eq('id', 'singleton').maybeSingle();
+  if (error || !data) {
+    if (error) console.error('Supabase: falha ao ler pipeline_meta:', error.message);
+    return null;
+  }
+  return {
+    last_run_started: data.last_run_started,
+    last_run_finished: data.last_run_finished,
+    duration_seconds: data.duration_seconds,
+    collectors: data.collectors,
+    totals: data.totals,
+  } as PipelineMeta;
+}
+
+export interface NewsletterRow {
+  date: string;
+  content: string;
+}
+
+// Escrita pela rotina do Axel em `newsletters` (chave primária `date`), não pelo
+// pipeline determinístico. Ver alchemia-ai/alchemia-bots/scripts/sync_newsletter.py.
+// 2026-08-20 (mais tarde) -- lista todas as edições, não só a mais recente: a rota
+// /newsletter virou uma lista navegável por data (achado do fundador: "não ter o
+// texto inteiro no começo, só quando clicar"). Quantidade de linhas é pequena (uma
+// por dia), então não precisa de paginação/limite como `items`.
+export async function fetchAllNewsletters(): Promise<NewsletterRow[]> {
+  const supabase = getClient();
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from('newsletters')
+    .select('date,content')
+    .order('date', { ascending: false });
+  if (error) {
+    console.error('Supabase: falha ao ler newsletters:', error.message);
+    return [];
+  }
+  return (data as NewsletterRow[]) ?? [];
+}
+
+export async function fetchNewsletterByDate(date: string): Promise<NewsletterRow | null> {
+  const supabase = getClient();
+  if (!supabase) return null;
+  const { data, error } = await supabase
+    .from('newsletters')
+    .select('date,content')
+    .eq('date', date)
+    .maybeSingle();
+  if (error || !data) {
+    if (error) console.error(`Supabase: falha ao ler newsletters/${date}:`, error.message);
+    return null;
+  }
+  return data as NewsletterRow;
 }

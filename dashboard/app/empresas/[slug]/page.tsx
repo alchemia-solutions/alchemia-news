@@ -9,11 +9,11 @@ export const dynamic = 'force-dynamic';
 
 export default async function EmpresaDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const companies = getCompanies();
+  const [companies, allActivity] = await Promise.all([getCompanies(), getCompaniesActivity()]);
   const company = companies.find((c) => c.slug === slug);
   if (!company) notFound();
 
-  const activity = getCompaniesActivity().filter((item) => item.company_slug === slug);
+  const activity = allActivity.filter((item) => item.company_slug === slug);
 
   return (
     <div>

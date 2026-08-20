@@ -8,8 +8,8 @@ import { FUNDING_SCOPE_LABELS } from '@/lib/types';
 
 export const dynamic = 'force-dynamic';
 
-export default function FomentoPage() {
-  const channels = getFundingChannels();
+export default async function FomentoPage() {
+  const channels = await getFundingChannels();
   const recommended = channels.filter((c) => c.priority_alchemia === 'alta');
 
   const entries: OpportunityFilterEntry[] = channels.map((channel) => ({
