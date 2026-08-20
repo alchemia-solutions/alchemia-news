@@ -2,7 +2,16 @@ import Link from 'next/link';
 import LiveClock from '@/components/LiveClock';
 import StatCard from '@/components/StatCard';
 import ItemCard from '@/components/ItemCard';
-import { getArticles, getArticlesCount, getCompanies, getCompaniesActivity, getNews, getNewsCount, getPipelineMeta } from '@/lib/data';
+import {
+  getArticles,
+  getArticlesCount,
+  getCompanies,
+  getCompaniesActivity,
+  getCompaniesActivityCount,
+  getNews,
+  getNewsCount,
+  getPipelineMeta,
+} from '@/lib/data';
 
 // Achado de performance (2026-08-20): medido ao vivo em ~2.3s/requisição antes desta
 // correção -- esta página busca news+articles inteiros do Supabase (Promise.all) só para
@@ -12,15 +21,17 @@ import { getArticles, getArticlesCount, getCompanies, getCompaniesActivity, getN
 export const revalidate = 300;
 
 export default async function HomePage() {
-  const [meta, news, articles, newsTotal, articlesTotal, companiesActivity, companies] = await Promise.all([
-    getPipelineMeta(),
-    getNews(),
-    getArticles(),
-    getNewsCount(),
-    getArticlesCount(),
-    getCompaniesActivity(),
-    getCompanies(),
-  ]);
+  const [meta, news, articles, newsTotal, articlesTotal, companiesActivity, companiesActivityTotal, companies] =
+    await Promise.all([
+      getPipelineMeta(),
+      getNews(),
+      getArticles(),
+      getNewsCount(),
+      getArticlesCount(),
+      getCompaniesActivity(),
+      getCompaniesActivityCount(),
+      getCompanies(),
+    ]);
 
   const latestMixed = [...news, ...articles]
     .sort((a, b) => (b.published_date ?? '').localeCompare(a.published_date ?? ''))
@@ -50,7 +61,7 @@ export default async function HomePage() {
       <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4">
         <StatCard label="Artigos & Preprints" value={articlesTotal} hint="PubMed · bioRxiv · arXiv · ChemRxiv · SciELO" accent="cyan" />
         <StatCard label="Notícias" value={newsTotal} hint="Google News · Nature · feeds" accent="progress" />
-        <StatCard label="Menções de Empresas" value={companiesActivity.length} hint={`${companies.length} empresas monitoradas`} accent="done" />
+        <StatCard label="Menções de Empresas" value={companiesActivityTotal} hint={`${companies.length} empresas monitoradas`} accent="done" />
         <StatCard
           label="Última coleta (duração)"
           value={meta ? `${meta.duration_seconds}s` : '—'}

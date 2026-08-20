@@ -1113,3 +1113,43 @@ esses dois arquivos desde a migração do Next. Corrigido (`searchParams: Promis
 
 Até os três passos acima, o dashboard mostra `articles`/`news` vazios (fallback gracioso, não
 erro) -- os JSONs locais continuam existindo e corretos, só não são mais a fonte que o dashboard lê.
+
+## Addendum — 2026-08-20 (verificação visual real): dois bugs encontrados e corrigidos ao abrir o
+## app renderizado com dado real do Supabase, nenhum deles pego pelo `typecheck`/`build`
+
+A pedido do fundador ("Confere se abriu certinho no navegador"), depois de todas as correções de
+performance/expansão Supabase já registradas nos addenda acima, o app foi de fato aberto num
+navegador (não só compilado) contra o Supabase real, produção local (`npm run start`, porta 3300,
+credenciais de teste). Dois bugs reais só visíveis olhando a tela renderizada, nenhum dos dois
+pego por `npm run typecheck`/`npm run build` (ambos passam limpos nos dois casos, antes e depois):
+
+1. **Data da newsletter aparecia um dia atrás.** `/newsletter` mostrava "19 de ago. de 2026" para a
+   edição cuja linha no Supabase tem `date = '2026-08-20'` (confirmado por query direta -- só essa
+   linha existe). Causa: `new Date("2026-08-20")` em JS interpreta string `YYYY-MM-DD` como
+   meia-noite UTC; formatado no timezone do servidor (Brazil/East, UTC-3), rola um dia para trás.
+   Corrigido em `formatDate()` (`dashboard/lib/data.ts`) com parsing manual de data-sem-hora usando
+   o construtor `Date` em componentes locais (`new Date(ano, mes-1, dia)`), que não sofre conversão
+   de timezone. Mesma função é usada em todo o app -- não é um fix isolado da newsletter.
+2. **StatCard "Menções de Empresas" da home mostrava o teto de busca (500), não o total real.**
+   `companiesActivity.length` (a lista, limitada por `DEFAULT_ITEM_LIMIT` em `lib/supabase.ts`) era
+   usado como se fosse a contagem total -- mesma classe de erro que os addenda anteriores já tinham
+   corrigido nos textos "Recentes (N)" de `/noticias` e `/artigos`, mas esta StatCard específica
+   tinha ficado de fora daquela correção. Corrigido com `countCompanyActivity()`
+   (`dashboard/lib/supabase.ts`, `count: 'exact', head: true`, sem transferir linha nenhuma) +
+   `getCompaniesActivityCount()` (`dashboard/lib/data.ts`, cacheado 5 min via `unstable_cache`,
+   mesmo padrão dos demais getters) + wiring em `app/page.tsx`. Verificado ao vivo: **988**, não
+   500.
+
+**O padrão que vale registrar:** os dois bugs só existiam porque a UI já filtra/soma corretamente
+os dados retornados -- o problema estava em qual dado o Supabase devolvia (dado vs. contagem,
+UTC vs. local), algo que `tsc`/`next build` não têm como pegar porque o código está tipado
+corretamente e compila -- só o valor em runtime está errado. Reforça a mesma lição já registrada
+neste diretório e em `alchemia-ai/alchemia-athanor/CLAUDE.md` (2026-08-09): verificação de
+tipo/build prova ausência de um tipo de erro, nunca corretude visual -- só abrir a tela renderizada
+pega esta classe.
+
+**Pendência real, não fechada nesta rodada:** as duas correções estão só localmente, verificadas
+contra um servidor de produção local (`npm run start`, não o dev server) -- ainda não passaram por
+`git push`, então a Vercel de produção segue servindo a versão com os dois bugs até o fundador
+commitar. Nenhum commit/push foi feito por este agente (convenção da empresa, `CLAUDE.md`/`AGENTS.md`
+raiz -- o fundador sempre faz o push).

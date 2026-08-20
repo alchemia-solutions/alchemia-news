@@ -5,6 +5,7 @@ import yaml from 'js-yaml';
 import { unstable_cache } from 'next/cache';
 import type { CompanyConfig, CorporateProgram, FundingChannel, ItemKind, NewsItem, PipelineMeta, ResourceConfig } from './types';
 import {
+  countCompanyActivity,
   countItemsByKind,
   fetchAllNewsletters,
   fetchCompanies,
@@ -122,6 +123,18 @@ export async function getCompaniesActivity(): Promise<NewsItem[]> {
   const rows = await getCachedCompanyActivity();
   if (rows.length > 0) return rows;
   return readJsonSafe<NewsItem[]>(path.join(DATA_DIR, 'companies_activity.json'), []);
+}
+
+// Contagem real (não o tamanho da lista limitada acima) -- mesmo princípio de
+// getArticlesCount()/getNewsCount(). StatCard da home usa esta, não `.length`.
+const getCachedCompanyActivityCount = unstable_cache(
+  async () => countCompanyActivity(),
+  ['company-activity-count'],
+  { revalidate: 300 }
+);
+
+export async function getCompaniesActivityCount(): Promise<number> {
+  return getCachedCompanyActivityCount();
 }
 
 const getCachedPipelineMeta = unstable_cache(
@@ -294,9 +307,18 @@ export function previewNewsletter(content: string): { meta: string; excerpt: str
   return { meta, excerpt };
 }
 
+// Achado real (2026-08-20): `new Date("AAAA-MM-DD")` (sem hora) é interpretado pelo JS como
+// meia-noite UTC -- formatado depois em fuso local (Brazil/East, UTC-3), isso virava o dia
+// anterior (a newsletter de 2026-08-20 aparecia como "19 de ago." na lista). Datas completas
+// (com hora, ex. `collected_at`/`last_run_finished`) não têm esse problema, porque já carregam
+// o próprio fuso -- só valores `date` puros (coluna `newsletters.date`) precisam do parse manual
+// abaixo, que constrói a data em horário local em vez de deixar o JS reinterpretar como UTC.
 export function formatDate(iso: string | null | undefined): string {
   if (!iso) return 'Data desconhecida';
-  const d = new Date(iso);
+  const dateOnlyMatch = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  const d = dateOnlyMatch
+    ? new Date(Number(dateOnlyMatch[1]), Number(dateOnlyMatch[2]) - 1, Number(dateOnlyMatch[3]))
+    : new Date(iso);
   if (Number.isNaN(d.getTime())) return 'Data desconhecida';
   return d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short', year: 'numeric' });
 }

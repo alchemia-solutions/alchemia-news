@@ -133,6 +133,24 @@ export async function fetchCompanyActivity(limit: number = DEFAULT_ITEM_LIMIT): 
   return (data as unknown as NewsItem[]) ?? [];
 }
 
+// Contagem real de itens com company_slug preenchido -- usada no StatCard da home,
+// que antes mostrava `companiesActivity.length` (capado em DEFAULT_ITEM_LIMIT=500)
+// como se fosse o total, quando o total real já passa de 500. Achado ao inspecionar
+// visualmente a home renderizada com dado real (2026-08-20).
+export async function countCompanyActivity(): Promise<number> {
+  const supabase = getClient();
+  if (!supabase) return 0;
+  const { count, error } = await supabase
+    .from('items')
+    .select('*', { count: 'exact', head: true })
+    .not('company_slug', 'is', null);
+  if (error) {
+    console.error('Supabase: falha ao contar atividade de empresas:', error.message);
+    return 0;
+  }
+  return count ?? 0;
+}
+
 async function fetchCatalog<T>(table: string, orderBy: string): Promise<T[]> {
   const supabase = getClient();
   if (!supabase) return [];
