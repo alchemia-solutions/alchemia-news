@@ -180,6 +180,163 @@
   },
   {
     "kind": "article",
+    "title": "PyMOL plugin for Protein Circuit Topology",
+    "url": "https://doi.org/10.1101/2025.10.21.683762",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-20",
+    "collected_at": "2026-08-20T15:41:42.884669+00:00",
+    "authors": [
+      "Dimins, M.",
+      "Bazba, A.",
+      "Mogyorosi, A.",
+      "Kennon, E.",
+      "Fiol, T. D.",
+      "Hagen, L. A.",
+      "Sheikhhassani, V.",
+      "Akulov, V.",
+      "Mashaghi, A."
+    ],
+    "summary": "Circuit Topology (CT) provides a fundamental framework for analysing folded polymer chains, with applications in functional annotation, protein engineering and drug development. We present a protein CT analysis plugin for PyMOL v3.1.6.1 with a graphical user interface (GUI), automatic installation, and novel features developed through integration with PyMOL's application programming interface (API). The plugin integrates various previously developed CT methodologies for studying structured proteins and their complexes as well as the dynamics of disordered proteins. Analysis of a representative protein and a molecular dynamics trajectory demonstrates the plugin's three analysis modes and their outputs. The plugin reproduces the reference ProteinCT implementation exactly on the structures tested, and is distributed with a versioned release, a pinned environment and a one-command reproduction of every result reported here.",
+    "doi": "10.1101/2025.10.21.683762",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein engineering",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.1101/2025.10.21.683762"
+  },
+  {
+    "kind": "article",
+    "title": "Optimized Kakadu Plum Extracts Inhibit Intracellular Oxidative Stress in Canine Small Intestinal Cell Model",
+    "url": "https://doi.org/10.64898/2026.08.16.745076",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-20",
+    "collected_at": "2026-08-20T15:41:45.899055+00:00",
+    "authors": [
+      "He, Y.",
+      "Zhou, X.",
+      "Celentano, A.",
+      "Cirillo, N.",
+      "Cheng, L.",
+      "Fang, Z.",
+      "Zhang, P."
+    ],
+    "summary": "Kakadu plum (Terminalia ferdinandiana), an Australian native fruit, is among the richest known dietary sources of vitamin C and hydrolysable tannins, yet its capacity to protect the intestinal epithelium against oxidative stress remains largely unexplored. This study optimised the extraction of bioactive compounds from freeze-dried Kakadu plum powder and evaluated their antioxidant activity using both chemical and cellular antioxidant in vitro assay. Phenolic compounds were extracted using three solvents (water, 80% ethanol, and 80% methanol) combined with shaking, ultrasound, or microwave assistance. Solvent, rather than processing technique, was the dominant determinant of antioxidant capacity: ethanol and methanol maximised total phenolic content, total flavonoid content, and DPPH radical-scavenging activity, whereas water extracts showed the highest ferric-reducing antioxidant power. Twenty-four phenolic compounds identified by HPLC-ESI-QTOF-MS/MS were mapped by network pharmacology to nine core oxidative-stress targets, and cross-species molecular docking predicted conserved binding of key phenolics to canine orthologs of PTGS2 and MMP2. In an H2O2-induced oxidative-stress in ",
+    "doi": "10.64898/2026.08.16.745076",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.16.745076"
+  },
+  {
+    "kind": "article",
+    "title": "Soluble ZP2 N-terminal fragments activate CatSper-dependent Ca2+ entry and regulate motility and acrosomal exocytosis in mammalian sperm",
+    "url": "https://doi.org/10.64898/2026.08.19.745727",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-20",
+    "collected_at": "2026-08-20T15:41:48.142326+00:00",
+    "authors": [
+      "Wiesehoefer, C.",
+      "Sunjic, L.",
+      "Suetin, L.",
+      "Oh, J.-N.",
+      "Wiesehoefer, M.",
+      "Lyndin, M.",
+      "Thayaparan, T.",
+      "Chandrakumar, L.",
+      "Chung, J.-J.",
+      "Wennemuth, G."
+    ],
+    "summary": "Sperm motility and function are central to mammalian fertilization and are tightly regulated by intracellular calcium (CaCa2+) signaling. This signaling is primarily orchestrated by the CatSper Ca2+; channel complex located in the flagella of spermatozoa. However, the natural ligands that activate CatSper remain largely unknown in many species, despite the conservation of CatSper in mammals. Here, we present a signaling role for soluble N-terminal ZP2 fragments in regulating CatSper activity and sperm physiology in mice and humans. ZP2 has been implicated in mediating sperm binding and recognition at the oocyte surface interface; however, new evidence is starting to unveil the molecular mechanisms and function of ZP2 during fertilization transition. Here, we show that the during fertilization, cleaved ZP2 N-terminal fragment triggers a rapid and robust increase in intracellular CaCa2+ levels in sperm. This increase depends strictly on CatSper function, as demonstrated through pharmacological analysis and CatSper1 knockout mice. This calcium influx is sufficient to induce acrosomal exocytosis in a subset of human and mouse sperm. AlphaFold-based structural modeling suggests a potent",
+    "doi": "10.64898/2026.08.19.745727",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "cell biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.19.745727"
+  },
+  {
+    "kind": "article",
+    "title": "A dual-criterion computational filter for the identification of selective MexABOprM efflux pump inhibitors: cross-family validation and control of MexRmediated derepression risk",
+    "url": "https://doi.org/10.26434/chemrxiv.15007681/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-20",
+    "collected_at": "2026-08-20T15:41:54.960060+00:00",
+    "authors": [
+      "Divin Stoni Mbanimi",
+      "Divin Stoni MBANIMI"
+    ],
+    "summary": "Drug repositioning against bacterial efflux pumps has classically relied on a single criterion: the predicted binding affinity for the target transporter. This approach overlooks a distinct failure modetranscriptional derepression of the pump's own expression, through inhibition of the associated transcriptional regulator. Here we propose a dual-criterion screening protocol, combining (i) a relative selectivity index between affinity for the MexB pump and affinity for its repressor MexR, and (ii) an absolute risk threshold calibrated on a documented derepression inducer (pyocyanin). The method was tested by molecular docking (AutoDock Vina) on 139 compounds spanning four independent chemical families (antidepressants, antipsychotics, H1 antihistamines, phytomolecules), against the MexB (PDB 3W9J) and MexR structures. The ΔG(MexB)–ΔG(MexR) correlation proved robust and generalizable across the four families (r = 0.834–0.924, all p",
+    "doi": "10.26434/chemrxiv.15007681/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15007681/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Interplay of Depletion-Interaction and Viscosity Drives Non-Monotonic Ligand Binding to DNA G-Quadruplex under Crowding",
+    "url": "https://doi.org/10.26434/chemrxiv.15007676/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-20",
+    "collected_at": "2026-08-20T15:41:54.962691+00:00",
+    "authors": [
+      "Ajay Kumar Chand",
+      "Pramod Kumar",
+      "Harsh Sahu",
+      "Shubham Kumar Sharma",
+      "Sobhan Sen"
+    ],
+    "summary": "The study of ligand binding to G-quadruplex (G4) DNA under molecular crowding is essential for understanding its implications in cellular context; however, the underlying mechanism remains largely unresolved. Here we investigate the binding of TMPyP4 to parallel c-MYC G4 DNA under EG/PEG crowding using steady-state and fluorescence correlation spectroscopy (FCS). Ligand binding affinity (K) to G4 exhibits a pronounced non-monotonic, U-shaped dependence on crowder size – first decreasing due to viscosity-induced hindrance, then recovering for larger PEGs. Kinetic analysis of FCS data reveals that this arises from competing effects of crowder-induced viscosity and depletion interactions on ligand association (݇k on ) and dissociation (݇k off ) rates. A modified Collins-Kimball-Debye formalism, combined with hybrid MD simulations, shows that larger crowders create polymer-free depletion cavities that accelerate ligand/G4 association, counteracting viscous drag. These results provide a generalizable framework that connects polymer physics to nucleic acid-ligand recognition, useful for G4-targeted drug design in the crowded cellular milieu.",
+    "doi": "10.26434/chemrxiv.15007676/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15007676/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Molecular echoes of a hot Earth",
+    "url": "https://doi.org/10.26434/chemrxiv.15007671/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-20",
+    "collected_at": "2026-08-20T15:41:54.964710+00:00",
+    "authors": [
+      "Jiri Damborsky",
+      "Linda Kasiarova",
+      "Alan Strunga"
+    ],
+    "summary": "The effect of evolution on the fundamental thermodynamic properties of proteins has not been fully clear. Ancestral protein reconstruction has now revealed that Earth’s ancient high temperatures promoted entropy-driven ligand binding in a transcription factor family, while planetary cooling over billions of years led to favouring enthalpic mechanisms. Protein–ligand binding involves a complex thermodynamic balance. The binding free energy determines protein–ligand affinity and arises from two main factors: enthalpy, reflecting energy gained through specific interactions such as hydrogen bonds and electrostatic forces, and entropy, reflecting changes in disorder and the energetically favourable release of water molecules from hydrophobic surfaces. For decades, computational biology and drug discovery have primarily focused on enhancing enthalpic interactions by engineering complementary shapes and chemical groups to strengthen contacts. However, it has remained unclear whether evolutionary processes shape the fundamental thermodynamic contributions to binding and whether the physical environment can modulate these mechanisms.",
+    "doi": "10.26434/chemrxiv.15007671/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15007671/v1"
+  },
+  {
+    "kind": "article",
     "title": "Evidence-constrained mechanistic synthesis for drug discovery",
     "url": "https://doi.org/10.64898/2026.08.17.745376",
     "source": "bioRxiv",
@@ -10214,5 +10371,180 @@
       "journal": "Journal of molecular modeling"
     },
     "dedupe_key": "doi:10.1007/s00894-026-06885-3"
+  },
+  {
+    "kind": "article",
+    "title": "Integrating Transcriptomics, Network Pharmacology, Molecular Docking and Experimental Validation to Explore the Pharmacological Mechanisms of Chinese Medicinal Honey in Treating Diabetic Wounds.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42619459/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-20T15:40:04.531380+00:00",
+    "authors": [
+      "Yungang Hu",
+      "Yiwen Wang",
+      "Lin Zhi",
+      "Xiaohua Hu",
+      "Yuming Shen",
+      "Weili Du"
+    ],
+    "summary": "Chinese medicinal honey (CMH) is traditionally used for wounds, but its mechanisms in diabetic wounds are unclear. This study aimed to investigate the active components of CMH and the molecular mechanisms underlying its promotion of wound healing in individuals with diabetes to provide a preliminary experimental basis for its clinical application. The main components of CMH were analysed using ultra-performance liquid chromatography-quadrupole time-of-flight mass spectrometry (UPLC-Q-TOF/MS). An integrated strategy combining network pharmacology, transcriptomics, molecular docking and animal experiments was applied. A db/db diabetic mouse model was used to evaluate CMH in diabetic wound healing. Histopathology, immunohistochemistry, qRT-PCR and western blotting were performed to assess anti-inflammatory, antioxidant and pro-angiogenic effects. Fifty-two major CMH components, mainly flavonoids and phenolic acids, were identified. Network pharmacology and transcriptomics showed that CMH targets epidermal growth factor receptor (EGFR), interleukin (IL)-1β, matrix metallopeptidase 9 (MMP9) and prostaglandin-endoperoxide synthase 2 (PTGS2), with significant enrichment in the IL-17 signalling pathway. Molecular docking validated a strong binding affinity between CMH components and key targets, including IL-17A and NF-κB. In vivo findings suggest that CMH markedly accelerates wound healing in diabetic mice, reduces inflammation and oxidative stress, promotes collagen deposition and angiogenesis and suppresses the activity of the IL-17A/NF-κB pathway. This study provides a preliminary experimental basis of CMH. CMH supports diabetic wound healing through a multi-component, multi-target mechanism, primarily by inhibiting the IL-17A/NF-κB signalling pathway, thereby attenuating inflammation and oxidative stress and promoting angiogenesis and tissue repair.",
+    "doi": "10.1111/wrr.70199",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42619459",
+      "journal": "Wound repair and regeneration : official publication of the Wound Healing Society [and] the European Tissue Repair Society"
+    },
+    "dedupe_key": "doi:10.1111/wrr.70199"
+  },
+  {
+    "kind": "article",
+    "title": "An Explicit Interaction-Prompted Diffusion Framework for High-Fidelity 3D Molecular Generation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42619129/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-20T15:40:04.531903+00:00",
+    "authors": [
+      "Huabin Du",
+      "Mingyang Wang",
+      "Mengqi Luo",
+      "Mengke Yang",
+      "Yingchao Yan",
+      "Ke An",
+      "Xiaohong Zhu",
+      "Arieh Warshel",
+      "Tingjun Hou",
+      "Chen Bai"
+    ],
+    "summary": "Current structure-based drug design generative models often struggle to faithfully recapitulate genuine ligand-protein binding interactions. Instead, under the coupling of implicit learning architectures and biased training data, they tend to learn spurious statistical correlations. To address this, we propose EIP-Diff (Explicit Interaction-Prompted Diffusion), an architecture featuring a novel explicit interaction-prompt embedding mechanism that is better suited for real-world target-specific drug design. This architecture replaces biased implicit learning with explicit, residue-level biological guidance, thereby promoting more fine-grained geometric fidelity and more precise interaction-aware conditioning. To fully realize the capabilities of EIP-Diff and provide a reliable basis for performance evaluation, we further constructed CrystalData set, which provides higher-fidelity and less-biased structural supervision than existing data sets. This explicit architecture markedly improves distribution consistency: even when trained on the crossdocked data set, EIP-Diff achieves the highest alignment with authentic pharmacological distributions among evaluated models. Training on CrystalData set further enhances this alignment and improves 3D geometric accuracy, while retaining strong controllability, high chemical space coverage, and near-perfect uniqueness. In addition, target-based validation on KAT6A and YTHDC1 confirmed that EIP-Diff accurately recapitulates native-like binding modes. Furthermore, in a real-world drug design task against IDO1, we successfully designed a novel lead compound with nanomolar potency (IC50 = 0.31 nM). These results demonstrate that the EIP-Diff architecture can explicitly leverage experimentally derived structural data and biologically meaningful interaction information for target-specific molecular generation, thereby enabling its effective application to real-world structure-based drug design.",
+    "doi": "10.1021/jacs.6c08189",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "structure-based drug design"
+    ],
+    "extra": {
+      "pmid": "42619129",
+      "journal": "Journal of the American Chemical Society"
+    },
+    "dedupe_key": "doi:10.1021/jacs.6c08189"
+  },
+  {
+    "kind": "article",
+    "title": "De Novo-Designed Bifunctional Proteins for Targeted Protein Degradation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42619090/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-20T15:40:04.532526+00:00",
+    "authors": [
+      "Bram Mylemans",
+      "Boguslawa Korona",
+      "Amanda M Acevedo-Jake",
+      "Ailsa MacRae",
+      "Thomas A Edwards",
+      "Danny T Huang",
+      "Andrew J Wilson",
+      "Laura S Itzhaki",
+      "Derek N Woolfson"
+    ],
+    "summary": "In targeted protein degradation (TPD), specific subcellular proteins are removed by routing them to the ubiquitin-proteasome, autophagy, or lysosome machinery. For instance, proteolysis-targeting chimeras (PROTACs) are synthetic heterobifunctional small molecules that simultaneously bind the target and an E3 ubiquitin ligase to drive ubiquitination and degradation by the proteasome. Despite considerable success, designing such molecules is challenging, and the number of currently addressable ubiquitin E3 ligases is limited. Here, we design a heterobifunctional de novo protein to trigger the degradation of a common cancer target, resulting in a desired phenotypic output. First, we developed a highly stable and adaptable helix-turn-helix scaffold for presenting multiple binding sites. Next, we use computational protein design to incorporate and embellish hot-spot-binding sites to target the antiapoptotic mediators BCL-xL and MCL-1. We show a 75% success rate for creating submicromolar binders against these targets. Crystal structures of the complexes confirmed the designed binding poses. Then, we designed short linear motifs (SLiMs) into the loop of the scaffold to recruit KLHL20 and the ubiquitin ligase machinery. These designs have low micromolar affinity for KLHL20 comparable to that of the natural SLiMs. Moreover, the bifunctionalized proteins degrade BCL-xL in cells, leading to apoptosis.",
+    "doi": "10.1021/jacs.6c07593",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein design"
+    ],
+    "extra": {
+      "pmid": "42619090",
+      "journal": "Journal of the American Chemical Society"
+    },
+    "dedupe_key": "doi:10.1021/jacs.6c07593"
+  },
+  {
+    "kind": "article",
+    "title": "CHFR drives gastric cancer stemness and hepatic metastasis by suppressing ITCH-mediated ubiquitination and degradation of OCT4.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42618938/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-20T15:40:04.533066+00:00",
+    "authors": [
+      "Mugen Dai",
+      "Jianbo Wang",
+      "Qing Xu",
+      "Yixiu Shao",
+      "Han Wang",
+      "Xiaomeng Wu",
+      "Jundi Pan",
+      "Bin Ye"
+    ],
+    "summary": "Gastric cancer (GC) is one of the most lethal malignancies worldwide, and hepatic metastasis is a major cause of its poor clinical prognosis. The stemness regulator octamer-binding transcription factor 4 (OCT4) drives the migration, invasion and metastasis of GC cells. As a RING-type E3 ubiquitin ligase, Checkpoint with Forkhead-associated and RING finger domains (CHFR) has been identified as a key promoter of metastasis in advanced GC. However, the precise molecular mechanisms underlying CHFR-mediated modulation of GC metastasis remain unclear. This study systematically explored the biological functions and molecular mechanism of CHFR in GC via public data analysis, in vitro cell experiments and in vivo hepatic metastasis models. Functional assays revealed that CHFR overexpression enhanced the stemness and metastatic capacity of GC cells but inhibited cell proliferation. Mechanistically, CHFR stabilized OCT4 protein by blocking itchy E3 ubiquitin-protein ligase (ITCH)-mediated ubiquitination and proteasomal degradation of OCT4. Molecular docking predicted a direct interaction between CHFR and ITCH, and site mutation studies showed that their binding interface was essential for CHFR-induced OCT4 stabilization. DynaMut2 and FoldX mutagenesis confirmed Tyr530 (CHFR) and Thr222 (ITCH) as critical interfacial residues, whose alanine substitution weakened complex binding. Biochemical Co-IP ubiquitination assays verified CHFR targets ITCH for proteasomal degradation to suppress ITCH-dependent OCT4 breakdown. OCT4 knockdown rescue experiments further validated OCT4 as the essential downstream mediator of CHFR-induced glycolytic reprogramming, stemness and invasion in GC cells. Importantly, in vivo xenograft assays demonstrated that CHFR overexpression significantly promoted GC liver metastasis, whereas simultaneous overexpression of CHFR and ITCH reversed this metastatic phenotype. CHFR enhances the stemness and metastatic progression of advanced GC cells by antagonizing ITCH-dependent OCT4 degradation, highlighting the CHFR/ITCH/OCT4 axis as a therapeutic target for GC treatment.",
+    "doi": "10.1186/s13062-026-00920-2",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42618938",
+      "journal": "Biology direct"
+    },
+    "dedupe_key": "doi:10.1186/s13062-026-00920-2"
+  },
+  {
+    "kind": "article",
+    "title": "Pyridine electrooxidation on polycrystalline platinum: a combined computational and electrochemical mechanistic study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42618833/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-20T15:40:04.534333+00:00",
+    "authors": [
+      "Neha Choudhary",
+      "Jasvinder Kaur",
+      "Anil Kumar"
+    ],
+    "summary": "Pyridine is a resistant N-containing heterocyclic pollutant widely found in industrial wastewater, which cannot be effectively removed by traditional treatment techniques. A computational and electrochemical study of the electrooxidation mechanism on polycrystalline platinum is presented. A favorable vertical N-down adsorption geometry was suggested by molecular docking analysis, which was supported by the presence of nitrogen lone pair. Density functional theory (DFT) calculations concluded the HOMO and LUMO energies were -5.670 and -1.697 eV, respectively, indicating good kinetic stability and resistance to oxidation. Based on molecular electrostatic potential (MESP), Fukui function, and global conceptual descriptors, the nitrogen atom and ortho-carbon atoms are shown to be the main reactive sites. Cyclic voltammetry (CV) showed that the oxidation was completely suppressed at pH 2, which was believed to be due to protonation of pyridine. At pH 7 and 12, in contrast, irreversible anodic oxidation was observed which had no cathodic peak. The scan rate studies have confirmed, with validation, that the kinetics are first order with respect to scan rate, which in turn supports the electrochemical chemical (EC) oxidation pathway and confirms that the oxidation is initiated by direct electron transfer from adsorbed pyridine. The adsorption geometry on a cluster of size Pt₁₃ was carefully modeled using AutoDock Vina v1.1.2. Electronic structures and reactivity descriptors were calculated at the DFT level of calculations (B3LYP/6-31G(d)/ water polarizable continuum model (PCM) using ORCA software. The HOMO-LUMO energies and molecular orbital distributions were directly extracted from the output files of the DFT program ORCA, and subsequently visualized in the Avogadro v2 software. Only CV was used for experimental electrochemical kinetics and only in phosphate buffers on a platinum electrode.",
+    "doi": "10.1007/s00894-026-06898-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42618833",
+      "journal": "Journal of molecular modeling"
+    },
+    "dedupe_key": "doi:10.1007/s00894-026-06898-y"
+  },
+  {
+    "kind": "article",
+    "title": "Insecticidal metabolites from Serratia marcescens associated with the fall armyworm (Spodoptera frugiperda): molecular identification, metabolomic profiling and molecular docking insights.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42618606/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-20T15:40:04.534843+00:00",
+    "authors": [
+      "Kreema A El-Lebody",
+      "Ramy E El-Ansary",
+      "Shaimaa A Nour",
+      "Rasha G Salim",
+      "Mohamed M Elsebaie",
+      "Ghada M El-Sayed"
+    ],
+    "summary": "The fall armyworm (S. frugiperda) has developed resistance to numerous insecticides and is currently considered one of the most destructive pests threatening global crop production. Consequently, the development of environmentally sustainable pest management strategies has become increasingly important. Insect-associated pathogenic bacteria represent a promising source of bioactive metabolites with potential insecticidal properties. In the present study, pathogenic bacteria associated with S. frugiperda were isolated and molecularly identified as Serratia marcescens strain INS420 based on 16 S rRNA gene sequencing. The secondary metabolites produced by this bacterium demonstrated significant insecticidal activity under both laboratory and field conditions. Metabolic profiling of the extracted compounds was performed using liquid chromatography-mass spectrometry (LC-MS) and gas chromatography-mass spectrometry (GC-MS), revealing the presence of several bioactive compounds, including diketopiperazines, fatty acids and their esters, squalene, phthalate derivatives, and a cardenolide. To gain insights into the potential mechanism of action, molecular docking simulations were conducted to evaluate the binding affinity of the identified metabolites with S. frugiperda acetylcholinesterase (AChE). Among the detected compounds, squalene and several fatty acid derivatives exhibited stable interactions within the active site of the enzyme, suggesting a possible inhibitory effect on AChE activity. Collectively, these findings demonstrate that S. marcescens associated with S. frugiperda produces metabolites with notable insecticidal potential and highlight insect-associated pathogenic bacteria as a valuable source of bioactive compounds for the sustainable management of fall armyworm.",
+    "doi": "10.1038/s41598-026-66375-7",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42618606",
+      "journal": "Scientific reports"
+    },
+    "dedupe_key": "doi:10.1038/s41598-026-66375-7"
   }
 ]

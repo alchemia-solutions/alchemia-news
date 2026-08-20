@@ -866,6 +866,35 @@ exposto.
 **Verificado com servidor de produção real:** `/newsletter` → 200 com link pra edição de hoje;
 `/newsletter/2026-08-20` → 200 com "Insight Alchemia" renderizado; `/newsletter/1999-01-01` → 404.
 
+## Addendum — 2026-08-20 (fechamento): migração aplicada de verdade, sincronização real rodou,
+## bug real encontrado e corrigido — as sete tabelas estão populadas e o site lê tudo do banco
+
+Depois do `git push` do fundador, a integração GitHub↔Supabase aplicou
+`20260820145152_expand_remaining_tables.sql` de verdade. Rodei `pipeline.sync_supabase` sem
+`--dry-run` pela primeira vez contra as tabelas novas.
+
+**Bug real encontrado e corrigido no processo:** o upsert de `funding_channels` falhava —
+`null value in column "requires" violates not-null constraint`. Causa: quando um canal não tem
+`requires`/`programs` no YAML (ex.: `sebrae`), `entry.get(col)` devolve `None` em Python, que vira
+`null` **explícito** no payload JSON — e um `null` explícito sobrescreve o `default '{}'` da
+coluna (o default só vale quando a chave está ausente do payload, não quando vem `null`).
+Corrigido em `pipeline/sync_supabase.py` (`_ARRAY_DEFAULT_COLUMNS`): `None` vira `[]` antes de
+montar a linha, só para essas duas colunas array/jsonb.
+
+**Verificado, não presumido — sincronização real completa, todos os sete alvos:**
+`items` 2.366, `companies` 20, `resources` 9, `funding_channels` 28, `corporate_programs` 24,
+`pipeline_meta` 1 (singleton), `newsletters` 1 (edição de hoje, sincronizada manualmente já que a
+rotina do Axel ainda não tinha rodado com o passo novo). `npm run build` depois disso: **zero**
+erro de "table not found" no console (antes reportava `companies`/`pipeline_meta` ausentes).
+
+**Teste final, servidor de produção real, as 11 rotas do dashboard:** todas `200`, todos os tempos
+abaixo de 0,3s (a maioria abaixo de 0,1s) — confirma que a expansão completa está no ar e
+performática, não só "aplicada sem erro".
+
+Nenhuma credencial foi exibida em nenhum momento — a `SUPABASE_SERVICE_ROLE_KEY` foi lida direto
+da variável de ambiente de usuário do Windows via PowerShell (`[Environment]::GetEnvironmentVariable`)
+para cada execução pontual, nunca impressa, nunca escrita em arquivo.
+
 ## Addendum — 2026-08-19 (implementação): Fase 1 da spec de fomento/programas entregue —
 ## dois catálogos novos, duas rotas novas, três assets interativos, newsletter (leitura), sidebar
 ## em 3 grupos

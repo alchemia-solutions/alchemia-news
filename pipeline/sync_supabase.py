@@ -108,13 +108,32 @@ _PROGRAM_COLUMNS = (
 )
 
 
+# Colunas array/jsonb com `not null default` na migração -- se o campo faltar no YAML
+# (ex.: `requires` não é obrigatório em todo canal de fomento), `entry.get(col)` devolve
+# `None`, que vira `null` explícito no payload JSON. Um `null` explícito **sobrescreve**
+# o default da coluna (o default só se aplica quando a chave está ausente, não quando
+# vem `null`) -- achado real (2026-08-20): upsert de `funding_channels` falhava com
+# `null value in column "requires" violates not-null constraint` no primeiro canal sem
+# `requires` no YAML (`sebrae`). Corrigido substituindo `None` por `[]` só nessas colunas.
+_ARRAY_DEFAULT_COLUMNS = ("programs", "requires")
+
+
 def _sync_catalog(table: str, yaml_file: str, root_key: str, columns: tuple[str, ...],
                    service_role_key: str, now_iso: str, dry_run: bool) -> str:
     parsed = common.load_yaml(yaml_file) or {}
     entries = parsed.get(root_key, []) if isinstance(parsed, dict) else parsed
     if not entries:
         return f"{table}: nada para sincronizar ({yaml_file} vazio ou sem chave '{root_key}')."
-    rows = [{**{col: entry.get(col) for col in columns}, "updated_at": now_iso} for entry in entries]
+    rows = []
+    for entry in entries:
+        row = {}
+        for col in columns:
+            value = entry.get(col)
+            if value is None and col in _ARRAY_DEFAULT_COLUMNS:
+                value = []
+            row[col] = value
+        row["updated_at"] = now_iso
+        rows.append(row)
     if dry_run:
         return f"{table}: [dry-run] sincronizaria {len(rows)} entradas."
     _upsert(table, rows, "slug", service_role_key)
