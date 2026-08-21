@@ -1,0 +1,60 @@
+{
+  "last_run_started": "2026-08-21T21:40:02.406930+00:00",
+  "last_run_finished": "2026-08-21T21:41:17.825204+00:00",
+  "duration_seconds": 75.4,
+  "collectors": {
+    "pubmed": {
+      "count": 60,
+      "seconds": 5.9,
+      "error": null
+    },
+    "biorxiv": {
+      "count": 0,
+      "seconds": 5.7,
+      "error": null
+    },
+    "arxiv": {
+      "count": 60,
+      "seconds": 0.5,
+      "error": null
+    },
+    "chemrxiv": {
+      "count": 9,
+      "seconds": 1.4,
+      "error": null
+    },
+    "scielo": {
+      "count": 2,
+      "seconds": 1.2,
+      "error": null
+    },
+    "nature": {
+      "count": 0,
+      "seconds": 8.2,
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"<alchemia-news>\\pipeline\\collectors\\feed_collector.py\", line 246, in collect_nature_feeds\n    return _collect_section(\"nature_feeds\", \"journal\")\n  File \"<alchemia-news>\\pipeline\\collectors\\feed_collector.py\", line 241, in _collect_section\n    raise RuntimeError(f\"{len(falhas)}/{len(feeds)} feed(s) de '{secao}' falharam: \" + \" | \".join(falhas))\nRuntimeError: 1/3 feed(s) de 'nature_feeds' falharam: Nature Reviews Drug Discovery: resposta é uma página anti-bot (Client Challenge), não um feed\n"
+    },
+    "newsletters": {
+      "count": 29,
+      "seconds": 20.8,
+      "error": null
+    },
+    "googlenews": {
+      "count": 855,
+      "seconds": 14.8,
+      "error": null
+    },
+    "companies": {
+      "count": 1051,
+      "seconds": 16.9,
+      "error": null
+    }
+  },
+  "totals": {
+    "articles": 500,
+    "news": 2149,
+    "companies_activity": 1178,
+    "new_articles_this_run": 9,
+    "new_news_this_run": 46,
+    "new_companies_activity_this_run": 10
+  }
+}

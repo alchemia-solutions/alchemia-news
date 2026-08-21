@@ -1,60 +1,60 @@
 {
-  "last_run_started": "2026-08-21T15:55:08.337221+00:00",
-  "last_run_finished": "2026-08-21T15:58:20.651789+00:00",
-  "duration_seconds": 192.3,
+  "last_run_started": "2026-08-21T21:40:02.406930+00:00",
+  "last_run_finished": "2026-08-21T21:41:17.825204+00:00",
+  "duration_seconds": 75.4,
   "collectors": {
     "pubmed": {
       "count": 60,
-      "seconds": 4.8,
+      "seconds": 5.9,
       "error": null
     },
     "biorxiv": {
-      "count": 47,
-      "seconds": 121.8,
+      "count": 0,
+      "seconds": 5.7,
       "error": null
     },
     "arxiv": {
       "count": 60,
-      "seconds": 0.8,
+      "seconds": 0.5,
       "error": null
     },
     "chemrxiv": {
       "count": 9,
-      "seconds": 2.9,
+      "seconds": 1.4,
       "error": null
     },
     "scielo": {
       "count": 2,
-      "seconds": 3.7,
+      "seconds": 1.2,
       "error": null
     },
     "nature": {
-      "count": 9,
+      "count": 0,
       "seconds": 8.2,
-      "error": null
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"<alchemia-news>\\pipeline\\collectors\\feed_collector.py\", line 246, in collect_nature_feeds\n    return _collect_section(\"nature_feeds\", \"journal\")\n  File \"<alchemia-news>\\pipeline\\collectors\\feed_collector.py\", line 241, in _collect_section\n    raise RuntimeError(f\"{len(falhas)}/{len(feeds)} feed(s) de '{secao}' falharam: \" + \" | \".join(falhas))\nRuntimeError: 1/3 feed(s) de 'nature_feeds' falharam: Nature Reviews Drug Discovery: resposta é uma página anti-bot (Client Challenge), não um feed\n"
     },
     "newsletters": {
       "count": 29,
-      "seconds": 21.5,
+      "seconds": 20.8,
       "error": null
     },
     "googlenews": {
-      "count": 879,
-      "seconds": 13.5,
+      "count": 855,
+      "seconds": 14.8,
       "error": null
     },
     "companies": {
-      "count": 1047,
-      "seconds": 14.9,
+      "count": 1051,
+      "seconds": 16.9,
       "error": null
     }
   },
   "totals": {
-    "articles": 491,
-    "news": 2103,
-    "companies_activity": 1168,
-    "new_articles_this_run": 33,
-    "new_news_this_run": 30,
-    "new_companies_activity_this_run": 15
+    "articles": 500,
+    "news": 2149,
+    "companies_activity": 1178,
+    "new_articles_this_run": 9,
+    "new_news_this_run": 46,
+    "new_companies_activity_this_run": 10
   }
 }
