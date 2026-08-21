@@ -74,7 +74,7 @@ export default function OpportunityFilterBar({
     <div>
       <div className="alchemia-card mb-6 flex flex-wrap items-center gap-3 p-4">
         <div className="flex-1 min-w-[200px]">
-          <label className="mb-1 block font-mono text-[10px] uppercase tracking-wide text-slate-500">
+          <label className="mb-1 block font-mono text-[10px] uppercase tracking-wide text-slate-400">
             Buscar
           </label>
           <input
@@ -83,12 +83,12 @@ export default function OpportunityFilterBar({
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Nome, órgão, programa…"
             aria-label="Buscar oportunidade"
-            className="w-full rounded border border-white/10 bg-navy-800/60 px-3 py-1.5 text-[13px] text-slate-200 placeholder:text-slate-600 focus:border-cyan-accent/50 focus:outline-none"
+            className="w-full rounded border border-white/10 bg-navy-800/60 px-3 py-1.5 text-[13px] text-slate-200 placeholder:text-slate-400 focus:border-cyan-accent/50 focus:outline-none"
           />
         </div>
 
         <div>
-          <label className="mb-1 block font-mono text-[10px] uppercase tracking-wide text-slate-500">
+          <label className="mb-1 block font-mono text-[10px] uppercase tracking-wide text-slate-400">
             {categoryFieldLabel}
           </label>
           <select
@@ -107,7 +107,7 @@ export default function OpportunityFilterBar({
         </div>
 
         <div>
-          <label className="mb-1 block font-mono text-[10px] uppercase tracking-wide text-slate-500">
+          <label className="mb-1 block font-mono text-[10px] uppercase tracking-wide text-slate-400">
             Prioridade
           </label>
           <select
@@ -126,7 +126,7 @@ export default function OpportunityFilterBar({
         </div>
 
         <div className="ml-auto flex items-center gap-3">
-          <span className="font-mono text-[11px] text-slate-500">
+          <span className="font-mono text-[11px] text-slate-400">
             {filtered.length} de {entries.length}
           </span>
           {hasActiveFilter ? (
@@ -146,7 +146,7 @@ export default function OpportunityFilterBar({
       </div>
 
       {filtered.length === 0 ? (
-        <p className="text-sm text-slate-500">Nenhuma oportunidade encontrada com esses filtros.</p>
+        <p className="text-sm text-slate-400">Nenhuma oportunidade encontrada com esses filtros.</p>
       ) : (
         Object.entries(grouped).map(([cat, list]) => (
           <div key={cat} className="mb-8">

@@ -21,7 +21,7 @@ export default async function NewsletterPage() {
       {editions.length === 0 ? (
         <div className="alchemia-card p-6 text-center">
           <p className="text-slate-400">Nenhuma newsletter publicada ainda.</p>
-          <p className="mt-2 text-[12px] text-slate-600">
+          <p className="mt-2 text-[12px] text-slate-400">
             Esta rota é somente leitura — quem publica é a rotina do Axel. Assim que a primeira
             edição existir, ela aparece aqui automaticamente.
           </p>
@@ -40,7 +40,7 @@ export default async function NewsletterPage() {
                   <h2 className="font-medium text-slate-100">{formatDate(edition.date)}</h2>
                   <span className="font-mono text-[11px] text-cyan-accent">ver completa →</span>
                 </div>
-                {meta ? <p className="mb-2 font-mono text-[11px] text-slate-500">{meta}</p> : null}
+                {meta ? <p className="mb-2 font-mono text-[11px] text-slate-400">{meta}</p> : null}
                 {excerpt ? <p className="text-[13px] leading-relaxed text-slate-400">{excerpt}</p> : null}
               </Link>
             );

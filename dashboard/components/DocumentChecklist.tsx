@@ -76,7 +76,7 @@ export default function DocumentChecklist() {
           {done}/{total} completos
         </span>
       </div>
-      <p className="mb-4 text-[12px] leading-relaxed text-slate-500">
+      <p className="mb-4 text-[12px] leading-relaxed text-slate-400">
         Documentos que valem para ~90% dos programas (guia de captação, seção 11) — prepare uma vez,
         reutilize em toda candidatura. Salvo só neste navegador.
       </p>
@@ -92,7 +92,7 @@ export default function DocumentChecklist() {
                   onChange={() => toggle(item.id)}
                   className="mt-0.5 h-4 w-4 shrink-0 rounded border-white/20 bg-navy-800/60 accent-cyan-400"
                 />
-                <span className={isChecked ? 'text-slate-500 line-through decoration-slate-600' : ''}>
+                <span className={isChecked ? 'text-slate-400 line-through decoration-slate-600' : ''}>
                   {item.label}
                 </span>
               </label>

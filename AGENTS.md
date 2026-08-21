@@ -1153,3 +1153,134 @@ contra um servidor de produção local (`npm run start`, não o dev server) -- a
 `git push`, então a Vercel de produção segue servindo a versão com os dois bugs até o fundador
 commitar. Nenhum commit/push foi feito por este agente (convenção da empresa, `CLAUDE.md`/`AGENTS.md`
 raiz -- o fundador sempre faz o push).
+
+## Addendum — 2026-08-21: a casca do dashboard vira responsiva; faixa de estado do pipeline;
+## contraste e teclado corrigidos — auditoria com medição real antes e depois
+
+A pedido do fundador ("panorama geral... UX/UI do nosso aplicativo"), uma auditoria mediu o app
+renderizado em vez de ler só o código. Quatro defeitos reais, nenhum deles pego por
+`npm run typecheck` nem por `npm run build` — os dois passavam limpos antes e depois de todas as
+correções abaixo.
+
+**🔴 O app era inutilizável em celular.** O `<aside>` era `fixed w-60` e o `<main>` era `ml-60`,
+**sem nenhuma variante responsiva** — as grades internas das páginas já eram responsivas desde
+sempre (`sm:`/`md:`/`lg:`), só a casca nunca tinha sido adaptada. Medido num viewport de 375 px:
+**71 px** de coluna de conteúdo (375 − 240 de sidebar − 64 de `px-8`), com a sidebar cobrindo 64 %
+da tela e **sem forma de fechá-la**. O app esteve publicado nesse estado.
+
+Corrigido: `components/Sidebar.tsx` virou gaveta abaixo de `md` (768 px) — barra de topo `sticky`
+com botão, `-translate-x-full` → `translate-x-0`, fundo escuro clicável, `Esc` fecha e devolve o
+foco ao botão, scroll do body travado enquanto aberta, e fechamento automático ao navegar (sem
+isso, tocar num link no celular carregava a página nova com a gaveta por cima). `app/layout.tsx`
+passou a `md:ml-60` com padding progressivo (`px-4 sm:px-6 md:px-8`).
+
+**Medido depois, no app renderizado, em quatro larguras:**
+
+| Viewport | Conteúdo antes | Conteúdo depois | Sidebar | Overflow horizontal |
+|---|---|---|---|---|
+| 375 px | **71 px** | **343 px** | gaveta | nenhum |
+| 414 px | ~110 px | **382 px** | gaveta | nenhum |
+| 768 px | 464 px | 464 px | fixa | nenhum |
+| 1280 px | 976 px | 976 px | fixa | nenhum |
+
+Estados da gaveta verificados por interação real (não por leitura): fechada `transform` −240 →
+aberta `0`; `aria-expanded` alterna; `aria-label` alterna; fundo aparece/some; `body` trava e
+destrava o scroll; `Esc` fecha **e** devolve o foco ao botão. **Nota de método:** a primeira
+tentativa de medir isso por `<iframe>` deu resultado errado (reportava a gaveta parada em −240
+mesmo aberta) — a medição válida foi feita no documento de topo. Instrumentação também erra;
+quando o número contradiz o comportamento esperado, desconfie da medição antes do código.
+
+**🟡 Contraste abaixo do mínimo em 17 elementos.** `text-slate-600` (`#475569`) media **2,57 : 1**
+sobre o navy-950 — nos rótulos que organizam a navegação inteira ("Inteligência de Mercado",
+"Captação de Recursos", "Comunicação"), a 10 px, ou seja **57 % do mínimo** de 4,5 : 1.
+`text-slate-500` (`#64748b`) media **4,09 : 1** em mais 17 ocorrências (rótulos de `StatCard`,
+listas de fonte). Todos os `text-slate-500`/`text-slate-600` de `app/` e `components/` subiram para
+`text-slate-400`. Preservados de propósito: `border-slate-500`, `bg-slate-500` e
+`decoration-slate-600`, que não são cor de texto. **Reauditado no app renderizado: zero
+reprovações.**
+
+**🟡 Navegação por teclado praticamente sem suporte.** Só `OpportunityFilterBar` e `StatusTracker`
+definiam qualquer estilo de foco; os 17 links da sidebar dependiam do contorno padrão do navegador,
+que sobre o navy quase não aparece. Adicionados em `app/globals.css`: regra global
+`:focus-visible` (e não `:focus` — não desenha anel em clique de mouse) e `.skip-link` para pular a
+navegação, agora o primeiro elemento focável de toda página. Os grupos da sidebar passaram de
+`<h3>` para `role="group"` + `aria-labelledby`: são rótulos de agrupamento de navegação, não seções
+do documento, e entrar no outline de headings competia com o `<h1>` de cada página sem nunca haver
+um `<h2>` entre eles. O `<aside>` e o `<nav>` ganharam rótulo acessível; ícones decorativos ganharam
+`aria-hidden`.
+
+**🆕 `components/PipelineHealthBanner.tsx` — faixa de estado do pipeline** (metade "estado" do
+alarme; a metade "evento" é a mensagem do Axel no Discord, ver `alchemia-ai/alchemia-bots/AGENTS.md`
+addendum de hoje). Montada no layout raiz, vale em todas as rotas. **Silenciosa quando está tudo
+bem** — não ocupa espaço permanente para dizer "ok". Três estados: coleta ≥ 8 h (âmbar), ≥ 14 h
+(vermelho, dois ciclos perdidos), e coletor com `error` na última coleta (âmbar).
+
+O limiar de 8 h é deliberado e corrige um buraco real: a coleta roda a cada 6 h, e a tolerância de
+~7 h do passo 3b da rotina do Baker é **maior que o intervalo entre ciclos** — um ciclo inteiro
+perdido passava dentro da janela sem alarme, que foi exatamente o que aconteceu em 21/08. O limiar
+precisa ser maior que um intervalo (senão alarme falso entre ciclos normais) e menor que dois.
+
+Os dois estados foram verificados **forçando o relógio de avaliação** (+9 h e +15 h) contra o app
+real e conferindo o HTML servido: âmbar com "A coleta está atrasada", vermelho com "A coleta não
+roda há mais de dois ciclos". Alteração de teste revertida em seguida (`assess(meta, Date.now())`).
+
+**🟢 `AutoRefresh` de 60 s → 300 s.** O intervalo de 60 s era herdado de quando `lib/data.ts` lia
+os JSONs do disco a cada requisição, quando um tick barato podia de fato trazer dado novo. Desde a
+migração para o Supabase os getters passam por `unstable_cache` com `revalidate: 300` — quatro em
+cada cinco ticks não tinham como encontrar nada, e na Vercel cada um é uma invocação de função
+(~1.440/dia por aba aberta). A 300 s o comportamento visível é idêntico (o dado muda 3x/dia) com
+~80 % menos invocações.
+
+**Verificado ao final:** `npm run typecheck` limpo · `npm run build` limpo, com as 11 rotas
+preservando `ƒ` (exceto `/` e `/_not-found`, estáticas com `revalidate` de 5 min) e o
+`Proxy (Middleware)` do gate de acesso intacto · as 9 rotas de página respondendo 200.
+
+**⏳ NÃO corrigido nesta rodada, por depender de decisão do fundador:** `/artigos` continua
+entregando **3,36 MB** de HTML e `/noticias` **1,94 MB**, porque renderizam a lista inteira sem
+paginação (491 e 500 cartões). O teto de 500 itens de 2026-08-20 resolveu o custo *da consulta* ao
+Supabase, mas o custo de *renderizar e transmitir* continuou inteiro. A correção certa depende de
+saber se essas rotas precisam do histórico completo (paginação real, `?page=N`) ou se 50 por página
+com busca basta — pergunta aberta com o fundador, não decisão de agente.
+
+**Nenhum `git push` foi executado.** As correções estão locais e verificadas; a Vercel de produção
+segue servindo a versão anterior até o fundador commitar.
+
+Ver `alchemia-ai/alchemia-bots/AGENTS.md` (addendum 2026-08-21) e
+`alchemia-ai/alchemia-agents/docs/specs/2026-08-21-frontend-quality-gate.md` (spec nova, Portão de
+Revisão **não** marcado).
+
+### Continuação — 2026-08-21: paginação entregue; as 9 rotas passam nos limiares de peso e tempo
+
+O addendum acima registrava `/artigos` e `/noticias` como **não corrigidos**, por dependerem de uma
+decisão do fundador. Ele respondeu "corrija também todos esses problemas encontrados", então a
+paginação foi implementada — com uma parte da decisão original deliberadamente **não** tomada
+(abaixo).
+
+`components/Pagination.tsx` (novo) — `?page=N`, **60 itens por página**, server component: nenhum
+JavaScript de cliente para navegar, e funciona com JS desabilitado. Cada página tem URL própria e
+compartilhável; o filtro `?fonte=` é preservado; a janela de links é curta (nunca imprime 40
+números). `paginar()`/`lerPagina()` são funções puras, e `lerPagina` tolera `?page=` ausente, vazio,
+não-numérico ou negativo — tudo vira 1.
+
+**Medido depois, morno, mesma metodologia de antes:**
+
+| Rota | Antes | Depois |
+|---|---|---|
+| `/artigos` | 3.359.639 B · 3,159 s | **391.149 B · 0,335 s** |
+| `/noticias` | 1.938.436 B · 2,486 s | **269.392 B · 0,315 s** |
+
+As 9 rotas ficam agora **entre 23 KB e 391 KB** e **entre 0,041 s e 0,335 s** — todas dentro dos
+limiares F5 (≤ 500 KB) e F6 (≤ 1,0 s) do `frontend-quality-gate`. Verificado além do peso:
+`aria-label="Paginação"` como landmark, links reais no HTML, `?fonte=PubMed&page=2` preservando o
+filtro, e 120 ocorrências de `.alchemia-card` por página (60 itens × 2).
+
+**O que a paginação deliberadamente NÃO resolveu.** `fetchItemsByKind` mantém
+`DEFAULT_ITEM_LIMIT = 500`, então `/noticias` pagina sobre os **500 mais recentes**, não sobre os
+2.103 do banco. Os rótulos seguem dizendo "Recentes (N)", nunca "Todos" — é honestidade, não
+omissão. Subir o teto reintroduz o estouro do limite de 2 MB por entrada do `unstable_cache`
+documentado no addendum de 2026-08-20 acima. **Qual dos dois (histórico completo com outra
+estratégia de cache, ou 500 mais recentes com busca) é decisão de produto do fundador** — um agente
+não a toma sozinha, mesmo com "corrija tudo".
+
+**Estado do alvo, verificado pelo gate:** `docs/qc/2026-08-21-frontend-quality-dashboard.md`,
+addendum de hoje — 🔴 0 · 🟡 0 · 🟢 0 · passa em F1–F10.

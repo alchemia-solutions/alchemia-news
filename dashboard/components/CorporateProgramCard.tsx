@@ -21,7 +21,7 @@ export default function CorporateProgramCard({ program }: { program: CorporatePr
               {PRIORITY_LABELS[program.priority_alchemia]}
             </span>
           </div>
-          <p className="font-mono text-[11px] text-slate-500">{CORPORATE_REGION_LABELS[program.region]}</p>
+          <p className="font-mono text-[11px] text-slate-400">{CORPORATE_REGION_LABELS[program.region]}</p>
         </div>
         <a
           href={program.portal_url}
@@ -38,12 +38,12 @@ export default function CorporateProgramCard({ program }: { program: CorporatePr
       <p className="mb-3 text-[13px] leading-relaxed text-slate-400">{program.benefit_summary}</p>
 
       <div className="mb-3">
-        <p className="mb-1 font-mono text-[10px] uppercase tracking-wide text-slate-500">Elegibilidade</p>
+        <p className="mb-1 font-mono text-[10px] uppercase tracking-wide text-slate-400">Elegibilidade</p>
         <p className="text-[12px] leading-relaxed text-slate-400">{program.eligibility_summary}</p>
       </div>
 
       <div className="mt-auto flex items-center justify-between gap-3 border-t border-white/5 pt-3">
-        <p className="font-mono text-[10px] text-slate-600">
+        <p className="font-mono text-[10px] text-slate-400">
           direcional, confirmar na fonte oficial · rev. {program.last_reviewed}
         </p>
         <StatusTracker slug={program.slug} />

@@ -50,7 +50,7 @@ export default async function EmpresaDetailPage({ params }: { params: Promise<{ 
         ))}
       </div>
       {activity.length === 0 ? (
-        <p className="text-sm text-slate-500">
+        <p className="text-sm text-slate-400">
           Nenhuma menção coletada ainda para esta empresa. O pipeline roda 3x/dia — rode manualmente com{' '}
           <code className="text-cyan-accent">python pipeline/run_all.py</code> para popular agora.
         </p>

@@ -1,5 +1,6 @@
 import PageHeader from '@/components/PageHeader';
 import ItemCard from '@/components/ItemCard';
+import Pagination, { lerPagina, paginar } from '@/components/Pagination';
 import { getArticles } from '@/lib/data';
 import { SOURCE_TYPE_LABELS } from '@/lib/types';
 
@@ -15,11 +16,15 @@ export const revalidate = 300;
 export default async function ArtigosPage({
   searchParams,
 }: {
-  searchParams: Promise<{ fonte?: string }>;
+  searchParams: Promise<{ fonte?: string; page?: string }>;
 }) {
   const all = await getArticles();
-  const fonteFiltro = (await searchParams).fonte;
+  const params = await searchParams;
+  const fonteFiltro = params.fonte;
   const filtered = fonteFiltro ? all.filter((i) => i.source === fonteFiltro) : all;
+  // Paginacao (2026-08-21, achados N1/N2): renderizar a lista inteira entregava MB de HTML
+  // por requisicao. `paginar` fatia depois do filtro, para a contagem refletir o filtro ativo.
+  const { fatia, total, paginas, atual } = paginar(filtered, lerPagina(params.page));
 
   const sourceCounts = Object.entries(
     all.reduce<Record<string, number>>((acc, i) => {
@@ -59,18 +64,19 @@ export default async function ArtigosPage({
         ))}
       </div>
 
-      <div className="mb-4 flex gap-4 font-mono text-[11px] text-slate-500">
+      <div className="mb-4 flex gap-4 font-mono text-[11px] text-slate-400">
         {Object.entries(SOURCE_TYPE_LABELS).map(([key, label]) => (
           <span key={key}>{label}</span>
         ))}
       </div>
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {filtered.map((item) => (
+        {fatia.map((item) => (
           <ItemCard key={item.dedupe_key} item={item} />
         ))}
       </div>
-      {filtered.length === 0 ? <p className="text-sm text-slate-500">Nenhum artigo encontrado para este filtro.</p> : null}
+      <Pagination base="/artigos" fonte={fonteFiltro} atual={atual} paginas={paginas} total={total} />
+      {filtered.length === 0 ? <p className="text-sm text-slate-400">Nenhum artigo encontrado para este filtro.</p> : null}
     </div>
   );
 }

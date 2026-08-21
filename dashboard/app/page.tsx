@@ -83,7 +83,7 @@ export default async function HomePage() {
               <ItemCard key={item.dedupe_key} item={item} />
             ))}
             {latestMixed.length === 0 ? (
-              <p className="col-span-2 text-sm text-slate-500">
+              <p className="col-span-2 text-sm text-slate-400">
                 Nenhum item coletado ainda. Rode <code className="text-cyan-accent">pipeline/run_all.py</code>.
               </p>
             ) : null}
@@ -109,7 +109,7 @@ export default async function HomePage() {
               </Link>
             ))}
             {topCompanies.length === 0 ? (
-              <p className="px-4 py-3 text-sm text-slate-500">Sem dados de empresas ainda.</p>
+              <p className="px-4 py-3 text-sm text-slate-400">Sem dados de empresas ainda.</p>
             ) : null}
           </div>
 
@@ -123,7 +123,7 @@ export default async function HomePage() {
                     <span
                       className={`font-mono ${
                         result.skipped
-                          ? 'text-slate-500'
+                          ? 'text-slate-400'
                           : result.error
                             ? 'text-status-risk'
                             : 'text-status-done'

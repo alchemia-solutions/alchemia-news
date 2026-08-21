@@ -24,7 +24,7 @@ export default function FundingChannelCard({ channel }: { channel: FundingChanne
               {PRIORITY_LABELS[channel.priority_alchemia]}
             </span>
           </div>
-          <p className="font-mono text-[11px] text-slate-500">{channel.full_name}</p>
+          <p className="font-mono text-[11px] text-slate-400">{channel.full_name}</p>
         </div>
         <a
           href={channel.calls_url || channel.portal_url}
@@ -40,12 +40,12 @@ export default function FundingChannelCard({ channel }: { channel: FundingChanne
 
       {channel.programs && channel.programs.length > 0 ? (
         <div className="mb-3">
-          <p className="mb-1.5 font-mono text-[10px] uppercase tracking-wide text-slate-500">Programas</p>
+          <p className="mb-1.5 font-mono text-[10px] uppercase tracking-wide text-slate-400">Programas</p>
           <ul className="space-y-1">
             {channel.programs.map((p) => (
               <li key={p.name} className="text-[12px] leading-snug text-slate-400">
                 <span className="text-slate-200">{p.name}</span>
-                {p.note ? <span className="text-slate-500"> — {p.note}</span> : null}
+                {p.note ? <span className="text-slate-400"> — {p.note}</span> : null}
               </li>
             ))}
           </ul>
@@ -59,7 +59,7 @@ export default function FundingChannelCard({ channel }: { channel: FundingChanne
       ) : null}
 
       <div className="mt-auto flex items-center justify-between gap-3 border-t border-white/5 pt-3">
-        <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] text-slate-600">
+        <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] text-slate-400">
           <a href={channel.portal_url} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-accent">
             portal ↗
           </a>

@@ -38,7 +38,7 @@ export default async function BancosFerramentasPage() {
                   <div className="mb-2 flex items-start justify-between gap-3">
                     <div>
                       <h3 className="font-medium text-slate-100">{resource.name}</h3>
-                      <p className="font-mono text-[11px] text-slate-500">{resource.full_name}</p>
+                      <p className="font-mono text-[11px] text-slate-400">{resource.full_name}</p>
                     </div>
                     <a
                       href={resource.url}
@@ -53,7 +53,7 @@ export default async function BancosFerramentasPage() {
                   <p className="mb-3 font-mono text-[11px] text-status-start">📄 {resource.license_note}</p>
                   {mentions.length > 0 ? (
                     <div className="border-t border-white/5 pt-3">
-                      <p className="mb-1.5 font-mono text-[10px] uppercase tracking-wide text-slate-500">
+                      <p className="mb-1.5 font-mono text-[10px] uppercase tracking-wide text-slate-400">
                         Menções recentes
                       </p>
                       {mentions.map((m) => (

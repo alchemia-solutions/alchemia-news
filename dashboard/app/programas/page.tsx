@@ -28,7 +28,7 @@ export default async function ProgramasPage() {
       />
 
       {programs.length === 0 ? (
-        <p className="mb-8 text-sm text-slate-500">
+        <p className="mb-8 text-sm text-slate-400">
           Catálogo ainda não carregado — verifique <code className="text-cyan-accent">pipeline/config/corporate_programs.yaml</code>.
         </p>
       ) : (
@@ -38,7 +38,7 @@ export default async function ProgramasPage() {
               <h2 className="mb-3 font-mono text-[12px] uppercase tracking-wide text-cyan-accent">
                 ★ Recomendado para a Alchemia
               </h2>
-              <p className="mb-3 text-[13px] text-slate-500">
+              <p className="mb-3 text-[13px] text-slate-400">
                 Reproduz — sem inventar nova prioridade — a priorização que o próprio guia já faz para
                 o perfil de biotech/CADD/oncologia molecular da empresa (seção 10).
               </p>

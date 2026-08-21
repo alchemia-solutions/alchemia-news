@@ -39,7 +39,7 @@ export default async function EmpresasPage() {
               >
                 <div>
                   <p className="font-medium text-slate-100">{company.name}</p>
-                  <p className="mt-0.5 font-mono text-[11px] text-slate-500">{company.url.replace(/^https?:\/\//, '')}</p>
+                  <p className="mt-0.5 font-mono text-[11px] text-slate-400">{company.url.replace(/^https?:\/\//, '')}</p>
                 </div>
                 <span className="rounded-full border border-cyan-accent/30 bg-cyan-accent/10 px-2.5 py-1 font-mono text-[12px] text-cyan-accent">
                   {countBySlug[company.slug] ?? 0}

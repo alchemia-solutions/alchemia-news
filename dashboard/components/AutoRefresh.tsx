@@ -19,11 +19,18 @@ import { useRouter } from 'next/navigation';
  *    de esperar o próximo tick.
  *
  * Não é streaming nem websocket: o dado só muda quando o pipeline roda (3x/dia via cron do
- * `baker-bot`). O intervalo curto existe para que a mudança apareça sozinha logo depois da coleta,
+ * `baker-bot`). O intervalo existe para que a mudança apareça sozinha logo depois da coleta,
  * não para dar impressão de fluxo contínuo — mesma disciplina anti-overclaiming de
  * `.claude/skills/realtime-dashboard/SKILL.md`.
+ *
+ * **Intervalo alinhado ao cache (2026-08-21).** Era 60 s, herdado de quando `lib/data.ts` lia os
+ * JSONs do disco a cada requisição e um tick barato de fato podia trazer dado novo. Desde a
+ * migração para o Supabase, os getters passam por `unstable_cache` com `revalidate: 300` — então
+ * quatro em cada cinco ticks de 60 s não tinham como encontrar nada novo, e na Vercel cada um é
+ * uma invocação de função (~1.440/dia por aba aberta). A 300 s o comportamento visível é o mesmo
+ * (o dado muda 3x/dia) com ~80% menos invocações. Se o TTL do cache mudar, mude aqui junto.
  */
-export default function AutoRefresh({ intervalMs = 60_000 }: { intervalMs?: number }) {
+export default function AutoRefresh({ intervalMs = 300_000 }: { intervalMs?: number }) {
   const router = useRouter();
 
   useEffect(() => {

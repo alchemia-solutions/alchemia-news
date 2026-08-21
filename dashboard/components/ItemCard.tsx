@@ -28,7 +28,7 @@ export default function ItemCard({ item }: { item: NewsItem }) {
           </span>
           <span className="font-mono text-[11px] text-slate-400">{item.source}</span>
         </div>
-        <span className="font-mono text-[11px] text-slate-500">{formatDate(item.published_date)}</span>
+        <span className="font-mono text-[11px] text-slate-400">{formatDate(item.published_date)}</span>
       </div>
 
       <h3 className="mb-1.5 text-[15px] font-medium leading-snug text-slate-100 group-hover:text-cyan-accent">
@@ -41,7 +41,7 @@ export default function ItemCard({ item }: { item: NewsItem }) {
 
       <div className="mt-3 flex flex-wrap items-center gap-1.5">
         {item.authors.slice(0, 3).map((a) => (
-          <span key={a} className="font-mono text-[10px] text-slate-500">
+          <span key={a} className="font-mono text-[10px] text-slate-400">
             {a}
           </span>
         ))}

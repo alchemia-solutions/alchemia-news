@@ -18,9 +18,9 @@ export default function StatCard({
 
   return (
     <div className="alchemia-card p-5">
-      <p className="font-mono text-[11px] uppercase tracking-wide text-slate-500">{label}</p>
+      <p className="font-mono text-[11px] uppercase tracking-wide text-slate-400">{label}</p>
       <p className={`mt-2 font-mono text-3xl font-semibold ${accentClass}`}>{value}</p>
-      {hint ? <p className="mt-1 text-[12px] text-slate-500">{hint}</p> : null}
+      {hint ? <p className="mt-1 text-[12px] text-slate-400">{hint}</p> : null}
     </div>
   );
 }

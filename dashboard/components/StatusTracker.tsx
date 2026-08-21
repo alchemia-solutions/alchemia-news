@@ -22,7 +22,7 @@ const STATUS_LABELS: Record<OpportunityStatus, string> = {
 };
 
 const STATUS_COLOR: Record<OpportunityStatus, string> = {
-  nao_aplicado: 'text-slate-500 border-slate-500/30 bg-slate-500/5',
+  nao_aplicado: 'text-slate-400 border-slate-500/30 bg-slate-500/5',
   em_preparacao: 'text-status-start border-status-start/30 bg-status-start/10',
   submetido: 'text-status-progress border-status-progress/30 bg-status-progress/10',
   aprovado: 'text-status-done border-status-done/30 bg-status-done/10',

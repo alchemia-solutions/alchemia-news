@@ -19,6 +19,44 @@ body {
   scrollbar-color: #29d3f5 #0a1730;
 }
 
+/* Foco visível global (2026-08-21). Antes desta regra só OpportunityFilterBar e StatusTracker
+   definiam qualquer estilo de foco -- os 17 links da sidebar e todos os cartões dependiam do
+   contorno padrão do navegador, que sobre o navy-950 quase não aparece. `:focus-visible` e não
+   `:focus`: não desenha anel em clique de mouse, só em navegação por teclado. */
+:where(a, button, [role='button'], input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid #29d3f5;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Pula a navegação. Fica fora da tela até receber foco -- primeiro Tab de qualquer página. */
+.skip-link {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 60;
+  transform: translateY(-160%);
+  background: #101f42;
+  border: 1px solid #29d3f5;
+  border-radius: 8px;
+  color: #eaf0ff;
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.8125rem;
+  padding: 0.55rem 0.9rem;
+  text-decoration: none;
+  transition: transform 0.15s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+}
+
 ::selection {
   background-color: rgba(41, 211, 245, 0.35);
 }
