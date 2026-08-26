@@ -1,0 +1,60 @@
+{
+  "last_run_started": "2026-08-22T21:40:02.808218+00:00",
+  "last_run_finished": "2026-08-22T21:42:44.439554+00:00",
+  "duration_seconds": 161.6,
+  "collectors": {
+    "pubmed": {
+      "count": 60,
+      "seconds": 5.1,
+      "error": null
+    },
+    "biorxiv": {
+      "count": 77,
+      "seconds": 77.6,
+      "error": null
+    },
+    "arxiv": {
+      "count": 60,
+      "seconds": 0.6,
+      "error": null
+    },
+    "chemrxiv": {
+      "count": 9,
+      "seconds": 1.1,
+      "error": null
+    },
+    "scielo": {
+      "count": 2,
+      "seconds": 1.0,
+      "error": null
+    },
+    "nature": {
+      "count": 0,
+      "seconds": 8.2,
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"<alchemia-news>\\pipeline\\collectors\\feed_collector.py\", line 246, in collect_nature_feeds\n    return _collect_section(\"nature_feeds\", \"journal\")\n  File \"<alchemia-news>\\pipeline\\collectors\\feed_collector.py\", line 241, in _collect_section\n    raise RuntimeError(f\"{len(falhas)}/{len(feeds)} feed(s) de '{secao}' falharam: \" + \" | \".join(falhas))\nRuntimeError: 1/3 feed(s) de 'nature_feeds' falharam: Nature Chemical Biology: resposta é uma página anti-bot (Client Challenge), não um feed\n"
+    },
+    "newsletters": {
+      "count": 28,
+      "seconds": 36.1,
+      "error": null
+    },
+    "googlenews": {
+      "count": 886,
+      "seconds": 14.6,
+      "error": null
+    },
+    "companies": {
+      "count": 1048,
+      "seconds": 17.2,
+      "error": null
+    }
+  },
+  "totals": {
+    "articles": 533,
+    "news": 2242,
+    "companies_activity": 1231,
+    "new_articles_this_run": 1,
+    "new_news_this_run": 13,
+    "new_companies_activity_this_run": 9
+  }
+}

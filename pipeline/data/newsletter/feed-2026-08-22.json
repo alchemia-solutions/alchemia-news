@@ -1,0 +1,268 @@
+{
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T16:18:40.953238+00:00",
+  "today_only": true,
+  "total_new": 1,
+  "sections": [
+    {
+      "key": "companies",
+      "label": "Atividade de empresas",
+      "count_total_new": 1,
+      "count_included": 1,
+      "items": [
+        {
+          "title": "Novas vacinas contra chikungunya avançam no Brasil - Poder360",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNUDNYTFJzbXYxUTZzQ2tPSGpmdnhVM0xULVluM2JGd3VPZkdWYXVxdjNQdHVJcHU3SG9BTUJlMnk4dXZoUjRQaVRlTW9ORmtqUDlEVnVydlVwVy13QVJLYVZieTJMa0hTMTJnb01WMy1hXzBfb19SUW05MnFPXzg2NlpSSVdqbEV0c0JMUmY5MzZEWTZ2a1E?oc=5",
+          "source": "Poder360",
+          "source_type": "press",
+          "published_date": "2026-08-22",
+          "collected_at": "2026-08-22T15:42:48.263041+00:00",
+          "authors": [],
+          "summary": "Novas vacinas contra chikungunya avançam no Brasil Poder360",
+          "doi": null,
+          "company_slug": "butantan",
+          "keywords_matched": [
+            "Instituto Butantan"
+          ],
+          "extra": {
+            "query": "\"Instituto Butantan\"",
+            "via": "google_news"
+          }
+        }
+      ]
+    }
+  ],
+  "oportunidades": [
+    {
+      "slug": "finep",
+      "name": "FINEP",
+      "full_name": "Financiadora de Estudos e Projetos",
+      "scope": "federal",
+      "portal_url": "http://www.finep.gov.br",
+      "calls_url": "http://www.finep.gov.br/chamadas-publicas/chamadaspublicas?situacao=aberta",
+      "programs": [
+        {
+          "name": "Mais Inovação Brasil — eixo Saúde/CEIS",
+          "note": "Subvenção econômica em fluxo contínuo até esgotar orçamento — guarda-chuva do Plano Nova Indústria Brasil"
+        },
+        {
+          "name": "Finep Startup",
+          "note": "Investimento direto em startups via valores mobiliários"
+        },
+        {
+          "name": "Subvenção Econômica direta e descentralizada",
+          "note": "Via parceiros estaduais"
+        },
+        {
+          "name": "PROINFRA / CT-INFRA",
+          "note": "Infraestrutura de pesquisa para ICTs"
+        },
+        {
+          "name": "Tecnova / Centelha",
+          "note": "Parceria com FAPs estaduais — Centelha é a porta de entrada para ideias em estágio inicial"
+        },
+        {
+          "name": "FIPs (incl. FIP Startup IA)",
+          "note": "Fundos de Investimento em Participações"
+        }
+      ],
+      "priority_alchemia": "alta",
+      "priority_note": "Prioridade alta do guia (seção 9, item 3): \"FINEP Mais Inovação — eixo Saúde/CEIS — subvenção econômica, várias chamadas em fluxo contínuo; ideal para desenvolvimento de kit diagnóstico nacional.\"",
+      "requires": [
+        "CNPJ ativo",
+        "projeto de base tecnológica"
+      ],
+      "source_guide": "canais-editais-fomento-brasil.md",
+      "last_reviewed": "2026-08-19",
+      "_source_catalog": "funding_channels"
+    },
+    {
+      "slug": "embrapii",
+      "name": "EMBRAPII",
+      "full_name": "Empresa Brasileira de Pesquisa e Inovação Industrial",
+      "scope": "federal",
+      "portal_url": "https://embrapii.org.br",
+      "calls_url": "https://embrapii.org.br/chamadas-publicas/",
+      "programs": [
+        {
+          "name": "Contratação direta de Unidade EMBRAPII credenciada",
+          "note": "Sem edital — a EMBRAPII banca até 1/3 do projeto, com contrapartida da empresa e da ICT"
+        },
+        {
+          "name": "Centros de Competência",
+          "note": "Temáticos — já houve em biodiversidade brasileira, hidrogênio, etc."
+        }
+      ],
+      "priority_alchemia": "alta",
+      "priority_note": "Prioridade alta do guia (seção 9, item 5): \"EMBRAPII — via Unidade credenciada em saúde/biotecnologia; contratação direta, sem edital\" — \"um dos caminhos mais rápidos de PD&I subsidiado no Brasil.\"",
+      "requires": [
+        "Unidade EMBRAPII credenciada disposta a contratar o projeto",
+        "contrapartida financeira da empresa"
+      ],
+      "source_guide": "canais-editais-fomento-brasil.md",
+      "last_reviewed": "2026-08-19",
+      "_source_catalog": "funding_channels"
+    },
+    {
+      "slug": "fapesp",
+      "name": "FAPESP",
+      "full_name": "Fundação de Amparo à Pesquisa do Estado de São Paulo",
+      "scope": "estadual_sp",
+      "portal_url": "https://fapesp.br",
+      "calls_url": "https://fapesp.br/2185/chamadas-de-propostas-2026",
+      "programs": [
+        {
+          "name": "PIPE — Pesquisa Inovativa em Pequenas Empresas",
+          "note": "Carro-chefe: Fase 1 (viabilidade, ~R$375 mil), Fase 2 (desenvolvimento, R$1,5 mi+), Fase 3 via parceiros"
+        },
+        {
+          "name": "PIPE Sebrae / PIPE Invest",
+          "note": "PIPE + gestão do Sebrae-SP / conexão com investidores"
+        },
+        {
+          "name": "PITE",
+          "note": "Parceria para Inovação Tecnológica — ICT + empresa cofinanciadora"
+        },
+        {
+          "name": "PAPPE / Subvenção",
+          "note": "Em parceria com a FINEP"
+        },
+        {
+          "name": "CEPID",
+          "note": "Centros de Pesquisa, Inovação e Difusão — 11 anos, grande porte"
+        },
+        {
+          "name": "CPE / ERC",
+          "note": "Centros de Pesquisa em Engenharia com empresa âncora — ex. GSK-FAPESP em oncologia"
+        },
+        {
+          "name": "CPA",
+          "note": "Centros de Pesquisa Aplicada — ex. IA aplicada à Saúde"
+        },
+        {
+          "name": "Auxílio Regular / Temático / Jovem Pesquisador / Projeto Inicial π",
+          "note": "Formatos individuais/de grupo, do projeto pontual (Auxílio Regular) ao grande porte (Temático, até 5 anos)"
+        },
+        {
+          "name": "Políticas Públicas (PPPP)",
+          "note": "Pesquisa aplicada com parceiro governamental, até R$500 mil/ano"
+        },
+        {
+          "name": "Consórcio Genomas de São Paulo",
+          "note": "Sequenciamento subsidiado, até 2.000 amostras/projeto — altamente relevante para genômica clínica"
+        },
+        {
+          "name": "eScience e Data Science / Equipamentos Multiusuários (EMU)",
+          "note": "Chamadas temáticas / infraestrutura compartilhada"
+        },
+        {
+          "name": "Acordos internacionais bilaterais",
+          "note": "NWO, JSPS, DFG, ANR, NSF/NIH, UKRI e outros — https://fapesp.br/acordos"
+        }
+      ],
+      "priority_alchemia": "alta",
+      "priority_note": "Prioridade alta do guia (seção 9, itens 1 e 4): \"FAPESP PIPE Fase 1 → Fase 2 — desenhado exatamente para empresa de base tecnológica sediada em SP\" e \"Consórcio Genomas de São Paulo — sequenciamento subsidiado de até 2.000 amostras por projeto.\"",
+      "requires": [
+        "empresa/proponente sediado em SP (para PIPE)"
+      ],
+      "source_guide": "canais-editais-fomento-brasil.md",
+      "last_reviewed": "2026-08-19",
+      "_source_catalog": "funding_channels"
+    },
+    {
+      "slug": "ministerio-saude-decit",
+      "name": "Ministério da Saúde / Decit-SCTIE",
+      "full_name": "Departamento de Ciência e Tecnologia — Secretaria de Ciência, Tecnologia, Inovação e Complexo da Saúde",
+      "scope": "saude",
+      "portal_url": "https://www.gov.br/saude/pt-br",
+      "calls_url": "https://www.gov.br/saude/pt-br/acesso-a-informacao/participacao-social/chamamentos-publicos",
+      "programs": [
+        {
+          "name": "Chamadas CNPq/Decit-SCTIE/MS — Saúde das Mulheres",
+          "note": "Linha explícita de câncer de mama, colo do útero, colorretal e mortalidade materna"
+        },
+        {
+          "name": "Terapias avançadas e baseadas em ácidos nucleicos / Pesquisas inovadoras em vacinas",
+          "note": "Chamadas recorrentes executadas via CNPq"
+        },
+        {
+          "name": "Doenças raras, oncologia, saúde digital, IA aplicada ao SUS",
+          "note": "Chamadas recorrentes executadas via CNPq"
+        },
+        {
+          "name": "PPSUS — Programa Pesquisa para o SUS",
+          "note": "Descentralizado via FAPs estaduais — em SP, via FAPESP (prioridade média do guia, seção 9 item 6)"
+        },
+        {
+          "name": "SEIDIGI — Saúde Digital",
+          "note": "Chamamentos de soluções"
+        }
+      ],
+      "priority_alchemia": "alta",
+      "priority_note": "Prioridade alta do guia (seção 9, item 2): \"Chamadas CNPq/Decit-SCTIE/MS — Saúde das Mulheres — há linha explícita de câncer de mama; exige parceria com ICT e proponente doutor.\" O guia também lista PPSUS (item 6) sob este mesmo canal com prioridade média.",
+      "requires": [
+        "vínculo do proponente com ICT",
+        "proponente com título de doutor (na maioria dos editais)"
+      ],
+      "source_guide": "canais-editais-fomento-brasil.md",
+      "last_reviewed": "2026-08-19",
+      "_source_catalog": "funding_channels"
+    },
+    {
+      "slug": "google-for-startups-cloud",
+      "name": "Google for Startups Cloud Program",
+      "category": "cloud_credits",
+      "region": "global",
+      "portal_url": "https://cloud.google.com/startup",
+      "benefit_summary": "Maior teto publicado do mercado em 2026 para startups AI-first. Três tiers direcionais: Start (até ~US$2.000 em créditos GCP/Firebase), Scale (até ~US$200.000 em 2 anos) e AI-First (até ~US$350.000 em 2 anos). Cobre Vertex AI, Gemini/Gemma, TPUs, BigQuery, GKE, Cloud Run e storage — modelos de terceiros são cobrados à parte. Atenção ao \"penhasco do ano 2\": a cobertura costuma cair de ~100% para ~20% no segundo ano.",
+      "eligibility_summary": "Start: startup de tecnologia, fundada há menos de 5 anos, sem investidor institucional. Scale: rodada pré-seed a Série A institucional (SAFE conta; grants governamentais, crowdfunding, anjo e F&F não contam). AI-First: uso de Vertex AI/Gemini como base do produto, funding VC seed–Série A, fundada há menos de 10 anos, sem ter recebido mais de US$5.000 em créditos GCP prévios.",
+      "priority_alchemia": "alta",
+      "priority_note": "Bloco \"Prioridade máxima\" do guia (seção 10, item 4) — \"se houver componente AI-first no produto, mapear o caminho até o tier de US$350 mil.\"",
+      "source_guide": "guia-captacao-programas-corporativos-startups.md",
+      "last_reviewed": "2026-08-19",
+      "_source_catalog": "corporate_programs"
+    },
+    {
+      "slug": "microsoft-founders-hub",
+      "name": "Microsoft for Startups Founders Hub",
+      "category": "cloud_credits",
+      "region": "global",
+      "portal_url": "https://www.microsoft.com/startups",
+      "benefit_summary": "O programa mais acessível dos três grandes — não exige VC nem aceleradora para começar. Estágios direcionais: Ideate (~US$1.000, autoaplicação imediata), Build (~US$5.000–25.000, após verificação de negócio), Grow (~US$25.000–50.000), Scale (~US$120.000–150.000, via Investor Network/código de aceleradora). Além dos créditos Azure: GitHub Enterprise, M365 Business Premium, LinkedIn Premium, Azure OpenAI Service e sessões com especialistas técnicos.",
+      "eligibility_summary": "Exige conta Microsoft pessoal (MSA), não corporativa/escolar. Verificação de negócio em até 90 dias, sob pena de perder parte dos créditos. Créditos começam a expirar a partir da ativação — não ativar antes de estar pronto para consumir. Não cobre licenças M365, Dynamics, Power BI Pro nem Azure Marketplace.",
+      "priority_alchemia": "alta",
+      "priority_note": "Bloco \"Prioridade máxima\" do guia (seção 10, item 2) — \"tier de entrada imediato, sem exigência de investidor; cobre infraestrutura enquanto os editais públicos não saem.\"",
+      "source_guide": "guia-captacao-programas-corporativos-startups.md",
+      "last_reviewed": "2026-08-19",
+      "_source_catalog": "corporate_programs"
+    },
+    {
+      "slug": "nvidia-inception",
+      "name": "NVIDIA Inception",
+      "category": "cloud_credits",
+      "region": "global",
+      "portal_url": "https://www.nvidia.com/en-us/startups/",
+      "benefit_summary": "Gratuito, sem equity, sem prazo e sem coorte. Créditos do Deep Learning Institute, preço preferencial em hardware/software, acesso a NIM/SDKs, créditos de nuvem via parceiros (rotas documentadas para AWS Activate e Nebius), Inception Capital Connect (rede de VCs), badge e co-marketing. Stack BioNeMo (modelos de linguagem para proteínas, docking, geração molecular) e Clara (imagem médica, genômica) — diretamente aplicável a CADD.",
+      "eligibility_summary": "Empresa constituída em qualquer país (CNPJ brasileiro elegível), menos de 10 anos de fundação, pelo menos um desenvolvedor no time, site funcional. Receita não é requisito. Não elegíveis: consultorias/software houses terceirizadas, empresas de criptomoedas, provedores de nuvem, revendas, capital aberto. Regra de ouro: candidatar-se como empresa de produto de IA, nunca como prestadora de serviço — principal causa de rejeição. Decisão em 2–4 semanas; perfil deve ser atualizado a cada 6 meses para manter elegibilidade.",
+      "priority_alchemia": "alta",
+      "priority_note": "Bloco \"Prioridade máxima\" do guia (seção 10, item 1) — \"fazer nas próximas semanas\"; \"acesso ao stack BioNeMo/Clara é diretamente aplicável a descoberta de fármacos assistida por computador. Sem custo, sem equity, sem prazo.\"",
+      "source_guide": "guia-captacao-programas-corporativos-startups.md",
+      "last_reviewed": "2026-08-19",
+      "_source_catalog": "corporate_programs"
+    },
+    {
+      "slug": "cnpem-lnbio",
+      "name": "CNPEM / LNBio",
+      "category": "habitat_nacional",
+      "region": "brasil",
+      "portal_url": "https://cnpem.br",
+      "benefit_summary": "\"A infraestrutura de pesquisa mais poderosa disponível a empresas brasileiras\" (Campinas, organização social supervisionada pelo MCTI). Duas vias de acesso: (1) chamada pública do Sirius para tempo de feixe — acadêmica, gratuita, avaliação por pares, contrapartida de publicação aberta; (2) Assessoria de Inovação (AIN) para empresas — contratação de projetos colaborativos com sigilo e propriedade intelectual negociada, sem edital. O LNBio oferece proteômica por espectrometria de massas, caracterização de proteínas (ITC/DSF), RMN, cristalografia (linhas MANACÁ do Sirius) e triagem de compostos — parceiro natural para validação experimental de predições computacionais de CADD.",
+      "eligibility_summary": "Via Sirius: pesquisadores de instituições brasileiras e de países da América Latina/Caribe, com contrapartida de publicação aberta dos resultados. Via AIN: prospecção e negociação direta com empresas, sem edital formal — processo de relacionamento longo, \"comece cedo\" (recomendação do guia).",
+      "priority_alchemia": "alta",
+      "priority_note": "Aparece duas vezes na seção 10 do guia: bloco \"Prioridade máxima\" (item 3, via AIN) — \"abrir conversa sobre validação experimental de predições computacionais\" — e bloco \"Prioridade alta\" (item 7, via chamada do Sirius). Usada a classificação mais alta das duas menções (alta = \"Prioridade máxima\" no mapeamento desta curadoria).",
+      "source_guide": "guia-captacao-programas-corporativos-startups.md",
+      "last_reviewed": "2026-08-19",
+      "_source_catalog": "corporate_programs"
+    }
+  ]
+}

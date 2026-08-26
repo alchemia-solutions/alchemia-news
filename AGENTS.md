@@ -1284,3 +1284,27 @@ não a toma sozinha, mesmo com "corrija tudo".
 
 **Estado do alvo, verificado pelo gate:** `docs/qc/2026-08-21-frontend-quality-dashboard.md`,
 addendum de hoje — 🔴 0 · 🟡 0 · 🟢 0 · passa em F1–F10.
+
+## Addendum — 2026-08-26: feed "Nature Chemical Biology" removido — o grupo inteiro zerava por
+## causa de um único feed bloqueado
+
+A pedido do fundador, depois do achado real registrado hoje em `alchemia-ai/alchemia-bots/AGENTS.md`
+(addendum de mesma data): `meta.json` mostrava `nature.count = 0` mesmo com os outros dois feeds do
+grupo saudáveis. Causa raiz em `pipeline/collectors/feed_collector.py:_collect_section` — por
+design (comentário explícito na função, "falha de feed é reportada, nunca engolida"), se **qualquer**
+feed da seção falha, a função levanta `RuntimeError` **depois** de coletar todos, descartando os
+itens dos feeds que funcionaram junto com o que falhou. Bloqueio anti-bot persistente
+("Client Challenge") em `nchembio.rss` (Nature Chemical Biology) zerava `Nature Reviews Drug
+Discovery` e `Nature Biotechnology` todo dia, mesmo saudáveis.
+
+**Corrigido removendo o feed problemático** de `pipeline/config/sources.yaml` (seção
+`nature_feeds`) — não a lógica de `_collect_section`, que segue válida como está (a decisão de
+"nunca engolir falha" continua correta para os feeds restantes). Verificado isoladamente:
+`collect_nature_feeds()` chamado direto agora retorna **8 itens** (Nature Reviews Drug Discovery),
+sem levantar exceção.
+
+Se o bloqueio de `nchembio.rss` for temporário e a Nature liberar o feed de novo no futuro, basta
+readicionar a entrada — nada mais no código depende da remoção.
+
+Ver `alchemia-ai/alchemia-bots/AGENTS.md` (addendum de hoje) para o resto da auditoria do mesmo dia
+(Ctrl+C recorrente na Coleta, mitigação via tarefa desacoplada, catch-up do Supabase).

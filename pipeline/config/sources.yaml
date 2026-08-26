@@ -71,9 +71,10 @@ nature_feeds:
     - name: "Nature Biotechnology"
       url: "https://www.nature.com/nbt.rss"
       filter_relevance: true
-    - name: "Nature Chemical Biology"
-      url: "https://www.nature.com/nchembio.rss"
-      filter_relevance: true
+    # "Nature Chemical Biology" (nchembio.rss) removida em 2026-08-26 -- bloqueio anti-bot
+    # persistente (Client Challenge), zerava o grupo inteiro por causa da falha-nunca-engolida
+    # de _collect_section (um feed falhando descarta os itens dos outros dois também). Ver
+    # AGENTS.md deste setor, addendum 2026-08-26.
   filter_relevance: false # padrão da seção: o primeiro já é temático do nicho
 
 # Newsletters e veículos editoriais do nicho — adicionados 2026-08-18 a pedido do fundador.
