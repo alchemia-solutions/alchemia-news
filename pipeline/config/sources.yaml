@@ -61,7 +61,12 @@ scielo_via_crossref:
 # voltarem a falhar de forma consistente, reavaliar. Se algum dos dois removidos voltar a expor
 # feed aberto, é só reacrescentar.
 nature_feeds:
-  enabled: true
+  # Desativado em 2026-08-26 -- remover só "Nature Chemical Biology" (bloqueada) não bastou:
+  # o anti-bot (Client Challenge) se espalhou para os outros dois feeds restantes na mesma
+  # execução seguinte. Não é mais "um feed ruim", é o domínio nature.com bloqueando a seção
+  # inteira. Reativar só depois de confirmar manualmente que os feeds voltam HTTP 200 de
+  # verdade (não presumir). Ver AGENTS.md deste setor, addendum 2026-08-26.
+  enabled: false
   delay_seconds: 4
   feeds:
     - name: "Nature Reviews Drug Discovery"

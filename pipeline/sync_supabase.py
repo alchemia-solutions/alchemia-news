@@ -162,7 +162,12 @@ def _sync_meta(service_role_key: str, now_iso: str, dry_run: bool) -> str:
 
 
 def sync(dry_run: bool = False, only: tuple[str, ...] = ALL_TARGETS) -> int:
-    service_role_key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+    # .strip() -- achado real em 2026-08-26: um secret do GitHub Actions colado com espaço/quebra
+    # de linha sobrando quebra o header HTTP ("Invalid leading whitespace... in header value"),
+    # sem indicar qual variável nem revelar o valor (o próprio Actions redige `***`). Defensivo
+    # contra esse erro de copy-paste, não corrige a causa (o secret errado continua errado) --
+    # só evita que espaço/newline invisível derrube a sincronização inteira.
+    service_role_key = (os.environ.get("SUPABASE_SERVICE_ROLE_KEY") or "").strip() or None
     if not service_role_key and not dry_run:
         common.log(
             "SUPABASE_SERVICE_ROLE_KEY não configurada -- pulando sincronização com Supabase "

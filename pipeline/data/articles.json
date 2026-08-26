@@ -295,6 +295,81 @@
   },
   {
     "kind": "article",
+    "title": "Programmable De Novo Design of Mesoporous Protein Crystal Frameworks",
+    "url": "https://doi.org/10.64898/2026.08.25.747085",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-26",
+    "collected_at": "2026-08-26T21:30:15.854880+00:00",
+    "authors": [
+      "Li, Z.",
+      "Wang, S.",
+      "Sheffler, W.",
+      "Hsia, Y.",
+      "Lee, B.",
+      "Hura, G. L.",
+      "Yaman, M. Y.",
+      "Liu, B.",
+      "Kibler, R. D.",
+      "Bethel, N. P.",
+      "Chmielewski, D.",
+      "Sahtoe, D. D.",
+      "Yang, W.",
+      "Shen, H.",
+      "Jiang, H.",
+      "Nattermann, U.",
+      "Shui, Y.",
+      "Liu, H.",
+      "Nguyen, H.",
+      "Kang, A.",
+      "Decarreau, J.",
+      "Borst, A. J.",
+      "Bera, A. K.",
+      "Sankaran, B.",
+      "Ginger, D. S.",
+      "Baker, D."
+    ],
+    "summary": "Three-dimensional protein crystals are ordered, porous macroscopic materials with potential applications in catalysis, biosensing, and biomedicine. However, most protein crystals are obtained by empirical screening, providing limited control over the lattice architecture, pore geometry or component composition that determine material function. Here, we present a modular strategy for the programmable design of highly porous, framework-like protein crystals using predefined protein-protein interactions. This strategy yielded over 30 distinct protein crystals, including single-component and multicomponent P213 and I213 lattices that grow to over 100 micrometers in size. Small-angle X-ray scattering and electron microscopy showed close agreement between experimental lattices and computational models. RFdiffusion-guided design generated isomorphous variants with matched lattice parameters, enabling coherent protein crystal alloys, epitaxial core-shell growth and reversible shell assembly. The designed crystals exhibit tunable mesoporous architectures, with limiting apertures of 2-18 nm, and support genetically encoded incorporation of fluorescent protein guests. These results establish ",
+    "doi": "10.64898/2026.08.25.747085",
+    "company_slug": null,
+    "keywords_matched": [
+      "RFdiffusion"
+    ],
+    "extra": {
+      "category": "synthetic biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.25.747085"
+  },
+  {
+    "kind": "article",
+    "title": "A biologically supported global RNA architecture of cucumber mosaic virus satellite RNA",
+    "url": "https://doi.org/10.64898/2026.08.21.746196",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-26",
+    "collected_at": "2026-08-26T21:30:15.857063+00:00",
+    "authors": [
+      "Li, N.",
+      "Gao, Y.",
+      "Ren, S.",
+      "Gu, Z.",
+      "Yu, D.",
+      "Liao, Q.",
+      "Du, Z."
+    ],
+    "summary": "Satellite RNAs (satRNAs) are parasitic subviral agents whose biological activities are mediated largely by specific sequence determinants and structured RNA elements. Establishing biologically supported global RNA structures is therefore essential for understanding how RNA architecture underlies satRNA functions. Cucumber mosaic virus (CMV) satRNA is one of the best-characterized models for investigating satRNA structure-function relationships; however, a biologically supported global RNA architecture of CMV satRNA has yet to be established. Here, we applied AlphaFold3 modeling to predict the global structure of CMV satRNA T1 (sat-T1). Initial full-length structure modeling generated multiple long-distance interactions that lacked biological support. We therefore used fragment-based modeling, combined with chemical probing, evolutionary covariation, and compensatory mutagenesis, to derive a biologically supported global secondary structure. To determine whether structurally distant regions could interact in the context of the full-length RNA, we engineered a structure-guided T1-ZD mutant that preserved the supported secondary structure while reducing alternative base-pairing possib",
+    "doi": "10.64898/2026.08.21.746196",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "microbiology"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.21.746196"
+  },
+  {
+    "kind": "article",
     "title": "In Vivo Screening for a Promising Antiparasitic Agent Against Neobenedenia melleni in Epinephelus fuscoguttatusfemale x E. lanceolatusmale and Identification of Its Potential Target",
     "url": "https://doi.org/10.64898/2026.08.24.746648",
     "source": "bioRxiv",

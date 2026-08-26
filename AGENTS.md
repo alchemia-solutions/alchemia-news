@@ -1358,3 +1358,90 @@ instalar em segundos no runner do GitHub, sem dependência de sistema além do P
 Nenhum comando git de escrita foi executado por este agente — o arquivo novo fica para o fundador
 adicionar, commitar e dar push, mesma convenção já seguida o dia inteiro. Nenhuma credencial foi
 lida, inserida ou impressa.
+
+## Addendum — 2026-08-26 (mais tarde ainda): `nature_feeds` desativado por completo — remover só
+## o feed problemático não bastou, o bloqueio se espalhou
+
+Depois do secret configurado e do primeiro `git push` do workflow, o fundador disparou um teste
+manual (`workflow_dispatch`) e reportou, pelo dashboard ao vivo, que o banner "1 coletor(es) com
+erro" continuava mostrando `nature`. Investigado antes de presumir que a correção anterior não
+tinha ido para o remoto: **foi, está em `origin/main`** (`git show origin/main:pipeline/config/
+sources.yaml` confirma a remoção de `nchembio.rss`).
+
+**O que realmente aconteceu:** o `meta.json` mais recente disponível (dentro do commit
+`b4977d4`, que o próprio fundador fez ao adicionar o workflow) mostra os **dois feeds restantes**
+do grupo — `Nature Reviews Drug Discovery` e `Nature Biotechnology` — **também** batendo em
+"Client Challenge" agora. O bloqueio nunca foi de um feed específico; é o domínio `nature.com`
+reagindo ao padrão de acesso (mesma hipótese já registrada no comentário de `delay_seconds` deste
+arquivo desde 2026-08-18, "N feeds de nature.com em rajada disparam o desafio anti-bot"). Remover
+o pior feed só adiou o sintoma por uma execução.
+
+**Nota lateral, não o problema principal:** esse traceback específico tem caminho estilo Windows
+(`\pipeline\collectors\...`), então veio de uma execução **local**, não necessariamente do
+`workflow_dispatch` que o fundador disparou pela aba Actions — nesta mesma checagem, o polling por
+um commit novo de `github-actions[bot]` em `origin/main` não encontrou nada em ~5 minutos. Isso
+**não prova falha** do workflow: o script só commita se `git diff --cached` encontrar mudança, e é
+plausível que a execução local do fundador (mesma janela de tempo) já tivesse capturado o mesmo
+conteúdo novo, deixando nada para o Actions commitar. Sem acesso à aba Actions (repositório
+privado, nenhuma credencial de GitHub disponível para este agente), não dá para confirmar sucesso
+ou falha do `workflow_dispatch` por aqui — só o fundador vê isso diretamente.
+
+**Corrigido:** `nature_feeds.enabled` de `true` para `false` em `sources.yaml` — não é mais
+"remover um feed ruim", é desligar a seção inteira até confirmar manualmente (não presumir) que os
+feeds voltam a responder `200` de verdade. Verificado isoladamente: `collect_nature_feeds()` com
+`enabled: false` retorna `[]` **sem levantar exceção** (`_collect_section` checa `enabled` antes de
+tentar qualquer fetch) — como `run_all.py:_run_collector` só grava `error` quando uma exceção é
+capturada, o dashboard deixa de mostrar "nature: erro" e passa a mostrar `nature: 0 itens`, mesmo
+tratamento neutro que outras fontes de baixo volume já recebem.
+
+Ver `pipeline/config/sources.yaml` (comentário datado na própria seção) para o registro de quando
+reativar.
+
+## Addendum — 2026-08-26 (fechamento do dia): primeira execução real do `workflow_dispatch` —
+## falha real encontrada e corrigida (`SUPABASE_SERVICE_ROLE_KEY` com espaço/quebra de linha);
+## descoberta séria à parte — Vercel não faz deploy de repo privado de organização no plano Hobby
+
+O fundador disparou o `workflow_dispatch` corretamente desta vez (run `#2`, log real inspecionado
+via print da aba Actions — algo que este agente não tem como ver sozinho, repositório privado sem
+credencial do GitHub). **Etapa 1a (coleta) passou limpa, 2m6s.** Etapa 3 (sync Supabase) falhou:
+
+```
+Supabase: sincronização falhou -- Invalid leading whitespace, reserved character(s), or return
+character(s) in header value: '***'
+```
+
+(`***` é a redação automática do próprio GitHub Actions sobre o valor do secret — nunca visto por
+nenhum agente.) Diagnóstico: o header HTTP `Authorization: Bearer <token>` fica inválido quando o
+valor do token carrega espaço ou `\n` sobrando — erro clássico de copiar/colar um secret. Não é bug
+de lógica: a Etapa 1a não usa a chave, só a Etapa 3 (`_upsert` em `pipeline/sync_supabase.py`).
+
+**Corrigido em código, defensivamente:** `sync(...)` agora lê
+`(os.environ.get("SUPABASE_SERVICE_ROLE_KEY") or "").strip() or None` em vez do valor cru — remove
+espaço/quebra de linha nas pontas antes de montar o header, então mesmo que o secret tenha sido
+colado com espaço sobrando, o script funciona sem precisar recadastrar nada. Verificado:
+`py_compile` limpo + `--dry-run --only meta` roda sem erro. **Não corrige** o caso (mais raro) de o
+valor em si estar genuinamente errado/truncado — se o erro persistir depois do push, o próximo
+passo é o fundador recadastrar o secret conferindo que copiou o valor inteiro, sem espaço extra.
+
+### 🔴 Achado sério, não corrigido — decisão do fundador, envolve custo ou reversão de decisão
+
+No mesmo print da aba Actions do commit `b4977d4`: **Vercel não conseguiu fazer deploy** —
+*"Cannot deploy from a private GitHub organization repository on the Hobby plan"*. É limitação real
+e documentada da Vercel: o plano gratuito não publica repositório **privado pertencente a uma
+Organização** do GitHub (`alchemia-solutions`); só aceita privado de conta pessoal, ou organização
+no plano pago. Isso está acontecendo desde que o repositório virou privado — **o site em produção
+está congelado na versão de ~2h antes disso** ("Production" na barra lateral do GitHub, ainda
+citando o deploy anterior). Dado no dashboard continua atualizando (lê do Supabase em tempo real,
+não depende de rebuild), mas **nenhum código novo vai ao ar** até isso ser resolvido — inclusive as
+duas correções desta sessão (`sources.yaml`, `sync_supabase.py`) ficam paradas do lado do
+dashboard, ainda que o pipeline em si já funcione.
+
+Três caminhos apresentados ao fundador, nenhum decidido por este agente (custo real ou reversão de
+decisão de privacidade já tomada deliberadamente — fora do que qualquer agente decide sozinho):
+upgrade da Vercel para Pro (pago); transferir o repositório para fora da organização, para conta
+pessoal (mantém grátis, muda titularidade); voltar o repositório a público (desfaz a decisão de
+privacidade tomada nesta mesma sessão). **Pendência real em aberto ao fim do dia.**
+
+Nenhum comando git de escrita foi executado por este agente. Nenhuma credencial foi lida, inserida,
+impressa ou sequer vista (o valor do secret nunca apareceu em nenhum log consultado — só a máscara
+`***` do próprio GitHub).
