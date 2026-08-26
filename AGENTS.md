@@ -1308,3 +1308,53 @@ readicionar a entrada — nada mais no código depende da remoção.
 
 Ver `alchemia-ai/alchemia-bots/AGENTS.md` (addendum de hoje) para o resto da auditoria do mesmo dia
 (Ctrl+C recorrente na Coleta, mitigação via tarefa desacoplada, catch-up do Supabase).
+
+## Addendum — 2026-08-26 (mais tarde): coleta ganha caminho na nuvem — GitHub Actions, independente
+## da máquina do fundador estar ligada
+
+A pedido do fundador ("tem como rodar e atualizar o alchemia-news mesmo sem meu computador estar
+ligado?"), depois de toda a investigação de Ctrl+C/S4U/Azure AD registrada em
+`alchemia-ai/alchemia-bots/AGENTS.md` (mesma data) ter deixado claro que a Coleta local depende de
+infraestrutura frágil (sessão do Windows), novo arquivo
+**`.github/workflows/coleta.yml`** — dispara a Etapa 1a (coleta determinística,
+`python -m pipeline.run_all`) + Etapa 3 (`python -m pipeline.sync_supabase`) na infraestrutura do
+próprio GitHub, 3x/dia (09:40/15:40/21:40 UTC = 06:40/12:40/18:40 Brazil/East, mesmos horários da
+tarefa local), mais `workflow_dispatch` para disparo manual pela aba Actions. `pipeline/data/*.json`
+já é rastreado pelo git (confirmado por `git ls-files` antes de desenhar o workflow) — o job commita
+o estado atualizado de volta no repositório ao final, usando a identidade `github-actions[bot]`
+(nunca uma identidade do fundador), com `[skip ci]` para não disparar builds do Vercel por essa
+mesma mudança de dado (o Vercel já lê do Supabase, não precisa de redeploy para dado novo).
+
+**Escopo deliberadamente restrito às duas etapas já determinísticas e sem dependência de disco
+local fora deste repositório** — mesma linha já traçada com o fundador antes de implementar:
+
+| Etapa | Migrou para a nuvem? | Por quê |
+|---|---|---|
+| 1a — coleta (8 coletores) | ✅ sim | só lê API pública e escreve dentro do repo |
+| 3 — sync Supabase | ✅ sim | só precisa de `SUPABASE_SERVICE_ROLE_KEY` |
+| 1b — radar + PDFs para `alchemia-science`/`alchemia-library` | ❌ não | escreve em pasta **fora** deste repositório, no Drive local — sem equivalente em nuvem hoje |
+| 2 — curadoria do Baker | ❌ não | roda como Tarefa Agendada do Claude, precisa do app aberto — já tinha essa limitação antes, não mudou |
+| 3 (newsletter) — anúncio do Axel | ❌ não | mesma razão da curadoria |
+
+**Único passo que só o fundador pode fazer** (nenhum agente insere credencial): cadastrar
+`SUPABASE_SERVICE_ROLE_KEY` como *repository secret* no GitHub — Settings → Secrets and variables →
+Actions → New repository secret, mesmo valor já configurado como variável de ambiente do Windows
+local. Sem isso, o job de coleta roda mas a Etapa 3 falha (com erro claro no log do Actions, não em
+silêncio — mesmo comportamento do script local sem a variável).
+
+**Recomendação, não executada ainda:** depois de confirmar (via `workflow_dispatch`, um disparo
+manual) que o workflow roda de ponta a ponta com o secret configurado, desativar a Tarefa Agendada
+local `Alchemia News - Coleta` — rodar as duas em paralelo no mesmo horário duplicaria a coleta e
+arrisca conflito de `git push` entre a máquina local e o `github-actions[bot]` escrevendo no mesmo
+arquivo quase ao mesmo tempo. Não desativei a tarefa local nesta rodada de propósito: até o secret
+ser cadastrado e o workflow confirmado funcionando, a máquina local continua sendo a única coisa
+que garante a coleta — desativá-la cedo demais criaria um buraco sem nenhuma coleta rodando.
+
+**Validado antes de entregar:** o YAML foi parseado com `yaml.safe_load` (sem erro de sintaxe) — não
+foi disparado de verdade ainda, porque o secret não existe no repositório e o job falharia na Etapa
+3 sem ele. `pipeline/requirements.txt` (`requests`, `PyYAML`, `feedparser`) é leve o bastante para
+instalar em segundos no runner do GitHub, sem dependência de sistema além do Python padrão.
+
+Nenhum comando git de escrita foi executado por este agente — o arquivo novo fica para o fundador
+adicionar, commitar e dar push, mesma convenção já seguida o dia inteiro. Nenhuma credencial foi
+lida, inserida ou impressa.
