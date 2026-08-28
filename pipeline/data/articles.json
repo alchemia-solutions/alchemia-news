@@ -535,6 +535,28 @@
   },
   {
     "kind": "article",
+    "title": "GRAS: Guided Reduced-Variance Proposals and Adaptive Selection for Training-Free Reward Alignment in Discrete Diffusion",
+    "url": "https://arxiv.org/abs/2608.26585v1",
+    "source": "arXiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-27",
+    "collected_at": "2026-08-28T05:38:41.218123+00:00",
+    "authors": [
+      "Kwanyoung Kim"
+    ],
+    "summary": "Discrete diffusion models have become a strong, widely adopted class of generators for sequence data, and steering them toward a downstream reward at inference time, without any retraining, is increasingly important. Such training-free steering is done by gradient guidance, by search, or by combining the two. We study the combined regime and identify two weaknesses in how it is usually run: the guided proposal estimates its gradient from a single noisy sample, and the search then resamples particles at a fixed temperature that ignores how rewards spread across each denoising step. We address both with a small set of changes that add no denoiser cost. For the proposal, we lower the estimator variance with a Rao-Blackwellized reveal for differentiable rewards and a leave-one-out baseline for non-differentiable ones; for the search, we standardize the per-step values into a group-relative advantage and prove it collapses to a single active ingredient, an adaptive resampling temperature. We call the resulting method Guided Reduced-variance proposals and Adaptive Selection (GRAS). GRAS is simple yet effective: across regulatory DNA and protein design it attains the best training-free re",
+    "doi": null,
+    "company_slug": null,
+    "keywords_matched": [
+      "protein design"
+    ],
+    "extra": {
+      "arxiv_id": "2608.26585v1"
+    },
+    "dedupe_key": "url:https://arxiv.org/abs/2608.26585v1"
+  },
+  {
+    "kind": "article",
     "title": "Identification of Altered Potassium Channels for Drug Repurposing in Long COVID Patients",
     "url": "https://doi.org/10.64898/2026.06.18.733062",
     "source": "bioRxiv",
@@ -1138,6 +1160,30 @@
       "category": "biophysics"
     },
     "dedupe_key": "doi:10.64898/2026.08.25.747051"
+  },
+  {
+    "kind": "article",
+    "title": "PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction",
+    "url": "https://arxiv.org/abs/2608.26228v1",
+    "source": "arXiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-26",
+    "collected_at": "2026-08-28T05:38:41.218541+00:00",
+    "authors": [
+      "Yeqing Lu",
+      "Xiaoyan Zhao",
+      "Fuli Feng"
+    ],
+    "summary": "With activity against multidrug-resistant pathogens and mechanisms distinct from conventional antibiotics, antimicrobial peptides (AMPs) offer a promising approach to combating antibiotic-resistant infections. However, their potency varies substantially across pathogen species, making accurate prediction of the minimum inhibitory concentration (MIC) for specific peptide-pathogen pairs essential for prioritizing candidates before costly experimental validation. Existing predictors are trained mainly on a few well-represented pathogens and rarely exploit biological relationships across species, limiting their generalization to low-resource and unseen pathogens. We introduce PathoMIC, the largest and most pathogen-diverse unified dataset for quantitative antimicrobial peptide activity prediction, containing 74,751 experimentally reported MIC measurements across 424 pathogen species. PathoMIC integrates peptide sequences, standardized MIC values, pathogen descriptions, and taxonomic relationships to facilitate knowledge transfer across related species. We establish few-shot and zero-shot cross-species evaluation protocols and develop a knowledge-enhanced framework that leverages pathog",
+    "doi": null,
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening"
+    ],
+    "extra": {
+      "arxiv_id": "2608.26228v1"
+    },
+    "dedupe_key": "url:https://arxiv.org/abs/2608.26228v1"
   },
   {
     "kind": "article",
