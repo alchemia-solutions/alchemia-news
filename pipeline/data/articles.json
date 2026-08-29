@@ -1,6 +1,109 @@
 [
   {
     "kind": "article",
+    "title": "Distinct Mechanisms for Inhibition of SARS-CoV-2 Main Protease: Dimerization Promoted by Peptidomimetic Inhibitors and Disrupted by Ebselen",
+    "url": "https://doi.org/10.1101/2025.11.16.688752",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-29",
+    "collected_at": "2026-08-29T18:51:09.465098+00:00",
+    "authors": [
+      "Liu, C.",
+      "Jia, Q.",
+      "Zhao, C.",
+      "Zhongping, Y."
+    ],
+    "summary": "The SARS-CoV-2 main protease (Mpro) is a key target for antiviral drugs. Given its conserved sequence across coronaviruses and essential role in viral replication, numerous inhibitors have been developed to target its active site. Mpro exists in equilibrium between the active dimer and inactive monomer, rendering targeting dimerization as a promising alternative strategy for drug development. This study investigates the monomer-dimer equilibrium and conformational changes of Mpro induced by inhibitor binding. We utilized 13C labeling combined with native mass spectrometry to assess how different inhibitors, including peptidomimetic inhibitors (PF-07321332, PF-00835231, GC376, and boceprevir), and non-peptidomimetic inhibitors (carmofur, ebselen, MR6-31-2, AT7519 and pelitinib), influence Mpro dimerization and subunit exchange. Hydrogen/deuterium exchange mass spectrometry (HDX-MS) was further employed to investigate the conformational dynamics of Mpro and its interactions with these inhibitors. Key findings revealed divergent mechanisms: peptidomimetic inhibitors significantly shifted the equilibrium towards the dimeric state, suppressing subunit exchange dynamics and rigidifying t",
+    "doi": "10.1101/2025.11.16.688752",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "molecular biology"
+    },
+    "dedupe_key": "doi:10.1101/2025.11.16.688752"
+  },
+  {
+    "kind": "article",
+    "title": "Q-MOL: High Fidelity Platform for In Silico Drug Discovery and Design",
+    "url": "https://doi.org/10.1101/2025.08.06.668254",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-29",
+    "collected_at": "2026-08-29T18:51:21.263519+00:00",
+    "authors": [
+      "Cheltsov, A."
+    ],
+    "summary": "For several decades, in silico drug discovery methods have held the promise of cheap and efficient ways of streamlining de novo discovery of small molecule ligands against novel drug targets. The existing computational methodologies proved to be successful in those cases when a protein target is a relatively rigid molecule (e.g., many enzymes), or when an in silico methodology is applied during hit-to-lead optimization of an already potent binder. However, these methods fail when applied to highly flexible or intrinsically disordered protein targets which represent the bulk of pharmacologically important proteins. The major factors contributing to the failure are either incorrect or simplified treatment of protein flexibility, inadequate or overfitted scoring function, absence of correctly annotated druggable pockets, and lack of structural data about potential allosteric sites. The Q-MOL drug discovery platform addresses the problem of treatment of protein flexibility during the course of protein-ligand docking by computationally implementing some of postulates of the energy landscape theory of protein folding. The Q-MOL protein-ligand docking method was thoroughly validated in ac",
+    "doi": "10.1101/2025.08.06.668254",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.1101/2025.08.06.668254"
+  },
+  {
+    "kind": "article",
+    "title": "FuncSeek: Multi-PLM contrastive learning for protein functional similarity search",
+    "url": "https://doi.org/10.64898/2026.08.07.738656",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-29",
+    "collected_at": "2026-08-29T18:51:21.264872+00:00",
+    "authors": [
+      "Cloete, L. J.",
+      "Patterton, H. G."
+    ],
+    "summary": "Below 30% pairwise sequence identity, alignment-based methods struggle to reliably distinguish true homologs from chance, and enzyme function prediction degrades accordingly: on proteins in this regime, even advanced methods (CLEAN) achieves only 55.1% accuracy at full EC specificity on the CARE benchmark. To this end Protein Language Models (PLMs) have gained favor as alternatives. However, PLMs often encode only a subset of the biology, whereas the understanding of enzyme function requires among other things a combination of sequence, structure and functional-context simultaneously. In this work, we describe FuncSeek, a contrastive learning model which utilizes three diverse, complementary PLMs: ESM2 (to model evolutionary co-variation), ProstT5 (for bilingual sequence and structure embeddings), and ProteinBERT (for functional semantic similarities). Using SwissProt data, these 2816-D embeddings are labelled with Enzyme Commission numbers (EC) and are trained through a supervised contrastive head into a 256-D space. FuncSeek attains 64.6% nearest-neighbour EC4 accuracy on the CARE out-of-distribution benchmark set (ood30; proteins below 30% identity to training set), outperformin",
+    "doi": "10.64898/2026.08.07.738656",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.07.738656"
+  },
+  {
+    "kind": "article",
+    "title": "HANSEN: An Integrated Structural and Functional Proteome Resource for Structure-Guided Drug Discovery in Mycobacterium leprae",
+    "url": "https://doi.org/10.64898/2026.08.03.741541",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-29",
+    "collected_at": "2026-08-29T18:51:21.265134+00:00",
+    "authors": [
+      "Vedithi, S. C.",
+      "Rees, R.",
+      "Malhotra, S.",
+      "Munir, A.",
+      "Matusevicius, M.",
+      "Alsulami, A. F.",
+      "Beaudoin, C. A.",
+      "Sunkara, K. S.",
+      "Das, M.",
+      "Blundell, T. L.",
+      "Floto, R. A."
+    ],
+    "summary": "Leprosy remains a leading infectious cause of preventable disability, yet its causative agent, Mycobacterium leprae (M. leprae), is structurally under-characterised. Only ten Protein Data Bank (PDB) entries represent seven of its 1,603 protein-coding genes. We present HANSEN, a proteome-wide structural and functional resource for M. leprae. Monomeric and oligomeric models were generated with AlphaFold 3, Boltz-1, Boltz-2 and Chai-1, and annotated with per-residue confidence, predicted aligned error and, for assemblies, interface confidence. Ligand-binding pockets were predicted with AF2BIND, P2Rank and fpocket, template-derived ligands were modelled within oligomeric complexes, residue-level B-cell epitope propensity was estimated with DiscoTope-3.0, and gene essentiality was transferred from Mycobacterium tuberculosis transposon-sequencing labels. These features are integrated in a relational database with interactive visualisation and combined into a calibrated Target Priority Score that ranks all 1,603 proteins into four tiers and recovers established antimycobacterial targets. HANSEN (https://hansen-leprosy.medschl.cam.ac.uk/home) provides a practical basis for target prioritis",
+    "doi": "10.64898/2026.08.03.741541",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.03.741541"
+  },
+  {
+    "kind": "article",
     "title": "Directed Evolution in Codon Space",
     "url": "https://doi.org/10.64898/2026.08.03.742557",
     "source": "bioRxiv",
@@ -326,6 +429,53 @@
       "category": "biophysics"
     },
     "dedupe_key": "doi:10.64898/2026.08.25.746898"
+  },
+  {
+    "kind": "article",
+    "title": "Does Complexation of Plasma Membrane Cholesterol with Phospholipids Determine its Transbilayer Distribution?",
+    "url": "https://doi.org/10.1101/2025.11.13.687888",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-28",
+    "collected_at": "2026-08-29T18:51:09.466736+00:00",
+    "authors": [
+      "Steck, T. L.",
+      "Lange, Y."
+    ],
+    "summary": "Abstract. The transbilayer distribution of cholesterol in the plasma membrane is unresolved in that diverse analyses have yielded contradictory results. We now propose a model based on a novel mechanism. It assumes that (a) sterols associate stoichiometrically with phospholipids and (b) these complexes are filled to capacity in the plasma membrane. The sterol in each leaflet is then the product of the abundance of the leaflet phospholipids and their sterol stoichiometries. We applied the model to the bilayer of the human erythrocyte utilizing literature values for its cholesterol content, the abundance of phospholipids in the two leaflets and their cholesterol:phospholipid stoichiometries (1:1 mole/mole in the exofacial leaflet and 1:2 mole/mole in the endofacial leaflet). The model predicts that the outer leaflet contains about two thirds of the cholesterol in this membrane; i.e., twice that in the inner leaflet. Molecular dynamics simulations have delivered similar sidedness values for membranes in which the exofacial phospholipids have a higher sterol affinity. However, our mechanism holds that sterol affinity is irrelevant if the phospholipids are replete with sterol. Our resul",
+    "doi": "10.1101/2025.11.13.687888",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "cell biology"
+    },
+    "dedupe_key": "doi:10.1101/2025.11.13.687888"
+  },
+  {
+    "kind": "article",
+    "title": "RPDynaFlow: Generating RNA-Protein Conformational Ensembles by Atomic Conditional Flow Matching",
+    "url": "https://doi.org/10.64898/2026.08.28.747734",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-28",
+    "collected_at": "2026-08-29T18:51:21.267554+00:00",
+    "authors": [
+      "Li, Y.",
+      "Lu, K."
+    ],
+    "summary": "Conformation ensembles of biomolecules provide the basis for understanding structural transformations and drug design. Deep-learning generative models have advanced protein and small molecule ensemble generation, while RNA-Protein complexes remain unaddressed due to the chemical heterogeneity, limited dataset size and the different flexibility scales of RNA and protein components. We present RPDynaFlow, a flow-matching model to generate conformation ensembles of RNA-protein complexes, trained on 600 ns trajectories of molecular dynamics(MD) simulation. The results show our model extends the sampling range of the phase space compared to MD simulation, which couldbe treated as a rapid and efficient complement to MD trajectoriesfor studying RNA-protein interactions.",
+    "doi": "10.64898/2026.08.28.747734",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.28.747734"
   },
   {
     "kind": "article",
@@ -29271,5 +29421,349 @@
       "journal": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences"
     },
     "dedupe_key": "doi:10.1016/j.jchromb.2026.125263"
+  },
+  {
+    "kind": "article",
+    "title": "Network-guided Evaluation of β-sitosterol in Inflammatory and Profibrotic Mesangial-Cell Models Relevant to Chronic Glomerulonephritis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667189/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.581135+00:00",
+    "authors": [
+      "Haipeng He",
+      "Lian He",
+      "Fei Chen",
+      "Jie Cen",
+      "Zhen Huang"
+    ],
+    "summary": "Chronic glomerulonephritis (CGN) is characterized by persistent inflammatory injury and progressive fibrotic remodeling, yet compound-target relationships underlying natural-product-based interventions remain incompletely defined. This study integrated network pharmacology, validated molecular docking, and in vitro experiments to evaluate candidate constituents of Cordyceps sinensis (C. sinensis) in CGN-related pathological processes. Candidate constituents of C. sinensis were screened, and the Traditional Chinese Medicine Systems Pharmacology Database and Analysis Platform-derived compound-associated targets were intersected with CGN-associated genes. Functional enrichment and protein-protein interaction analyses were used to prioritize biological processes and hub targets. PTGS2 was identified as a key overlapping target. Molecular docking was performed using a celecoxib-bound COX-2 structure. Re-docking of the co-crystallized celecoxib ligand reproduced the crystallographic pose with an RMSD of 0.876 Å, supporting the docking protocol. β-Sitosterol and linoleyl acetate showed predicted compatibility with the COX-2 docking region, with binding affinities of -7.2 and -7.5 kcal/mol, respectively. β-Sitosterol was selected for compound-level validation in HBZY-1 rat glomerular mesangial cells. At 0.5-10 µM, β-sitosterol did not markedly reduce cell viability. In Lipopolysaccharide (LPS)-stimulated cells, β-sitosterol reduced Tnf, Il6, and Ptgs2 expression, decreased prostaglandin E2 (PGE2) production, and reduced cyclooxygenase-2 (COX-2) protein abundance. In transforming growth factor β1 (TGF-β1)-treated cells, β-sitosterol reduced Col1a1 and Acta2 expression and decreased alpha-smooth muscle actin (α-SMA) protein abundance. These findings provide hypothesis-generating evidence that β-sitosterol modulates inflammatory and profibrotic activation in mesangial-cell models, but they do not establish direct COX-2 enzymatic inhibition or therapeutic efficacy in CGN.",
+    "doi": "10.3791/73000",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42667189",
+      "journal": "Journal of visualized experiments : JoVE"
+    },
+    "dedupe_key": "doi:10.3791/73000"
+  },
+  {
+    "kind": "article",
+    "title": "Predicting Single-Cell Perturbation Responses Across Biological Contexts With a Deep Generative Model Integrating Optimal Transport.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667121/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.581721+00:00",
+    "authors": [
+      "Jialiang Wang",
+      "Ziqi Liu",
+      "Zhengqian Zhang",
+      "Yikun Cao",
+      "Junjun Ren",
+      "Peng Cheng",
+      "Jingjing Tian",
+      "Lingyun Xie",
+      "Xin Lu",
+      "Zhanwei Du",
+      "Yongzhuang Liu"
+    ],
+    "summary": "Predicting how single cells respond to perturbations is a central problem in computational biology, with potential relevance to emerging artificial intelligence virtual cell (AIVC) research and drug-discovery efforts. However, substantial variation in perturbation responses across biological contexts and the limited generalizability of current models make prediction across cell types, patients, species, and other contexts particularly challenging. To address this challenge, we present single-cell perturbation inference via latent optimal transport (scPILOT), a query-conditioned framework for transferring responses to previously observed perturbations across biological contexts. scPILOT learns a generative latent representation through discriminator-assisted training and separates perturbation inference into cell-level response estimation from observed contexts and query-specific response transfer using latent optimal transport. Across held-out cell-type, patient, and species benchmarks, scPILOT achieved context-averaged R2 mean/MMD2 values of 0.945/0.137, 0.598/0.025, and 0.853/0.287, respectively. It also maintained strong population-average accuracy in a held-out cell-line benchmark, while complementary analyses indicated that performance was associated with dataset learnability and query-context match. With the continued expansion of single-cell perturbation datasets, scPILOT may provide a practical framework for transferring responses to previously observed perturbations across increasingly diverse biological contexts.",
+    "doi": "10.1002/advs.77461",
+    "company_slug": null,
+    "keywords_matched": [],
+    "extra": {
+      "pmid": "42667121",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)"
+    },
+    "dedupe_key": "doi:10.1002/advs.77461"
+  },
+  {
+    "kind": "article",
+    "title": "An integrative computational strategy for antidiabetic drug discovery: From QSAR modeling to retrosynthesis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666974/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.582276+00:00",
+    "authors": [
+      "Lhoucine Naanaai",
+      "Marwa Alaqarbeh",
+      "Abdellah El Aissouq",
+      "Hicham Zaitan",
+      "Mohammed Bouachrine",
+      "Fouad Khalil"
+    ],
+    "summary": "The α-amylase enzyme plays a critical role in the digestion of complex carbohydrates. Inhibiting this enzyme offers a promising strategy for improving glucose regulation in diabetic patients. In this study, a comprehensive computational approach, combining 3D-QSAR modeling, ADMET profiling, molecular docking, molecular dynamics, ligand transport analysis, and retrosynthesis, was used to identify novel ligands with potent inhibitory activity against various indenoquinoxaline-phenylacrylohydrazide hybrids. The optimal 3D-QSAR model, developed using partial least squares (PLS) and Comparative Molecular Similarity Indices Analysis (CoMSIA), demonstrated strong correlation and predictive power (Q2=0.541, R2=0.973, SEE=0.076). ADMET analysis showed that the designed ligands possess acceptable pharmacokinetic and toxicological profiles, supporting their potential for further drug development. Molecular docking revealed that the designed ligands effectively interacted with the active site of α-amylase (PDB ID: 7TAA). Furthermore, molecular dynamics simulations (100 ns) and MM-PBSA free energy calculations confirmed the stability of ligand-enzyme complexes. Ligand transport was further examined using the CaverDock program, tracking the movement of molecules from the enzyme's active site to its surface. Finally, retrosynthetic analysis was performed to propose feasible synthesis routes for the most active compound. Overall, the findings highlight a promising lead compound for further in vitro and in vivo investigations targeting α-amylase inhibition.",
+    "doi": "10.34172/bi.32900",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics",
+      "QSAR"
+    ],
+    "extra": {
+      "pmid": "42666974",
+      "journal": "BioImpacts : BI"
+    },
+    "dedupe_key": "doi:10.34172/bi.32900"
+  },
+  {
+    "kind": "article",
+    "title": "Extraction solvent shapes the phytochemistry, multi-target bioactivity, and machine learning-predicted anticancer targets of Seseli libanotis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666950/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.582907+00:00",
+    "authors": [
+      "Mehmet Veysi Cetiz",
+      "Abdullahi Ibrahim Uba",
+      "Milena Terzic",
+      "Josef Jeko",
+      "Zsolt Szilágyi",
+      "Ulku Yerebasan",
+      "Ismail Koyuncu",
+      "Ozgur Yuksekdag",
+      "Sakina Yagi",
+      "Gokhan Zengin"
+    ],
+    "summary": "Seseli libanotis (L.) W. D. J. Koch (Apiaceae) is a wild vegetable traditionally consumed in eastern Anatolia, but its non-volatile phytochemistry and multi-target bioactivity remain insufficiently characterized. This study evaluated how extraction polarity shapes the chemical and biological profiles of four aerial-part extracts. The extracts were analyzed for total phenolic and flavonoid contents, chemical composition, antioxidant activity, inhibition of five enzymes, cytotoxicity against three tumor cell lines and human embryonic kidney (HEK-293) cells, and in silico molecular docking with enzyme targets. The ethanol/water extract showed the highest total phenolic content. Qualitative liquid chromatography-mass spectrometry (LC-MS) profiling showed broad coverage of caffeoylquinic acids and flavonoid glycosides in the polar extracts. Antioxidant activity was solvent- and assay-dependent: water was most active in the 2,2-diphenyl-1-picrylhydrazy (DPPH), cupric reducing antioxidant capacity (CUPRAC), and ferric reducing antioxidant power (FRAP) assays, ethanol/water in the 2,2'-azino-bis(3-ethylbenzothiazoline-6-sulfonic acid) (ABTS) assay, and ethyl acetate (EA) in the phosphomolybdenum assay. Ethanol and ethanol/water showed the highest acetylcholinesterase (AChE) and α-glucosidase inhibition, without significant differences between them; EA was most active against butyrylcholinesterase (BChE) and α-amylase. Molecular docking analyses suggested favorable binding modes of selected phytochemicals within the active sites of the investigated enzyme targets. Subsequent molecular dynamics simulations validated these interactions by demonstrating stable binding conformations sustained through persistent hydrogen-bonding networks. The ethanol/water extract was the most cytotoxic against three tumor cell lines (IC50 31.77-41.25 µg mL-1). Annexin V and propidium iodide staining (Annexin V/PI) and acridine orange/ethidium bromide (AO/EB) staining indicated apoptosis-associated viability loss; however, similar activity against HEK-293 cells indicated limited tumor selectivity. Extraction solvent was the principal determinant of phytochemical composition and bioactivity, while the low selectivity highlights the need for fractionation and compound-level validation.",
+    "doi": "10.1039/d6ra07396d",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42666950",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra07396d"
+  },
+  {
+    "kind": "article",
+    "title": "Eco-friendly green synthesis of Ag@Fe bimetallic nanoparticles using Chrysanthemum flower extract: characterization and biomedical potential through antioxidant, antidiabetic and molecular docking studies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666911/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.583512+00:00",
+    "authors": [
+      "Narasimha Raghavendra",
+      "Leena V Hublikar",
+      "Sowmyashree Ayachita Swamirayachar",
+      "Asha Puthussery Koroth",
+      "Abhishek S Lohar",
+      "Kirankumar Ari",
+      "Faheema Khan",
+      "Yohanis Dabesa Jelila",
+      "Kahkashan Perveen",
+      "Mohammad Nishat Akhtar"
+    ],
+    "summary": "This work aimed to synthesise Ag@Fe bimetallic nanoparticles using Chrysanthemum flower extract in an eco-friendly manner and evaluate their structural properties and biological potential. The synthesized nanoparticles were comprehensively characterized using UV-Vis spectroscopy, Fourier-transform infrared spectroscopy (FTIR), scanning electron microscopy (SEM), energy-dispersive X-ray spectroscopy (EDX), elemental mapping, dynamic light scattering (DLS), and X-ray diffraction (XRD) techniques. Density functional theory (DFT) calculations were performed on the major phytoconstituents of the flower extract to elucidate their electron-donating capability and role in nanoparticle formation under aqueous conditions. Antioxidant and antidiabetic assays were used to assess the biological activity of the produced nanoparticles, and molecular docking studies were used to further investigate their interactions with pertinent therapeutic targets. The UV-Vis spectrum exhibited characteristic absorption bands at 270 and 350 nm, corresponding to Fe and Ag nanostructures, respectively, confirming the successful formation of AgFe nanoparticles. DLS analysis revealed a Z-average hydrodynamic diameter of 440.6 nm, while a zeta potential of -7.7 mV indicated moderate colloidal stability of AgFe nanoparticles. The biosynthesized nanoparticles demonstrated notable antidiabetic activity, with EC50 values of 33.43 ± 0.32 µg mL-1 for α-amylase inhibition and 35.58 ± 0.61 µg mL-1 for α-glucosidase inhibition. Molecular docking studies further supported these findings by revealing favourable protein-ligand interactions and strong binding affinities. In addition, the nanoparticles exhibited significant antioxidant activity, with EC50 values of 31.43 ± 0.25 µg mL-1 and 34.33 ± 0.43 µg mL-1 in DPPH and H2O2 scavenging assays, respectively. Collectively, these results demonstrate the successful green synthesis of multifunctional CFE-AgFe NPs with promising antioxidant and antidiabetic properties. Nevertheless, further in vivo investigations are required to validate their therapeutic potential and biological safety.",
+    "doi": "10.1039/d6ra05187a",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42666911",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra05187a"
+  },
+  {
+    "kind": "article",
+    "title": "Novel benzofuran-furan-pyrano[2,3-c]pyrazole hybrids as potential anticancer agents: design, synthesis, in silico profiling, and multi-mechanistic biological evaluation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666834/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.584140+00:00",
+    "authors": [
+      "Elena Daniela Hutanu",
+      "Bassam A Najri",
+      "Amine Hafis Abdelsalam",
+      "Katia Mohand Saidi",
+      "Sevki Arslan",
+      "Arif Kivrak"
+    ],
+    "summary": "The development of anticancer agents capable of affecting multiple cancer-related cellular processes remains an important strategy in cancer drug discovery. In this study, a novel series of benzofuran-furan-pyrano[2,3-c]pyrazole hybrids was synthesized and comprehensively investigated through in vitro biological assays and in silico analyses. The synthesized compounds exhibited concentration-dependent cytotoxicity against LNCaP, MDA-MB-231, A549, and Caco-2 cancer cells, with EC50 values ranging from 20.49 to 274.37 µM while displaying lower toxicity toward non-malignant HUVEC cells. Among the synthesized derivatives, compounds 4j, 4h, and 4d showed the strongest antiproliferative activities and significantly suppressed cancer cell migration, invasion, and colony formation. Mechanistic studies demonstrated that the active hybrids induced G1/S phase cell cycle arrest, increased intracellular reactive oxygen species (ROS) production, disrupted mitochondrial membrane potential, and promoted apoptotic cell death. These findings were further supported by quantitative real-time PCR, which revealed downregulation of BCL2 together with upregulation of BAX, CASP3, CASP8, CASP9, and TP53, indicating activation of both intrinsic and extrinsic apoptotic pathways. In silico analysis of absorption, distribution, metabolism, excretion, and toxicity (ADMET) predicted favorable drug-likeness and pharmacokinetic properties for the synthesized hybrids. Molecular docking suggested potential interactions with CDK2, the androgen receptor, VEGFR-2, and Bcl-2, with compound 4f exhibiting the most favorable overall docking profile. Collectively, these findings demonstrate that benzofuran-furan-pyrano[2,3-c]pyrazole hybrids possess promising multifaceted in vitro anticancer activity by inhibiting cancer cell proliferation, migration, invasion, and clonogenicity while inducing ROS-mediated mitochondrial apoptosis, highlighting these hybrid scaffolds as attractive candidates for further anticancer drug development.",
+    "doi": "10.1039/d6ra05827b",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "molecular docking",
+      "ADMET",
+      "drug-likeness"
+    ],
+    "extra": {
+      "pmid": "42666834",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra05827b"
+  },
+  {
+    "kind": "article",
+    "title": "Design and synthesis of quinoline-derived thioureas as potential antihyperglycemic, anti-Alzheimer, and antioxidant agents.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666544/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.584698+00:00",
+    "authors": [
+      "Faiza Seraj",
+      "Maryam Maqbool",
+      "Fayaz Ali",
+      "Sridevi Chigurupati",
+      "Syeda Sumayya Tariq",
+      "Uzma Salar",
+      "Zaheer Ul-Haq",
+      "Vasudevan Mani",
+      "Shatha Ghazi Felemban",
+      "Khalid Mohammed Khan"
+    ],
+    "summary": "A library of quinoline-based thiourea hybrids 1-41 was synthesized via a single-step reaction scheme. All compounds were evaluated for their inhibitory potential against α-amylase, α-glucosidase, AChE, and BChE enzymes as well as for DPPH radical scavenging activity. Among forty-one compounds, 27-31 and 33-37 showed excellent inhibition against α-amylase (IC50 = 18.36-28.21 µM) and α-glucosidase (IC50 = 17.77-29.31 µM) compared to the standard acarbose (IC50 = 16.98 ± 0.12, 14.19 ± 0.06 µM). Moreover, compounds 27, 28, 30, 31, 34, 35, and 37 inhibited AChE (IC50 = 5.60-14.97 µM) and BChE (IC50 = 6.99-15.70 µM) with greater potency than the standard donepezil chloride (IC50 = 1.49 ± 0.13, 2.39 ± 0.06 µM). Kinetic analyses were conducted for the most active compounds to elucidate their modes of enzyme inhibition. Furthermore, molecular docking studies were conducted to explore ligand binding interactions within the enzyme active site. All synthesized derivatives were further evaluated for their DPPH radical scavenging activity, among which compounds 27, 28, 30, 31, 34, and 35 exhibited significant to moderate antioxidant potential (SC50 = 23.92-34.73 µM) compared with the reference standard ascorbic acid (SC50 = 18.28 ± 0.15 µM). Among this library, compound 31, with a difluoro group on the phenyl ring, was identified as the most potent inhibitor against all enzymes. Thus, this study suggests that the reported compounds hold the potential to be further advanced as lead anti-Alzheimer and anti-diabetic agents.",
+    "doi": "10.1039/d6ra03204d",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42666544",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra03204d"
+  },
+  {
+    "kind": "article",
+    "title": "Protective Effects of Mango Ginger (Curcuma amada Roxb.) Ethanol Extract against Carbon Tetrachloride-Induced Toxicity: In Vivo and In Silico Evidence.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666527/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.585221+00:00",
+    "authors": [
+      "Sagor Saha",
+      "Abu Amer Hisham",
+      "Md Mahmodul Islam",
+      "Mohammad Salim Hossain",
+      "Md Monirul Islam"
+    ],
+    "summary": "Mango ginger [Curcuma amada Roxb. (CA)] is a rhizomatous plant used in preparing pickles and culinary dishes. It also has medicinal values, including anti-inflammatory, antioxidant, and antimicrobial activities. The present study aims to investigate the protective effects of CA ethanol extract against carbon tetrachloride (CCl4)-induced damage. The CA ethanol extract was analyzed by gas chromatography-mass spectrometry (GC-MS). Mice were divided into 5 groups: control, CCl4 only [1 mL/kg body weight (BW)], CCl4 with CA (200 and 400 mg/kg BW), and CCl4 with silymarin (50 mg/kg BW). The hepatoprotective potential of CA in mice was evaluated by measuring the serum alanine transaminase (ALT), aspartate aminotransferase (AST), alkaline phosphatase (ALP), and bilirubin levels. Moreover, the lipid profile and kidney biomarkers were also evaluated. Histopathological changes in the liver and kidney were assessed using hematoxylin and eosin staining. The molecular docking of the CA-derived compounds and the absorption, distribution, metabolism, excretion, and toxicity (ADMET) profile of the selected compounds were also evaluated. GC-MS identified 62 probable compounds in the extract. CA significantly (P < 0.05) reduced elevated liver biomarkers (ALT, AST, ALP, and bilirubin), kidney biomarkers (urea and creatinine), and lipid levels. These findings aligned with histopathological observations, in which CA reversed the toxic effects of CCl4 on liver and kidney cells. Molecular docking showed potent binding affinities for inflammatory, hepatoprotective, and oxidative targets. The bioactive compounds showed moderate ADMET properties. Our findings show that CA has potential protective effects that can be further studied to develop novel hepatoprotective and nephroprotective agents.",
+    "doi": "10.1016/j.cdnut.2026.109506",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET"
+    ],
+    "extra": {
+      "pmid": "42666527",
+      "journal": "Current developments in nutrition"
+    },
+    "dedupe_key": "doi:10.1016/j.cdnut.2026.109506"
+  },
+  {
+    "kind": "article",
+    "title": "Rational design of naphtho[2,3-d]imidazole-4,9-dione-linked 1,3,4-oxadiazoles as α-amylase inhibitors supported by QSAR, docking, molecular dynamics, and ADME approaches.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666494/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.585773+00:00",
+    "authors": [
+      "Meena Devi",
+      "Parvin Kumar",
+      "Rahul Singh",
+      "Jayant Sindhu",
+      "Ashwani Kumar",
+      "Sohan Lal",
+      "Devender Singh",
+      "Harish Kumar"
+    ],
+    "summary": "A new series of 1,3,4-oxadiazole derivatives linked to naphtho[2,3-d]imidazole-4,9-dione were designed, synthesized, and evaluated for their α-amylase inhibitory activity through both in vitro and in silico methods. The compounds were synthesized via cyclization of (E/Z)-N'-(aryl/heteroarylbenzylidene)-2-(4,9-dioxo-4,9-dihydro-1H-naphtho[2,3-d]imidazole-1-yl)acetohydrazides (8a-8aa) with iodobenzene diacetate (IBD) in dichloromethane (DCM). The structures of the synthesized compounds were confirmed using various spectroscopic techniques. The in vitro testing revealed that several derivatives, including 8e, 8f, 8g, 8h, 8i, and 8v, exhibited α-amylase inhibition comparable to the standard drug acarbose. Among these, 8v, having -OCH3 substitution at the meta and para positions, showed the most potent inhibition, with an IC50 = 17.29 ± 0.09 µg mL-1, whereas acarbose had an IC50 = 20.02 ± 0.02 µg mL-1. In contrast, compound 8a (IC50 = 28.04 ± 0.03 µg mL-1) demonstrated the weakest inhibitory effects. QSAR studies identified key molecular descriptors that correlate with improved inhibitory activity, aiding in the design of novel inhibitors. Molecular docking studies were conducted to explore the binding interactions of the compounds with the α-amylase active site, while molecular dynamics simulations over 100 ns were performed to assess the stability of the enzyme-inhibitor complexes. ADME analysis was also carried out to evaluate the pharmacokinetic properties and drug-likeness of the promising derivatives.",
+    "doi": "10.1039/d6ra06580e",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "QSAR",
+      "drug-likeness"
+    ],
+    "extra": {
+      "pmid": "42666494",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra06580e"
+  },
+  {
+    "kind": "article",
+    "title": "A pleuromutilin-ciprofloxacin hybrid exhibits potent activity against Streptococcus suis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666492/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.586447+00:00",
+    "authors": [
+      "Guiyu Zhou",
+      "Feike Zhao",
+      "Xirui Jia",
+      "Xiaoyu Wang",
+      "Cunchun Dai",
+      "Liangzhu Chen",
+      "Binghu Fang"
+    ],
+    "summary": "The emergence and dissemination of antimicrobial resistance in Streptococcus suis, an important zoonotic pathogen, have created an urgent demand for new therapeutic agents with improved antibacterial efficacy. To address this challenge, we previously designed and synthesized a novel hybrid molecule, PHC, by linking ciprofloxacin to a pleuromutilin derivative via an L-homocysteine bridge. Although preliminary evaluations indicated favourable antibacterial activity, the antimicrobial effect of PHC against S. suis and its mechanism of action have not yet been systematically characterized. Therefore, the present study aimed to investigate the antibacterial activity of PHC against S. suis and elucidate its underlying antibacterial mechanisms. The antibacterial efficacy of PHC was assessed through time-kill kinetics and a murine infection model. Molecular docking was conducted to predict the interactions between PHC and its potential molecular targets, and RT-qPCR analysis was performed to evaluate the effects of PHC on genes associated with DNA replication, ribosomal function, oxidative stress, and energy metabolism in S. suis. Biofilm formation was quantified using crystal violet staining. In addition, DAPI/PI staining and DiSC3(5) fluorescence assays were employed to assess bacterial membrane integrity and membrane potential, respectively. Changes in intracellular ATP levels and ROS production were further measured to characterize the antibacterial mode of action of PHC. PHC exhibited potent antibacterial activity against S. suis both in vitro and in vivo. Molecular docking and transcriptional analyses suggested that PHC may interfere with bacterial DNA replication and protein synthesis by affecting topoisomerase- and ribosome-associated pathways. In addition, PHC disrupted membrane integrity and membrane potential, altered cellular energy metabolism and promoted oxidative stress responses. Furthermore, PHC demonstrated favourable therapeutic efficacy and biosafety in a murine infection model. PHC exhibits potent antibacterial activity against S. suis through interference with DNA replication- and protein synthesis-related processes, accompanied by enhanced bacterial stress responses and disruption of membrane integrity and cellular homeostasis. This study provides a theoretical basis for the further development of PHC and offers valuable insights for the design of novel hybrid antibacterial agents against S. suis.",
+    "doi": "10.3389/fcimb.2026.1920241",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42666492",
+      "journal": "Frontiers in cellular and infection microbiology"
+    },
+    "dedupe_key": "doi:10.3389/fcimb.2026.1920241"
+  },
+  {
+    "kind": "article",
+    "title": "Phytochemical Profiling and Antibacterial Activity of Moroccan Monofloral Honeys Against Multidrug-Resistant Uropathogens: In Vitro, ADMET, Molecular Docking, and Molecular Dynamics Approaches.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42666442/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T18:49:45.587141+00:00",
+    "authors": [
+      "Mourad Chikhaoui",
+      "Aziz Galman",
+      "Ahmed Chetoui",
+      "Oussama Khibech",
+      "Mohamed Reda Kachmar",
+      "Toufik Bouddine",
+      "Mohamed Bouhrim",
+      "Fahd A Nasr",
+      "Mohammed Al-Zharani",
+      "Ashraf Ahmed Qurtam",
+      "Rachid Lotfi",
+      "Houda El Hajjouji"
+    ],
+    "summary": "Urinary tract infections represent a significant public health issue exacerbated by bacterial antibiotic resistance. Honey, due to its phenolic compounds, offers a promising natural alternative. This study explores the phenolic profile of monofloral honeys from the Beni Mellal-Khenifra region and their antibacterial activity against multidrug-resistant strains. Four monofloral honeys from Beni Mellal-Khenifra were analyzed for their phenolic composition and evaluated for antibacterial activity against multidrug-resistant uropathogenic bacteria. Computational studies were also performed to explore the potential mechanisms of action of the identified compounds. HPLC-UV detection identified distinct phenolic profiles in four monofloral honeys. Carob honey showed the highest diversity, with eight compounds identified, notably myricetin (63.99 μg/mg), trans-ferulic acid (33.99 μg/mg), gallic acid (21.02 μg/mg), naringin (17.95 μg/mg), catechin (3.66 μg/mg), and trans-cinnamic acid (2.75 μg/mg). Euphorbia honey was rich in hydroxycinnamic acids, especially caffeic acid (285.35 μg/mg), p-coumaric acid (190.93 μg/mg), and trans-ferulic acid (125.37 μg/mg). Anise honey contained high levels of naringin (669.84 μg/mg), along with myricetin (90.08 μg/mg) and 3-hydroxybenzoic acid (76.59 μg/mg). In contrast, citrus honey exhibited the lowest polyphenolic content, with only gallic acid (0.21 μg/mg) and catechin (2.69 μg/mg) detected. The honey samples exhibited notable antibacterial activity against multidrug-resistant uropathogenic bacteria, including E. coli, K. pneumoniae, and S. aureus. Among them, euphorbia and carob honeys demonstrated the highest antibacterial efficacy, with MBC values of 25% (v/v) against S. aureus and 50% against E. coli and K. pneumoniae. In contrast, citrus and anise honeys showed lower bactericidal activity, with MBC values reaching 75% (v/v) for E. coli and K. pneumoniae, and 50% for S. aureus. In silico, analyses showed that kaempferol, quercetin, catechin, and myricetin exhibit high binding affinities (up to -8.3 kcal/mol) against major bacterial targets. Molecular dynamics confirmed the stability of the quercetin-GyrB complex (RMSD ~0.35 nm). ADMET and toxicity profiles identified catechin and 3-hydroxybenzoic acid as the most promising candidates, combining good intestinal absorption, low predicted toxicity (LD50≈10,000 mg/kg), and favorable pharmacokinetics. These findings confirm the important role of honey's phenolic compounds in inhibiting multidrug-resistant bacteria. Future research should focus on in vivo validation and the formulation of effective therapeutic products based on these honeys.",
+    "doi": "10.1002/fsn3.72165",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42666442",
+      "journal": "Food science & nutrition"
+    },
+    "dedupe_key": "doi:10.1002/fsn3.72165"
   }
 ]
