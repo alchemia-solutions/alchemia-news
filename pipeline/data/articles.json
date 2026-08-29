@@ -29765,5 +29765,327 @@
       "journal": "Food science & nutrition"
     },
     "dedupe_key": "doi:10.1002/fsn3.72165"
+  },
+  {
+    "kind": "article",
+    "title": "Harnessing machine learning, docking and molecular dynamics for the virtual screening of compounds as CDK4/6 dual inhibitors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667598/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.078537+00:00",
+    "authors": [
+      "Yuxi Wang",
+      "Linxia Fang",
+      "Quanfang Liu",
+      "Zhiwei Zhang",
+      "Cong Xu",
+      "Yihui Jiang"
+    ],
+    "summary": "Cyclin-dependent kinases 4 and 6 (CDK4/6) are pivotal regulators of the G1-to-S phase transition, and their dysregulation is a hallmark of numerous malignancies. Despite the clinical success of existing CDK4/6 inhibitors, there remains a persistent need for chemically diverse scaffolds with potent dual-target affinity. In this study, we developed and implemented a virtual screening workflow that synergistically integrates ligand-based machine learning with structure-based molecular docking. By benchmarking multiple ML algorithms against curated ChEMBL datasets (265 CDK4 inhibitors and 402 CDK6 inhibitors), a Bayesian Ridge regressor utilizing ECFP4 fingerprints was identified as the most predictive model, achieving cross-validated R2 values of 0.731 ± 0.022 for CDK4 and 0.721 ± 0.070 for CDK6. This optimized ML filter was deployed to prioritize a 22,823-compound library, followed by rigorous dual-target docking refinement. This strategy prioritized three candidate hits for biochemical evaluation, among which HY-18,623 showed potent dual inhibitory activity, with IC50 values of 3.5 nM against CDK4 and 17.4 nM against CDK6. Extensive 200-ns molecular dynamics simulations and binding free energy analyses elucidated that HY-18,623 achieves high-affinity binding through persistent hydrogen bonds with hinge residues Val96 (CDK4) and Val101 (CDK6). These findings demonstrate that our integrated computational funnel is a highly efficient tool for discovering potent kinase inhibitors and position HY-18,623 as a promising lead candidate for further therapeutic development in oncology.",
+    "doi": "10.1007/s11030-026-11716-x",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42667598",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11716-x"
+  },
+  {
+    "kind": "article",
+    "title": "Discovery of aloe-emodin as an antidepressant agent by targeting RANBP9.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667597/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.078991+00:00",
+    "authors": [
+      "Yangyang Yang",
+      "Dezhong Sun",
+      "Qingyun Jia",
+      "Bing Zhu",
+      "Huaiqing Lv",
+      "Fengyuan Che"
+    ],
+    "summary": "Excitotoxicity is a core pathological mechanism underlying various neurological disorders, including depression. It is primarily driven by the overactivation of NMDA receptors and disruption of calcium homeostasis. However, effective therapeutic interventions targeting this process remain limited. In this study, aloe-emodin was shown to reverse NMDA-induced reduction in cell viability, apoptosis, and calcium overload in a dose-dependent manner, while also attenuating NMDA-induced autophosphorylation of CaMKII. In a chronic unpredictable mild stress (CUMS) model, aloe-emodin significantly ameliorated depression-like behaviors, suppressed inflammatory responses and oxidative stress, and downregulated the expression of cleaved-PARP. By conducting biotin pull-down coupled with liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis, cellular thermal shift assay (CETSA), drug affinity responsive target stability (DARTS) analysis, and surface plasmon resonance (SPR) analysis, RANBP9 was identified as a direct molecular target of aloe-emodin, with a binding affinity (KD) of 716 nM. Molecular docking and molecular dynamics simulations revealed that aloe-emodin selectively binds to the His332 residue of RANBP9. Aloe-emodin promoted the degradation of RANBP9 via the ubiquitin-proteasome pathway by facilitating the interaction between RANBP9 and the E3 ligase CHIP. After RANBP9 was knocked down, the protective effects of aloe-emodin on cell viability and apoptosis were significantly weakened, confirming that the anti-excitotoxic activity of aloe-emodin is RANBP9-dependent. These findings collectively demonstrate that aloe-emodin is a novel and potent RANBP9-targeting compound with antidepressant activity and suggest that RANBP9 may serve as a promising target for developing antidepressant drugs.",
+    "doi": "10.1007/s11030-026-11688-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42667597",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11688-y"
+  },
+  {
+    "kind": "article",
+    "title": "Therapeutic Potential and Toxicological Impact of Graphene Quantum Dot Nanocomposites in Adult Zebra Fish.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667536/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.079419+00:00",
+    "authors": [
+      "K R Preethy",
+      "M Chamundeeswari",
+      "P Kowsalya",
+      "R Venkatesan"
+    ],
+    "summary": "Fabricated graphene quantum dots (FQD) are popularly used in biomedical applications, as well as for biosensing, drug administration, and anticancer therapy. Despite the promising biomedical applications of graphene quantum dots, their long-term biocompatibility and toxicological safety remain insufficiently understood. Therefore, this study aimed to develop a bioenhanced FQD nanocomposite and evaluate its biocompatibility, wound healing potential, and toxicity using in vitro endothelial cells and adult zebrafish models. In silico molecular docking confirmed favourable binding to the wound healing target protein (-3.526 kcal/mol), supporting the therapeutic potential of FQDs. The toxicity and safety of employing these materials, however, must be further evaluated due to their unfavourable side effects. The primary goal of the current investigation was to examine in adult Zebrafish (Danio rerio) the toxicities and wound-healing capacity of FQD. Cytotoxicity and scratch wound migratory assay demonstrated significant result with the concentration of 5 µg/ ml. The live model was exposed to different sample concentrations ranging from 1 to 25 µg/mL for the evaluation period of 14 days to examine the samples chronic effects. The acute toxicity in vital organs was examined and the result demonstrates defined morphology of cardiomyocytes, normal distribution of hepatocytes, densely packed parenchymal architecture of pancreatic artery and uniformly distributed neuronal cells. Up to the concentration of 5 µg results were closer to control groups with nil mortality. The end of 48 h observation concentration dependent efficacy was observed closer to control groups for exhibiting excellent wound healing percentage.",
+    "doi": "10.1007/s12010-026-05889-2",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42667536",
+      "journal": "Applied biochemistry and biotechnology"
+    },
+    "dedupe_key": "doi:10.1007/s12010-026-05889-2"
+  },
+  {
+    "kind": "article",
+    "title": "Evaluating molecular docking for binding affinity predictions: a systematic analysis of key parameters and the utility of AlphaFold2 structures for the Schrödinger dataset.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667474/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.079878+00:00",
+    "authors": [
+      "Konstantinos Tornesakis",
+      "Jonathan W Essex",
+      "Paul A Cox",
+      "Gerhard König"
+    ],
+    "summary": "Molecular docking is one of the most established methods in computational drug discovery, due to its balance of speed and accuracy. However, the accuracy of docking results depends on a number of different parameters, and systematic reference data for comparisons to more advanced methods for binding affinity prediction are still scarce. This study assesses the impact of key parameters on the accuracy of binding free energy estimates from docking, using nine benchmark systems with 278 high-affinity ligands. Using the Molecular Operating Environment (MOE), we evaluated combinations of three receptor structures (two crystal structures, one AlphaFold2 model), two force fields, two scoring functions, two receptor flexibility settings, and two statistical evaluation schemes. The performance of the docking approaches is measured based on the squared Pearson's correlation coefficient (R²), the root mean square error (RMSE) with respect to the experimental binding affinities, as well as the mean signed error (MSE) and Kendall's tau for individual targets and the full dataset. The results show that the scoring function and the protein structure are the most important factors for binding affinity accuracy in rigid docking with the MOE software. Amber10:EHT and MMFF94x force fields had the same average Rmean2 value, but Amber10:EHT had a lower average RMSEmean. AlphaFold2 protein models yielded lower binding affinity accuracy and higher errors compared to experimental crystal structures, although induced fit docking improved results. Using the original benchmark, we also compared several docking programs. DOCK6 and MOE performed best, with mean R² values of about 0.49 and 0.40, respectively. The remaining docking programs did not outperform a molecular weight regression baseline. For a subset of four targets (CDK2, JNK1, P38, TYK2) evaluated in previous work, the performance of the optimized DOCK6 and MOE protocols produced correlation coefficients similar to those reported for certain MM/PBSA, FMO, and Boltz2 implementations evaluated on the same target subset. This raises questions about potential dataset biases, the structural preparation, or the implementation of those methods. Docking therefore should be considered as an important and computationally inexpensive reference baseline for binding affinity prediction.",
+    "doi": "10.1007/s10822-026-00929-9",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "molecular docking",
+      "AlphaFold"
+    ],
+    "extra": {
+      "pmid": "42667474",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00929-9"
+  },
+  {
+    "kind": "article",
+    "title": "L-theanine from Camellia sinensis (L.) attenuates 3-NP-induced Huntington's disease-like alterations by remedying behavioral patterns and modulating neurotransmitters across three distinct brain regions: evidence from in-vivo and in-silico approaches.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667458/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.080279+00:00",
+    "authors": [
+      "Susankar Kushari",
+      "Dipankar Saha",
+      "Bhrigu Kumar Das",
+      "Sunayana Baruah",
+      "Kumar Saurav Dey",
+      "Suman Kumar",
+      "Trishna Das",
+      "Jashabir Chakraborty"
+    ],
+    "summary": "Huntington's disease (HD) is a neurological condition with limited treatment. Its hallmarks are progressive loss of neurons, chorea, cognitive, motor, and metabolic impairments. The current study uses 3-nitropropionic acid (3-NP) to cause HD-like indications in rats. L-theanine (L-TH), an active component of Camellia sinensis, has already been shown to possess anti-inflammatory and anti-oxidant effects. The impact of the isolated phytoconstituent, L-TH, on 3-NP-induced changes in three distinct brain regions was assessed in the current study. The animals received a 7-day pretreatment consisting of normal saline, extract of C. sinensis (100 and 200 mg/kg b.w., i.p.), L-TH (10 mg/kg b.w., i.p.), and standard Tetrabenazine (TBZ, 25 mg/kg, b.w., i.p.). The administration of 3-NP (10 mg/kg b.w., i.p.) to the treatment groups began on the 8th day of the protocol and continued until the 21st day. The brain homogenates underwent biochemical and neurochemical assessments. In conclusion, L-TH improved behavioral outcomes and attenuated 3-NP-induced neurochemical alterations in brain homogenates. Histopathological analysis revealed lower levels of tissue damage in the L-TH-treated group compared to the 3-NP group. Molecular docking studies further indicated favorable interactions of L-TH with the HTT protein. These findings suggest that L-TH may attenuate 3-NP-induced Huntington's disease-like alterations in rats. However, additional studies using genetic HD models and molecular mechanisms are required to confirm its therapeutic efficacy and underlying mode of action.",
+    "doi": "10.1007/s11011-026-01967-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42667458",
+      "journal": "Metabolic brain disease"
+    },
+    "dedupe_key": "doi:10.1007/s11011-026-01967-w"
+  },
+  {
+    "kind": "article",
+    "title": "A study on the directed engineering and multiple transformations of cannabidiolic acid synthase to enhance the expression level of the recombinant enzyme.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667399/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.080739+00:00",
+    "authors": [
+      "Lingyan Dai",
+      "Jishun Lin",
+      "Yue Kang",
+      "Jian Chi",
+      "Ning Cao",
+      "Yuke Zhang",
+      "Panjie Li"
+    ],
+    "summary": "To increase the activity of cannabidiolic acid synthase (CBDAS) and its expression levels in yeast, this study focused on the CBDASG183V-N482W mutant. Using computer-aided techniques and literature reviews, four mutation sites were further identified, resulting in the mutant CBDASH114E-S116A-C176Y-G183V-N328Q-N482W. The CBDAS gene was integrated into the Pichia pastoris genome via multiple transformation rounds, and relative enzyme activity was analyzed using high-performance liquid chromatography. The results of the molecular docking analysis revealed factors such as increased intermolecular forces, shorter bond lengths, and an increased number of amino acid-substrate interaction sites, which may have contributed to the enhanced catalytic activity of the mutant. The concentrations of CBDA and CBD produced by the CBDASH114E-S116A-C176Y-G183V-N328Q-N482W mutant were 71.543 ng/mL and 75.163 ng/mL, respectively, which were 11.87% and 11.53% greater than those produced by the CBDASG183V-N482W mutant. The recombinant CBDAS strain obtained after two consecutive transformations of the CBDASH114E-S116A-C176Y-G183V-N328Q-N482W vector presented the highest CBDAS expression levels and CBD and CBDA yields; compared with those obtained after a single transformation, the CBDA and CBD yields increased by 9.77% and 12.65%, respectively. In addition, the tolerance of the recombinant strain to induction culture conditions was analyzed, revealing that the strain could be induced to express the protein at temperatures ranging from 20 to 45 °C and at pH values ranging from 3 to 9, with optimal expression observed at 30 °C and pH 6. These findings provide theoretical and technical support for the production of enzyme preparations for the in vitro-directed biosynthesis of cannabidiol.",
+    "doi": "10.1007/s00203-026-05097-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42667399",
+      "journal": "Archives of microbiology"
+    },
+    "dedupe_key": "doi:10.1007/s00203-026-05097-w"
+  },
+  {
+    "kind": "article",
+    "title": "Multi-target molecular mechanisms of Cymbopogon flexuosus essential oil reveal membrane destabilization, ROS-mediated cellular damage, efflux perturbation, biofilm suppression and resistance-target interference in Staphylococcus aureus.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667397/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.081250+00:00",
+    "authors": [
+      "Md Waquar Imam",
+      "Narendra Mohan",
+      "Nidhi Maurya",
+      "Chandan S Chanotiya",
+      "Sudeep Tandon",
+      "Suaib Luqman"
+    ],
+    "summary": "The rapid emergence of antibiotic-resistant Staphylococcus aureus necessitates exploring alternative antimicrobial agents with multi-target mechanisms of action. In the present study, the antibacterial efficacy and mechanistic activity of 21 essential oils were investigated against S. aureus using integrated microbiological, biochemical, flow cytometric, microscopic, and computational approaches. Preliminary screening through disc diffusion, MIC, and MBC assays identified Cymbopogon flexuosus, Cymbopogon nardus, and Eucalyptus hybrida as the most active essential oils, with C. flexuosus exhibiting the strongest antibacterial potency. Percentage inhibition assays, growth kinetics, confirmed concentration-dependent antibacterial activity, with C. flexuosus and C. nardus producing > 60% inhibition and rapid growth suppression within 2 h at MIC and 2×MIC. Mechanistic investigations revealed that C. flexuosus essential oil induced significant membrane destabilization, as evidenced by the crystal violet permeability assay, as they increase relative permeability 58.2% at twice MIC, increased nucleic acid and protein leakage, increased propidium iodide permeability, and elevated ethidium bromide accumulation, indicating membrane disruption and perturbation of efflux pumps. Scanning electron microscopy further confirmed severe morphological alterations, including membrane collapse and cellular deformation. In addition, intracellular reactive oxygen species (ROS) generation increased significantly following treatment, suggesting oxidative stress-mediated bacterial killing. C. flexuosus also demonstrated potent antibiofilm activity, reducing biofilm formation by more than 60% at the MIC and twice the MIC in S. aureus. GC-MS analysis identified geranial, neral, citronellal, geraniol, limonene, and β-caryophyllene as major volatile constituents. Molecular docking studies revealed favourable interactions between several compounds and critical bacterial targets involved in cell wall biosynthesis and antibiotic resistance, including β-lactamases and penicillin-binding proteins. Furthermore, in silico ADMET profiling suggested that the selected constituents possess favourable physicochemical and safety properties for topical therapeutic applications. These findings demonstrate that C. flexuosus essential oil exerts potent anti-staphylococcal activity through multiple mechanisms, including membrane destabilisation, ROS-mediated cellular damage, efflux perturbation, biofilm suppression, and interference with resistance targets. The study highlights the therapeutic potential of C. flexuosus essential oil as a promising natural antibacterial candidate against S. aureus infections.",
+    "doi": "10.1007/s00203-026-05160-6",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET"
+    ],
+    "extra": {
+      "pmid": "42667397",
+      "journal": "Archives of microbiology"
+    },
+    "dedupe_key": "doi:10.1007/s00203-026-05160-6"
+  },
+  {
+    "kind": "article",
+    "title": "In silico pharmacological evaluation of a multi-epitope vaccine candidate targeting the G1 and G2 glycoproteins of Oropouche virus via TLR3 interaction.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667378/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.081691+00:00",
+    "authors": [
+      "Khadija Khawar",
+      "Komal Imran",
+      "Muhammad Aamir Sharif",
+      "Muhammad Naveed",
+      "Nantenaina Tombozara",
+      "Maha A Alwaili",
+      "Mariam A Alkhateeb",
+      "Seham O Alsulami"
+    ],
+    "summary": "Oropouche virus (OROV) is an emerging arbovirus associated with increasing outbreaks with no approved vaccine and antiviral therapies currently availaible. In this study, an in silico pharmacological approach was employed to design and evaluate a multi-epitope vaccine candidate targeting the G1 glycoprotein of OROV. Antigenicity screening identified G1 as a suitable target, while the nucleocapsid (N) and G2 proteins were excluded due to lower antigenicity and predicted toxicity. Immunoinformatic-based epitope mapping was performed to identify cytotoxic T-lymphocyte (CTL) and helper T-lymphocyte (HTL) epitopes that were further screened for antigenicity, non-allergenicity, non-toxicity, and global population coverage. The shortlisted epitopes were used to develop a vaccine design with linkers and a β-defensin adjuvant. Of the two vaccine candidates, the G1-based vaccine (136 amino acids) demonstrated high antigenicity (0.6653) and safety with favorable physicochemical properties while the G2 protein was excluded from further studies due to its toxicity. Population coverage analysis of the G1 vaccine construct demonstrated 95.58% global coverage for MHC class I and II epitopes. Molecular docking and interaction analysis of the MEV with TLR3 showed favorable ClusPro docking score of - 1043.6 kcal/mol. Molecular dynamics simulations showed minimal fluctuations in RMSD and RMSF, indicating stability of the complex under physiological conditions. Immune simulation predicted robust responses with elevated IgM and IgG levels, increased T-cells, and cytokine production, including IL-2 and IL-6. These findings indicate that the G1-based multi-epitope vaccine is a potential candidate for further experimental validation and may serve as an effective preventive strategy against OROV infection.",
+    "doi": "10.1007/s00210-026-05862-0",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "vaccine design",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42667378",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s00210-026-05862-0"
+  },
+  {
+    "kind": "article",
+    "title": "\"Edible plant-associated fungal endophytes as sources of bioactive specialized metabolites: antimicrobial and docking insights\".",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667376/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.082075+00:00",
+    "authors": [
+      "Hala Montaser Farouk",
+      "Feby Melad Gaber",
+      "Ahmed A Al-Karmalawy",
+      "Mo'men Hamed El-Katatny",
+      "Eman Zekry Attia",
+      "M N Menshawy"
+    ],
+    "summary": "Endophytic fungi have emerged as prolific sources of structurally diverse and biologically potent specialized metabolites with significant therapeutic potential. In this study, endophytic fungi were isolated from three edible plant species: Raphanus sativus, Eruca sativa, and Allium porrum, to systematically assess their biodiversity and antimicrobial capabilities. A total of twenty-six fungal isolates were obtained, of which seven were prioritized for detailed morphological and functional characterization based on preliminary bioactivity screening. Among these, Fusarium oxysporum (A1/APFE1) and Aspergillus niger (E2/RSFE2) exhibited pronounced and broad-spectrum antimicrobial activity against clinically and agriculturally relevant pathogens, including Candida albicans (ATCC 10231), Pseudomonas aeruginosa (ATCC 27853), and Staphylococcus aureus (ATCC 29213), under both solid-state and submerged culture conditions. Phylogenetic characterizations for the two endophytic isolates were performed. Ethyl acetate extracts of these two strains were subjected to high-resolution LC-HR-ESI-MS metabolomic profiling, which demonstrated a chemically varied range of specialized metabolites, including terpenoids, polyketides, macrolides, and phenolics. Subsequent in silico molecular docking analyses highlighted specific metabolites with strong binding affinities to dihydrofolate reductase, providing mechanistic insights into the observed antimicrobial activity. Collectively, these results position F. oxysporum (A1/APFE1) and A. niger (E2/RSFE2) as promising candidates for the development of novel antimicrobial agents, highlighting the edible plant-associated endophytic fungi's unrealized medicinal potential.",
+    "doi": "10.1007/s00203-026-05038-7",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42667376",
+      "journal": "Archives of microbiology"
+    },
+    "dedupe_key": "doi:10.1007/s00203-026-05038-7"
+  },
+  {
+    "kind": "article",
+    "title": "KS79356, a novel kynureninase inhibitor, suppresses triple-negative breast cancer progression by attenuating the TNF-α/NFκB-CD44-Akt signaling axis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667332/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.082482+00:00",
+    "authors": [
+      "Maha Alamodi Alghamdi",
+      "Hemali Deshpande",
+      "Ashish Kumar",
+      "Prasanna Rajagopalan"
+    ],
+    "summary": "Kynureninase (KYNU), a hydrolase in tryptophan metabolism, has been implicated in cancer progression. However, the therapeutic relevance of targeting KYNU-mediated inflammatory signaling in triple-negative breast cancer (TNBC) remains poorly defined High-throughput virtual screening (HTVS) of the ChemBridge library, combined with protein-ligand interaction profiling, molecular dynamics simulations (GROMACS), and binding free energy analysis (GMX_MMPBSA), was employed to identify KYNU inhibitors. In vitro assays were performed in SUM159, MDA-MB-231, and HBL-100 cell lines. KS79356 was identified as the lead compound, displaying strong binding affinity (- 7.8 kcal/mol), stable interactions (RMSD ≈ 0.075 nm), and favorable binding free energy (ΔG = - 23.93 kcal/mol). KS79356 effectively inhibited KYNU activity (IC₅₀ = 63.7 nM) and selectively suppressed proliferation of SUM159 (GI₅₀ = 233 nM) and MDA-MB-231 (GI₅₀ = 450.8 nM) cells. Mechanistically, KS79356 downregulated TNF-α-induced activation of the NFκB-CD44-Akt signaling axis, leading to reduced proliferation, invasion, and trans-endothelial migration, while inducing both early and late apoptosis in TNBC cells. By targeting KYNU and attenuating the TNF-α/NFκB/CD44-Akt signaling axis, KS79356 demonstrates strong antitumor activity in TNBC. These findings highlight the novelty of KYNU as a therapeutic target and support the development of KS79356 as a potential treatment strategy for TNBC progression and metastasis.Clinical trial registrationNot applicable.",
+    "doi": "10.1007/s12032-026-03377-5",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42667332",
+      "journal": "Medical oncology (Northwood, London, England)"
+    },
+    "dedupe_key": "doi:10.1007/s12032-026-03377-5"
+  },
+  {
+    "kind": "article",
+    "title": "NF-κB/NLRP3 inflammasome is associated with formaldehyde-induced reproductive and metabolic dysfunction: protective role of quercetin in rats.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42667327/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T23:34:45.082960+00:00",
+    "authors": [
+      "Arnab Banerjee",
+      "Jayati Roy",
+      "Arnab Banerjee",
+      "Aditi Banerjee",
+      "Puja Datta",
+      "Debasmita Das",
+      "Rajarshi Paul",
+      "Diptendu Sarkar",
+      "Arindom Halder",
+      "Krishnendu Manna",
+      "Sandip Mukherjee",
+      "Bithin Kumar Maji"
+    ],
+    "summary": "Environmental pollutants, including common industrial chemicals, have been associated with global declines in male reproductive health. However, the relationships with formaldehyde (F) exposure, metabolic imbalance, and testicular impairment are still unknown. This study hypothesized that subchronic formaldehyde exposure triggers the NF-κB/NLRP3 inflammasome cascade to promote both metabolic and reproductive damage and that such effects can be attenuated by the flavonoid quercettin. In a male rat model (n = 8) of subchronic F (3% formaldehyde/day intraperitoneally at a dose of 15 mg/kg body weight for 21 days) treatment, with or without quercetin (dissolved in 5% DMSO in distilled water at doses of 25, 50, and 100 mg/kg body weight, orally), were given for 21 days along with a normal control group. After the treatment period, metabolic profiling, sperm analysis, hormonal assays, histology, and molecular investigations were determined. Data were analyzed by GraphPad Prism software (version 10.0). Normality was checked with the Shapiro-Wilk test, and one‑way ANOVA was used to compare groups, followed by Tukey's post hoc test. Statistical significance was set at p ≤ 0.05. F treatment induced significant systemic metabolic dysfunction (increased FBG and HbA1c; decreased insulin), testicular damage (decreased sperm count, viability, motility, as well as testosterone, LH, and FSH concentrations), oxidative stress (increased pro-oxidants and intracellular reactive oxygen species; decreased endogenous antioxidants), fibrosis followed by apoptosis. Mechanistically, F triggers DAMP-associated sterile inflammation via TNF-α and TLR4 to promote NF-κB and NLRP3 inflammasome activation, while repressing steroidogenic gene expression. Most F-induced alterations were dose-associated and ameliorated by quercetin co-treatment, with the highest dose (100 mg/kg) showing the most significant efficacy. The molecular docking results suggest that the binding affinities of quercetin to TNF, TLR4, NF-κB and NLRP3 may be higher than those of F. This study provides initial evidence that formaldehyde triggers DAMP-associated sterile inflammation with disruption of metabolism and reproduction, and it also demonstrates the potential benefit of quercetin treatment as a nutraceutical against environmental aldehydes by suppressing multitarget pathways.",
+    "doi": "10.1007/s11033-026-12596-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42667327",
+      "journal": "Molecular biology reports"
+    },
+    "dedupe_key": "doi:10.1007/s11033-026-12596-y"
   }
 ]
