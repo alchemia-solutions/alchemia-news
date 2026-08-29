@@ -298,6 +298,37 @@
   },
   {
     "kind": "article",
+    "title": "In-Cell Protein Crystallization via a Locally Flexible 24-mer Assembly Precursor",
+    "url": "https://doi.org/10.64898/2026.08.25.746898",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-28",
+    "collected_at": "2026-08-29T00:07:54.821215+00:00",
+    "authors": [
+      "Abe, S.",
+      "Tanaka, J.",
+      "Kikuchi, K.",
+      "Furuta, T.",
+      "Aizawa, Y.",
+      "Tanaka, Y.",
+      "Yokoyama, T.",
+      "Kanamaru, S.",
+      "Kobayashi, R.",
+      "Ueno, T."
+    ],
+    "summary": "In-cell protein crystallization (ICPC) produces ordered protein crystals within living cells, but the mechanisms used by proteins to acquire long-range crystalline order in the cellular environment remains poorly understood. Here, we define the assembly pathway of CipB, a crystalline inclusion protein from Photorhabdus luminescens. CipB crystals formed in cells dissolve under mild acidic conditions into a predominant 24-mer species, supporting a model in which an in-cell crystal is built from a discrete 24-mer assembly precursor rather than through direct packing of smaller oligomeric states. Structural analysis of recrystallized CipB shows that the same 24-mer architecture packs into a body-centered cubic lattice, consistent with the lattice observed for the in-cell crystals. Cryo-EM and molecular dynamics analyses indicate that the 24-mer assembly precursor preserves its overall architecture while retaining local conformational flexibility at the N-terminal and surface-loop regions. Mutation analyses further link the N-terminal region to the formation of the 24-mer precursor and surface residues to lattice assembly. These observations support a stepwise crystallization model in w",
+    "doi": "10.64898/2026.08.25.746898",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.25.746898"
+  },
+  {
+    "kind": "article",
     "title": "ARMC1 regulates mitochondrial fatty acid oxidation through theinsertase/scramblase MTCH2",
     "url": "https://doi.org/10.64898/2026.08.26.747330",
     "source": "bioRxiv",
@@ -27966,5 +27997,376 @@
       "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology"
     },
     "dedupe_key": "doi:10.1016/j.phymed.2026.158735"
+  },
+  {
+    "kind": "article",
+    "title": "Programmable protein degraders enable selective knockdown of pathogenic β-catenin subpopulations in vitro and in vivo.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42664344/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.899267+00:00",
+    "authors": [
+      "Tianzheng Ye",
+      "Azmain Alamgir",
+      "Cara M Robertus",
+      "Darianna Colina",
+      "Connor Monticello",
+      "Thomas Connor Donahue",
+      "Chandra Bandi",
+      "Lauren Hong",
+      "Sophia Vincoff",
+      "Shrey Goel",
+      "Kieu Lam",
+      "James Heyes",
+      "David Putnam",
+      "Christopher A Alabi",
+      "Pranam Chatterjee",
+      "Matthew P DeLisa"
+    ],
+    "summary": "Aberrant activation of Wnt signaling results in unregulated accumulation of cytosolic β-catenin, which subsequently enters the nucleus and promotes transcription of genes that contribute to cellular proliferation and malignancy. Here, we sought to eliminate pathogenic β-catenin from the cytosol using designer ubiquibodies (uAbs), chimeric proteins composed of an E3 ubiquitin ligase and a target-binding domain that redirect intracellular proteins to the proteasome for degradation. To accelerate uAb development, we leveraged a protein language model-driven algorithm called SaLT&PepPr to computationally design \"guide\" peptides with affinity for β-catenin, which were subsequently fused to the catalytic domain of a human E3 called carboxyl terminus of Hsp70-interacting protein. Expression of the resulting peptide-guided uAbs in colorectal cancer cells led to the identification of several designs that greatly reduced the abnormally stable pool of free β-catenin in the cytosol and nucleus while preserving the normal membrane-associated subpopulation. This selective knockdown of pathogenic β-catenin suppressed Wnt/β-catenin signaling and impaired tumor cell survival and proliferation. Furthermore, one of the best degraders selectively decreased cytosolic but not membrane-associated β-catenin levels in livers of BALB/c mice following delivery as a lipid nanoparticle-encapsulated mRNA. Collectively, these findings reveal the unique ability of uAbs to selectively deplete abnormal proteins in vitro and in vivo and open the door to peptide-programmable biologic modulators of other disease-causing proteins.",
+    "doi": "10.1126/sciadv.aec8271",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42664344",
+      "journal": "Science advances"
+    },
+    "dedupe_key": "doi:10.1126/sciadv.aec8271"
+  },
+  {
+    "kind": "article",
+    "title": "Elucidating the molecular basis of ATP synthase inhibition: A virtual screening framework for next-gen selective acaricides.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42664322/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.899820+00:00",
+    "authors": [
+      "Lin Xu",
+      "Jianqiu Chen",
+      "Jinhui Cheng",
+      "Mingyu Zhao",
+      "Xiang Wen",
+      "Yonghong Xu",
+      "Zhifeng Xu",
+      "Yanjie Luo",
+      "Kaiyang Feng",
+      "Lin He"
+    ],
+    "summary": "The rational design of pesticides that selectively target harmful species while sparing beneficial organisms remains a major challenge in sustainable agriculture. Progress in this field has been limited by an incomplete understanding of the molecular basis of selectivity and the lack of effective strategies to exploit specific targets. Here, we provide direct molecular evidence that naturally occurring polymorphisms in the CV-a subunit of mitochondrial adenosine 5'-triphosphate (ATP) synthase are the primary determinants of differential sensitivity between pest mites and predatory mites. Structural modeling and sequence analysis identified the key functional residues (Leu186 in Tetranychus cinnabarinus and Ala200 in Neoseiulus barkeri) that modulate the binding affinity of the inhibitor. Using these mechanistic insights, we developed a structure-based virtual screening pipeline to identify selective small-molecule inhibitors, including Vepdegestrant (ARV-471) and ICG-001, that exploit binding-site variation to achieve robust species specificity. This target-centric discovery framework not only advances the mechanistic understanding of ATP synthase inhibition but also establishes a scalable strategy for the rational design of environmentally safe and precision-oriented acaricides.",
+    "doi": "10.1126/sciadv.aec9535",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening"
+    ],
+    "extra": {
+      "pmid": "42664322",
+      "journal": "Science advances"
+    },
+    "dedupe_key": "doi:10.1126/sciadv.aec9535"
+  },
+  {
+    "kind": "article",
+    "title": "Identification of novel peripherally restricted risperidone-like dopamine D2 receptor antagonists for prolactin-mediated neuroprotection through a multi-stage in silico screening.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42664218/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.900376+00:00",
+    "authors": [
+      "Shinhyun Kim",
+      "Won Hee Jo",
+      "Jae Ok Cha",
+      "Min-Sun Kim"
+    ],
+    "summary": "Prolactin, a hormone with emerging neuroprotective roles, has demonstrated potential in mitigating cognitive impairment under specific neurotoxic conditions, including environmental toxicity and excitotoxicity. While dopamine D2 receptor (D2R) antagonists, such as risperidone, can elevate systemic prolactin levels to exert beneficial effects in the central nervous system (CNS), their clinical repurposing is constrained by CNS-mediated side effects associated with blood-brain barrier (BBB) penetration. In this study, we aimed to identify novel D2R antagonist candidates predicted to have restricted BBB penetration and the potential to stimulate prolactin secretion without substantial CNS exposure, thereby reducing central side effects including extrapyramidal symptoms and sedation. A systematic multi-stage in silico screening workflow was implemented. Ligand-based virtual screening using SwissSimilarity against the ZINC-20 database identified 400 structural analogs of risperidone. SwissADME-based ADMET filtering selected 226 candidates predicted to be BBB-impermeable, from which molecular docking using AutoDock Vina identified eight compounds with docking scores more favorable than that of risperidone. Subsequent interaction analysis identified four candidates that maintained critical contacts with Asp80 (3.32) and Trp373 (6.48), key residues involved in D2R ligand binding. Molecular dynamics simulations over 100 ns were used to assess conformational behavior, with Compound #128 exhibiting the most favorable ligand stability profile among the tested candidates and showing behavior broadly comparable to that of risperidone. These findings suggest that the identified compounds may serve as computationally prioritized candidates for the development of peripherally restricted D2R antagonists. However, their functional D2R antagonism, actual BBB exclusion, prolactin-elevating activity, and ability to reproduce CNS neuroprotection without direct central D2R modulation remain to be experimentally validated.",
+    "doi": "10.1371/journal.pone.0355997",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42664218",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0355997"
+  },
+  {
+    "kind": "article",
+    "title": "Phycocyanobilin: A potential bioactive compound from Arthrospira platensis targeting LYN protein associated with systemic lupus erythematosus.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42664210/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.900808+00:00",
+    "authors": [
+      "Amnart Chaiprasert",
+      "Ping Han",
+      "Teeraphan Laomettachit",
+      "Marasri Ruengjitchatchawalya"
+    ],
+    "summary": "Phycocyanobilin, a bioactive compound derived from Arthrospira platensis C1, was investigated for its potential role in systemic lupus erythematosus (SLE) based on its structural similarity to bilirubin, with a Tanimoto score of 93%. Molecular docking revealed favorable binding affinities between phycocyanobilin and several protein targets, including EGFR, FYN, HLA-B, LCK, LYN, and TP53. Target prediction further identified LYN kinase as a key candidate. Molecular dynamics simulations demonstrated stable binding of the phycocyanobilin-LYN complex, with interaction profiles comparable to those of the native ligand, staurosporine. Binding free energy and residue-level analyses supported strong and stable interactions, highlighting key contributions to complex stability. Overall, these findings provide mechanistic insight into the interaction between phycocyanobilin and LYN, suggesting that this compound may modulate LYN-associated signaling pathways and warrants further investigation in the context of SLE.",
+    "doi": "10.1371/journal.pone.0357093",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42664210",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0357093"
+  },
+  {
+    "kind": "article",
+    "title": "Dockformer: A Transformer-Based Molecular Docking Paradigm for Large-Scale Virtual Screening.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42664088/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.901320+00:00",
+    "authors": [
+      "Zhangfan Yang",
+      "Junkai Ji",
+      "Shan He",
+      "Jianqiang Li",
+      "Tiantian He",
+      "Ruibin Bai",
+      "Zexuan Zhu",
+      "Yew-Soon Ong"
+    ],
+    "summary": "Molecular docking is a critical step in drug development, enabling the virtual screening of compound libraries to identify potential ligands for specific therapeutic target proteins. However, the computational cost of traditional docking methods scales proportionally with the size of the compound library, making high-throughput screening computationally prohibitive. Recently, deep learning (DL) has enabled the development of data-driven models to accelerate the docking process, yet few can simultaneously deliver high throughput and screening performance superior to that of traditional docking methods. To address this gap, a novel DL-based docking approach named Dockformer is introduced in this study. Dockformer integrates multimodal molecular representations, including 2-D graph topology and 3-D structural features, to encode both topological and geometric information, and predicts binding conformations along with confidence scores in an end-to-end framework. Experimental results demonstrate that Dockformer achieves docking success rates (root mean square deviation (RMSD) $\\lt 2~\\unicode{0x00C5}$ ) of 90.53% and 82.71% on the PDBbind core set and PoseBusters benchmarks, respectively. Compared to traditional docking methods such as AutoDock Vina and Glide, Dockformer achieves an inference speedup exceeding $100\\times $ . Furthermore, it surpasses the best-performing DL competitor by an absolute improvement of 7.01% on the PoseBusters benchmark. In addition, the utility of Dockformer is validated in a practical virtual screening case study targeting SARS-CoV-2 main protease inhibitor discovery. Given its superior docking accuracy and computational efficiency, Dockformer represents a robust and generalizable framework for computer-aided drug design.",
+    "doi": "10.1109/TNNLS.2026.3725736",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "computer-aided drug design",
+      "virtual screening",
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42664088",
+      "journal": "IEEE transactions on neural networks and learning systems"
+    },
+    "dedupe_key": "doi:10.1109/tnnls.2026.3725736"
+  },
+  {
+    "kind": "article",
+    "title": "Toward a Vaccine Against Multidrug-Resistant Elizabethkingia anophelis: Comprehensive Immunoinformatics-Based Design of a Multi-Epitope Vaccine and mRNA Construct.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42663966/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.902102+00:00",
+    "authors": [
+      "Muhammad Hanzala",
+      "Rana Zohaib Abbas",
+      "Mahnoor Habib",
+      "Allah Rakha Yaseen",
+      "Muhammad Suleman",
+      "Khalid J Alzahrani",
+      "Khalaf F Alsharif",
+      "Fuad M Alzahrani",
+      "Sehrish Firyal"
+    ],
+    "summary": "Elizabethkingia anophelis is a multidrug-resistant opportunistic pathogen associated with severe neonatal meningitis, sepsis, and hospital outbreaks, with high mortality rates and limited treatment options. In this study, a hybrid multi-epitope vaccine (MEV) was designed using an extensive immunoinformatics approach targeting four key outer membrane and secretion-associated proteins. Highly antigenic B-cell and T-cell (MHC-I and MHC-II) epitopes were predicted, rigorously screened for antigenicity, allergenicity, toxicity, and cytokine induction potential, and selected based on binding affinity and population coverage. The final MEV construct incorporated eight MHC-I, eight MHC-II, and eight B-cell epitopes linked with appropriate linkers, adjuvanted with Human Beta Defensin-3, and tagged with a 6 × His sequence. Population coverage analysis revealed 99.38% global coverage. Structural modeling using AlphaFold2 followed by refinement yielded a high-quality 3D model (98.0% Ramachandran favored residues, ERRAT 98.621, ProSA Z-score - 4.68). Molecular docking demonstrated strong binding of the MEV to TLR-2, while 200 ns molecular dynamics simulations confirmed the stability of the vaccine-receptor complex. Immune simulations predicted robust Th1-biased responses, high antibody production (IgG class switching), and generation of long-term memory B and T cells. Codon optimization for E. coli K12 (CAI 0.982) and in silico cloning into pET-28a( +) vector supported efficient recombinant expression, while mRNA secondary structure analysis indicated high stability. This computationally designed MEV offers a promising preventive strategy against E. anophelis infections. Further experimental validation is warranted to confirm its immunogenicity and protective efficacy.",
+    "doi": "10.1007/s12602-026-11188-3",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "AlphaFold",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42663966",
+      "journal": "Probiotics and antimicrobial proteins"
+    },
+    "dedupe_key": "doi:10.1007/s12602-026-11188-3"
+  },
+  {
+    "kind": "article",
+    "title": "Qishen Yiqi Dripping Pills ameliorate doxorubicin-induced cardiotoxicity: a study based on bioinformatics and experimental verification.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42663921/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.902627+00:00",
+    "authors": [
+      "Jiangtao Wang",
+      "Jian Yu",
+      "Dong Cao",
+      "Bohua Ma",
+      "Huihua Shen",
+      "Juan Liu",
+      "Yuan Yuan",
+      "Rui Wang",
+      "Wu Li"
+    ],
+    "summary": "Qishen Yiqi Dripping Pills (QSYQ) have shown promising therapeutic effects on cardiovascular diseases. Recent studies have reported their potential in mitigating doxorubicin-induced cardiotoxicity (DIC), but the primary active ingredients and specific mechanisms remain unclear. A total of 2740 differentially expressed genes (DEGs) were screened out. GSEA results were mainly enriched in Glycolysis, Apoptosis, Cellular Senescence, PI3K/Akt Signaling Pathway, TGF Beta Signaling Pathway, etc. Weighted gene co-expression network analysis yielded 1520 key module genes, and 1134 DIC-related genes were obtained by intersecting with DEGs. A total of 130 active ingredients and 943 target genes of QSYQ were obtained, and 50 common targets were identified after intersecting with DIC-related genes. The top 5 active ingredients were DFV, quercetin, Vestitone, formononetin and (6aR,11aR)-9,10-dimethoxy-6a,11a-dihydro-6H-benzofurano[3,2-c]chromen-3-ol. GO and KEGG enrichment analyses showed a close relationship with the HIF-1 signaling pathway and its upstream and downstream components. Three key genes identified were EP300, JUN, and CREBBP. Receiver operating characteristic analysis demonstrated good diagnostic value for these key genes, and their DOX-induced expression alterations were reversed by QSYQ (limited experimental evidence). Notably, the experimental validation of JUN showed a trend opposite to that observed in the bioinformatics analysis. Molecular docking revealed good binding capabilities of the primary active ingredients with the key genes. QSYQ may alleviate DIC through EP300, JUN, and CREBBP, providing new evidence for the use of QSYQ in ameliorating DIC.",
+    "doi": "10.1007/s10637-026-01634-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42663921",
+      "journal": "Investigational new drugs"
+    },
+    "dedupe_key": "doi:10.1007/s10637-026-01634-y"
+  },
+  {
+    "kind": "article",
+    "title": "Liensinine-loaded extracellular vesicles mitigate osteoporosis through inhibition of NF-κB signaling and calcium oscillations in osteoclasts.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42663873/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.903161+00:00",
+    "authors": [
+      "Yiwei Jiang",
+      "Maihuan Wang",
+      "Peng Zheng",
+      "Zhen Cao"
+    ],
+    "summary": "Osteoporosis is a prevalent chronic bone disease characterized by excessive osteoclast-mediated bone resorption. Liensinine (LIE), a plant-derived alkaloid, has shown anti-inflammatory potential but its role in bone resorption remains rarely investigated. This study aimed to predict the anti-osteoclastogenic mechanism of LIE via network pharmacology and evaluate the therapeutic potential of endothelial cell-derived extracellular vesicles loaded with LIE (LIE@EVs). In this study, extracellular vesicles derived from endothelial cells were isolated, identified, and utilized to encapsulate LIE. The physicochemical properties and internalization of LIE@EVs were assessed. Core pathways of LIE were predicted using network pharmacology and molecular docking. Furthermore, both in vitro and in vivo experiments were conducted to evaluate its inhibitory effects on RANKL-induced osteoclastogenesis and bone resorption. LIE@EVs exhibited characteristics of extracellular vesicles and enhanced delivery of LIE to osteoclasts. Functional assays demonstrated that LIE@EVs significantly inhibited osteoclast differentiation and bone resorption compared to free LIE. Network pharmacology identified the NF-κB and calcium signaling pathways as the potential targets of LIE. Mechanistically, LIE@EVs effectively suppressed the activation of the NF-κB signaling pathway and calcium oscillations, ultimately downregulating osteoclast-specific gene expression. These findings exhibit the potential therapeutic significance of LIE@EVs in bone loss diseases and warrant further exploration in clinical applications for osteoporosis treatment.",
+    "doi": "10.1007/s11010-026-05701-z",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42663873",
+      "journal": "Molecular and cellular biochemistry"
+    },
+    "dedupe_key": "doi:10.1007/s11010-026-05701-z"
+  },
+  {
+    "kind": "article",
+    "title": "Identifying novel druggable targets and repurposable drugs for premature ovarian insufficiency by integrated multiomics and causal inference analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42663799/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.903677+00:00",
+    "authors": [
+      "Chao Liu",
+      "Runzhi Wang",
+      "Xinnong Liu",
+      "Yuan Li",
+      "Lili Ren",
+      "Zhiyu Zhao",
+      "Zhongkai Fan",
+      "Jianying Xiao"
+    ],
+    "summary": "Premature ovarian insufficiency (POI) is a leading cause of female infertility. Its mechanisms are poorly understood, and effective therapies are lacking. In this study, we aimed to identify novel druggable targets and repurposable drugs for POI through an integrated multiomics and computational pharmacology approach. We integrated large-scale proteomic data from two independent cohorts (deCODE, N = 35,559; UK Biobank, N = 54,219) using Mendelian randomization, Bayesian colocalization, and single-cell RNA sequencing. Seven high-confidence targets were identified: EPHA4, FSTL3, NUCB2, OXT, SERPINA12, TNFRSF6B, and FABP1. Among these genes, EPHA4, FSTL3, and NUCB2 were significantly dysregulated in cisplatin-induced mouse and human granulosa cell models (P < 0.05 to P < 0.001) and exhibited high diagnostic accuracy (AUC = 0.92-0.96), supporting their potential as both biomarkers and therapeutic targets. Molecular docking revealed strong binding affinities, notably for cycloheximide binding to EPHA4 (-7.8 kcal/mol), with molecular dynamics confirming stable interactions (root mean square deviation, RMSD < 2.0 Å), providing a structural basis for drug repurposing or lead optimization. The functional enrichment results suggested that fibrosis, inflammation, and metabolic dysregulation are involved in POI pathogenesis. Collectively, our findings establish a multiomics-to-therapy pipeline that not only prioritizes causal targets for POI but also provides translational opportunities, from biomarker-guided diagnosis to computationally driven drug repositioning, paving the way for mechanism-based interventions in ovarian aging.",
+    "doi": "10.1007/s11357-026-02491-6",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "drug repurposing"
+    ],
+    "extra": {
+      "pmid": "42663799",
+      "journal": "GeroScience"
+    },
+    "dedupe_key": "doi:10.1007/s11357-026-02491-6"
+  },
+  {
+    "kind": "article",
+    "title": "Xanthium strumarium L. extract attenuates TNF-α/IFN-γ- stimulated inflammation and promotes hyaluronan production on HaCaT keratinocytes.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42663725/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.904227+00:00",
+    "authors": [
+      "Jamiyanmaa Purevdorj",
+      "Hyo-Jun Lee",
+      "Elsa Easter Justine",
+      "Jae-Eun Lee",
+      "Jin-Kyu Kim",
+      "Abdus Samad",
+      "Hoon Kim",
+      "Yeon-Ju Kim"
+    ],
+    "summary": "Xanthium strumarium L. has traditionally been used for inflammatory disorders; however, its molecular effects on keratinocyte inflammation and hyaluronan metabolism remain poorly understood. This study evaluated the modulatory trends of X.strumarium L. extract (XsE) on TNF-α/IFN-γ-stimulated inflammatory signaling pathway and hyaluronan regulation on HaCaT keratinocytes. The antioxidative stress of XsE was evaluated by free radical scavenging assays and dichlorofluorescein fluorescence staining. XsE exhibited significant antioxidant activity without inducing cytotoxicity in HaCaT cells and markedly attenuated TNF-α/IFN-γ-induced ROS accumulation. The gene expression and ELISA assays revealed that XsE suppressed pro-inflammatory cytokines and chemokines, including IL-6, IL-8, TARC, RANTES, and CTACK, at both transcriptional and protein levels. Mechanistically, Western blot analysis demonstrated that XsE treatment was strongly associated with the suppression of p38, IκBα, and p65 phosphorylation within the canonical NF-κB and specific p38 MAPK signaling cascades. In addition, XsE enhanced hyaluronan accumulation by upregulating hyaluronan synthase gene transcription, resulting in verified downstream macromolecule secretion. UPLC-MS analysis identified chlorogenic acid, miquelianin, hyperoside, cynarine, and syringetin as major phytochemical constituents in XsE. Molecular docking analysis further supported the predicted interactions of these compounds with inflammation- and hyaluronan-related targets. These findings demonstrate that the anti-inflammatory and hyaluronan-producing properties of XsE may contribute to the regulation of epidermal inflammatory responses and skin barrier-associated functions.",
+    "doi": "10.1007/s11033-026-12638-5",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42663725",
+      "journal": "Molecular biology reports"
+    },
+    "dedupe_key": "doi:10.1007/s11033-026-12638-5"
+  },
+  {
+    "kind": "article",
+    "title": "Molecular insights and ADMET profiling of iridoids as candidate leads for erectile dysfunction therapy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42663685/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.904809+00:00",
+    "authors": [
+      "Marcos Aurélio Carpina de Oliveira Filho",
+      "Jacilene Silva",
+      "Victor Moreira de Oliveira",
+      "Damião Sampaio de Sousa",
+      "Matheus Nunes da Rocha",
+      "Márcia Machado Marinho",
+      "Emmanuel Silva Marinho"
+    ],
+    "summary": "Erectile dysfunction (ED) significantly affects male psychosocial health and has an increasing incidence. Although phosphodiesterase 5 (PDEi-5) inhibitors are the first-line therapy, the occurrence of visual side effects resulting from cross-inhibition of the PDE-6 isoform limits their adoption. In this context, the plant Veronica anagallis-aquatica L. emerges as a promising source of bioactive therapeutic compounds. This work investigated the inhibitory potential and selectivity of eight iridoid glycosides from this species against PDE-5 and PDE-6. The results identified catalposide as the most potent ligand, exhibiting an affinity energy of -8.6 kcal/mol against PDE-5, surpassing the reference drug Vardenafil (-8.3 kcal/mol) and showing high selectivity towards PDE-6. Trajectory analyses confirmed the robustness of the catalposide-PDE-5 complex, which exhibited smaller structural fluctuations than the commercial control. Despite initial predictions indicating low oral bioavailability, structural optimization through increased sp3 fraction proved to be a viable strategy for enhancing membrane permeability. In conclusion, the findings position catalposide as a promising prototype for the development of more selective and safe drugs for the treatment of ED. The two-dimensional structures of the ligands were constructed in Marvin JS and subjected to energy minimization using the semi-empirical PM7 method in MOPAC software. The preparation of macromolecules (addition of polar hydrogens and Gasteiger and Kollman charges) was performed in AutoDockTools. Virtual screening by molecular docking was performed in AutoDock Vina, with exhaustiveness set to 64. The stability of the protein-ligand complexes was evaluated through 500 ns molecular dynamics (MD) simulations using GROMACS 2020.4 software. The systems were solvated with the three-point water model (TIP3P) in a cubic box and described by the CHARMM36 force field. The ligand parameterization was generated via the SwissParam server. The simulations employed the LeapFrog integrator, temperature maintained constant at 310 K via V-rescale thermostat, and pressure coupling maintained at 1 bar using the Parrinello-Rahman method. For predictions of physicochemical properties, pharmacokinetic optimization, and ADMET profile analysis (including hERG toxicity), the predictive servers ADMETlab 3.0, optADMET, ADMET-AI, XenoSite, StopTox, and Pred-hERG were used. Three-dimensional structural complexity was evaluated from the calculation of the MCE-18 function.",
+    "doi": "10.1007/s00894-026-06924-z",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42663685",
+      "journal": "Journal of molecular modeling"
+    },
+    "dedupe_key": "doi:10.1007/s00894-026-06924-z"
+  },
+  {
+    "kind": "article",
+    "title": "Study on the molecular mechanism of interaction between brominated flame retardants and human serum albumin by molecular docking.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42663667/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-29T00:05:46.905382+00:00",
+    "authors": [
+      "Changwei Ci",
+      "Zhuwei Liao",
+      "Jie Fu",
+      "Yin Luo",
+      "Pengfei Wang"
+    ],
+    "summary": "With the extensive application of brominated flame retardants (BFRs) in industry and daily life, their potential impact on human health has gradually drawn attention. This study utilized molecular docking, supplemented by molecular dynamics (MD) simulations, to analyze the interaction mechanism between various BFRs and human serum albumin (HSA). The docking results showed that the binding energy values were generally between -6.32 kcal·mol-1 and -10.98 kcal·mol-1. BFRs mainly anchored to HSA through hydrophobic interactions, hydrogen bonds, and halogen bonds. High-frequency amino acid residues such as PHE104A, LEU70A, and ILE73A repeatedly appeared in multiple docking models, suggesting their core role in the binding process. MD simulations further confirmed the stability of the representative complexes, with protein backbone RMSD values remained 0.20-0.45 nm throughout the 100 ns trajectories, corroborating the reliability of the docking-derived binding poses. Correlation analysis revealed that the physicochemical determinants of binding affinity were subclass-dependent: for PBBs, molecular weight exhibited a significant positive correlation (r = 0.646, p ≤ 0.05), while for PBDEs, density showed the strongest association (r = 0.5045, p ≤ 0.05). These findings indicate that simple bivariate correlations may not fully capture the complex binding mechanisms, and that subclass-specific rather than universal physicochemical predictors should be considered. This study provided a reusable standardized protocol for the research on the interaction between environmental pollutants and biological macromolecules and laid a theoretical foundation for the ecological risk assessment of flame retardants.",
+    "doi": "10.1080/10934529.2026.2724949",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42663667",
+      "journal": "Journal of environmental science and health. Part A, Toxic/hazardous substances & environmental engineering"
+    },
+    "dedupe_key": "doi:10.1080/10934529.2026.2724949"
   }
 ]
