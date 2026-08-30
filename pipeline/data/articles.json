@@ -31261,5 +31261,125 @@
       "journal": "Bioorganic & medicinal chemistry"
     },
     "dedupe_key": "doi:10.1016/j.bmc.2026.118788"
+  },
+  {
+    "kind": "article",
+    "title": "Anti-inflammatory, wound healing, and hepatoprotective effects of Acampe papillosa (Lindl.) Lindl. seed in wistar rats: insights from biochemical, histopathological, and in silico investigations.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669114/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-30T23:48:17.862176+00:00",
+    "authors": [
+      "Nusaiba Nujhat",
+      "Inun Nahar Payel",
+      "Md Liakot Ali",
+      "Rowshan Akter Mukta",
+      "S M Moazzem Hossen",
+      "Mohammad Helal Uddin"
+    ],
+    "summary": "Acampe papillosa (Lindl.) Lindl. has long been used to cure a variety of illnesses, including rheumatism and traumatic tissue injuries. Nevertheless, there is a dearth of comprehensive information on its phytochemical composition and pharmacological actions. Therefore, here, we present the first thorough pharmacological and histopathological analysis of Acampe papillosa seed methanolic extract (ME-APS), together with in silico molecular docking studies, hepatoprotective, wound-healing, and anti-inflammatory properties. Before pharmacological evaluations, safety was assessed through oral and dermal toxicity studies. The anti-inflammatory activity of ME-APS was tested using carrageenan and formalin-induced paw oedema models, and the wound healing potential was observed using incision and excision wound models. Hepatoprotective activity was studied in the CCl4-induced hepatotoxicity model in rats. In oral (up to 5000 mg/kg) and dermal (10% ointment formulation) toxicity studies, ME-APS was found to be safe with no visible signs of toxicity. In the study on anti-inflammatory properties, ME-APS significantly reduced paw oedema in carrageenan and formalin models of inflammation. Wound healing assays showed that the extract significantly improved wound contraction, tensile strength, epithelialization, collagen deposition, and fibroblast proliferation in a dose-dependent way. The hepatoprotective study showed that ME-APS treatment significantly restored the altered biochemical parameters, such as ALT, AST, TC, TG, and LDL levels, and ameliorated CCl4-induced histopathological liver damage. Further, the molecular docking study showed that the major phytochemicals in the extract, such as squalene, cholesta-4,6-dien-3-ol (3β), stigmasterol, and γ-sitosterol, showed significant binding affinities for COX-2 and TGF-β-related targets involved in inflammation, wound healing, and hepatoprotection. Additionally, a high probability of biological efficacy was predicted using PASS (Prediction of Activity Spectra for Substances) analysis. Overall, the findings suggest that ME-APS has possible anti-inflammatory, wound healing, and hepatoprotective activities that support its traditional medicine use and imply that it is a potential source of therapeutic phytochemicals.",
+    "doi": "10.1007/s10735-026-10958-1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42669114",
+      "journal": "Journal of molecular histology"
+    },
+    "dedupe_key": "doi:10.1007/s10735-026-10958-1"
+  },
+  {
+    "kind": "article",
+    "title": "Multi-omics, machine learning, and molecular simulation identify CD44 as a candidate target in endocrine-disrupting chemical-associated thyroid cancer progression.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669107/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-30T23:48:17.862861+00:00",
+    "authors": [
+      "Yifan Hu",
+      "Keshu Liu",
+      "Ting Chen",
+      "Zhizhen He",
+      "Shuang Li",
+      "Wu Hu",
+      "Qiuyang Fu",
+      "Xiong Chen"
+    ],
+    "summary": "Endocrine-disrupting chemicals (EDCs) are widely present in the environment and consumer products and may disturb thyroid hormone homeostasis. However, the molecular mechanisms linking EDC exposure to thyroid cancer progression remain unclear. This study integrated toxicity prediction, toxicogenomics, transcriptomic analysis, machine learning, molecular simulation, and experimental validation to identify EDC-related key targets in thyroid cancer. ADMETlab 3.0 was used to evaluate the potential toxicity of BPA, PFOA, DDT, BDE-209, TCDD, and DEHP, and compound-related genes were obtained from the CTD database. By integrating thyroid cancer-related genes from multiple disease databases, 1113 shared EDC-thyroid cancer targets were identified and were mainly enriched in PI3K-Akt, FoxO, and AGE-RAGE signaling pathways. Combined with differential expression analysis, machine learning identified a six-gene diagnostic model consisting of FN1, BCL2, CD44, CDKN1A, CTNNB1, and JUN. The Lasso + LDA model achieved an average AUC of 0.976 across the training cohort and three external validation cohorts. CD44 showed robust diagnostic performance, with AUC values of 0.950, 0.801, 0.878, and 0.938 in the training set, GSE27155, GSE29265, and GSE153659, respectively, and had the highest contribution in SHAP analysis. Immune infiltration, TCGA survival, and single-cell analyses indicated that CD44 was associated with the tumor immune microenvironment, cellular state changes, and prognosis. Molecular docking and 200 ns molecular dynamics simulations generated plausible docking poses of BPA, DEHP, and PFOA on CD44, with PFOA showing the most favorable predicted docking score. Experimental validation showed higher CD44 expression in thyroid cancer tissues and cells and increased CD44 expression following EDC exposure. CD44 knockdown attenuated EDC-associated increases in proliferation, colony formation, and migration. These findings identify CD44 as a candidate molecule associated with EDC-responsive malignant phenotypes in thyroid cancer.",
+    "doi": "10.1007/s11030-026-11721-0",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42669107",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11721-0"
+  },
+  {
+    "kind": "article",
+    "title": "ESM2-Kcr: a novel model combining protein language model and deep learning methods for predicting lysine crotonylation sites.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669100/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-30T23:48:17.863424+00:00",
+    "authors": [
+      "Kai Liu",
+      "Shengli Zhang",
+      "Jingyi Ren"
+    ],
+    "summary": "Lysine crotonylation (Kcr) is a vital posttranslational modification that plays a significant role in diverse biological processes such as DNA replication, the cell cycle, spermatogenesis, and embryonic stem cell differentiation. Abnormal Kcr levels are associated with multiple diseases including cancer, neurological disorders, and metabolic diseases, making it crucial for understanding disease pathogenesis and progression. In this study, we introduce ESM2-Kcr, a novel computational model designed for predicting Kcr sites. This model integrates the protein language model ESM2 with advanced deep learning techniques including LSTM, multi-head attention mechanism, and CNN. We elaborate on the specific feature extraction contributions of each deep learning module in ESM2-Kcr: LSTM captures the long-distance sequential dependency information of amino acid residues in protein sequences, CNN extracts the local short-range structural and functional features centered on lysine residues, and the multi-head attention mechanism adaptively assigns weight coefficients to key residue positions to highlight Kcr-related critical sequence information and filter out redundant noise. ESM2-Kcr encodes the protein sequences using ESM2_t30_150M_UR50D and further extracts comprehensive features. Through extensive comparisons with other protein language models like ProteinBERT and ProtT5, as well as different models within the ESM2 family, ESM2-Kcr demonstrates superior generalization ability and performance. The ESM2-Kcr model not only enhances our understanding of protein regulation but also holds great potential in identifying disease biomarkers and facilitating drug development. Future research directions may involve extending this framework to other posttranslational modifications. Data and codes are available at https://github.com/liukai23157/ESM2-Kcr .",
+    "doi": "10.1007/s10822-026-00934-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42669100",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00934-y"
+  },
+  {
+    "kind": "article",
+    "title": "Sanguinarine chloride exerts its antitumor effects on enzalutamide-resistant prostate cancer by inhibiting cell proliferation and promoting senescence via targeting AR signaling.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669084/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-30T23:48:17.863986+00:00",
+    "authors": [
+      "Yan Tao",
+      "Lanlan Li",
+      "Na Xu",
+      "Haiyu Yang",
+      "Feng Xiao",
+      "Jianzhong Lu",
+      "Beitang Fu",
+      "Ke Wang",
+      "Xuewu Wu",
+      "Yongqiang Ding",
+      "Xiaoying Hao",
+      "Shanhui Liu",
+      "Yabing Liang"
+    ],
+    "summary": "Prostate cancer (PCa) remains a leading cause of cancer-associated morbidity among men globally. Although enzalutamide (ENZ), a second-generation androgen receptor (AR) antagonist, serves as a mainstay therapy for castration-resistant prostate cancer (CRPC), therapeutic resistance inevitably emerges. This underscores an urgent demand for innovative treatment strategies. CCK-8, colony formation, EdU staining, flow cytometry, Hoechst 33,258 staining, western blotting, proteomics analysis, and senescence-associated β-galactosidase (SA-β-gal) staining were performed to reveal the role and underlying mechanisms of S.C in ENZ-resistant prostate cancer. Target prediction, molecular docking, and cellular thermal shift assay (CETSA) were used to identify the target of S.C. Finally, the impact of S.C in vivo was evaluated using ENZ-resistant xenograft models. Our results showed that S.C effectively suppresses cell viability in ENZ-resistant models through the dual induction of apoptosis and cellular senescence. Database mining, molecular docking, and CETSA identified AR as a putative target of S.C, which was subsequently validated in vivo. S.C treatment significantly inhibited the AR signaling pathway and suppressed tumor growth in ENZ-resistant xenograft models. To our knowledge, this study demonstrates that S.C could be a promising multi-mechanistic agent which can overcome ENZ resistance by targeting AR and inducing two distinct cell death pathways, offering a potential novel therapeutic strategy for CRPC.",
+    "doi": "10.1007/s12094-026-04536-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42669084",
+      "journal": "Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico"
+    },
+    "dedupe_key": "doi:10.1007/s12094-026-04536-w"
   }
 ]
