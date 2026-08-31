@@ -1,6 +1,389 @@
 [
   {
     "kind": "article",
+    "title": "Toward De Novo Protein Design from Natural Language",
+    "url": "https://doi.org/10.1101/2024.08.01.606258",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:12.870991+00:00",
+    "authors": [
+      "Dai, F.",
+      "You, S.",
+      "Zhu, Y.",
+      "Gao, Y.",
+      "Fu, L.",
+      "Zhou, X.",
+      "Su, J.",
+      "Wang, C.",
+      "Fan, Y.",
+      "Ma, X.",
+      "Deng, X.",
+      "Yu, L.",
+      "Qian, H.",
+      "He, Y.",
+      "Ke, Y.",
+      "Han, C.",
+      "Chang, X.",
+      "Zheng, L.",
+      "Wang, S.",
+      "Wang, Y.",
+      "Zeng, A.",
+      "Wang, S.",
+      "Si, T.",
+      "Liu, J.",
+      "Lu, H.",
+      "Yuan, F."
+    ],
+    "summary": "Programming biological function--designing bespoke proteins that execute specific tasks on demand--is a foundational goal of molecular engineering. Yet, current protein design paradigms remain fundamentally limited, typically requiring either an existing protein to evolve from, or deep, family-specific expertise to guide the design process. Here we introduce Pinal, a generative model that overcomes this barrier by translating functional descriptions in natural language directly into diverse and active proteins. This capability is built upon a 16-billion-parameter foundation model trained on an unprecedented synthetic corpus of 1.7 billion protein-text pairs, enabling it to ground functional language in the biophysical principles of protein structure. To provide definitive experimental validation, we tasked Pinal with designing four proteins from distinct functional classes: a fluorescent protein, a polyethylene terephthalate hydrolase, an alcohol dehydrogenase, and a metabolic H-protein. Remarkably, all four designs were functionally active and the two Pinal-designed enzymes achieved catalytic turnover for their respective reactions. Notably, the Pinal-designed H-protein even surpa",
+    "doi": "10.1101/2024.08.01.606258",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein design"
+    ],
+    "extra": {
+      "category": "bioengineering"
+    },
+    "dedupe_key": "doi:10.1101/2024.08.01.606258"
+  },
+  {
+    "kind": "article",
+    "title": "Accurate and efficient prediction of protein conformations with ProtMonomer",
+    "url": "https://doi.org/10.64898/2026.08.28.747824",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:16.892475+00:00",
+    "authors": [
+      "Si, Y.",
+      "Zhang, S.",
+      "Chen, L."
+    ],
+    "summary": "Deep learning-based protein structure prediction methods that leverage evolutionary information from multiple sequence alignments (MSAs), exemplified by AlphaFold2, have achieved remarkable accuracy. However, existing methods still struggle to predict challenging proteins, particularly those with novel folds or limited evolutionary information, and to recover alternative conformational states. Here we show that structure prediction models trained under different MSA-depth distributions corresponding to different levels of evolutionary information exhibit complementary generalization behaviors, and that a model trained on a mixture of these distributions can combine their complementary generalization strengths. Building on this insight, we developed ProtMonomer, a deep learning framework trained on MSA-depth distributions representing a broad range of evolutionary information levels to improve structure prediction. Across benchmarks comprising CASP15 targets, non-redundant experimentally determined structures, orphan proteins, and short peptides, ProtMonomer performed comparably to or better than leading methods, including AlphaFold2 and AlphaFold3, with particularly strong performa",
+    "doi": "10.64898/2026.08.28.747824",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "molecular biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.28.747824"
+  },
+  {
+    "kind": "article",
+    "title": "Revealing the H2O/Na environments in Hydrated Manganese Iron Prussian White: a D/H exchange and machine-learning-assisted MD simulation study",
+    "url": "https://doi.org/10.26434/chemrxiv.15008106/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:22.332033+00:00",
+    "authors": [
+      "Yuan-Chi Yang",
+      "Lena Pineau",
+      "Diganta Sarkar",
+      "Loic Simonin",
+      "David Peralta",
+      "Katharina Märker",
+      "Gaël De Paëpe",
+      "Quentin Berrod",
+      "Emmanuelle Suard",
+      "Ambroise Van Roekeghem",
+      "Quentin Jacquet"
+    ],
+    "summary": "Manganese-iron Prussian blue analogs (MnFePBA) are promising sodium-ion battery positive electrodes, offering capacities comparable to LiFePO4 while avoiding critical metals such as cobalt and nickel. Despite their promise, the role of water in the PBA framework remains a central point of contention: some studies report severe first-cycle capacity loss and electrolyte decomposition driven by water co-extraction during cycling, while others show that hydration stabilizes a monoclinic phase capable of smooth, solid-solution sodiation which delivers superior long-term cycling stability. This disagreement is compounded by unresolved structural ambiguity of hydrated PBAs—conventional XRD cannot reliably distinguish sodium from water due to their similar electron densities, and existing neutron diffraction and computational studies disagree on where each species resides within the framework. Here, we address this gap by characterizing deuterated/hydrated (D/H) samples with neutron powder diffraction (NPD) and solid-state 2H/1H NMR to achieve improved contrast and spectral resolution between sodium and water environments, alongside machine-learned interatomic potential molecular dynamics ",
+    "doi": "10.26434/chemrxiv.15008106/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15008106/v1"
+  },
+  {
+    "kind": "article",
+    "title": "NEVPT2 Multiple Spawning Molecular Dynamics Simulations for Uracil",
+    "url": "https://doi.org/10.26434/chemrxiv.15002579/v3",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:22.332704+00:00",
+    "authors": [
+      "Yoshio Nishimoto"
+    ],
+    "summary": "The quasidegenerate n-electron valence state second-order perturbation theory (QD-NEVPT2) for complete active space reference wavefunctions has been implemented in the OpenMolcas package. The implementation utilizes the efficient formulation of Kollmar et al. for the electronic energy, which is extended here to the calculation of analytic derivatives. To demonstrate its utility, the method is applied to classical and non-adiabatic molecular dynamics (MD) simulations of uracil. The non-adiabatic MD simulations describe the ultrafast deactivation of the initially excited bright ππ∗ state through the S 2 /S 1 conical intersection, demonstrating the applicability of the method to photochemical processes. Furthermore, a machine learning-based analysis of the trajectory data extracts key geometrical parameters that are associated with the magnitude of the time-derivative coupling.",
+    "doi": "10.26434/chemrxiv.15002579/v3",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15002579/v3"
+  },
+  {
+    "kind": "article",
+    "title": "Quantifying Multi-Objective Optimization in Generative Chemistry for Molecule Design",
+    "url": "https://doi.org/10.26434/chemrxiv.15008103/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:22.333918+00:00",
+    "authors": [
+      "Paula Torren-Peraire",
+      "Nadine Schneider",
+      "Raquel Rodríguez-Pérez",
+      "Robin A. Fairhurst",
+      "Jessica Lanini"
+    ],
+    "summary": "Multi objective optimization (MOO) is central to molecular design, yet its impact on generative chemistry outcomes remains poorly quantified. Consequently, it is unclear how different MOO strategies influence chemical space exploration and property optimization in generative methods. Here, we introduce a benchmarking framework for evaluating MOO strategies in generative chemistry. Six MOO approaches are highlighted including arithmetic and geometric means, non dominated sorting, Chebyshev scalarization, generational distance, and binary thresholding within a lead optimization setting. Across 60 scaffolds derived from six potency datasets, we explore a many-objective task for the simultaneous optimization of various compound properties, including potency, solubility and lipophilicity. We evaluate methods using metrics aligned to recurring medicinal chemistry use cases or decision scenarios and assess differences across datasets and scaffolds. We find that the MOO choice substantially changes both optimization outcomes and explored chemical space across datasets, scaffold and intended use cases. Overall, our results provide practical, use case driven guidance for selecting and compar",
+    "doi": "10.26434/chemrxiv.15008103/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "generative chemistry",
+      "chemical space exploration"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15008103/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Model of the Henrys: Eyring, Frank, and the Foundations for Predicting Transport Coefficients",
+    "url": "https://doi.org/10.26434/chemrxiv.15001840/v4",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:22.337191+00:00",
+    "authors": [
+      "Maximilian Fleck",
+      "Marcelle B M Spera"
+    ],
+    "summary": "Henry Eyring’s absolute rate theory provides a microscopic picture of liquid transport based on molecular jumps, while Henry Frank’s free volume theory relates entropy changes to an effective cage volume in condensed phases. In this work, we integrate these two frameworks to obtain the Model of the Henrys (MotH), a unified description of transport phenomena based on the (re)movement of molecules within a system. Starting from Eyring’s viscosity expression, we replace activation energies by residual energies, and express the free volume via Frank’s entropy–free volume relation using residual entropy. The resulting model contains a small set of molecule-specific parameters. We show that viscosity and self-diffusion of alkanes, alcohols, carbon dioxide, and water are described in good agreement with experimental and molecular dynamics data over wide temperature and pressure ranges, including the strongly interacting fluids that approaches such as entropy scaling struggle to capture. Transferring the free volume part of the model to thermal conductivity of alkanes serves as a proof of concept, validating the decomposition on which MotH rests. Analysis of the fitted parameters is consis",
+    "doi": "10.26434/chemrxiv.15001840/v4",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15001840/v4"
+  },
+  {
+    "kind": "article",
+    "title": "Sustainable photocatalytic borylation: updated review",
+    "url": "https://doi.org/10.26434/chemrxiv.15008088/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:22.339396+00:00",
+    "authors": [
+      "Kankanalla Naveen Kumar",
+      "Kamal Lochan Misra",
+      "Sharada Prasanna Swain"
+    ],
+    "summary": "Organoboron compounds are suitable precursors for a wide verity of organic transformation (Suzuki and Chan-Lam reactions), and have got significant applications in catalysis, drug discovery, diagnostics, and materials science. Photocatalysis falls under the twelve principles of Green Chemistry, and United Nations (UN) sustainable development goals (SDG) 9 and 12. Though recent review articles have been published on metal-free or photochemical C-H borylation reactions, this review article covers photoinduced C-H, decarboxylative, carbon-halogen, C-N, C-O, and C-S borylation reactions (from year 2018 to 2025) catalysed by metals, organocatalysts, including catalyst-free reactions. The varieties of catalysts, and their applications for the synthesis of diverse boron substrates have been discussed in this article.",
+    "doi": "10.26434/chemrxiv.15008088/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15008088/v1"
+  },
+  {
+    "kind": "article",
+    "title": "HIV-1 Nef Rewires Beclin 1 Conformational Allostery to Suppress Autophagy",
+    "url": "https://doi.org/10.26434/chemrxiv.15008086/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:22.340027+00:00",
+    "authors": [
+      "Debapriyo Sarmadhikari",
+      "Mitul Srivastava",
+      "Shailendra Asthana"
+    ],
+    "summary": "Understanding the relationship between protein flexibility, conformational-and dynamical-allostery drive the biological function is essential as these interconnected features orchestrate biochemical processes required for biological activity. Protein-protein interactions (PPIs) are central to cellular signalling and attractive therapeutic targets, yet their modulation remains challenging to elucidate using conventional approaches as it is highly govern via conformational transitions and allostery, yet how allosteric mechanisms diversify at PPI level to provide functional output is poorly understood. Here, we focus on Beclin 1, a key autophagy regulator that functions in a PPI-dependent manner. Autophagy is a critical cellular degradation and recycling pathway implicated in numerous human diseases including viral infection. Viruses like HIV exploit this process, where the viral protein Nef interacts with Beclin 1 to suppress autophagy and enhance viral survival. However, the structural basis of this inhibition remains unclear, likely due to the complex nature of PPI. To investigate as how Nef binding impair beclin 1 association with membrane, an integrative approach combining conven",
+    "doi": "10.26434/chemrxiv.15008086/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15008086/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Molecular Origins of Lithium-Ion Transport in the Anionic Metal–Organic Framework SU-102",
+    "url": "https://doi.org/10.26434/chemrxiv.15008063/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:22.347298+00:00",
+    "authors": [
+      "Suman Saha",
+      "Youhan Lu",
+      "Zhentao Yang",
+      "Julius J. Oppenheim",
+      "Vibhu Vardhan Singh",
+      "Mircea Dincă",
+      "Francesco Paesani"
+    ],
+    "summary": "Metal–organic framework (MOF) quasi-solid electrolytes offer chemically tunable environments for ion transport, but the molecular roles of framework coordination and confined solvent remain unclear. Here, we combined solid-state nuclear magnetic resonance (ssNMR) measurements with molecular dynamics simulations to determine the Li+ transport mechanism in propylene carbonate-filled SU-102. Variable-temperature direct-and cross-polarization 7Li ssNMR reveal two distinct Li+ populations with different local tumbling dynamics. Our simulations identified Zr-associated, linkerassociated, and fully PC-solvated Li+ coordination environments. We found that Zrassociated sites provide the strongest thermodynamic stabilization, whereas the sitepersistence function decays more rapidly for linker-associated Li+ over the simulated interval. The linker-associated state exhibits the largest trial-weighted displacement, and linker-to-linker hopping is the most frequent classified event under the sampled fields, followed by Zr-to-Zr hopping. Chemical color-diffusion nonequilibrium molecular dynamics yielded an ionic conductivity of 1.34 ± 0.48 mS cm−1, the same order of magnitude as the experimental ",
+    "doi": "10.26434/chemrxiv.15008063/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15008063/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Fast and Slow Motions Drive Elusive Polymorphic Transitions in a Naphthalene-Diimide Crystal",
+    "url": "https://doi.org/10.26434/chemrxiv.15008060/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-31",
+    "collected_at": "2026-08-31T17:13:22.349235+00:00",
+    "authors": [
+      "Marco Severi",
+      "Giulia Dall’Aglio",
+      "Daniele Fazzi"
+    ],
+    "summary": "Thermally induced solid-state polymorphic transitions in an n-hexyl-functionalized naphthalenediimide organic semiconductor (NDI-C6) are investigated using atomistic molecular dynamics (MD) simulations. NDI-C6 exhibits two stable polymorphs: the α phase at room temperature and the γ phase at higher temperatures. The MD simulations reproduce the structural stability of both phases and provide a refined description of their unit-cell parameters and side-chain conformations, which have been only partially resolved experimentally. The α-to-γ transition proceeds through a sequential, non-concerted two-step mechanism. An initial fast (sub-nanosecond) process involves the collective rearrangement of the NDI cores, followed by a slow process (>100 ns) characterized by side-chain extension. These results provide an atomistic picture of polymorphism in NDI-C6 and establish a robust computational protocol for investigating labile phase transitions in the broader class of NDIbased n-type soft organic semiconductors.",
+    "doi": "10.26434/chemrxiv.15008060/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15008060/v1"
+  },
+  {
+    "kind": "article",
+    "title": "RegimeFormer: A Large Protein Model of Global Perturbation Regimes",
+    "url": "https://doi.org/10.64898/2026.08.26.747182",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-30",
+    "collected_at": "2026-08-31T17:13:11.150731+00:00",
+    "authors": [
+      "Ma, S.",
+      "Chai, Y.",
+      "Wu, Y.",
+      "Zhang, Q.",
+      "Yuan, Y.",
+      "Zhao, K.",
+      "Chen, Z.",
+      "Wang, H.",
+      "Cao, S.",
+      "Yu, X.",
+      "Han, X.",
+      "Liu, Y.",
+      "Liu, Y.",
+      "Zhu, T.",
+      "Tao, D."
+    ],
+    "summary": "Protein language models organize sequence and structure at scale, but a global representation of how proteins respond to mutation remains lacking. We present RegimeFormer, a large protein perturbation model coupled to RegimeAtlas, constructed by harmonizing and indexing 202,556,313 non-redundant protein sequences across the tree of life. A diversity-preserving one-million-protein subset provides the high-resolution training and inference layer, with 995,995 proteins yielding residue-level summaries across 407,048,356 residues and substitution-specific predictions available on demand. Across experimental deep mutational scanning, molecular benchmarks, structural confidence and evolutionary constraint, RegimeFormer identifies reproducible protein-level perturbation regimes that organize residue fragility, adaptability and predictive uncertainty. Regime conditioning improves substitution-specific prediction, with the largest relative gains under unseen-protein, unseen-family and low-homology evaluation. RegimeFormer-derived molecular priors further improve downstream transcriptomic and drug-response modelling. Together, RegimeFormer and RegimeAtlas provide a scalable framework for map",
+    "doi": "10.64898/2026.08.26.747182",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.26.747182"
+  },
+  {
+    "kind": "article",
+    "title": "PfAMA1-expressing chimeric rodent malaria parasites provide an in vivo platform for evaluating multistage interventions against malaria",
+    "url": "https://doi.org/10.64898/2026.08.28.747760",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-30",
+    "collected_at": "2026-08-31T17:13:11.153401+00:00",
+    "authors": [
+      "Issahaque, Q.-a.",
+      "Shinzawa, N.",
+      "Kegawa, Y.",
+      "Sekine, T.",
+      "Amino, H.",
+      "Torii, M.",
+      "Tsuji, M.",
+      "Ishino, T."
+    ],
+    "summary": "Apical membrane antigen 1 (AMA1) is expressed in the merozoite and sporozoite infectious stages of the malaria parasite, and upon secretion plays essential roles during host cell invasion. AMA1 is a leading candidate for vaccine development, although specific antibodies frequently fail to inhibit the growth of field-isolated Plasmodium falciparum malaria parasites, likely due to the high diversity of polymorphisms in AMA1 surface antigens. A key step for efficient invasion of target cells is tight junction formation through interaction of merozoite-surface AMA1 and rhoptry neck protein 2 (RON2), which is secreted and embedded within the erythrocyte membrane. Antibodies or reagents that disrupt the AMA1-RON2 interaction represent interventions to reduce parasite transmission to humans, as well as to repress clinical symptoms. To create a mouse model system for the evaluation of reagents against P. falciparum AMA1 (PfAMA1), we generated CRISPR/Cas9-engineered rodent malaria parasites in which the endogenous Plasmodium berghei AMA1 (PbAMA1) was replaced with PfAMA1, resulting in a chimeric line Pb_PfAMA1. Pb_PfAMA1 parasites infect mouse liver and erythrocytes as efficiently as the pa",
+    "doi": "10.64898/2026.08.28.747760",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "microbiology"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.28.747760"
+  },
+  {
+    "kind": "article",
+    "title": "Chemi-Proteome Language Attention Network Empowers Fragment-Based Ligand Interactome and Binding Sites Discovery with Evidence",
+    "url": "https://doi.org/10.64898/2026.08.26.747036",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-30",
+    "collected_at": "2026-08-31T17:13:11.154929+00:00",
+    "authors": [
+      "Liao, B.",
+      "He, J.",
+      "zhao, M.",
+      "Cui, X.",
+      "Cui, Y.",
+      "Dong, C.",
+      "Sun, H.",
+      "Zhang, L.",
+      "Zhang, J."
+    ],
+    "summary": "Deep learning has accelerated drug discovery, yet most existing models are trained using in vitro affinity datasets and consequently remain disconnected from the cellular context in which functional ligand-protein interactions occur. This limitation hinders the ability to reflect the complexity of native interactomes and characterize biological responses to molecular perturbation. Here we introduce C-PLANK (Chemi-Proteome Language Attention NetworK), a deep learning framework trained on fragment-protein interactions profiled directly in living cells using fully functionalized fragment (FFF) chemoproteomics. C-PLANK combines physicochemical embeddings with a bilinear attention network (BAN) to model both global cellular context and local residue-atom interactions, generating interpretable interaction fingerprints. Particularly, C-PLANK incorporates Cellular Interaction State Index (CISI), a systems-level evidential metric that contextualizes the biological plausibility of each predicted interaction against the global cellular interaction landscape. Across 431 ligand interactomes curated from eight independent chemoproteomic studies, C-PLANK consistently outperformed current state-of",
+    "doi": "10.64898/2026.08.26.747036",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.26.747036"
+  },
+  {
+    "kind": "article",
+    "title": "A thermodynamic framework for mapping elastic recoil mechanism across the human proteome",
+    "url": "https://doi.org/10.64898/2026.08.28.747957",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-08-30",
+    "collected_at": "2026-08-31T17:13:11.155212+00:00",
+    "authors": [
+      "Desai, R.",
+      "Pople, D.",
+      "Musale, A.",
+      "Jain, S.",
+      "Sajjad, I.",
+      "Wittebort, R. J.",
+      "Koder, R. L.",
+      "Nanda, V."
+    ],
+    "summary": "The folding thermodynamics of proteins are dominated by two opposing forces, the loss in backbone entropy and the packing of hydrophobic groups. The same forces are major contributors to the extension thermodynamics of elastic proteins with the distinction that both processes act in concert, favoring the higher chain and solvent entropy of a relaxed conformation. The relative entropic contributions specify the recoil mechanism; human elastin recoil is primarily driven by hydrophobic forces, whereas fly resilin has a rubber-like mechanism driven by backbone entropy. Despite the importance of elastic proteins to tissue biomechanics, few have been identified, let alone characterized to the same extent as elastin and resilin. We develop a thermodynamic framework that maps proteins by sequence-derived estimates of extension-induced backbone and solvent entropy changes. Putative elastic proteins are proposed and classified by recoil mechanism based on estimated thermodynamic features. Proteins that map to elastic regions are overrepresented by the skin proteome. The set of predicted elastic domains is further extended by incorporating sequence context embedded in protein language models.",
+    "doi": "10.64898/2026.08.28.747957",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.28.747957"
+  },
+  {
+    "kind": "article",
     "title": "Distinct Mechanisms for Inhibition of SARS-CoV-2 Main Protease: Dimerization Promoted by Peptidomimetic Inhibitors and Disrupted by Ebselen",
     "url": "https://doi.org/10.1101/2025.11.16.688752",
     "source": "bioRxiv",
@@ -31381,5 +31764,128 @@
       "journal": "Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico"
     },
     "dedupe_key": "doi:10.1007/s12094-026-04536-w"
+  },
+  {
+    "kind": "article",
+    "title": "Combined exposure to cypermethrin and sulfamethoxazole is associated with muscle injury in grass carp through oxidative stress, endoplasmic reticulum stress, MAPK activation, autophagy, and apoptosis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669390/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-31T17:12:45.319553+00:00",
+    "authors": [
+      "Yutong Yin",
+      "Xin Zhang",
+      "Hongmin Lu",
+      "Yingjie Ma",
+      "Ruoqi Wang",
+      "Yunfan Zhang",
+      "Yuze Dong",
+      "Mingwei Xing"
+    ],
+    "summary": "The co-occurrence of pesticides and antibiotics in aquatic environments has raised increasing concern because of their potential effects on aquatic organisms. Cypermethrin (CMN) and sulfamethoxazole (SMZ) are representative pyrethroid pesticides and sulfonamide antibiotics, respectively, but their combined effects on fish muscle remain poorly understood. In this study, grass carp (Ctenopharyngodon idella) were exposed to CMN (0.65 μg/L), SMZ (0.30 μg/L), or their combination for 42 days. Network toxicology, histopathology, oxidative stress assays, Western blotting, protein-protein interaction analysis, and molecular docking were used to investigate muscle injury and related molecular responses. The MIX group showed more severe pathological alterations than the single-exposure groups, including extensive myofiber disruption, fragmentation, nuclear condensation, and nuclear displacement. It also increased malondialdehyde levels, decreased total superoxide dismutase activity, and markedly altered proteins associated with endoplasmic reticulum stress. Phosphorylation of P38, JNK, and ERK was elevated, indicating enhanced MAPK signaling. Suppression of the PI3K-AKT-mTOR pathway was accompanied by increased Beclin-1 expression, an elevated LC3-II/LC3-I ratio, and decreased P62 expression, suggesting enhanced autophagy-related responses. In addition, Bax, Caspase-9, and Caspase-3 expression increased, whereas Bcl-2 expression decreased, indicating enhanced mitochondria-associated apoptotic signaling. Network analysis and molecular docking identified HSP90, HSP70, and Caspase-3 as potential core targets. These findings show that combined CMN and SMZ exposure induces severe muscle injury in grass carp, with the MIX group exhibiting the most pronounced changes in oxidative stress, endoplasmic reticulum stress, MAPK activation, autophagy, and apoptosis.",
+    "doi": "10.1016/j.cbpc.2026.110676",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42669390",
+      "journal": "Comparative biochemistry and physiology. Toxicology & pharmacology : CBP"
+    },
+    "dedupe_key": "doi:10.1016/j.cbpc.2026.110676"
+  },
+  {
+    "kind": "article",
+    "title": "Design, synthesis and biological evaluation of hydroxybenzothiazole-linked benzothiazole/benzoxazole conjugates as potent dual α-amylase and α-glucosidase inhibitors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669271/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-31T17:12:45.320156+00:00",
+    "authors": [
+      "Rafaqat Hussain",
+      "Hina Sarfraz",
+      "Umair Khurshid",
+      "Noor Alqurashi",
+      "Ayaz Ali Khan",
+      "Nawal H Siddig",
+      "Nawal Al-Hoshani",
+      "Hayam A Alwabsi"
+    ],
+    "summary": "The current study focuses on the synthesis and evaluation of novel Hydroxybenzothiazole-Linked Benzothiazole/Benzoxazole Conjugates to target Diabetes Mellitus (DM) by inhibiting α-amylase and α-glucosidase. Spectroscopic methods, including 1H and 13C NMR spectroscopy, were employed to confirm the structures of newly synthesized conjugates. The findings of in-vitro analysis displayed that the synthesized derivatives inhibited α-amylase and α-glucosidase enzymes with IC50 values ranging from 3.65 ± 0.20 μM to 32.15 ± 3.20 μM on α-amylase and 5.92 ± 0.80 μM to 35.60 ± 3.40 μM on α-glucosidase, in contrast to the reference drug Acarbose (α-amylase IC50 = 8.25 ± 0.80 μM; α-glucosidase IC50 = 10.75 ± 1.10 μM). Among the series 9a-9f and 10a-10f, analogs 10 f, 10b, 9b, and 9e displayed superior anti-diabetic activity compared to the reference drug Acarbose. The inhibitory activity of these conjugates can be attributed to their favorable and stable interactions with critical amino acid residues of targeted enzymes, as revealed through molecular docking analysis. ADMET predictions and drug-likeness evaluations showed favorable pharmacokinetic features, while DFT investigations revealed electronic insights related to bioactivity. Experimental outcomes and in silico support display that these potent Hydroxybenzothiazole-Linked Benzothiazole/Benzoxazole Conjugates were comparable to an existing diabetic mellitus inhibitor while conserving an acceptable safety profile, specifying potential for further therapeutic development and optimization against diabetic Mellitus.",
+    "doi": "10.1016/j.bioorg.2026.110437",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "ADMET prediction",
+      "drug-likeness"
+    ],
+    "extra": {
+      "pmid": "42669271",
+      "journal": "Bioorganic chemistry"
+    },
+    "dedupe_key": "doi:10.1016/j.bioorg.2026.110437"
+  },
+  {
+    "kind": "article",
+    "title": "Phytochemical profiling and mechanistic insights into the anxiolytic potential of Sphaeranthus indicus Linn.: A network pharmacology, molecular docking and simulation approach.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669232/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-31T17:12:45.320795+00:00",
+    "authors": [
+      "Sumedh Joshi",
+      "Shruti Koulgi",
+      "Manisha Aher",
+      "Smita Saxena",
+      "Manali Joshi",
+      "Shivani Ghildiyal",
+      "Tanuja Manoj Nesari"
+    ],
+    "summary": "Anxiety problems, such as Generalized Anxiety Disorder, are a significant source of concern for people worldwide. Current medicines frequently have side effects or are ineffective. Sphaeranthus indicus Linn, often known as Mundi, is an Ayurvedic medication that has demonstrated promising results to aid with anxiety. However, the molecular mechanism underlying its function is not known. In this study we used computational tools to understand how Sphaeranthus indicus Linn might assist persons with anxiety disorders. A library of 57 phytochemicals was compiled from databases and literature sources and was tested for BBB permeability, ADMET and toxicity. Subsequently a network was built to link the compounds with their targets and anxiety related diseases. Upon investigation of the network, it was discovered that eight phytochemicals including Eugenol, β-sitosterol, Estragole, and Camphor interacted with several targets, while four targets seemed to be most important, the serotonin transporter (SLC6A4), the glucocorticoid receptor (NR3C1), acetylcholinesterase (ACHE) and the dopamine D2 receptor (DRD2). Docking of the eight phytochemicals was performed with all four targets, which revealed that β-sitosterol docked best to all targets, while several phytochemicals exhibited favourable binding. Further, 100 ns atomistic simulations were performed for β-sitosterol with all four targets, which indicated stable binding. Thus, we conclude that these phytochemicals probably work as serotonin reuptake inhibitors by blocking the serotonin transporter, probably modulate dopamine signalling as well by interacting with dopamine D2 receptor. We also predict that these phytochemicals interact with the acetylcholinesterase and the glucocorticoid receptor, suggesting their potential to modulate neurotransmission and glucocorticoid signalling that may influence neurotransmission and stress-related signalling. Taken together, the findings from this work, provide the first network pharmacology-based evidence for S. indicus' multitarget anxiolytic processes, support its traditional use in neuropsychiatric diseases, and identify various phytochemicals as promising natural lead candidates for anxiolytic medication development.",
+    "doi": "10.1016/j.compbiolchem.2026.109357",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET"
+    ],
+    "extra": {
+      "pmid": "42669232",
+      "journal": "Computational biology and chemistry"
+    },
+    "dedupe_key": "doi:10.1016/j.compbiolchem.2026.109357"
+  },
+  {
+    "kind": "article",
+    "title": "Preparation and chemical characterization of polyphenol-rich extract from Tsaoko Fructus: alleviation of ulcerative colitis in mice by modulating gut microbiota and suppressing the JNK1-cJun signaling.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42669226/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-08-31T17:12:45.321414+00:00",
+    "authors": [
+      "Pianchou Gongpan",
+      "Jingyi Yang",
+      "Hang Fu",
+      "Shengli Wu",
+      "Xu Zhu",
+      "Rongkai Chen",
+      "Liangyan Liu",
+      "Chang-An Geng"
+    ],
+    "summary": "Tsaoko Fructus, a traditional Chinese medicinal herb, has long been used to alleviate gastritis and enteritis. Nevertheless, the active constituents and underlying anti-inflammatory mechanisms remain insufficiently characterized. This study aims to optimize a polyphenol-rich fraction (3CB) from Tsaoko Fructus, evaluate its effects against ulcerative colitis (UC), and reveal the underlying mechanisms of action. The preparation of 3CB was optimized using response surface methodology (RSM), and its major constituents were identified by LC-PDA-MS analysis. A murine UC model was established by administering dextran sulfate sodium (DSS). To evaluate the effects of 3CB on UC mice, metagenomic sequencing of the intestinal microbiome and RNA sequencing of colon tissues were conducted. The anti-inflammatory activity of 3CB and its principal constituents was further verified by quantitative real-time PCR (qPCR), Enzyme linked immunosorbent assay (ELISA), Western blotting, immunohistochemical staining, and histopathological analysis. Network pharmacology, molecular docking, and surface plasmon resonance (SPR) assays were employed to elucidate the molecular mechanisms underlying the anti-inflammatory effects of 3CB. 3CB significantly alleviated UC symptoms in DSS-induced mice, reshaped the gut microbiota with reducing pathogenic Pseudomonadota and Deferribacterota while enriching beneficial Bacteroidota, and restored microbial amino sugar and nucleotide sugar metabolism pathways of intestinal flora. Additionally, 3CB preserved colonic oxidative phosphorylation, protected the mucus barrier, and suppressed inflammatory cell infiltration and the expression of cytokines. Seven major polyphenols were identified in 3CB, with epicatechin (3) and epiafzelechin (6) being the most abundant. Mechanistic investigation revealed that the anti-inflammatory effect of 3CB was partially dependent on the JNK1-modulated MAPK signaling pathway. JNK1 was identified as a direct target of 3CB, with epiafzelechin (6) exhibiting a high binding affinity (Kd = 10.4 μM). 3CB ameliorates UC potentially through modulation of gut microbiota, protection of the mucus barrier, and JNK1-targeted anti-inflammatory effects, highlighting its potential as a protective intervention for inflammatory bowel disease (IBD).",
+    "doi": "10.1016/j.phymed.2026.158752",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42669226",
+      "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology"
+    },
+    "dedupe_key": "doi:10.1016/j.phymed.2026.158752"
   }
 ]
