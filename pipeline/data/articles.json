@@ -512,6 +512,92 @@
   },
   {
     "kind": "article",
+    "title": "The first OpenBind release: An open experimental structure-affinity dataset and benchmark for structure-based AI",
+    "url": "https://doi.org/10.64898/2026.08.27.747600",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-01",
+    "collected_at": "2026-09-01T23:33:31.013523+00:00",
+    "authors": [
+      "Nelen, J.",
+      "Khan, O.",
+      "Adams, E.",
+      "Aschenbrenner, J. C.",
+      "Thompson, W.",
+      "Ebrahim, A.",
+      "Capkin, E.",
+      "Vallee, C.",
+      "OpenBind,",
+      "Shotton, E. J.",
+      "Griffen, E. J.",
+      "Chodera, J. D.",
+      "Deane, C. M.",
+      "von Delft, F.",
+      "AlQuraishi, M.",
+      "Imrie, F."
+    ],
+    "summary": "High-quality experimental datasets that link protein-ligand structures with binding affinity data are essential for developing and evaluating structure-based machine learning methods. To help address this need, we established OpenBind as an open-science initiative to generate large-scale experimental datasets for structure-based AI and molecular discovery. Here, we describe the first public OpenBind release, which, to the best of our knowledge, is the largest public single-target experimental structure-affinity dataset. The dataset focuses on enteroviral 2A protease, comprising 925 crystallographic binding events from 699 compounds and associated affinity measurements for 601 compounds. It combines structures from an initial fragment screen and follow-on molecules, together with affinity data, linking experimentally determined protein-ligand binding modes to biophysical measurements within a coherent antiviral discovery campaign. We used this dataset to evaluate protein-ligand structure prediction, binding-affinity prediction, and virtual screening using representative structure-based methods, including docking and cofolding. This exposed several challenges that are central to prac",
+    "doi": "10.64898/2026.08.27.747600",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.27.747600"
+  },
+  {
+    "kind": "article",
+    "title": "GNMCADS: Sampling For Protein Conformation Diversity With Gaussian Network Model Guided Condition Annealed Diffusion Sampler",
+    "url": "https://doi.org/10.64898/2026.08.28.747885",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-01",
+    "collected_at": "2026-09-01T23:33:31.014120+00:00",
+    "authors": [
+      "Uzum, A. S.",
+      "Haliloglu, T."
+    ],
+    "summary": "Proteins are dynamic molecules existing in diverse conformational states underlying their biological functions. Although recent approaches have enabled diverse conformational sampling by emulating molecular dynamics simulations, perturbing evolutionary information, or steering internal mechanisms of structure prediction models, predicting conformations resulting from major domain motions or motions that occur over long timescales still remains a challenge. To this end, we introduce GNMCADS, a conformational sampling strategy that enhances the diversity of protein diffusion models by selectively annealing the conditioning signal guided by the intrinsic dynamical organization of the sampled protein. Further, we implement GNMCADS in the diffusion module of AlphaFold3, enabling the generation of diverse protein conformations. When benchmarked across 92 proteins that include 54 class A GPCRs, 15 transporters, and 23 proteins with major domain movements, GNMCADS exhibits improved sampling diversity compared to other current conformational sampling methods.",
+    "doi": "10.64898/2026.08.28.747885",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.28.747885"
+  },
+  {
+    "kind": "article",
+    "title": "Sphingolipid metabolism-related genes as key regulatory hubs in white smoke inhalation induced lung injury",
+    "url": "https://doi.org/10.64898/2026.08.26.747407",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-01",
+    "collected_at": "2026-09-01T23:33:32.339639+00:00",
+    "authors": [
+      "Meng, F.",
+      "Xin, H.",
+      "Li, R. R."
+    ],
+    "summary": "Objective White smoke inhalation injury (WSI) causes severe acute lung damage with no specific therapy currently available. Sphingolipid metabolism is implicated in pulmonary inflammation, but its transcriptional regulatory landscape in WSI remains unexplored. This study aimed to identify key sphingolipid metabolism related genes and evaluate their regulatory roles and therapeutic potential in WSI. Methods We established a rat model of WSI and performed integrated bulk RNA sequencing, weighted gene coexpression network analysis (WGCNA), and single-cell RNA sequencing (scRNAseq) to screen for differentially expressed sphingolipid metabolism-related genes (DESRGs). Protein-protein interaction (PPI) network with four centrality algorithms was used to prioritize hub genes. In silico gene knockout and molecular docking were conducted to assess regulatory functions and identify potential drug candidates. Results We identified 22 DESRGs that were predominantly enriched in DNA replication and cell cycle pathways rather than canonical sphingolipid metabolic processes. PPI consensus prioritized three hub genes--Top2a, Ttk, and Ccna2--with Top2a exhibiting the highest expression in epithelial",
+    "doi": "10.64898/2026.08.26.747407",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "drug repurposing"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.26.747407"
+  },
+  {
+    "kind": "article",
     "title": "Toward De Novo Protein Design from Natural Language",
     "url": "https://doi.org/10.1101/2024.08.01.606258",
     "source": "bioRxiv",
@@ -35223,5 +35309,344 @@
       "journal": "Journal of tropical medicine"
     },
     "dedupe_key": "doi:10.1155/jotm/9932618"
+  },
+  {
+    "kind": "article",
+    "title": "Gastrodia elata Blume and Acorus tatarinowii Schott mixtures alleviate pentylenetetrazol-induced seizures in mice: association with NLRP3 inflammasome signaling changes.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42679235/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.085662+00:00",
+    "authors": [
+      "Xirui He",
+      "Ruoshi Tian",
+      "Xufei Chen",
+      "Jiaqing Hu",
+      "Qiulian Zeng",
+      "Yao Xiao",
+      "Yan Yang"
+    ],
+    "summary": "To evaluate therapeutic mechanism of Gastrodia elata Blume and Acorus tatarinowii Schott (GEAT) herb pair in the treatment of epilepsy. The anti-seizure effects were evaluated using the maximal electroshock (MES) and pentylenetetrazole (PTZ)-induced acute and kindling seizures. Seizure behaviors and electroencephalography (EEG) activity were assessed. Cognitive function, hippocampal pathology, ultrastructure and key targets NLRP3, caspase-8 and BDNF were also examined. Additionally, network pharmacology and molecular docking analyses were integrated to complement the experimental findings. GEAT reduced the generalized seizures in the MES model. In the PTZ model, GEAT decreased the seizure stages, prolonged the latent period of epileptic seizures, and decreased the death rate. In the chronic PTZ model, GEAT significantly reduced the Racine score during the kindling process, suppressed spontaneous seizures and EEG abnormalities. It also effectively alleviated cognitive memory impairment and anxiety-like behavior. Furthermore, GEAT attenuated hippocampal neuronal loss, microglial and astrocytes activation and mitochondrial damage, and regulated BDNF, Caspase-8, NLRP3, Caspase-1 and IL-1β protein expression. GEAT exerts multi-target effects against epilepsy, associated with synergistic regulation of glial activation, neuroinflammation, and apoptosis involving the NLRP3/caspase-1/IL-1β pathway, thereby providing a robust theoretical and experimental foundation for its clinical translation.",
+    "doi": "10.1093/jpp/rgag096",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42679235",
+      "journal": "The Journal of pharmacy and pharmacology"
+    },
+    "dedupe_key": "doi:10.1093/jpp/rgag096"
+  },
+  {
+    "kind": "article",
+    "title": "Accurate Identification of Covalently Ligandable Cysteines Using CCSite.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42679164/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.086201+00:00",
+    "authors": [
+      "Yanlin Ren",
+      "Minjie Mou",
+      "Yimiao Zhu",
+      "Ziqi Pan",
+      "Kuo Zhang",
+      "Yuntao Qian",
+      "Yang Zhang",
+      "Jinlong Li",
+      "Tingting Fu",
+      "Feng Zhu"
+    ],
+    "summary": "Targeted covalent inhibition is an important strategy in modern drug discovery, with cysteine being the most common residue targeted for covalent ligands. Accurate identification of covalently ligandable cysteines is therefore essential, especially for traditionally \"undruggable\" targets. However, structure-based methods depend on available and reliable protein structures, while sequence-based methods remain scarce and require further improvement. Here, we present CCSite, a protein language model-based framework for discovering covalently ligandable cysteines from protein sequences. It uniquely integrates low-rank adaptation of ESM Cambrian (LoRA-ESMC) with a cysteine-centered encoder-decoder module to capture local microenvironment features and long-range contextual information. Benchmarking and independent evaluation showed that CCSite achieved competitive performance without requiring 3D structures. Moreover, a real-world application revealed that CCSite was capable of prospectively identifying experimentally validated covalent cysteines, and a large-scale screen of human pathogenic X-to-Cys mutations further identified over 2,000 neo-cysteines as covalently ligandable candidates for future covalent drug development.",
+    "doi": "10.1021/acs.jmedchem.6c01911",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42679164",
+      "journal": "Journal of medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.1021/acs.jmedchem.6c01911"
+  },
+  {
+    "kind": "article",
+    "title": "PepGate: A Dual-Path Diffusion Framework for ACE Inhibitory Peptide De Novo Design.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42679159/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.086701+00:00",
+    "authors": [
+      "Wanhao Sun",
+      "Xihe Yang",
+      "Xin Huang",
+      "Neng Xiong",
+      "Hongru Feng",
+      "Yuanjiang Pan"
+    ],
+    "summary": "Hypertension remains a global health burden, driving demand for effective therapies. Short bioactive peptides offer high specificity and low toxicity for antihypertensive treatment, but their discovery traditionally relies on low-throughput extraction from natural proteins. Here we introduce PepGate, a gated dual-path discrete diffusion framework for de novo ACE inhibitory peptide design. By fine-tuning a protein language model into a short-peptide-specific foundation model (PepGPT), we developed an integrated pipeline comprising a generative diffusion model (PepGen) and discriminators (PepClass and PepIC50). PepGate identified 30 promising peptides with a median IC50 of 4.79 μM. In vivo validation of the top candidate, YIPVPF, demonstrated sustained blood pressure reduction in SHRs (acute SBP reduction: 48 mmHg; chronic: 43 mmHg). Computational target-network analyses further suggested broader blood-pressure-related mechanisms beyond ACE inhibition. This pipeline shifts from empirical mining to precision digital design, offering a scalable tool for next-generation therapeutic peptide development.",
+    "doi": "10.1021/acs.jmedchem.6c01875",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42679159",
+      "journal": "Journal of medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.1021/acs.jmedchem.6c01875"
+  },
+  {
+    "kind": "article",
+    "title": "Bridging the AI Divide in Drug Discovery: Practical Lessons from Capacity Strengthening in Africa.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42679153/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.087148+00:00",
+    "authors": [
+      "Jason Hlozek",
+      "Miquel Duran-Frigola",
+      "Nicola Elliott-Wong",
+      "Rudolf Stander",
+      "Susan Winks",
+      "Gemma Turon",
+      "Kelly Chibale"
+    ],
+    "summary": "Artificial Intelligence (AI) has become an integral part of drug discovery in high-income countries. However, these advances have yet to be broadly adopted by research ecosystems in many low- and middle-income countries in Africa, where understudied infectious diseases, compounded by a growing noncommunicable disease burden, cause millions of deaths each year. Given adequate support and appropriate models AI could play a transformative role in under-resourced biomedical research ecosystems in Africa, democratizing drug discovery research. There is an urgent need to invest in building the critical infrastructure, tools, and capacity required. To drive this agenda forward, Ersilia, the H3D Centre, and H3D Foundation with support from the AI2050 program at Schmidt Sciences hosted a series of in-person and online workshops in Africa to grow the AI skills base for medicinal chemistry and enable adoption across regional research hubs. In this perspective article, we discuss the lessons learnt from this program, the fit-for-purpose open-source tools developed, and key considerations for future initiatives.",
+    "doi": "10.1021/acs.jmedchem.6c01429",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42679153",
+      "journal": "Journal of medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.1021/acs.jmedchem.6c01429"
+  },
+  {
+    "kind": "article",
+    "title": "Accelerate Your Science: Direct-to-Biology Strategies in Medicinal Chemistry.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42679148/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.087636+00:00",
+    "authors": [
+      "Kerstin Hiesinger",
+      "Stefan Knapp"
+    ],
+    "summary": "Direct-to-biology (D2B) is a powerful strategy that accelerates early drug discovery. It enables compounds to be synthesized in miniaturized formats and evaluated directly as crude reaction mixtures. This bypasses the need for purification during the initial design-make-test cycle. Advances in robust synthetic methodologies, automation, reaction miniaturization, and biological screening have transformed D2B from a proof-of-concept approach into a versatile medicinal chemistry platform. This platform is applicable to fragment optimization, covalent ligands, macrocycles, proteolysis-targeting chimeras (PROTACs), molecular glues, and cellular phenotypic screening. This perspective focuses on the synthetic transformations, assay technologies, and platform implementations that drive modern D2B workflows. It emphasizes reaction robustness, assay compatibility, and practical implementation. Analysis of the current literature revealed that D2B is more governed by reaction reliability than synthetic diversity. Amide coupling and click chemistry dominate reported workflows, while more complex transformations remain underexplored. We discuss the complementary strengths and limitations of biochemical, biophysical, and cellular readouts, identify current bottlenecks in reaction scope and data management, and highlight emerging opportunities arising from reaction miniaturization, machine learning, automated experimentation, and advanced synthetic methodologies. Rather than replacing conventional medicinal chemistry, D2B fundamentally shifts experimental effort from purification toward early biological validation and is poised to become an integral component of future medicinal chemistry workflows.",
+    "doi": "10.1021/acs.jmedchem.6c00996",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42679148",
+      "journal": "Journal of medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.1021/acs.jmedchem.6c00996"
+  },
+  {
+    "kind": "article",
+    "title": "NextTopDocker: A Large-Scale Docking-Power Benchmark Reveals Limitations of Current End-to-End Machine-Learning Docking and the Strength of Hybrid Rescoring.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42679147/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.088086+00:00",
+    "authors": [
+      "Cao-Minh Truong",
+      "Pedro J Ballester",
+      "Olivier Taboureau",
+      "Viet-Khoa Tran-Nguyen"
+    ],
+    "summary": "Predicting three-dimensional binding orientations of drug-like molecules remains challenging in structure-based drug design. Despite methodological advances, docking performance is often assessed on small and outdated benchmarks. We present \"NextTopDocker,\" a large, up-to-date, open-access data set for docking-power assessment comprising 14,038 training and 5201 test entries across 3173 unique protein targets, constructed from the Protein Data Bank. Developed with open-source tools, it includes crystallographic structures, Smina-generated docking poses, and ligand-similarity-aware training subsets. We benchmarked four state-of-the-art machine-learning (ML) docking frameworks (DeepDock, Interformer, SurfDock, and Uni-Mol Docking v.2) against classical (Smina) and hybrid baselines (GNINA 1.3 and logistic regression using Smina and GNINA 1.3 scores). Interformer alone matched the docking power of logistic regression on Smina poses, while the others showed dependence on downstream physics-based correction. Most raw ML-generated poses displayed steric clashes and/or implausible geometries, highlighting the need for physics-informed constraints in autonomous docking. \"NextTopDocker\" is available at https://github.com/caominhtr/NextTopDocker and https://zenodo.org/records/17492994.",
+    "doi": "10.1021/acs.jmedchem.6c01143",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "structure-based drug design"
+    ],
+    "extra": {
+      "pmid": "42679147",
+      "journal": "Journal of medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.1021/acs.jmedchem.6c01143"
+  },
+  {
+    "kind": "article",
+    "title": "Integrated multi-omics analyses identify an RAS-SLC11A2-associated molecular framework linking iron metabolism with PCOS-related cardiometabolic risk.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42678751/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.088587+00:00",
+    "authors": [
+      "Sihan Zhang",
+      "Yu Xu",
+      "Tingting Cao",
+      "Kun Wang",
+      "Lina Jia",
+      "Jianning Li"
+    ],
+    "summary": "PCOS is a common endocrine disorder with elevated cardiometabolic risk, yet the role of the renin-angiotensin system (RAS)-iron metabolism axis in this comorbidity remains unclear. We explored its underlying mechanisms and evaluated the therapeutic potential of gentiopicroside. Integrated multi-omics analyses combining transcriptomics, single-cell RNA sequencing, Mendelian randomization, machine learning, molecular docking, and in vitro functional assays were performed to identify shared molecular pathways and therapeutic targets across PCOS, hypertension, NAFLD, and T2DM. SLC11A2 was consistently dysregulated in PCOS transcriptomic datasets, and associated with iron metabolism, inflammatory response and oxidative stress pathways. Genetic analyses validated RAS-related regulation in hypertension susceptibility and revealed shared genetic architecture between PCOS and cardiometabolic traits. Network and single-cell analyses characterized SLC11A2-associated molecular patterns in disease-relevant cell types; machine learning identified disease-classifying molecular signatures. Gentiopicroside alleviated inflammatory and oxidative stress phenotypes, including reduced IL-6 expression and reactive oxygen species accumulation. This study defines an RAS-SLC11A2 molecular framework linking iron metabolism dysregulation to PCOS-related cardiometabolic risk, elucidating the mechanisms connecting ovarian dysfunction, inflammation, oxidative stress and hypertension, and supports gentiopicroside as a promising therapeutic candidate.",
+    "doi": "10.1080/10641963.2026.2711737",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42678751",
+      "journal": "Clinical and experimental hypertension (New York, N.Y. : 1993)"
+    },
+    "dedupe_key": "doi:10.1080/10641963.2026.2711737"
+  },
+  {
+    "kind": "article",
+    "title": "TRIZ-guided computational innovation framework for the automated generation and prioritization of novel azole-like antifungal candidates targeting Candida auris CYP51.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42678629/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.089153+00:00",
+    "authors": [
+      "Jamal M Khaled",
+      "Naiyf S Alharbi"
+    ],
+    "summary": "The rising incidence of antifungal resistance has underscored the need for novel strategies that can expedite the discovery of structurally diverse and optimized antifungal candidates. Conventional approaches to modify azoles are limited by narrow chemical space and problems related to resistance with the fungal CYP51 (Eeg11). The objective of this study was to develop a TRIZ-guided computational framework for unbiased generation, prioritization and evaluation of novel azole-like antifungal candidates targeting fungal CYP51. A set of TRIZ inventive principles was translated into medicinal chemistry-guided structural modification rules, to build a Python-based molecular design workflow. The workflow produced a virtual library of seventy azole-like candidates that were computationally filtered and ranked without manual candidate selection. The top-ranked candidates were subjected to a combined in silico pipeline involving SwissDock-based molecular docking against a heme-containing holo-Candida auris CYP51 model, ligand efficiency analysis, SwissADME pharmacokinetic prediction, RDKit-based quantitative estimate of drug-likeness (QED), ProTox-3.0 toxicity profiling, molecular interaction analysis, target-space profiling, and ASKCOS retrosynthetic assessment. The automated TRIZ-guided approach could generate azole-like scaffolds with chemical relevance for ready downstream evaluation. The most promising compound identified from the screening of the candidates was AZ-TRIZ-02, which showed better predicted binding affinity to CYP51 than fluconazole. Ligand efficiency analysis showed greater binding contribution per heavy atom, implying that the improved interaction was not due to increased molecular size. AZ-TRIZ-02 also showed good drug-like attributes, the pharmacokinetic properties were acceptable, and the preliminary toxicity profile was free of the hepatotoxicity, mutagenicity, carcinogenicity, and cytotoxicity alerts. Interaction analysis confirmed stable placement within the CYP51 catalytic pocket. Retrosynthetic assessment supported theoretical synthetic feasibility. The work shows the potential of TRIZ-guided innovation, cheminformatics and AI-assisted molecular design combined as a reproducible framework for antifungal lead discovery. Future studies will be necessary to confirm the translational potential of the identified candidate, including experimental synthesis and antifungal testing, CYP51 inhibition assays and overall safety assessment.",
+    "doi": "10.1007/s10822-026-00933-z",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "cheminformatics",
+      "drug-likeness"
+    ],
+    "extra": {
+      "pmid": "42678629",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00933-z"
+  },
+  {
+    "kind": "article",
+    "title": "Discovery of novel acridine based inhibitors of Bruton's tyrosine kinase (BTK) via pharmacophore modeling and machine learning-driven virtual screening followed by molecular dynamic studies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42678624/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.089923+00:00",
+    "authors": [
+      "Rand Shahin",
+      "Sawsan Jaafreh",
+      "Iman Mansi",
+      "Rufaida Al Zoubi",
+      "Bashaer Abu-Irmaileh",
+      "Yusra Azzam",
+      "Salma Azzam"
+    ],
+    "summary": "Bruton's Tyrosine Kinase (BTK) has been recently recognized as an important drug design target for treating B-cell malignancies. Unfortunately, drug resistance is making the treatment of B-cell malignancies challenging. In this study, we employed a dual machine learning drug design approach that involves two parallel branches: the QSAR-GFA modeling (Branch 1) which engages the development of an interpretable structure activity relationships, and the KNIME® based machine learning modeling (Branch 2) which aimed at achieving high predictive accuracy. Subsequently, six machine learning modules, encompassing; the Random Forest model, the XGBoost Model (XGBoost), the Naive Bayes model, the k-Nearest Neighbors model, and the Support Vector Machines model were applied. Later, experimental validation through cytotoxicity assays against Raji lymphoma and K562 leukemia cell lines revealed several compounds that are exhibiting notable biological activity. For instance, compounds 166 and 168 which are acridine based displayed IC50 values of 0.087 and 4.92 µM in Raji cells, respectively. Also, hits 166 and 168 were subjected to enzymatic evaluation by using a radiometric HotSpot™ kinase assay against BTK and yielded an IC50 values of 12.2 µM and 23.8 µM, respectively. Finally, a key outcome of this study is the identification of a chemically distinct and novel, acridine-based antiproliferative hit candidates with measurable BTK inhibitory activity.",
+    "doi": "10.1007/s10822-026-00912-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "virtual screening",
+      "QSAR"
+    ],
+    "extra": {
+      "pmid": "42678624",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00912-4"
+  },
+  {
+    "kind": "article",
+    "title": "Non-Covalent Active Mixing as a Viable Alternative to Covalent Conjugation for the Intracellular Delivery of Biologics: The Case of Glucarpidase.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42678616/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.090499+00:00",
+    "authors": [
+      "Yasaman Behzadipour",
+      "Shiva Hemmati"
+    ],
+    "summary": "Glucarpidase or carboxypeptidase G2 (CPG2) is an antidote for methotrexate (MTX) toxicity, but cannot penetrate cellular membranes. This study aims to clear intracellular MTX reservoirs and inhibit the MTX rebound effect. Therefore, two intracellular drug delivery approaches using the Tat-penetrating peptide, in the form of a Tat-CPG2 covalent conjugate and a Tat: CPG2 non-covalent complex, were compared. The native cpg2 gene from Pseudomonas sp. and the plasmid encoding tat-cpg2 conjugate were heterologously expressed in E. coli and purified using Ni-NTA. Tat: CPG2 complexes were formed by mixing 1 µM purified CPG2 with 0.5-80 µM Tat peptide. The HEK-293 cells were treated with both formulations to compare transduction efficiency by intracellular enzyme activity measurements at 320 nm and functional rescue of cells using 1-100 µM MTX. Molecular docking by ClusPro 2.0 revealed a distinct anionic patch on CPG2, facilitating electrostatic interactions through several salt bridges with the cationic Tat peptide. The highest transduction efficacy of the complex was observed at a Tat: CPG2 ratio of 20:1. While both formulations successfully delivered functional CPG2 into the cells, Tat-CPG2 conjugate displayed higher intracellular specific activity and retention, reaching approximately 2.6 ± 0.3 U/mg at 60 min compared with 1.9 ± 0.25 U/mg for the complex. In cytotoxicity assays, both forms protected HEK-293 cells from MTX; however, the conjugate provided statistically superior viability (94.8% vs. 68.5%) at high MTX concentrations (100 µM). While covalent conjugation remains the gold standard for maximal potency and stability, non-covalent complexation offers a rapid and cost-effective alternative for intracellular protein delivery.",
+    "doi": "10.1007/s12010-026-05900-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42678616",
+      "journal": "Applied biochemistry and biotechnology"
+    },
+    "dedupe_key": "doi:10.1007/s12010-026-05900-w"
+  },
+  {
+    "kind": "article",
+    "title": "Biocontrol potential of endophytic fungal-derived 3-Hydroxy-1,2-dimethyl-4 (1H)-pyridone against Venturia inaequalis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42678538/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.091001+00:00",
+    "authors": [
+      "Madeeha Naik",
+      "Zafir A Naik",
+      "Andleeb Amin",
+      "Gulzar A Rather",
+      "Suhail Ashraf",
+      "Syed Inam Ul Haq",
+      "Javeed Iqbal Ahmad Bhat",
+      "Zahoor A Bhat",
+      "Bhagyashree Dhekale",
+      "Sajad M Zargar",
+      "Alamgir A Dar",
+      "Khalid Z Masoodi"
+    ],
+    "summary": "Apple scab, caused by the pathogenic fungus Venturia inaequalis, is one of the most devastating diseases affecting apple production worldwide. Scab is primarily controlled through frequent applications of chemical fungicides, which are costly and pose significant risks to human health and the environment. In this context, the present investigation aimed to explore the diversity of endophytic fungi associated with apple cultivars, their antimicrobial potential and organic bioactive compounds, which could be used as bio-control agents against scab. 51 isolates of endophytic fungi were extracted from scab-resistant and susceptible apple cultivars. Their morphological and molecular examination resulted in the identification of 26 fungal strains. In vitro antifungal examination of identified fungal strains against V. inaequalis confirmed antagonistic activity of Fusarium oxysporum and F. solani. Bioactive compound responsible for antagonistic activity was purified and structurally characterized as 3-Hydroxy-1,2-dimethyl-4(1H)-pyridone (HDMP). Molecular docking studies of HDMP revealed favorable binding affinities toward the fungal target proteins, CYP51 and succinate dehydrogenase. Additionally, on-field application of F. oxysporum showed promising results in controlling apple scab. Overall, present study identified the antagonistic fungal strains from the apple cultivars and the bioactive compound HDMP, offering a sustainable and eco-friendly approach to apple scab management.",
+    "doi": "10.1007/s00203-026-05166-0",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42678538",
+      "journal": "Archives of microbiology"
+    },
+    "dedupe_key": "doi:10.1007/s00203-026-05166-0"
+  },
+  {
+    "kind": "article",
+    "title": "In silico design and In Vitro validation of WK15: a promising antimicrobial peptide for aquaculture applications.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42678468/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-01T23:32:25.091561+00:00",
+    "authors": [
+      "Yamini Lohumi",
+      "Raja Aadil Hussain Bhat",
+      "Ila Bisht",
+      "Amit Pande"
+    ],
+    "summary": "Antimicrobial peptides serve as an innate defence mechanism against various pathogens. They are being explored as potential alternatives to antibiotics and could play an important role in addressing antimicrobial resistance in aquaculture. In this study, a novel 15-mer antimicrobial peptide, WK15, was rationally designed from the alpha-subunit of rainbow trout haemoglobin. The peptide is amphipathic, exhibits strong membrane interactions, and has a net charge of + 5. Molecular docking showed that WK15 binds strongly to aerolysin, a virulence protein of Aeromonas sobria. Its antimicrobial activity was tested against a range of bacterial pathogens, including Staphylococcus epidermidis, Lactococcus garvieae, Staphylococcus aureus, Edwardsiella tarda, Aeromonas sobria, Yersinia ruckeri, and Aeromonas hydrophila. The peptide exhibited broad-spectrum antimicrobial activity, with minimum inhibitory concentration values ranging from 22.6 µM to 500 µM and minimum bactericidal concentration values from 45.2 µM to 700 µM. Additionally, WK15 remained stable and effective at higher temperatures and under elevated salt and serum levels. DNA-binding assays confirmed its concentration-dependent interaction with bacterial DNA in vitro, suggesting that DNA binding may represent a potential secondary mechanism. The peptide demonstrated negligible cytotoxicity toward the Epithelioma Papulosum Cyprini cell line and low haemolytic activity against fish erythrocytes, indicating favourable biocompatibility and reduced host-cell toxicity. Scanning electron microscopy analysis of S. aureus treated with WK15 revealed significant morphological alterations consistent with membrane-targeting activity. Collectively, these findings highlight that WK15 is a promising candidate with high stability and negligible host toxicity, underscoring its potential as an alternative to conventional antibiotics in aquaculture.",
+    "doi": "10.1007/s11274-026-05232-1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42678468",
+      "journal": "World journal of microbiology & biotechnology"
+    },
+    "dedupe_key": "doi:10.1007/s11274-026-05232-1"
   }
 ]
