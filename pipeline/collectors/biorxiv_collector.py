@@ -42,8 +42,17 @@ def collect(days_override: int | None = None) -> list[dict]:
         try:
             data = _fetch_page(base_url, start, end, cursor)
         except Exception as exc:  # noqa: BLE001
+            # Antes de 2026-08-31 isto era um `break` -- a falha ficava só no log e `meta.json`
+            # gravava `count: 0, error: null`. Medido nas 47 execuções de `pipeline/data/runs/`:
+            # aconteceu 3x de verdade (timeout em 21/08 09:41Z, HTTP 500 em 21/08 21:40Z,
+            # conexão recusada em 27/08 11:17Z) e NENHUMA das três gerou aviso, porque o alarme
+            # e a faixa do dashboard olham o campo `error`. Sobe como ColetaParcial: preserva o
+            # que as páginas anteriores já trouxeram e registra a falha honestamente.
             common.log(f"bioRxiv: falha na página cursor={cursor} -- {exc}")
-            break
+            raise common.ColetaParcial(
+                f"bioRxiv: falha na página cursor={cursor} após {total_seen} preprints varridos -- {exc}",
+                [it for it in items if it["url"]],
+            ) from exc
         messages = data.get("messages", [{}])
         status = messages[0].get("status", "") if messages else ""
         collection = data.get("collection", [])

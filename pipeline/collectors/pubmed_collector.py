@@ -120,8 +120,11 @@ def collect() -> list[dict]:
     try:
         pmids = _esearch(base_url, query, reldate_days, retmax)
     except Exception as exc:  # noqa: BLE001
+        # 2026-08-31: era `return []` -- a falha ficava so no log e `meta.json` gravava
+        # `count: 0, error: null` (zero silencioso, invisivel para o alarme e para a faixa
+        # do dashboard, que olham o campo `error`). Ver `common.ColetaParcial`.
         common.log(f"PubMed: esearch falhou -- {exc}")
-        return []
+        raise common.ColetaParcial(f"PubMed: esearch falhou -- {exc}") from exc
 
     if not pmids:
         common.log("PubMed: nenhum ID retornado.")

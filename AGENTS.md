@@ -1445,3 +1445,60 @@ privacidade tomada nesta mesma sessão). **Pendência real em aberto ao fim do d
 Nenhum comando git de escrita foi executado por este agente. Nenhuma credencial foi lida, inserida,
 impressa ou sequer vista (o valor do secret nunca apareceu em nenhum log consultado — só a máscara
 `***` do próprio GitHub).
+
+## Addendum — 2026-08-31: o descarte de coleta parcial NÃO era "por design" — era bug, e foi corrigido; a remoção de feed de 2026-08-26 tratou o sintoma
+
+Correção direta ao **Addendum de 2026-08-26** acima ("feed Nature Chemical Biology removido — o
+grupo inteiro zerava por causa de um único feed bloqueado"). Aquele addendum **acertou o mecanismo**
+— descreve com precisão que `_collect_section` levanta a exceção depois de colher, "descartando os
+itens dos feeds que funcionaram junto com o que falhou" — mas **errou a intenção**, e a conclusão
+que tirou disso propagou o problema por cinco dias. Ele afirma que a lógica "segue válida como está"
+e trata o descarte como decisão deliberada, coberta pelo lema "falha de feed é reportada, nunca
+engolida".
+
+**Não era deliberado.** O docstring da própria `_collect_section` promete o contrário, literalmente:
+
+> *"A exceção sobe depois de todos serem tentados — assim `meta.json` registra `error` de verdade em
+> vez de um `count: 0` silencioso, **e os feeds que funcionaram nesta rodada não são perdidos**."*
+
+Essa última cláusula nunca foi verdade. `run_all._run_collector` fazia `items = []` em **qualquer**
+exceção, então tudo o que a seção tinha colhido morria junto. Os dois objetivos ("reportar o erro" e
+"não perder o que funcionou") eram compatíveis — só não estavam implementados juntos.
+
+**Consequência real:** por isso remover feeds bloqueados um a um nunca resolveu. Em 2026-08-26
+removeu-se `nchembio.rss` e o grupo voltou a zerar na execução seguinte; concluiu-se então que o
+domínio inteiro bloqueava e a seção foi desativada (`enabled: false`). O bloqueio do `nature.com` é
+real — confirmado de novo hoje: HTTP 200 na primeira requisição de uma rajada, `Client Challenge`
+nas seguintes, ou seja, **por volume, não por feed** — mas sozinho ele custaria *o feed*, não *a
+seção*. O amplificador era nosso.
+
+**Correção aplicada nesta data:** `feed_collector.ColetaParcial`, exceção que sobe **carregando** os
+itens já colhidos (`.itens`); `_run_collector` os preserva e continua registrando o `error` em
+`meta.json` — sem reabrir a porta do "zero silencioso" fechada em 2026-08-18. Verificado com teste
+determinístico, sem rede (`fetch_feed` stubado, para isolar a propriedade sob teste), nos dois
+sentidos: 1 feed saudável + 1 bloqueado → **1 item preservado E erro registrado**; o comportamento
+antigo devolvia 0.
+
+**O beneficiário imediato não é o `nature`, e sim `newsletters`** — 5 feeds, `enabled: true`, 25
+itens no ciclo das 12:40 de hoje. Ela tinha exatamente a mesma exposição, sem que nenhum documento
+tivesse notado: um único feed em 403 apagava os 25, em silêncio.
+
+**O que NÃO foi feito, deliberadamente:** `nature_feeds.enabled` **continua `false`**. Essa flag
+está escalada como decisão do fundador na nota de estado do vault, e a própria rodada da manhã de
+hoje retirou a recomendação de reativar. Um agente revertê-la no mesmo dia seria a classe de desvio
+de escopo do incidente de 2026-08-19. Fica a **recomendação fundamentada**: com o descarte
+corrigido, "intermitente" deixou de significar "sempre zero" — cada janela em que qualquer feed
+responde passa a entrar na base, e o custo de reativar é ruído de `error` recorrente em troca de
+recuperar o `Nature Reviews Drug Discovery`, hoje perdido por inteiro. `Nature Chemical Biology` já
+foi **recolocado** na lista de feeds (a seção segue inerte enquanto a flag for `false`), então
+reativar é trocar uma linha.
+
+**Padrão para a próxima vez.** A empresa já nomeou "mecanismo documentado mas nunca escrito" e
+"checagem que roda mas verifica a propriedade errada" (item 14 do `risk-log`). Este é um terceiro:
+**um docstring que descreve a garantia certa e um chamador que a anula** — e três documentos
+(`sources.yaml`, a nota de estado, este `AGENTS.md`) passaram a repetir a garantia como fato
+observado. Regra prática: quando o diagnóstico exigir remover fontes repetidamente sem nunca
+resolver, suspeite do nosso lado antes da fonte.
+
+Nenhum comando git de escrita foi executado. Nenhuma credencial foi lida ou alterada. Nenhum número
+acima vem de memória — todos foram medidos nesta execução.

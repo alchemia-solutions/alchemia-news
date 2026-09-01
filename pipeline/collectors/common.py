@@ -65,6 +65,31 @@ def sanitize_local_path(text: str) -> str:
     return text.replace(str(REPO_ROOT), "<alchemia-news>")
 
 
+class ColetaParcial(RuntimeError):
+    """A fonte falhou, mas o que já foi coletado antes da falha precisa ser preservado.
+
+    Carrega os itens em `.itens` para que `run_all._run_collector` os aproveite em vez de
+    descartar. Nascida em `feed_collector` (2026-08-31) para a seção Nature; PROMOVIDA para cá
+    em 2026-08-31 (auditoria do setor) porque o mesmo defeito existia em todos os outros
+    coletores, e não só nos de feed.
+
+    O defeito, medido nas 47 execuções registradas em `pipeline/data/runs/`: quando a rede
+    falhava, os coletores capturavam a exceção, logavam, e devolviam lista vazia -- então
+    `meta.json` gravava `{"count": 0, "error": null}`. Um zero silencioso. Como o alarme
+    (`alchemia-bots/scripts/alert_pipeline_failure.py::_collector_errors`) e a faixa de estado
+    do dashboard olham justamente o campo `error`, **uma queda total de fonte era invisível
+    nos dois**. Ocorrências reais assim: bioRxiv 3x (timeout, HTTP 500, conexão recusada) e
+    arXiv 1x (HTTP 429). Nenhuma gerou aviso.
+
+    Levantar esta exceção NÃO muda o que é coletado -- os mesmos itens chegam ao `bucket` via
+    `.itens`. Muda só o relato: `error` deixa de ser `null` quando houve falha de verdade.
+    """
+
+    def __init__(self, mensagem: str, itens: list[dict] | None = None) -> None:
+        super().__init__(mensagem)
+        self.itens = list(itens or [])
+
+
 def load_yaml(name: str) -> Any:
     path = CONFIG_DIR / name
     with path.open("r", encoding="utf-8") as fh:

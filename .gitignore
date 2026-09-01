@@ -28,3 +28,7 @@ dashboard/.env.local
 # Snapshot de deploy gerado por scripts/copy-pipeline-data.js (prebuild) -- nunca fonte de
 # trabalho, sempre regenerado do pipeline/data e pipeline/config reais.
 dashboard/.pipeline-data/
+
+# Google Drive (a pasta da empresa e sincronizada) — nunca versionar
+desktop.ini
+**/desktop.ini

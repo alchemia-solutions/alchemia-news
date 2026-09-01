@@ -27,8 +27,11 @@ def collect() -> list[dict]:
     try:
         entries = common.crossref_works_by_prefix(base_url, doi_prefix, rows, days_back=window_days)
     except Exception as exc:  # noqa: BLE001
+        # 2026-08-31: era `return []` -- a falha ficava so no log e `meta.json` gravava
+        # `count: 0, error: null` (zero silencioso, invisivel para o alarme e para a faixa
+        # do dashboard, que olham o campo `error`). Ver `common.ColetaParcial`.
         common.log(f"ChemRxiv/Crossref: falhou -- {exc}")
-        return []
+        raise common.ColetaParcial(f"ChemRxiv/Crossref: falhou -- {exc}") from exc
 
     items: list[dict] = []
     for entry in entries:

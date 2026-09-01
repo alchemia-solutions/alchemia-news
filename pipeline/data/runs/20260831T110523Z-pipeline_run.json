@@ -1,0 +1,60 @@
+{
+  "last_run_started": "2026-08-31T11:02:31.698567+00:00",
+  "last_run_finished": "2026-08-31T11:05:23.944454+00:00",
+  "duration_seconds": 172.2,
+  "collectors": {
+    "pubmed": {
+      "count": 60,
+      "seconds": 4.7,
+      "error": null
+    },
+    "biorxiv": {
+      "count": 28,
+      "seconds": 88.7,
+      "error": null
+    },
+    "arxiv": {
+      "count": 60,
+      "seconds": 27.1,
+      "error": null
+    },
+    "chemrxiv": {
+      "count": 9,
+      "seconds": 1.1,
+      "error": null
+    },
+    "scielo": {
+      "count": 2,
+      "seconds": 1.5,
+      "error": null
+    },
+    "nature": {
+      "count": 0,
+      "seconds": 0.0,
+      "error": null
+    },
+    "newsletters": {
+      "count": 25,
+      "seconds": 23.1,
+      "error": null
+    },
+    "googlenews": {
+      "count": 848,
+      "seconds": 11.9,
+      "error": null
+    },
+    "companies": {
+      "count": 998,
+      "seconds": 13.9,
+      "error": null
+    }
+  },
+  "totals": {
+    "articles": 1012,
+    "news": 2601,
+    "companies_activity": 1440,
+    "new_articles_this_run": 97,
+    "new_news_this_run": 122,
+    "new_companies_activity_this_run": 88
+  }
+}

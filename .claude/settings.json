@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(git push *)",
+      "Bash(git remote add *)",
+      "Bash(git remote set-url *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -f *)",
+      "Bash(git branch -D *)",
+      "Bash(rm -rf *)"
+    ]
+  },
+  "_comment": "Mirror de alchemia-ai/alchemia-agents/.claude/settings.json -- .claude/settings.json nao herda de diretorios ancestrais, por isso cada projeto Cowork de setor recebe sua propria copia. Ver alchemia-ai/alchemia-agents/docs/specs/2026-07-23-dotclaude-conversion.md."
+}

@@ -48,13 +48,18 @@ def _run_collector(name: str, fn, *args, **kwargs) -> tuple[list[dict], float, s
     error = None
     try:
         items = fn(*args, **kwargs)
-    except Exception:  # noqa: BLE001
+    except Exception as exc:  # noqa: BLE001
         # Sanitizado antes de logar/retornar -- este `error` acaba em meta.json/
         # pipeline/data/runs/*.json, que são commitados de propósito (auditoria), e o
         # repositório é público. Ver common.sanitize_local_path.
         error = common.sanitize_local_path(traceback.format_exc(limit=4))
         common.log(f"[{name}] FALHOU:\n{error}")
-        items = []
+        # Coleta PARCIAL de uma seção de feeds (feed_collector.ColetaParcial) carrega os itens
+        # dos feeds que responderam. Zerar aqui descartava a colheita boa junto com a ruim --
+        # era a causa estrutural dos "count: 0" da seção Nature. Ver ColetaParcial.
+        items = list(getattr(exc, "itens", []))
+        if items:
+            common.log(f"[{name}] parcial: {len(items)} item(ns) preservados dos feeds que responderam")
     elapsed = time.time() - start
     common.log(f"[{name}] {len(items)} itens em {elapsed:.1f}s")
     return items, elapsed, error

@@ -34,8 +34,11 @@ def collect() -> list[dict]:
     try:
         raw = common.http_get(url, timeout=25)
     except Exception as exc:  # noqa: BLE001
+        # 2026-08-31: era `return []` -- a falha ficava so no log e `meta.json` gravava
+        # `count: 0, error: null` (zero silencioso, invisivel para o alarme e para a faixa
+        # do dashboard, que olham o campo `error`). Ver `common.ColetaParcial`.
         common.log(f"arXiv: falhou -- {exc}")
-        return []
+        raise common.ColetaParcial(f"arXiv: falhou -- {exc}") from exc
 
     try:
         root = ET.fromstring(raw)

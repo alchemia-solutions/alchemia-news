@@ -66,6 +66,32 @@ nature_feeds:
   # execução seguinte. Não é mais "um feed ruim", é o domínio nature.com bloqueando a seção
   # inteira. Reativar só depois de confirmar manualmente que os feeds voltam HTTP 200 de
   # verdade (não presumir). Ver AGENTS.md deste setor, addendum 2026-08-26.
+  #
+  # 2026-08-31 (rotina do Baker, 12:50) -- a seção CONTINUA `enabled: false`, mas a JUSTIFICATIVA
+  # acima mudou, e isso muda a recomendação. Duas coisas foram medidas hoje:
+  #
+  # 1. O bloqueio é REAL e por VOLUME (não por feed), como a rodada da manhã já tinha concluído
+  #    com 3 rajadas. Confirmado de novo: às 15:54Z os 3 feeds responderam 200 (8 itens cada);
+  #    às 15:57Z, nrd e nchembio já devolviam Client Challenge. Um "200 isolado" NÃO é sinal de
+  #    liberação -- é o primeiro request da rajada. Não refazer esse teste em rajada: ele mesmo
+  #    queima a cota do host.
+  # 2. A premissa que motivou desativar a seção estava ERRADA. O comentário de 2026-08-26 (e a
+  #    nota de estado no vault) registram que "um feed derruba o grupo inteiro" seria
+  #    "comportamento correto e deliberado". Não era: `_collect_section` subia a exceção DEPOIS
+  #    de coletar -- prometendo no próprio docstring que "os feeds que funcionaram não são
+  #    perdidos" -- mas `_run_collector` zerava `items` em qualquer exceção e descartava tudo.
+  #    Bug nosso, corrigido nesta data via `feed_collector.ColetaParcial` (verificado com teste
+  #    determinístico: 1 feed saudável + 1 bloqueado => 1 item preservado E erro registrado).
+  #
+  # RECOMENDAÇÃO AO FUNDADOR (não executada por agente -- esta flag está escalada como decisão
+  # sua na nota de estado do vault, e assim permanece): com o descarte corrigido, reativar deixou
+  # de ser aposta. Antes, "intermitente" equivalia a "sempre zero", porque um feed bloqueado
+  # apagava a colheita dos outros; agora cada janela em que QUALQUER feed responde entra de fato
+  # na base, e os bloqueios aparecem como `error` honesto em meta.json. O custo de reativar é
+  # ruído de erro recorrente no meta.json enquanto durar o bloqueio; o ganho é recuperar o
+  # `Nature Reviews Drug Discovery`, a fonte mais produtiva do grupo (8/8 relevantes por
+  # execução) e hoje perdida por inteiro. Para reativar, basta trocar a linha abaixo para
+  # `enabled: true` -- nada mais precisa mudar.
   enabled: false
   delay_seconds: 4
   feeds:
@@ -80,6 +106,11 @@ nature_feeds:
     # persistente (Client Challenge), zerava o grupo inteiro por causa da falha-nunca-engolida
     # de _collect_section (um feed falhando descarta os itens dos outros dois também). Ver
     # AGENTS.md deste setor, addendum 2026-08-26.
+    # RECOLOCADA em 2026-08-31: respondeu HTTP 200 com 8 itens no teste ao vivo desta data, e o
+    # "zerava o grupo inteiro" acima era o bug de descarte de coleta parcial, agora corrigido.
+    # Temática do nicho (biologia química) -- entra sem filtro, como o primeiro.
+    - name: "Nature Chemical Biology"
+      url: "https://www.nature.com/nchembio.rss"
   filter_relevance: false # padrão da seção: o primeiro já é temático do nicho
 
 # Newsletters e veículos editoriais do nicho — adicionados 2026-08-18 a pedido do fundador.

@@ -109,6 +109,14 @@ class FeedIndisponivel(RuntimeError):
     """O endpoint respondeu, mas não com um feed — bloqueio anti-bot, HTML, ou corpo vazio."""
 
 
+# `ColetaParcial` nasceu aqui em 2026-08-31 (para a seção Nature) e no mesmo dia foi PROMOVIDA
+# para `common`, ao se medir que o mesmo zero-silencioso existia em bioRxiv/arXiv/ChemRxiv/
+# SciELO/PubMed — ver o docstring dela em `common.py`. Este alias mantém válido todo código e
+# toda documentação que a chamam de `feed_collector.ColetaParcial`: é a MESMA classe, não uma
+# cópia, então `isinstance` continua correto nos dois nomes.
+ColetaParcial = common.ColetaParcial
+
+
 def fetch_feed(url: str) -> list[dict]:
     raw = common.http_get(url, timeout=20)
 
@@ -238,7 +246,12 @@ def _collect_section(secao: str, source_type_padrao: str) -> list[dict]:
         )
 
     if falhas:
-        raise RuntimeError(f"{len(falhas)}/{len(feeds)} feed(s) de '{secao}' falharam: " + " | ".join(falhas))
+        # Sobe COM os itens já coletados: o erro precisa aparecer em meta.json (nunca um zero
+        # silencioso), mas os feeds que responderam não podem ser perdidos por causa dos que não.
+        raise ColetaParcial(
+            f"{len(falhas)}/{len(feeds)} feed(s) de '{secao}' falharam: " + " | ".join(falhas),
+            items,
+        )
     return items
 
 
