@@ -37026,5 +37026,578 @@
       "journal": "International immunopharmacology"
     },
     "dedupe_key": "doi:10.1016/j.intimp.2026.117337"
+  },
+  {
+    "kind": "article",
+    "title": "Role of arbutin and acetoside against Parkinson's disease.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683979/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.157269+00:00",
+    "authors": [
+      "Anish Singh",
+      "Diksha Dalal",
+      "Lovedeep Singh"
+    ],
+    "summary": "Parkinson's disease (PD) is an incurable progressive neurodegenerative condition, which is characterized by a selective loss of dopaminergic neurons in the substantia nigra and subsequent development of motor impairment along with a non-motoric syndrome. It has a multifactorial etiopathogenesis, including oxidative stress, mitochondrial failure, lasting neuroinflammation, and α-synuclein aggregation. Interestingly, acetoside and arbutin are naturally occurring phenolic glycosides that have gained increased attention in recent times due to their strong antioxidant, anti-inflammatory, and neuroprotective capabilities. These agents have been empirically demonstrated to reduce reactive oxygen species, energize endogenous antioxidant defenses such as superoxide dismutase, catalase (CAT), glutathione, maintain mitochondrial integrity, and salvage adenosine triphosphate (ATP) generation. Furthermore, they inhibit pro-inflammatory mediators such as tumor necrosis factor-alpha (TNF-α), prevent the activation of caspase-3 and lipid peroxidation, regulate AMP-activated protein kinase and p62 signaling pathways, and alleviate the loss of dopaminergic neurons, which results in improved motor performance. Computational docking reports have revealed positive results between arbutin, acetoside, and key targets of PD (e.g., acetylcholinesterase [AChE], TNF-α, caspase-3, CAT, dopamine-associated proteins, and α-synuclein). Arbutin showed binding energies of - 7.6 kcal/mol (AChE), -7.0 kcal/mol (caspase-3), -9.0 kcal/mol (CAT), -8.8 kcal/mol (TNF-α), and - 7.0 kcal/mol (dopaminergic targets). In contrast, acetoside showed stronger interactions with corresponding targets, exhibiting binding energies of - 8.7 kcal/mol, -8.9 kcal/mol, -9.7 kcal/mol, and - 8.9 kcal/mol. Collectively, these findings highlight phenolic glycosides as promising multitarget neuroprotective candidates for PD.",
+    "doi": "10.4103/ijp.ijp_68_26",
+    "company_slug": null,
+    "keywords_matched": [],
+    "extra": {
+      "pmid": "42683979",
+      "journal": "Indian journal of pharmacology"
+    },
+    "dedupe_key": "doi:10.4103/ijp.ijp_68_26"
+  },
+  {
+    "kind": "article",
+    "title": "Rational drug design, synthetic and artificial intelligence approaches for bioactive heterocycles: advances and perspectives.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683969/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.157833+00:00",
+    "authors": [
+      "Debajit Dewan",
+      "Bhupender Nehra",
+      "Rajarshi Nath",
+      "Sumel Ashique",
+      "Md Jawaid Akhtar",
+      "Ekta Khare",
+      "Sheetu Wadhwa",
+      "Sabina Yasmin",
+      "Biplab Debnath",
+      "Md Yousuf Ansari"
+    ],
+    "summary": "Heterocyclic scaffolds are vital to medicinal chemistry due to their versatility, diversity, and ability to target various biological molecules. This review covers advances in designing and synthesizing bioactive heterocycles, highlighting structure-based drug design (SBDD) and ligand-based drug design (LBDD) approaches with computational modeling and Artificial Intelligence (AI) to find potent, selective molecules with good Absorption, Distribution, Metabolism, Excretion and Toxicity (ADMET) profiles. Case studies show the successful development of heterocyclic drugs for cancer, microbial infections, inflammation, viral infections, and Central Nervous System (CNS) disorders. Synthetic methods have evolved from classical electrophilic/nucleophilic reactions to modern techniques like multicomponent reactions, microwave synthesis, metal catalysis, and green chemistry, making frameworks more accessible. The review discusses Quantitative Structure-Activity Relationship (QSAR) studies for molecular optimization. Challenges like synthetic complexity and resistance remain, but emerging trends like machine learning, omics, and enzyme synthesis offer new opportunities. Ultimately, combining design principles and innovative methods can speed up drug discovery and enable sustainable, personalized therapies with heterocyclic pharmacophores.",
+    "doi": "10.1080/17568919.2026.2726188",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug design",
+      "ADMET",
+      "QSAR",
+      "structure-based drug design"
+    ],
+    "extra": {
+      "pmid": "42683969",
+      "journal": "Future medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.1080/17568919.2026.2726188"
+  },
+  {
+    "kind": "article",
+    "title": "Mechanistic understanding and peptide ingredient screening for type III collagen via biological knowledge graph and molecular docking.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683869/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.158774+00:00",
+    "authors": [
+      "Shanshan Zang",
+      "Zhiqiang Chen",
+      "Jie Qiu",
+      "Yao Gu",
+      "Nan Li",
+      "Liang Zhang",
+      "Wanze Wang",
+      "Xinxin Chen",
+      "Yuan Ma",
+      "Amiao Pan",
+      "Wei Lan",
+      "Lun Yu",
+      "Meijie Wang",
+      "Shaohua Wang"
+    ],
+    "summary": "Type III collagen plays a key role in maintaining skin elasticity and dermal resilience, yet its decline is associated with visible signs of skin ageing. This study aimed to establish a data-driven approach to identify cosmetic peptides with potential to enhance type III collagen through multi-target regulation. A combined strategy integrating natural language processing (NLP) and knowledge graph (KG) analysis was applied to systematically identify targets associated with type III collagen regulation. Peptides listed in the Inventory of Existing Cosmetic Ingredients in China (IECIC) were screened based on structure-based molecular docking with multiple targets. Candidate peptides were selected for experimental evaluation using human dermal fibroblasts and ex vivo skin models. By integrating large-scale literature mining with NLP and KG-based gene interaction analysis, we constructed a comprehensive network of genes involved in type III collagen regulation, covering processes such as collagen synthesis, degradation and extracellular matrix (ECM) organization. Based on this network, candidate peptides with predicted multi-target interactions were prioritized through structure-based screening. In vitro, four selected peptides-palmitoyl tetrapeptide-7, acetyl hexapeptide-8, palmitoyl tripeptide-1 and palmitoyl tetrapeptide-10-significantly increased type III collagen levels following UV exposure, without detectable cytotoxicity. The combination of these peptides exhibited a greater effect than individual components. In ex vivo skin tissues, the peptide combination further enhanced the levels of type I, III and IV collagens, indicating a broader modulatory effect on dermal ECM components. This study provides a practical framework for the identification of cosmetic peptides targeting collagen regulation. The findings support a multi-target approach and suggest that peptide combinations may enhance collagen-related outcomes relevant to skin ageing applications.",
+    "doi": "10.1111/ics.70140",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42683869",
+      "journal": "International journal of cosmetic science"
+    },
+    "dedupe_key": "doi:10.1111/ics.70140"
+  },
+  {
+    "kind": "article",
+    "title": "Phytochemical profiling of Olea europaea subsp. cuspidata aerial parts using LC-DAD-QToF: cholinesterase inhibition and molecular docking insights into potential Alzheimer's disease targets.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683825/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.159394+00:00",
+    "authors": [
+      "Riham A El-Shiekh",
+      "Asmaa A Mandour",
+      "Essam Abdel-Sattar",
+      "Nermeen B Ali"
+    ],
+    "summary": "Olea europaea subsp. cuspidata is traditionally used in African medicine, but its phytochemical composition and cholinesterase inhibitory activity have not been comprehensively investigated. This study evaluated the cholinesterase inhibitory activity and phytochemical profile of the methanolic extract of O. europaea aerial parts, integrating in vitro assays with LC-DAD-QToF-MS characterisation and molecular modelling. We used the Ellman assay to measure cholinesterase inhibition and LC-DAD-QToF-MS for metabolite profiling, while molecular docking and dynamics simulations helped us understand how specific metabolites interact with human acetylcholinesterase (AChE) and butyrylcholinesterase (BChE). The extract inhibited AChE (IC50 = 15.99 ± 1.62 μg/mL) to a greater extent than BChE (IC50 = 22.62 ± 2.20 μg/mL). LC-DAD-QToF-MS allowed the tentative identification of 65 metabolites, comprising iridoids, phenylethanoids, flavonoids, phenolic acids, terpenoids, fatty acids, and one alkaloid. Computational predictions support potential interactions only between constituents within the enzyme active sites but do not establish biological activity. These results offer the first detailed phytochemical profile of the aerial parts of O. europaea and confirm its in vitro cholinesterase inhibitory activity. Bioactivity-guided isolation and in vivo studies are required to pinpoint the metabolites responsible for the observed effects and to establish their therapeutic relevance.",
+    "doi": "10.1080/14786419.2026.2727544",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42683825",
+      "journal": "Natural product research"
+    },
+    "dedupe_key": "doi:10.1080/14786419.2026.2727544"
+  },
+  {
+    "kind": "article",
+    "title": "Ethical Considerations on Artificial Intelligence, Health and Health Care. All That Glisters Is Not Gold.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683593/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.159948+00:00",
+    "authors": [
+      "Piero Portincasa",
+      "Mohamad Khalil",
+      "Pierfrancesco Novielli",
+      "Sabina Tangaro"
+    ],
+    "summary": "Artificial intelligence (AI) is transforming global health care through innovations in deep learning, generative models and agentic AI systems. Traditional reductionist approaches to complex pathophysiological pathways fail to capture the true complexity of disease, motivating the adoption of network medicine (NM), which models biological systems as dynamic, interconnected networks. When combined with AI, NM enables integration of multiomic data and better characterizes disease mechanisms to guide precision therapies. Nevertheless, the rapid diffusion of AI in health care also raises profound ethical, regulatory and social challenges, since only a small fraction of AI tools have achieved routine clinical use, often due to limited generalizability, opaque algorithms and workflow incompatibility. Key strategies in this scenario are explainable AI (XAI) and counterfactual reasoning, which enhance transparency, accountability and fairness. These methods allow clinicians and regulators to interpret model decisions, identify biases and ensure human oversight in high-stakes contexts. Ethical frameworks such as the European Commission's Assessment List for Trustworthy AI (ALTAI) operationalize these goals through auditable requirements spanning transparency, fairness, privacy and societal well-being. Yet, challenges persist, including algorithmic bias, data inequity and variable regulatory standards across regions. Machine learning and generative AI hold significant promise for improving diagnostics, drug discovery and population health, but their deployment must be guided by fairness, transparency and human rights principles. Indeed, inadequate governance risks can impact the already existing health inequalities. For these reasons, the convergence of AI, NM and telemedicine requires a co-evolutionary model which must be rooted in ethical design, rigorous validation and equitable global implementation. Only by aligning technical innovation with sound ethical frameworks and explainability standards will AI become a highly transformative yet trustworthy force in the field of precision and public health.",
+    "doi": "10.1111/eci.70254",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42683593",
+      "journal": "European journal of clinical investigation"
+    },
+    "dedupe_key": "doi:10.1111/eci.70254"
+  },
+  {
+    "kind": "article",
+    "title": "Antibody framework engineering enables augmented cytokine receptor signaling capacities of bispecific single domain antibody-based IL-21 mimetics.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683527/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.160539+00:00",
+    "authors": [
+      "Britta Lipinski",
+      "Laura Unmuth",
+      "Thi Hong Hue Tran",
+      "Jakob Harwood",
+      "Paul Arras",
+      "Stefan Becker",
+      "Julia Harwardt",
+      "Enrico Guarnera",
+      "Laura Helming",
+      "Rinat Zaynagetdinov",
+      "Davide Bertoldo",
+      "Arvind Rajpal",
+      "Desislava Elter",
+      "Lukas Pekar",
+      "Andreas Evers",
+      "Stefan Zielonka"
+    ],
+    "summary": "In this work, we developed bispecific antibody (bsAb)-derived surrogate agonists which mimic the function of IL-21 by targeting the IL-21 receptor composed of IL-21 R (CD360) and IL-2 Rγ (CD132). For this, antigen-specific VHHs (variable domains of the heavy chain of heavy-chain-only antibodies) were obtained by immunization of camelids and isolated using yeast surface display. Combinatorial reformatting of IL-21 R-specific single‑domain antibodies (sdAbs) and IL-2 Rγ-targeting paratopes into a monovalent bispecific antibody architecture enabled the identification of IL-21 mimetics displaying attenuated capacities in triggering STAT3 phosphorylation compared to the wild-type cytokine as demonstrated in NK-92 cells as well as peripheral blood mononuclear cells (PBMCs). Moreover, by applying different protein engineering strategies, we demonstrate that agonism capacities of the generated IL-21 mimetics, such as pSTAT3 induction or Granzyme B expression of cytotoxic T cells, can be significantly optimized. For this, framework mutations were introduced to engineer VHH:VHH interactions within the bispecific sdAb-Fc fusion geometry for a more rigid receptor targeting. Furthermore, we show that antibody format engineering, in which the VHHs were arranged in an IgG-like scaffold that replaces the conventional IgG VH and VL domains with the corresponding VHHs, combined with rigidifying mutations, enables IL-21 R agonism comparable to the wild-type cytokine. Taken together, these findings show that IL-21 receptor agonism can be substantially optimized by adapting the spatial orientation of paratopes targeting both receptor subunits via forced dimerization, without altering paratope valencies.",
+    "doi": "10.1080/19420862.2026.2726042",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein engineering"
+    ],
+    "extra": {
+      "pmid": "42683527",
+      "journal": "mAbs"
+    },
+    "dedupe_key": "doi:10.1080/19420862.2026.2726042"
+  },
+  {
+    "kind": "article",
+    "title": "Transcending Nano-Encapsulation: Engineering Campesterol-Loaded Shellac-PLGA Nanosystem for Breast Cancer Therapy Supported by DFT and Molecular Docking.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683369/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.161061+00:00",
+    "authors": [
+      "Hamid Saeed Shah",
+      "Samia Ghani",
+      "Faisal Usman",
+      "Tahir Ali Chohan",
+      "Nida Naeem",
+      "Riffat Khan",
+      "Hassan Ahmad",
+      "Usman Nasrullah",
+      "Seema Zargar",
+      "Tanveer A Wani"
+    ],
+    "summary": "This study aimed to fabricate and characterize shellac (SH)-PLGA coated plant-derived phytosterol, campesterol (CS) nanoparticles (NPs) for breast cancer therapy. The nanoparticles were prepared using a nanoprecipitation technique and exhibited a mean size of 120.13 ± 10.29 nm, with PDI = 0.0461 ± 0.0028, and surface charge = -29.35 ± 6.07 mV. In vitro percent cell death screening revealed potent anticancer activity of CS-SH-PLGA-NPs against triple-negative breast cancer cells (MDA-MB-231), yielding an IC5 0 of 13.57 ± 6.721 µM, significantly lower than pure CS (IC5 0 = 25.79 ± 5.813 µM). Flow cytometry and genotoxic assays further confirmed their apoptotic potential. In vivo evaluation in five groups of albino female mice demonstrated an enhanced tumor regression rate (3.76 ± 0.81%) compared with pure CS (3.17 ± 0.42%). Molecular docking revealed stronger binding affinity of PLGA (CScore = 1.23) with CS than SH (CScore = 0.88), with interactions at key residues of CDK2, EGFR, and Caspase-3. The electronic reactivity predicted by DFT was consistent with the overall computational findings. Taken together, these findings indicate that CS-SH-PLGA-NPs may serve as a promising nanoplatform for the treatment of breast cancer.",
+    "doi": "10.2147/IJN.S614754",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42683369",
+      "journal": "International journal of nanomedicine"
+    },
+    "dedupe_key": "doi:10.2147/ijn.s614754"
+  },
+  {
+    "kind": "article",
+    "title": "Synthesis, X-ray structures and biological evaluation of novel α-aminophosphonate derivatives as anti-inflammatory and antioxidant agents: an integrated in vitro and in silico study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683270/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.161670+00:00",
+    "authors": [
+      "Zoubir Douib",
+      "Hacene K'tir",
+      "Haiet Douib",
+      "Zinelaabidine Cheraiet",
+      "Taha Khaldi",
+      "Latifa Khattabi",
+      "Brahim Harkati",
+      "Vincent Dorcet",
+      "Fabrice Pointillart"
+    ],
+    "summary": "In the field of medicinal chemistry, the design of small molecules is acknowledged as an effective strategy. This study may contribute to the global fight against inflammatory diseases by focusing on the synthesis of novel α-aminophosphonate derivatives incorporating para-aminobenzoic acid (PABA) and benzocaine moieties and evaluating their anti-inflammatory and antioxidant activities. Compounds 1a-1i, 2a-2g and 3a-3f were efficiently prepared via a one-pot Kabachnik-Fields reaction in moderate to high yields. Structural characterization was achieved using spectroscopic techniques and single-crystal X-ray diffraction. Antioxidant activity, assessed by ABTS (<0.1 mM) and phenanthroline (<0.5 mM) assays, revealed that several derivatives exhibited significant radical scavenging and reducing power, particularly those bearing electron-donating groups. In vitro anti-inflammatory evaluation using the bovine serum albumin denaturation assay identified compounds 1f, 3f, 2g and 1i as the most active derivatives, with compound 1f (97.63% ± 0.99%) showing activity comparable to that of diclofenac (98.70% ± 0.15%). Toxicity tests on Tenebrio molitor larvae indicated low toxicity at effective concentrations. Compound 1f was only moderately toxic (50% of mortality rate) at the highest concentration tested (4 mM), and no mortality was observed at lower doses. DFT calculations provided insights into the electronic and physicochemical properties of the synthesized compounds. Molecular docking and molecular dynamics simulations generated hypotheses regarding their possible interactions with the COX-2 binding site, while ADMET analyses predicted the potentially acceptable pharmacokinetic profiles of several derivatives. However, these computational findings do not demonstrate direct COX-2 inhibition, target engagement, or selectivity. When considered alongside the preliminary experimental results, they support prioritizing compound 1f for further experimental evaluation.",
+    "doi": "10.1039/d6ra05475g",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42683270",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra05475g"
+  },
+  {
+    "kind": "article",
+    "title": "Sanguinarine chloride inducing ferroptosis and downregulating GPX4 expression in liver cancer: An integrated in silico, in vitro and in vivo study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683259/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.162195+00:00",
+    "authors": [
+      "Wen Ouyang",
+      "Jianxin Gao",
+      "Jing Liu",
+      "Lulu Qin",
+      "Bang Liu",
+      "Ying He",
+      "Dai Zhou"
+    ],
+    "summary": "Ferroptosis, an iron-dependent form of regulated cell death driven by excessive lipid peroxidation, has been increasingly implicated in the development and progression of liver cancer. Despite sanguinarine chloride (SC) exhibiting antitumor activity in a number of cancer models, whether it modulates ferroptosis in liver cancer remains unclear. The present study systematically investigated the ferroptosis-inducing effects of SC and the underlying molecular mechanisms in liver cancer. Molecular docking and molecular dynamics simulations suggested that SC interacts with glutathione peroxidase 4 (GPX4) with favorable affinity and forms a stable complex. Functional assays showed that SC significantly inhibited proliferation and reduced the viability of HepG2 and Huh7 cells. Mechanistically, SC markedly decreased GPX4 protein expression, leading to the accumulation of lipid reactive oxygen species and malondialdehyde, together with characteristic mitochondrial changes associated with ferroptosis, including increased membrane density and loss of cristae. SC-induced cell death was partially rescued by the ferroptosis inhibitors ferrostatin-1 and deferoxamine, further supporting the involvement of ferroptosis. Consistently, in a xenograft model, SC suppressed GPX4 expression, promoted ferroptosis and significantly inhibited tumor growth. Collectively, these findings indicate that SC exerts antitumor effects in liver cancer, at least in part, by inducing ferroptosis through GPX4 downregulation, supporting further investigation of SC as a potential therapeutic candidate.",
+    "doi": "10.3892/etm.2026.13266",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42683259",
+      "journal": "Experimental and therapeutic medicine"
+    },
+    "dedupe_key": "doi:10.3892/etm.2026.13266"
+  },
+  {
+    "kind": "article",
+    "title": "Virtual screening and MD simulation-guided discovery of CDK12-IN-3, a potent ALK inhibitor suppressing neuroblastoma growth in vitro and in vivo.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683163/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.162769+00:00",
+    "authors": [
+      "Tianyi Liu",
+      "Xuejiao Hu",
+      "Wenxin Yan",
+      "Hongli Yin",
+      "Zhong Li"
+    ],
+    "summary": "Neuroblastoma (NB) is the most common extracranial malignant solid tumor in children, and aberrant activation of anaplastic lymphoma kinase (ALK)-driven primarily by hotspot mutations F1174L and R1275Q-represents a core oncogenic driver of high-risk and relapsed NB. Clinical ALK inhibitors are frequently hampered by acquired drug resistance and off-target toxicity, highlighting an unmet need for novel selective ALK inhibitors for NB treatment. Here, we employed a drug repurposing strategy integrating virtual screening, multi-dimensional molecular dynamics (MD) simulations, steered MD, and umbrella sampling to screen 7,322 compounds for novel ALK inhibitory activity, followed by systematic in vitro and in vivo validation. We identified CDK12-IN-3 (C18) as a high-affinity ligand for wild-type ALK and both NB-associated ALK mutants (F1174L, R1275Q), with favorable binding selectivity over 10 homologous tyrosine kinases. In vitro, CDK12-IN-3 exerted nanomolar-level antiproliferative, anti-clonogenic, and anti-migratory effects across three genetically distinct NB cell lines (SH-SY5Y, SK-N-BE (2), IMR-32), while showing no significant cytotoxicity in ALK-negative HEK293T normal cells even at 20 μM, demonstrating a wide in vitro safety window. Mechanistic studies confirmed that CDK12-IN-3 directly bound ALK (KD = 5.33 μM by surface plasmon resonance), downregulated ALK expression, suppressed the downstream PI3K/AKT/mTOR signaling pathway, and induced NB cell apoptosis. In vivo, oral administration of CDK12-IN-3 (50 mg/kg) significantly suppressed NB xenograft tumor growth in nude mice with no observable systemic toxicity. Collectively, our findings validate CDK12-IN-3 as a novel selective ALK inhibitor with potent anti-NB activity, providing a promising lead compound and an efficient dynamic simulation-guided drug repurposing paradigm for overcoming ALK inhibitor resistance in high-risk NB.",
+    "doi": "10.3389/fchem.2026.1870293",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular dynamics",
+      "drug repurposing"
+    ],
+    "extra": {
+      "pmid": "42683163",
+      "journal": "Frontiers in chemistry"
+    },
+    "dedupe_key": "doi:10.3389/fchem.2026.1870293"
+  },
+  {
+    "kind": "article",
+    "title": "Genomic exploration and in silico prioritization of putative COX-2-targeting metabolites from Streptomyces sp. VITGV156 (MCC 4965).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42683057/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.163345+00:00",
+    "authors": [
+      "Veilumuthu Pattapulavar",
+      "Saranyadevi Subburaj",
+      "Sathiyabama Ramanujam",
+      "Priyadharshini Suresh Babu",
+      "Krishna Santhoshkumar",
+      "Anitha Kandasamy",
+      "Ramasamy Tamizhselvi",
+      "Divya Sharma",
+      "John Godwin Christopher"
+    ],
+    "summary": "Streptomyces species represent an important source of bioactive natural products, yet systematic genome-guided prioritization of metabolites targeting cyclooxygenase-2 (COX-2/PTGS2) remains limited. This study aimed to investigate the biosynthetic potential of Streptomyces sp. VITGV156 (MCC 4965) using an integrated genome mining and computational drug discovery pipeline. Whole-genome sequencing, functional annotation, antiSMASH v7.0.1-based biosynthetic gene cluster (BGC) prediction, LC-MS/MS metabolomic profiling, SwissADME analysis, target prediction, disease association mapping, molecular docking against PTGS2 (PDB: 5IKR), and PASS bioactivity prediction were performed to prioritize putative bioactive metabolites. Genome analysis identified 29 predicted biosynthetic gene clusters, including clusters associated with geosmin, ectoine, albaflavenone, hopene, coelichelin, and SapB, together with several cryptic clusters exhibiting low similarity to known pathways. LC-MS/MS metabolomic profiling provided experimental support for active secondary metabolite production under the cultivation conditions employed. Computational prioritization identified PTGS2 (COX-2) as a biologically relevant target. Molecular docking demonstrated favorable binding affinities and interaction profiles for several predicted metabolites within the PTGS2 catalytic pocket. PASS analysis further suggested potential anticancer-related biological activities that require experimental validation. These findings demonstrate the utility of integrating genome mining, metabolomic profiling, and computational drug discovery for prioritizing natural-product candidates. Streptomyces sp. VITGV156 (MCC 4965) represents a promising source of biosynthetic diversity and provides a genome-guided framework for identifying putative COX-2-targeting natural products for future experimental validation rather than confirming metabolite production or biological activity.",
+    "doi": "10.3389/fbinf.2026.1840680",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42683057",
+      "journal": "Frontiers in bioinformatics"
+    },
+    "dedupe_key": "doi:10.3389/fbinf.2026.1840680"
+  },
+  {
+    "kind": "article",
+    "title": "Design and synthesis of 1,3,4-oxadiazole-tethered N-substituted isatin hybrids as SARS-CoV-2 main protease inhibitors: biological evaluation, kinetic investigation, and in silico studies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42682986/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.163897+00:00",
+    "authors": [
+      "Tarfah Al-Warhi",
+      "Md Sofequl Islam Mukim",
+      "Zainab M Elsayed",
+      "Yasser M Omar",
+      "Diaaeldin M Elimam",
+      "Moataz A Shaldam",
+      "Ashraf K El-Damasy",
+      "Mostafa M Elbadawi",
+      "Haytham O Tawfik",
+      "Dae-Geun Song",
+      "Wagdy M Eldehna"
+    ],
+    "summary": "The ongoing emergence of SARS-CoV-2 mutations underscores the urgent need for new antivirals that target key viral proteins. This study describes the design, synthesis, and evaluation of two series of 1,3,4-oxadiazole-tethered N-substituted isatin hybrids as inhibitors of the SARS-CoV-2 main protease (Mpro): 1,2,3-triazole-linked derivatives (9a-h) and pyrazole-linked derivatives (15a-d). Compounds 15a-c were identified as the most active derivatives in initial FRET-based screening. With an IC50 of 15.38 µM, 15c was the most effective inhibitor, as determined by subsequent enzymatic assays. 15a and 15b had IC50 values of 24.43 and 30.55 µM, respectively. The active chemicals inhibit Mpro via a noncompetitive/mixed mechanism (α = 0.41-0.44), at a K I value of 13.24 µM, according to enzyme kinetic studies. Additionally, the compounds exhibited favorable physicochemical and ADMET profiles and minimal cytotoxicity against normal IMR-90 cells. The stable predicted binding of the most active compound, 15c, within the Mpro active site was further supported by molecular docking and molecular dynamics simulations. Collectively, these findings identify 15c as the most active derivative in the present series and provide preliminary SAR insights that may guide further optimization of this scaffold as a potential class of SARS-CoV-2 Mpro inhibitors.",
+    "doi": "10.1039/d6ra06004h",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42682986",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra06004h"
+  },
+  {
+    "kind": "article",
+    "title": "Key aroma compounds in Chimonanthus praecox: molecular simulation screening and functional packaging application.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42682941/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.164463+00:00",
+    "authors": [
+      "Guofeng Yu",
+      "Yuan Gao",
+      "Yuan Feng",
+      "Yanchong Qin",
+      "Tianxiao Li",
+      "Chunping Xu",
+      "Xuewei Jia",
+      "Mingqi Gao"
+    ],
+    "summary": "Natural floral aromas are increasingly used in food systems and aroma-functional packaging, but their complex composition and instability limit practical application. This study developed an integrated analytical-computational-sensory strategy to identify key odorants in Chimonanthus praecox flowers for use in food-grade packaging. A total of 38 aroma-active compounds were identified via headspace solid-phase microextraction coupled with gas chromatography-mass spectrometry (HS-SPME-GC-MS). Molecular docking was employed as a screening approach, and binding energy-based clustering enabled the prioritization of odorants with high receptor affinity. Odor activity value (OAV) analysis highlighted nine key odorants, including linalool, ocimene, and methyl salicylate. Molecular docking and dynamics simulations showed π-mediated hydrophobic interactions are critical for odorant recognition and binding stability. Aroma recombination confirmed the importance of these odorants. The reconstructed aroma was successfully applied to food-grade kraft paper, showing high similarity to natural floral aroma. This work promotes the sustainable aroma-functional packaging in food applications. The online version contains supplementary material available at https://doi.org/10.1007/s10068-026-02269-8.",
+    "doi": "10.1007/s10068-026-02269-8",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42682941",
+      "journal": "Food science and biotechnology"
+    },
+    "dedupe_key": "doi:10.1007/s10068-026-02269-8"
+  },
+  {
+    "kind": "article",
+    "title": "Teaching diffusion models physics: reinforcement learning for physically valid diffusion-based docking.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42682930/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.164958+00:00",
+    "authors": [
+      "J Henry Broster",
+      "Bojana Popovic",
+      "Diana Kondinskaia",
+      "Charlotte M Deane",
+      "Fergus Imrie"
+    ],
+    "summary": "Molecular docking aims to predict the binding conformation of a small molecule to its protein target. Recent work has proposed diffusion models for this task, from rigid-body docking that diffuses over ligand degrees of freedom to co-folding approaches that jointly generate protein structure and ligand pose. However, diffusion-based docking models have been shown to frequently produce physically implausible poses and fail to consistently recover key protein-ligand interactions. To address this, we introduce a reinforcement learning framework for training diffusion-based docking models directly on non-differentiable objectives. Fine-tuning DiffDock-Pocket for physical validity with our approach substantially increases the number of generated poses that are physically valid and interaction-preserving, with no increase in inference-time compute. Importantly, this comes without sacrificing structural accuracy; in fact, our approach increases the proportion of structures with near-native poses. These effects are most pronounced for protein targets that are dissimilar to the training data. Our fine-tuned DiffDock-Pocket model outperforms both classical docking algorithms and machine learning-based approaches on the PoseBusters set. Our results demonstrate that reinforcement learning can teach diffusion-based docking models to better respect physical constraints and recover key interactions, without the requirement to rely on inference-time corrections.",
+    "doi": "10.1039/d6sc02655a",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42682930",
+      "journal": "Chemical science"
+    },
+    "dedupe_key": "doi:10.1039/d6sc02655a"
+  },
+  {
+    "kind": "article",
+    "title": "In Silico Identification of Natural-Product Aromatase (CYP19A1) Inhibitors via Integrated Molecular Docking and QSAR Modelling.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42682911/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.165579+00:00",
+    "authors": [
+      "Erica A Akanko",
+      "Samuel Selasi Kporvie",
+      "George Hanson",
+      "Kofi Sarpong Adu-Manu"
+    ],
+    "summary": "Aromatase (CYP19A1) is the rate-limiting enzyme in estrogen biosynthesis and the principal therapeutic target for estrogen receptor-positive (ER+) breast cancer. Despite the clinical success of third-generation aromatase inhibitors (AIs) such as letrozole and anastrozole, acquired resistance and systemic adverse effects, including musculoskeletal pain, bone density loss, and cardiovascular complications, which necessitate the identification of novel scaffolds. This study employs an integrated computational pipeline combining ligand-based quantitative structure-activity relationship (QSAR) modelling and structure-based molecular docking to screen the AfroDB and EANPDB natural product libraries for putative aromatase inhibitors. A curated dataset of 3,068 unique compounds derived from ChEMBL (v33) was used to train Random Forest models, with the binary classification model achieving an area under the receiver operating characteristic curve (AUC) of 0.95 on the independent holdout set, an accuracy of 0.90, and a Matthews correlation coefficient (MCC) of 0.76. The regression model for pIC50 prediction attained an R2 of 0.65 and an RMSE of 0.81 pIC50 units on the test set. The trained classifiers were applied to screen 1,871 AfroDB compounds; 361 were predicted active, of which 71 resided within the defined Applicability Domain. Molecular docking into the human aromatase crystal structure (PDB ID: 3S79) revealed that the top candidate, a prenylated dihydroflavone (5,7-dihydroxy-4'-methoxy-3'-(3-hydroxy-3-methylbut-1-enyl)-5'-(3-methylbut-2-enyl)flavanone), achieved a binding affinity of -9.598 kcal/mol, outperforming both letrozole (-7.11 kcal/mol) and anastrozole (-7.617 kcal/mol) under identical docking conditions. The docking protocol was validated by redocking of the co-crystallised ligand (RMSD = 1.35 Å). Comprehensive interaction analysis identified contacts with key active-site residues Arg115, Phe221, Thr310, Val370, Met374, and Phe430. ADMET profiling indicated that 65% of prioritised hits satisfy Lipinski's Rule of Five, while 95% meet Veber bioavailability criteria. This study provides a reproducible computational framework for next-generation AI discovery, adhering to the TRIPOD+AI reporting guidelines for machine learning in biomedical research.",
+    "doi": "10.1177/11779322261483610",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "QSAR"
+    ],
+    "extra": {
+      "pmid": "42682911",
+      "journal": "Bioinformatics and biology insights"
+    },
+    "dedupe_key": "doi:10.1177/11779322261483610"
+  },
+  {
+    "kind": "article",
+    "title": "Transcriptomic Analysis Reveals Core Genes and Mechanisms Linking Grilled Food Toxicants (4-HNE, BaP, PhIP) to NASH-HCC Progression.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42682783/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.166159+00:00",
+    "authors": [
+      "Bingbing Qin",
+      "Ye Zhang",
+      "Na Li",
+      "Jing Li",
+      "Yuehua Luo",
+      "Xi Tang",
+      "Ruisheng Zhou",
+      "Tianqi Cui",
+      "Ying Tang"
+    ],
+    "summary": "Grilled food toxicants 4-hydroxynonenal (4-HNE), benzo[a]pyrene (BaP), and 2-amino-1-methyl-6-phenylimidazo[4,5-b]pyridine (PhIP) pose health risks, including non-alcoholic steatohepatitis (NASH) and hepatocellular carcinoma (HCC). However, their synergistic molecular mechanisms in driving NASH to NASH-HCC progression remain unclear. We employed network toxicology (CTD, GeneCards), bioinformatics analysis of the GSE164760 dataset, machine learning (LASSO, SVM-RFE, Random Forest), SHAP interpretability analysis, immune infiltration profiling (CIBERSORT), miRNA-TF-mRNA network construction, and molecular docking to identify core genes and elucidate mechanisms. Toxicity prediction confirmed significant hepatotoxicity for all three compounds. Intersection analysis identified 8 key genes (InterGenes) enriched in oxidant detoxification, fatty acid metabolism, and chemical carcinogenesis pathways. Machine learning refined this to 6 CoreGenes (GSTA1, EPHX1, CYP2E1, GPX3, ALB, TF). SHAP analysis revealed that high expression of ALB, TF, GSTA1 and CYP2E1, together with low expression of GPX3 and EPHX1, correlated with increased progression risk. A CoreGenes-based diagnostic nomogram achieved exceptional performance (AUC = 0.967). Immune infiltration analysis revealed significant shifts in regulatory T cells and M2 macrophages during progression. Molecular docking confirmed strong binding affinities between the toxicants and CoreGenes proteins (e.g., BaP-GSTA1: -10.7 kcal/mol). Functional enrichment implicated dysregulated fatty acid metabolism, PPAR, and TGF-beta signaling. This study identifies GSTA1, EPHX1, CYP2E1, GPX3, ALB, and TF as pivotal biomarkers and mediators through which 4-HNE, BaP, and PhIP synergistically promote NASH-HCC progression via oxidative stress, metabolic dysfunction and remodeling of the immune microenvironment. The CoreGenes signature and multi-gene model provide a powerful tool for risk assessment and early intervention.",
+    "doi": "10.1002/fsn3.72303",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42682783",
+      "journal": "Food science & nutrition"
+    },
+    "dedupe_key": "doi:10.1002/fsn3.72303"
+  },
+  {
+    "kind": "article",
+    "title": "Exploring the impact of DEP on pediatric Crohn's disease using machine learning and molecular docking methods.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42682778/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.166717+00:00",
+    "authors": [
+      "Lei Zhang",
+      "Xingyu Ji",
+      "Su Ma",
+      "Huimin Chen"
+    ],
+    "summary": "Diethyl phthalate (DEP) is a prevalent plasticizer with multiple toxic effects and high bioavailability in humans, especially children. Pediatric Crohn's disease (PCD) is a severe chronic intestinal inflammatory disorder with a rising incidence worldwide. To date, the potential associative relationship between DEP exposure and PCD pathogenesis remains inadequately clarified, lacking systematic transcriptomic and experimental exploration. In this study, bioinformatics analysis was performed based on 682 PCD samples and 127 normal samples retrieved from multiple GEO datasets. A series of analytical strategies including differential expression analysis, weighted gene co-expression network analysis (WGCNA), compound target prediction, functional enrichment analysis, machine learning modeling, and molecular docking simulation were comprehensively utilized, followed by preliminary animal validation. All analyses in this study focused on exploring statistical correlation rather than causal relationships, given the absence of individual DEP exposure data and inherent methodological limitations. Through differential analysis and WGCNA, 24 differentially expressed genes and 194 chemical targets from ChEMBL were obtained, among which 14 overlapping genes were identified. GO and KEGG analyses indicated that DEP may contribute to PCD toxicity by regulating nucleotide synthesis and amino acid metabolism. Five core genes were screened via machine learning and SHAP analysis. Animal experiments verified that PLAU protein expression in DEP, TNBS, and DEP + TNBS groups was notably higher than in the control colon tissue. This study systematically explores the potential associative links between DEP-related molecular dysregulation and PCD pathological alterations at the transcriptomic and tissue levels. The findings provide preliminary scientific references for understanding DEP-associated pediatric intestinal health risks and developing targeted preventive strategies for children's environmental health protection.",
+    "doi": "10.3389/fped.2026.1810586",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42682778",
+      "journal": "Frontiers in pediatrics"
+    },
+    "dedupe_key": "doi:10.3389/fped.2026.1810586"
+  },
+  {
+    "kind": "article",
+    "title": "Integrative network pharmacology and molecular modeling approaches reveal the therapeutic potential of Syzygium samarangense phytocompounds against diabetes retinopathy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42682727/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.167252+00:00",
+    "authors": [
+      "Arun Kandhan",
+      "Bijo Mathew",
+      "Sundarrajan Thirugnanasambandam"
+    ],
+    "summary": "Diabetes retinopathy (DR) is a progressive microvascular complication of diabetes mellitus characterized by oxidative stress, inflammation, and neurovascular dysfunction. Current therapies provide limited efficacy, highlighting the need for multi-targeted, natural therapeutic alternatives. Syzygium samarangense (SS) is a phytochemical-rich medicinal plant with potential anti-Diabetes properties. A data-driven systems pharmacology approach was employed to explore the anti-DR potential of S. samarangense phytochemicals. Twenty-nine active compounds were screened for drug-likeness using Lipinski's Rule of Five. Overlapping targets between SS and DR were identified, yielding 403 shared targets. Network pharmacology analysis highlighted ten core proteins, including SRC, ALB, GAPDH, and TNF. Gene Ontology (GO) and KEGG pathway enrichment analyses identified key pathways such as AGE-RAGE and HIF-1 signaling. Molecular docking was performed to evaluate ligand-target interactions, followed by 500 ns molecular dynamics (MD) simulations and MM-GBSA binding free energy analysis for validation. Docking studies identified Pinocembrin (SS5) and Stercurensin (SS4) as top-ranked ligands, with strong binding affinities toward SRC and ALB, respectively. MD simulations demonstrated superior structural stability for the SS5-SRC complex, whereas SS4-ALB exhibited moderate stability. MM-GBSA calculations further confirmed favorable binding energies, supporting their drug-like behavior. These multi-target interactions suggest that S. samarangense phytochemicals can modulate key DR-associated pathways. S. samarangense exhibits promising multi-target activity against Diabetes retinopathy. Pinocembrin (SS5) and Stercurensin (SS4) emerge as potential lead compounds for further experimental validation and drug development.",
+    "doi": "10.3389/fbinf.2026.1884743",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "drug-likeness"
+    ],
+    "extra": {
+      "pmid": "42682727",
+      "journal": "Frontiers in bioinformatics"
+    },
+    "dedupe_key": "doi:10.3389/fbinf.2026.1884743"
+  },
+  {
+    "kind": "article",
+    "title": "Empagliflozin attenuates AGE-BSA/high-glucose-induced inflammation in C2C12 myotubes associated with suppression of the RAGE/NF-κB pathway.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42682498/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-02T18:56:26.167802+00:00",
+    "authors": [
+      "Xiaoying Zhang",
+      "Yu Mao",
+      "Jiaxing Wu",
+      "Xinyu Deng",
+      "Huanhuan Wang",
+      "Zhiqiang Kang"
+    ],
+    "summary": "Empagliflozin is an established sodium-glucose cotransporter 2 inhibitor with reported anti-inflammatory activity, but its effects on advanced glycation end product/high-glucose-induced inflammatory injury in skeletal muscle cells remain unclear. A GEO-derived transcriptomic dataset from gastrocnemius muscle of type 2 diabetes mellitus rats was analyzed to screen pathways associated with diabetes-related skeletal muscle injury, and molecular docking was performed to explore the possible structural compatibility between empagliflozin and RAGE. Differentiated C2C12 myotubes were exposed to AGE-BSA under high-glucose conditions and treated with empagliflozin. Cell viability was assessed using CCK-8, and RAGE, NF-κB, IL-6, and TNF-α were evaluated by qRT-PCR, Western blotting, immunofluorescence, and ELISA. Bioinformatic enrichment highlighted AGE-RAGE signaling and inflammation-related NF-κB pathways in diabetic skeletal muscle. Molecular docking provided a computational structural hypothesis suggesting possible compatibility between empagliflozin and human RAGE involving Asp160. In AGE-BSA/high-glucose-stimulated C2C12 myotubes, empagliflozin improved cell viability and was accompanied by reduced RAGE expression, lower NF-κB phosphorylation and immunofluorescence-based nuclear accumulation, and lower IL-6 and TNF-α expression and secretion. Empagliflozin attenuates AGE-BSA/high-glucose-induced inflammatory injury in C2C12 myotubes, and this effect is associated with reduced activation of RAGE/NF-κB-related inflammatory signaling. Further gain- or loss-of-function experiments and validation in diabetic animal models are required to determine whether this pathway is causally involved and whether the observed cell-based effect can be translated into an in vivo setting.",
+    "doi": "10.3389/fendo.2026.1903580",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42682498",
+      "journal": "Frontiers in endocrinology"
+    },
+    "dedupe_key": "doi:10.3389/fendo.2026.1903580"
   }
 ]
