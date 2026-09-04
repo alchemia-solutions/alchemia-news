@@ -210,6 +210,119 @@
   },
   {
     "kind": "article",
+    "title": "Implication of a rare variant in OPA1 in Cardiac Pathophysiology: From Cristae Remodelling to Contractile Dysfunction",
+    "url": "https://doi.org/10.64898/2026.08.31.748193",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-04",
+    "collected_at": "2026-09-04T18:37:41.061729+00:00",
+    "authors": [
+      "gupta, m.",
+      "Mukhopadhyay, A.",
+      "Kumar, A.",
+      "Mohapatra, B."
+    ],
+    "summary": "Abstract Optic Atrophy 1 (OPA1), an important inner mitochondrial membrane GTPase, regulates mitochondrial fusion, maintains cristae structure, calcium buffering, cellular bioenergetics, preserves mtDNA and controls apoptosis. Here we examined the role of OPA1 variants in DCM using whole-exome sequencing (WES) of 5 familial and 10 sporadic DCM cases. A rare de novo OPA1 variant, c.563C>T (p.Pro188Leu), was identified in a DCM patient, which is absent in 100 healthy controls as well as in the 1000 Genomes, IndiGenomes and GenomeAsia 100k databases while it showed very low MAF (0.000069) in GnomAD. Structural modelling predicted the variant to be highly deleterious and revealed marked conformational distortion of the mutant protein (RMSD = 3.5 Angstrom). Molecular docking further demonstrated enhanced accessibility of mutant OPA1 to mitochondrial protease OMA1, suggesting increased OPA1 proteolytic processing and a consequent increase in mitochondrial fragmentation. Functional analysis in stable H9C2 cardiomyoblast cells, demonstrated significantly reduced OPA1 protein expression, extensive mitochondrial fragmentation in mutant-OPA1 expressing cells. The mutant protein caused signifi",
+    "doi": "10.64898/2026.08.31.748193",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "category": "genetics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.31.748193"
+  },
+  {
+    "kind": "article",
+    "title": "Experimental and In Silico Analysis of the Structural Dynamics of Dengue NS2B-NS3 Protease",
+    "url": "https://doi.org/10.64898/2026.09.02.748787",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-04",
+    "collected_at": "2026-09-04T18:37:41.064306+00:00",
+    "authors": [
+      "Muthuvel, s. k.",
+      "BALAKRISHNAN, S. S.",
+      "MANJINI, S.",
+      "DHAL, K.",
+      "DAS, S.",
+      "S, D."
+    ],
+    "summary": "The Dengue virus (DENV), a major global health concern, causes dengue fever, predominantly affecting tropical and subtropical regions. The NS2B-NS3 protease complex of DENV is critical for viral replication, making it a promising target for antiviral drug development. This study investigates the structural dynamics of the NS2B-NS3 protease under varying pH conditions, integrating experimental and computational approaches. The recombinant NS2B-NS3 protease was expressed in E. coli, purified using affinity chromatography, and analysed for purity via SDS-PAGE. Circular dichroism (CD) spectroscopy revealed pH-dependent secondary structural changes, indicating stability at neutral to slightly basic pH and destabilization under acidic and highly basic conditions. Dynamic light scattering (DLS) analysis demonstrated protein aggregation and structural heterogeneity under extreme pH levels. Complementary in silico techniques, including homology modelling and molecular dynamics (MD) simulations, provided detailed insights into the conformational changes of the protease. The modelled structure, validated and refined through computational tools, revealed structural stability at physiological p",
+    "doi": "10.64898/2026.09.02.748787",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.02.748787"
+  },
+  {
+    "kind": "article",
+    "title": "A rugged binding landscape unifies static and dynamic paradigms in protein-protein interactions",
+    "url": "https://doi.org/10.64898/2026.03.29.715155",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-04",
+    "collected_at": "2026-09-04T18:37:50.324237+00:00",
+    "authors": [
+      "Liu, T.",
+      "Huang, S.",
+      "Li, W.",
+      "Wang, P.",
+      "Song, J.",
+      "Liu, J.",
+      "Zhang, M.",
+      "Sun, B."
+    ],
+    "summary": "Predicting protein-protein interaction (PPI) affinities from structural data remains a challenge. Although binding funnel theory describes the formation of native complexes, the topography of the funnel bottom and its influence on affinity are often overlooked. Using two well-controlled nanobody-antigen datasets as model systems, we demonstrate that PPI can exist in both static and dynamic binding paradigms. These two nanobody series adopt nearly identical binding poses toward their respective antigens yet exhibit diverse affinities, each representing a distinct paradigm: a static paradigm in which affinity can be ranked by Rosetta scoring of co-crystal structures alone, and a dynamic paradigm in which affinity can only be ranked using molecular dynamics-sampled ensembles. The two paradigms differ in interfacial dynamics. In the dynamic series, the relative motion between binding partners ({Delta}RMSF) is temperature-sensitive, with optimal affinity correlation at 298 K. In the static series, {Delta}RMSF is minimal and insensitive to temperature. Local frustration analysis establishes a mechanistic bridge between interfacial dynamics and landscape topology. Dynamic interfaces exhib",
+    "doi": "10.64898/2026.03.29.715155",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.03.29.715155"
+  },
+  {
+    "kind": "article",
+    "title": "Antimicrobial and cytotoxic activity of 2-amino-4H-chromenes",
+    "url": "https://doi.org/10.26434/chemrxiv.15008338/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-04",
+    "collected_at": "2026-09-04T18:37:53.948798+00:00",
+    "authors": [
+      "Jackson B. A. Silva",
+      "Yan R. Robles",
+      "Ana L. O. Santos",
+      "Júlia G. Teixeira",
+      "Tábata R. Esperandim",
+      "Letícia H. dos Reis",
+      "Maria A. S. C. Chellegatti",
+      "Niege A. J. C. Furtado",
+      "Carlos H. G. Martins",
+      "Denise C. Tavares",
+      "Larissa G. Maciel",
+      "Antônio E. M. Crotti",
+      "Antonio Eduardo Crotti"
+    ],
+    "summary": "Although some 2-amino-4H-chromenes displayed moderate activity against S. mitis (1, 2, 4, 5, 6, 7, 9, and 10), S. salivarius (3 and 9), and L. paracasei (1 and 6), most of the compounds displayed weak activity against most of the bacteria involved in dental caries and were inactive against C. albicans and C. krusei. On the other hand, compounds 4 (IC50 2564) and 8 (IC50 = 37.74 µM, SI > 154.80) displayed the highest anticancer activity against the MCF-7 and HeLa cell lines. Although compounds 4 and 5 displayed only moderate activity against U-251MG cells, their high SI values (>82.78 and >81.60, respectively) make them promising candidates for further investigation as antiproliferative agents. Molecular docking simulations help us to rationalize potential molecular targets for compounds 1-10 reported herein. All molecules were docked into four receptors/enzymes (β-tubulin, CDK4/6, ERα, and EGFR), and in two of them (EGFR and CDK4/6), compounds 8R and 5R ranked favorably within their respective docking protocols and displayed relevant interactions with N842 and L83 residues in their respective active sites. These findings are consistent with in vitro cytotoxic assays and highlight t",
+    "doi": "10.26434/chemrxiv.15008338/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15008338/v1"
+  },
+  {
+    "kind": "article",
     "title": "Targeting Dengue Virus NS3 Helicase: Biochemical and Computational Evaluation of Catechins from Camellia sinensis as Potential Therapeutic Leads",
     "url": "https://doi.org/10.64898/2026.06.22.733882",
     "source": "bioRxiv",
@@ -799,6 +912,217 @@
       "arxiv_id": "2609.03377v1"
     },
     "dedupe_key": "url:https://arxiv.org/abs/2609.03377v1"
+  },
+  {
+    "kind": "article",
+    "title": "Atlantis: An integrative database for human proteome structural and functional sites",
+    "url": "https://doi.org/10.64898/2026.08.29.747983",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-03",
+    "collected_at": "2026-09-04T18:36:56.598180+00:00",
+    "authors": [
+      "De Oliveira Rosa, N.",
+      "Ferronato, P.",
+      "Varisco, M.",
+      "Matic, M.",
+      "Ruscio, M.",
+      "Miglionico, P.",
+      "Raimondi, F."
+    ],
+    "summary": "Understanding protein mechanisms in health and disease requires characterizing the functional roles of individual amino acid residues. To explore the role of residues and their mutations, we have developed Atlantis, a database that integrates structural and functional information at the human proteome residue level. A graph database enables complex queries and the retrieval of integrated information for multiple functional analysis of protein systems. A Model Context Protocol (MCP) connector allows the interrogation of the resource through Large Language Models (LLMs) or agentic frameworks for biomedical research. Atlantis annotates over 11M residues across 20k human proteins, identifying hundreds thousands intra- and inter-protein contacts in PDB as well as AlphaFoldDB structures. We also provide the possibility to analyze and integrate predicted 3D complexes inputted by the user, and we showcased these features on hundreds of AlphaFold-multimer complexes of GPCRs and LRRK2 interaction networks. The tool is freely accessible at https://atlantis.bioinfolab.sns.it/.",
+    "doi": "10.64898/2026.08.29.747983",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.29.747983"
+  },
+  {
+    "kind": "article",
+    "title": "High-dimensional HIV-1 quasispecies modeling guides escape-proof antibody design",
+    "url": "https://doi.org/10.64898/2026.09.02.748882",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-03",
+    "collected_at": "2026-09-04T18:36:56.599914+00:00",
+    "authors": [
+      "Kutler Dodd, G.",
+      "Hogeweg, P.",
+      "de Boer, R. J."
+    ],
+    "summary": "Rapidly evolving viruses form diverse quasispecies that enable escape from immune responses and treatments. For example, HIV-1 can rebound within weeks of broadly neutralizing antibody (bNAb) treatment through the outgrowth of high-fitness escape mutants in the quasispecies or the evolution of new escape variants. Most existing models of viral dynamics consider only a small number of viral variants and either assume arbitrary mutant fitness distributions or require extensive fitting to sparse clinical data. Here, we develop a high-dimensional HIV-1 quasispecies model that captures the dynamics of millions of viral strains and parameterize this using in silico binding affinity predictions. Without fitting to experimental data, the model qualitatively reproduces viral rebound following bNAb treatment. Lower-dimensional model projections recover these dynamics only when informed by features derived from the high-dimensional model. Finally, we use the model to develop a quasispecies-based framework for antibody optimization and identify antibodies predicted to effectively suppress viremia. Together, our results demonstrate that integrating mechanistic genotype-phenotype maps with high-",
+    "doi": "10.64898/2026.09.02.748882",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody design"
+    ],
+    "extra": {
+      "category": "systems biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.02.748882"
+  },
+  {
+    "kind": "article",
+    "title": "De novo design of ligand binding proteins using large language models alone",
+    "url": "https://doi.org/10.64898/2026.09.02.748987",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-03",
+    "collected_at": "2026-09-04T18:37:22.534161+00:00",
+    "authors": [
+      "Kim, N. H.",
+      "Hatstat, A. K.",
+      "Jo, H.",
+      "Wu, Y.",
+      "DeGrado, W. F."
+    ],
+    "summary": "Protein design has rapidly advanced with the advent of sequence- and structure-based machine learning models. However, reasoned design, which applies physicochemical principles and rules derived from sequence-structure-function relationships, has not seen the same benefits from generative machine learning models. Here, we test the ability of common large language models (LLMs; e.g. Claude, ChatGPT, and Gemini) to consider design principles to generate de novo proteins that bind metals and lipophilic small molecules without copying existing sequences. Common LLMs alone are able to 1) generate protein sequences to adopt a desired fold and bind the target ligand and 2) explain the principles that motivate the design choices. Following structure prediction and filtering, we selected a small set of designs (6 to 12 designs per query) for experimental validation, affording metal binders in one round of LLM-based design (25% hit rate) and perfluorooctanoic acid binders in two rounds (25% hit rate in the second round of design). Importantly, the LLMs produce detailed justification to accompany the de novo designed sequences, providing a conceptual framework on which designs can be evaluate",
+    "doi": "10.64898/2026.09.02.748987",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein design"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.02.748987"
+  },
+  {
+    "kind": "article",
+    "title": "How thermostable direct haemolysin (TDH) diverges from TDH-related haemolysin (TRH)? Reassessing haemolysins in Vibrio parahaemolyticus through functional and structural representation learning",
+    "url": "https://doi.org/10.64898/2026.09.02.748974",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-03",
+    "collected_at": "2026-09-04T18:37:33.282049+00:00",
+    "authors": [
+      "Liu, Z.",
+      "Zhou, Y.",
+      "Liu, C.",
+      "Brown, C. T.",
+      "Wang, L."
+    ],
+    "summary": "Vibrio parahaemolyticus (Vp) is the major foodborne pathogen transmitted via shellfish products, which has posed significant threats to modern public health and resulted in significant economic damage to the seafood industry. Numerous studies have documented diverse aspects of Vp pathogenicity, among which thermostable direct haemolysin (TDH) and TDH related haemolysin (TRH) are considered as the major virulence biomarkers of Vp. Despite their established roles as key biomarkers, a systematic understanding of the divergence of TDH and TRH across sequence, structure, and function remains limited. In this study, a multi scale analysis of TDH and TRH was performed using publicly available (2131 and 99 records from NCBI and Uniprot database, respectively) amino acid sequence data combined with representation learning and structure prediction. Global alignment of curated TDH and TRH sequences revealed extensive, distributed mutations and clear separation between TDH and TRH at the amino acid level (percentage identity of between TDH and TRH ranging from 56.1 to 67.4%). In contrast, protein language model derived embeddings showed high global functional similarity while preserving distin",
+    "doi": "10.64898/2026.09.02.748974",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model",
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "microbiology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.02.748974"
+  },
+  {
+    "kind": "article",
+    "title": "Comprehensive Evaluation of Protein Language Model Embeddings for Drug-Target Affinity Prediction",
+    "url": "https://doi.org/10.64898/2026.08.31.748056",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-03",
+    "collected_at": "2026-09-04T18:37:33.283651+00:00",
+    "authors": [
+      "Marijan, M.",
+      "Tanasijevic, I."
+    ],
+    "summary": "Accurate identification of drug-target interactions is consequential for novel drug discovery and development. Deep learning methods for drug-target affinity (DTA) prediction have shown great promise in accelerating drug discovery and reducing development costs. Although graph neural networks have improved drug representation learning for DTA prediction tasks, many models still struggle to effectively and efficiently capture protein information, limiting overall prediction accuracy. In this work, we systematically evaluate the impact of pre-trained protein language models (PLMs) on the downstream task of predicting binding affinity between drugs and target proteins. We design multiple experiments across four different molecular representation backbones and assess the effect of incorporating PLM embeddings, comparing their performance to classical 1D convolution methods. We evaluate four families of PLMs which we integrate into PLM-GraphDTA, each built on distinct architectures and optimized for different tasks, including structure prediction, function prediction, and sequence unmasking. Additionally, we evaluate DeepGraphDTA, an architectural modification of the baseline convolutio",
+    "doi": "10.64898/2026.08.31.748056",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "protein language model"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.31.748056"
+  },
+  {
+    "kind": "article",
+    "title": "Allosteric pathways govern Gα protein coupling selectivity at promiscuous GPCRs",
+    "url": "https://doi.org/10.64898/2026.08.28.747882",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-03",
+    "collected_at": "2026-09-04T18:37:33.284776+00:00",
+    "authors": [
+      "Boora, T. S.",
+      "Chen, H.",
+      "Cho, A.",
+      "van der Velden, W. J. C.",
+      "Namkung, Y.",
+      "Cao, Y.",
+      "Paranjpe, J. Y.",
+      "Heydenreich, F. M.",
+      "RODIN, A. S.",
+      "Branciamore, S.",
+      "Vaidehi, N.",
+      "Laporte, S."
+    ],
+    "summary": "G protein-coupled receptors (GPCRs) regulate diverse physiological responses by engaging distinct heterotrimeric G proteins, yet the basis of G selectivity in promiscuous receptors remains unclear. Although ligand bias holds therapeutic promise, selectivity has been assumed to reside mainly in the ligand-binding site (LBS) or G protein interface (GPI). Here, we combine whole-receptor mutagenesis, functional G protein assays, molecular dynamics simulations, interpretable machine learning method, and Bayesian network modeling to identify residue networks governing Gq/11 and G12/13 coupling and to define the molecular basis of G protein preference and promiscuity at two vasopressor GPCRs, the angiotensin II type 1 and prostaglandin F2 receptors. While residues within the LBS and GPI domains contribute to coupling efficiency and subtype discrimination, we find that long-range allosteric communication across the receptor, including from structurally unresolved domains, is the principal determinant of G protein preference and promiscuity. These allosteric pathways integrate multiple receptor domains, confer signaling robustness to mutation, and hierarchically govern coupling preferences.",
+    "doi": "10.64898/2026.08.28.747882",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "pharmacology and toxicology"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.28.747882"
+  },
+  {
+    "kind": "article",
+    "title": "Retrieval of binding sites across the AlphaFold human proteome using protein language model representations",
+    "url": "https://doi.org/10.64898/2026.08.30.748136",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-03",
+    "collected_at": "2026-09-04T18:37:37.591393+00:00",
+    "authors": [
+      "Mohan, K.",
+      "Bhargava, Y."
+    ],
+    "summary": "Protein language models (PLMs) provide powerful representations of protein sequence, but their utility for proteome-scale binding-site retrieval remains unclear. Here, we present PocketScope, a training-free framework that represents cavity-lining residues using frozen ESM-C 600M embeddings and retrieves related binding sites through exhaustive late-interaction MaxSim, without pooling or approximate nearest-neighbor search. PocketScope identified 153,805 cavities across 37,682 proteins in the AlphaFold human proteome and recovered documented drug off-targets across a curated set of pharmacological pairs. On the ProSPECCTs benchmark, PocketScope ranks 1st of 23 methods by mean rank across the ten collections. PocketScope provides a practical framework for proteome-scale off-target prediction. PocketScope is open source and also freely available as a web server at https://www.bhargavaresearch.org/pocketscope.",
+    "doi": "10.64898/2026.08.30.748136",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model",
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.30.748136"
+  },
+  {
+    "kind": "article",
+    "title": "Multi-site Cleavage of Amyloid-β by a Minimal 5-mer Catalytic Peptide: Mimicking Serine Protease Activity via Hydrophobic Anchoring",
+    "url": "https://doi.org/10.64898/2026.06.03.729455",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-03",
+    "collected_at": "2026-09-04T18:37:37.593140+00:00",
+    "authors": [
+      "Ito, F.",
+      "Konishi, M.",
+      "Nakamura, R.",
+      "Akizawa, T."
+    ],
+    "summary": "The development of small synthetic catalytic peptides, or catalytides, offers a promising therapeutic strategy for the targeted degradation of amyloid-beta (Abeta). Among these, the pentapeptide SKGQA mimics the proteolytic activity of serine proteases despite its minimal size. However, the molecular mechanism enabling such a short, highly flexible peptide to execute cleavage across multiple sites remains unclear. In this study, we combined HADDOCK docking and extended molecular dynamics (MD) simulations to investigate the dynamic interaction between SKGQA and the central hydrophobic cluster (CHC, residues 17-21) of Abeta. Our MD simulations reveal a cooperative mechanism underlying this activity. The hydrophobic C-terminal Ala5 residue anchors SKGQA within the Abeta CHC region, stabilizing the bound complex while potentially interfering with Abeta self-assembly through steric hindrance. Simultaneously, while the C-terminus remains anchored, the hydrophilic N-terminal Ser1 residue is positioned in spatial proximity to multiple adjacent backbone carbonyl carbons, including Glu22 and Asp23. Within this anchored conformational ensemble, thermal fluctuations allow Ser1 to stochasticall",
+    "doi": "10.64898/2026.06.03.729455",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "neuroscience"
+    },
+    "dedupe_key": "doi:10.64898/2026.06.03.729455"
   },
   {
     "kind": "article",
@@ -42860,5 +43184,327 @@
       "journal": "Briefings in bioinformatics"
     },
     "dedupe_key": "doi:10.1093/bib/bbag461"
+  },
+  {
+    "kind": "article",
+    "title": "Three privileged scaffolds, one pipeline: chalcones, pyrazolines and pyrazoles in drug discovery and fluorescent sensing.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694817/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.701960+00:00",
+    "authors": [
+      "Alexander Ciupa"
+    ],
+    "summary": "Chalcones, pyrazolines, and pyrazoles constitute a uniquely powerful discovery pipeline in which each is a privileged scaffold with distinct applications, while also serving as the synthetic precursor to the next. Despite a theoretical chalcone library exceeding 680 000 unique structures accessible from commercial starting materials alone, fewer than 5140 examples have been reported in the literature-representing just 0.8% of this chemical space. Combining this precursor library with the downstream pyrazoline and pyrazole chemical spaces yields a combined landscape conservatively estimated to exceed 7.5 million unique structures, which remains largely unexplored. This review examines leading examples from 1990 to 2025 across all three scaffold classes, with particular emphasis on the most promising applications of this pipeline: anti-cancer, anti-inflammatory, anti-viral, and fluorescent sensing applications. We explore how pharmacophore hybridisation is further expanding this pipeline. Whereas previous reviews have focused on individual scaffold classes in isolation, this review takes an integrated, systematic approach that unifies all three into a single coherent discovery pipeline. We conclude with a roadmap on how the convergence of design of experiments, automated synthesis, high-throughput screening, and machine learning will unlock the potential of this vastly unexplored chemical space.",
+    "doi": "10.1039/d6md00424e",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42694817",
+      "journal": "RSC medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.1039/d6md00424e"
+  },
+  {
+    "kind": "article",
+    "title": "Celastrol-Based Hybrid Prodrug Ameliorates ALI by Spatiotemporally Consecutive Dual-Targeting GLUT1/Drp1 to Reestablish Mitochondrial Homeostasis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694805/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.702619+00:00",
+    "authors": [
+      "Hong Xu",
+      "Hongyu Chen",
+      "Fengling He",
+      "Xinlan Li",
+      "Wanxin Li",
+      "Qingqing Yang",
+      "Tingting Zhang",
+      "Jin Liu",
+      "Xiaoke Shi",
+      "Shilin Chen",
+      "Defang Li",
+      "Jun Lu"
+    ],
+    "summary": "Aberrant activation of macrophages and their amplification of inflammatory responses constitute the core pathological basis driving the progression of acute lung injury (ALI). Celastrol (CE), despite its potent anti-inflammatory activity, suffers from poor aqueous solubility and substantial systemic toxicity, which severely limit its clinical translation. Capitalizing on the metabolic signature of pro-inflammatory M1 macrophages, specifically their high expression of glucose transporter 1 (GLUT1), we designed a glucose-modified CE prodrug that self-assembled into carrier-free nanoparticles CG NPs. With markedly improved solubility and systemic stability, CG NPs rapidly and persistently accumulated in the inflammatory lungs of LPS-induced ALI mice facilitated by GLUT1-mediated targeting and uptake by M1 macrophages. Compared with free CE, CG NPs exhibited enhanced overall therapeutic efficacy while significantly reducing hepatorenal toxicity. Mechanistic studies revealed that by targeting Drp1, CG NPs disrupt Drp1-MiD51 interaction, thus inhibiting excessive mitochondrial fission and ROS accumulation, which blocks NF-κB-mediated inflammatory signaling and M1-driven cytokine release. Molecular docking suggested that glucose conjugation may confer CG with a superior ability to regulate mitochondrial homeostasis over CE, potentially driven by its unique U-shaped conformation that inserts into Drp1 and forms a denser hydrogen-bond network, which could contribute to enhanced binding affinity. In summary, this study proposes a nanoprodrug strategy that combines precise targeting with mitochondrial protection, offering a promising therapeutic avenue for inflammatory diseases such as ALI.",
+    "doi": "10.7150/ijbs.133756",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42694805",
+      "journal": "International journal of biological sciences"
+    },
+    "dedupe_key": "doi:10.7150/ijbs.133756"
+  },
+  {
+    "kind": "article",
+    "title": "Network Pharmacology Reveals the Potential Mechanism of Ketamine in Improving Cognitive Impairment in Patients With Depression.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694621/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.703230+00:00",
+    "authors": [
+      "Lei Yang",
+      "Qiuyu Zhang",
+      "Ying Zhang",
+      "Kaifang Yao",
+      "Ximing Chen",
+      "Hongjun Tian",
+      "Chuanjun Zhuo"
+    ],
+    "summary": "Ketamine may have antidepressant and anti-suicidal effects. However, the mechanism underlying ketamine-mediated improvement in cognitive impairment in patients with depression remains unclear. To improve patient cognition in depression using molecular docking and network pharmacology, we examined ketamine's key targets and identified its molecular mechanisms. To gain target information about cognitive impairment (1983) and depression (1874), we used three databases, including Online Mendelian Inheritance in Man, GeneCards, and DisGENET. Information on ketamine targets (63) was retrieved from public databases. To locate signaling pathways and core targets, we conducted bioinformatics analysis, including an enrichment analysis and protein-protein interaction (PPI) network analysis. To assess the interaction between core targets and ketamine, we carried out molecular docking. We identified 20 ketamine target proteins of ketamine related to depression and cognitive impairment. Enrichment analyses revealed that ketamine influenced depression and cognitive function through multiple pathways, targets, and overall synergy. The important signaling pathways identified were \"amphetamine addiction\" and \"dopaminergic synapse\". Five core genes (monoamine oxidase (MAO)-A, MAO-B, glycogen synthase kinase-3β, sirtuin-1, epidermal growth factor receptor) were identified through PPI-network analyses. Our molecular docking results showed that binding was strong between these core genes and ketamine. The antidepressant and cognitive-enhancing effects of ketamine are primarily mediated through targets associated with inflammation, neural signaling, tumors, and neurodegeneration, as well as pathways such as amphetamine addiction, dopaminergic synapse, and the cyclic adenosine monophosphate (cAMP) signaling pathway. The findings provide theoretical support and guidance for optimizing clinical application strategies of ketamine and for designing new drugs.",
+    "doi": "10.31083/AP56752",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42694621",
+      "journal": "Alpha psychiatry"
+    },
+    "dedupe_key": "doi:10.31083/ap56752"
+  },
+  {
+    "kind": "article",
+    "title": "Global development of bispecific antibodies in oncology: a bibliometric analysis of geographic disparities, collaborative models, and emerging translational strategies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694423/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.703808+00:00",
+    "authors": [
+      "Xiaotian Zhai",
+      "Zhuona Rong",
+      "Lixia Fu",
+      "Yanlun Gu",
+      "Bingqi Dong",
+      "Dongning Yao",
+      "Xiaocong Pang",
+      "Yimin Cui"
+    ],
+    "summary": "Bispecific antibodies (bsAbs) have rapidly emerged as one of the most promising therapeutic strategies in oncology because of their ability to simultaneously engage multiple molecular targets and enhance antitumor immunity. Although the number of publications has increased substantially, a comprehensive bibliometric characterization of the global research landscape and its developmental trajectory remain lacking. A bibliometric analysis was conducted using publications retrieved from the Web of Science Core Collection and Scopus from January 2014 to July 2026. After data standardization and deduplication, 5,929 eligible publications were included. CiteSpace, VOSviewer, and Bibliometrix were applied to evaluate publication trends, collaborations among countries, institutions, and authors, influential journals, keyword co-occurrence, citation bursts, and thematic evolution. Global publications on bsAbs demonstrated sustained growth, particularly after 2018, reflecting rapidly increasing scientific interest. The USA and China contributed the largest research outputs, while several internationally collaborative institutions served as major research hubs. Highly cited journals and influential authors formed interconnected knowledge networks that characterized the scholarly structure of the field. Keyword clustering and timeline analyses revealed a progressive transition from antibody engineering and T-cell engager technologies toward clinical applications involving hematologic malignancies, solid tumors, combination immunotherapy, tumor microenvironment, and emerging therapeutic targets. Citation burst analyses further identified evolving research hotspots and highlighted increasing attention to translational and clinically oriented studies. This study reconstructs the global intellectual landscape and thematic evolution of oncology-oriented bsAb research. The findings provide a bibliometric overview of scientific development, identify current research frontiers, and may inform future collaboration, research prioritization, and investigation of next-generation bsAb therapies.",
+    "doi": "10.3389/fimmu.2026.1884087",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody engineering"
+    ],
+    "extra": {
+      "pmid": "42694423",
+      "journal": "Frontiers in immunology"
+    },
+    "dedupe_key": "doi:10.3389/fimmu.2026.1884087"
+  },
+  {
+    "kind": "article",
+    "title": "DeepVIC: modular prediction and classification of bacterial virulence factors using protein language model embeddings.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694419/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.704371+00:00",
+    "authors": [
+      "Wai-Kai Tsui",
+      "You-Xiang Chan",
+      "Kin-Hung Chow",
+      "Pak-Leung Ho",
+      "Huiluo Cao"
+    ],
+    "summary": "Virulence factors (VFs) play critical roles in bacterial pathogenesis, and identifying these proteins and elucidating their mechanisms is essential for developing effective infection treatments. While protein language models (PLMs) have revolutionized the protein analysis, current in silico methods for classifying VFs primarily rely on fine-tuned PLMs ProtBert-BFD that perform identification and classification in a single step. This monolithic approach lacks flexibility and is vulnerable to error propagation, particularly from false negatives. Moreover, the direct use of PLM embeddings as features for VF prediction and classification remains underexplored. To overcome these limitations, we introduce the Deep learning VF Identifier and Classifier (DeepVIC), a modular framework that separates identification and classification into distinct states. The identification module employs a binary classifier using information-rich PLM embeddings. The classification module then integrates these embeddings with evolutionary features derived from position-specific scoring matrices (PSSMs) in a multiclass classifier, structured according to the virulence factor database (VFDB) schema. We benchmarked DeepVIC against six state-of-the-art VF classifiers and predictors using a large independent holdout dataset and two literature-curated datasets for Streptococcus pneumoniae and Lactococcus spp. DeepVIC demonstrated strong generalizability, achieving robust and balanced performance on the independent holdout dataset and competitive recall of putative VFs from existing literature. The modular, task-separation architecture adopted in DeepVIC offers exceptional flexibility, making it a uniquely adaptable and competitive framework. Model interpretability strategies reveal that DeepVIC leverages biologically relevant motifs and effectively integrates PLM embeddings with evolutionary features, offering insights into how deep learning models interpret VFs.",
+    "doi": "10.1093/bioadv/vbag237",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42694419",
+      "journal": "Bioinformatics advances"
+    },
+    "dedupe_key": "doi:10.1093/bioadv/vbag237"
+  },
+  {
+    "kind": "article",
+    "title": "Salvia miltiorrhiza ultrafine powder improves ileal barrier function and health of hens during late laying period via TLR4/NF-κB-mediated macrophage polarization.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694414/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.705070+00:00",
+    "authors": [
+      "Chengwen Meng",
+      "Md Abul Kalam Azad",
+      "Wenchao Lin",
+      "Jue Gui",
+      "Yadong Cui",
+      "Wei Lan",
+      "Xiangfeng Kong"
+    ],
+    "summary": "Declining laying performance and egg quality during the late laying period are closely associated with intestinal barrier dysfunction, chronic inflammation, and gut microbiota dysbiosis. In our previous study, dietary supplementation with 15 g/kg Salvia miltiorrhiza ultrafine powder (SMUP) exhibited the greatest improvement in laying performance and egg quality of hens during late laying period. However, the underlying mechanisms remain unclear. Therefore, the present study further investigate the effects of dietary SMUP on ileal morphology, barrier function, immune response, and gut microbiota, combined with in silico analyses to elucidate the potential molecular mechanisms. A two-group feeding trial with late-laying hens was conducted to evaluate ileal histomorphology, tight junction protein expression, plasma and ileal inflammatory cytokine levels, and ileal microbial community composition through 16S rRNA sequencing. Transcriptomic data from LPS-stimulated chicken HD11 macrophages (GSE278197) were analyzed by differential expression and weighted gene co-expression network analysis (WGCNA) to identify macrophage polarization hub genes. Network pharmacology, molecular docking and 100 ns molecular dynamics simulations were sequentially performed to identify the key bioactive compound of SMUP and its target protein related to intestinal immune regulation. Dietary SMUP (15 g/kg) reduced ileal crypt depth (CD), increased villus height/CD ratio, upregulated tight junction proteins (claudin-1, occludin, and ZO-1), and inhibited the TLR4/NF-κB signaling pathway by downregulating TLR4 and NF-κB p65 expressions (P < 0.05). Additionally, SMUP downregulated pro-inflammatory cytokines (IL-1β, IL-6, TNF-α, IFN-γ, and iNOS), elevated anti-inflammatory cytokines (IL-4 and IL-10) expressions in the ileum, and increased plasma IL-10 level (P < 0.05). Dietary SMUP also modulated gut microbiota by reducing the Tenericutes abundance and enriching predicted ansamycin biosynthesis. Furthermore, network pharmacology, molecular docking, and molecular dynamics simulations identified tanshinone IIA as a core compound directly targeting NFKBIA (encoding IκBα), suggesting that SMUP stabilizes IκBα, thereby blocking its phosphorylation-dependent degradation and subsequent NF-κB nuclear translocation. Through inhibition of the TLR4/NF-κB pathway, SMUP promoted the polarization of intestinal macrophages from the pro-inflammatory M1 toward the anti-inflammatory M2 phenotype, which was consistent with the reciprocal changes in M1/M2-related gene expression. Dietary SMUP improves intestinal health of late-laying hens by strengthening the intestinal barrier, alleviating inflammation (via inhibiting the TLR4/NF-κB pathway and promoting M2-type macrophage polarization), and modulating the gut microbiota. These improvements in intestinal health supported SMUP as a promising natural plant-derived feed additive for hens during late laying period.",
+    "doi": "10.3389/fimmu.2026.1934610",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42694414",
+      "journal": "Frontiers in immunology"
+    },
+    "dedupe_key": "doi:10.3389/fimmu.2026.1934610"
+  },
+  {
+    "kind": "article",
+    "title": "Combining network pharmacology and experimental validation to explore the therapeutic mechanism of Banxia Xiexin decoction in type 2 diabetes mellitus.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694298/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.705681+00:00",
+    "authors": [
+      "Lijuan Du",
+      "Yupeng Chen",
+      "Xiugang Zhang",
+      "Yingying Han",
+      "Gaofeng Qin",
+      "Yiting Tang",
+      "Shijie Han",
+      "Yanhong Yang",
+      "Quanlin Zhao",
+      "Shoujun Song"
+    ],
+    "summary": "Type 2 diabetes mellitus (T2DM) is characterized by insulin resistance (IR), with chronic low-grade inflammation, oxidative stress, and mitochondrial dysfunction contributing to disease progression. Banxia Xiexin Decoction (BXXD), a classical traditional Chinese medicine (TCM) formula, has shown clinical efficacy against T2DM, but its bioactive components and molecular mechanisms remain unclear. This study aimed to elucidate the therapeutic mechanism of BXXD against T2DM by integrating network pharmacology, genetic causal inference, chemical profiling, and in vivo validation.Network pharmacology identified BXXD-T2DM overlapping targets and enriched pathways. Summary-data-based Mendelian randomization (SMR) and molecular docking assessed causality and binding affinity. Bioactive constituents were characterized by UHPLC-Q-Orbitrap HRMS. Mechanisms were validated in high-fat diet/streptozotocin (HFD/STZ)-induced diabetic C57BL/6J mice treated with BXXD for 8 weeks.Network pharmacology identified 217 targets, highlighting IL-1β, TNF-α, AKT1, PPARG, and SIRT1, with AMPK signaling highly enriched. SMR indicated that AKT1 and SIRT1 were causally associated with T2DM risk. UHPLC-Q-Orbitrap HRMS of BXXD-containing serum identified 18 prototype compounds and 53 metabolites, and quercetin, kaempferol, and wogonin stably bound the key targets. In vivo, BXXD lowered fasting blood glucose, HOMA-IR, and GTT/ITT AUCs; reduced TNF-α, IL-1β, ROS, and MDA; restored SOD activity; and preserved adipose tissue morphology. Mechanistically, BXXD activated AMPK/SIRT1 signaling, enhanced mitophagy (increased PINK1, Parkin, and LC3-II/LC3-I; decreased p62), and upregulated PPARG and p-AKT1.BXXD alleviates T2DM-associated metabolic dysregulation by activating the AMPK/SIRT1-mitophagy axis and suppressing inflammation, providing mechanistic evidence supporting further translational investigation of BXXD for T2DM. The online version contains supplementary material available at https://doi.org/10.1007/s13205-026-05001-9.",
+    "doi": "10.1007/s13205-026-05001-9",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42694298",
+      "journal": "3 Biotech"
+    },
+    "dedupe_key": "doi:10.1007/s13205-026-05001-9"
+  },
+  {
+    "kind": "article",
+    "title": "Computational blueprint and stereochemical validation of a small peptide derived from Lacticaseibacillus casei VITCM05 targeting estrogen receptor alpha and human epidermal growth factor receptor 2.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694262/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.706339+00:00",
+    "authors": [
+      "G R Shree Kumari",
+      "Mohanasrinivasan Vaithilingam"
+    ],
+    "summary": "Breast cancer remains one of the leading causes of cancer-related mortality among women worldwide, necessitating the development of safer and more targeted therapeutic strategies. This study computationally extends our previous experimental investigation of a peptide derived from Lacticaseibacillus casei by evaluating its interactions with two clinically relevant breast cancer targets, estrogen receptor alpha (ERα; PDB ID: 3ERT) and human epidermal growth factor receptor 2 (HER2; PDB ID: 1N8Z). The peptide structure was predicted using PEP-FOLD and its stereochemical quality was assessed using a Ramachandran plot. Molecular docking was performed against ERα and HER2, followed by molecular dynamics simulations to evaluate structural stability. Binding free energy, binding affinity, dissociation constant, principal component analysis (PCA), free energy landscape (FEL), molecular mechanics (MM)/Poisson-Boltzmann surface area (PBSA) calculations, and in silico ADMET and toxicity predictions were performed to comprehensively characterise peptide-protein interactions. The predicted peptide model exhibited 84.8% of residues located in the most favoured regions, while 15.2% were located in additionally allowed regions of the Ramachandran plot, indicating satisfactory stereochemical quality. Molecular docking demonstrated favourable interactions with both ERα and HER2, with HER2 showing a marginally more favourable docking score. Molecular dynamics simulations indicated stable peptide-protein complexes throughout the simulation period, as supported by root mean square deviation (RMSD), root mean square fluctuation (RMSF), radius of gyration (Rg), solvent-accessible surface area (SASA), and hydrogen-bond analyses. MM/PBSA calculations predicted stronger binding for the HER2 (1N8Z) complex (ΔG = -28.83 kJ/mol) than for the ERα (3ERT) complex (ΔG = -11.65 kJ/mol), highlighting the complementary nature of docking and dynamic free-energy estimation, which produced different receptor rankings. PCA and FEL analyses further demonstrated stable conformational sampling for both complexes. ADMET predictions suggested favourable peptide-like physicochemical properties while identifying pharmacokinetic and toxicity parameters that require further experimental validation. This computational study suggests that the L. casei-derived peptide exhibits favourable predicted interactions with ERα and HER2 and forms structurally stable peptide-protein complexes under simulated physiological conditions. These findings provide a computational framework for prioritising this probiotic-derived peptide for subsequent experimental validation and further investigation as a potential peptide-based therapeutic candidate for breast cancer.",
+    "doi": "10.3389/fbinf.2026.1918460",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics",
+      "ADMET prediction"
+    ],
+    "extra": {
+      "pmid": "42694262",
+      "journal": "Frontiers in bioinformatics"
+    },
+    "dedupe_key": "doi:10.3389/fbinf.2026.1918460"
+  },
+  {
+    "kind": "article",
+    "title": "Transcriptomic and molecular evidence for baclofen-associated modulation of inhibitory synaptic and neuroinflammatory pathways in diabetic neuropathic pain.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694153/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.707030+00:00",
+    "authors": [
+      "Kaisheng Ye",
+      "Qun Wang",
+      "Haishao Chen",
+      "Sizhuang Xie",
+      "Kangyu Ye"
+    ],
+    "summary": "Diabetic neuropathic pain (DNP) is a disabling complication of diabetes mellitus and is closely associated with impaired inhibitory neurotransmission and neuroimmune activation. Although GABAergic dysfunction has been implicated in neuropathic pain, the relationship between peripheral transcriptomic signatures, central transcriptional alterations, and the therapeutic effects of GABA receptor modulation remains incompletely understood. This study integrated human peripheral blood transcriptomic reanalysis, mouse whole-brain RNA-seq, behavioral assessment, RT-qPCR, and molecular docking to investigate DNP- associated molecular alterations and the potential mechanism of baclofen. Peripheral blood transcriptome data from diabetic peripheral neuropathy patients and healthy controls were reanalyzed using the GSE95849 dataset as a DPN/DNP-related human transcriptomic resource. Differential expression analysis, custom preranked GSEA, ssGSEA, and curated heatmap analysis were performed to identify immune-inflammatory and synaptic/GABAergic-related signatures. A streptozotocin-induced DNP mouse model was established, and DNP mice received systemic baclofen treatment. Mechanical allodynia, thermal hyperalgesia, grip strength, and motor coordination were assessed. Whole-brain RNA-seq was performed in control, DNP, and baclofen-treated DNP mice to evaluate central transcriptional alterations and treatment-associated pathway modulation. RT-qPCR was used to measure brain Gabra1 expression, and molecular docking was performed to evaluate the predicted binding mode of baclofen with GABA receptors. Reanalysis of human peripheral blood transcriptomes revealed enhanced immune-inflammatory activation and reduced synaptic/GABAergic-related pathway activity in the DPN/DNP-related human peripheral blood dataset. In DNP mice, baclofen treatment significantly alleviated mechanical allodynia and thermal hyperalgesia and partially improved neuromuscular performance without impairing motor coordination. Whole-brain RNA-seq showed that DNP mice exhibited significant negative enrichment of GABAergic signaling and inhibitory synapse signatures, together with positive enrichment of neuroinflammation/NF- κB and glial activation-related signatures. Baclofen treatment showed partial and directional modulation of these DNP-associated transcriptional alterations, including a shift toward restoration of inhibitory/synaptic signatures and attenuation of neuroinflammatory pathway activity. RT-qPCR further showed that baclofen increased the DNP-suppressed brain expression of Gabra1. Molecular docking supported the preferential interaction of baclofen with the GABAB receptor, including a predicted salt bridge with Arg162 within the Venus Flytrap domain. DNP is associated with convergent peripheral and central transcriptomic alterations characterized by immune-inflammatory activation and reduced inhibitory/synaptic pathway activity. Baclofen alleviates neuropathic hypersensitivity and is associated with partial, pathway-level modulation of DNP-related brain transcriptional changes, with Gabra1 restoration and GABAB receptor binding providing additional mechanistic support. These findings suggest that GABAB receptor modulation may contribute to restoring inhibitory balance and attenuating neuroinflammatory activation in DNP.",
+    "doi": "10.3389/fphar.2026.1917799",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42694153",
+      "journal": "Frontiers in pharmacology"
+    },
+    "dedupe_key": "doi:10.3389/fphar.2026.1917799"
+  },
+  {
+    "kind": "article",
+    "title": "Hydramethylnon induces synergistic toxicity of pyrethroid mixtures in human lung epithelial cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694149/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.707655+00:00",
+    "authors": [
+      "Hye-Jin Jeong",
+      "Hye-In Park",
+      "Tae-Rim Im",
+      "Ju-Hui Im",
+      "Seung Min Choi",
+      "Chang-Ik Choi",
+      "Myungwon Seo",
+      "Yong Joo Park"
+    ],
+    "summary": "Household insecticides are frequently used in combination indoors; however, the inhalation-relevant toxicological consequences of such co-exposure remain unclear. Therefore, in this study, we investigated whether co-exposure to hydramethylnon and representative pyrethroid insecticides (tetramethrin, prallethrin, and imiprothrin) induces synergistic toxicity in BEAS-2B human bronchial epithelial cells and explored a metabolic mechanism involving cytochrome P450 (CYP) inhibition. Cell viability was quantified via water-soluble tetrazolium salt-1 assay after 24 h exposure, and the half-maximal inhibitory concentration (IC50) of individual chemicals were used to define toxic units for mixture design. Mixture interactions were evaluated by comparing experimentally observed mixture concentration-response relationships with predictions from concentration addition (CA) or independent action (IA) using the Open Mixture Risk Assessment (OpenMRA) platform, with interaction classification based on the model deviation ratio (MDR). Analyses of chemical category and mode of action (MoA) revealed that hydramethylnon mechanistically differed from pyrethroid insecticides, supporting the application of the IA model for mixture toxicity evaluation. Although mixtures containing only pyrethroids showed additive effects consistent with the CA model (MDR, 0.95), every mixture containing hydramethylnon exhibited significant synergism, with MDRs of 2.62-5.80 under the IA model. Mechanistically, hydramethylnon significantly reduced CYP3A4 and CYP3A5 mRNA expression levels in BEAS-2B cells and inhibited recombinant CYP3A4 activity in a dose-dependent manner (IC50, 3.30 µg/mL). Molecular docking further confirmed stable binding of hydramethylnon within CYP3A4/3A5 active sites. Collectively, these findings suggest that hydramethylnon acts as a synergy-inducing co-exposure factor for pyrethroid mixtures in the bronchial epithelium, possibly via suppression of CYP-mediated detoxification, underscoring the need to incorporate metabolic interactions into inhalation-relevant mixture risk assessment. The online version contains supplementary material available at https://doi.org/10.1007/s43188-026-00354-y.",
+    "doi": "10.1007/s43188-026-00354-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42694149",
+      "journal": "Toxicological research"
+    },
+    "dedupe_key": "doi:10.1007/s43188-026-00354-y"
+  },
+  {
+    "kind": "article",
+    "title": "Shared Treg dysregulation underlies psoriasis vulgaris and atopic dermatitis through the PHF19-PRC2 epigenetic axis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42694095/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-04T18:34:09.708224+00:00",
+    "authors": [
+      "Yiting Lin",
+      "Xiaolei Su",
+      "Mingzhu Jin",
+      "Yuqi Wang",
+      "Yaoyao Li",
+      "Bingquan Zong",
+      "Haoran Song",
+      "Yajie Lv",
+      "Zhenhua Liu",
+      "Gang Wang",
+      "Shengxi Wu"
+    ],
+    "summary": "Psoriasis vulgaris (PV) and atopic dermatitis (AD) are chronic inflammatory skin diseases characterized by distinct dominant T cell subsets, yet emerging evidence suggests overlapping immune mechanisms. Whether a shared Treg abnormality underlies both diseases remains unclear. Single-cell RNA sequencing data from lesional T cells of 8 PV, 7 AD, and 7 healthy controls were analyzed. Treg subset identification, trajectory, communication, and enrichment analyses were conducted. Differentially expressed genes from both diseases were intersected and subjected to Mendelian randomization to screen for shared causal genes, followed by interaction mapping, drug prediction, and molecular docking. Findings were validated in Foxp3-tdTomato reporter mouse models of imiquimod-induced psoriasis-like and MC903-induced AD-like dermatitis by flow cytometry and quantitative PCR. A shared Treg triad remodeling pattern was identified: central memory Treg (cmTreg) was almost completely depleted, cycling Treg (Treg-c) expanded, and effector Treg (eTreg) accumulated in both diseases. Pseudotemporal analysis revealed a differentiation coordination defect, with upstream Treg-c shifting prematurely while effector Treg failed terminal maturation. Cell communication analysis identified enhanced MIF-(CD74+CXCR4/CD44) signaling as a shared intercellular remodeling axis, with the network shifting from a cmTreg-centric topology to one jointly centered on Treg-c and eTreg. Mendelian randomization identified seven shared causal genes (PDCD5, PHF19, GNAQ, LRR1, DHX36, TMEM107, FAM200B), with PHF19 serving as a core accessory subunit of PRC2. Molecular docking and in vivo experiments demonstrated that resveratrol binds PHF19, is predicted to activate the PHF19-PRC2-H3K27me3 axis, restores Treg subset homeostasis, and ameliorates skin lesions in both models. Treg subset remodeling is a shared pathogenic feature, nominating PHF19-targeted activation as a tolerance-restoring therapeutic strategy.",
+    "doi": "10.3389/fimmu.2026.1932788",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42694095",
+      "journal": "Frontiers in immunology"
+    },
+    "dedupe_key": "doi:10.3389/fimmu.2026.1932788"
   }
 ]
