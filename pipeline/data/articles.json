@@ -24,6 +24,122 @@
   },
   {
     "kind": "article",
+    "title": "MorphoNavigator-3D: Generalizable single-cell phenotyping of cancer spheroids using Bayesian-optimized deep-learning workflows",
+    "url": "https://doi.org/10.1101/2024.09.08.611898",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-06",
+    "collected_at": "2026-09-06T17:44:47.899945+00:00",
+    "authors": [
+      "Mogollon, I.",
+      "Feodoroff, M.",
+      "Nylund, A.",
+      "Montedeoca, A.",
+      "Atarsaikhan, G.",
+      "Neto, P.",
+      "Horvath, P.",
+      "Rannikko, A.",
+      "Cerullo, V.",
+      "Pietiainen, V.",
+      "Paavolainen, L."
+    ],
+    "summary": "Accurate quantification of drug responses in 3D tumor-immune co-cultures remains challenging because complex spatial architecture and cellular heterogeneity limit the interpretability of bulk viability assays. Here, we present MorphoNavigator-3D ('Morphological Navigator in 3D';MoNa-3D), an automated framework for high-resolution, annotation-free single-cell analysis in complex 3D co-cultures. The approach integrates optimized live-cell staining, deep learning-based segmentation, and Bayesian optimization (BO) to adapt end-to-end image-analysis workflows across diverse experimental conditions. MoNa-3D was applied to clear cell renal cell carcinoma (ccRCC)-immune cell 3D-spheroid co-cultures, exposed to PI3K/mTOR pathway inhibitors and immunomodulatory compounds in a high-content imaging-based drug screen. The pipeline was used to extract multiscale phenotypic features encompassing ATP-based cell viability, morphology, nuclear remodeling, spatial dispersion, and immune infiltration. This analysis resolved distinct drug-induced phenotypes: PI3K/mTOR inhibitors promoted spheroid disintegration, nuclear enlargement, and immune exclusion, whereas immunomodulators preserved spheroid arch",
+    "doi": "10.1101/2024.09.08.611898",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "category": "cancer biology"
+    },
+    "dedupe_key": "doi:10.1101/2024.09.08.611898"
+  },
+  {
+    "kind": "article",
+    "title": "PanScreen: A Comprehensive Approach to Off-Target Liability Assessment",
+    "url": "https://doi.org/10.1101/2023.11.16.567496",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-06",
+    "collected_at": "2026-09-06T17:44:47.900829+00:00",
+    "authors": [
+      "Sellner, M. S.",
+      "Joos, F. L.",
+      "Odermatt, A.",
+      "Lill, M. A.",
+      "Smiesko, M."
+    ],
+    "summary": "Drug development projects are getting increasingly more expensive while their success rate is stagnating. Safety issues attributed to off-target binding represent a major reason for the failure of new drugs. Besides desired on-target binding, small molecules may interact with off-targets, triggering adverse effects. Therefore, the development of novel methods for early recognition of such issues that are resource-efficient and cost-effective becomes vital. Here, we introduce PanScreen, an online platform for the automated assessment of off-target liabilities. PanScreen combines structure-based modeling techniques with state-of-the-art deep learning methods to not only predict accurate binding affinities but also give insight into potential modes of action. We show that the predictions are approaching experimental accuracy found in public datasets and that the same technology can also be used for other research areas, such as drug repurposing. Such fast and inexpensive methods allow researchers to test not only drug candidates, but all small molecules that might come into contact with a human organism for potential safety concerns very early in the development process. PanScreen is ",
+    "doi": "10.1101/2023.11.16.567496",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug repurposing"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.1101/2023.11.16.567496"
+  },
+  {
+    "kind": "article",
+    "title": "Structural basis for multiple binding modes of antimalarial ligands targeting Plasmodium falciparum NCR1",
+    "url": "https://doi.org/10.1101/2025.11.11.687791",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-06",
+    "collected_at": "2026-09-06T17:44:48.751674+00:00",
+    "authors": [
+      "Kohling, A.",
+      "Boulet, C.",
+      "Al Makhlouf, M.",
+      "Khanppnavar, B.",
+      "Chen, Y.",
+      "Ganga, E.",
+      "Kirchmair, J.",
+      "Stockner, T.",
+      "Brochet, M.",
+      "Korkhov, V. M."
+    ],
+    "summary": "PfNCR1 is a Plasmodium falciparum cholesterol transporter at the plasma membrane-parasitophorous vacuole interface, which has recently emerged as a promising antimalarial target. Despite an immense interest in development of novel antimalarial compounds targeting PfNCR1, the molecular mechanism of PfNCR1 inhibition remains elusive. Here, we report cryo-EM structures of PfNCR1 in its apo state and bound to three inhibitors: MMV009108, MMV019662 and MMV028038. MMV009108 binds to the ''neck'' site at the ectodomain-membrane domain inter-face. MMV028038 displaces the sterol at the ectodomain ''ecto'' site. Remarkably, MMV019662 binds both sites: it associates near the bound sterol molecule at the ecto site and targets the neck site, thereby altering the sterol-sensing domain conformation. Importantly, we identify a novel antimalarial compound, G856-4236, which targets the ecto site exclusively. These four distinct modes of PfNCR1 inhibition advance our understanding of its conformational plasticity and es-tablish a framework for rational drug discovery targeting PfNCR1 and related transporters.",
+    "doi": "10.1101/2025.11.11.687791",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.1101/2025.11.11.687791"
+  },
+  {
+    "kind": "article",
+    "title": "The wild-type hERG cryo-EM structure fails to support conduction and evolve toward an inactivated-like selectivity filter conformation in molecular dynamics simulations",
+    "url": "https://doi.org/10.64898/2026.09.02.748792",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-06",
+    "collected_at": "2026-09-06T17:44:48.752483+00:00",
+    "authors": [
+      "Leonardi, M. V.",
+      "Michelucci, A.",
+      "Aldakul, Y.",
+      "Sun, H.",
+      "Catacuzzeno, L.",
+      "Furini, S."
+    ],
+    "summary": "The atomic structure of the human Ether-a-go-go-Related Gene (hERG) K+ channel has recently been resolved by cryo-electron microscopy (cryo-EM) under both high- and low-K+ conditions, in order to obtain information on the mechanism of the K+-sensitive, very rapid C-type inactivation typical of this channel. Although the currently available high-K+ structures have been widely interpreted as representing the conductive, active state, whether they correspond to a dynamically stable conductive conformation remains unresolved. Here, we used extensive all-atom molecular dynamics (MD) simulations, with and without Electronic Continuum Correction (ECC), to investigate selectivity filter (SF) dynamics and ion permeation in wild-type (WT) hERG and the non-inactivating N629D mutant. Across all membrane potentials tested, WT hERG failed to support K+ permeation and instead spontaneously evolved towards a non-conductive SF conformation characterized by extracellular dilation, localized inner constriction, depletion of the outer ion-binding sites, and persistent trapping of K+ ions within the central binding sites of the filter, closely resembling the inactivated SF of Shaker channels recently r",
+    "doi": "10.64898/2026.09.02.748792",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.02.748792"
+  },
+  {
+    "kind": "article",
     "title": "Catalytic and inhibitory architecture of comammox ammonia monooxygenase",
     "url": "https://doi.org/10.64898/2026.09.02.748776",
     "source": "bioRxiv",
