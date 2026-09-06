@@ -46828,5 +46828,62 @@
       "journal": "Frontiers in cellular and infection microbiology"
     },
     "dedupe_key": "doi:10.3389/fcimb.2026.1912373"
+  },
+  {
+    "kind": "article",
+    "title": "Ellagic acid attenuates myocardial fibrosis by suppressing Bmi1-mediated inhibition of the p53/p21 pathway in cardiac fibroblasts.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42701980/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-06T23:06:12.685603+00:00",
+    "authors": [
+      "Bolin Li",
+      "Chongyu Shao",
+      "Xiaoxiao Huang",
+      "Huifen Zhou",
+      "Kai Huang",
+      "Chengsi Jin",
+      "HaiTong Wan"
+    ],
+    "summary": "Myocardial fibrosis is characterized by excessive cardiac fibroblasts (CF) proliferation and extracellular matrix deposition. The p53 tumor suppressor is known to inhibit CF proliferation, while the polycomb protein Bmi1 negatively regulates p53. Ellagic acid (EA), a natural polyphenol, has demonstrated anti-fibrotic potential, but its mechanism of action in the heart remains unclear. This study investigated whether EA reduces myocardial fibrosis by inhibiting Bmi1 expression. A rat model of myocardial fibrosis was established using isoproterenol (ISO), and rat cardiac fibroblasts were treated with TGF-β to induce a pro-fibrotic phenotype in vitro. Echocardiography and histology confirmed that EA treatment improved cardiac function and reduced fibrosis in ISO-induced rats. In vitro, EA significantly inhibited TGF-β-induced CF proliferation, migration, and differentiation into myofibroblasts. Mechanistically, EA upregulated p53 and its downstream target p21, leading to G1/S cell cycle arrest. Molecular docking and dynamics simulations predicted that EA binds to Bmi1, and subsequent experiments showed EA treatment reduced Bmi1 protein levels. Using a Bmi1 inhibitor (PTC-209) and overexpression plasmids, we demonstrated that the anti-fibrotic effects of EA are mediated in part through inhibition of Bmi1, which in turn activates the p53 pathway. Ellagic acid reduces myocardial fibrosis, at least in part, through suppression of Bmi1 expression. This suppression is associated with relief of the inhibitory effect of Bmi1 on p53, leading to p53/p21 pathway activation, cell cycle arrest, and subsequent inhibition of cardiac fibroblasts proliferation, migration, and differentiation. These findings suggest that Bmi1 may represent a novel therapeutic target for EA treatment of myocardial fibrosis.",
+    "doi": "10.1007/s11010-026-05720-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42701980",
+      "journal": "Molecular and cellular biochemistry"
+    },
+    "dedupe_key": "doi:10.1007/s11010-026-05720-w"
+  },
+  {
+    "kind": "article",
+    "title": "Design, Synthesis, Antimicrobial Evaluation, DFT Analysis, Molecular Docking and Molecular Dynamics Studies of Thiadiazol-Hydrazine Derivatives as Potential Dihydrofolate Reductase Inhibitors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42701970/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-06T23:06:12.686532+00:00",
+    "authors": [
+      "Sanjay B Sonawale",
+      "Dattatraya S Kale",
+      "Ganesh R Borse",
+      "Pankaj H Naikwadi",
+      "Samin A Shaikh"
+    ],
+    "summary": "A series of thiadiazol-hydrazine derivatives (3a-3d) were rationally designed, synthesized, and characterized to explore their antimicrobial potential and possible interactions with dihydrofolate reductase (DHFR). The antimicrobial activity of the synthesized compounds was evaluated against representative Gram-positive bacteria (S. aureus and S. pyogenes), Gram-negative bacteria (E. coli and P. aeruginosa), and fungal strains (C. albicans, A. niger, and A. clavatus) using the minimum inhibitory concentration (MIC) method. Among the synthesized derivatives, compound 3b exhibited the most favorable overall antimicrobial profile, particularly against the tested bacterial strains, whereas the antifungal activity of the derivatives was comparatively limited.To investigate the possible molecular basis of the observed antimicrobial activity, molecular docking studies were performed against dihydrofolate reductase (DHFR; PDB ID: 1AOE). The synthesized derivatives exhibited favorable predicted binding within the DHFR active-site region, with compound 3b showing the most favorable docking score among the investigated compounds. The predicted binding mode of 3b was characterized by hydrogen-bonding and hydrophobic interactions with residues lining the DHFR binding pocket. Molecular dynamics simulations and interaction-energy analyses were subsequently employed to examine the stability and dynamic behavior of the predicted protein-ligand complexes. The simulation results supported the persistence of the predicted interactions and provided additional computational evidence for the favorable accommodation of 3b within the DHFR binding site.Density functional theory (DFT) calculations at the B3LYP-D3BJ/def2-TZVP level were performed to investigate the electronic properties of the synthesized derivatives. The calculated frontier molecular orbital characteristics and related electronic descriptors provided complementary insights into the influence of structural variation on molecular reactivity and the observed biological activity. Furthermore, haemolytic toxicity studies demonstrated low erythrocyte membrane disruption (< 3% haemolysis), indicating favorable preliminary erythrocyte compatibility under the tested conditions.Overall, the integrated experimental and computational results identified compound 3b as the most promising member of the present series, particularly with respect to antibacterial activity, while the comparatively limited antifungal activity indicates the need for further structural optimization. The computational findings provide a preliminary basis for proposing DHFR as a potential molecular target; however, experimental enzyme inhibition studies will be required to confirm the proposed DHFR-mediated mechanism.",
+    "doi": "10.1007/s10930-026-10351-7",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42701970",
+      "journal": "The protein journal"
+    },
+    "dedupe_key": "doi:10.1007/s10930-026-10351-7"
   }
 ]
