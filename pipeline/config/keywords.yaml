@@ -49,6 +49,32 @@ topics:
   - active learning chemistry
   - drug-likeness
 
+  # Adicionados 2026-09-03 (rotina do Baker, 06:50) — justificados por padrão MEDIDO nos dados,
+  # não por palpite. Os dois eram os termos mais recorrentes entre os artigos que chegavam com
+  # `keywords_matched` VAZIO (o sinal de termo candidato previsto pela rotina): juntos rotulam
+  # 45 dos 134 artigos hoje sem termo. Contagem na base no momento da adição:
+  #   - "in silico": 217 artigos (23 hoje sem termo) — termo central de CADD, ausente por
+  #     omissão desde a redação original; é o mais frequente dos não-rotulados recentes.
+  #   - "network pharmacology": 129 artigos (22 hoje sem termo).
+  # Risco de inundação avaliado antes de adicionar (é o critério do `filter_relevance` em feeds
+  # generalistas): 11 e 1 ocorrências no lado de NOTÍCIAS, respectivamente — desprezível.
+  - in silico
+  - network pharmacology
+
+  # 2026-09-04 (rotina do Baker, manha) -- PRIMEIROS TERMOS EM PORTUGUES da lista.
+  # Motivo medido, nao palpite: os 43 termos acima sao TODOS em ingles, e o mesmo `topics`
+  # alimenta o `filter_relevance` de fontes BRASILEIRAS (butantan, fiocruz, SciELO). Isso
+  # criava um ponto cego real: um anuncio de CADD publicado em portugues nunca casava.
+  # Prova encontrada no historico de 320 itens do Butantan -- exatamente 1 item relevante,
+  # invisivel para todos os 43 termos ingleses:
+  #   "Pos-doutorado em descoberta de farmacos no Instituto Butantan" (Agencia FAPESP)
+  # Ruido medido ANTES de adicionar (mesmo criterio usado para "in silico"/"network
+  # pharmacology" acima): aplicados as 60 obras da janela do SciELO, os dois termos admitem
+  # 0 (zero) itens novos -- nao ha risco de inundacao. Cap da rotina respeitado: 2 termos.
+  # Sao os equivalentes PT diretos de "drug discovery" e "drug design", ja no topo da lista.
+  - descoberta de fármacos
+  - planejamento de fármacos
+
 # Query compacta usada pelo coletor PubMed (E-utils), ancorada no nicho de IA+CADD — evita o
 # ruído de "drug discovery" genérico (majoritariamente clínico/regulatório, não computacional).
 pubmed_query: >-

@@ -156,6 +156,21 @@ companies:
     feed_url: "https://www.microsoft.com/en-us/research/feed/"
     filter_relevance: true
 
+  # 2026-09-04 (rotina do Baker, manha) -- filter_relevance false -> true nas DUAS instituicoes
+  # brasileiras. Medicao desta data (14 dias, contra a base real, nao estimativa):
+  #   butantan: 187 itens coletados, 0 relevantes ao nicho pelo casamento de topicos.
+  #   fiocruz:   13 itens coletados, 0 relevantes.
+  # Amostra do que entrava sem filtro: olimpiada de biologia, doacao de campanha politica,
+  # projeto de registro de serpentes/escorpioes, disputa sobre CoronaVac. Nenhum item de CADD.
+  # Pelo criterio ja documentado neste arquivo, sao veiculos GENERALISTAS -- entram com filtro,
+  # senao inundam a base (era o maior contribuinte isolado da pagina "Empresas").
+  # Isto NAO e remocao: e a conversao para VIGIA, o mesmo padrao ja aceito em nvidia/openai/
+  # microsoft-research (0 itens hoje, mantidos para o dia em que o anuncio certo aparecer).
+  # Pre-condicao fechada na MESMA rodada: os 43 topicos eram todos em ingles, o que faria o
+  # filtro cegar justamente o anuncio brasileiro que queremos. Por isso "descoberta de farmacos"
+  # e "planejamento de farmacos" foram adicionados a keywords.yaml antes desta troca -- com eles,
+  # o unico item historicamente relevante do Butantan (pos-doc em descoberta de farmacos) passa.
+  # Se algum dos dois ficar semanas em zero E nenhum termo PT casar, reavaliar como caso (a).
   - slug: butantan
     name: "Instituto Butantan"
     url: "https://butantan.gov.br/"
@@ -163,12 +178,27 @@ companies:
     method: google_news
     query: '"Instituto Butantan"'
     hl_gl: {hl: "pt-BR", gl: "BR", ceid: "BR:pt"}
-    filter_relevance: false
+    filter_relevance: true
 
+  # 2026-09-04 (rotina do Baker, manha) -- filter_relevance false -> true nas DUAS instituicoes
+  # brasileiras. Medicao desta data (14 dias, contra a base real, nao estimativa):
+  #   butantan: 187 itens coletados, 0 relevantes ao nicho pelo casamento de topicos.
+  #   fiocruz:   13 itens coletados, 0 relevantes.
+  # Amostra do que entrava sem filtro: olimpiada de biologia, doacao de campanha politica,
+  # projeto de registro de serpentes/escorpioes, disputa sobre CoronaVac. Nenhum item de CADD.
+  # Pelo criterio ja documentado neste arquivo, sao veiculos GENERALISTAS -- entram com filtro,
+  # senao inundam a base (era o maior contribuinte isolado da pagina "Empresas").
+  # Isto NAO e remocao: e a conversao para VIGIA, o mesmo padrao ja aceito em nvidia/openai/
+  # microsoft-research (0 itens hoje, mantidos para o dia em que o anuncio certo aparecer).
+  # Pre-condicao fechada na MESMA rodada: os 43 topicos eram todos em ingles, o que faria o
+  # filtro cegar justamente o anuncio brasileiro que queremos. Por isso "descoberta de farmacos"
+  # e "planejamento de farmacos" foram adicionados a keywords.yaml antes desta troca -- com eles,
+  # o unico item historicamente relevante do Butantan (pos-doc em descoberta de farmacos) passa.
+  # Se algum dos dois ficar semanas em zero E nenhum termo PT casar, reavaliar como caso (a).
   - slug: fiocruz
     name: "Fiocruz"
     url: "https://portal.fiocruz.br/"
     category: br_institution
     method: rss
     feed_url: "https://agencia.fiocruz.br/rss.xml"
-    filter_relevance: false
+    filter_relevance: true

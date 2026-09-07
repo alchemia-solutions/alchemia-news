@@ -1,0 +1,60 @@
+{
+  "last_run_started": "2026-09-02T11:45:32.986116+00:00",
+  "last_run_finished": "2026-09-02T11:49:27.383756+00:00",
+  "duration_seconds": 234.4,
+  "collectors": {
+    "pubmed": {
+      "count": 60,
+      "seconds": 5.7,
+      "error": null
+    },
+    "biorxiv": {
+      "count": 20,
+      "seconds": 174.8,
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\collectors\\biorxiv_collector.py\", line 43, in collect\n    data = _fetch_page(base_url, start, end, cursor)\n  File \"<alchemia-news>\\pipeline\\collectors\\biorxiv_collector.py\", line 17, in _fetch_page\n    return common.http_get_json(url)\n           ~~~~~~~~~~~~~~~~~~~~^^^^^\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 138, in http_get_json\n    raw = http_get(url, timeout=timeout, headers=headers)\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 134, in http_get\n    raise RuntimeError(f\"GET falhou após {retries} tentativas: {url} ({last_exc})\")\nRuntimeError: GET falhou após 3 tentativas: https://api.biorxiv.org/details/biorxiv/2026-08-30/2026-09-02/390 (The read operation timed out)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"<alchemia-news>\\pipeline\\collectors\\biorxiv_collector.py\", line 52, in collect\n    raise common.ColetaParcial(\n    ...<2 lines>...\n    ) from exc\ncollectors.common.ColetaParcial: bioRxiv: falha na página cursor=390 após 390 preprints varridos -- GET falhou após 3 tentativas: https://api.biorxiv.org/details/biorxiv/2026-08-30/2026-09-02/390 (The read operation timed out)\n"
+    },
+    "arxiv": {
+      "count": 60,
+      "seconds": 0.7,
+      "error": null
+    },
+    "chemrxiv": {
+      "count": 10,
+      "seconds": 1.0,
+      "error": null
+    },
+    "scielo": {
+      "count": 2,
+      "seconds": 1.0,
+      "error": null
+    },
+    "nature": {
+      "count": 0,
+      "seconds": 0.0,
+      "error": null
+    },
+    "newsletters": {
+      "count": 25,
+      "seconds": 21.7,
+      "error": null
+    },
+    "googlenews": {
+      "count": 842,
+      "seconds": 12.5,
+      "error": null
+    },
+    "companies": {
+      "count": 1036,
+      "seconds": 16.8,
+      "error": null
+    }
+  },
+  "totals": {
+    "articles": 1265,
+    "news": 2922,
+    "companies_activity": 1658,
+    "new_articles_this_run": 51,
+    "new_news_this_run": 133,
+    "new_companies_activity_this_run": 90
+  }
+}

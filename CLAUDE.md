@@ -9,7 +9,9 @@ Claude-específico.
 
 **Sub-agente e skill deste setor (criados em 2026-08-17):**
 
-- `.claude/agents/alchemia-news.md` — sub-agente dono do setor.
+- `.claude/agents/alchemia-news/alchemia-news.md` — sub-agente dono do setor. Desde 2026-08-20
+  cada nó é uma **pasta** (`<nome>.md` + `SOUL.md` + `NODE.md`), não um `.md` plano — o caminho
+  antigo `.claude/agents/alchemia-news.md` não existe mais.
 - `.claude/skills/news-intelligence-pipeline/SKILL.md` — como rodar, depurar e estender o
   pipeline: disparar coleta, investigar coletor com 0 itens ou erro, adicionar empresa/termo/fonte
   nova, e reconciliar o dashboard com o cron 3x/dia.

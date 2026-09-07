@@ -1,0 +1,60 @@
+{
+  "last_run_started": "2026-09-03T16:01:30.752064+00:00",
+  "last_run_finished": "2026-09-03T16:20:14.685206+00:00",
+  "duration_seconds": 1123.9,
+  "collectors": {
+    "pubmed": {
+      "count": 0,
+      "seconds": 285.3,
+      "error": null
+    },
+    "biorxiv": {
+      "count": 53,
+      "seconds": 170.4,
+      "error": null
+    },
+    "arxiv": {
+      "count": 0,
+      "seconds": 79.8,
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\collectors\\arxiv_collector.py\", line 35, in collect\n    raw = common.http_get(url, timeout=25)\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 134, in http_get\n    raise RuntimeError(f\"GET falhou após {retries} tentativas: {url} ({last_exc})\")\nRuntimeError: GET falhou após 3 tentativas: https://export.arxiv.org/api/query?search_query=%28cat%3Aq-bio.BM%20OR%20cat%3Aq-bio.QM%20OR%20cat%3Aq-bio.MN%29%20AND%20%28abs%3A%22drug%20discovery%22%20OR%20abs%3A%22drug%20design%22%20OR%20abs%3A%22molecular%20docking%22%20OR%20abs%3A%22protein%20design%22%20OR%20abs%3A%22protein%20structure%20prediction%22%20OR%20abs%3A%22de%20novo%20design%22%20OR%20abs%3A%22generative%20model%20molecule%22%20OR%20abs%3A%22antibody%20design%22%20OR%20abs%3A%22virtual%20screening%22%20OR%20abs%3A%22cheminformatics%22%29&sortBy=submittedDate&sortOrder=descending&max_results=60 (<urlopen error _ssl.c:1063: The handshake operation timed out>)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"<alchemia-news>\\pipeline\\collectors\\arxiv_collector.py\", line 41, in collect\n    raise common.ColetaParcial(f\"arXiv: falhou -- {exc}\") from exc\ncollectors.common.ColetaParcial: arXiv: falhou -- GET falhou após 3 tentativas: https://export.arxiv.org/api/query?search_query=%28cat%3Aq-bio.BM%20OR%20cat%3Aq-bio.QM%20OR%20cat%3Aq-bio.MN%29%20AND%20%28abs%3A%22drug%20discovery%22%20OR%20abs%3A%22drug%20design%22%20OR%20abs%3A%22molecular%20docking%22%20OR%20abs%3A%22protein%20design%22%20OR%20abs%3A%22protein%20structure%20prediction%22%20OR%20abs%3A%22de%20novo%20design%22%20OR%20abs%3A%22generative%20model%20molecule%22%20OR%20abs%3A%22antibody%20design%22%20OR%20abs%3A%22virtual%20screening%22%20OR%20abs%3A%22cheminformatics%22%29&sortBy=submittedDate&sortOrder=descending&max_results=60 (<urlopen error _ssl.c:1063: The handshake operation timed out>)\n"
+    },
+    "chemrxiv": {
+      "count": 0,
+      "seconds": 65.1,
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\collectors\\chemrxiv_collector.py\", line 28, in collect\n    entries = common.crossref_works_by_prefix(base_url, doi_prefix, rows, days_back=window_days)\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 362, in crossref_works_by_prefix\n    data = http_get_json(url)\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 138, in http_get_json\n    raw = http_get(url, timeout=timeout, headers=headers)\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 134, in http_get\n    raise RuntimeError(f\"GET falhou após {retries} tentativas: {url} ({last_exc})\")\nRuntimeError: GET falhou após 3 tentativas: https://api.crossref.org/works?filter=prefix:10.26434,from-created-date:2026-02-15&rows=60&sort=created&order=desc&select=DOI,title,created,author,abstract,container-title,URL (<urlopen error _ssl.c:1063: The handshake operation timed out>)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"<alchemia-news>\\pipeline\\collectors\\chemrxiv_collector.py\", line 34, in collect\n    raise common.ColetaParcial(f\"ChemRxiv/Crossref: falhou -- {exc}\") from exc\ncollectors.common.ColetaParcial: ChemRxiv/Crossref: falhou -- GET falhou após 3 tentativas: https://api.crossref.org/works?filter=prefix:10.26434,from-created-date:2026-02-15&rows=60&sort=created&order=desc&select=DOI,title,created,author,abstract,container-title,URL (<urlopen error _ssl.c:1063: The handshake operation timed out>)\n"
+    },
+    "scielo": {
+      "count": 0,
+      "seconds": 65.1,
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\collectors\\scielo_collector.py\", line 29, in collect\n    entries = common.crossref_works_by_prefix(\n        base_url, doi_prefix, rows, query=query, days_back=window_days\n    )\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 362, in crossref_works_by_prefix\n    data = http_get_json(url)\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 138, in http_get_json\n    raw = http_get(url, timeout=timeout, headers=headers)\n  File \"<alchemia-news>\\pipeline\\collectors\\common.py\", line 134, in http_get\n    raise RuntimeError(f\"GET falhou após {retries} tentativas: {url} ({last_exc})\")\nRuntimeError: GET falhou após 3 tentativas: https://api.crossref.org/works?filter=prefix:10.1590,from-created-date:2026-02-15&query=drug+design+OR+drug+discovery+OR+molecular+docking+OR+virtual+screening+OR+cheminformatics&rows=60&sort=created&order=desc&select=DOI,title,created,author,abstract,container-title,URL (<urlopen error _ssl.c:1063: The handshake operation timed out>)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"<alchemia-news>\\pipeline\\collectors\\scielo_collector.py\", line 37, in collect\n    raise common.ColetaParcial(f\"SciELO/Crossref: falhou -- {exc}\") from exc\ncollectors.common.ColetaParcial: SciELO/Crossref: falhou -- GET falhou após 3 tentativas: https://api.crossref.org/works?filter=prefix:10.1590,from-created-date:2026-02-15&query=drug+design+OR+drug+discovery+OR+molecular+docking+OR+virtual+screening+OR+cheminformatics&rows=60&sort=created&order=desc&select=DOI,title,created,author,abstract,container-title,URL (<urlopen error _ssl.c:1063: The handshake operation timed out>)\n"
+    },
+    "nature": {
+      "count": 0,
+      "seconds": 0.0,
+      "error": null
+    },
+    "newsletters": {
+      "count": 22,
+      "seconds": 75.6,
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>\\pipeline\\run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n  File \"<alchemia-news>\\pipeline\\collectors\\feed_collector.py\", line 264, in collect_newsletter_feeds\n    return _collect_section(\"newsletter_feeds\", \"newsletter\")\n  File \"<alchemia-news>\\pipeline\\collectors\\feed_collector.py\", line 251, in _collect_section\n    raise ColetaParcial(\n    ...<2 lines>...\n    )\ncollectors.common.ColetaParcial: 1/5 feed(s) de 'newsletter_feeds' falharam: Longevity.Technology: GET falhou após 3 tentativas: https://longevity.technology/feed/ (<urlopen error _ssl.c:1063: The handshake operation timed out>)\n"
+    },
+    "googlenews": {
+      "count": 501,
+      "seconds": 364.6,
+      "error": null
+    },
+    "companies": {
+      "count": 973,
+      "seconds": 17.9,
+      "error": null
+    }
+  },
+  "totals": {
+    "articles": 1363,
+    "news": 3598,
+    "companies_activity": 2055,
+    "new_articles_this_run": 19,
+    "new_news_this_run": 121,
+    "new_companies_activity_this_run": 71
+  }
+}
