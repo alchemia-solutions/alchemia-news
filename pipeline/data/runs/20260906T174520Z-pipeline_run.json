@@ -1,0 +1,60 @@
+{
+  "last_run_started": "2026-09-06T17:41:02.104020+00:00",
+  "last_run_finished": "2026-09-06T17:45:20.584724+00:00",
+  "duration_seconds": 258.5,
+  "collectors": {
+    "pubmed": {
+      "count": 60,
+      "seconds": 3.0,
+      "error": null
+    },
+    "biorxiv": {
+      "count": 40,
+      "seconds": 224.2,
+      "error": null
+    },
+    "arxiv": {
+      "count": 60,
+      "seconds": 1.6,
+      "error": null
+    },
+    "chemrxiv": {
+      "count": 8,
+      "seconds": 0.7,
+      "error": null
+    },
+    "scielo": {
+      "count": 2,
+      "seconds": 2.0,
+      "error": null
+    },
+    "nature": {
+      "count": 0,
+      "seconds": 0.0,
+      "error": null
+    },
+    "newsletters": {
+      "count": 22,
+      "seconds": 7.3,
+      "error": "Traceback (most recent call last):\n  File \"<alchemia-news>/pipeline/run_all.py\", line 50, in _run_collector\n    items = fn(*args, **kwargs)\n            ^^^^^^^^^^^^^^^^^^^\n  File \"<alchemia-news>/pipeline/collectors/feed_collector.py\", line 264, in collect_newsletter_feeds\n    return _collect_section(\"newsletter_feeds\", \"newsletter\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<alchemia-news>/pipeline/collectors/feed_collector.py\", line 251, in _collect_section\n    raise ColetaParcial(\ncollectors.common.ColetaParcial: 1/5 feed(s) de 'newsletter_feeds' falharam: Longevity.Technology: resposta é HTML, não XML de feed\n"
+    },
+    "googlenews": {
+      "count": 847,
+      "seconds": 7.7,
+      "error": null
+    },
+    "companies": {
+      "count": 1045,
+      "seconds": 11.9,
+      "error": null
+    }
+  },
+  "totals": {
+    "articles": 1612,
+    "news": 3910,
+    "companies_activity": 2214,
+    "new_articles_this_run": 4,
+    "new_news_this_run": 5,
+    "new_companies_activity_this_run": 1
+  }
+}
