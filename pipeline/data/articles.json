@@ -561,6 +561,148 @@
   },
   {
     "kind": "article",
+    "title": "Transition Intermediates Encode Ligand Efficacy at the μ-Opioid Receptor-Gi Protein Complex",
+    "url": "https://doi.org/10.64898/2026.09.02.748988",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-08",
+    "collected_at": "2026-09-08T23:40:32.603809+00:00",
+    "authors": [
+      "Konovalov, K.",
+      "Novack, S.",
+      "Provasi, D.",
+      "Maingi, V.",
+      "Skiniotis, G.",
+      "Filizola, M."
+    ],
+    "summary": "How ligands with different efficacies regulate G protein-coupled receptor signaling remains incompletely understood. Here, we combine Markov state modeling of nearly one millisecond of aggregate all-atom molecular dynamics simulations with time-resolved cryogenic-electron microscopy (cryo-EM) to reconstruct the most probable transition pathways connecting recently resolved structures of guanosine triphosphate (GTP)-bound -opioid receptor (MOR)-Gi1 complexes with the full agonist lofentanil (LFT) or partial agonist mitragynine pseudoindoxyl (MP). The models predict four previously unresolved intermediate conformations. Guided by these predictions, reanalysis of the cryo-EM particle ensemble identifies conformational populations consistent with all four intermediates. Remarkably, the largest ligand-dependent structural differences emerge within these intermediates rather than in the previously resolved states. LFT favors a predominantly sequential and kinetically efficient transition pathway, whereas MP stabilizes a broader intermediate ensemble along this pathway and slows progression toward later states. Together, these complementary approaches provide an enriched thermodynamic and",
+    "doi": "10.64898/2026.09.02.748988",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.02.748988"
+  },
+  {
+    "kind": "article",
+    "title": "Retrospective Computational and Immunoinformatics Validation of Clinically Evaluated Necator americanus Protein Vaccine Candidates: Na-APR-1, Na-GST-1, and Na-ASP-2",
+    "url": "https://doi.org/10.64898/2026.09.02.748823",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-08",
+    "collected_at": "2026-09-08T23:40:47.247487+00:00",
+    "authors": [
+      "Tangan, Y. A. S.",
+      "Nchanji, G. T.",
+      "Moyeh, M. N.",
+      "Efeti, T. M.",
+      "Lahngong, M. S.",
+      "Nkineh, K. P.",
+      "Ayuk, A. B.",
+      "Engarimbi, J. E.",
+      "Achungu, C. R.",
+      "Shintouo, C. M.",
+      "Berinyuy, D. M.",
+      "Yaah, N. E.",
+      "Yengo, B. N.",
+      "Muyer, T. B.",
+      "Gwei, K. Y.",
+      "Tebo, B. T.",
+      "Nyah, N. G.",
+      "Ghogomu, S. M.",
+      "Shey, R. A."
+    ],
+    "summary": "Hookworm disease, primarily caused by Necator americanus, affects about 472 million people worldwide and contributes substantially to global disease burden, yet no approved vaccine is currently available. The clinical failure of Na-ASP-2 protein due to IgE-mediated hypersensitivity highlights the need for safe, immunogenic hookworm vaccines and emphasizes the importance of rigorous pre-clinical safety screening. Using an integrated immunoinformatics approach, this work retrospectively evaluated the safety and immunogenicity of three clinical hookworm protein vaccine candidates: Na-APR-1, Na-GST-1, and Na-ASP-2. Toxigenicity and allergenicity predictions correctly identified Na-ASP-2 as toxigenic and allergenic, consistent with its documented clinical failure, while Na-APR-1 exhibited a favourable safety profile; Na-GST-1 showed inconsistent allergenicity signals warranting experimental validation. Comprehensive epitope prediction identified abundant CTL, HTL, B-cell, and cytokine-inducing epitopes across all candidates, with Na-APR-1 demonstrating the broadest epitope repertoire. HLA population coverage analysis indicated broad global applicability across endemic regions. Molecular",
+    "doi": "10.64898/2026.09.02.748823",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "vaccine design"
+    ],
+    "extra": {
+      "category": "immunology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.02.748823"
+  },
+  {
+    "kind": "article",
+    "title": "TCRdenoise - an unsupervised similarity-based approach for denoising of TCR-pMHC specificity data",
+    "url": "https://doi.org/10.64898/2026.09.03.749070",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-08",
+    "collected_at": "2026-09-08T23:40:56.014468+00:00",
+    "authors": [
+      "Lund, J. M.",
+      "Deleuran, S. N.",
+      "Nielsen, M."
+    ],
+    "summary": "Public repositories of T cell receptor (TCR)-peptide-MHC (pMHC) interactions constitute a critical resource for studying adaptive immunity and developing predictive models of TCR specificity. However, recent evidence suggests that a substantial fraction of reported TCR-pMHC interactions may be incorrectly annotated, limiting the quality of downstream analyses and machine learning applications. Here, we present an unsupervised sequence similarity-based framework for denoising peptide-specific TCR repertoires. The method combines pairwise TCR similarity metrics derived from TCRbase and TCRdist3 with hierarchical clustering and a novel adaptation of the silhouette score designed to address the prevalence of singleton clusters and highly imbalanced cluster structures. By incorporating a pseudo-cluster containing singleton and background TCRs, and by optimising both clustering distance thresholds and minimum cluster-size criteria, the proposed approach identifies TCRs likely to represent true antigen-specific binders while filtering putative noise. Using experimentally validated repertoires from TCRvdb, we demonstrate that the modified silhouette score closely tracks clustering solution",
+    "doi": "10.64898/2026.09.03.749070",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.03.749070"
+  },
+  {
+    "kind": "article",
+    "title": "Edge-Aware Graph Attention Networks for Interpreting Biophysical Mechanisms from Molecular Dynamics Simulations",
+    "url": "https://doi.org/10.64898/2026.09.03.749137",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-08",
+    "collected_at": "2026-09-08T23:40:56.014820+00:00",
+    "authors": [
+      "Ahsan, M.",
+      "Pindi, C.",
+      "Palermo, G."
+    ],
+    "summary": "Graph attention networks (GATs) are emerging as powerful aritficial intelligence (AI) tools for learning biomolecular dynamics, yet extracting mechanistic insight from learned attention remains challenging. Here, we present an interpretable AI approach that combines molecular dynamics prediction with mechanistic interpretation through attention-derived communication networks. We develop three edge-aware GAT models - Edge-Conditioned, Edge-Injected, and Edge-Gated - that differ in how edge information is incorporated during message passing. Relative to a standard GAT, our edge-aware models improve coordinate prediction while recovering complementary aspects of residue communication. Application to Chignolin and HIV-1 protease demonstrates their ability to characterize communication networks underlying protein folding, allostery, and mutation-induced functional remodeling. Analysis of the communication networks using graph-based descriptors of communication throughput, intensity, and relay revealed that the Edge-Conditioned model preferentially emphasizes communication hubs characterized by high communication throughput and intensity, the Edge-Injected model preferentially highlights",
+    "doi": "10.64898/2026.09.03.749137",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein engineering",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.03.749137"
+  },
+  {
+    "kind": "article",
+    "title": "Beyond conventional sequence-based encoding: a generalized Machine Learning pipeline for oligonucleotide property prediction",
+    "url": "https://doi.org/10.26434/chemrxiv-2025-nfs45/v2",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-08",
+    "collected_at": "2026-09-08T23:41:00.057467+00:00",
+    "authors": [
+      "Margherita Lapillo",
+      "Maicol Bissaro",
+      "Iuni M. L. Trist",
+      "Enrico Gandini",
+      "Federico Sorana",
+      "Alfonso Pozzan"
+    ],
+    "summary": "The development of RNA-based therapeutics has significantly expanded the landscape of drug discovery by enabling precise modulation of gene expression. These approaches offer the potential to target previously \"undruggable\" genes, overcoming limitations inherent to traditional small molecule therapies. However, the rational design of effective oligonucleotides remains challenging partially due to the limitations of existing computational models which rely predominantly on sequence-based descriptors. These models are generally restricted to naturally occurring oligonucleotides and do not account for the chemical modifications that are essential for enhancing pharmacological and pharmacokinetic properties. To address this gap, we propose a novel chemical-based representation of oligonucleotides exploiting SMILES notation and molecular fingerprints, mainly exploited for small molecules. By applying them to both natural and chemically modified oligonucleotides, we trained machine learning (ML) models that achieved predictive performance comparable to state-of-the-art sequence-based approaches. Furthermore, we curated the first-ever collection of chemically modified oligonucleotides fro",
+    "doi": "10.26434/chemrxiv-2025-nfs45/v2",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv-2025-nfs45/v2"
+  },
+  {
+    "kind": "article",
     "title": "PharmCast: rapid generation of three-dimensional pharmacophore fingerprints from two-dimensional structure without conformer generation",
     "url": "https://doi.org/10.64898/2026.09.02.748999",
     "source": "bioRxiv",
@@ -6962,5 +7104,247 @@
       "journal": "In silico pharmacology"
     },
     "dedupe_key": "doi:10.1007/s40203-026-00722-4"
+  },
+  {
+    "kind": "article",
+    "title": "Regulatory Network Unveils the Molecular Architecture Governing Seed Vigor in Watermelon (Citrullus lanatus).",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42710050/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-08T23:39:00.916472+00:00",
+    "authors": [
+      "Xinyi Wu",
+      "Mengxue Cheng",
+      "Xuyang Li",
+      "Chunyu Zhang",
+      "Yingying Zhou",
+      "Bing Bai"
+    ],
+    "summary": "Seed vigor, a determinant of agricultural productivity, diminishes during ageing but can be restored through priming. We integrated multi-omics approaches to dissect molecular mechanisms governing watermelon seed vigor under controlled deterioration and priming. Controlled deterioration (CD) progressively impaired germination speed (t50) and uniformity (AUC) before reducing maximum germination (Gmax), whereas priming reversed these effects even under ageing conditions. Transcriptome analyses revealed that ageing upregulated oxidative-stress genes (e.g., cytochrome c oxidase) and suppressed translation machinery. Priming activated stress-response pathways and ribosomal proteins through DOF/ERF-mediated transcriptional reprogramming via cis-element recognition, and molecular docking and yeast one-hybrid assays confirmed this interaction. Two biomarkers, Cla97C04G070560 (cytochrome c oxidase) and Cla97C03G062270 (ribosomal protein), were identified as quantitative predictors of germination decline. Machine-learning-based proteomic models and a regulatory network, SeedWatermelonNet (SWN), were constructed. These analyses uncovered hub genes (e.g., OHCU_decarbox, HSPs, LIM, NADPH-dependent aldehyde reductase 1, RPL32) coordinating uric acid metabolism, stress responses, energy metabolism, and translation. Experimental validation confirmed the regulatory roles of these candidates, including physical interactions mediating seed-vigor transduction cascades and their predicted function as direct regulators of seed vigor via SWN. Maternal alleles dominated transcriptional regulation of stored mRNAs, with ageing reducing maternal-specific gene expression. Promoter SNPs in these genes implicated BPC and DOF transcription factors in maternal bias. These findings establish molecular thresholds for vigor loss, validate priming as a resilience strategy, and provide biomarkers for seed quality assessment. Integrating transcriptomic, proteomic, and allele-specific insights advances precision breeding and storage practices, offering targets to enhance seed resilience against climate-driven agricultural challenges.",
+    "doi": "10.1093/plcell/koag263",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42710050",
+      "journal": "The Plant cell"
+    },
+    "dedupe_key": "doi:10.1093/plcell/koag263"
+  },
+  {
+    "kind": "article",
+    "title": "Precision Drug Discovery in the Era of Artificial Intelligence: A Critical Review.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42710027/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-08T23:39:00.917016+00:00",
+    "authors": [
+      "Mengya Liu",
+      "Jiacheng Xiong",
+      "Mingyue Zheng"
+    ],
+    "summary": "Traditional drug development suffers from high costs, low success rates, and patient response variability. Precision drug discovery seeks to overcome these limitations by targeting specific genetic and molecular mechanisms but faces challenges in integrating cross-scale, multimodal biomedical data. Recent advances in artificial intelligence (AI), especially deep learning, provide powerful tools to navigate these complexities. This review surveys representative AI methods across four core stages of precision drug discovery: (a) target identification and validation using omics-, drug-, and structure-based approaches; (b) structure- and sequence-guided virtual screening of active compounds; (c) individualized drug response prediction integrating cell-line, single-cell, and multimodal data; and (d) AI-enabled toxicology and safety modeling to anticipate adverse liabilities and improve translational success. We further highlight a paradigm shift toward autonomous scientific agents capable of causal reasoning and end-to-end experimental guidance. Finally, we discuss persistent challenges, including data bias, limited interpretability, and in silico-to-wet lab translation.",
+    "doi": "10.1146/annurev-pharmtox-060325-010428",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "virtual screening",
+      "target identification",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42710027",
+      "journal": "Annual review of pharmacology and toxicology"
+    },
+    "dedupe_key": "doi:10.1146/annurev-pharmtox-060325-010428"
+  },
+  {
+    "kind": "article",
+    "title": "Computational identification of isoflavonoids as novel PPAR-γ agonists for the treatment of type 2 diabetes mellitus.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709778/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-08T23:39:00.917688+00:00",
+    "authors": [
+      "Abdulkadir Abdu",
+      "Hossamaldeen Bakreys",
+      "Eman M Abdulkareem",
+      "Israa Abdelrahim",
+      "Mazin Aboobaida Abdalla Abdelaziz",
+      "Hind A Rikabi",
+      "Soliman S Ghanem",
+      "Lina Eltaib"
+    ],
+    "summary": "BackgroundThe management of type 2 diabetes mellitus (T2DM) using peroxisome proliferator-activated receptor gamma (PPAR-γ) agonists is currently limited by the adverse effects of thiazolidinediones (TZDs), such as fluid retention and weight gain. This necessitates the search for safer natural alternatives.MethodsThis study applied an integrated multi-layer in silico pipeline to screen 19 isoflavonoids from the FooDB database against the PPAR-γ crystal structure (PDB: 3DZY). The workflow combined molecular docking (Glide SP), structural interaction fingerprint (SIFt) validation and density functional theory (DFT) for electronic characterization followed by ADMET profiling and prediction of PASS bioactivity. Molecular dynamics (MD) simulations (100 ns) and MM-GBSA binding free energy calculations were performed to explore dynamic stability and thermodynamic affinity of the complex.ResultsGenistin (FDB012221) and daidzin (FDB012225) were identified as lead candidates with docking score of -10.837 and -10.125 kcal/mol respectively. DFT analysis revealed that FDB012221has better kinetic stability with a large HOMO-LUMO gap of 7.80 eV, in addition, it was identified as drug-like by ADMET profiling, showing 58% human intestinal absorption and PASS analysis predicted. Molecular dynamics (MD) simulations validated the stable complex formation and FDB012221retained consistent hydrogen bonds with HIS435 (91%) and LEU325 (94%)further, the MM-GBSA values were -60 kcal/mol indicating strong thermodynamic binding.ConclusionFDB012221 is a potent PPAR-γ agonist with high binding affinity, electronic stability and a favorable pharmacokinetic profile. This isoflavonoid is a potential natural scaffold for the development of safer therapies for T2DM and is recommended for further in-vitro and in-vivo validation.",
+    "doi": "10.1177/09287329261481865",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42709778",
+      "journal": "Technology and health care : official journal of the European Society for Engineering and Medicine"
+    },
+    "dedupe_key": "doi:10.1177/09287329261481865"
+  },
+  {
+    "kind": "article",
+    "title": "Artificial intelligence-driven identification and mechanistic exploration of synergistic anti-aging compounds from Dengzhan Shengmai formulation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709727/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-08T23:39:00.918315+00:00",
+    "authors": [
+      "Jingyi Hou",
+      "Xueli Li",
+      "Miao Gu",
+      "Kaikai Ding",
+      "Kailan Yang",
+      "Bowen Xu"
+    ],
+    "summary": "Aging is a complex biological process involving multiple dysregulated pathways, and synergistic compound combinations offer distinct therapeutic advantages through multi-target and multi-pathway interactions. Traditional Chinese Medicine (TCM) formulations are inherently synergistic, yet systematically identifying their active anti-aging combinations remains a major challenge. Here, we developed DeepSMCA, a deep learning-based framework integrating molecular descriptors, ADMET parameters, and protein-protein interaction (PPI) network embeddings learned via a variational graph auto-encoder (VGAE), combined with a ResNetDNN classifier and the Bliss independence model, to identify synergistic combinations of anti-aging compound from the Dengzhan Shengmai (DZSM) formulation. Trained on 914 curated compounds, DeepSMCA achieved an area under the curve (AUC) of 0.9849 on the validation set, outperforming conventional machine learning and deep learning baselines, and interpretability analysis revealed that PPI network features contributed most (59.5%) to model predictions. Chemical profiling identified 30 constituents in DZSM, from which the three top-ranked synergistic combinations (Com1-3) were validated in D-galactose (D-Gal)-induced senescent PC12 cells. All three combinations enhanced cell viability, alleviated oxidative stress, attenuated intracellular reactive oxygen species accumulation, and decreased senescence-associated β-galactosidase-positive cells by up to 54.79%. Transcriptomic analysis showed that the combinations reversed 1,001-1,037 D-Gal-induced differentially expressed genes (DEGs), which were enriched in 18 shared aging-related pathways centered on longevity regulation, FoxO, p53, and autophagy signaling. Compound-target-aging-pathway network analysis further revealed complementary target engagement among constituents. This study establishes an interpretable, proof-of-concept computational-experimental pipeline for dissecting multi-component synergy in complex formulations, providing a generalizable strategy for anti-aging drug discovery from TCM.",
+    "doi": "10.1371/journal.pone.0356888",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "ADMET"
+    ],
+    "extra": {
+      "pmid": "42709727",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0356888"
+  },
+  {
+    "kind": "article",
+    "title": "Rational Design and In Silico Evaluation of a Dual-Action Antimicrobial Peptide Targeting Efflux Pump and Membrane Integrity in Pseudomonas aeruginosa.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709334/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-08T23:39:00.918903+00:00",
+    "authors": [
+      "Della Grace Thomas Parambi",
+      "Prabhakaran Prabitha",
+      "Tariq G Alsahli",
+      "Arafa Musa",
+      "Dibya Sundar Panda",
+      "Dipen Purohit",
+      "Raja Karukuvelraja",
+      "Manal Mohammed"
+    ],
+    "summary": "The increasing prevalence of multidrug-resistant (MDR) Pseudomonas aeruginosa, largely associated with overexpression of the MexAB-OprM efflux pump, highlights the need for alternative antimicrobial strategies. In this study, antimicrobial peptide (AMP) candidates were rationally designed using the Artificial Neural Network (ANN) and Random Forest (RF) models implemented in the CAMPR4 platform. Approximately 18,000 AMP sequences were screened, resulting in nine candidate peptides that were subsequently evaluated for physicochemical properties, predicted hemolytic activity, and antimicrobial potential using the dbAMP framework. Five non-hemolytic peptides (1ANN, 2ANN, 4RF, 5RF, and 6RF) were selected for further analysis based on their predicted physicochemical characteristics and antimicrobial profiles. Molecular docking against the three components of the MexAB-OprM efflux pump (MexA, MexB, and OprM) predicted binding affinities ranging from - 7.1 to - 14.1 kcal mol⁻¹. Among the evaluated peptides, 2ANN was the only peptide predicted to form a hydrogen bond between Lys15 and Asp61 of MexA. Molecular dynamics simulations demonstrated that the 2ANN-MexA complex remained structurally stable over 200 ns, while membrane simulations showed spontaneous adsorption of 2ANN onto a Gram-negative membrane and persistent membrane association throughout the simulation. Collectively, these computational analyses identified 2ANN as a promising AMP candidate for further investigation against MDR P. aeruginosa. However, as the findings are based exclusively on computational prediction and simulation, experimental validation, including peptide synthesis, antimicrobial susceptibility testing, hemolytic assays, and efflux pump inhibition studies, is required to confirm its biological activity and mechanism of action.",
+    "doi": "10.1007/s12602-026-11192-7",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42709334",
+      "journal": "Probiotics and antimicrobial proteins"
+    },
+    "dedupe_key": "doi:10.1007/s12602-026-11192-7"
+  },
+  {
+    "kind": "article",
+    "title": "Gastrointestinal digestion enhances the release of bioactive peptides from yogurt.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709232/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-08T23:39:00.919460+00:00",
+    "authors": [
+      "Christoper Caesar Yudho Sutopo",
+      "Wei-Ting Hung",
+      "Awang Tri Satria",
+      "Hariadi Darmawan",
+      "David Yudianto",
+      "Jue-Liang Hsu"
+    ],
+    "summary": "This study investigated whether simulated gastrointestinal (SGI) digestion enhances the release of bioactive peptides from yogurt and improves their associated bioactivities. Yogurt was subjected to INFOGEST-based SGI digestion. Bioactivities were evaluated using ACE and DPP-IV inhibition and DPPH radical scavenging assays. Protein degradation was assessed by SDS-PAGE, and peptides were identified by UPLC-LTQ Orbitrap mass spectrometry, followed by in silico peptide screening and molecular docking. Compared with undigested yogurt, SGI digestion markedly enhanced ACE inhibitory, DPP-IV inhibitory, and antioxidant activities, with IC50: 9.6 µg/mL, 300.3 µg/mL, and 530.7 µg/mL, respectively. SDS-PAGE confirmed extensive protein hydrolysis, accompanied by increased peptide content. Peptidomic analysis identified 129 oligopeptides, predominantly < 1.5 kDa, with 31 prioritized as predicted bioactive candidates. Selected peptides exhibited favorable predicted interactions with ACE, DPP-IV, Keap1, and DPPH. SGI digestion promotes the release of low-molecular-weight peptides with enhanced in vitro bioactivities, providing a peptide-level framework for prioritizing yogurt-derived peptide candidates for future validation. Further experimental validation is needed before functional food, nutraceutical, or therapeutic applications can be proposed.",
+    "doi": "10.1007/s00394-026-04095-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42709232",
+      "journal": "European journal of nutrition"
+    },
+    "dedupe_key": "doi:10.1007/s00394-026-04095-4"
+  },
+  {
+    "kind": "article",
+    "title": "Identifying the therapeutic effects of talniflumate in metastatic papillary thyroid microcarcinoma through integrating multiple omics analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709185/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-08T23:39:00.920064+00:00",
+    "authors": [
+      "Ke Hu",
+      "Xingtong Dong",
+      "Yixiao Lv",
+      "Jiaxiao Zheng",
+      "Shuyan Cao",
+      "Shuyuan Zhu",
+      "Ziyi Guo",
+      "Yuping Song"
+    ],
+    "summary": "Papillary thyroid microcarcinoma (PTMC) is a prevalent endocrine malignancy, and metastatic progression remains a major clinical concern. Identifying novel therapeutic strategies and metastasis-associated targets is therefore urgently needed. Integrated transcriptomic analyses were performed using TCGA and GEO datasets to identify metastasis-associated genes and biological pathways in PTMC. Functional enrichment, immune infiltration analysis, single-cell RNA sequencing analysis, and external validation were conducted to characterize candidate genes. The connectivity map (CMap) database was used for drug screening, followed by network pharmacology, molecular docking, and molecular dynamics simulations to evaluate potential therapeutic candidates. In vitro assays, including proliferation, migration, invasion, macrophage co-culture experiments, and Western blot analysis, were performed to evaluate the biological effects of the candidate drug. Twenty differentially expressed genes were identified between metastatic and non-metastatic PTMC samples, among which AREG and HBEGF were prioritized as hub candidates. HBEGF showed a negative correlation with tumor mutational burden, although its biological significance requires further investigation. Enrichment analyses suggested that ErbB signaling may be involved in PTMC metastatic progression. External validation using an independent GEO cohort provided additional support for the association between HBEGF expression and metastatic characteristics. CMap-based screening identified talniflumate as a potential therapeutic candidate. In vitro experiments demonstrated that talniflumate suppressed proliferation, migration, and invasion of thyroid cancer cells. Furthermore, talniflumate promoted M1 macrophage polarization and increased pro-inflammatory cytokine secretion in a cancer cell-macrophage co-culture model. Western blot analysis showed reduced HBEGF protein expression following talniflumate treatment, suggesting a potential regulatory effect on the HBEGF-associated signaling network. This study identifies HBEGF as a potential metastasis-associated candidate in PTMC and suggests that talniflumate may represent a promising therapeutic candidate. The proposed HBEGF-associated regulatory mechanism provides a potential direction for further investigation, while larger independent cohorts and additional mechanistic studies are required for validation.",
+    "doi": "10.1007/s00210-026-05854-0",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42709185",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s00210-026-05854-0"
+  },
+  {
+    "kind": "article",
+    "title": "Pr6O11/Fe2O3 Bimetallic Nanocatalyst: An Efficient and Reusable System for Ultrasound-Assisted Tetrazole Synthesis in an Aqueous Medium with a Molecular Docking Study and Anticancer Evaluation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42709079/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-08T23:39:00.920652+00:00",
+    "authors": [
+      "Sarika Patil",
+      "Kamlakar Patil",
+      "Sumit Salunkhe",
+      "Nilesh Pandit",
+      "Sagar Patil",
+      "Chaitali Bagade",
+      "Uttam More",
+      "Sanjay Chavan",
+      "Santosh Kamble"
+    ],
+    "summary": "The development of green, efficient, and recyclable heterogeneous catalysts for the synthesis of biologically important tetrazole derivatives under environmentally benign conditions remains a significant challenge. In this study, a bioassisted Pr6O11/Fe2O3 bimetallic nanocatalyst was successfully synthesized via a simple coprecipitation method using Moringa oleifera gum extract as a natural stabilizing agent. The synthesized nanocatalyst was comprehensively characterized, confirming the successful formation of a highly crystalline, mesoporous, and magnetically recoverable material with excellent physicochemical properties. The catalytic performance of the Pr6O11/Fe2O3 nanocatalyst was evaluated for the ultrasound-assisted one-pot synthesis of 5-substituted 1H-tetrazole derivatives in an aqueous medium. The developed protocol afforded the desired products in excellent yields (89-96%) under mild reaction conditions and demonstrated excellent recyclability, maintaining high catalytic activity over five consecutive reaction cycles with an only marginal decrease in yield. The green-synthesized Pr6O11/Fe2O3 bimetallic nanocatalyst also exhibited moderate anticancer activity against MCF-7 breast cancer cells with an IC50 value of 93.59 μg mL-1. In addition, molecular docking studies of the synthesized tetrazole derivatives against the EGFR kinase domain (PDB entry 1XKK) revealed favorable binding interactions, with 5-(3,4-dichlorophenyl)-1H-tetrazole showing the highest binding affinity (-19.20 kcal mol-1), comparable to that of reference drug erlotinib (-19.94 kcal mol-1). Overall, this study presents a sustainable and reusable catalytic platform that integrates green nanocatalyst synthesis, efficient tetrazole production, and preliminary biological evaluation, providing a promising approach for the development of environmentally benign catalytic systems with potential medicinal relevance.",
+    "doi": "10.1021/acs.langmuir.6c02881",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42709079",
+      "journal": "Langmuir : the ACS journal of surfaces and colloids"
+    },
+    "dedupe_key": "doi:10.1021/acs.langmuir.6c02881"
   }
 ]
