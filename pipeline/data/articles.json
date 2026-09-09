@@ -430,6 +430,47 @@
   },
   {
     "kind": "article",
+    "title": "High-throughput screen identifies a potent MCU activator boosting cardiac contractile bioenergetics",
+    "url": "https://doi.org/10.64898/2026.09.04.749429",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-09",
+    "collected_at": "2026-09-09T23:30:19.954698+00:00",
+    "authors": [
+      "CALDERO-ESCUDERO, E.",
+      "Federico, M.",
+      "Sanchez-Gonzalez, A.",
+      "Gil, A.",
+      "Fernandez-Martinez, S. P.",
+      "Garcia-Casas, P.",
+      "Fonteriz, R. I.",
+      "Bermont, F.",
+      "Brinon, B.",
+      "Romero-Sanz, S.",
+      "Moran-Cerro, A.",
+      "Gonzalez-Moreno, L.",
+      "del Arco, A.",
+      "Sheu, S.-S.",
+      "Feige, J. N.",
+      "Montero, M.",
+      "Alvarez, J.",
+      "De Marchi, U.",
+      "DE LA FUENTE, S.",
+      "Santo-Domingo, J."
+    ],
+    "summary": "Mitochondrial Ca2+ uptake through the mitochondrial calcium uniporter complex (MCUc) couples intracellular Ca2+ signaling to energy metabolism and cellular function. Despite its physiological importance, potent and selective pharmacological activators of the MCU complex remain scarce, and existing compounds show modest specificity. Here, we screened 1,280 bioactive compounds and identified CGP7930 as a potent activator of mitochondrial Ca2+ uptake. Mechanistically, the compound required MICU1, but not MICU2, to exert its effects. Molecular docking, non-covalent interaction analysis, and site-directed mutagenesis identified Gln304 and Val307 in MICU1 as critical determinants of compound activity. In addition to directly stimulating MCU activity, CGP7930 increased mitochondria-endoplasmic reticulum contact sites, suggesting an additional mechanism to facilitate inter-organellar Ca2+ transfer. CGP7930 promoted Ca2+-dependent activation of mitochondrial energy metabolism in cardiomyocytes and boosted the contractile performance of the mice hearts. This effect was MCU-dependent, as hearts from MCU KO mice failed to increase the ventricular contraction force upon CGP7930 perfusion. Molec",
+    "doi": "10.64898/2026.09.04.749429",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.04.749429"
+  },
+  {
+    "kind": "article",
     "title": "From Attraction to Repulsion: Omicron-Driven Rewiring of Nanobody Interfaces on the SARS-CoV-2 RBD",
     "url": "https://doi.org/10.1101/2025.07.18.665531",
     "source": "bioRxiv",
@@ -9700,5 +9741,344 @@
       "journal": "Pest management science"
     },
     "dedupe_key": "doi:10.1002/ps.71273"
+  },
+  {
+    "kind": "article",
+    "title": "Comprehensive Chemical Profile and Anti-Infective Properties of Cymbopogon schoenanthus L.: Phytochemical Analysis, In Silico Investigations, and Evaluation of Anti-SARS-CoV-2, Antimicrobial, and Antibiofilm Activities.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42715464/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.095786+00:00",
+    "authors": [
+      "Hamdoon A Mohammed",
+      "Mona M H Soliman",
+      "Shimaa Moawad",
+      "Riaz A Khan",
+      "Suliman A Almahmoud",
+      "Ayman M Mousa",
+      "Ghassan M Sulaiman",
+      "Mohammed M Alharbi",
+      "Fatma A Elshibani",
+      "Amr Farouk"
+    ],
+    "summary": "Current work investigates the phytochemical components and the antioxidant, antimicrobial, antibiofilm, and anti-SARS-CoV-2 effects of Cymbopogon schoenanthus essential oil using both in vitro and in silico methods. Gas chromatography-mass spectrometry analysis identified 23 volatile constituents, with piperitone (32.62%), elemol (25.27%), and β-eudesmol (15.22%) as the predominant ones. The oil exhibited significant antioxidant activity using DPPH and ABTS assays, with IC50 values of 99.20 and 89.01 µg/mL, respectively. Antimicrobial evaluations against MRSA, Shigella sonnei, Cryptococcus neoformans, and Aspergillus fumigatus revealed marked effects, with minimum inhibitory concentrations (MICs) ranging from 0.3 to 2.5 µg/mL and inhibition zone diameters (IZDs) ranging from 30±0.6 to 10±0.6 mm. The oil demonstrated a strong, dose-dependent antibiofilm effect against methicillin-resistant Staphylococcus aureus (MRSA), achieving 78% inhibition at 10 µg/mL. The essential oil demonstrated a marked antiviral effect against severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2), with a selectivity index (18.6) superior to that of remdesivir (15.11). Molecular docking revealed strong binding affinities of major constituents to key enzymatic targets, including SARS-CoV-2's receptor-binding domain, and bacterial PBP2a and Gyrase B, with sesquiterpenes showing higher binding energies than monoterpenes. These results scientifically validated the traditional uses of C. schoenanthus and highlighted its potential as a source of natural anti-infective agent.",
+    "doi": "10.1590/0001-3765202620260092",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42715464",
+      "journal": "Anais da Academia Brasileira de Ciencias"
+    },
+    "dedupe_key": "doi:10.1590/0001-3765202620260092"
+  },
+  {
+    "kind": "article",
+    "title": "Environmental PFOA exposure and the risk of metabolic dysfunction-associated steatotic liver disease: An integrated computational toxicology and multi-omics study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42715255/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.096473+00:00",
+    "authors": [
+      "Tianyu Zhang",
+      "Yu Yuan",
+      "Chunli Lin",
+      "Chao Song",
+      "Tianrong Liao",
+      "Yuewen Sun",
+      "Hongzhen Tang"
+    ],
+    "summary": "Perfluorooctanoic acid (PFOA), a pervasive environmental pollutant, has been implicated in hepatic injury and metabolic dysfunction. However, its role as an environmental risk factor in the pathogenesis of Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD) remains incompletely understood, particularly from a systems biology perspective. This study employed an integrative approach combining computational toxicology, multi-omics data analysis, and machine learning. Public databases were utilized to identify PFOA-related targets and MASLD-associated genes. A comprehensive machine learning framework comprising 113 model combinations was applied to transcriptomic datasets (GSE66676, GSE89632, GSE164760) to identify hub genes. Single-cell RNA sequencing (scRNA-seq) analysis delineated cell type-specific expression patterns. Molecular docking and dynamics simulations assessed the binding stability between PFOA and core targets, which was further validated in vitro using an FFA-induced MASLD HepG2 cell model. We identified 17 shared targets between PFOA and NAFLD. Machine learning pinpointed six hub genes (NR4A2, BCL6, CASP1, SHBG, FABP4, IL10) with high diagnostic accuracy (AUC up to 0.996). scRNA-seq revealed distinct expression patterns of these genes across liver cell subtypes in MASLD. Molecular docking and dynamics simulations demonstrated stable binding of PFOA to SHBG and FABP4. In vitro experiments confirmed that PFOA exposure significantly altered the mRNA and protein expression levels of these core genes in the MASLD model. Our findings suggest a potential mechanistic association between PFOA exposure and MASLD pathogenesis, characterized by disruption of lipid metabolism, inflammatory responses, and immune homeostasis. While these results identify biologically plausible pathways, they do not establish epidemiological causation, and further prospective studies with quantified PFOA exposure are required to confirm causality in humans.",
+    "doi": "10.1371/journal.pone.0357970",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42715255",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0357970"
+  },
+  {
+    "kind": "article",
+    "title": "UPLC-MS metabolite profiling and antioxidant efficacy of Neopestalotiopsisclavispora isolated from Oroxylum indicum (L.) Kurz Stem Bark.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42715223/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.097065+00:00",
+    "authors": [
+      "Sushma Swaroopa",
+      "Amshumala Bhoothakallu Lolajaksha",
+      "Tamizh Selvan Gnanasekaran",
+      "Pavan Gollapalli",
+      "Vishakh Radhakrishna Kedilaya",
+      "Sharmila Kameyanda Poonacha"
+    ],
+    "summary": "Endophytic fungi represent a valuable source of bioactive compounds with diverse pharmacological properties. In this study, we explored the antioxidant potential of secondary metabolites produced by Neopestalotiopsis clavispora (N.clavispora), an endophytic fungus isolated from Oroxylum indicum Kurz stem bark. N.clavispora extract was subjected to UPLC-MS analysis to profile its bioactive components, and its antioxidant capacity was assessed using the DPPH (1,1-diphenyl-2-picrylhydrazyl) free radical scavenging assay. For in vivo evaluation, Swiss albino mice were administered with 100 mg/kg bodyweight dose of extract for five consecutive days, followed by exposure to 2 Gy of gamma radiation at a dose rate of 3.58 Gy/min. Subsequent measurements of superoxide dismutase (SOD) activity in liver homogenate were conducted to assess antioxidant enzyme response. The data obtained from UPLC-MS, showed, cimicifoetiside B (identified by UNIFI database matching; 44% relative abundance) as the predominant metabolite. N. clavispora extract showed moderate DPPH scavenging (IC₅₀ 82.86 μg/mL vs ascorbic acid 19.01 μg/mL). Molecular docking using cimicifoetiside B against the antioxidant enzyme Superoxide dismutase (SOD), revealing a docking score of -4.96 kcal/mol with 1 hydrogen bond. Molecular dynamics simulations confirmed the interaction with a binding energy of -12.36 ± 02.32 kcal/mol. Binding affinities and molecular interaction profiles indicated possible association with SOD. In vivo, N.clavispora extract at 100 mg/kg body weight/day yielded SOD activity of 1.98 ± 0.38 vs. radiation group 0.78 ± 0.13. These results suggest N.clavispora may have antioxidant related activity under the conditions tested, supporting further in vitro and in vivo studies.",
+    "doi": "10.1371/journal.pone.0357595",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42715223",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0357595"
+  },
+  {
+    "kind": "article",
+    "title": "Environmental Exposure to Triclosan Promotes Rheumatoid Arthritis via KEAP1/NRF2 Inhibition and Subsequent IL-17 Signaling Activation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42714837/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.097640+00:00",
+    "authors": [
+      "Jianmin Sang",
+      "Xuewei Ding",
+      "Zicheng Yang",
+      "Xiaoyan Yao",
+      "Shibo Cao",
+      "Chengtao Lei",
+      "Ruizi Gao",
+      "Ming Zong",
+      "Long He",
+      "Lieying Fan"
+    ],
+    "summary": "Triclosan (TCS) is a ubiquitous environmental contaminant known for its endocrine-disrupting and immunotoxic effects, yet its role in autoimmune diseases, including rheumatoid arthritis (RA), remains poorly understood. Here, we observed that serum TCS levels were significantly elevated in RA patients compared to healthy controls. In vivo, TCS dose-dependently aggravated collagen-induced arthritis in mice, with KEAP1 upregulation, synovial hyperplasia, and elevated serum TNF-α, IL-6, and IL-1β. In rheumatoid arthritis fibroblast-like synoviocytes (RA-FLS), TCS promoted a pro-inflammatory and aggressive phenotype with enhanced cytokine production, proliferation, migration, and invasion. Mechanistically, surface plasmon resonance (SPR) and cellular thermal shift assay (CETSA) confirmed direct TCS-KEAP1 binding (KD = 4.5 μM), supported by molecular docking (binding energy: -7.93 kcal/mol) and molecular dynamics (MD) simulations. This interaction led to KEAP1 upregulation, enhanced KEAP1-NRF2 binding, and NRF2 sequestration in the cytoplasm via a degradation-independent mechanism, impairing its nuclear translocation and transcriptional activity. Consequently, NRF2 blockade led to sustained oxidative stress and IL-17/MAPK/NF-κB cascade activation, which NAC rescue experiments validated as oxidative stress-driven. Critically, restoring NRF2 nuclear entry via KEAP1 silencing or NRF2 activation effectively reversed these pro-arthritic effects. These findings identify TCS as an environmental risk factor for RA that subverts the KEAP1/NRF2 redox checkpoint to perpetuate IL-17-mediated joint destruction.",
+    "doi": "10.1021/acs.est.6c07298",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42714837",
+      "journal": "Environmental science & technology"
+    },
+    "dedupe_key": "doi:10.1021/acs.est.6c07298"
+  },
+  {
+    "kind": "article",
+    "title": "Computational discovery of novel human rhinovirus 3 C protease inhibitors: molecular docking, dynamic simulations, free energy landscape, MMPBSA and ADMET analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42714811/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.098204+00:00",
+    "authors": [
+      "Hafs Essaadi",
+      "Abdelfateh Chourir",
+      "Jouhaina Kourou",
+      "Farah Makhloufi",
+      "Ouissal Hachlaf",
+      "Aya Abidou",
+      "Saber Boutayeb",
+      "Rachid Eljaoudi",
+      "Lahcen Belyamani",
+      "Azeddine Ibrahimi",
+      "Mohammed Hakmi",
+      "Naima El Hafidi"
+    ],
+    "summary": "Human rhinoviruses (HRVs) are major causative agents of the common cold and are strongly associated with asthma exacerbation, highlighting the need for effective antivirals. Because the viral 3 C protease (3Cpro) is essential for polyprotein processing and is highly conserved among HRV species, it represents an attractive therapeutic target. In this study, we performed structure-based virtual screening of 49,437 compounds against HRV-C 3Cpro using AutoDock Vina, followed by ADMET-based prioritization of the top hits. Docking analysis identified two lead compounds that favorably occupied the catalytic pocket and formed stabilizing interactions with key residues, including His40, Glu71, and Cys147, in comparison with the reference inhibitor rupintrivir. In 200-ns molecular dynamics simulations, both compounds stabilized the protease relative to the apo form, with compound 1 showing the lowest protein RMSD (1.21 ± 0.22 Å) and compound 2 producing the lowest Cys147 RMSF (0.48 Å). Both ligands also displayed lower ligand RMSD values than rupintrivir (compound 1: 1.49 ± 0.78 Å; compound 2: 2.01 ± 0.39 Å; rupintrivir: 4.83 ± 0.89 Å), indicating more persistent binding within the active site. MM/PBSA analysis further supported stronger effective binding for compound 1 (-23.59 ± 6.87 kcal/mol) and compound 2 (-25.25 ± 5.75 kcal/mol) than for rupintrivir (-19.43 ± 4.46 kcal/mol). Taken together, these results identify compounds 1 and 2 as promising non-covalent HRV 3Cpro inhibitor candidates for further experimental validation.",
+    "doi": "10.1007/s11030-026-11704-1",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42714811",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11704-1"
+  },
+  {
+    "kind": "article",
+    "title": "Addressing the selectivity challenge in matrix metalloproteinases: fragment-based design of MMP-9 inhibitors targeting the S1' pocket.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42714810/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.098813+00:00",
+    "authors": [
+      "Ashish Kumar",
+      "Md Sameer",
+      "Arbaz Sujat Shaikh",
+      "Yaman Chauhan",
+      "Venkata Rao Kaki"
+    ],
+    "summary": "Matrix metalloproteinase-9 (MMP-9) plays a pivotal role in extracellular matrix remodelling and is strongly implicated in tumour progression, metastasis, and angiogenesis, making it an attractive therapeutic target for anticancer drug discovery. However, the development of potent and selective MMP-9 inhibitors has been significantly hampered due to the high structural homology among members of the MMP family, particularly within the catalytic domain. Structural studies revealed a non-conserved S1' pocket of MMP-9 exhibits distinct structural variability compared to other MMP isoforms, providing an opportunity to achieve improved selectivity. To the best of our knowledge, fragment-based drug design (FBDD) approaches specifically targeting the S1' pocket of MMP-9 have not been systematically explored. In the present study, an integrated in silico FBDD workflow was employed to identify and optimize small molecules occupying the S1' pocket of MMP-9. Initial fragment-based virtual screening identified low-molecular-weight fragments with moderate binding affinity toward the target pocket. A promising fragment hit was subsequently optimised through a receptor cavity-guided fragment-growing strategy to extend interactions toward residues in the neighbouring S2' pocket. Induced-fit docking analysis identified several optimized molecules with enhanced binding affinity and favourable orientation within the S1' pocket. The stability of the protein-hit molecule complexes was further validated through 200 ns molecular dynamics simulations, which confirmed stable binding interactions for four molecules. Comparative docking and MM-GBSA analyses against MMP isoforms demonstrated a preferential affinity of hit molecules for MMP-9, suggesting a potential selectivity profile driven by ligand binding free energy and orientation in S1' pocket. In addition, in silico ADME profiling indicated favourable pharmacokinetic properties of all the stable hit molecules, while density functional theory studies helped to gain insights into the electronic distribution and reactivity of the molecules. Collectively, this study establishes an in silico framework for the structure-based design of potentially selective MMP-9 inhibitors targeting the non-conserved S1' pocket.",
+    "doi": "10.1007/s11030-026-11723-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug design",
+      "virtual screening",
+      "molecular dynamics",
+      "fragment-based drug design",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42714810",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11723-y"
+  },
+  {
+    "kind": "article",
+    "title": "Hot spot-driven discovery of β-catenin/Tcf4 interaction inhibitors via virtual drug repurposing study and experimental validation in colorectal cancer cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42714809/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.099348+00:00",
+    "authors": [
+      "Kader Sahin",
+      "Ajda Coker",
+      "Serdar Durdağı"
+    ],
+    "summary": "Aberrant activation of the Wnt/β-catenin signaling pathway is a hallmark of colorectal cancer, primarily driven by the interaction between β-catenin and T-cell factor 4 (Tcf4). Due to the large and shallow interface (~ 4800 Å2) of this protein-protein interaction, it has historically been considered \"undruggable.\" However, emerging evidence highlights the presence of druggable hot spots within this interface. In this study, we employed a structure-based virtual screening approach to repurpose FDA-approved drugs targeting the β-catenin/Tcf4 interaction. Using physics-based molecular simulations and MM/GBSA binding free energy calculations, we identified Leucovorin (Folinic acid), Carbenicillin, and Ceforanide as promising candidate hit compounds with stable binding to critical hot spot residues (Asn430, Lys435, His470, Arg474, and Lys508) of β-catenin. Experimental validation using HT-29 colorectal cancer cells revealed that Carbenicillin and Ceforanide reduced the cell viability, impaired the colony formation, and exhibited superior anti-proliferative activity compared to the other candidates. These findings provide compelling evidence for the feasibility of targeting β-catenin/Tcf4 interactions using small molecules and suggest that Carbenicillin and Ceforanide may serve as promising repurposed candidates for therapeutic intervention in Wnt-driven malignancies.",
+    "doi": "10.1007/s11030-026-11720-1",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "drug repurposing"
+    ],
+    "extra": {
+      "pmid": "42714809",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11720-1"
+  },
+  {
+    "kind": "article",
+    "title": "Atorvastatin Shows Limited Disease-Modifying Effects in an A53T α-Synuclein Mouse Model of Parkinson's Disease.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42714756/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.099887+00:00",
+    "authors": [
+      "Lijian Wei",
+      "Junkai Hua",
+      "Shuangfeng Tang",
+      "Jianming Lei",
+      "Guozhi Li",
+      "LiWei Wei",
+      "MingShu Mo"
+    ],
+    "summary": "Neuroprotective effects of statins in Parkinson's disease (PD) remain uncertain, and their activity in genetic α-synuclein (αSyn) disease models has been insufficiently characterized. We evaluated atorvastatin (ATO) in a mouse model with nigral overexpression of human A53T-mutant αSyn. Mice received ATO by oral gavage at 10 mg/kg/day for 5 weeks and were assessed using behavioral testing, neuropathological assessment, brain transcriptomics, and molecular docking. ATO inhibited cholesterol biosynthesis-related transcriptional programs and broadly remodeled lipid metabolism-associated networks, but did not lead to functional or histopathological benefit. ATO did not ameliorate motor deficits, restore dopaminergic markers, or reduce αSyn protein levels or pSer129-αSyn immunoreactivity. Transcriptomic analysis further showed that ATO failed to reverse the core disease-associated signature induced by A53T αSyn overexpression and instead increased SNCA mRNA. Targeted RNA-seq and western blot analyses showed no parallel increase in Prkn, Gba1, or Lamp2 transcript abundance or in PARKIN, GBA1, or LAMP2A protein expression. Molecular docking, used here as an exploratory structural comparison, suggested a relatively weak predicted interaction between ATO and αSyn when compared with several other statins and provided supportive context for the lack of efficacy. Overall, our findings indicate limited efficacy of ATO in this αSyn-driven setting and support further comparative evaluation of individual statins across complementary PD models.",
+    "doi": "10.1007/s12640-026-00825-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42714756",
+      "journal": "Neurotoxicity research"
+    },
+    "dedupe_key": "doi:10.1007/s12640-026-00825-y"
+  },
+  {
+    "kind": "article",
+    "title": "Molecular modeling design of antitrypanosomal pyrazolone derivatives targeting Chagas disease: QSAR, docking, molecular dynamics and free energy calculations.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42714666/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.100498+00:00",
+    "authors": [
+      "Karen Karla F Sousa",
+      "Ana Beatriz S Barbosa",
+      "Fábio José B Cardoso",
+      "José Rogério A Silva",
+      "Fábio A Molfetta"
+    ],
+    "summary": "Chagas disease, caused by T. cruzi, remains a neglected tropical disease with limited therapeutic options, underscoring the urgent need for novel antitrypanosomal agents. A computer-aided drug design (CADD) protocol was applied to investigate pyrazolone derivatives with reported antitrypanosomal activity and their putative interaction with cruzain (Cz), a cysteine protease essential for parasite survival. A 2D-QSAR model built from a curated set of 33 phenyl-dihydropyrazolone derivatives guided the design of four new candidates (LMM1-LMM4), which showed intermediate predicted antitrypanosomal activity within the chemical space of the original pyrazolone series. Molecular docking identified favorable binding within the Cz active site, with contacts at residues Ser61, Gly66, and Leu67. MD simulations indicated overall structural stability of the protein-ligand complexes and revealed ligand-dependent conformational behavior within the Cz binding site. MM/GBSA calculations suggested that van der Waals interactions are major contributors to the computed binding energies; however, the MM/GBSA ranking did not fully reproduce the phenotypic antitrypanosomal activity trend. Per-residue decomposition and free energy landscape analyses were therefore interpreted qualitatively, suggesting that contacts with S2/S3 subsite residues and conformational adaptability may contribute to Cz recognition but do not, alone, explain whole-cell potency. These findings support pyrazolones as antitrypanosomal scaffolds and provide structural hypotheses for future experimental validation against Cz. Molecular geometries were optimized at the PM6 level (MOPAC2016); descriptors were calculated with ChemDes and UseGalaxy, selected via OPS and a genetic algorithm (QSARINS), and the QSAR model was built using PLS regression (QSAR modeling software). Molecular docking was performed with GOLD, FITTED, and AutoDock Vina 1.2.3 against Cz (PDB: 3KKU). ADMET properties were predicted using OSIRIS Property Explorer, SwissADME, and ADMET-AI. Partial atomic charges were derived at the HF/6-31G* level with RESP fitting (Gaussian 09); MD simulations (3 × 250 ns per system) were run with AMBER20 using GAFF/ff14SB force fields and TIP3P solvent. Binding free energies were calculated by MM/GBSA (MMPBSA.py).",
+    "doi": "10.1007/s00894-026-06923-0",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "computer-aided drug design",
+      "CADD",
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics",
+      "QSAR"
+    ],
+    "extra": {
+      "pmid": "42714666",
+      "journal": "Journal of molecular modeling"
+    },
+    "dedupe_key": "doi:10.1007/s00894-026-06923-0"
+  },
+  {
+    "kind": "article",
+    "title": "Network pharmacology, molecular docking, and experimental validation of the mechanisms of Withaferin a in treating periodontitis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42714624/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.101093+00:00",
+    "authors": [
+      "Yuyu Ge",
+      "Tailong Zhang",
+      "Yi Zhao",
+      "Zhiqiang Wang"
+    ],
+    "summary": "To explore the function and therapeutic mechanism of Withaferin A (WFA) in treatment of periodontitis using network pharmacology analysis and experiment validation. The optimal concentration of WFA was determined using CCK-8 assay. IL-6 and IL-1β protein levels were measured by ELISA. Osteogenic differentiation under inflammation was evaluated via ALP staining and activity, Alizarin Red staining, and mineralization quantification. Expression of osteogenic markers (RUNX2, OCN, ALP) was analyzed by Western blot and RT-qPCR. Network pharmacology and molecular docking were used to predict and validate WFA targets, followed by experimental verification with WB and RT-qPCR. Mitochondrial status was examined using JC-1 staining and TEM, while ROS levels were detected to assess oxidative stress. Expression of SLC7A11, GPX4, and OPA1 was measured by WB and RT-qPCR. WFA's therapeutic effect was further validated in a ligature-induced periodontitis (LIP) rat model using micro-CT, H&E staining, and immunohistochemistry. Our study demonstrated that WFA exerts multi-faceted therapeutic effects on periodontitis. It promoted osteogenesis by upregulating osteogenic markers (RUNX2, OCN, ALP) and counteracted Pg-LPS-induced inflammation, reducing IL-6 and IL-1β levels and attenuating bone resorption in vitro. Bioinformatics analysis identified 119 potential targets of WFA, with 100 overlapping periodontitis-related genes. GO and KEGG enrichment highlighted the AGE-RAGE, IL-17, and Relaxin signaling pathways. Molecular docking confirmed strong binding of WFA to JUN, FN1, and TGFβ, which were functionally validated. Mechanistically, WFA reduced ROS, preserved mitochondrial integrity, and upregulated SLC7A11 and GPX4, indicating anti-ferroptotic effects via the SLC7A11/GPX4 axis. In vivo, WFA alleviated Pg-LPS-induced bone loss. In conclusion, WFA exhibits therapeutic potential in periodontitis through suppressing ferroptosis via SLC7A11/GPX4 axis, which promotes osteogenesis and inhibits Pg-LPS-induced inflammation. WFA demonstrates significant potential as a therapeutic intervention for periodontitis.",
+    "doi": "10.1007/s00784-026-07120-2",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42714624",
+      "journal": "Clinical oral investigations"
+    },
+    "dedupe_key": "doi:10.1007/s00784-026-07120-2"
+  },
+  {
+    "kind": "article",
+    "title": "Berberine inhibits the AcrB efflux pump and synergizes with meropenem against carbapenem-resistant hypervirulent Klebsiella pneumoniae: mechanistic insights and in vivo validation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42714471/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-09T23:29:15.101612+00:00",
+    "authors": [
+      "Xinran Zhou",
+      "Chunrong Hu",
+      "Jiaming Tian",
+      "Ying Chen",
+      "Deming Zhao",
+      "Bo Wang",
+      "Shuyuan Zhao",
+      "Yueyan Sun",
+      "Yanjun Fu"
+    ],
+    "summary": "From 285 non-duplicate clinical CRKP isolates, 170 were confirmed as carbapenem-resistant hypervirulent Klebsiella pneumoniae (CR-hvKP); after efflux pump phenotyping by the CCCP inhibition method and carbapenemase exclusion via Carba NP testing combined with multiplex carbapenemase gene PCR, 30 strains with AcrAB-TolC efflux-mediated resistance were selected for mechanistic investigation. Molecular docking revealed berberine binding to the AcrB Distal Binding Pocket (free energy: - 7.5 kcal/mol; hydrogen bond with SER-996, 2.6 Å). Checkerboard assays demonstrated synergistic berberine-meropenem activity against all 30 strains (fractional inhibitory concentration index, FICI: 0.1875-0.500; dimensionless). Nile red assays confirmed AcrB efflux inhibition comparable to PAβN, evidenced by attenuated intracellular fluorescence decay (ΔF/F₀ =  - 9.7% vs. - 52.1% in AcrB-overexpressing controls). RT-qPCR showed berberine suppressed acrB transcription via upregulation of ramR and downregulation of ramA. Combination therapy significantly improved murine survival and bacterial clearance versus monotherapy (log-rank P < 0.001).",
+    "doi": "10.1007/s00210-026-05878-6",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42714471",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s00210-026-05878-6"
   }
 ]
