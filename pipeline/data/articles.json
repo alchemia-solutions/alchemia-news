@@ -13115,5 +13115,235 @@
       "journal": "Archiv der Pharmazie"
     },
     "dedupe_key": "doi:10.1002/ardp.70328"
+  },
+  {
+    "kind": "article",
+    "title": "PMPIHGLL: predicting metabolite-protein interactions using dual hypergraph convolutional networks and large language models.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42721445/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-10T23:22:21.554142+00:00",
+    "authors": [
+      "Lei Chen",
+      "Zhitong Jin",
+      "Ying Shao",
+      "Bo Zhou"
+    ],
+    "summary": "Metabolite-protein interactions (MPIs) play pivotal roles in regulating cellular processes and metabolic pathways and have important implications for systems biology and drug discovery. Although several computational models have been proposed, alternative approaches are needed to broaden the methodological toolkit for MPI prediction. In this study, we developed a new deep-learning model for predicting MPIs. Chemical and protein large language models were used to generate informative representations of metabolites and proteins. For each entity type, we constructed two K-nearest-neighbor hypergraphs using different values of K, thereby capturing higher-order relationships at different scales and expanding the feature-learning space. A dual hypergraph convolutional network (HGCN) learned from these relationships. The resulting high-level features were further processed using a channel-wise attention mechanism and a one-dimensional convolutional neural network (1D-CNN) to obtain integrated metabolite and protein representations. Finally, a fully connected layer generated the predictions. The model was evaluated on four MPI datasets using global five-fold cross-validation; AUC and AUPR exceeded 0.9 on most datasets. Local five-fold cross-validation and an independent test further indicated that the model could predict MPIs involving previously unobserved metabolites or proteins. The model outperformed several existing MPI prediction models and related models adapted to this task. Ablation studies supported the rationale for its design. Short abstract In this study, we focused on the metabolite-protein interactions (MPIs), which play pivotal roles in regulating cellular processes and metabolic pathways, and designed an effective deep-learning model for predicting MPIs. The model received the chemical and protein features yielded by large language models and refined them using a dual hypergraph convolutional network with two K-nearest-neighbor hypergraphs using different values of K. The resulting high-level features were further processed by a channel-wise attention mechanism and a one-dimensional convolutional neural network. A fully connected layer finally generated the predictions. The model shown competitive performance on four MPI datasets and outperformed several existing MPI prediction models.",
+    "doi": "10.1093/bib/bbag489",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42721445",
+      "journal": "Briefings in bioinformatics"
+    },
+    "dedupe_key": "doi:10.1093/bib/bbag489"
+  },
+  {
+    "kind": "article",
+    "title": "MSF-HierGNN: a multi-source substructure-fusion hierarchical GNN method and web server to predict molecular property for drug design.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42721442/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-10T23:22:21.554669+00:00",
+    "authors": [
+      "Ming Xiao",
+      "Yi Xiao",
+      "Yingping Wu",
+      "Yujie You",
+      "Xiaolei Liu",
+      "Hoang Van Thanh",
+      "Le Zhang"
+    ],
+    "summary": "Accurate prediction of the biological and physicochemical properties of molecules is of great significance in shortening the process and decreasing the failure rate of drug design. Thus, previous studies have established several benchmark datasets and developed several Graph Neural Networks (GNNs) based artificial intelligence (AI) predictive methods. However, since these methods encounter challenges such as incomplete representation of molecular hierarchical structures, insufficient exploration of local topological features, and under-extraction of correlations among atomic features, our study proposes a graph neural network that combines hierarchical pooling with localized substructure modeling named MSF-HierGNN (Multi-Source Substructure-Fusion Hierarchical Graph Neural Network) to solve these problems. Firstly, MSF-HierGNN constructs a more comprehensive and multiscale graph-level representation by preserving chemically salient structures and fusing multiple sources of substructure. Secondly, the model can more comprehensively represent molecular substructure features by integrating multiple fragmentation algorithms and incorporating five molecular fingerprints. Additionally, the model further captures correlations among atomic features by increasing the message-passing mechanism. Finally, we validate the model's effectiveness using public benchmark datasets and develop an interactive and user-friendly web server application based on MSF-HierGNN. Experiments based on benchmark datasets demonstrate that our model not only can effectively extract molecular substructure features and capture correlations among atomic features, but also can more accurately predict molecular properties, thereby offering a novel AI method and application to support drug discovery and design.",
+    "doi": "10.1093/bib/bbag491",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug design"
+    ],
+    "extra": {
+      "pmid": "42721442",
+      "journal": "Briefings in bioinformatics"
+    },
+    "dedupe_key": "doi:10.1093/bib/bbag491"
+  },
+  {
+    "kind": "article",
+    "title": "Mechanistic insights into Mfd inhibition by pharmacophore-guided ligands using molecular and steered molecular dynamics simulations.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42721419/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-10T23:22:21.555135+00:00",
+    "authors": [
+      "Varshini Dayanand Kore",
+      "Abhishek Lakhera",
+      "Arpita Robel Khamle",
+      "Manish Bhalla",
+      "Parth Sarthi Sen Gupta"
+    ],
+    "summary": "Antimicrobial resistance remains difficult to control because many bacteria rely on DNA repair pathways that help them survive antibiotic stress. One of the key players in this response is the Mutation Frequency Decline protein (Mfd), a transcription repair coupling factor that supports mutagenesis and persistence. Targeting Mfd therefore represents a promising strategy to limit bacterial evolvability rather than directly inhibiting growth. In this study, we integrate pharmacological screening with microbial resistance mechanisms using a pharmacophore-guided computational framework to identify inhibitors of Mfd in ESKAPE pathogens. A pharmacophore model derived from the known Mfd inhibitor NM102 (Reference 2) was employed to screen structurally diverse compounds from the PubChem database along with food-derived phytochemicals. Two lead candidates emerged from this analysis: Compound 1 (Carpaine), a natural alkaloid from Carica papaya, and a synthetic benzimidazole derivative Compound 2 (PubChem ID: 133869329). Both compounds showed more favorable predicted docking scores toward the ATP-binding region of Mfd compared to ATP (Reference 1) and NM102 (Reference 2). Molecular docking revealed conserved interactions within key functional motifs, while molecular dynamics simulations confirmed stable ligand-protein complexes. Binding free-energy calculations further supported favorable energetics, and steered molecular dynamics revealed higher peak rupture forces, particularly for Compound 1, indicating stronger mechanical resistance to ligand dissociation. Importantly, although Carica papaya extracts have previously been reported to enhance antibiotic efficacy in combination studies, the molecular basis of this effect and the specific contribution of Compound 1 remain unclear. The present work provides computational evidence supporting a proposed mechanism linking this effect to inhibition of Mfd-mediated DNA repair. Overall, this study highlights Mfd as an anti-evolvability target and demonstrates how pharmacophore-guided computational approaches can provide a computational framework for identifying potential ATP-competitive Mfd inhibitors against antimicrobial resistance, offering a data-driven direction for future antimicrobial strategies.",
+    "doi": "10.1080/07391102.2026.2729828",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42721419",
+      "journal": "Journal of biomolecular structure & dynamics"
+    },
+    "dedupe_key": "doi:10.1080/07391102.2026.2729828"
+  },
+  {
+    "kind": "article",
+    "title": "Global Research Trends and Insights on AI Usage in Tuberculosis: Bibliometric Analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42721319/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-10T23:22:21.555660+00:00",
+    "authors": [
+      "Jiawen He",
+      "Shuzhen Feng",
+      "Yufang Chen",
+      "Zhijuan Lai",
+      "Beihua Lyu",
+      "Yingying Li"
+    ],
+    "summary": "Tuberculosis (TB) remains a major global health challenge despite prevention efforts. AI offers promising approaches to long-standing challenges in TB diagnosis, drug resistance detection, and case management; however, a systematic mapping of global research priorities and translational gaps in AI applications to TB is currently lacking. This study aimed to analyze development patterns, collaboration networks, and knowledge structure of AI applications in TB management through bibliometric analysis of Web of Science publications, identifying research frontiers and translational gaps. This study conducted a bibliometric analysis of Web of Science Core Collection publications (2000-2025; last searched April 4, 2025). Original articles and reviews containing both AI- and TB-related terms were screened by 2 independent reviewers following PRISMA 2020 principles. Coauthorship, cocitation, and keyword cooccurrence networks were constructed with VOSviewer (Nees Jan van Eck and Ludo Waltman, Leiden University), CiteSpace (Dr. Chaomei Chen, Drexel University), and Bibliometrix R package (Massimo Aria and Corrado Cuccurullo, University of Naples Federico II), and results were synthesized through descriptive statistics and scientific knowledge mapping. Analysis of 1300 articles shows substantial growth in AI applications for TB management during 2000-2025, with post-2018 publication growth of 29.7% and citation growth of 54.2% annually. The United States dominated output (346 publications; 12,143 citations), whereas high-burden countries remained underrepresented relative to disease burden, revealing a systematic research-demand inversion. Of the 15 most cited papers, 4 (26.7%) focused on imaging analysis, 2 (13.3%) on drug resistance prediction, and 3 (20.0%) on drug discovery, together comprising 60% (9/15) of the highly cited literature; the remainder addressed foundational biology, decentralized-learning methodology, immunoinformatics, and review literature rather than a specific TB application domain. Across this literature, technical validation-stage work markedly outweighed papers reporting clinical application, underscoring a technology-over-translation imbalance; key gaps persist in cross-regional data sharing, atypical lesion recognition, and socioeconomic factor integration. These findings indicate that clinicians and program managers in high-burden settings should prioritize locally validated, implementation-ready AI tools over algorithmic refinements, and that funders should direct resources toward prospective clinical trials and equity-focused deployment frameworks. AI-TB research has expanded rapidly, yet clinical translation remains disproportionately limited relative to algorithmic innovation. To help bridge this gap, frontline clinicians in high-burden settings could prioritize locally validated computer-aided detection (CAD) tools meeting World Health Organization (WHO)-recommended performance standards for chest-radiograph triage, and contribute real-world performance data through postdeployment surveillance channels; policymakers could support cross-national data-sharing frameworks and consider integrating validated AI tools into national TB screening programs; and funders could allocate a defined share of AI-for-TB grants to prospective clinical evaluation rather than further algorithmic refinement alone. These findings should be interpreted in light of the study's reliance on a single English-language database and the inherent limitations of bibliometric proxies, which may underrepresent research from high-burden regions and undervalue recent publications.",
+    "doi": "10.2196/93885",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42721319",
+      "journal": "JMIR medical informatics"
+    },
+    "dedupe_key": "doi:10.2196/93885"
+  },
+  {
+    "kind": "article",
+    "title": "AET5: A transcriptome-guided molecular generation framework with contrastive self-supervised learning.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42721204/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-10T23:22:21.556032+00:00",
+    "authors": [
+      "Zhikang Yuan",
+      "Xin Zhang",
+      "Gaoming Lin",
+      "Quan Zou",
+      "Subhashisa Swain",
+      "Yijie Ding",
+      "Prayag Tiwari",
+      "Shuofeng Yuan",
+      "Xiaoyi Guo"
+    ],
+    "summary": "Gene expression profiles capture system-level drug responses and offer a promising basis for de novo molecular generation. However, their application is limited by data sparsity and experimental noise, which hinder the reliable mapping between disease-associated transcriptomic perturbations and chemically valid therapeutic molecules. Here, we present AET5, a de novo molecular generation framework that conditions molecular design on disease-reversal gene expression profiles. AET5 integrates contrastive self-supervised learning with pre-trained sequence-to-sequence models to learn robust associations between transcriptomic signatures and molecular structures by deriving noise-tolerant transcriptomic representations and aligning them with molecular sequence space. Across the L1000 dataset, AET5 outperforms existing expression-guided generation methods in generation quality and distributional characteristics, while maintaining favorable physicochemical and drug-related properties. We further apply AET5 to generate candidate compounds for SARS-CoV-2 infection and prostate cancer. Molecular docking and dynamics simulations indicate stable target binding, supporting the biological relevance of the generated molecules. These results demonstrate that disease-reversal expression profiles can effectively guide de novo molecular generation, providing a general framework for biologically informed drug design under noisy transcriptomic conditions.",
+    "doi": "10.1371/journal.pcbi.1014703",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42721204",
+      "journal": "PLoS computational biology"
+    },
+    "dedupe_key": "doi:10.1371/journal.pcbi.1014703"
+  },
+  {
+    "kind": "article",
+    "title": "DRCMDA: A Dual-View Drug Repositioning Framework with Cluster-Aware Structured Masked Reconstruction and Diffusion-Based Metapath-Graph Augmentation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42721169/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-10T23:22:21.556412+00:00",
+    "authors": [
+      "Shijie Zhang",
+      "Xu Zhang",
+      "Zhenhua Yu",
+      "Fang Du"
+    ],
+    "summary": "Drug repositioning aims to identify new therapeutic indications for existing drugs, yet current deep learning approaches on multi-source biological data face limitations in both homogeneous and heterogeneous network modeling. In homogeneous similarity networks, random masking-based self-supervised learning neglects intrinsic clustering structures of biological entities and fails to capture high-order semantics, while in heterogeneous networks, sparse associations limit the effectiveness of metapath-based reasoning. To address these challenges, we propose DRCMDA, a dual-view drug repositioning framework that combines cluster-aware structured masked reconstruction with diffusion-based metapath-graph augmentation. The homogeneous module employs cluster-guided column permutation perturbations and a Teacher-Student distillation mechanism to learn robust, high-level representations, while the heterogeneous module leverages a diffusion model to generate diverse synthetic metapath graphs from the learned graph distribution. Furthermore, DRCMDA employs dual-view contrastive learning and node-level feature fusion to align and integrate complementary information across homogeneous and heterogeneous views. Experiments on three benchmark datasets demonstrate that DRCMDA consistently outperforms state-of-the-art methods across multiple evaluation metrics, with case studies and molecular docking analyses confirming its translational potential in identifying promising therapeutic candidates.",
+    "doi": "10.1109/JBHI.2026.3732933",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42721169",
+      "journal": "IEEE journal of biomedical and health informatics"
+    },
+    "dedupe_key": "doi:10.1109/jbhi.2026.3732933"
+  },
+  {
+    "kind": "article",
+    "title": "Production of Anti-melanogenic Glucosides via Molecular Docking-guided Biotransformation of p-hydroxyphenethyl anisate.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42720894/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-10T23:22:21.556829+00:00",
+    "authors": [
+      "Te-Sheng Chang",
+      "Jiumn-Yih Wu",
+      "Hsiou-Yu Ding",
+      "Shu-Chi Cho",
+      "Tzi-Yuan Wang",
+      "Che-Chia Tsao",
+      "Jou-Yi Chen",
+      "Chien-Yu Wu",
+      "Huei-Ju Ting"
+    ],
+    "summary": "p-Hydroxyphenethyl anisate (HP) has been identified as a natural compound with whitening activity in melanoma cells and zebrafish. Considering that glycosylation can enhance the solubility, stability, and bioactivity of natural products, we investigated whether HP could serve as a substrate for glycosylation enzymes. Molecular docking predicted favorable interactions between HP and amylosucrase as well as glycosyltransferases, suggesting the potential formation of α- and β-glucosides. Enzymatic reactions confirmed the production of phenethylanisate-4'-O-α-glucoside (HP-α-glc) and phenethylanisate-4'-O-β-glucoside (HP-β-glc). The structures were validated by mass spectrometry, enzymatic digestion (HP-α-glc), or nuclear magnetic resonance spectroscopy (HP-β-glc). Biological evaluation revealed that both glucosides suppressed melanogenesis in murine B16-F1 melanoma cells at non-cytotoxic concentrations. Mechanistic studies demonstrated that HP-β-glc not only inhibited tyrosinase activity but also downregulated the expression of the microphthalmia-associated transcription factor (MITF) and tyrosinase at both the protein and mRNA levels, thereby attenuating melanogenesis through transcriptional regulation. Consistently, in vivo assays demonstrated that HP-β-glc effectively inhibited pigmentation in zebrafish embryos without inducing developmental toxicity, and its effect was comparable to that of the positive control, raspberry ketone. These findings highlight the enzymatic glycosylation of HP as a viable strategy to generate bioactive derivatives with improved functional properties. In particular, HP-β-glc retains the anti-melanogenic activity of HP, providing mechanistic evidence and preclinical validation for its potential application as a safe and effective skin-whitening agent.",
+    "doi": "10.1007/s12010-026-05917-1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42720894",
+      "journal": "Applied biochemistry and biotechnology"
+    },
+    "dedupe_key": "doi:10.1007/s12010-026-05917-1"
+  },
+  {
+    "kind": "article",
+    "title": "Molecular mechanisms of herbal medicines and bioactive compounds in rheumatoid arthritis: a comprehensive network pharmacology perspective.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42720835/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-10T23:22:21.557254+00:00",
+    "authors": [
+      "T J Jasna",
+      "K S Sandra",
+      "Megh Pravin Vithalkar",
+      "D Vijaykumar",
+      "Yogendra Nayak"
+    ],
+    "summary": "Rheumatoid arthritis (RA) is a chronic immune-mediated inflammatory disease characterized by persistent synovial inflammation, progressive joint distruction, and systemic complications. Owing to the multifactorial nature of RA, therapies targeting a single molecular pathway often provide incomplete disease control and may be associated with long-term adverse effects. Network pharmacology has emerged as a powerful system-level approach that integrates bioinformatics, multi-omics datasets, molecular docking, and experimental validation to unravel the complex interactions among bioactive compounds, molecular targets, and signaling pathways. This review highlights the novel application of network pharmacology in deciphering the multi-target mechanisms of herbal medicines for RA and summarizes recent advances in this rapidly evolving field. Particular emphasis is placed on key pathogenic pathways, including NF-κB, PI3K/Akt, MAPK, JAK/STAT, NLRP3 inflammasome activation, oxidative stress responses, angiogenesis, and immune-cell dysregulation. Representative phytochemicals, such as quercetin, kaempferol, luteolin, triptolide, and berberine, are discussed for their ability to modulate inflammatory responses, fibroblast-like synoviocyte activation, macrophage polarization, and osteoclastogenesis through coordinated regulation of multiple signaling networks. Importantly, this review underscores the translational significance of network pharmacology as a bridge between traditional herbal medicine and modern drug discovery, facilitating target prioritization, mechanism-based validation, and the rational development of multi-target therapeutics for RA. Collectively, network pharmacology provides a robust framework for the mechanistic interpretation of herbal medicines and offers a promising opportunity to accelerate the discovery and clinical translation of safer, more effective therapies for RA.",
+    "doi": "10.1007/s11033-026-12727-5",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42720835",
+      "journal": "Molecular biology reports"
+    },
+    "dedupe_key": "doi:10.1007/s11033-026-12727-5"
   }
 ]
