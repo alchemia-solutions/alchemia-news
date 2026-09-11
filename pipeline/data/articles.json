@@ -15338,5 +15338,781 @@
       "journal": "Biofouling"
     },
     "dedupe_key": "doi:10.1080/08927014.2026.2730440"
+  },
+  {
+    "kind": "article",
+    "title": "Targeting LOXL4-driven matrix stiffening with acetyldigoxin restores CD8+ T cell function in lung cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726857/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.738664+00:00",
+    "authors": [
+      "Xuyu Gu",
+      "Yifei Zhu",
+      "Li Xu",
+      "Xinnan Xu",
+      "Kaiqi Jin",
+      "William C Cho",
+      "Qiyu Fang"
+    ],
+    "summary": "Extracellular matrix (ECM) stiffness is known to impair T cell function, yet the underpinning molecular cascade remains undefined. This paper investigates the role of lysyl oxidase-like 4 (LOXL4) in ECM stiffening and CD8+ T cell function in lung cancer. Loxl4 knockout and mouse recombinant LOXL4 protein systems, along with Piezo1, Ybx1, Acly, and Kat2a conditional knockout mouse models were established. ECM stiffness was measured by atomic force microscopy, and T cell exhaustion markers were analyzed using flow cytometry. RNA sequencing, ATAC-seq, CUT&Tag, chromatin immunoprecipitation-quantitative polymerase chain reaction, and luciferase assays were used to explore the underlying molecular mechanisms. Molecular docking was performed to explore Food and Drug Administration-approved agents targeting LOXL4. The results demonstrated that tumor-derived LOXL4 stiffened the ECM, which activates the mechanosensor Piezo1 in CD8+ T cells, triggering Ca2+ influx and downstream FAK1-YAP1 signaling. Nuclear YAP1 transactivated YBX1, which recruited the metabolic enzyme ACLY and the histone acetyltransferase KAT2A to exhaustion gene loci, epigenetically reinforcing terminal exhaustion. Conditional knockout of Piezo1, Ybx1, Acly, and Kat2a in murine CD8+ T cells abolished stiffness-induced exhaustion and suppressed tumor growth. Acetyldigoxin was identified as a high-affinity LOXL4 inhibitor. It softened the ECM, disrupted the mechanosignaling-epigenetic axis, reversed CD8+ T cell exhaustion, and synergized with anti-PD-1 blockade to achieve durable tumor regression. In conclusion, this study uncovers a mechanotransduction-to-epigenetic pathway where LOXL4-driven matrix stiffening induces CD8+ T cell exhaustion. Repurposing acetyldigoxin as a LOXL4-targeted therapy offers a promising clinical strategy to overcome ECM-mediated immunotherapy resistance in lung cancer.",
+    "doi": "10.1126/sciadv.aef1694",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42726857",
+      "journal": "Science advances"
+    },
+    "dedupe_key": "doi:10.1126/sciadv.aef1694"
+  },
+  {
+    "kind": "article",
+    "title": "A bioinformatic single-cell and structure-informed framework identifies a baicalin-CA2-keratinocyte state axis in atopic dermatitis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726753/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.739270+00:00",
+    "authors": [
+      "Boyan Yang",
+      "Guilin Zhou",
+      "Jun Dai"
+    ],
+    "summary": "Atopic dermatitis (AD) is characterized by a self-reinforcing loop between epidermal barrier dysfunction and type 2-skewed inflammation; yet the most perturbed keratinocyte states and actionable epidermal targets remain incompletely defined. We integrated pharmacogenomic target mining, complementary machine-learning feature selection (LASSO and SVM-RFE), single-cell state-resolved perturbation analyses (Augur and scDist), and structure-based molecular modeling (molecular docking, MD simulation, and MM-PBSA free energy calculation) to prioritize candidate targets of baicalin in AD. CA2 emerged as a convergent epidermal candidate; scRNA-seq analyses localized CA2-associated transcriptional differences to keratinocytes, with the keratinocyte compartment exhibiting the disease-associated strongest separability and transcriptomic distance, accompanied by enrichment of metabolic reprogramming, epithelial junction and barrier remodeling, and proliferative quiescence gene programs. Structure-based evaluation supported a computationally plausible baicalin-CA2 interaction, with an estimated MM-PBSA binding free energy of -22.082 kcal/mol. Collectively, these findings nominate a computationally supported \"baicalin-CA2-Kcs9\" axis as a hypothesis-generating framework for epidermal stratification and experimental prioritization in AD.",
+    "doi": "10.1371/journal.pone.0356174",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42726753",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0356174"
+  },
+  {
+    "kind": "article",
+    "title": "Antiviral Potential of Green-Synthesized Zinc Oxide and Copper Oxide Nanoparticles: Integrated In Vitro and In Silico Study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726542/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.739907+00:00",
+    "authors": [
+      "Atef S Elgebaly",
+      "Yasmin Adel Elmahdy",
+      "Mujtaba Farooq Rana",
+      "Reem Mohammed Abdelrahman",
+      "Marwa M Khalifa",
+      "Ehab Darwish",
+      "Ayman K Ismail",
+      "Khamael M Abualnaja",
+      "Mohamed Shaalan",
+      "Ahmed Mahdy"
+    ],
+    "summary": "Viral infections such as human papillomavirus, rotavirus, and cytomegalovirus continue to pose significant global health challenges, causing persistent and widespread disease. The objective of this study is to evaluate the preliminary in vitro antiviral and cytotoxicity profile of zinc oxide (ZnO) and copper oxide (CuO) nanoparticles, which were synthesized through a green approach using Moringa oleifera leaf extract, against these viruses. Regarding antiviral effects, ZnO nanoparticles demonstrated potent antiviral activity against HPV, CMV, and rotavirus, with high selectivity indices and lower cytotoxicity compared with copper oxide nanoparticles. For HPV and CMV, ZnO showed markedly higher CC50 and SI values (HPV: SI = 10.67; CMV: SI = 10.57) than copper oxide nanoparticles, which exhibited lower selectivity and greater cytotoxicity. Against rotavirus, ZnO nanoparticles also exhibited superior safety and antiviral efficacy (CC50 = 798.42 µg/mL; SI = 11.49), whereas copper oxide nanoparticles showed relatively higher toxicity and lower selectivity. In parallel, quercetin, the major flavonoid of Moringa oleifera, was evaluated in silico as a potential inhibitor of rotavirus VP5*, CMV UL44, and HPV E6 using molecular docking and 150 ns molecular dynamics simulations. Quercetin exhibited favorable binding affinity, stable interaction profiles, and low RMSD fluctuations across all viral targets. Overall, green-synthesized ZnO nanoparticles demonstrated promising preliminary antiviral activity with an improved safety profile compared with CuO nanoparticles, while the computational findings support quercetin as a potential multi-target antiviral candidate. Further studies using direct virological assays and in vivo models are required to validate these findings and elucidate the underlying antiviral mechanisms.",
+    "doi": "10.3390/nano16171067",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42726542",
+      "journal": "Nanomaterials (Basel, Switzerland)"
+    },
+    "dedupe_key": "doi:10.3390/nano16171067"
+  },
+  {
+    "kind": "article",
+    "title": "Large-scale comparative virtual screening identifies novel molecular targets underlying the multi-target activity of quercetin in psoriasis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726435/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.740556+00:00",
+    "authors": [
+      "Mina Barhoon",
+      "Hamid Mahdiuni",
+      "Ali Ebrahimi",
+      "Reza Khodarahmi"
+    ],
+    "summary": "Psoriasis is a chronic inflammatory skin disorder arising from immune dysregulation, cytokine storms, and excessive keratinocyte proliferation. Because single-target therapies often show limited efficacy, drug resistance, high costs, and long-term safety concerns, we performed the first large-scale comparative virtual screening of 32 dietary flavonoids against 20 psoriasis-related protein targets to identify safe and cost-effective multi-target therapeutic candidates. Consensus docking predicted quercetin as the top hit, exhibiting a broad binding profile across 11 targets, including previously reported ones (PI3Kδ, the JAK family, PDE4D, and p38α-MAPK) and four newly predicted putative targets (BTK, RORγt, CTSS, and PKCθ). Duplicate molecular dynamics simulations with principal component analysis, free energy landscape, and clustering analyses further characterized these interactions. RORγt and PI3Kδ exhibited the most favourable binding characteristics, followed by the JAK family, whereas PDE4D and PKCθ showed comparatively weaker yet promising interactions. Although quercetin has previously been associated with psoriasis through its antioxidant and immunomodulatory properties, its direct molecular targets and binding mechanisms have remained largely unresolved. Here, quercetin consistently outperformed the other 31 flavonoids while maintaining relative target selectivity. The predicted interaction of quercetin with RORγt provided computational structural support for modulation of the IL-23/IL-17 axis and helped explain quercetin effects on Th17-cell differentiation. Similarly, computationally predicted interactions provided a structural rationale for several other well-documented yet mechanistically unresolved anti-inflammatory and immunomodulatory effects of quercetin, indicating that its therapeutic activity may extend across multiple disease-relevant cell types and signalling pathways. Furthermore, this study presents the atomic-level structural characterization of quercetin binding to newly predicted putative targets and previously known targets lacking complex structural data. Collectively, these findings expand the molecular understanding of quercetin in psoriasis, provide a computational framework for multi-target drug discovery, and highlight the need for experimental validation and enhancement of bioavailability as essential next steps toward clinical translation.",
+    "doi": "10.1007/s10787-026-02364-6",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "virtual screening",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42726435",
+      "journal": "Inflammopharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s10787-026-02364-6"
+  },
+  {
+    "kind": "article",
+    "title": "Docking-score landscapes shape active-learning performance across Vina, Glide, and SILCS.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726342/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.741119+00:00",
+    "authors": [
+      "Joseph Chung",
+      "Aashish Bhatt",
+      "Jacob Ede Levine",
+      "Yi-Chun Lin",
+      "Mingtian Zhao",
+      "Alexander D MacKerell",
+      "Sunhwan Jo",
+      "Sai Chandra Kosaraju",
+      "Yun Lyna Luo"
+    ],
+    "summary": "The rapid expansion of large chemical libraries has created a need for virtual screening workflows that are both efficient and accurate. Active learning (AL) offers a scalable strategy by iteratively training surrogate models to prioritize promising compounds and reduce the number of required docking calculations. However, direct benchmarking of active-learning protocols across docking engines remains limited. In this study, we ask whether docking scores generated by different docking engines affect AL performance and what factors underlie these differences. To do so, we compare four active-learning virtual screening workflows, Vina-MolPAL, Glide-MolPAL, SILCS-MolPAL, and Schrödinger's active-learning Glide, across multiple protein targets and library sizes. Performance was assessed by recovery of top-scoring molecules according to each workflow's respective docking engine, score-prediction accuracy, chemical diversity, and computational cost. Vina-MolPAL achieved the highest top-1% recovery at a 1% batch size, whereas SILCS-MolPAL achieved comparable recovery at a larger batch size. Latent-embedding analyses suggest that the docking-score landscape strongly influences active-learning performance. In addition, combining active learning with SILCS provides a computationally efficient, membrane-aware approach for screening compounds at transmembrane binding sites.",
+    "doi": "10.1007/s10822-026-00927-x",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening"
+    ],
+    "extra": {
+      "pmid": "42726342",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00927-x"
+  },
+  {
+    "kind": "article",
+    "title": "Design, synthesis and multitarget evaluation of cyclopropyl-appended thiohydantoin derivatives as dual cholinesterase and COX inhibitors with antioxidant activity: a combined experimental and computational study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726329/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.741962+00:00",
+    "authors": [
+      "Amina Hussain",
+      "Rafaqat Hussain",
+      "Hina Sarfraz",
+      "Uzma Azam",
+      "Muhammad Hasnat",
+      "Shoaib Khan",
+      "Sibghat Mansoor Rana",
+      "Yazeed M Asiri",
+      "Zainab"
+    ],
+    "summary": "The complex pathology of Alzheimer's disease (AD), together with the limited effectiveness of current treatments, has sparked the search for multifunctional agents capable of targeting key pathological mechanisms simultaneously. In this study, a novel series of cyclopropyl-appended thiohydantoin derivatives 4a-d and their corresponding S-substituted analogues 6a-d were rationally designed and synthesized as multi-target agents. Following complete spectroscopic characterization (1H NMR/13C NMR and HRMS), the entire library of synthesized compounds was evaluated for multi-target potential, including cholinesterase inhibition, cyclooxygenase selectivity, and DPPH radical scavenging efficacy. Biological evaluation revealed that the S-alkylated derivatives 6a-d exhibited superior activities as compared to their parent analogues 4a-d. Multi-target screening identified compounds 6a and 6c as multifunctional leads exhibiting balanced cholinesterase inhibitory, COX-2 inhibitory, and antioxidant activities. Compound 6a demonstrated potent COX-2 inhibition with an IC50 value of 0.32 ± 0.05 µM and a high selectivity index (SI = 36.81), outperforming the reference drug celecoxib (IC50 = 0.41 ± 0.05 µM). In contrast, compound 6c displayed the highest radical scavenging potential in the DPPH assay (IC50 = 24.85 ± 0.96 µM), comparable to that of gallic acid. Together with their dual cholinesterase inhibitory activities, compounds 6a and 6c represent promising multifunctional in vitro lead candidates for further development against neurodegenerative disorders associated with neuroinflammation and oxidative stress. Comprehensive structure activity relationship (SAR) analysis highlighted that the S-alkylation and aromatic substitution had beneficial effects on biological activity. Furthermore, density functional theory (DFT) calculations demonstrated that the lead compounds possessed favorable electronic properties, while molecular docking and molecular dynamics simulations revealed favorable binding interactions with the active sites of AChE, BuChE, and COX-2 and stable ligand-protein complex formation. Additionally, in silico ADMET profiling confirmed acceptable general oral drug-likeness and low toxicity risks for the most active compounds; however, central nervous system (CNS)-specific analysis indicated restricted predicted blood-brain barrier (BBB) permeability, highlighting a key area for future structural optimization. Collectively, this study identifies cyclopropyl-appended thiohydantoin derivatives as potential multifunctional scaffolds for the development of novel anti-Alzheimer agents targeting cholinergic dysfunction, oxidative stress, and neuroinflammation.",
+    "doi": "10.1007/s10822-026-00939-7",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics",
+      "drug-likeness",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42726329",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00939-7"
+  },
+  {
+    "kind": "article",
+    "title": "Characterization of a monoclonal antibody recognizing a conserved linear neutralizing epitope of pseudorabies virus gB protein.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726283/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.742630+00:00",
+    "authors": [
+      "Yumei Chen",
+      "Jie Gao",
+      "RuiRui Liu",
+      "Yunchao Liu",
+      "Jingming Zhou",
+      "Hongliang Liu",
+      "Ying Li",
+      "Yanhua Qi",
+      "Chao Liang",
+      "Enping Liu",
+      "Sixuan Wu",
+      "Aiping Wang"
+    ],
+    "summary": "Pseudorabies virus (PRV), an α-herpesvirus, infects a variety of mammals. It is mainly prevalent in domestic pigs but can also infect humans, posing significant public health risks. The glycoprotein B (gB), a crucial structural protein involved in viral entry and immune recognition, is a key target for neutralizing antibodies of PRV. This study expressed gB glycoprotein to immunise mice using eukaryotic and prokaryotic systems. The hybridoma cell line secreting anti-gB antibodies was analysed, and the neutralising epitope targeted by this monoclonal antibody was identified. Six anti-PRV monoclonal antibodies were generated via the cell fusion technique. The characterization of mAbs revealed that 4A10 exhibited an IFA titer of 1:3200 and neutralization titer of 1:24 with an antibody affinity of 3.4 × 108 L/mol. The extracellular region of gB was divided into seven segments. The reaction of seven truncated proteins with six mAbs was identified by ELISA, with gB6 identified as the immunodominant epitope. Further truncation revealed that the peptide 615RVPGERGTC623 was identified by 4A10 and as a B-cell linear epitope, which was localized within the loop domains of the gB carboxy-terminal (C-Terminal). Homology modeling and molecular docking technology revealed that 4A10 binds to 615RVPGERGTC623 through its heavy chain CDR3 variable region. Antigenic epitope mapping revealed that epitope 615RVPGERGTC623 is highly conserved among different PRV strains. This study identifies a highly conserved linear neutralizing epitope on PRV gB, providing a molecular basis for improving PRV diagnostic methods and optimizing prevention and control strategies. Pseudorabies virus (PRV) causes substantial economic losses in the swine industry worldwide. Glycoprotein B (gB) is a major target for neutralizing antibodies and vaccine design. In this study, we prepared a neutralizing monoclonal antibody (mAb) against PRV gB and identified its key linear neutralizing epitope. The epitope is highly conserved among prevalent PRV strains, highlighting its critical role in viral antigenicity. This work clarifies the molecular basis of PRV neutralization and identifies a conserved epitope, which upon further validation could serve as a diagnostic candidate and inform antiviral research.",
+    "doi": "10.1007/s00203-026-05094-z",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "vaccine design"
+    ],
+    "extra": {
+      "pmid": "42726283",
+      "journal": "Archives of microbiology"
+    },
+    "dedupe_key": "doi:10.1007/s00203-026-05094-z"
+  },
+  {
+    "kind": "article",
+    "title": "Dual template (epitope) imprinting of Mycobacterium leprae bacterial protein for enhanced MIP-EQCM sensing.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726233/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.743184+00:00",
+    "authors": [
+      "Moumita Mandal",
+      "Akriti Srivastava",
+      "Tulika Rai",
+      "Meenakshi Singh"
+    ],
+    "summary": "Leprosy, often known as Hansen's disease, is a chronic bacterial infection caused by Mycobacterium leprae (M. leprae) bacteria. The bacterium has a long incubation period, making it challenging for diagnosis. Timely diagnosis is crucial in initiating early treatment and preventing disease progression and complications. Herein, we proposed a dual-epitope imprinted polymer sensor for M. leprae bacterial protein. Two peptide (epitope) sequences unique to the bacteria were selected and immobilized onto gold nanoparticles, followed by polymerization using multiple monomers 2-methacryloyloxyethyl phosphorylcholine (2-MPC), benzyl methacrylate (BM), and 4-aminothiophenol (4-ATP), selected through in silico molecular docking strategy and ethylene glycol dimethacrylate (EGDMA) as a cross-linker. The imprinted polymer was electrodeposited on the gold coated electrochemical quartz crystal microbalance (EQCM) electrode. The sensor was able to show specific binding towards the real blood samples of leprosy patients. The limit of detection (1.39-1.82 nM) and limit of quantification (4.20-5.51 nM) with no cross reactivity and matrix effect indicate high sensitivity and selectivity. The sensor exhibits a significant improvement in selectivity and adsorption capacity over conventional sensors, with add-on advantages of reusability, high selectivity and sensitivity.",
+    "doi": "10.1007/s00216-026-06804-8",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42726233",
+      "journal": "Analytical and bioanalytical chemistry"
+    },
+    "dedupe_key": "doi:10.1007/s00216-026-06804-8"
+  },
+  {
+    "kind": "article",
+    "title": "Bioactive screening and molecular docking of phenolics from Stellaria pallida.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42726172/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.743779+00:00",
+    "authors": [
+      "Mohamed T Selim",
+      "Mohamed E Elnosary",
+      "Fatma Sh Abd El-Gwaid"
+    ],
+    "summary": "Stellaria pallida L. (Dumort.) is a species that belongs to the Caryophyllaceae family and has a broad range of secondary metabolites and therapeutic potential. In this study, the aerial parts of Stellaria pallida L. (S. pallida) were extracted by various organic solvents, viz. Chloroform, ethyl acetate, ethanol, and methanol, among others, were analyzed by GC/MS and HPLC-DAD to determine their chemical composition and antimicrobial properties. In addition, an in silico molecular docking analysis by AutoDock Vina was performed to evaluate the potential interactions between the identified phytochemical compounds and selected antimicrobial target proteins. The methanol extract had the maximum total phenolic (58±1.55 mg GAE/g), and the ethanol extract recorded the maximum total values of flavonoid (27.22±0.88 mg QE/g). Phytol, stigmasterol, Neophytadiene, rutin, chlorogenic acid, ferulic acid, apigenin-7-glucoside, and epicatechin were the major chemical compounds detected in the S. pallida plant. Additionally, the methanolic extract of S. pallida possesses more antioxidant activity in both DPPH and H2O2 scavenging assays, with IC50 values of 16.24 and 13.54 µg/mL, respectively, compared to other solvent extracts. The antimicrobial evaluation using the agar well diffusion method further confirmed the superior efficacy of the methanolic extract, showing the lowest MIC values against C. albicans (6.25 mg/mL), followed in order by S. aureus and B. subtilis (12.5 mg/mL), while E. coli and K. pneumoniae required higher concentrations (25 mg/mL). Furthermore, molecular docking results revealed strong binding affinities of several identified compounds, particularly rutin and chlorogenic acid, with key antimicrobial target proteins, supporting the observed biological activities. These findings highlight the methanolic extract of S. pallida as a reliable source of natural antioxidants and broad-spectrum antimicrobial activity, in addition to its utility against numerous infectious diseases.",
+    "doi": "10.1186/s13568-026-02090-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42726172",
+      "journal": "AMB Express"
+    },
+    "dedupe_key": "doi:10.1186/s13568-026-02090-w"
+  },
+  {
+    "kind": "article",
+    "title": "In Vitro and In Vivo Activity against Staphylococcus aureus and Pharmacokinetic Evaluation of a Novel Pleuromutilin Candidate.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725981/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.744317+00:00",
+    "authors": [
+      "Feifei Zhao",
+      "Xinyue Luo",
+      "Tingting Zhang",
+      "Honghao Huang",
+      "Yizhen Zhu",
+      "Wanxin Lin",
+      "Sujuan Wu",
+      "Youzhi Tang",
+      "Zhenling Zeng"
+    ],
+    "summary": "Staphylococcus aureus infections pose a serious threat to public health, exacerbated by antimicrobial resistance and the limited pipeline of novel agents. Pleuromutilin, a natural antibiotic, provides a promising scaffold for developing new antibacterial agents via structural modification. To overcome the poor druggability of the lead compound amphenmulin (APM), we designed and synthesized a novel derivative, Pleuro2-4. This derivative exhibited potent in vitro activity against S. aureus, with efficacy comparable to valnemulin and superior to tiamulin. Molecular docking suggested favorable interactions with the bacterial ribosome, while scanning electron microscopy revealed morphological alterations associated with impaired cell division. Pharmacokinetics in mice revealed dose-dependent oral bioavailability (21.28% to 70.13%) and rapid metabolism to APM. Pleuro2-4 significantly reduced bacterial loads in a dose-dependent manner and alleviated histopathological damage in a neutropenic murine thigh infection model. Collectively, Pleuro2-4 exhibited improved oral exposure and bioavailability with potent antibacterial efficacy and favorable pharmacokinetic properties, warranting further pharmacokinetic/pharmacodynamic and efficacy studies in target species.",
+    "doi": "10.1021/acsinfecdis.6c00558",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42725981",
+      "journal": "ACS infectious diseases"
+    },
+    "dedupe_key": "doi:10.1021/acsinfecdis.6c00558"
+  },
+  {
+    "kind": "article",
+    "title": "Inhibition of Fosfomycin Resistance Protein FosA from Pseudomonas aeruginosa.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725974/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.744829+00:00",
+    "authors": [
+      "Vanessa Wiltsie",
+      "Tatum Smith",
+      "Nishad Thamban Chandrika",
+      "Nathaniel C Gilbert",
+      "Sylvie Garneau-Tsodikova",
+      "Matthew K Thompson"
+    ],
+    "summary": "Antimicrobial resistance is an urgent issue in modern-day medicine. One way to address this problem is to repurpose and restore the function of older antibacterials through the specific targeting of antibiotic-modifying enzymes produced by bacteria. Fosfomycin is an antibiotic that is attractive for repurposing because it has been previously approved for use in uncomplicated urinary tract infections (UTIs) and is widely regarded as safe with no known off-target interactions. The primary limitation to fosfomycin usage has been the emergence of fosfomycin resistance enzymes. FosAPa is the fosfomycin resistance enzyme from Pseudomonas aeruginosa. We identified and evaluated several potential inhibitors of FosAPa using high-throughput virtual screening (HTVS) and 31P-NMR. In addition, we obtained X-ray crystal structures of FosAPa with the inhibitors bound in the active site to gain insights into important protein-ligand interactions necessary for the potential structure-based drug design. Preliminary cell-based assays were performed to evaluate the effect that the inhibitors have on the minimum inhibitory concentration (MIC) of fosfomycin in P. aeruginosa. Our results provide an initial scaffold for structure-activity relationships and future compound modifications for combating fosfomycin resistance in P. aeruginosa and other FosA-containing Gram-negative pathogens.",
+    "doi": "10.1021/acsinfecdis.6c00121",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "virtual screening",
+      "structure-based drug design"
+    ],
+    "extra": {
+      "pmid": "42725974",
+      "journal": "ACS infectious diseases"
+    },
+    "dedupe_key": "doi:10.1021/acsinfecdis.6c00121"
+  },
+  {
+    "kind": "article",
+    "title": "Exploring the Mechanism of Action of Danggui Buxue Decoction in Treating Chronic Glomerulonephritis Based on UPLC-MS/MS and Network Pharmacology.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725847/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.745541+00:00",
+    "authors": [
+      "Qiao Liu",
+      "Yinghang Wang",
+      "Xinyue Wang",
+      "Hongmei Yang",
+      "Zhi Pan",
+      "Di Guo"
+    ],
+    "summary": "According to Chinese medicine theory, chronic glomerulonephritis (CGN) is characterized by dampness-heat and blood stasis. Danggui Buxue Decoction (DBD) has shown good efficacy in the treatment of diseases associated with qi deficiency and blood stasis (such as CGN). However, the molecular mechanisms behind its therapeutic effects are unclear. This study aims to elucidate the role and mechanism of action of DBD in the treatment of CGN. The chemical composition of DBD was identified using UPLC-MS/MS, and network pharmacology, bioinformatics, and molecular-docking techniques were employed to predict the core targets and key signaling pathways of DBD in the treatment of CGN. At the same time, we established an LPS-induced rat glomerular mesangial (HBZY-1) cell model and a CGN rat model for in vitro and in vivo validation. We used MTT and Transwell assays to assess the viability, migration, and invasion capabilities of HBZY-1 cells, and also measured inflammatory cytokine levels via ELISA. A preliminary evaluation of the regulatory effects of DBD on key proteins in the TLR4/NF-κB signaling pathway in HBZY-1 cells using immunofluorescence. Biochemical analyses of urine and serum were performed to measure 24-h urinary protein, Serum Creatinine (SCr), Blood Urea Nitrogen (BUN), and levels of inflammatory factors in rats. Pathological changes in kidney tissue were examined using HE, Masson, and PAS staining. The extent of apoptosis in kidney tissue cells was assessed using TUNEL and JC-1 staining assays. Immunohistochemistry, immunofluorescence, RT-qPCR, and Western blotting were used to detect the expression of relevant mRNAs and proteins in kidney tissue. The UPLC-MS/MS method was used to identify 104 chemical components and 499 potential targets of action in DBD. The 166 potential target genes in DBD are associated with the therapeutic mechanism of CGN. Results from network pharmacology and bioinformatics suggest that the NF-κB signaling pathway may be a potential mechanism underlying the treatment of CGN with DBD. In vitro experiments demonstrated that DBD suppressed the survival rate of HBZY-1 cells, upregulated the secretion of Interleukin- 4 (IL-4) and Interleukin- 10 (IL-10), and downregulated the expression of Toll-Like Receptor 4 (TLR4) and Nuclear Factor kappa-B (NF-κB) proteins. In vivo, DBD downregulated 24-h urinary protein, SCr, BUN, Tumor Necrosis Factor-α (TNF-α), and Interleukin- 6 (IL-6) levels in CGN rats, while upregulating IL-4 and IL-10 levels. At the same time, DBD exerts its therapeutic effect on CGN by inducing apoptosis through a reduction in mitochondrial membrane potential and by alleviating the inflammatory response via inhibition of the TLR4/NF-κB pathway. In summary, DBD may exert a therapeutic effect on CGN by regulating the TLR4/NF-κB signaling pathway, thereby suppressing the inflammatory response and modulating apoptosis.",
+    "doi": "10.1002/iid3.70497",
+    "company_slug": null,
+    "keywords_matched": [
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42725847",
+      "journal": "Immunity, inflammation and disease"
+    },
+    "dedupe_key": "doi:10.1002/iid3.70497"
+  },
+  {
+    "kind": "article",
+    "title": "Microbiota-derived indole metabolites from Polygonatum cyrtonema polysaccharides fermentation alleviate colitis via Bifidobacterium pseudolongum and PPARγ activation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725845/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.746134+00:00",
+    "authors": [
+      "Xingcai Gao",
+      "Baoting Liu",
+      "Ye Hui",
+      "Jianhua Xie",
+      "Yi Chen",
+      "Chenxu Gong",
+      "Qing Zhou",
+      "Jun Li",
+      "Xiaobo Hu",
+      "Qiang Yu"
+    ],
+    "summary": "Dietary polysaccharides can be transformed by gut microbiota into bioactive metabolites, yet the chemical identity and mechanisms of such products remain poorly defined. Here, we characterized the microbial fermentation products of Polygonatum cyrtonema polysaccharides (PCP) and evaluated their anti-colitic effects. Targeted LC-MS/MS revealed that PCP microbial fermentation products are enriched in tryptophan-derived indoles, particularly 5-hydroxytryptamine (29.21 ± 1.98 ng g-1), indole-3-lactic acid (1.53 ± 0.12 μg g-1), and indole-3-acetic acid (0.18 ± 0.02 μg g-1), along with free monosaccharides indicative of PCP degradation. In DSS-induced colitic mice, these products alleviated symptoms, restored barrier integrity, and enriched Bifidobacterium pseudolongum. Notably, administration of these products increased colonic 5-hydroxyindoleacetic acid (5-HIAA) levels (P < 0.001), consistent with conversion of exogenous 5-HT. The products also activated PPARγ signaling, an effect supported by molecular docking. Mono-colonization with B. pseudolongum recapitulated protection and elevated indole levels. These findings suggest a B. pseudolongum-indole-PPARγ axis as a candidate pathway mediating the benefits of PCP microbial fermentation products, supporting their development as functional food ingredients for gut health.",
+    "doi": "10.1039/d6fo03116a",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42725845",
+      "journal": "Food & function"
+    },
+    "dedupe_key": "doi:10.1039/d6fo03116a"
+  },
+  {
+    "kind": "article",
+    "title": "Coumarin derivatives combating antibacterial resistance: molecular modeling-driven insights and comprehensive SAR elucidation targeting DNA gyrase and topoisomerase IV.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725790/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.746689+00:00",
+    "authors": [
+      "Aanchal Khanna",
+      "Karanvir Singh",
+      "Alok Raj",
+      "Harshavardhan Gupta",
+      "Nitish Kumar",
+      "Jyoti",
+      "Harmandeep Kaur",
+      "Rupali Rana",
+      "Priyanshu Mahajan",
+      "Arjun Khanna",
+      "Irvanpreet Kaur",
+      "Preet Mohinder Singh Bedi"
+    ],
+    "summary": "Antimicrobial resistance continues to threaten the effectiveness of current antibacterial therapies, creating an urgent need for novel chemotypes that act through alternative mechanisms. Among these, coumarin derivatives have emerged as promising inhibitors of bacterial type II topoisomerases, particularly DNA gyrase and topoisomerase IV, owing to their structural versatility and ability to target the ATP-binding domain. This review critically summarizes advances reported in the past decade in the design and biological evaluation of coumarin-based antibacterial agents targeting these enzymes. Recent medicinal chemistry efforts demonstrate that rational structural modification, including heterocycle hybridization, linker optimization, scaffold rigidification and electronic tuning, markedly enhances enzyme inhibition, antibacterial potency and, in several cases, dual-target activity. Computational investigations consistently support experimental findings by identifying conserved binding interactions that explain the improved activity of optimized analogues. Overall, the collective evidence establishes coumarin as a highly adaptable scaffold for the development of next-generation antibacterial agents and highlights integrated structure-based design, dual-target inhibition, and comprehensive biological validation as key priorities for future medicinal chemistry research. Literature was collected from databases including PubMed, Scopus and Web of Science, covering studies published from 2016 to 2026.",
+    "doi": "10.1080/17568919.2026.2732259",
+    "company_slug": null,
+    "keywords_matched": [],
+    "extra": {
+      "pmid": "42725790",
+      "journal": "Future medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.1080/17568919.2026.2732259"
+  },
+  {
+    "kind": "article",
+    "title": "HDX-MS-Guided computational modeling for rapid and accurate antibody-antigen interface mapping.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725674/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.747266+00:00",
+    "authors": [
+      "Will McMahon",
+      "Hanzhi Zhang",
+      "Xiuling Li",
+      "Vaheh Oganesyan",
+      "Sterling Payne",
+      "Nurjahan Mehzabeen",
+      "Nydia van Dyk",
+      "Wenhai Liu",
+      "Wesley Howard",
+      "Pengyi Zhao",
+      "Yeying Zhang",
+      "Mulin Fang",
+      "Xiaoyu Chen",
+      "Yariv Mazor",
+      "Yu Shi"
+    ],
+    "summary": "Accurate mapping of paratopes and epitopes at antibody-antigen (Ab-Ag) interfaces is essential for the rational design of therapeutic antibodies in early drug development. Traditional methods for determining high-resolution Ab-Ag complex structures, such as X-ray crystallography and cryo-electron microscopy, are labor-intensive and require substantial time and resources. Although recent computational approaches have increased throughput, prediction accuracy and reliability remain limited, particularly without experimental structural constraints. Here, we present a hydrogen-deuterium exchange mass spectrometry (HDX-MS)-guided structural modeling workflow for efficient and accurate epitope and paratope mapping across three prospective case studies in therapeutic protein discovery and engineering. Across these systems, peptide-level HDX-MS data were sufficient to guide docking and structural modeling, whereas targeted electron transfer dissociation (ETD) HDX-MS was applied in one system as a higher-resolution, orthogonal approach to further localize critical binding residues. The workflow was applied to diverse Ab-Ag architectures spanning Fab and VHH binders and homodimeric and heterodimeric antigen ectodomains, and HDX-MS data were integrated with HADDOCK, AlphaFold2, and Protenix to generate Ab-Ag complex models. Comparison with subsequently obtained in-house X-ray crystal structures, used here as orthogonal high-resolution reference structures, showed strong agreement in overall binding orientation and interface placement. These results demonstrate the robustness and practical utility of this integrative approach for structure-informed antibody engineering in therapeutic protein discovery.",
+    "doi": "10.1080/19420862.2026.2722455",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody engineering",
+      "AlphaFold"
+    ],
+    "extra": {
+      "pmid": "42725674",
+      "journal": "mAbs"
+    },
+    "dedupe_key": "doi:10.1080/19420862.2026.2722455"
+  },
+  {
+    "kind": "article",
+    "title": "A natural small molecule 2-amino-3-methylhexanoic acid enhances tomato thermotolerance via stabilization of the key mediator SlGAD4.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725657/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.747851+00:00",
+    "authors": [
+      "Jingjing Li",
+      "Liru Mi",
+      "Huan Zhao",
+      "Mingli Wu",
+      "He Wang",
+      "Qianlong Zhang",
+      "Mingying Yang",
+      "Liangsheng Wang",
+      "Shiguo Chen"
+    ],
+    "summary": "Plant resistance inducers (PRIs) are bioactive compounds that trigger protective responses, offering promise for reducing stress-induced yield losses in agriculture. The natural PRI (2S, 3S)-2-amino-3-methylhexanoic acid (AMHA) markedly improves tomato (Solanum lycopersicum) tolerance to high temperature (HT), but its molecular target and mechanism of action remain elusive. Here, we show that AMHA improved tomato thermotolerance by sustaining photosynthetic efficiency, increasing osmoprotectant accumulation (proline, soluble proteins, and sugars), and alleviating oxidative damage through reduced reactive oxygen species accumulation and enhanced antioxidant capacity. Integrated transcriptomic analysis, together with AlphaFold3-based structural prediction and molecular docking, identified S. lycopersicum glutamate decarboxylase 4 (SlGAD4) as a putative target of AMHA. Lys369 and Leu375 were pinpointed as key residues mediating AMHA-SlGAD4 binding, as validated by isothermal titration calorimetry, microscale thermophoresis, and electron circular dichroism. Functional assays, including liquid chromatography-mass spectrometry, Western blotting, and gene silencing, demonstrated that AMHA thermostabilizes SlGAD4 without altering its catalytic activity, thereby maintaining γ-aminobutyric acid (GABA) levels under HT stress. This stabilization reinforces photosynthesis, osmoprotectant accumulation, and redox homeostasis. Phylogenetic analysis revealed that the AMHA-binding residues are evolutionarily conserved among GAD family proteins across plant species, implying that these conserved GAD proteins may be potential targets for AMHA in diverse plants. These findings provide mechanistic insight into AMHA action and support further investigation of AMHA-based strategies for improving plant thermotolerance.",
+    "doi": "10.1093/plphys/kiag678",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "AlphaFold"
+    ],
+    "extra": {
+      "pmid": "42725657",
+      "journal": "Plant physiology"
+    },
+    "dedupe_key": "doi:10.1093/plphys/kiag678"
+  },
+  {
+    "kind": "article",
+    "title": "Machine Learning in Hyperlipidaemia Research: Screening and Experimental Insights into Lipid Metabolism Modulators.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725613/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.748446+00:00",
+    "authors": [
+      "Ashish Srivastava",
+      "Mohit Prajapati",
+      "Parul Srivastava",
+      "Anil Kumar Yadav",
+      "Ankita Wal",
+      "Manshi Singh",
+      "Ritik Yadav"
+    ],
+    "summary": "Hyperlipidemia, characterized by elevated blood lipid levels, represents a major global health concern due to its strong association with cardiovascular disease, diabetes, and metabolic syndrome. While current therapies - such as statins, fibrates, bile acid sequestrants, and PCSK9 inhibitors - are effective in controlling hyperlipidemia, they are often associated with adverse effects, potential drug resistance, and suboptimal efficacy in certain patient populations. All of the above underscore the urgent need for safer and more effective therapeutic alternatives. Among the major molecular targets involved in the regulation of lipid metabolism are HMG-CoA reductase, PCSK9, peroxisome proliferator-activated receptors (PPARs), cholesteryl ester transfer protein (CETP), and nuclear receptors, including the liver X receptor (LXR) and farnesoid X receptor (FXR), which are also targets for future antihyperlipidemic drug development. Recent advancements in artificial intelligence (AI) and machine learning (ML) have significantly transformed and accelerated drug discovery by enabling the processing of vast amounts of genomic, proteomic, and chemical data. Furthermore, ML tools such as quantitative structure-activity relationship (QSAR) modelling, deep learning, random forest, and support vector machines (SVM) have proven predictive and effective in identifying novel lipid metabolism modulators, thereby enhancing the efficacy and accuracy of virtual screening. Meanwhile, molecular docking has become an integral part of structure-based drug design (SBDD), and software such as AutoDock, Glide, and GOLD have proven effective in generating accurate ligand-target docking models. Molecular docking, together with ML-based approaches, enables the identification of potent and selective drug candidates. Overall, the combination of ML and molecular docking offers an efficient and accurate platform for antihyperlipidemic drug discovery, helping to overcome the limitations of currently available therapeutic strategies.",
+    "doi": "10.2174/0113816128491240260824154011",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug design",
+      "virtual screening",
+      "molecular docking",
+      "QSAR",
+      "structure-based drug design"
+    ],
+    "extra": {
+      "pmid": "42725613",
+      "journal": "Current pharmaceutical design"
+    },
+    "dedupe_key": "doi:10.2174/0113816128491240260824154011"
+  },
+  {
+    "kind": "article",
+    "title": "Novel Amyloid-β Aggregation Inhibitors Based on Phenylalanine Structure.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725603/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.749039+00:00",
+    "authors": [
+      "Mingming Xu",
+      "Hongmin Wang",
+      "Shihong Li",
+      "Junjie Ye",
+      "Yuanjun Sun",
+      "Yidan Xu",
+      "Haiyan Zhang",
+      "Weimin Zhao",
+      "Jingjing Zhang"
+    ],
+    "summary": "Alzheimer's disease (AD) is characterized by amyloid-β (Aβ) aggregation, making its inhibition a promising therapeutic strategy. This study evaluated the effects of two phenylalanine derivatives on Aβ aggregation and associated neurotoxicity. Interactions between Aβ monomer and two compounds (12a and 5g) were explored by molecular docking. The inhibitory effects of the compounds on Aβ aggregation were evaluated using a thioflavin-T (ThT) assay, transmission electron microscopy (TEM), and dot blot. The neuroprotective ability of the two compounds was assessed using the 3-(4,5-dimethylthiazol-2-yl)-2,5- diphenyltetrazolium bromide (MTT) assay. Docking analysis revealed that compounds 12a and 5g can bind to monomeric Aβ and identified the amino acids responsible for the interactions. The two compounds significantly reduced ThT fluorescence during the 48-hour incubation at all concentrations in ThT kinetics assays. The inhibitory effects were further confirmed in TEM. Both compounds suppressed Aβ oligomerization (reductions to 42.72% and 35.90% of the untreated control group, respectively). Furthermore, compound 5g, with a new structure, showed remarkable protection (cell viability increased to 97.86% of the control) against Aβ oligomer-treated human neuroblastoma SH-SY5Y cells, while having no intrinsic effect on cell viability. Compounds 12a and 5g act as more specific Aβ oligomerization inhibitors than traditional polyphenols such as (-)-epigallocatechin-3-gallate (EGCG). The results may provide molecular insights for the rational design of potent Aβ aggregation inhibitors for AD therapy. This study demonstrates that phenylalanine derivatives hold great promise as novel AD therapeutic leads.",
+    "doi": "10.2174/0115672050489243260827065622",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42725603",
+      "journal": "Current Alzheimer research"
+    },
+    "dedupe_key": "doi:10.2174/0115672050489243260827065622"
+  },
+  {
+    "kind": "article",
+    "title": "Targeting Angiogenesis in Drug Discovery: Current Status and Future Directions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725601/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.749565+00:00",
+    "authors": [
+      "Sharon Blessy",
+      "Vijay R Chidrawar",
+      "Ashwini Deshpande"
+    ],
+    "summary": "Angiogenesis, the formation of new blood vessels from pre-existing vasculature, is essential for development, tissue repair, and reproduction; however, dysregulation of angiogenesis contributes to cancer, ocular disorders, chronic inflammation, and cardiovascular diseases. Current antiangiogenic therapies that target VEGF/VEGFR signalling, tyrosine kinase pathways, or utilize monoclonal antibodies have improved clinical outcomes; however, their benefits remain limited by acquired resistance, transient efficacy, and treatment-associated toxicities. This review outlines the key molecular regulators of angiogenesis, including VEGF, FGF, PDGF, Ang/Tie, and HIF-mediated hypoxic signalling, and their interactions with the immune and stromal components of the microenvironment. It further summarizes the clinical landscape of approved antiangiogenic agents, highlighting gaps in response durability, lack of predictive biomarkers, and suboptimal patient selection. Emerging strategies, such as multi-target inhibitors, modulation of the tumour microenvironment, gene-based therapies, and advanced nanotechnology-enabled delivery systems, offer opportunities to enhance therapeutic precision and overcome resistance. Artificial intelligence-driven models integrating histology and multi-omics are reshaping personalized treatment selection and trial design. This review provides a roadmap for progressing from broad antiangiogenic therapy to mechanismdriven, biomarker-guided vascular medicine, while also considering pro-angiogenic approaches for regenerative applications.",
+    "doi": "10.2174/0113894501483855260830110636",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42725601",
+      "journal": "Current drug targets"
+    },
+    "dedupe_key": "doi:10.2174/0113894501483855260830110636"
+  },
+  {
+    "kind": "article",
+    "title": "Influence of Major Histocompatibility Complex (MHC) Diversity on Immune Modulation, Pathogenesis, and Control of Lumpy Skin Disease Virus.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725595/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:50.750277+00:00",
+    "authors": [
+      "Siddhant Krishna",
+      "Qumar Negar",
+      "Pawan Kumar Goswami",
+      "Ranjeet Kumar",
+      "Arvind Kumar Patel",
+      "Neha Singh"
+    ],
+    "summary": "Lumpy Skin Disease Virus (LSDV), a member of the genus Capripoxvirus within the family Poxviridae, is an economically important transboundary viral pathogen affecting cattle and water buffalo. The disease causes severe production losses through decreased milk yield, infertility, hide damage, reduced growth performance, and occasional mortality. The rapid geographic spread of LSDV, together with its vectorborne transmission and emerging recombinant strains, has intensified the need for improved understanding of viral pathogenesis, host immune responses, and effective prevention strategies. In particular, the role of the bovine Major Histocompatibility Complex (BoLA/MHC) in regulating antiviral immunity, disease susceptibility, and vaccine responsiveness has gained increasing scientific attention. This review summarises the published literature related to the epidemiology, transmission, structure, pathogenesis, diagnosis, prevention, and control of LSDV, with special emphasis on the immunological and molecular role of bovine MHC molecules. Relevant studies concerning BoLA-mediated antigen presentation, immunoinformaticsbased epitope prediction, vaccine development, antiviral drug repurposing, molecular docking, genomic surveillance, and diagnostic approaches, including PCR- and ELISAbased assays, were critically evaluated. Recent advances in computational biology, molecular virology, and host-pathogen interaction studies were also reviewed. The reviewed studies demonstrate that Lumpy Skin Disease Virus (LSDV) possesses a complex double-stranded DNA genome enabling immune modulation and efficient transmission through arthropod vectors such as mosquitoes, ticks, and biting flies. Disease progression involves systemic viral replication, vascular injury, dermal necrosis, and inflammatory skin lesions. Real-time PCR remains the most sensitive diagnostic method for early detection, while ELISA supports surveillance. Evidence highlights the central role of bovine Major Histocompatibility Complex (BoLA) molecules in antigen presentation and T-cell activation. Computational studies identified promising BoLA-binding epitopes and repurposed antiviral candidates, including ivermectin, theaflavin, canagliflozin, and tepotinib, for future therapeutic development. Current evidence indicates that effective LSDV control requires integration of molecular diagnostics, vector management, vaccination, and host immunogenetics. BoLAguided immunoinformatics provides promising opportunities for developing multi-epitope vaccines, although experimental validation remains essential. Similarly, repurposed antiviral candidates require comprehensive in vivo and pharmacological evaluation before clinical application. Future research should focus on elucidating viral immune-evasion mechanisms, validating predicted epitopes, and translating computational findings into practical vaccines and therapeutics for sustainable disease control. Lumpy Skin Disease continues to pose a major threat to global cattle health and livestock economies. Advances in molecular diagnostics, genomic surveillance, antiviral drug discovery, and BoLA-guided vaccine design provide promising opportunities for improved disease control. Understanding the interaction between LSDV and the bovine MHC system is essential for developing next-generation vaccines, immunotherapeutics, and precision disease-management strategies. Future research should prioritise experimental validation of predicted epitopes, large-scale vaccine trials, and mechanistic studies on host-virus immune interactions to establish effective and sustainable global control programs for LSDV.",
+    "doi": "10.2174/0127724344483412260825060606",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "molecular docking",
+      "vaccine design",
+      "drug repurposing"
+    ],
+    "extra": {
+      "pmid": "42725595",
+      "journal": "Recent advances in anti-infective drug discovery"
+    },
+    "dedupe_key": "doi:10.2174/0127724344483412260825060606"
+  },
+  {
+    "kind": "article",
+    "title": "Anti‑cancer effects of the circadian clock modulating compound SR9009 in chordoma cell lines.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725552/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:51.539304+00:00",
+    "authors": [
+      "Ahmet Hakan Görkay",
+      "Muhammed Ümeyr Fettah",
+      "Sude Naz Çataltepe",
+      "Çağla Nur Tüten",
+      "Yasemin Bilen",
+      "Enes Durak",
+      "Furkan Ayaz",
+      "Esra Aydemir"
+    ],
+    "summary": "Originating from notochord remains, chordoma is a rare, chronic, low-grade axial skeletal cancer that is characterized by metastasis and adjacent tissue invasion, as well as a high risk of treatment resistance. Surgical intervention is the most common method used for treatment followed by radiotherapy to avoid the relapse of the tumor. Targeting the proteins involved in tumor-associated pathways is crucial since alternative drugs are required for the cure. The nuclear receptor REV-ERBα, a member of the circadian rhythm family, has elevated expression levels, which function as a tumor suppressor. SR9009 is a pyrrole-derived specific agonist that target REV-ERBα negatively regulates autophagy in cancer and induce apoptosis in a caspase-dependent manner and shown antitumor activity in several cancer models. Chordoma cells were treated with SR9009, and functional assays including colony formation, viability, and migration were tested. In addition, molecular docking analyses were performed to predict the interaction of SR9009 with proteins involved in migration, colony formation, proliferation were targeted. SR9009 reduced viability of chordoma cells in a concentration-dependent manner while sparing HNPCs, and 30 µM was selected as an effective concentration for subsequent experiments. At this concentration, SR9009 markedly inhibited chordoma cell migration and strongly suppressed colony formation in both CH22 and MUG-Chor1 cells. Molecular docking predicted high-affinity binding of SR9009 to PI3K, Akt1, Wnt3, β-catenin, and Nanog, suggesting potential interference with signaling networks implicated in chordoma cell proliferation and survival. Our findings indicate that SR9009 exerts robust anti-cancer effects in chordoma cell lines and highlight SR9009 as a promising candidate for further preclinical evaluation in chordoma. The involvement of circadian clock-related and associated signaling pathways in these effects remains putative and warrants mechanistic validation in future studies.",
+    "doi": "10.1080/07420528.2026.2732189",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42725552",
+      "journal": "Chronobiology international"
+    },
+    "dedupe_key": "doi:10.1080/07420528.2026.2732189"
+  },
+  {
+    "kind": "article",
+    "title": "High-Throughput Technologies for Targeted Covalent Drug Discovery: Recent Advances and Perspectives.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725532/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:51.539842+00:00",
+    "authors": [
+      "Haipeng Yu",
+      "Xiaoran Wang",
+      "Xinyu Wang",
+      "Yizhen Yin"
+    ],
+    "summary": "Covalent drugs have attracted increasing attention in modern drug discovery because of their prolonged target engagement, enhanced pharmacological efficacy, and potential to address traditionally challenging protein targets. The rapid development of electrophilic warhead chemistry, chemical biology methods, and high-throughput screening technologies has shifted covalent drug discovery from serendipitous identification to target-oriented and rational design. In recent years, phage display, mRNA display, and DNA-encoded library technologies have enabled the efficient de novo discovery of covalent peptides and small molecules, expanding the accessible chemical space for targeting cysteine, lysine, tyrosine, serine, and other reactive residues. Meanwhile, artificial intelligence has further accelerated covalent drug research by supporting covalent database construction, binding-site prediction, virtual screening, molecular generation, and structure-based ligand optimization. This article reviews recent advances in high-throughput strategies for targeted covalent drug discovery, with a focus on phage display, mRNA display, DNA-encoded libraries, and artificial intelligence (AI)-assisted approaches. We further discuss current challenges and future opportunities in the field and provide our perspectives on emerging directions for next-generation covalent ligand discovery.",
+    "doi": "10.1002/chem.71680",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "virtual screening"
+    ],
+    "extra": {
+      "pmid": "42725532",
+      "journal": "Chemistry (Weinheim an der Bergstrasse, Germany)"
+    },
+    "dedupe_key": "doi:10.1002/chem.71680"
+  },
+  {
+    "kind": "article",
+    "title": "Phytotherapeutic Frontiers: A Comprehensive Review of Medicinal Plants as Adjuncts in COVID-19 Management.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725521/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:51.540394+00:00",
+    "authors": [
+      "Rabab M Nasser"
+    ],
+    "summary": "Unexpected findings emerge when nature encounters pandemic challenges. From mountain slopes, remedies arise shaped by harsh climates. Such conditions foster strong chemical defenses in plants. One such defense disrupts a key virus enzyme, similar to lab-made drugs. Instead of only attacking germs, these substances also calm body reactions gone awry. They can block the spike protein's interaction with human cells while reducing excessive immune signals associated with severe illness. Structural features within these compounds may explain why some are more effective than others. Tiny carriers developed through advanced methods help them reach target sites more effectively. Evidence has accumulated gradually across recent studies. Not every plant compound is equally successful, as effectiveness depends on precise molecular interactions and stability within the body. Delivery may be as important as the compound's origin or structure. Insights come not from individual experiments alone, but from patterns observed across multiple studies. Most importantly, different levels of evidence are distinguished here, ranging from lab experiments and computer forecasts to animal tests and limited human research, with the awareness that digital results often fail in real medical settings unless confirmed through rigorous testing. Rooted in traditional plant knowledge yet guided by modern methods, this study maps a path toward discovering natural remedies while maintaining a critical assessment of whether the reported health benefits are supported by sufficient evidence.",
+    "doi": "10.2174/0115680266471896260828091219",
+    "company_slug": null,
+    "keywords_matched": [],
+    "extra": {
+      "pmid": "42725521",
+      "journal": "Current topics in medicinal chemistry"
+    },
+    "dedupe_key": "doi:10.2174/0115680266471896260828091219"
+  },
+  {
+    "kind": "article",
+    "title": "Integrated Bioinformatics Analysis Investigating the Potential Role and Mechanism of INS in Cocaine-Induced Stroke.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725512/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:51.540985+00:00",
+    "authors": [
+      "Zeyu Han",
+      "Chunyu Wang",
+      "Tian Fu",
+      "Gaoyan Wang"
+    ],
+    "summary": "Cocaine abuse is associated with an increased risk of stroke, yet the underlying molecular mechanisms remain poorly understood. An integrated framework combining network toxicology, machine learning, Mendelian randomization (MR), single-cell RNA sequencing (scRNA-seq), virtual knockout, molecular docking, and molecular dynamics (MD) simulations was applied to identify and validate key molecular links between cocaine exposure and stroke. A total of 319 shared targets were identified, from which three core genes (TNF, INS, CDC42) were screened. MR analysis demonstrated a potential causal association between INS and stroke. scRNA-seq showed high expression of Ins2 (murine homolog of human INS) in epithelial cells, with extensive intercellular communication between epithelial and endothelial cells. Additionally, 196 genes exhibited significant changes following virtual knockout of Ins2, which were enriched in neurogenic and metabolic pathways. Molecular docking and MD simulations confirmed stable binding between cocaine and INS. Mechanistically, cocaine-induced stroke is mediated by a mutually reinforcing pathological network forming a \"mitochondrial damage-oxidative stress-inflammation-coagulation\" vicious cycle, wherein cocaine crosses the blood-brain barrier to disrupt cerebral vasculature function, activate platelets, and trigger proinflammatory responses. INS, identified as a candidate gene via MR analysis (overcoming confounding biases of observational studies), is specifically highly expressed in choroid plexus epithelial cells (CPECs) and forms a choroid plexus-insulin signaling axis that regulates cerebral energy metabolism, oxidative stress, inflammation, and neurovascular homeostasis via cerebrospinal fluid. Virtual knockout of Ins2 perturbed pathways linked to energy metabolism disorder and neural repair, confirming its pivotal role in maintaining cerebral homeostasis, while stable cocaine-INS binding suggests cocaine may interfere with this protective axis. INS may serve as a potential key regulatory factor linking cocaine exposure with stroke risk. This study provides novel mechanistic insights and a systematic analytical framework for investigating drug-induced cerebrovascular diseases.",
+    "doi": "10.2174/011570159X485765260820081251",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42725512",
+      "journal": "Current neuropharmacology"
+    },
+    "dedupe_key": "doi:10.2174/011570159x485765260820081251"
+  },
+  {
+    "kind": "article",
+    "title": "Drude SILCS-Nucleic: harnessing explicit electronic polarization in targeting RNA and DNA for drug design.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42725431/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:51.541460+00:00",
+    "authors": [
+      "Haley M Michel",
+      "Anne M Brown",
+      "Alexander D MacKerell",
+      "Justin A Lemkul"
+    ],
+    "summary": "The growing interest in nucleic acids as therapeutic targets has prompted the development of novel computational methods to facilitate drug discovery. In this study, we extend the Site Identification by Ligand Competitive Saturation (SILCS) methodology to characterize ligand-nucleic acid interactions using the Drude polarizable force field. We demonstrate the ability of the Drude force field to better model solute-nucleic acid interactions, resulting in improved identification of known binding sites and ligand binding favorability predictions across a diverse set of nucleic acid structures. This new workflow addresses limitations in previous SILCS studies by exploiting the enhanced sampling of solutes in the original SILCS-RNA workflow, accurately modeling the interactions of charged species, and improving solute sampling in minor groove binding sites. These results establish this Drude-based SILCS workflow as a valuable tool for structure-based drug design targeting nucleic acids and offer insights into solute preferences that can guide rational ligand design.",
+    "doi": "10.1093/nar/gkag871",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug design",
+      "structure-based drug design"
+    ],
+    "extra": {
+      "pmid": "42725431",
+      "journal": "Nucleic acids research"
+    },
+    "dedupe_key": "doi:10.1093/nar/gkag871"
+  },
+  {
+    "kind": "article",
+    "title": "Target-oriented synthesis of benzoquinoline-embedded candidates: antimicrobial potential and in silico insights.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42724988/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-11T23:30:51.542051+00:00",
+    "authors": [
+      "Eman A E El-Helw",
+      "Abeer M El-Naggar",
+      "Mahmoud Kamal",
+      "Hossam M El-Masry",
+      "Eman A Ghareeb"
+    ],
+    "summary": "A new series of benzo[h]quinoline-based derivatives was synthesized using a thiocarbohydrazone scaffold as a versatile intermediate for the construction of diverse nitrogen- and sulfur-containing heterocycles, including tetrazine, thiadiazole, triazole, pyrazole, and thiadiazine motifs. These structural variations were designed to investigate the influence of heterocyclic frameworks on antimicrobial activity and to identify promising lead compounds. The synthesized derivatives were evaluated for in vitro antimicrobial activity against a panel of Gram-positive and Gram-negative bacteria, as well as C. albicans. Antimicrobial assessment was performed using agar well diffusion to measure inhibition zones (IZ) and broth microdilution to determine minimum inhibitory concentrations (MIC). Most compounds exhibited moderate to significant activity, with IZ values typically ranging from 9.0 to 16.0 mm. Compound 14 emerged as the most potent derivative, displaying broad-spectrum activity with inhibition zones up to 15.0 mm and MIC values ranging from 13.0 to 23.0 mg mL-1 across tested strains, with remarkable MBC values ranging from 20.0 to 35.0 mg mL-1 with reduction of CFU per mL culture of the most tested strains, especially S. aureus that reduced to 16.0 CFU per mL-1. Compounds 10 and 13 also demonstrated notable activity, particularly against E. coli and B. cereus. To rationalize the observed biological activity, molecular docking studies were conducted for compounds 10, 13, and 14 using DNA gyrase B (PDB ID: 4KFG) as the target, with novobiocin as a reference inhibitor. The docking results suggested favorable binding affinities and key interactions within the active site, consistent with the experimental activity trend. Molecular dynamics simulations further supported the time-dependent stability of the selected ligand-protein complexes. In addition, ADME and BOILED-Egg analyses highlighted compound 10 as the most pharmacokinetically favorable candidate, exhibiting an optimal balance between lipophilicity and polarity and high predicted gastrointestinal absorption. In contrast, compounds 13 and 14 showed reduced permeability, while gentamicin displayed poor passive diffusion due to its high polarity. Overall, these findings identify benzo[h]quinoline-based candidates, particularly compound 10, as promising scaffolds for further antimicrobial drug development.",
+    "doi": "10.1039/d6ra05026c",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42724988",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra05026c"
   }
 ]
