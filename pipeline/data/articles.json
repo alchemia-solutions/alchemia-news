@@ -1,6 +1,86 @@
 [
   {
     "kind": "article",
+    "title": "Reverse Engineering the Programming Logic of Cytoskeletal Dynamics",
+    "url": "https://doi.org/10.1101/2025.09.10.674348",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-12",
+    "collected_at": "2026-09-12T17:50:36.584607+00:00",
+    "authors": [
+      "Larios, D.",
+      "Najma, B.",
+      "Miao, J.",
+      "Lee, H. J.",
+      "Thomson, M.",
+      "Phillips, R.",
+      "Liu, S."
+    ],
+    "summary": "Eukaryotic cells generate mechanical forces through cytoskeletal filaments actively reorganized by families of molecular motors. However, how motor sequence specifies filament organization dynamics remains unclear. We developed ActiveDROPS, a cell-free platform that expresses kinesin variants in bacterial lysate droplets and quantitatively maps the resulting microtubule dynamics into a common phenotype space. Across a library of twelve kinesin-1 homologs, we observed three phenotypes: \"Slow-Sustained\" flows that activate after 8 h, reach peak mean velocities of 24 nm/s and decay after [~]32 h; \"Fast-Burst\" flows that activate within minutes and dissipate within 2 h, reaching velocities up to 900 nm/s; and a [~]36-h \"Multiphase\" progression through nematic, rotational, and contractile states. Microtubule gliding assays and molecular dynamics simulations using AlphaFold-predicted structures linked the \"Fast-Burst\" phenotype to generally faster motility and more favorable motor-tubulin interactions than \"Slow-Sustained\". By replacing the microtubule-binding region of a \"Slow-Sustained\" motor with that of a \"Fast-Burst\" motor, we generated a \"Fast-Sustained\" chimera with flows that act",
+    "doi": "10.1101/2025.09.10.674348",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "synthetic biology"
+    },
+    "dedupe_key": "doi:10.1101/2025.09.10.674348"
+  },
+  {
+    "kind": "article",
+    "title": "The caddisfly gut microbiome contributes to the consumption of riparian leaf litter within rivers",
+    "url": "https://doi.org/10.64898/2026.09.10.749941",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-12",
+    "collected_at": "2026-09-12T17:50:38.372489+00:00",
+    "authors": [
+      "Dickey, J. R.",
+      "Loomis, D. A.",
+      "Caraballo Rodriguez, A. M.",
+      "Dorrestein, P.",
+      "Jackrel, S. L."
+    ],
+    "summary": "Ecosystem functions can be regulated by biodiversity ranging from broad to narrow scales, including variation within a species. For most multicellular life, intraspecific variation is determined not only by an organism's phenotype and genotype, but also variation imparted by their microbiome. Here, we investigate how leaf decomposition in rivers is affected by phenotypic variation in plant secondary metabolites (PSMs) and antibiotic-induced variation within the gut microbiomes of aquatic macroinvertebrate decomposers. We found that consumption by Dicosmoecus caddisflies was inhibited by the presence of dietary PSMs from riparian Alnus rubra trees, irrespective of the state of their gut microbiome. We further compared consumption of diets prepared from 20 different local and non-local A. rubra trees. We found that antibiotic-treated and control caddisflies consumed similar amounts of diets containing local A. rubra PSMs. However, compared to caddisflies with an intact gut microbiome, antibiotic-treated caddisflies consumed less of non-local A. rubra diets. Thus, decomposition by caddisflies could be regulated by both host adaptation to local resources and bacterial-mediated digestio",
+    "doi": "10.64898/2026.09.10.749941",
+    "company_slug": null,
+    "keywords_matched": [
+      "CADD"
+    ],
+    "extra": {
+      "category": "ecology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.10.749941"
+  },
+  {
+    "kind": "article",
+    "title": "GEM-GPT Enables Personalized Cell Type-Resolved Therapeutic Design for Systems Pharmacology",
+    "url": "https://doi.org/10.64898/2026.07.17.739269",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-12",
+    "collected_at": "2026-09-12T17:50:48.620973+00:00",
+    "authors": [
+      "Zhang, S.",
+      "Ohlan, R.",
+      "Mottaqi, M.",
+      "Xie, L."
+    ],
+    "summary": "Generative AI is transforming drug discovery, yet most approaches follow one-drug-one-target paradigms ill-suited to the heterogeneity of chronic, systemic diseases. Systems pharmacology offers an alternative, but generative tools designed for it remain scarce. We introduce GEM-GPT, a transcriptomics-guided framework that generates personalized therapeutic candidate molecules intended to shift cell type-specific disease states toward healthy phenotypes. GEM-GPT uses a biology-inspired deep fusion architecture that couples a single-cell RNA-sequencing foundation model with a molecular GPT, modeling cell type-specific chemical-gene interactions throughout molecule generation rather than through fixed conditioning. Across bulk and single-cell chemical perturbations and CRISPR knock-out signatures, GEM-GPT outperforms state-of-the-art baselines, produces cell type-resolved molecules, and generalizes to unseen cellular contexts. In a case study on opioid use disorder (OUD), it generates novel candidates, recovers FDA-approved OUD-related drugs absent from training, and yields predicted binders to OUD-related targets. GEM-GPT bridges single-cell omics and molecular generation for persona",
+    "doi": "10.64898/2026.07.17.739269",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "category": "pharmacology and toxicology"
+    },
+    "dedupe_key": "doi:10.64898/2026.07.17.739269"
+  },
+  {
+    "kind": "article",
     "title": "Vacancy-Controlled Stabilization and Reactivity of Single Metal Atoms on Titanium Nitride and Titanium Oxynitride",
     "url": "https://doi.org/10.26434/chemrxiv.15008701/v1",
     "source": "ChemRxiv",
@@ -415,6 +495,242 @@
       "category": "bioinformatics"
     },
     "dedupe_key": "doi:10.64898/2026.06.01.729307"
+  },
+  {
+    "kind": "article",
+    "title": "Proteomics to uncover new actors in the antifungal action of metformin. Impact on virulence traits, oxidative stress, and essential proteins from Candida albicans.",
+    "url": "https://doi.org/10.64898/2026.09.11.750873",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-11",
+    "collected_at": "2026-09-12T17:50:20.296141+00:00",
+    "authors": [
+      "Mascaraque, V.",
+      "Ramos, C.",
+      "Navas, C.",
+      "Hernaez, M. L.",
+      "Gil, C.",
+      "Molero, G."
+    ],
+    "summary": "Metformin is one of the most widely prescribed drugs with a proven safety profile, making it an excellent candidate for drug repurposing strategies. Its anti-Candida effect and its synergistic potential with azoles have already been described against C. albicans and C. glabrata, alongside AMPK involvement and its divergent consequences on autophagy. However, metformin has additional effects on C. albicans biology that remain to be explored using differential proteomics. In the present study, C. albicans SC5314 was treated with metformin to identify the proteins involved in its anti-Candida activity. First, we demonstrated that metformin inhibits C. albicans SC5314 growth in a dose-dependent manner, an effect that intensifies under low glucose (0.2%) and filament-inducing conditions. It also reduces virulence traits such as filamentation, biofilm formation, and invasive growth. Furthermore, it induces significant oxidative stress, which is neutralized by antioxidant agents such as N-acetylcysteine and glutathione. Additionally, 50 mM metformin substantially increased fluconazole efficacy under 0.2% glucose. Our label-free proteomic study of C. albicans SC5314 exposed to 50 mM metfor",
+    "doi": "10.64898/2026.09.11.750873",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug repurposing"
+    ],
+    "extra": {
+      "category": "microbiology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.11.750873"
+  },
+  {
+    "kind": "article",
+    "title": "Cyanophage CP12 Rewires Host Carbon Regulation through Interface Remodeling and Redox Buffering",
+    "url": "https://doi.org/10.64898/2026.09.10.750766",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-11",
+    "collected_at": "2026-09-12T17:50:20.296755+00:00",
+    "authors": [
+      "Widmann, S.",
+      "Wu, R.",
+      "Nelson, M.",
+      "Mejia-Rodriguez, D.",
+      "samantray, s.",
+      "Neff, R.",
+      "Feng, S.",
+      "Li, X.",
+      "Rozum, J.",
+      "George, A.",
+      "Rigor, P.",
+      "Bohutskyi, P.",
+      "Boise, N.",
+      "Kim, H.",
+      "Anderson, L. N.",
+      "QIAN, W.-J.",
+      "Olaleye, E.",
+      "Idowu, K.",
+      "Andersen, A.",
+      "Cheung, M. S."
+    ],
+    "summary": "Picocyanobacteria drive ocean carbon fixation, and cyanophages reshape host metabolism during infection. In cyanobacteria, the intrinsically disorder Calvin cycle protein 12 (CP12) assembles glyceraldehyde-3-phosphate dehydrogenase (GAP2) and phosphoribulokinase (PRK) into the inhibitory dark complex, yet how phage CP12 homologs modulate redox-sensitive partners remains unclear. Here, we examined viral CP12 across sequence, structure, and post-translational modification (PTM) complexities to resolve the mechanistic remodeling of dark-complex assembly and regulation. Protein-family analysis of CP12 homologs across diverse lineages showed that viral CP12 preserves interface-dominated positions while shifting partner-facing chemistry toward charged and geometry-modulating features. Matched molecular dynamics simulations (MD) of Prochlorococcus MED4 and cyanophage P-HM2 showed that phage CP12 preserves assembly while strengthening PRK-facing contacts and reducing GAP2-facing interface burial. MED4 redox proteomics identified coordinated cysteine oxidation across CP12 and GAP2 under light disturbance, guiding MD to explore thiol-PTM states. Conformational divergence increased with PTM l",
+    "doi": "10.64898/2026.09.10.750766",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "microbiology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.10.750766"
+  },
+  {
+    "kind": "article",
+    "title": "Cryptic Genes as Building Blocks of Antimicrobial Resistance: Evidence from a Novel Marine Imipenem-Hydrolyzing Metallo-β-Lactamase",
+    "url": "https://doi.org/10.64898/2026.09.09.750327",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-11",
+    "collected_at": "2026-09-12T17:50:20.297295+00:00",
+    "authors": [
+      "Gupta, P.",
+      "Yadav, P.",
+      "Kishan, J.",
+      "Gupta, S.",
+      "Shaw, S.",
+      "Goswami, K.",
+      "Tripathi, V. C.",
+      "Mitra, K.",
+      "Pratap, J. V.",
+      "Arockiaraj, J.",
+      "Pasupuleti, M."
+    ],
+    "summary": "The emergence of antimicrobial resistant pathogens has led to increase in mortality rate, longer hospital stays, and need for complex and expensive treatment regimens. However, it is not very clear from where does the bacteria get the building blocks to develop resistance to these synthetic antimicrobial agents which have been integral part of modern medicine. One hypothesis is that non-coding cryptic genes without any vital function or positive contribution to fitness act as versatile endogenous genetic repertoires that help in bacterial adaptation and evolution of new phenotypes when conditions change. This study reports the presence of putative cryptic metallo beta lactamase gene in the marine bacterium Cytobacillus oceanisediminis isolated from the Gulf of Mannar, India. Using in silico, in vitro and in vivo assay, we demonstrate that putative cryptic metallo beta lactamase encodes an enzyme that can cleave only imipenem, has two characteristic domains: HXHXDH and TPGH, but does not share homology with the other reported Metallo-beta-Lactamase genes. The findings underscore the importance for comprehensive screening of putative cryptic antimicrobial resistance genes to fully ad",
+    "doi": "10.64898/2026.09.09.750327",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "microbiology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.09.750327"
+  },
+  {
+    "kind": "article",
+    "title": "Source of genome-wide deleterious variation in a global cattle cohort",
+    "url": "https://doi.org/10.64898/2026.09.07.749866",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-11",
+    "collected_at": "2026-09-12T17:50:20.300510+00:00",
+    "authors": [
+      "Gao, J.",
+      "Derks, M.",
+      "Schipstal, J. v.",
+      "Liu, Y.",
+      "Bijl, E.",
+      "Ginja, C.",
+      "Kantanen, J.",
+      "Ghanem, N.",
+      "Kugonza, D.",
+      "Makgahlela, M.",
+      "Groenen, M.",
+      "Bovenhuis, H.",
+      "Crooijmans, R. P. M. A."
+    ],
+    "summary": "Background Identifying deleterious DNA changes underpins efforts to improve animal health, welfare, and sustainable breeding. In cattle, current variant prioritization focuses on coding changes, uses single annotation types, and gives limited resolution in non-coding sequence. Results We developed BovCADD (bovine Combined Annotation-Dependent Depletion), a nucleotide-level deleteriousness score for substitutions in Bos taurus and Bos indicus, combining evolutionary constraint, sequence context, epigenetic and regulatory annotations, and gene and protein features. A logistic regression model trained on 41.9 million high-frequency derived alleles from about 3,700 cattle, contrasted with context-matched simulated variants, scored all 8.1 billion possible substitutions. BovCADD distinguished known pathogenic variants from background variation, discriminated among variants within the same consequence class, and scored intronic and intergenic sites. Aggregating scores identified genes carrying rare deleterious variation and revealed elevated genetic load at trait-relevant loci and in bottlenecked, intensively selected populations. Conclusions BovCADD provides the first genome-wide, nucle",
+    "doi": "10.64898/2026.09.07.749866",
+    "company_slug": null,
+    "keywords_matched": [
+      "CADD"
+    ],
+    "extra": {
+      "category": "genomics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.07.749866"
+  },
+  {
+    "kind": "article",
+    "title": "Predicting Capsid Protein Binding Sites in Single-Stranded RNA Viruses Using Machine Learning from Local Geometric Features",
+    "url": "https://doi.org/10.64898/2026.09.10.750674",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-11",
+    "collected_at": "2026-09-12T17:50:35.067087+00:00",
+    "authors": [
+      "Wu, Y. M.",
+      "Zhang, J."
+    ],
+    "summary": "Selective recognition of viral RNA by capsid proteins is essential for genome packaging during the assembly of single-stranded RNA (ssRNA) viruses. However, identification of capsid protein binding sites in the RNA genome remains challenging because current experimental techniques are labor-intensive and low-throughput, motivating the development of computational approaches. Here, we present a sequence-based framework that integrates RNA tertiary structural modeling, local geometric feature extraction, and machine learning to predict capsid protein binding sites. Using the Qbeta; bacteriophage as a proof-of-concept system, we constructed a benchmark dataset of experimentally identified binding and non-binding RNA fragments. We designed a set of geometric descriptors to characterize the local structural features of the RNA backbone. When repeatedly trained and tested with these geometric descriptors on different subsets of the benchmark dataset, the neural network showed a strong ability to distinguish capsid protein binding sites from non-binding RNA fragments, achieving an area under the receiver operating characteristic curve (AUC) of 0.88 in a 5-fold cross-validation. To evaluat",
+    "doi": "10.64898/2026.09.10.750674",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.10.750674"
+  },
+  {
+    "kind": "article",
+    "title": "Conformational Switching between ON and OFF States Proceeds through Multiple Pathways in the SAM-III Translational Riboswitch",
+    "url": "https://doi.org/10.64898/2026.09.10.749994",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-11",
+    "collected_at": "2026-09-12T17:50:35.067301+00:00",
+    "authors": [
+      "Mondal, D.",
+      "Chowdhury, S. P.",
+      "Reddy, G."
+    ],
+    "summary": "Gene regulation by translational riboswitches relies on repeated and reversible conformational switching between ON (apo) and OFF (holo) states. The switching mechanism often involves significant structural rearrangement, and the role of the metal ions in this mechanism is unclear. Using molecular dynamics simulations, we studied the switching transition of a translational riboswitch that regulates the concentration of S-adenosyl methionine (SAM), the `universal methyl donor'. We show that Mg2+ ions are essential for stabilizing the ON-state, and the three-way junction exhibits a `breathing-like' dynamic interconversion between open and closed modes. The riboswitch has a low population of a holo-like READY (R) state with a partially organized SAM-binding pocket prior to ligand binding. Multiple intermediates are observed in the switching landscape, contributing to the gradual stepwise structural transition between the ON and R states, and proceeding through multiple competing pathways. Interestingly, Mg2+ ions influence the dominant pathway for the ON to R state transition, whereas the reverse transition shows a weak dependence. These results provide broad insights into the functio",
+    "doi": "10.64898/2026.09.10.749994",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.10.749994"
+  },
+  {
+    "kind": "article",
+    "title": "GBAviewer: a structural database of GBA1 variants in Parkinson's disease",
+    "url": "https://doi.org/10.64898/2026.09.05.749596",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-11",
+    "collected_at": "2026-09-12T17:50:35.067607+00:00",
+    "authors": [
+      "Bayne, A. N.",
+      "Parlar, S. C.",
+      "Shahkhali, M. G.",
+      "Chebon-Bore, L.",
+      "Halder, P.",
+      "Gan-Or, Z.",
+      "Trempe, J.-F."
+    ],
+    "summary": "Background: GBA1 variants are common risk factors for Parkinson's disease (PD), yet the structural consequences of most variants remain uncharacterized. No centralized resource currently integrates the growing number of GCase structures, compounds, and PD-associated variants. Objectives: To develop an interactive tool mapping GBA1-PD missense variants onto GCase structures, alongside interactors and therapeutic compounds. Methods: We built GBAviewer, an R/Shiny web server integrating GBA1-PD Browser variants with crystal structures, cryo-EM complexes, AlphaFold3 models, and AlphaMissense scores. We also modelled a putative GCase-Saposin C-glucosylceramide ternary complex using AlphaFold3. Results: GBAviewer maps variants in 3D across the GCase active site, LIMP-2 and SapC surfaces, chaperone pockets, and dimerization interface. Our ternary model corroborates SapC binding to the GCase active site entrance, where several variants of unknown significance cluster. Conclusions: GBAviewer is a freely accessible platform for structural analysis of GBA1 variants, supporting mechanistic studies and therapeutic development. Available at: https://g-can.shinyapps.io/GBAviewer/",
+    "doi": "10.64898/2026.09.05.749596",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "neuroscience"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.05.749596"
+  },
+  {
+    "kind": "article",
+    "title": "FERMT2 expression in human articular chondrocytes is regulated by hypoxia-associated transcriptional programs",
+    "url": "https://doi.org/10.64898/2026.09.05.749618",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-11",
+    "collected_at": "2026-09-12T17:50:35.067840+00:00",
+    "authors": [
+      "Rojo-Garcia, A. V.",
+      "De Roover, A.",
+      "Escribano, A.",
+      "Schlenner, S. M.",
+      "Monteagudo, S.",
+      "Lories, R."
+    ],
+    "summary": "Objective: Kindlin-2, encoded by FERMT2, is a focal adhesion protein essential for cartilage homeostasis and mechanotransduction. While loss of Kindlin-2 in mice induces osteoarthritis (OA)-like pathology, the upstream mechanisms regulating its expression in human cartilage remain unknown. Methods: A bioinformatics pipeline was applied to the FERMT2 promoter to predict transcriptional regulators, followed by network and enrichment analyses. Predicted candidates were validated by siRNA knockdown in the human C28/I2 chondrocyte cell line and in primary OA chondrocytes. Pathway enrichment highlighted hypoxia-related regulators, which were further tested by hypoxia mimetic treatment (IOX2) and culture under low oxygen (1% O2). Gene expression changes were quantified by qPCR, and effects on extracellular matrix (ECM) markers were assessed. Results: In silico analysis identified 21 candidate transcription factors, of which GATA1, MEF2A, and RBPJ were validated as regulators of FERMT2. Silencing of GATA1 and MEF2A reduced FERMT2 expression, whereas RBPJ knockdown increased FERMT2 in both C28/I2 cells and primary OA chondrocytes. However, RBPJ silencing also reduced ACAN and increased COL1",
+    "doi": "10.64898/2026.09.05.749618",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "molecular biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.05.749618"
   },
   {
     "kind": "article",
