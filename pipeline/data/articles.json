@@ -183,6 +183,80 @@
   },
   {
     "kind": "article",
+    "title": "Codon language model scores provide information beyond protein language models for missense variant interpretation",
+    "url": "https://doi.org/10.1101/2025.03.12.642937",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-14",
+    "collected_at": "2026-09-14T19:57:12.514918+00:00",
+    "authors": [
+      "Chen, R.",
+      "Palpant, N.",
+      "Foley, G.",
+      "Boden, M."
+    ],
+    "summary": "Predicting variant effects remains a central challenge in genomics. Protein language models (PLMs) capture amino-acid-level sequence constraints, whereas codon language models operate on coding sequences and may retain information that is lost upon translation. Here, we tested whether scores from the codon language model CaLM provide predictive information beyond protein-level representations for missense-variant interpretation. Across 71,436 ClinVar missense variants from 11,554 genes, adding CaLM to PLM baselines produced modest but reproducible improvements under gene-held-out cross-validation. PLM-only ensemble controls and explicit mutational-context analyses indicated that this improvement could not be explained solely by generic ensembling or simple codon-substitution features. Aggregating CaLM probabilities across synonymous codons attenuated codon-degeneracy-associated discordance while preserving most of the broader differences between CaLM and PLM scores. Gene-level analyses further showed that CaLM contribution varied continuously across genes and depended partly on the protein-model background. Across ClinMAVE functional assays, however, improvements were less consiste",
+    "doi": "10.1101/2025.03.12.642937",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.1101/2025.03.12.642937"
+  },
+  {
+    "kind": "article",
+    "title": "SARS-CoV-2 Main Protease Inhibition Through Dimerization Promotion by Peptidomimetic Inhibitors and Disruption by Ebselen",
+    "url": "https://doi.org/10.1101/2025.11.16.688752",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-14",
+    "collected_at": "2026-09-14T19:57:12.516449+00:00",
+    "authors": [
+      "Liu, C.",
+      "Jia, Q.",
+      "Zhao, C.",
+      "Zhongping, Y."
+    ],
+    "summary": "The SARS-CoV-2 main protease (Mpro) is a key antiviral target that equilibrates between an active dimer and inactive monomer, making the dimerization interface a promising therapeutic vulnerability. This study investigates Mpro monomer-dimer equilibrium and conformational changes induced by inhibitor binding using 13C labeling with native mass spectrometry and hydrogen/deuterium exchange mass spectrometry (HDX-MS). We evaluated how peptidomimetic inhibitors (PF-07321332, PF-00835231, GC376, boceprevir) and non-peptidomimetic inhibitors (carmofur, ebselen, MR6-31-2, AT7519, pelitinib) influence Mpro dimerization and subunit exchange. Key findings revealed divergent mechanisms: peptidomimetic inhibitors significantly shifted the equilibrium towards the dimeric state, suppressing subunit exchange dynamics and rigidifying the dimer interface; in contrast, ebselen impaired dimer form and increased interface flexibility. Notably, tandem mass spectrometry identified a novel covalent binding site for ebselen at C300. Molecular dynamics simulations and mutational analyses demonstrated that this C300 modification allosterically alters the hydrogen bond network of the dimer interface, directl",
+    "doi": "10.1101/2025.11.16.688752",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "molecular biology"
+    },
+    "dedupe_key": "doi:10.1101/2025.11.16.688752"
+  },
+  {
+    "kind": "article",
+    "title": "ForceFlowAb: physics-aware mixture-of-experts flow matching model for antibody CDRs design",
+    "url": "https://doi.org/10.64898/2026.09.07.749983",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-14",
+    "collected_at": "2026-09-14T19:57:32.344221+00:00",
+    "authors": [
+      "Li, Z.",
+      "Lv, Z.",
+      "Zhang, G."
+    ],
+    "summary": "Abstract Motivation: Antibodies are a major class of therapeutic molecules, and their recognition of target antigens is largely mediated by complementarity-determining regions (CDRs), making antigen-conditioned CDR design a central problem in antibody engineering. Recent generative methods have enabled antigen-conditioned co-design of CDR sequences and structures, but their limited capacity to capture local interface heterogeneity and lack explicit energy-based guidance during sampling, which may result in unfavorable antibody-antigen interaction energies. Overcoming these limitations requires methods that better represent diverse interface environments via adaptive routing and incorporate physical guidance to steer sampling toward energetically favorable conformations. Results: We present ForceFlowAb, a physics-aware mixture-of-experts flow-matching framework for antigen-conditioned CDR sequence-structure co-design. The framework models heterogeneous interface environments through specialized expert routing and applies differentiable force-field guidance during sampling to guide CDR generation toward energetically favorable conformations. For CDR-H3 design, ForceFlowAb achieved mo",
+    "doi": "10.64898/2026.09.07.749983",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody engineering"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.07.749983"
+  },
+  {
+    "kind": "article",
     "title": "Agentic-AI-ready genome-wide poxvirus-host interaction screen refined by a protein language model",
     "url": "https://doi.org/10.64898/2026.09.10.750412",
     "source": "bioRxiv",
