@@ -257,6 +257,30 @@
   },
   {
     "kind": "article",
+    "title": "Heterogeneous graph neural networks with biological prior knowledge for interpretable drug repurposing in triple-negative breast cancer",
+    "url": "https://doi.org/10.64898/2026.09.08.750045",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-14",
+    "collected_at": "2026-09-15T00:00:02.431009+00:00",
+    "authors": [
+      "Fernandez-Lozano, C.",
+      "Ferreiro, D.",
+      "V.-del-Rio, P."
+    ],
+    "summary": "Drug repurposing offers a cost-effective path to new therapies for triple-negative breast cancer (TNBC), a subtype with limited targeted treatment options. We present PRECISION, a framework integrating transcription factor (TF) regulatory networks, protein-protein interactions, and drug-target edges into a heterogeneous graph neural network (GNN) to identify TFs mediating drug sensitivity and prioritize repurposing candidates. The knowledge graph has 23,498 nodes and approximately 830,000 edges from CollecTRI, OmniPath and the PRISM screen. In a fair cell-line hold-out evaluation, the GNN matches ML baselines in global prediction (Pearson r = 0.76). Per-drug mechanistic attributions via Integrated Gradients on the trained GNN, replicated across three independent training seeds and robust to baseline choice (Spearman's rho = 0.94 between the mean and the random Gaussian baselines), highlight stress-response (CREB3L1), epithelial-mesenchymal transition (EMT; KLF8, ZEB1), stromal/TNBC-specific (AEBP1, MZF1), and epithelial (SPDEF) regulators as stable mediators of drug response. Multi-cohort validation in SCAN-B (n = 7,397), METABRIC (n = 1,979), and TCGA-BRCA (n = 1,072) shows that p",
+    "doi": "10.64898/2026.09.08.750045",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug repurposing"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.08.750045"
+  },
+  {
+    "kind": "article",
     "title": "Agentic-AI-ready genome-wide poxvirus-host interaction screen refined by a protein language model",
     "url": "https://doi.org/10.64898/2026.09.10.750412",
     "source": "bioRxiv",
@@ -20244,5 +20268,158 @@
       "journal": "Journal of inorganic biochemistry"
     },
     "dedupe_key": "doi:10.1016/j.jinorgbio.2026.113455"
+  },
+  {
+    "kind": "article",
+    "title": "Correction: Screening of core targets for Di(2-ethylhexyl) Phthalate-related gastric cancer based on machine learning, molecular docking, and SHAP analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42735193/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-14T23:58:19.786859+00:00",
+    "authors": [
+      "Shenghao Li",
+      "Qing Peng",
+      "Liyuan Hao",
+      "Jingyu Mao",
+      "Bingjie Huo"
+    ],
+    "summary": "[This corrects the article DOI: 10.1371/journal.pcbi.1014514.].",
+    "doi": "10.1371/journal.pcbi.1014783",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42735193",
+      "journal": "PLoS computational biology"
+    },
+    "dedupe_key": "doi:10.1371/journal.pcbi.1014783"
+  },
+  {
+    "kind": "article",
+    "title": "Identification of threonyl-tRNA synthetase as a potential fungicidal target of 4-fluoro-2-aryl-1H-indole.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42735089/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-14T23:58:19.787524+00:00",
+    "authors": [
+      "Zhengzhong Wang",
+      "Jiadong Wu",
+      "Xinda Zhou",
+      "Xiaoshuo An",
+      "Jinglei Huo",
+      "Zexiu An",
+      "Lai Chen",
+      "Jinlin Zhang",
+      "Jingqian Huo"
+    ],
+    "summary": "Discovering novel pesticide targets based on newly synthesized compounds is of great importance for the development of new pesticides and sustainable agricultural. 4-Fluoro-2-aryl-1H-indole (W1), a 2-arylindole derivative obtained via one-pot synthesis in our previous studies, exhibited potent antifungal activity against Botrytis cinerea B05.10, with a half-maximal effective concentration of 6.78 mg L-1. To discover the novel fungicide target, in this study, western blot-drug affinity responsive target stability, surface plasmon resonance and enzymatic assays were used to explore the potential target of W1, and B. cinerea threonyl-tRNA synthetase (BcThrRS) was identified as a direct target of W1 [equilibrium dissociation constant (KD) = 5.28 μm; half-maximal inhibitory concentration (IC50) = 37.55 μm]. Molecular docking and mutagenesis analyses identified Pro256 as a key residue mediating ligand binding, with mutation of this residue substantially reducing target affinity and enzymatic inhibition. Metabolomic profiling suggested that inhibition of BcThrRS by W1 disrupts threonyl-tRNA formation, resulting in defective protein translation, amino acid metabolic imbalance, and downstream perturbation of cellular metabolism. These findings indicate that BcThrRS is a promising antifungal target and highlight W1 as a privileged scaffold for the development of fungicides with a novel mode of action. They open up new avenues for the rational design of next-generation antifungals targeting aminoacyl-tRNA synthetases. © 2026 Society of Chemical Industry.",
+    "doi": "10.1002/ps.71283",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42735089",
+      "journal": "Pest management science"
+    },
+    "dedupe_key": "doi:10.1002/ps.71283"
+  },
+  {
+    "kind": "article",
+    "title": "Odorant-Binding Protein 56 h Contributes to the Behavioral Response of Frankliniella occidentalis to Neryl (S)-2-Methylbutanoate.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42735042/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-14T23:58:19.788036+00:00",
+    "authors": [
+      "Yueqin Zheng",
+      "Lanyan Huang",
+      "Qianxia Liu",
+      "Houjun Tian",
+      "Shuo Lin",
+      "Tao Lin",
+      "Zheng Chen",
+      "Hui Wei"
+    ],
+    "summary": "The western flower thrips, Frankliniella occidentalis, poses a serious threat to global agriculture because of its feeding damage and virus transmission. Its major aggregation pheromone component neryl (S)-2-methylbutanoate (NMB) is a strong attractant for adult females. However, the molecular mechanisms underlying NMB detection, particularly the role of odorant-binding proteins, remain poorly defined. This study identified and functionally characterized FoccOBP56h as a key mediator of the behavioral response to NMB. qRT-PCR showed that FoccOBP56h is predominantly expressed in the antennae and is significantly upregulated following NMB exposure. Fluorescence binding assays revealed that recombinant FoccOBP56h exhibited high affinity for NMB. Molecular docking and site-directed mutagenesis indicated that Asn90, Met104, and Val105 are important for NMB binding. RNAi-mediated knockdown of FoccOBP56h significantly reduced female attraction to NMB. These findings identify FoccOBP56h as a promising molecular target involved in NMB detection, providing a foundation for developing semiochemical-based strategies for insect behavior manipulation in pest management.",
+    "doi": "10.1021/acs.jafc.6c11676",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42735042",
+      "journal": "Journal of agricultural and food chemistry"
+    },
+    "dedupe_key": "doi:10.1021/acs.jafc.6c11676"
+  },
+  {
+    "kind": "article",
+    "title": "Elucidating the Protective Potential of Ferulic Acid Against Sodium Arsenite- Induced Thyroid and Adrenal Toxicity: An Integrated In-Silico Molecular Docking and In-Vivo Experimental Approach.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42734887/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-14T23:58:19.788645+00:00",
+    "authors": [
+      "Esraa Emad El Dien",
+      "Yasmine H Ahmed",
+      "Mona Khamis Galal",
+      "Maha M Rashad",
+      "Hager M Ramadan",
+      "Ahmed F Essa",
+      "Abdelsamed I Elshamy",
+      "Shaymaa Hussein"
+    ],
+    "summary": "Arsenic is a hazardous environmental contaminant that adversely affects human and animal health. The present study aimed to investigate the potential adverse effects of sodium arsenite (SA) as an endocrine disruptor on the thyroid and adrenal glands. This study also investigated the endocrine-protective effect of ferulic acid (FA) in male rats exposed to SA. Forty male Wistar rats were organized into four groups: Control, FA (50 mg/kg), SA (10 mg/kg), and SA + FA. All substances were administered orally for 28 days. Our findings demonstrated that SA's ability to exert harmful effects was observed microscopically as vacuolation of colloid and follicular cells, as well as adrenal gland cell necrosis. As well as pronounced positive immunoreactivity for Cyclooxygenase-2 (COX-2). Furthermore, SA significantly declined triiodothyronine (T3), thyroxine (T4), and thyroid-stimulating hormone (TSH) serum levels. The expression of nuclear factor kappa β (NF-ƙβ), Interleukin-1 beta (IL-1β), and Nibrin (NBN) genes significantly increased. In contrast, nuclear factor erythroid 2-related factor 2 (Nrf-2) and catalase (CAT) antioxidant genes significantly diminished. Additionally, a docking simulation was performed to explain the binding affinity of FA on BCL2-associated X (Bax) and Cytochrome C (CYCS). Molecular docking demonstrated that FA binds strongly to Bax (ΔG = - 6.87 kcal/mol) and cytochrome C (ΔG = - 6.54 kcal/mol), which could imply a role in affecting mitochondrial apoptosis. In contrast, its high affinity for catalase (ΔG = - 6.30 kcal/mol) aligns with its potential antioxidant and cytoprotective mechanisms. Interestingly, FA administration provided partial protection against the toxic effects of sodium arsenite exposure in the examined organs.",
+    "doi": "10.1007/s12011-026-05231-1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42734887",
+      "journal": "Biological trace element research"
+    },
+    "dedupe_key": "doi:10.1007/s12011-026-05231-1"
+  },
+  {
+    "kind": "article",
+    "title": "HPLC-characterized phenolics from Acer oblongifolium attenuate inflammation, pain, and CNS-related disturbances: docking, edema, nociception, and behavioural studies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42734841/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-14T23:58:19.789265+00:00",
+    "authors": [
+      "Hammad Ismail",
+      "Saqib Hussain Hadri",
+      "Umer Rashid",
+      "Hafiza Aqsa Ashraf",
+      "Amna Mahmood",
+      "Abdullah Tariq",
+      "Ayesha Jannat",
+      "Adeena Ansar",
+      "Sheeza Masud",
+      "Muhammad Rashid",
+      "Lyba Sarfraz",
+      "Muhammad Zeeshan Bhatti"
+    ],
+    "summary": "Phenolic compounds of plant origin are promising alternatives, but the potential of Acer oblongifolium and its components has not been studied. To evaluate analgesic, anti-inflammatory and anxiolytic effects of Acer oblongifolium extract and four of its major phenolics, catechin, syringic acid, vanillic acid and gentisic acid-with the help of in silico, in vivo and biochemical techniques. HPLC was performed to investigate the phenolic content of the plant extract. The binding of known compounds with TNF α, IL-6 and IL-1β was evaluated with the help of molecular docking. In-vivo tests, including the hole board test, open field test, hot plate test, writhing assay, carrageenan induced paw edema and histamine induced edema were used to evaluate the pharmaceutical potential. ELISA was performed to measure serum and tissue IL-6, IL-1β and TNF-α levels. HPLC validated the presence of four phenolic compounds, including Gentisic acid, vanillic acid, catechin and syringic acid. Gentisic acid exhibited strong hydrogen binding with TNF-α and IL-1β. The most pronounced anxiolytic-like activity was exhibited by vanillic acid which decreased immobility by 60% and freezing behavior by 62% in open field test, and enhanced the latency of hot plate by 30%. Gentisic acid prevented carrageenan induced paw swelling by 82% at 3 h and vanillic acid prevented histamine induced edema by 80%, which was better than cetirizine. ELISA indicated that both Gentisic acid and catechin were the most effective in reducing high levels of IL-1β and TNF-α levels in serum and brain tissue from 4.55 to 2.035 pg/mL. Acer oblongifolium and its phenolic constituents, principally Gentisic acid and vanillic acid, showed analgesic, anti-inflammatory, and anxiolytic-like activity in this preclinical model, potentially mediated via modulation of pro-inflammatory cytokines.",
+    "doi": "10.1007/s10787-026-02398-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42734841",
+      "journal": "Inflammopharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s10787-026-02398-w"
   }
 ]
