@@ -400,6 +400,34 @@
   },
   {
     "kind": "article",
+    "title": "Chromosome-level, haplotype-resolved genome assembly of the tanniferous forage legume big trefoil (Lotus pedunculatus Cav.) using CiFi",
+    "url": "https://doi.org/10.64898/2026.09.09.749848",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-15",
+    "collected_at": "2026-09-15T23:44:33.810141+00:00",
+    "authors": [
+      "Pettersson, A. T.",
+      "Chen, Y.",
+      "Davalan, T.",
+      "Nicholson, P.",
+      "Kopecky, D.",
+      "Studer, B.",
+      "KÖlliker, R."
+    ],
+    "summary": "Big trefoil (Lotus pedunculatus Cav.) is a perennial forage legume that thrives on acidic, low-fertility soils and produces condensed tannins that reduce enteric methanogenesis in ruminants. Despite this agronomic potential, genomic resources for the species remain scarce, and the existing haploid assembly does not resolve the two haplotypes of this outcrossing diploid species. Here we present a haplotype-resolved, chromosome-level reference genome for L. pedunculatus genotype Lusitano29 -- the first plant genome assembled using CiFi, a long-read chromosome conformation capture method. We combined PacBio HiFi long reads with CiFi concatemers produced from DpnII and HindIII libraries; in silico digestion and combinatorial pairing of the resulting monomers yielded 790.3 M and 10.3 M pseudo-paired contacts, respectively, enabling scaffolding and manual curation to chromosome level. The 991.1 Mb assembly resolves two phased haplotypes of 500 and 491 Mb, with 96.6% of the sequence anchored in twelve pseudo-chromosomes (six per haplotype). Telomeric repeats were detected at 19 of 24 pseudo-chromosome ends, and no structural errors were detected (scaffold N50 73.8 Mb; consensus QV 64.7; k",
+    "doi": "10.64898/2026.09.09.749848",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "genomics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.09.749848"
+  },
+  {
+    "kind": "article",
     "title": "Integrated pharmacological and structural profiling reveals CB1 residue interaction patterns associated with synthetic cannabinoid receptor agonist efficacy",
     "url": "https://doi.org/10.64898/2026.09.08.748791",
     "source": "bioRxiv",
@@ -23745,5 +23773,367 @@
       "journal": "Frontiers in medicine"
     },
     "dedupe_key": "doi:10.3389/fmed.2026.1861895"
+  },
+  {
+    "kind": "article",
+    "title": "High-throughput heart rate sensing in freely moving zebrafish using a multi-well plate-based fluorescence microscope.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42743524/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.615229+00:00",
+    "authors": [
+      "Kevin Li",
+      "Xi Yang",
+      "Jennifer Bagwell",
+      "Lucas Kreiss",
+      "Haitao Chen",
+      "Veton Saliu",
+      "Aurélien Bègue",
+      "Mark Harfouche",
+      "Michel Bagnat",
+      "Roarke Horstmeyer"
+    ],
+    "summary": "The measurement of zebrafish heart rates is important for studying cardiovascular diseases and advancing drug discovery. However, current imaging methods either allow tracking of freely moving zebrafish at insufficient resolution for heart segmentation or require mounting and anesthesia to confine the specimen. Here, we introduce a high-throughput method to simultaneously track and segment dozens of freely moving zebrafish from embryonic to juvenile stages. We use a 48-camera microscope to capture multi-well fluorescence zebrafish videos from a macroscopically large field-of-view with co-designed machine learning software performing semi-automatic tracking and fluorescence analysis. To demonstrate the effectiveness of our method, we tracked the heart rates of Tg(myl7:GCaMP)s878 transgenic zebrafish across different experimental conditions of temperature changes and drug trials with distinct results. Our robust tracking capabilities of freely swimming fish enable novel, to the best of our knowledge, long-term in vivo fluorescence imaging experiments, allowing for new developmental questions to be analyzed.",
+    "doi": "10.1364/OL.597720",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42743524",
+      "journal": "Optics letters"
+    },
+    "dedupe_key": "doi:10.1364/ol.597720"
+  },
+  {
+    "kind": "article",
+    "title": "Orchestration of kaempferol nuclear translocation by phase ii metabolic enzymes and efflux transporters suppresses colorectal cancer.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42743329/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.616053+00:00",
+    "authors": [
+      "Chishun Zhou",
+      "Qing Ning",
+      "Xin Jin",
+      "Yu Li",
+      "Yuefang Lin",
+      "Jiarun Lin",
+      "Jing Zheng",
+      "Yukai Huang",
+      "Wei Wang",
+      "Zhongqiu Liu",
+      "Linlin Lu"
+    ],
+    "summary": "Kaempferol exhibits promising anti-colorectal cancer (CRC) activity, but its intracellular exposure and efficacy are strongly influenced by phase II metabolism and efflux transport. Here, we show that UGT1A1 and UGT1A9 differentially regulate kaempferol accumulation and anti-CRC activity, and that ABCG2/BCRP and Mdr1/P-gP play distinct roles in its intracellular retention and pharmacological effects. Anti-CRC activity was evaluated using sulforhodamine B, colony formation, wound-healing, Transwell, apoptosis, and xenograft assays. Knockdown models of UGT1A1/UGT1A9 and BCRP/P-gP were combined with laser scanning confocal microscopy and LC/MS to characterize intracellular exposure, metabolite disposition, and functional consequences. SIP-based proteomics, bioinformatic analyses, molecular docking, and orthogonal validation assays were used to prioritize and validate a nuclear target of kaempferol. Kaempferol significantly suppressed tumour growth and inhibited CRC cell proliferation and migration. UGT1A1 knockdown increased intracellular accumulation of kaempferol, including nuclear exposure, but reduced cytotoxicity, whereas UGT1A9 knockdown enhanced cellular sensitivity. Similarly, BCRP knockdown increased intracellular accumulation and anti-CRC efficacy, whereas Mdr1 knockdown attenuated the antitumour effect despite increasing total intracellular accumulation. Mechanistically, these differential effects were associated with altered metabolite composition, particularly the balance between the active metabolite K-7-G and the weakly active metabolite K-3-G. BRG1 was prioritized as a functionally relevant nuclear target of kaempferol, and kaempferol promoted its ubiquitination-dependent proteasomal degradation. Together, these findings show that kaempferol efficacy is determined not simply by intracellular accumulation, but by the coordinated interplay among phase II metabolism, efflux transport, metabolite disposition, and nuclear target engagement. This study provides a mechanistic basis for improving kaempferol-based CRC therapy.",
+    "doi": "10.1371/journal.pone.0355962",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42743329",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0355962"
+  },
+  {
+    "kind": "article",
+    "title": "Associations between serum lactate and renal dysfunction in diabetic kidney disease: An exploratory analysis integrating animal experiments, clinical cohorts, and bioinformatic approaches.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42743268/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.616765+00:00",
+    "authors": [
+      "Zongtao Li",
+      "Wenyu Zhang",
+      "Die Fang",
+      "Bingwu Zhao",
+      "Tianwei Zhang",
+      "Xueqin Zhang",
+      "Zhiqiang Chen"
+    ],
+    "summary": "Diabetic kidney disease (DKD) is a major cause of end-stage renal disease, but the metabolic changes associated with its progression are still not well understood. Lactate, traditionally regarded as a byproduct of glycolysis, has been increasingly recognized in recent studies in association with broader metabolic and regulatory processes. This study aimed to evaluate the association between serum lactate and renal dysfunction in DKD and to explore candidate molecular pathways linking lactate-associated metabolic alterations to DKD-related renal injury using animal experiments, clinical cohort analyses, and exploratory bioinformatic approaches. We established DKD in rats by combining right nephrectomy with streptozotocin-induced diabetes to examine metabolic and kidney changes. Clinical associations were evaluated using data from 593 DKD patients in the MIMIC-IV database and were further examined in an independent eICU validation cohort. Associations between serum lactate and renal function were analyzed using correlation and multivariable regression. Candidate molecular pathways were explored using integrated network-based bioinformatics, including target prediction, protein-protein interaction analysis, enrichment analysis, and molecular docking. DKD rats showed significantly elevated serum lactate and evidence of kidney injury, with lactate strongly correlating with the kidney function marker cystatin C (ρ = 0.748, P = 0.0081). In clinical data, elevated lactate was independently associated with higher serum creatinine (β = 0.13, 95% CI: 0.004-0.256, P = 0.044), and this positive association was further supported in the external eICU cohort. Network analysis identified 43 overlapping targets linking lactate to DKD, highlighting hub proteins such as PTGS2, EGFR, TP53, ESR1, MAPK3, and MMP9, mainly enriched in inflammation, fibrosis, and metabolism-related pathways. Elevated serum lactate was associated with renal dysfunction in DKD across animal and clinical datasets. In ICU-based clinical cohorts, this association suggests that lactate may reflect concurrent metabolic and hemodynamic stress related to renal dysfunction, rather than serving as a DKD-specific biomarker or causal mediator. Exploratory bioinformatic analyses identified candidate inflammatory, fibrotic, vascular, and metabolic pathways that may provide molecular context for this association. These computational findings should be interpreted as hypothesis-generating and require further experimental validation.",
+    "doi": "10.1371/journal.pone.0358359",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42743268",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0358359"
+  },
+  {
+    "kind": "article",
+    "title": "Leveraging bioinformatics approaches for drug repositioning in space radiation protection.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42743173/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.617321+00:00",
+    "authors": [
+      "Thomas E Diaz",
+      "Joseph A Kerrigan",
+      "Dawn E Bowles",
+      "Yared H Kidane"
+    ],
+    "summary": "The health effects of space radiation, primarily Galactic Cosmic Rays (GCRs), on humans remain largely unknown, with potential cardiovascular consequences posing a significant threat to astronauts on long-duration spaceflight missions. Currently, there are no established pharmacological countermeasures for GCR exposure. Drug repositioning offers a promising strategy to accelerate pharmaceutical research in space medicine. This study leverages existing bioinformatics techniques to identify and prioritize potential drug candidates associated with proteomic perturbations following simulated GCR exposure using previously published murine cardiac proteomic data. A protein-protein interaction (PPI) network was constructed using the top differentially expressed proteins (DEPs) from murine heart tissue following exposure to 5-ion GCRs as seed nodes, focusing on experimentally supported interactions. Network topology, Markov clustering, and functional enrichment analyses were used to characterize biologically relevant proteins and pathways. Drug-protein interactions were predicted using Drugst.One and mapped to PPI clusters of interest to identify candidate drugs. Selected drug-macromolecule interactions were further explored using CB-Dock2 molecular docking and short-duration molecular dynamics simulations as hypothesis-generating structural assessments. Analysis of a key PPI network cluster consisting of several ATP synthase proteins identified 23 unique drug candidates. These analyses demonstrate a systematic approach for leveraging bioinformatics techniques to identify candidate molecular targets and generate pharmacological hypotheses in the context of space radiation countermeasures. Ultimately, this strategy introduces a hypothesis-generating framework for the prioritization of potential drug candidates for future computational characterization and experimental investigation against spaceflight stressors.",
+    "doi": "10.1371/journal.pone.0357889",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42743173",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0357889"
+  },
+  {
+    "kind": "article",
+    "title": "Anticancer activity of asiatic acid in cisplatin-resistant human neuroblastoma SH-SY5Y and its unaffected effect on human neural stem cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42743141/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.617925+00:00",
+    "authors": [
+      "Apisada Jiso",
+      "Laphatrada Yurasakpong",
+      "Amarin Thongsuk",
+      "Tarinee Chodchavanchai",
+      "Nisarat Ruangsawasdi",
+      "Permphan Dharmasaroja",
+      "Anupong Thongklam Songsaad",
+      "Taweesak Tangrodchanapong"
+    ],
+    "summary": "To investigate the anticancer effects of asiatic acid (AA) and asiaticoside (AS) in cisplatin (Cis)-resistant neuroblastoma SH-SY5Y and neural stem cells derived from human stem cells from apical papilla (NSCs-hSCAPs). An MTT cell viability assay was performed to determine Cis toxicity and assess the cytotoxic effect of AA or AS on Cis-treated SH-SY5Y and the effect on NSCs-hSCAPs. Subsequently, the combination index (CI) was calculated to observe occurring interactions between the compound and Cis. For mechanistic exploration, flow cytometry using annexin V and PI staining and a caspase-3 activity assay were done to quantify apoptotic cell death. qRT-PCR was used to measure apoptotic and antioxidant mRNA levels. Additionally, the protein levels were analyzed by using the Western blot technique. Finally, to illustrate the putative interactions between the compound and its target, molecular docking was trialled. MTT results revealed that AS did not affect both cells. However, 20 µM AA in combination with 2.5 µM Cis could significantly reduce SH-SY5Y cell viability with a CI value of 0.41, indicating their synergistic effect. Moreover, the effective concentration of AA did not affect Cis-treated NSCs-hSCAPs, suggesting its low toxicity. Considering SH-SY5Y, AA alone or its combination dramatically increased % apoptotic cells, which showed a minimal increment in Cis alone. Importantly, the combination treatment significantly increased caspase-3 activity. Mechanistically, BAX levels were elevated, whereas BCL2, SOD-1, and HO-1 levels were downregulated by AA alone or in combination. These results were also consistent with Western blot analysis. Interestingly, an inhibition of GSK3β was observed in the combination treatment, suggesting that these outcomes may be related.The molecular docking illustrated that AA interacted with GSK3β and BCL-2 through multiple residues, indicating their potential binding interactions. AA and Cis treatment suppressed SH-SY5Y cell viability by enhancing apoptosis, reducing antioxidant gene expression, and potentially inhibiting GSK3β.",
+    "doi": "10.1371/journal.pone.0358134",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42743141",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0358134"
+  },
+  {
+    "kind": "article",
+    "title": "An AI-Driven Chemogenomics Knowledgebase for Human-Transmissible Pathogens: A Platform for Antimicrobial Drug Discovery.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42743006/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.618489+00:00",
+    "authors": [
+      "Jiaxiong Kang",
+      "Lei Zhu",
+      "Haibo Li",
+      "Xiangyu Xie",
+      "Cong Liu",
+      "Zhiwei Feng",
+      "Yi Wang",
+      "Ouyang Mo",
+      "Chengsu Wang",
+      "Xinzi Lin",
+      "Ying Xue",
+      "Haibin Liu",
+      "Qin Ouyang"
+    ],
+    "summary": "Emerging infectious diseases (EIDs) pose a critical threat to global biosecurity. Integrating bio/chemical information and artificial intelligence would bring new strategies for antimicrobial drug discovery. Herein, the Human Pathogenic Microorganisms Chemogenomics Knowledgebase (HPM-CKB) is presented as the largest domain-specific resource, consolidating chemical, genetic, and proteomic data on human-transmissible pathogens, together with multiple computational functional modules. The current release covers 7876 pathogenic proteins from 267 microorganisms (including 13,914 protein 3D structures) and 234,287 associated with bioactive molecules. HPM-CKB enables large-scale virtual screening, target identification, and drug repurposing, and integrates a large language model (LLM) for interactive queries. The computational prediction performance of HPM-CKB is corroborated by known inhibitors targeting SARS-CoV-2 replicase polyprotein 1ab. In wet-lab validations, four approved drugs (cefixime, ceftazidime, saquinavir, and rilapladib) identified via virtual screening show binding activity to SARS-CoV-2 nucleoprotein in affinity assays and inhibit SARS-CoV-2 replication in Vero E6 cells, demonstrating HPM-CKB's potential in drug repurposing. Meanwhile, two anti-Staphylococcus aureus lead compounds with novel scaffolds (CYC-HXL-9124 and CYC-HXL-9126) are identified via deep learning, and the potential target protein, cell division protein FtsZ, is subsequently prioritized using HPM-CKB (http://cgai.asia/g/pathogenDB) and experimentally validated by affinity assays. Collectively, these findings establish HPM-CKB as both a chemogenomic knowledgebase and a systematic drug development platform against EIDs.",
+    "doi": "10.1021/acs.jcim.6c02102",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "virtual screening",
+      "target identification",
+      "drug repurposing"
+    ],
+    "extra": {
+      "pmid": "42743006",
+      "journal": "Journal of chemical information and modeling"
+    },
+    "dedupe_key": "doi:10.1021/acs.jcim.6c02102"
+  },
+  {
+    "kind": "article",
+    "title": "Asperulosidic Acid Attenuates Myocardial Ischemia-Reperfusion Injury and Suppresses MAPK Signaling.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42742999/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.618974+00:00",
+    "authors": [
+      "Junwei Xu",
+      "Ning Qin",
+      "Wenbo Jiang",
+      "Tao Chen"
+    ],
+    "summary": "This study evaluated the protective effects of asperulosidic acid (ASP) against myocardial ischemia/reperfusion (I/R) injury and investigated the underlying mechanisms. An in vitro oxygen-glucose deprivation/reoxygenation model was established in H9c2 cells, and an in vivo rat I/R model was generated by left anterior descending coronary artery ligation. ASP treatment significantly improved cell viability and reduced apoptosis in vitro. In vivo, ASP decreased myocardial infarct size, alleviated histopathological damage, and reduced serum creatine kinase and lactate dehydrogenase levels. Additionally, ASP suppressed inflammatory cytokine expression, reduced reactive oxygen species and malondialdehyde levels, enhanced antioxidant enzyme activities, and inhibited myocardial apoptosis. Network pharmacology and molecular docking identified the MAPK signaling pathway as a potential target. Mechanistically, ASP reduced the phosphorylation of p38, ERK, and JNK in myocardial tissue. These findings demonstrate that ASP attenuates myocardial I/R injury by reducing oxidative stress, inflammation, and apoptosis, associated with suppression of the MAPK signaling pathway.",
+    "doi": "10.1080/10985549.2026.2726768",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42742999",
+      "journal": "Molecular and cellular biology"
+    },
+    "dedupe_key": "doi:10.1080/10985549.2026.2726768"
+  },
+  {
+    "kind": "article",
+    "title": "Identification and Biochemical Characterization of a Novel β-1, 3-glucanase for Efficient Preparation of Laminarin Oligosaccharides.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42742925/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.619568+00:00",
+    "authors": [
+      "Limin Ning",
+      "Yi Zhao",
+      "Xinyu Yuan",
+      "Hui Wang",
+      "Benwei Zhu"
+    ],
+    "summary": "Endo-β-1, 3-glucanase, also called laminarinase, is a key enzyme tool for laminarin biomass biorefinery and pretreatment in industry by hydrolyzing the laminarin polysaccharide into oligosaccharides. Cel2C, a novel kind of endo-β-1, 3-glucanase, was identified and characterized in this study. The name of Cel2C originates from the genus abbreviation of its source strain, Cellulophaga lytica (Cel), combined with an internal sequence identifier (2 C). It consisted of three domains formed by 507 amino acids, namely the N-terminal helix domain, the uncharacterized region and the TIM-like catalytic domain. Cel2C exhibited degrading activities to laminarin, β-glucan and sodium carboxymethyl cellulose (CMC-Na). Notably, it exhibited maximal activity (1.062 × 104 nkat/mg, equivalent to ~ 636.203 U/mg) toward laminarin at pH 6.0 and 50 °C, and retained approximately 80% of its maximal activity below 40 °C within a pH range of 6.0-8.0. The Michaelis-Menten constant (Km) and the maximum velocity (Vmax) of the recombinant Cel2C for laminarin were determined as 7.433 mg/mL and 575.820 nkat/mg (equivalent to ~ 34.54 U/mg), respectively. HPLC and ESI-MS analysis indicated that Cel2C can degrade laminarin and β-glucan into oligosaccharides with degrees of polymerization (DPs) of 1-7. According to structural characteristics and molecular docking analysis, the catalytic mechanism of Cel2C is similar to Glycoside Hydrolase Family 5, with the highly conserved residues Glu336 and Glu420 acting as the proton donor and nucleophile, which is essential for the degradation of laminarin and β-glucan. These properties highlight the potential application of Cel2C as an endo-β-1, 3-glucanase in the biorefinery of laminarin biomass in related industries.",
+    "doi": "10.1007/s12010-026-05938-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42742925",
+      "journal": "Applied biochemistry and biotechnology"
+    },
+    "dedupe_key": "doi:10.1007/s12010-026-05938-w"
+  },
+  {
+    "kind": "article",
+    "title": "Structure-guided identification and experimental validation of NAT10-targeting small molecules in colorectal cancer cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42742862/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.620139+00:00",
+    "authors": [
+      "Chao Xu",
+      "Shilei Zhao",
+      "Bing Xu",
+      "Jiaping Xu",
+      "Yongli Wu",
+      "Dan Zhang",
+      "Bensheng Wu",
+      "Qing Zhou"
+    ],
+    "summary": "Colorectal cancer (CRC) remains a major cause of cancer-related mortality worldwide, and patients with advanced or metastatic disease still require more effective targeted therapeutic options. N-acetyltransferase 10 (NAT10), an RNA acetyltransferase responsible for N4-acetylcytidine (ac4C) modification, has been implicated in CRC progression, metastasis, immune evasion, and therapy resistance. The recently resolved human NAT10 structure (PDB ID: 9J3C) provides a structural basis for rational discovery of NAT10-directed chemical scaffolds. We combined large-scale virtual screening, molecular simulation, and cellular testing to identify NAT10-targeting compounds. Approximately 300,000 molecules were screened by hierarchical docking, followed by ADMET prediction, 100-ns molecular dynamics simulations, and MM/PBSA analysis. G856-6814 showed a predicted binding free energy of - 26.33 ± 3.37 kcal/mol and inhibited HCT116 cell viability with an IC50 of 211.6 ± 14.8 nM. In a recombinant enzyme assay, G856-6814 inhibited NAT10 acetyltransferase activity with an IC50 of 2.3 ± 0.4 µM. G856-6814 treatment increased the apparent NAT10 melting temperature from 50.4 ± 0.5 to 56.0 ± 0.8 °C. Treatment also reduced global RNA ac4C and ac4C enrichment on c-MYC, CCNA2, and CCNB1 transcripts. G856-6814 was 19.6-fold less potent against TIP60 and more than 43-fold less potent against p300 and GCN5. Together with the attenuation of cellular effects after NAT10 knockdown, these findings support G856-6814 as a NAT10-targeting inhibitory scaffold that requires broader selectivity and in vivo evaluation.",
+    "doi": "10.1007/s10822-026-00890-7",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "ADMET",
+      "molecular dynamics",
+      "ADMET prediction"
+    ],
+    "extra": {
+      "pmid": "42742862",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00890-7"
+  },
+  {
+    "kind": "article",
+    "title": "Vitamin B6 attenuates diabetic cardiomyopathy by targeting CtBP1 and alleviating Golgi stress via the AKT/HO-1 signaling pathway.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42742851/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.620680+00:00",
+    "authors": [
+      "Mo-Li Zhu",
+      "Rui Hao",
+      "Bing-Yan Mao",
+      "Hong-Dou Zhang",
+      "Peng Li",
+      "Chun-Rui Zhang",
+      "Hui-Dan Wang",
+      "Xi-Yue Li",
+      "Cheng-Zhi Li"
+    ],
+    "summary": "Diabetic cardiomyopathy (DCM) is a serious complication of diabetes, characterized by the impairment of cardiac structure and function. Increasing evidence suggests that Golgi stress responses are involved in the pathogenesis of DCM. This study investigated the protective effects of vitamin B6 on DCM and explored the potential involvement of Golgi stress responses and the AKT/HO-1 signaling pathway in vitamin B6-mediated cardioprotection. Network pharmacology and molecular docking were used to identify potential targets of vitamin B6. A DCM mouse model was established in C57BL/6 mice using a high-fat diet and streptozotocin, and high-glucose-treated H9c2 cells were used in vitro. Cardiac function was assessed by echocardiography, histopathological changes were evaluated by HE and Masson staining, Golgi morphology was examined by transmission electron microscopy, and the expression of CtBP1, GM130, HO-1, NHE1, and P-AKT was analyzed by immunohistochemistry, immunofluorescence, and Western blotting. DCM mice exhibited increased heart weight-to-body weight ratio (HW/BW), reduced ejection fraction and fractional shortening, disordered myocardial fibers, and marked fibrosis, whereas vitamin B6 treatment significantly improved cardiac function and alleviated myocardial injury and fibrosis. Ultrastructural analysis showed Golgi fragmentation, filamentous disruption, and mitochondrial damage in DCM cardiomyocytes, all of which were ameliorated by vitamin B6. At the molecular level, DCM decreased CtBP1, GM130, HO-1, and P-AKT expression while increasing NHE1, and these changes were reversed by vitamin B6. These findings indicate that vitamin B6 may attenuate DCM through CtBP1-associated regulation and preservation of Golgi homeostasis, highlighting its potential therapeutic value.",
+    "doi": "10.1007/s11010-026-05734-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42742851",
+      "journal": "Molecular and cellular biochemistry"
+    },
+    "dedupe_key": "doi:10.1007/s11010-026-05734-4"
+  },
+  {
+    "kind": "article",
+    "title": "Molecular docking and molecular dynamics investigation of novels thiazolopyrimidines binding to canonical and alternative allosteric sites of kinesin Eg5.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42742834/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.621280+00:00",
+    "authors": [
+      "Vinícius S Cunha",
+      "Arlan S Gonçalves",
+      "Reginaldo B Dos Santos",
+      "Ricardo M Kuster"
+    ],
+    "summary": "Human kinesin Eg5 is essential for bipolar spindle assembly, and most allosteric inhibitors bind to the canonical pocket formed by the α2 helix, loop 5, and the α3 helix. Eleven thiazolo[3,2-a]pyrimidinethiones were evaluated as ligands for two sites in Eg5: this canonical pocket and an alternative region near loop 8. All derivatives showed favorable docking poses at both sites, with average energies of -7.95 and -7.79 kcal.mol-1 for the loop 5 and loop 8 sites, respectively, whereas monastrol favored loop 5 by 1.6 kcal.mol-1. Compounds 1a and 2d remained associated with both sites during 500 ns simulations, with ligand root-mean-square deviations between 1.00 and 1.53 Å. MM-PBSA estimates ranged from -26.02 to -22.92 kcal.mol-1, compared with -22.14 kcal.mol-1 for monastrol. RMSF calculations revealed site- and ligand-dependent redistribution of mobility in loop 5, loop 8, Switch I, Switch II, the microtubule-binding site, the cover-neck bundle, and the neck linker. These results indicate that this scaffold is promising for the exploration of alternative allosteric sites in Eg5, although experimental confirmation is required. The Switch II segment was reconstructed with SWISS-MODEL and evaluated with PDBsum. The structures were prepared with PDB2PQR, AutoDockTools, and Open Babel. Redocking compared AutoDock Vina, QuickVina 2, and QuickVina-W, and QuickVina-W with exhaustiveness 32 was selected. Six systems were simulated for 500 ns in GROMACS using the OPLS-AA/L force field, TIP3P water, and ligand parameters obtained with ACPYPE. Visual Molecular Dynamics was used for trajectory measurements, Discovery Studio Visualizer for interaction analysis, and g_mmpbsa for binding-energy estimation and per-residue decomposition.",
+    "doi": "10.1007/s00894-026-06958-3",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42742834",
+      "journal": "Journal of molecular modeling"
+    },
+    "dedupe_key": "doi:10.1007/s00894-026-06958-3"
+  },
+  {
+    "kind": "article",
+    "title": "An integrative computational and experimental evaluation of natural compounds with potential to target LuxS in Klebsiella pneumoniae.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42742729/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-15T23:40:13.621847+00:00",
+    "authors": [
+      "Mashego Jackson Mamosebo",
+      "Suheena Ayrga",
+      "Shabir A Madhi",
+      "Shama Khan"
+    ],
+    "summary": "Klebsiella pneumoniae (KPn) has emerged as a major global health concern due to increasing antimicrobial resistance (AMR). The development of new antimicrobial agents is essential to address multidrug-resistant and emerging hypervirulent strains associated with increased morbidity and mortality worldwide. In this study, an integrative computational-experimental approach was employed to characterise the anti-quorum sensing and anti-biofilm activities of selected natural compounds targeting the LuxS/autoinducer-2 (AI-2) system in KPn. Six compounds were initially screened using homology modelling, molecular docking, pharmacophore analysis, and molecular dynamics (MD) simulations. Resveratrol, quercetin, and epigallocatechin gallate showed favourable binding to LuxS. Although quercetin (ΔG_bind = - 45.47 kcal/mol) and epigallocatechin gallate (- 43.04 kcal/mol) exhibited stronger predicted affinities than resveratrol (- 39.22 kcal/mol), resveratrol demonstrated superior complex stability (RMSD: 1.8 ± 0.2 Å) and persistent interactions with key residues (Tyr63, Trp68). Experimental validation demonstrated that resveratrol exhibited significant antimicrobial activity (MIC/MBC = 32 µg/mL), significantly inhibited quorum sensing-associated phenotypes, and reduced KPn-Acinetobacter baumannii (ABa) dual-species biofilm formation inhibition by 54.7%. These findings identify resveratrol as a promising anti-virulence candidate and highlight the utility of integrative computational and experimental strategies for the identification of compounds targeting quorum sensing and biofilm formation inhibition in multidrug-resistant pathogens.",
+    "doi": "10.1007/s00203-026-05191-z",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42742729",
+      "journal": "Archives of microbiology"
+    },
+    "dedupe_key": "doi:10.1007/s00203-026-05191-z"
   }
 ]
