@@ -212,6 +212,330 @@
   },
   {
     "kind": "article",
+    "title": "Lacuna: Cryptic Binding Pocket Discovery via Conformational Ensemble Analysis",
+    "url": "https://doi.org/10.64898/2026.08.14.744956",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:42:56.179332+00:00",
+    "authors": [
+      "Moore, C."
+    ],
+    "summary": "Lacuna, an open-source Python tool for discovering cryptic binding pockets: sites that are absent or too small to detect in a protein's unbound structure and open only during conformational fluctuation. Most binding-site predictors score a single static structure, which is precisely the structure in which a cryptic site is invisible. Lacuna instead generates a conformational ensemble from any input structure, detects pockets independently in every conformer, clusters the detections into persistent sites across the ensemble, and ranks those sites with a model fitted on within-structure pairs. Ensemble generation is pluggable: normal mode analysis by default, with implicit-solvent molecular dynamics, Boltz-2 diffusion sampling, or a user-supplied ensemble as alternatives. On the designated test fold of CryptoBench, Lacuna recovers 55.6% of cryptic sites in its top five predictions with the zero-dependency default and 66.1% with an optional PLM-assisted ranker; pooling the geometric detector with an optional learned surface detector recovers 73.9% while raising the fraction of sites found from 68.5% to 86.4%, measured on the held-out fold at five conformers. It recovers 73%, 45% and 8",
+    "doi": "10.64898/2026.08.14.744956",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.08.14.744956"
+  },
+  {
+    "kind": "article",
+    "title": "Predictive control of human pancreatic cell fate using a digital model of in vitro differentiation",
+    "url": "https://doi.org/10.64898/2026.04.27.721124",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:42:56.181192+00:00",
+    "authors": [
+      "Sanchez-Castro, E. E.",
+      "Ishahak, M.",
+      "Le, T.",
+      "Maestas, M. M.",
+      "Hernandez-Rincon, D. C.",
+      "Mukherjee, N.",
+      "Bradley, K.",
+      "Lu, J.",
+      "Gale, S. E.",
+      "Millman, J. R."
+    ],
+    "summary": "The controlled generation of mature stem cell-derived islets (SC-islets) remains a barrier to scalable cell therapy for diabetes. Here, we develop a predictive digital model defining the cell-state-specific regulatory logic governing fate specification during human SC-islet differentiation. We integrate 400,603 cells from 9 original single-cell multiomic datasets and 52 public single-cell RNA-seq and ATAC-seq datasets across 4 cell lines and 7 differentiation protocols. This model resolves transcriptional and chromatin accessibility dynamics while enabling time-resolved inference and in silico perturbation of cell-state-specific gene regulatory networks. We identify regulators across trajectories from endoderm progenitors to pancreatic exocrine and endocrine lineages, nominating new candidate regulators. Among these candidates, we validate previously unreported roles for STAT1 as an exocrine driver and ZEB1 as a dynamic regulator of early endocrine specification and later off-target serotonergic islet cell fate. This work provides an experimentally supported predictive framework and an interactive resource comprising 1,116 simulations to prioritize transcription factors and interve",
+    "doi": "10.64898/2026.04.27.721124",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "cell biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.04.27.721124"
+  },
+  {
+    "kind": "article",
+    "title": "Direct aliquoting from a single heated well enables fully automated high-throughput thermal proteome profiling",
+    "url": "https://doi.org/10.64898/2026.09.15.751689",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:42:58.414245+00:00",
+    "authors": [
+      "Pääkkönen, M.",
+      "Purma, I.",
+      "Merilahti, J.",
+      "Kauko, O."
+    ],
+    "summary": "Thermal proteome profiling (TPP) measures drug target engagement across the proteome by detecting ligand-induced changes in protein thermal stability, but conventional workflows are laborious and costly, which has limited their use in compound screening. We present DASH-PISA, a single-well thermal fractionation approach in which a lysate is heated through a series of defined temperatures in one well and sampled at each step, and the aliquots are pooled into another well. Because sampling and pooling both take place in plate format, the thermal treatment runs on a standard liquid-handling robot with an integrated thermocycler and a 96-channel pipette. Combined with filter-based separation of soluble protein, data-independent acquisition (DIA), and a spike-in SILAC reference, DASH-PISA forms a fully automated, high-throughput TPP workflow. As a proof of concept, stepwise single-well fractionation reproduced the melting curves of traditional TPP, and the pooled DASH-PISA workflow detected known kinase targets of staurosporine; a spike-in SILAC reference further improved their recovery. By running on commercially available automation, this workflow makes proteome-wide target identifica",
+    "doi": "10.64898/2026.09.15.751689",
+    "company_slug": null,
+    "keywords_matched": [
+      "target identification"
+    ],
+    "extra": {
+      "category": "molecular biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.15.751689"
+  },
+  {
+    "kind": "article",
+    "title": "FORGE audits residue-level information encoded in RNA tertiary structure geometry",
+    "url": "https://doi.org/10.64898/2026.07.05.736550",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:43:02.373899+00:00",
+    "authors": [
+      "Gow, L.",
+      "Li, J.",
+      "Tan, X.",
+      "Liang, K.",
+      "Gui, N.",
+      "Luo, B."
+    ],
+    "summary": "Coarse RNA coordinate representations are widely used, yet the biological information they encode remains unquantified. We introduce FORGE, which converts a seven-atom RNA geometry representation into 935 interpretable descriptors and reports which residue-level annotations this geometry supports. On 4,135 post-2025 RNA chains, FORGE recovered 64.6% of native nucleotides; a six-atom control lacking the glycosidic nitrogen retained 58.5%, locating most of this signal in phosphate-sugar geometry. Confidence was sharply graded: abstaining from the least-confident half of positions raised accuracy to 94.4%, yet many chains remained only partially identifiable. The same descriptors predicted base-pair state far better than a DMS-like proxy or protein-proximal context. Native-decoy, OpenKnot and solved-pseudoknot analyses showed that nucleotide identifiability, foldability and experimental design score are separable: AlphaFold3 reproduced the experimental fold for one of four AI-designed constructs and none of the sequences FORGE read from their geometry. FORGE provides a reproducible audit layer for RNA structural interpretation.",
+    "doi": "10.64898/2026.07.05.736550",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.07.05.736550"
+  },
+  {
+    "kind": "article",
+    "title": "Chemically induced USP21-KLHL12 association recruits USP21 to COPII assembly",
+    "url": "https://doi.org/10.64898/2026.09.13.750941",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:43:22.134381+00:00",
+    "authors": [
+      "Vu, V.",
+      "Kanaris, M.",
+      "Wolf, E.",
+      "Keller, S.",
+      "Liu, Q.",
+      "Simoben, C. V.",
+      "Ahmad, S.",
+      "Rebber, V.",
+      "Szewczyk, M. M.",
+      "Loppnau, P.",
+      "Maitland, M. E.",
+      "Adamson, E. C.",
+      "Picotti, P.",
+      "Wilson, D.",
+      "Arrowsmith, C. H.",
+      "Halabelian, L.",
+      "Schapira, M.",
+      "Gstaiger, M.",
+      "Harding, R. J.",
+      "Barsyte-Lovejoy, D."
+    ],
+    "summary": "Ubiquitin-specific protease 21 (USP21) is a deubiquitinase implicated in various biological processes and disease states, including cancer. To better understand USP21 protein interaction networks, we used biotin identification proximity labeling, and uncovered USP21 interactions with the cytoskeleton, endosomal, and transcriptional regulators. Notably, a subset of these interactions was modulated by the USP21 selective inhibitor BAY-805. In cells, BAY-805 promoted proximity between USP21 and Kelch like protein KLHL12, a component of the Cullin3 ligase complex. Structural modeling using AlphaFold3, together with hydrogen deuterium exchange mass spectrometry, identified an orthosteric BAY-805 binding site within USP21. Binding of BAY-805 functionally competes with ubiquitin at USP21, thereby enabling USP21 interaction with KLHL12. This BAY-805 induced proximity elicited relocalization of USP21 to KLHL12 containing coat protein complex II (COPII) vesicles. Induced USP21-KLHL12 association led to enlargement of COPII vesicles and impaired transport of large cargoes such as collagen. Overall, our findings reveal a novel chemically induced proximity mechanism in which the monovalent liga",
+    "doi": "10.64898/2026.09.13.750941",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "cell biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.13.750941"
+  },
+  {
+    "kind": "article",
+    "title": "Structural conservation of the gabapentinoid binding site in human and Caenorhabditis elegans α2δ subunits: a docking and molecular dynamics perspective",
+    "url": "https://doi.org/10.64898/2026.09.15.751774",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:43:22.136614+00:00",
+    "authors": [
+      "Sultana, J.",
+      "Mkrtchyan, L.",
+      "Castano, J. D.",
+      "Castillo, J. d.",
+      "Beaudry, F."
+    ],
+    "summary": "Pain is a global health burden, highlighting the need for effective therapeutic strategies. Gabapentin (GBP) and pregabalin (PGB), used for neuropathic pain, act primarily through 2{delta} auxiliary subunits of voltage-gated calcium channels. Caenorhabditis elegans expresses UNC-36, an ortholog of mammalian 2{delta} proteins involved in calcium-channel function and nocifensive behavior. However, whether UNC-36 preserves the molecular features required for gabapentinoid recognition remains unclear. We compared human 2{delta}-1 and UNC-36 using sequence and structural analyses, molecular docking, 500-ns molecular dynamics simulations, interaction profiling, principal component and free-energy landscape analyses, and MM/GBSA calculations. UNC-36 preserved the overall architecture of the mammalian gabapentinoid-binding region despite substantial sequence divergence, and both ligands remained associated with the modeled pockets. However, residue-level interaction networks differed between species. Human 2{delta}-1 showed greater contributions from aromatic interactions, whereas UNC-36 relied more prominently on cationic and hydrogen-bond donor interactions mediated by Arg501 and Arg503.",
+    "doi": "10.64898/2026.09.15.751774",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "molecular biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.15.751774"
+  },
+  {
+    "kind": "article",
+    "title": "Actin and AnkJ reciprocally regulate the catalytic state of the Legionella effector Ceg14",
+    "url": "https://doi.org/10.64898/2026.09.15.751733",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:43:23.718112+00:00",
+    "authors": [
+      "Shatskiy, D.",
+      "Eerelman, M. S.",
+      "Marrink, S. J.",
+      "Schroeder, G. N.",
+      "Belyy, A."
+    ],
+    "summary": "Ceg14 is a Legionella pneumophila effector whose enzymatic activity is activated by host actin and inhibited by the cognate metaeffector AnkJ. Recent studies established that Ceg14 cleaves ATP to AMP and pyrophosphate and can transfer AMP to 3-phosphoglycerate, but how actin and AnkJ regulate these catalytic states remained unclear. Here, we show that Ceg14 is selectively activated by G-actin and determine the cryo-EM structure of the Ceg14-actin-AnkJ complex. Structure-guided mutagenesis identifies two actin-binding elements, a C-terminal anchor and an extended sensor region, that are required for Ceg14 activation and toxicity. Structural modelling and molecular dynamics simulations reveal that the catalytic center is assembled from three spatially distinct components: an N-terminal nucleoside-binding region, a phosphate-coordinating region within the actin sensor, and the catalytic triad. G-actin constrains the sensor and thereby organizes the phosphate-binding component of the active site. AnkJ binds at a distinct surface and allosterically repositions the N-terminal domain, disrupting nucleoside coordination while leaving part of the catalytic machinery intact. Consistent with ",
+    "doi": "10.64898/2026.09.15.751733",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.15.751733"
+  },
+  {
+    "kind": "article",
+    "title": "Gut bacteria convert cortisol into a distinct hostsignalling molecule",
+    "url": "https://doi.org/10.1101/2020.06.12.149468",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:43:25.275989+00:00",
+    "authors": [
+      "Freiberg, M.",
+      "Wang, T.",
+      "Rosa, R. S. d. L.",
+      "Osswald, A.",
+      "Melo, M. C. R.",
+      "Stouffer, D. G.",
+      "Buobu, P. S.",
+      "Welsh, C.",
+      "Yang, L.",
+      "Abdel-Hamid, A. M.",
+      "Doden, H. L.",
+      "Devendran, S.",
+      "Pollet, R. M.",
+      "Goldberg, S.",
+      "Ray, L.",
+      "Hamm, A.",
+      "Kessee, N.",
+      "Dai, H.",
+      "Mythen, S. M.",
+      "Bhowmik, S.",
+      "Lesley, S. A.",
+      "Hylemon, P. B.",
+      "Luthey-Schulten, Z.",
+      "Pan, F.",
+      "Mutlu, E.",
+      "Daniel, S. L.",
+      "Jin, Y.-S.",
+      "Kim, S. J.",
+      "Grippo, P.",
+      "Auchus, R. J.",
+      "Cann, I.",
+      "Steelman, A. J.",
+      "Robben, M.",
+      "Greening, C.",
+      "Koropatkin, N. M.",
+      "Ocvirk, S.",
+      "Gaskins, R.",
+      "Wolf, P. G.",
+      "Tussing-Humphreys, L.",
+      "Lee, J.",
+      "Bernardi, R. C.",
+      "Ridlon, J. M."
+    ],
+    "summary": "Microorganisms extensively modify host steroids, but whether these reactions merely eliminate hormones or create signals with new biological identities is largely unknown. Gut bacteria have been known for more than four decades to reduce cortisol to 20-dihydrocortisol, yet the physiological consequence of this transformation remained unresolved. Here we show that microbial cortisol reduction creates a distinct host signalling molecule. A 2.0-[A] structure of the bacterial enzyme DesC, together with molecular dynamics, biochemical perturbation and hybrid quantum mechanics/molecular mechanics simulations, defines substrate recognition and an ordered hydride-transfer and proton-relay mechanism. In gnotobiotic mice, isogenic bacteria expressing active DesC--but not a catalytically inactive S47A variant produced 20-dihydrocortisol in the intestine and circulation and reprogrammed colonic transcription. In primary intestinal epithelial cells, 20-dihydrocortisol, but not cortisol, activated ERK-dependent inflammatory and growth-associated programmes. These responses required nuclear receptor subfamily 4 group A member 3 (NR4A3), whose purified ligand-binding domain bound 20-dihydrocortiso",
+    "doi": "10.1101/2020.06.12.149468",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "microbiology"
+    },
+    "dedupe_key": "doi:10.1101/2020.06.12.149468"
+  },
+  {
+    "kind": "article",
+    "title": "Parthenolide boosts megakaryocyte maturation and restores platelet responses in Wiskott Aldrich syndrome",
+    "url": "https://doi.org/10.64898/2026.09.13.751254",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:43:25.276541+00:00",
+    "authors": [
+      "Vieira, R. C.",
+      "Goncalves Pinho, L.",
+      "Yong, T.",
+      "He, M.",
+      "Zanette, G.",
+      "Gargallo, M. D.",
+      "Vinuesa, E. J.",
+      "Enriquez, I. R.",
+      "Ekwall, O.",
+      "Gustavsson, A.-L.",
+      "Westerberg, L."
+    ],
+    "summary": "Wiskott-Aldrich syndrome (WAS) is an inborn error of immunity with a broad disease spectrum, classified into class I (late onset) or II (early onset) variants. Thrombocytopenia and small platelets are the most consistent findings among patients, difficult to treat and related to development of autoimmunity. To identify new treatment options for thrombocytopenia in WAS, we developed a FACS-based screening for drug repurposing. We identified parthenolide as a lead small molecule that increased WASp abundance in cells with residual WASp expression. Using the megakaryocytic MEG-01 cells, gene edited to express WAS class I and II genetic variants, parthenolide induced megakaryocyte maturation as evident by upregulation of CD61, increased cell size and complexity, increased phosphorylation of ERK1/2, and higher DNA ploidy. We generated a new mouse model harboring a WAS class I missense variant WASp-R88C, corresponding to human WASp-R86C, with reduced expression of WASp. WASp-R88C mice had lower numbers of platelets compared to WT mice. Bone marrow-derived WASp-R88C and WASp-KO megakaryocytes, differentiated in the presence of parthenolide derivative, DMAPT, showed increased ploidy and up",
+    "doi": "10.64898/2026.09.13.751254",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug repurposing"
+    ],
+    "extra": {
+      "category": "cell biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.13.751254"
+  },
+  {
+    "kind": "article",
+    "title": "Structural and biophysical insights into the unique RNase YicC",
+    "url": "https://doi.org/10.64898/2026.09.15.751841",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-17",
+    "collected_at": "2026-09-17T23:43:36.736311+00:00",
+    "authors": [
+      "Wu, R.",
+      "Venkatesh, H.",
+      "Lansiquot, C.",
+      "Barnes, S. A.",
+      "Golestanian, A.",
+      "Rechkoblit, O.",
+      "Jones, A. N.",
+      "Bechhofer, D. H.",
+      "Lazarus, M. B."
+    ],
+    "summary": "RNA cleavage and processing are highly conserved regulatory mechanisms across bacteria. We recently discovered a novel family of RNases called YicC, conserved across all bacteria but unrelated to known RNase families. The cryo-EM structure of RNA bound to Escherichia coli YicC endonuclease suggested a clamshell-like ribonuclease mechanism for cleavage, although its exact mechanism and function remain elusive. Here, we report new cryo-EM structures that provide snapshots of the closing of the complex and also capture a surprising dimeric-RNA:protein complex. We further characterize the RNA cleavage targets in solution using nuclear magnetic resonance (NMR) spectroscopy, and use all-atom molecular dynamics (MD) simulations to study Mg2+ binding. Our findings suggest that the YicC family can bind RNA hairpin structures and dimeric conformations with appropriate sequence and structural constraints, with cleavage driven strongly by Mg2+ ion localization. This study therefore provides overall insight into the novel cleavage mechanism of the highly conserved family of YicC-like endoribonucleases.",
+    "doi": "10.64898/2026.09.15.751841",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.15.751841"
+  },
+  {
+    "kind": "article",
     "title": "De Novo Design of Miniprotein Inhibitors of Bacterial Adhesins",
     "url": "https://doi.org/10.1101/2025.08.18.670751",
     "source": "bioRxiv",
@@ -670,6 +994,191 @@
       "category": "immunology"
     },
     "dedupe_key": "doi:10.64898/2026.09.11.750848"
+  },
+  {
+    "kind": "article",
+    "title": "Mimicin, an antimicrobial protein encoded by mimivirus",
+    "url": "https://doi.org/10.64898/2026.09.16.751764",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-16",
+    "collected_at": "2026-09-17T23:42:45.835865+00:00",
+    "authors": [
+      "Tatara, J. M.",
+      "Dey, H.",
+      "Goyal, N.",
+      "Alves, A. K. N.",
+      "Dutra, L. A. L.",
+      "Jivaji, A. M.",
+      "Blencke, H.-M.",
+      "Haug, T.",
+      "Aylward, F.",
+      "Abrahao, J. S.",
+      "Horn, M.",
+      "Almeida, G. M. d. F."
+    ],
+    "summary": "Antimicrobial peptides (AMPs) are innate defense molecules found in all domains of life. Giant viruses of amoeba are known to thrive among complex microbial relationships within its hosts cells, hinting at the existence of virus-derived antimicrobial strategies. Here we show that viruses belonging to the Mimiviridae and Marseilleviridae families contain a higher density of in silico predicted AMPs per genome size than other viruses of amoeba. The investigation of potential AMPs led to the description of Mimicin, a taxonomically restricted 74 amino acid long protein coded by few mimiviruses. Mimicin contains three smaller predicted AMP sequences within it and has a broad in vitro antimicrobial activity against different bacteria, a yeast and two non-enveloped phages. In contrast, it has no activity against a marseillevirus, a mimivirus or human cell lines. When tested against bacterial endosymbionts co-cultured with Acanthamoeba terricola, Mimicin and its SIM-31 portion were able to control the attenuated Protochlamydia amoebophila but not the highly virulent Parachlamydia acanthamoebae. Based on deposited transcriptomic data, Mimicin is coded by an early gene more active during the",
+    "doi": "10.64898/2026.09.16.751764",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold",
+      "in silico"
+    ],
+    "extra": {
+      "category": "microbiology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.16.751764"
+  },
+  {
+    "kind": "article",
+    "title": "Evaluation of methods for AlphaFold-based integrative modeling",
+    "url": "https://doi.org/10.64898/2026.09.13.751323",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-16",
+    "collected_at": "2026-09-17T23:42:45.837437+00:00",
+    "authors": [
+      "Majila, K.",
+      "Viswanath, S."
+    ],
+    "summary": "Motivation Recent methods enable incorporation of experimental data into AlphaFold for predicting structures consistent with the data. However, the applicability of these methods for integrative modeling remains to be determined. It is unclear how these methods balance the input experimental data with the learned structural priors. Results We assess the performance of state-of-the-art AlphaFold-based integrative modeling methods, including AlphaLink2, Boltz2, and GRASP, on a dataset of 37 complexes based on crosslinking data. We evaluate these methods based on their ability to predict structures that satisfy the input crosslinks. We further assess the robustness of these methods to noise in the crosslinking data. Finally, we probe their ability to predict distinct states using crosslinks from multiple states. Overall, our study highlights the limitations of the AF-based IM methods and points to directions for future improvements. Availability and implementation All scripts used to obtain the predictions and perform the analysis in this study are available at https://github.com/isblab/af_im.",
+    "doi": "10.64898/2026.09.13.751323",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.13.751323"
+  },
+  {
+    "kind": "article",
+    "title": "Martini 3 Coarse-Grained Model of DNA for Heterogeneous Molecular Systems",
+    "url": "https://doi.org/10.64898/2026.09.14.751576",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-16",
+    "collected_at": "2026-09-17T23:42:45.837757+00:00",
+    "authors": [
+      "Dargis, R.",
+      "Arya, G."
+    ],
+    "summary": "DNA often functions in heterogeneous molecular systems containing proteins, lipids, polymers, and other materials. All-atom molecular dynamics simulations can be used to study DNA in these multicomponent systems, but computational cost limits the accessible system sizes and time scales. Coarse-grained models extend these scales, but existing DNA models are generally not designed for interactions with a broad range of other molecular species. To fill this gap, we develop a coarse-grained model of DNA designed for use with the Martini 3 force field. The model was parameterized through an iterative Bayesian optimization workflow, which used a scaled Wasserstein metric to compare distributions of local geometrical features and global structure from coarse-grained simulations against all-atom reference simulations. The optimized model captures key structural and mechanical properties of single- and double-stranded DNA across varying strand lengths and ionic conditions, while retaining compatibility with the broader Martini 3 ecosystem. This compatibility enables DNA to be integrated with a broad range of molecular systems, as we illustrate through simulations of double-stranded DNA boun",
+    "doi": "10.64898/2026.09.14.751576",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.14.751576"
+  },
+  {
+    "kind": "article",
+    "title": "A Turing-Style Test for In-Silico Antibodies: How Sampling Mode Makes WGAN-GP Beat VAE in the Wet Lab",
+    "url": "https://doi.org/10.64898/2026.09.11.750936",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-16",
+    "collected_at": "2026-09-17T23:42:48.002123+00:00",
+    "authors": [
+      "Kummer, A.",
+      "Mahmoudinobar, F.",
+      "Liu, W.",
+      "Davis, J. W.",
+      "Ma, E. J.",
+      "Kumar, S."
+    ],
+    "summary": "Recently, it has become feasible to generate antibodies in silico using AI-based approaches such as deep learning, natural language processing, and diffusion models. This opens the door to computational antibody design as a complement to laboratory-based methods (animal immunization, hybridoma technology, and molecular display) for biologic drug discovery. However, when proposing human antibody sequences, or libraries thereof, it remains essential to determine whether they can be expressed, purified, and biophysically characterized using standardized laboratory assays typically applied early in discovery campaigns. In this work, we devised a Turing imitation game inspired experiment to compare two deep learning methods, Generative Adversarial Networks (GANs) and Variational Autoencoders (VAEs), for generating experimentally viable de novo antibody sequences. Under the sampling protocols tested here, a Wasserstein GAN with gradient penalty produced sequences that were experimentally validated at a markedly higher rate (92/93; 99%) than those from a VAE (2/40; 5%). Importantly, the two sets of experimental candidates were not sampled identically: GAN sequences were drawn unconditiona",
+    "doi": "10.64898/2026.09.11.750936",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "antibody design",
+      "in silico"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.11.750936"
+  },
+  {
+    "kind": "article",
+    "title": "ML4SD: Leveraging Machine Learning and High-Throughput Search Algorithms for an Iterative Growth-Coupled Design Innovation",
+    "url": "https://doi.org/10.64898/2026.09.11.750664",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-16",
+    "collected_at": "2026-09-17T23:42:48.002486+00:00",
+    "authors": [
+      "Gargantilla Becerra, A.",
+      "Nogales Enrique, J."
+    ],
+    "summary": "Optimizing microbial biomanufacturing is required if renewable and waste carbon are to replace petrochemical routes at competitive titers, rates, and yields. Growth-coupled (GC) production supports that goal by linking target synthesis to biomass formation, so product formation is required for growth. Constructing knockout strains yielding GC production from a list of candidate genes is labor and time demanding. This results in few in vivo tested designs, which hampers standard machine-learning methods to learn GC patterns for specific bioprocesses. We therefore developed ML4SD, an active-learning Design-Build-Test-Learn (DBTL) cycle that trains ensembles on genome-scale metabolic model (GEM) scores of knockout designs, sampling the next designs from predicted model performance and error. That cycle generalizes only if the initial library is large and diverse, including suboptimal and non-viable designs; libraries restricted to minimal designs or Pareto-optimal knockouts were found to generate models overfitting. To meet those specific demands a novel strain design algorithm, gcSwarms, was developed and tested for a diverse set of bioprocesses within Pseudomonas putida iJN1462. ML4",
+    "doi": "10.64898/2026.09.11.750664",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.11.750664"
+  },
+  {
+    "kind": "article",
+    "title": "A mechanistic digital twin model for epigenetic therapy optimization in triple-negative breast cancer",
+    "url": "https://doi.org/10.64898/2026.09.11.750942",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-16",
+    "collected_at": "2026-09-17T23:42:54.520970+00:00",
+    "authors": [
+      "Bruno, S.",
+      "Indeglia, A.",
+      "Lichterfeld, S.",
+      "Schade, A. E.",
+      "Cichowski, K.",
+      "Michor, F."
+    ],
+    "summary": "Epigenetic therapies offer a promising approach to cancer treatment by modulating chromatin states that govern tumor cell identity, plasticity and therapeutic response. However, predicting and optimizing the effects of such interventions remains challenging. Here, we developed a digital twin framework that integrates mechanistic models of chromatin regulation, in vitro cell-state and treatment response data, and pharmacokinetics to simulate tumor progression and therapeutic response. We applied this framework to triple-negative breast cancer (TNBC), an aggressive disease in which chromatin dysregulation contributes to tumor progression, and investigated combination treatment with an EZH2 inhibitor promiting chromatin opening and an AKT inhibitor, which together enhance expression of GATA3 and BMF. Parameterized and validated using in vitro treatment response data, the model enables in silico clinical trials of alternative combination regimens and treatment schedules. These simulations identify regimens that achieve comparable therapeutic effects to reference schedules while substantially reducing cumulative drug exposure. We further demonstrated the digitan twin's ability of identi",
+    "doi": "10.64898/2026.09.11.750942",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "cancer biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.11.750942"
+  },
+  {
+    "kind": "article",
+    "title": "Menger_Curvature : a MDAKit implementation to decipher the dynamics, curvatures and flexibilities of polymeric backbones at the residue level",
+    "url": "https://doi.org/10.1101/2025.04.04.647214",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-16",
+    "collected_at": "2026-09-17T23:42:54.524830+00:00",
+    "authors": [
+      "Reboul, E.",
+      "Marien, J.",
+      "Prevost, C.",
+      "Taly, A.",
+      "Sacquin-Mora, S."
+    ],
+    "summary": "Characterizing the dynamics of the backbone of flexible polymers such as Intrinsically Disordered Regions and Proteins (IDRs and IDPs) has proven to be a significant challenge in molecular dynamics (MD) simulations due to their high conformational variability. The widely-used mobility metric Root-Mean-Squared Fluctuations (RMSF) is powerless to provide information for highly flexible systems, as defining a relevant reference structure is often not possible. We previously introduced a new flexibility metric to remedy this gap : the Local Flexibilities (LFs), derived (alongside the Local Curvatures (LCs)) from the Proteic Menger Curvatures (PMCs). Here we present a numba accelerated implementation for any polymer of the calculation of Menger Curvatures as a MDAKit from the widely-used MDAnalysis package. We perform a benchmark with the RMSF and another flexibility metric derived from Proteic Blocks (PBs), the Equivalent Number of PBs (Neq), and show that the PMCs are an order of magnitude faster to compute on a modern CPU chip. We applied all 3 flexibility metrics to a {beta}III-tubulin monomer as an example, as tubulins are known to possess the entire range of proteic elements, from",
+    "doi": "10.1101/2025.04.04.647214",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.1101/2025.04.04.647214"
   },
   {
     "kind": "article",
