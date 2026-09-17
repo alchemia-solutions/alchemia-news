@@ -27977,5 +27977,215 @@
       "journal": "Plant physiology"
     },
     "dedupe_key": "doi:10.1093/plphys/kiag691"
+  },
+  {
+    "kind": "article",
+    "title": "Design and Synthesis of Novel 1,2,3-Triazole Conjugates Featuring Hydroxamic Acid and Sulfonamide Moieties: Exploring Dual Pharmacophores for Enhanced Biological Activity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42751775/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-17T19:14:24.402933+00:00",
+    "authors": [
+      "Dineshkumar Pagar",
+      "Ranjay Shaw",
+      "Hemant Suryavanshi",
+      "Dhanji Rajani",
+      "Sudhakar Patil"
+    ],
+    "summary": "A new series of N-hydroxy-1-(4-(aryl sulfonamido)phenyl)-1H-1,2,3-triazole-4-carboxamide derivatives (8a-j) were synthesized through a concise multistep route integrating three key pharmacophores: the 1,2,3-triazole core, an aryl sulfonamide moiety, and an N-hydroxycarboxamide group. Biological evaluation demonstrated promising antimicrobial potential for several derivatives. Compounds 8f, 8g, and 8i exhibited notable antibacterial activity against both Gram-positive and Gram-negative bacteria, whereas most analogues showed weak antifungal activity. In the antimalarial assay, compound 8d emerged as the most potent derivative (IC50 = 0.84 μg/mL), while compounds 8b, 8e, 8g, and 8h also displayed appreciable activity. Antitubercular evaluation identified compounds 8g and 8i as the most active derivatives against Mycobacterium tuberculosis H37Rv, with MIC values of 62.5 and 50 μg/mL, respectively. The molecular docking study against DNA gyrase (PDB ID: 7FVT) and lanosterol 14α-demethylase (PDB ID: 5V5Z) as relevant antibacterial and antifungal targets, respectively, showed a similar trend of activity. Computational studies, including molecular docking, MM/GBSA, molecular dynamics simulations, and ADME prediction, supported the structural and pharmacokinetic characteristics of the synthesized compounds, with selected derivatives exhibiting favorable interactions with the c-KIT kinase active site and generally acceptable drug-like properties. Overall, these triazole-sulfonamide-N-hydroxycarboxamide hybrids represent promising lead molecules for further structural optimization and biological investigation.",
+    "doi": "10.1111/cbdd.70400",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42751775",
+      "journal": "Chemical biology & drug design"
+    },
+    "dedupe_key": "doi:10.1111/cbdd.70400"
+  },
+  {
+    "kind": "article",
+    "title": "MiLaSol: modeling protein solubility by mixing up multiple protein language models.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42751666/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-17T19:14:24.403512+00:00",
+    "authors": [
+      "Weiwei Lou",
+      "Mert Erden",
+      "Lenore Cowen"
+    ],
+    "summary": "Protein solubility is a critical property that significantly impacts therapeutic efficacy and protein reengineering applications. Recent advances in machine learning and deep learning techniques provide unprecedented opportunities to develop predictive models for solubility, enabling more efficient protein design and optimization. This work is motivated by the potential of leveraging deep learning to address the solubility prediction challenge and to accelerate protein engineering workflows. Leveraging and combining multiple protein language model representations, our MiLaSol model attains 81% accuracy, outperforming prior methods, with the highest Matthews Correlation Coefficient (MCC) score of 0.63 demonstrating balanced performance across both soluble and insoluble proteins. Through simulated annealing optimization coupled with the Raygun model, we also present a computational method to reengineer insoluble protein variants into soluble forms, with predictions confirmed by multiple independent solubility prediction methods. Our results demonstrate the effectiveness of combining machine learning-based solubility prediction with generative optimization for protein engineering. MiLaSol is available at https://github.com/weiweiloutufts/milasolAn archived version of the code at the time of submission can be found at https://doi.org/10.5281/zenodo.21495202.",
+    "doi": "10.1093/bioadv/vbag233",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein engineering",
+      "protein design",
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42751666",
+      "journal": "Bioinformatics advances"
+    },
+    "dedupe_key": "doi:10.1093/bioadv/vbag233"
+  },
+  {
+    "kind": "article",
+    "title": "Flavonoids: biological activities, nutritional and immunological aspects, therapeutic potential, food applications, and human health benefits-A comprehensive review.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42751505/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-17T19:14:24.404196+00:00",
+    "authors": [
+      "Mohamed T El-Saadony",
+      "Ahmed M Saad",
+      "Mohamed A Fahmy",
+      "Dina Mostafa Mohammed",
+      "Dina Khodeer",
+      "Esmael M Alyami",
+      "Samar Sami Alkafaas",
+      "Mthokozisi Dladla",
+      "Soumya Ghosh",
+      "Mohammad A A Al-Najjar",
+      "Synan F AbuQamar",
+      "Khaled A El-Tarabily"
+    ],
+    "summary": "The global burden of infectious and non-communicable diseases presents a critical challenge, highlighting the urgent need for novel, safe, and effective therapies. Bioactive compounds from medicinal plants, especially flavonoids, offer a promising resource for drug discovery due to their diverse and potent pharmacological effects documented in preclinical studies. This comprehensive review summarizes current knowledge of flavonoids, including their classification into 14 main groups and their production via biosynthesis, chemical synthesis, modification, and extraction. While structural modification remains a key aspect of drug development, biosynthesis is increasingly seen as a potential transformative strategy for sustainable large-scale production. However, it requires a deeper understanding of metabolic pathways and optimization of synthetic methods. Aside from production challenges, a major translational hurdle is the inherently low bioavailability of many flavonoids. This review critically examines innovative solutions under investigation, such as advanced nanoparticles and colloidal drug delivery systems designed to address challenges in solubility, stability, and absorption. It also summarizes the current understanding of the mechanisms of action underlying their broad biological activities, primarily as evidenced by preclinical models, including nutritional, immunological, and disease-specific effects, and discusses potential drug interactions warranting clinical attention. Lastly, the review highlights key research gaps, including the need for more robust in vivo validation, standardized extracts to improve reproducibility, and well-designed clinical trials to verify efficacy in humans. Future directions include leveraging metabolic engineering and artificial intelligence to optimize biosynthesis, as well as targeted clinical studies of advanced delivery systems. By integrating these approaches, this review aims to establish a framework for ongoing research on flavonoids to inform future translational efforts that may eventually support their development as clinical therapies.",
+    "doi": "10.3389/fnut.2026.1801674",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42751505",
+      "journal": "Frontiers in nutrition"
+    },
+    "dedupe_key": "doi:10.3389/fnut.2026.1801674"
+  },
+  {
+    "kind": "article",
+    "title": "The substrate envelope strategy: Structural basis for resistance mitigation in antiviral drug design.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42751188/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-17T19:14:24.404700+00:00",
+    "authors": [
+      "Qiaojie Xu",
+      "Jiwei Zhang",
+      "Yanxu Hou",
+      "Zhou Tan",
+      "Heng Gao",
+      "Edeildo F Silva-Júnior",
+      "Shenghua Gao",
+      "Peng Zhan",
+      "Xinyong Liu"
+    ],
+    "summary": "Drug resistance remains a major hurdle in antiviral drug development. This review highlights the \"substrate envelope hypothesis\", a structure-based drug design (SBDD) paradigm that constrains the spatial boundaries and binding footprint of inhibitors within the conserved active site volume defined by natural viral substrates. By restricting inhibitor interactions to evolutionarily conserved residues, this approach ensures that mutations abrogating drug binding simultaneously impair natural substrate processing. This imposes an insurmountable fitness cost on the virus, thereby mitigating resistance. Through the analysis of viral enzyme-substrate co-crystal structures, we systematically review the application of this framework in human immunodeficiency.virus (HIV) protease, hepatitis C virus (HCV) NS3/4A protease, influenza virus (IFV) neuraminidase (NA), and severe acute respiratory Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2) main protease, illustrating how substrate envelope-guided design achieves high potency while circumventing resistance. Additionally, we extend this strategy from traditional protease targets to non-protease enzymes. By integrating molecular dynamics and structural biology, this framework offers a rational approach for developing next-generation antivirals.",
+    "doi": "10.1016/j.pscia.2026.100147",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "molecular dynamics",
+      "structure-based drug design"
+    ],
+    "extra": {
+      "pmid": "42751188",
+      "journal": "Pharmaceutical science advances"
+    },
+    "dedupe_key": "doi:10.1016/j.pscia.2026.100147"
+  },
+  {
+    "kind": "article",
+    "title": "Human cardiovascular organoids: Biomedical applications and ethical challenges.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42751175/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-17T19:14:24.405249+00:00",
+    "authors": [
+      "Koushik Sen",
+      "Suravi Majumder",
+      "Dragana Stanisic",
+      "Avisek Majumder"
+    ],
+    "summary": "Cardiovascular disease (CVD) remains the leading cause of global mortality, yet traditional in vitro and animal models often fail to recapitulate the integrated structural, cellular, and functional complexity of the human heart. Recent advances in human pluripotent stem cell technology, developmental bioengineering, and microphysiological systems have enabled the development of diverse three-dimensional cardiac tissue models, including self-organizing cardiovascular organoids and engineered cardiac platforms, three-dimensional constructs that partially recapitulate key myocardial features. These platforms facilitate mechanistic and disease-relevant modelling of congenital and acquired cardiac disorders, allow interrogation of arrhythmogenic mechanisms, and reproduce pathophysiological processes such as ischemia-reperfusion injury, fibrotic remodelling, and inflammatory cardiomyopathy with increasing physiological relevance. In translational contexts, these models are emerging as valuable tools in drug discovery pipelines, enabling high-throughput cardiotoxicity assessment and supporting regenerative medicine strategies, thereby bridging mechanistic research with preclinical validation. Integration with cutting-edge modalities-such as single-cell and spatial multi-omics, CRISPR-based genome editing, synthetic biology circuits, and artificial intelligence-driven phenomics further enhances their maturation and predictive accuracy, although their clinical applicability remains under active investigation. Despite these advances, challenges including batch-to-batch variability, limited vascularization, metabolic immaturity, and incomplete immune system incorporation continue to constrain physiological fidelity. Additionally, ethical and regulatory considerations spanning donor consent, genetic data privacy, biobanking governance, and model-specific translational and societal implications remain critical for responsible innovation. This review presents a comprehensive synthesis of current cardiovascular organoid research, highlights emerging biomedical applications, and provides a critical perspective on the ethical frameworks essential for advancing the field responsibly.",
+    "doi": "10.1016/j.ahjo.2026.100882",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42751175",
+      "journal": "American heart journal plus : cardiology research and practice"
+    },
+    "dedupe_key": "doi:10.1016/j.ahjo.2026.100882"
+  },
+  {
+    "kind": "article",
+    "title": "Calcitonin gene-related peptide promotes mast cell-mediated neuroimmune inflammation through the CALCRL/RAMP1-JAK3-STAT1 axis in rosacea.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42751103/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-17T19:14:24.405926+00:00",
+    "authors": [
+      "Xiaojin Li",
+      "Huiping Fan",
+      "Rui Sun",
+      "Qingsong Ma",
+      "Jiayun Liu",
+      "Chengqi Liu",
+      "Dong Zhang",
+      "Weiyuan Ma"
+    ],
+    "summary": "Rosacea is a chronic inflammatory skin disorder characterized by neurovascular instability and dysregulated innate immunity. Although mast-cell activation is increasingly recognized as a central pathogenic feature, the neuroimmune mechanisms linking neuropeptide signaling to mast cell-mediated inflammation remain incompletely defined. This study investigated whether calcitonin gene-related peptide (CGRP) promotes mast cell-mediated inflammation in rosacea and explored the underlying signaling mechanism. Bioinformatic analyses of the GSE65914 dataset were performed to characterize rosacea-associated molecular pathways and mast-cell signatures. Serum and skin samples from patients with rosacea and healthy controls were analyzed by ELISA, histological staining, and immunofluorescence. In vitro, CGRP-induced mast-cell activation and CALCRL/RAMP1-JAK3-STAT1 signaling were investigated in LUVA cells using RT-qPCR, western blotting, immunofluorescence, degranulation assays, ELISA, and pharmacological approaches, while the potential CALCRL-JAK3 association was assessed by molecular docking and reciprocal co-immunoprecipitation. In vivo, ACK2-mediated mast-cell depletion and pharmacological blockade of the CGRP receptor or JAK3 were evaluated in CGRP-aggravated LL37-induced rosacea-like mouse models. Rosacea lesions showed enrichment of immune-inflammatory pathways, JAK-STAT signaling, and mast cell-associated signatures. Serum CGRP levels were elevated in patients with rosacea and positively correlated with flushing and erythema severity. Lesional skin showed increased CGRP expression and enhanced localization of CALCRL, RAMP1, phosphorylated JAK3, and phosphorylated STAT1 in dermal CD117+ mast cells. In LUVA mast cells, CGRP upregulated CALCRL/RAMP1 expression, activated JAK3-STAT1 signaling, and promoted degranulation, histamine release, and inflammatory mediator production. Molecular docking and reciprocal co-immunoprecipitation supported a potential association between CALCRL and JAK3. Rimegepant or ritlecitinib attenuated CGRP-induced JAK3-STAT1 activation and mast-cell responses. Modulation of the canonical Gαs-cAMP-PKA pathway did not abolish CGRP-induced JAK3-STAT1 phosphorylation, indicating that this response is not primarily mediated by the cAMP-PKA cascade. In vivo, mast-cell lineage depletion attenuated CGRP-driven exacerbation of LL37-induced rosacea-like inflammation, while rimegepant or ritlecitinib alleviated inflammatory changes and reduced JAK3-STAT1 activation and mast-cell responses. These findings identify a CGRP-associated neuroimmune pathway in rosacea in which CALCRL/RAMP1-linked JAK3-STAT1 signaling promotes mast cell-mediated inflammatory amplification. Targeting the CGRP-CALCRL/RAMP1-JAK3-STAT1 axis may provide a mechanism-based therapeutic strategy for neurovascular-dominant or treatment-refractory rosacea.",
+    "doi": "10.3389/fimmu.2026.1930591",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42751103",
+      "journal": "Frontiers in immunology"
+    },
+    "dedupe_key": "doi:10.3389/fimmu.2026.1930591"
+  },
+  {
+    "kind": "article",
+    "title": "Therapeutic Effects and Mechanisms of Fucoidan on Dyslipidemia in Obese Mice.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42750889/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-17T19:14:24.406495+00:00",
+    "authors": [
+      "Lizhi Peng",
+      "Ruiming Li",
+      "Ruting Zheng",
+      "Ziqiong Liao",
+      "Daohuang Luo",
+      "Yuting Zeng",
+      "Jiaqi Liu",
+      "Qiaoling Kong",
+      "Jicai Lai"
+    ],
+    "summary": "Dyslipidemia, characterized by abnormal levels of serum lipids such as cholesterol and triglycerides, is a significant risk factor for metabolic disorders. Fucoidan, a marine sulfated polysaccharide, has shown anti-inflammatory and lipid-modulating properties, but its mechanism of action in high-fat diet (HFD)-induced dyslipidemia remains unclear. In this study, treatment with fucoidan (50 mg/kg/day) did not alter HFD-driven weight gain or food intake, but significantly decreased serum total cholesterol (TC). Although serum high-density lipoprotein cholesterol (HDL-C) was also decreased, this change may reflect normalization of HFD-induced cholesterol homeostasis in mice. Moreover, fucoidan treatment reduced hepatic triglyceride and TC, accompanied by decreasing lipid droplets in the liver, indicating fucoidan is critical for improving HFD-induced hepatic lipid accumulation. RNA-seq analysis revealed that fucoidan reverses HFD-induced downregulation of Defa24, Slc34a1, and Nnt, and may contribute to maintain hepatic metabolic homeostasis. Network pharmacology identified TNFα as a candidate key target, and molecular docking suggested a potential interaction between fucoidan and TNFα. Furthermore, fucoidan suppressed HFD-driven upregulation of TNFα and its downstream target Pla2g2f in vivo and attenuated TNFα-induced Pla2g2f expression in RAW264.7 cells. Collectively, these findings suggest that the protective effects of fucoidan against HFD-induced dyslipidemia are associated with regulation of cholesterol metabolism and suppression of TNFα-Pla2g2f-associated inflammatory signaling, supporting its potential application in dyslipidemia management.",
+    "doi": "10.1002/fsn3.72159",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42750889",
+      "journal": "Food science & nutrition"
+    },
+    "dedupe_key": "doi:10.1002/fsn3.72159"
   }
 ]
