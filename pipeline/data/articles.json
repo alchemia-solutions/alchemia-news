@@ -434,6 +434,34 @@
   },
   {
     "kind": "article",
+    "title": "A bispecific antibody targeting a membrane-proximal ASGPR1 region promotes TNF-α recruitment and uptake",
+    "url": "https://doi.org/10.64898/2026.09.11.750848",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-16",
+    "collected_at": "2026-09-16T23:51:19.846258+00:00",
+    "authors": [
+      "Song, X.",
+      "Li, S.",
+      "HaShan, A.",
+      "Du, J.",
+      "Sun, Y.",
+      "Jiang, X. T.",
+      "Liu, X."
+    ],
+    "summary": "Abstract Recruiting an endocytic receptor through an antibody offers a route to redirect extracellular cytokines into cells. Here, we developed BiAb J31, an IgG like bispecific antibody linking TNF recognition to a membrane-proximal region of asialoglycoprotein receptor 1 (ASGPR1). J31 was isolated by immunization with an engineered ASGPR1 extracellular domain followed by screening against wild-type ASGPR1 and HepG2 cells. Its variable domains were combined with unmodified adalimumab variable regions using knobs into holes and CrossMab engineering, with L234A/L235A/P329G Fc substitutions. BiAb J31 retained HepG2 binding and engaged both antigens in bridging assays. Sequential binding experiments demonstrated recruitment of TNF to BiAb J31 treated cells. Live cell imaging showed uptake of fluorescent antibody-containing complexes and overlap with LysoTracker-positive compartments. In HepG2 cultures containing BiAb J31, TNF and a PE conjugated detection antibody, supernatant PE fluorescence fell by approximately 60% over 90 minutes. Truncation and synthetic-peptide assays localized J31 recognition to ASGPR1 residues 62~100, outside the carbohydrate-recognition domain, and AlphaFold 3",
+    "doi": "10.64898/2026.09.11.750848",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "immunology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.11.750848"
+  },
+  {
+    "kind": "article",
     "title": "Characterization of Outer Membrane β-barrel Proteins of Pasteurella multocida for Multi-Epitope Vaccine Design against Human Pasteurellosis",
     "url": "https://doi.org/10.64898/2026.05.28.728361",
     "source": "bioRxiv",
@@ -26320,5 +26348,186 @@
       "journal": "Frontiers in pharmacology"
     },
     "dedupe_key": "doi:10.3389/fphar.2026.1843817"
+  },
+  {
+    "kind": "article",
+    "title": "Mechanistic inhibition of herpes simplex virus-1 UL21 immune-evasion function by natural-product scaffolds: A multi-tier docking, dynamics, and energetic profiling approach.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42748207/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-16T23:48:06.740910+00:00",
+    "authors": [
+      "Muhammad Suleman",
+      "Imtiaz Ali",
+      "Abrar Mohammad Sayaf",
+      "Fakhrul Hassan",
+      "Usama Ilahi",
+      "Mohammed Alissa",
+      "Sergio Crovella",
+      "Abdullah A Shaito",
+      "Hadi M Yassine"
+    ],
+    "summary": "Alpha-herpesviruses, particularly herpes simplex virus type 1 (HSV-1), establish lifelong latency and employ multiple strategies to evade host immunity, thereby sustaining infection. A key mediator of this immune evasion is the viral tegument protein, unique long 21 (UL21), which disrupts the host cyclic GMP-AMP synthase-stimulator of interferon genes (cGAS-STING) signaling pathway and suppresses antiviral type-I interferon responses, facilitating viral replication. Despite its important role in HSV-1 pathogenesis, UL21 remains an underexplored therapeutic target. This study aimed to identify natural-product scaffolds capable of targeting the UL21 N-terminal domain and potentially interfering with UL21-mediated immune evasion. Using comprehensive virtual screening of East and South African natural-product libraries, we employed a multi-tier computational workflow comprising molecular docking, molecular dynamics (MD) simulations, and binding free-energy calculations. Four compounds, Saundersioside C, kaempferol 3,7,4'-tri-O-β-glucoside, soyasaponin II, and OSW‑1, emerged as promising UL21-binding candidates with favorable docking scores and stable interaction profiles. Docking scores for saundersioside C, kaempferol 3,7,4'-tri-O-β-glucoside, soyasaponin II, and OSW-1 were -9.05, -8.94 kcal/mol, -7.45 kcal/mol, and -7.30 kcal/mol, respectively. Molecular dynamics (MD) trajectory analyses demonstrated stable conformational behavior as indicated by consistent root mean square deviation (RMSD), limited structural fluctuations, and persistent structural compactness. Total binding free-energy calculations further identified kaempferol 3,7,4'-tri-O-β-glucoside (-40.9 kcal/mol MM/GBSA; -33.9 kcal/mol MM/PBSA) as the compound with the most favorable predicted binding affinity toward UL21. Collectively, these findings identify natural-product scaffolds with high potential to modulate UL21-mediated immune suppression, with kaempferol 3,7,4'-tri-O-β-glucoside emerging as the most promising candidate. The findings provide a foundation for experimental validation and future antiviral drug development targeting HSV-1.",
+    "doi": "10.1371/journal.pone.0355499",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42748207",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0355499"
+  },
+  {
+    "kind": "article",
+    "title": "Chitosan activates a sequential Ca 2+ -ROS-NO-jasmonate signaling cascade governing withanolide accumulation in Withania somnifera.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42748064/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-16T23:48:06.741669+00:00",
+    "authors": [
+      "Shazia Perveen",
+      "Imran Haider",
+      "Aqib Mahmood",
+      "Sana Ur Rehman",
+      "Muhammad Yousaf Nadeem",
+      "Azatullah Zaheer",
+      "Rashed N Herqash",
+      "Omar M Noman",
+      "Abdullah R Alanzi"
+    ],
+    "summary": "Chitosan promotes withanolide accumulation in W. somnifera; however, the temporal organization of the underlying signaling network remains unresolved. We examined whether calcium (Ca2⁺), reactive oxygen species (ROS), nitric oxide (NO), and jasmone form an ordered cascade linking elicitor perception to specialized metabolism. Sixty-day-old greenhouse-grown plants were treated with 100 mg L-1 foliar chitosan alone or after pretreatment with LaCl₃, diphenyleneiodonium, cPTIO, or diethyldithiocarbamate, with inhibitor-only controls. Cytosolic Ca2+ -dependent fluorescence, NADPH oxidase activity, hydrogen peroxide, superoxide, NO, jasmone acid (JA), and jasmonoyl-isoleucine (JA-Ile) were monitored from 0 minutes to 7 d. Chitosan induced a temporally ordered response: Ca2+ fluorescence increased 3.01-fold within 15 minutes and returned to baseline by 3 hours; NADPH oxidase activity and hydrogen peroxide peaked at 3 hours; NO peaked at 6 hours; and JA and JA-Ile peaked at 12 hours. LaCl₃ suppressed all downstream responses, diphenyleneiodonium largely eliminated the oxidative burst, cPTIO abolished NO accumulation without affecting ROS production, and diethyldithiocarbamate selectively suppressed jasmone accumulation. These interventions support the sequence Ca2+→ NADPH oxidase-dependent ROS → NO → jasmone. Total targeted withanolides increased by 84% at day 7, including a 113.5% increase in withaferin A, whereas pathway inhibitors reduced this gain by 36%-49%. Enhanced antioxidant activity and improved glutathione and ascorbate redox states occurred without appreciable changes in lipid peroxidation, electrolyte leakage, photosynthesis, or biomass, indicating regulated redox signaling rather than injury. Untargeted LC-MS/MS revealed enrichment of steroid, terpenoid-backbone, and α-linolenic-acid metabolism and a 61.7% increase in the withanolide-precursor pool. Early signaling integrals predicted day-7 withanolide accumulation (r = 0.88-0.92), while structural equation modeling identified jasmone as the strongest direct predictor. Computational analyzes prioritized withaferin A and withanolide A as candidate IκB kinase β ligands, although biochemical validation is required. These findings show that signal timing organizes chitosan-induced withanolide biosynthesis in W. somnifera, with signaling dynamics predicting metabolic output. This pharmacological asymmetry provides strong directional evidence for pathway ordering, but it does not constitute definitive molecular proof of causality because inhibitor specificity is incomplete and no genetic or rescue experiment was performed.",
+    "doi": "10.1080/15592324.2026.2733235",
+    "company_slug": null,
+    "keywords_matched": [],
+    "extra": {
+      "pmid": "42748064",
+      "journal": "Plant signaling & behavior"
+    },
+    "dedupe_key": "doi:10.1080/15592324.2026.2733235"
+  },
+  {
+    "kind": "article",
+    "title": "Integrating novel network pharmacology and experimental validation to study the mechanism of Wutou decoction against rheumatoid arthritis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42748055/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-16T23:48:06.742202+00:00",
+    "authors": [
+      "Bojie Chen",
+      "Fuqiang Wang",
+      "Futao Li",
+      "Jun Xiao",
+      "Xiaofeng Li"
+    ],
+    "summary": "Wutou decoction (WTD) is a traditional remedy in Chinese medicine for rheumatoid arthritis (RA). However, its active ingredients are complex, and how it counteracts RA is still not clear. The objective of this research was to investigate the key components and targets of WTD action. RA-related genes were analyzed using the GSE55235 dataset. The active components of WTD were analyzed using online databases. Component-target-pathology (CTP) networks were built using the Cytoscape software. The functions and pathways of the key targets were analyzed using GO and KEGG. The component-target interaction was assessed by molecular docking. Moreover, the impact of WTD on RA progression and its mechanism were validated using cell and animal experiments. The results showed that 1361 genes were related to RA, and they were enriched in 2035 biological processes and 97 signaling pathways. The five herbs of WTD had 221 common targets, and each herb had numerous components. A total of 66297 interactions were found among 440 active ingredients and 2638 targets within the WTD in the CTP network. Next, 114 core functional component groups were selected, and the types and quantities of target-enriched signaling pathways they covered were greater than those of RA-related genes alone. In vivo, WTD attenuated RA-induced arthritis and bone destruction. In vitro, benzoic acid, quercetin, apigenin, and decanoic acid inhibited the inflammatory response of macrophages by inactivating the PI3K/ATK and MAPK pathways. In conclusion, WTD exerts a therapeutic effect on RA through multi-component and multi-target, providing novel methods to study the mechanism of WTD.",
+    "doi": "10.1080/08916934.2026.2728336",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42748055",
+      "journal": "Autoimmunity"
+    },
+    "dedupe_key": "doi:10.1080/08916934.2026.2728336"
+  },
+  {
+    "kind": "article",
+    "title": "Functional Annotation Identifies 3-Oxoacyl Synthase III as a Druggable Target in Nocardia asteroides FDAARGOS1485: A Multi-Tier Structure-Guided Computational Discovery of Marine-Derived Therapeutic Leads.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42747784/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-16T23:48:06.742747+00:00",
+    "authors": [
+      "Maharaja Muthuvairam Subbulakshmi",
+      "Manikandan Jayaraman",
+      "Prabhu Dhamodharan",
+      "Jeyaraman Jeyakanthan"
+    ],
+    "summary": "Nocardiosis is a global life-threatening disease that predominantly affects immunodeficient populations. This disease is caused by the nosocomial pathogen Nocardia asteroides. Existing therapeutics offer several limitations and challenges, highlighting the need for novel druggable targets. The pathogenic strain FDAARGOS1485 contains 6,521 proteins and has a higher completeness of 98%, as determined by CheckM analysis. Among these proteins, 863 (13.20%) hypothetical proteins (HPs) were designated as targets. The functional annotation pipeline identified 30 (4.40%) HPs, classified into 24 enzymes (80%), 2 transporters (6.66%), 2 binding proteins (6.66%), and 2 proteins involved in cell regulatory processes (6.66%). Metabolic pathway analysis revealed the functionally annotated 3-oxoacyl-synthase III protein (WP_223513777.1) as a promising target. The structure-based virtual screening approach identified three potential MNPs (CMNPD22130, CMNPD23347, and SWMDRR052) with favourable docking scores ranging from - 8.23 to - 10.05 kcal/mol and post-docking binding energy values between - 62.42 and - 72.91 kcal/mol. Remarkably, none of the candidates violated Lipinski's rule (Ro5), and all exhibited satisfactory pharmacokinetic profiles and favourable DFT scores. Molecular dynamics and essential dynamics confirmed the stability of the MNP-bound 3-oxoacyl-synthase III complexes. Furthermore, by utilizing 40 diverse computational resources, the present study proposes potential MNPs against nocardiosis and warrants experimental validations to explore their therapeutic potential.",
+    "doi": "10.1007/s12010-026-05921-5",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42747784",
+      "journal": "Applied biochemistry and biotechnology"
+    },
+    "dedupe_key": "doi:10.1007/s12010-026-05921-5"
+  },
+  {
+    "kind": "article",
+    "title": "Structure-guided identification of histone deacetylase 11 inhibitors for targeted chemotherapy through long-timescale molecular dynamics simulation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42747587/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-16T23:48:06.743349+00:00",
+    "authors": [
+      "Koustav Maiti",
+      "Deotima Chakraborty",
+      "Chandra Sekar Ponnusamy",
+      "Heshine Gnanasekar",
+      "Nevedha Ravindran",
+      "Bhavani Sridharan",
+      "Mahesh Velusamy"
+    ],
+    "summary": "Histone deacetylase 11 (HDAC11), the sole member of class IV histone deacetylases, is an emerging epigenetic target in cancer therapy. In this study, an integrated computational approach involving ADMET screening, molecular docking, and molecular dynamics simulations was employed to identify potential HDAC11 inhibitors from 35 known HDAC inhibitors. Based on combined docking and pharmacokinetic analyses, five compounds were shortlisted for detailed evaluation. Mocetinostat exhibited the highest binding affinity toward HDAC11 (-8.70 kcal/mol) with acceptable pharmacokinetic properties (LogP: 2.25; TPSA: 99.11 Å2), while Belinostat showed the safest toxicity profile (LD50: 6000 mg/kg; Class 6). Resminostat also demonstrated favorable drug-likeness with moderate toxicity (LD50: 957 mg/kg; Class 4). Comparative MD analyses over 500 ns revealed high structural stability for the Nanatinostat-HDAC11 and Resminostat-HDAC11 complexes by lower RMSD, reduced residue fluctuations, and more stable hydrogen bond interactions. These findings highlight promising HDAC11 inhibitors for further experimental validation in anticancer drug development. The HDAC11 protein structure was prepared and optimized along with ligand structures prior to docking. Pharmacokinetic properties and drug-likeness of all 35 selected HDAC inhibitors were predicted using the SwissADME web server, and toxicity profiles were assessed using the Protox-II server. Molecular docking was performed using PyRx with the AutoDock Vina scoring function. Protein-ligand interactions were analyzed using PyMOL and Discovery Studio visualizers. Molecular dynamics simulations were conducted using GROMACS with the CHARMM27 force field and TIP3P water model. A total of 3.5 µs of molecular dynamics simulations were performed, including a 500 ns production run and triplicate 100 ns validation runs for each complex. MD trajectory analyses, including RMSD, RMSF, radius of gyration, solvent-accessible surface area, hydrogen bond analysis, and kernel density estimation, were used to evaluate structural stability and interaction dynamics.",
+    "doi": "10.1007/s00894-026-06893-3",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics",
+      "drug-likeness"
+    ],
+    "extra": {
+      "pmid": "42747587",
+      "journal": "Journal of molecular modeling"
+    },
+    "dedupe_key": "doi:10.1007/s00894-026-06893-3"
+  },
+  {
+    "kind": "article",
+    "title": "From virtual screening to cell-based assays: structure-guided identification of EGFR-targeting perimidine derivatives with anticancer activity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42747545/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-16T23:48:06.743934+00:00",
+    "authors": [
+      "Meera Gopinadh",
+      "Sreehari A P",
+      "Sunish K S",
+      "Mohammed Ashif",
+      "Unnikrishnan Sivan",
+      "Sobhi Daniel"
+    ],
+    "summary": "Breast cancer remains a significant health issue based on its increasing incidence, multidrug resistance, and associated increased mortality rate. The overexpression of epidermal growth factor receptor (EGFR) has been significantly correlated with the pathogenesis and aggressiveness of various subtypes of breast cancer. In this study, we explored a series of perimidine-derived small molecules as potential EGFR-targeting candidates using a structure-guided approach. A virtual library of 201 derivatives of perimidine was built and screened by molecular docking against four EGFR isoforms (PDB IDs: 4HJO, 1M17, 4I23, and 5UGB) with the Schrödinger Suite. Out of these, two lead candidates, Compound 101 and Compound 201, exhibited better binding affinity and good interaction profiles. Molecular dynamics (MD) simulations were also carried out to determine the conformational stability of the lead compounds at the EGFR binding site, compared with their respective co-crystallized standards. Compound 201 consistently ranked among the top predicted binders across all four target structures (4HJO, 1M17, 4I23, 5UGB), and cross-target rank correlation analysis supported target-consistent binding behavior for selected compounds. ADMET profiling by Swiss ADME and ADMETlab 3.0 indicated good pharmacokinetic and toxicity parameters evidencing their drug-likeness along with some pharmacokinetic parameters which warrant further optimization. The chosen compounds were synthesized and structurally elucidated, and theoretical validation was established by DFT analysis. Following in vitro cytotoxicity evaluation by MTT assay on MCF-7 breast cancer cells along with an EGFR-relevant triple-negative breast cancer (TNBC) cell line, differential and considerable cytotoxicity was found. Overall, these results indicate that perimidine-based molecules, particularly Compound 101 and Compound 201, are promising compounds towards the development as EGFR-targeting anticancer drugs; however, further biochemical and cellular target-validation studies are required to confirm direct EGFR inhibition and their therapeutic potential.",
+    "doi": "10.1007/s00210-026-05836-2",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics",
+      "drug-likeness"
+    ],
+    "extra": {
+      "pmid": "42747545",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s00210-026-05836-2"
   }
 ]
