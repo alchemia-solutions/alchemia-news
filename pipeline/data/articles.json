@@ -459,6 +459,271 @@
   },
   {
     "kind": "article",
+    "title": "Physical priors improve performance of structure-based binding affinity models",
+    "url": "https://doi.org/10.64898/2026.09.11.750982",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-18",
+    "collected_at": "2026-09-18T23:35:11.803929+00:00",
+    "authors": [
+      "Kaminow, B.",
+      "Payne, A. M.",
+      "MacDermott-Opeskin, H. I.",
+      "Chodera, J. D.",
+      "Singh, S."
+    ],
+    "summary": "Structure-based drug discovery is a widely used paradigm for the rational design of novel small molecule therapeutics. However, the benefits conferred by the use of structural information has seen limited adoption in machine learning, where ligand-only (\"2D\") models are still the industry standard for molecular property or binding affinity prediction. Structure-based (\"3D\") ML models for binding-affinity prediction promise to present a clear advantage, but have not yet overtaken existing 2D models. Here, we show that physics-based priors can improve predictive performance of structure-based models by comparing different model architectures with varying physical priors on several prediction tasks. We present the Modular Training and Evaluation of Neural Networks (mtenn) package, where we decompose affinity prediction into separate steps of embedding structure into learned representations and combining those embeddings into a predicted binding affinity. We consider both E(3)-invariant and E(3)-equivariant architectures to determine the importance of encoding roto-translational inductive biases, as well as different methods for combining learned embeddings. By first optimizing several",
+    "doi": "10.64898/2026.09.11.750982",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.11.750982"
+  },
+  {
+    "kind": "article",
+    "title": "Substrate recognition and ion coupling mechanism of the human VIAAT",
+    "url": "https://doi.org/10.64898/2026.09.12.751155",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-18",
+    "collected_at": "2026-09-18T23:35:11.805129+00:00",
+    "authors": [
+      "Wei, Y.",
+      "Ma, K.",
+      "Hao, K.",
+      "Bai, Q.",
+      "Zhao, J.",
+      "Xie, X.",
+      "Li, R.",
+      "Chen, Q.",
+      "Li, Y.",
+      "Zhang, H.",
+      "Cao, Z.",
+      "Hu, T.",
+      "Zhao, Y."
+    ],
+    "summary": "Inhibitory neurotransmission, essential for neural circuit homeostasis and proper neurological function, depends on the efficient sequestration of {gamma}-aminobutyric acid (GABA) and glycine into synaptic vesicles. This critical process is mediated exclusively by the vesicular inhibitory amino acid transporter (VIAAT). Despite extensive biochemical and physiological investigation, the molecular mechanism governing VIAAT-mediated transport has remained incompletely understood. Here, we determined structures of human VIAAT in multiple functional states, including apo, GABA-bound, and glycine-bound states, as well as apo state in chloride-free condition. VIAAT adopts a classical LeuT-fold and we elucidated how its large, electronegative binding pocket accommodates both GABA and glycine. Moreover, we resolved two previously unidentified chloride-binding sites. Through integrative molecular dynamics simulations and functional mutagenesis, our results support roles for chloride and the conserved residue E213 in substrate binding and proton-coupled transport. Together, our findings establish a structural framework for VIAAT-mediated inhibitory neurotransmitter transport that illuminates ",
+    "doi": "10.64898/2026.09.12.751155",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "neuroscience"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.12.751155"
+  },
+  {
+    "kind": "article",
+    "title": "Ara h 2 and FcϵRIα binding elicit state-dependent allostery in IgE",
+    "url": "https://doi.org/10.64898/2026.09.11.750994",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-18",
+    "collected_at": "2026-09-18T23:35:11.805514+00:00",
+    "authors": [
+      "Mugundhan, M.",
+      "Jia, Q.",
+      "Raghuvamsi, P. V.",
+      "Loh, S. N.",
+      "Ong, A. G. M.",
+      "Subramani, K.",
+      "Somboon, K.",
+      "Samsudin, F.",
+      "Yao, Z.-P.",
+      "Sobota, R. M.",
+      "Gan, S. K.-E.",
+      "Bond, P. J.",
+      "Ser, Z.",
+      "Su, C. T.-T."
+    ],
+    "summary": "Background: Peanuts are among the most prevalent food allergens responsible for anaphylaxis, particularly in children. Allergic responses may be mitigated by disrupting molecular interactions between immunoglobulin-E (IgE) and its binding partners: peanut allergen (Ara h 2) and IgE receptors (Fc{epsilon}RI). However, the structural dynamics of IgE upon engaging these factors are not yet fully elucidated. Objective: To characterize how Ara h 2 and/or Fc{epsilon}RI binding influence IgE flexibility and its interdomain communications. Methods: The structural dynamics of full-length IgE in various unbound and bound states were examined by combining molecular dynamics (MD) simulations with cross linking mass spectrometry (XLMS). Causal relationship between IgE domains were characterized to infer allosteric communication pathways, which were assessed through hydrogen-deuterium exchange mass spectrometry (HDX-MS). Results: Non canonical bent IgE conformations were identified. We demonstrate that Fc{epsilon}RI binding immobilizes IgE predominantly by stabilizing and restricting Fc flexibility, whereas Ara h 2 binding induces specific conformational changes within the Fc{epsilon}RI-binding ",
+    "doi": "10.64898/2026.09.11.750994",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "immunology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.11.750994"
+  },
+  {
+    "kind": "article",
+    "title": "Latent generative search unlocks de novo design of untapped biomolecular interactions at scale",
+    "url": "https://doi.org/10.64898/2026.09.12.751118",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-18",
+    "collected_at": "2026-09-18T23:35:11.807103+00:00",
+    "authors": [
+      "Didi, K.",
+      "Reidenbach, D.",
+      "Penner, M.",
+      "Ravichandran, S.",
+      "Case, M.",
+      "Nichols, M.",
+      "Swanson, E.",
+      "Reis, A.",
+      "Prescott, M.",
+      "Qian, Y.",
+      "Qian, D.",
+      "Yang, J.",
+      "Li, W.",
+      "Li, L.",
+      "Shonai, D.",
+      "Gay, S.",
+      "Basu Mallik, B.",
+      "Chim, H. Y.",
+      "Chen, L.",
+      "Atienza Juanatey, M.",
+      "Klein, H.",
+      "Rieger, D.",
+      "Schlegel, P.",
+      "Macintyre, A. U.",
+      "Secor, M.",
+      "Granata, D.",
+      "Cha, S.",
+      "Cao, Z.",
+      "Zhou, G.",
+      "Geffner, T.",
+      "Chen, X.",
+      "Livne, M.",
+      "Zhang, Z.",
+      "Zhang, T.",
+      "Gion, K.",
+      "Bronstein, M. M.",
+      "Steinegger, M.",
+      "Deibler, K.",
+      "Soderling, S.",
+      "Schoeder, C. T.",
+      "Khmelinskaia, A.",
+      "Hollfelder, F.",
+      "Dallago, C.",
+      "Kucukbenli, E.",
+      "Vahdat, A.",
+      "Ogden, P.",
+      "Kreis, K."
+    ],
+    "summary": "De novo protein design has advanced rapidly, yet designing binders to polar, solvent-exposed epitopes and small, flexible ligands remains challenging. Such hydrated surfaces and flexible molecules, including carbohydrates, provide few of the hydrophobic contacts favoured by current methods and have largely resisted de novo binders. To address this challenge, here we introduce latent generative search for binder design, a novel framework that uses reward-guided search at inference time to steer the Proteina-Complexa generative model. The model codesigns sequence and structure - generating them together in a continuous latent space - and thereby removes the inverse-folding step on which current methods rely. In a screen of more than one million designs by multiplexed phage display, latent generative search produced more validated binders than every other method tested, its codesigned sequences surpassing post hoc redesign. It delivered high-affinity binders across therapeutic receptors, a viral attachment protein and intracellular signalling targets. Our approach also accessed previously untapped biology, generating the first de novo proteins that bind a free carbohydrate, including ",
+    "doi": "10.64898/2026.09.12.751118",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein design"
+    ],
+    "extra": {
+      "category": "bioengineering"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.12.751118"
+  },
+  {
+    "kind": "article",
+    "title": "A Unified 3D Generative Model for Synthesizable Structure-Based Drug Design",
+    "url": "https://doi.org/10.64898/2026.09.15.751537",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-18",
+    "collected_at": "2026-09-18T23:35:13.941454+00:00",
+    "authors": [
+      "Igashov, I.",
+      "Schneuing, A.",
+      "Dobbelstein, A. W.",
+      "Morozova, I.",
+      "Neeser, R. M.",
+      "Zielinski, K.",
+      "Abriata, L. A.",
+      "Petruzzella, A. S.",
+      "Pavel Iosub, D. R.",
+      "Gampp, O.",
+      "Lyubimov, A. Y.",
+      "Elizarova, E.",
+      "Ferrara, I.",
+      "Sousa, P. M. F.",
+      "Lemos, A. R.",
+      "Testori, F.",
+      "Miranda Herrera, P. A.",
+      "Kanis, L.",
+      "Schmidt, J.",
+      "Braza, M. K. E.",
+      "Amaro, R. E.",
+      "Thoma, N.",
+      "Ferraris, D. M.",
+      "Riek, R.",
+      "Fraser, J. S.",
+      "Schwaller, P.",
+      "Bronstein, M.",
+      "Correia, B."
+    ],
+    "summary": "Traditional screening-based drug discovery is inherently limited by the astronomical scale of the chemical space. Generative modelling offers a compelling alternative to the classical search paradigm and enables rational, bottom-up design of novel and target-specific small molecules. However, its impact has been hampered by challenges in synthetic accessibility of the designed compounds and lack of large-scale experimental validation. Here, we introduce LDDM (Large Drug Discovery Model), a generative framework that supports a range of drug discovery tasks, including constrained and unconstrained docking, fragment linking and growing, and de novo design. We further introduce a programmable design algorithm that enables accurate design of synthetically accessible compounds satisfying various fine-grained objectives. We experimentally validated the designed or optimised ligands for five therapeutically relevant protein targets. In all cases, LDDM achieved high success rates, allowing us to identify molecules with confirmed binding affinity while synthesizing only a small number of generated compounds. The best designs were structurally characterised through NMR spectroscopy and X-ray ",
+    "doi": "10.64898/2026.09.15.751537",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug design",
+      "structure-based drug design"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.15.751537"
+  },
+  {
+    "kind": "article",
+    "title": "Img2EEG: A Scalable and Interpretable Encoding Framework for Simulating Human EEG Responses to Visual Inputs",
+    "url": "https://doi.org/10.64898/2026.09.16.751610",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-18",
+    "collected_at": "2026-09-18T23:35:13.943698+00:00",
+    "authors": [
+      "Lu, Z.",
+      "Golomb, J. D."
+    ],
+    "summary": "Understanding how visual information processing unfolds over time requires models that not only predict neural responses but also expose the representations that support them and generalize beyond sampled stimulus spaces. Here we introduce Img2EEG, a participant-specific image-to-EEG encoding framework that integrates hierarchical visual and semantic representations to generate temporally resolved multichannel EEG responses. Trained on THINGS EEG2, Img2EEG generalized to unseen images while preserving stimulus-specific and participant-specific response structure. Controlled perturbations of internal representations and visual inputs revealed distinct temporally structured contributions of visual and semantic information, and in silico experiments reproduced classic human neural responses, such as the face-sensitive N170, while enabling targeted representational interventions. Scaling Img2EEG to 1.28 million ImageNet images produced over 12 million synthetic EEG responses that supported cross-dataset visual reconstruction and improved the behavioral alignment of an artificial vision model. Img2EEG provides an interpretable and scalable framework for experimentally manipulable modeli",
+    "doi": "10.64898/2026.09.16.751610",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "neuroscience"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.16.751610"
+  },
+  {
+    "kind": "article",
+    "title": "TRACEDD: A Tool-grounded Reasoning and Agentic Coordination for Explainable Drug Design",
+    "url": "https://doi.org/10.64898/2026.09.12.751167",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-18",
+    "collected_at": "2026-09-18T23:35:16.236506+00:00",
+    "authors": [
+      "Vangala, S. R.",
+      "Kasturi, V. V.",
+      "Bung, N.",
+      "Roy, A."
+    ],
+    "summary": "Drug discovery depends on coordinated decisions across target validation, structure analysis, molecular design, developability assessment and synthetic feasibility, but current computational methods often operate as disconnected tools. Here, we introduce TRACEDD (Tool-grounded Reasoning and Agentic Coordination for Explainable Drug Design), a framework that makes three primary contributions: (1) It establishes a 'tool-first' multi agentic architecture where LLMs orchestrate validated computational tools rather than replace them, ensuring scientific rigor. (2) It implements a multi-agent system that mirrors expert discovery teams, enabling transparent and traceable decision-making through a Reason-Act-Observe loop. (3) It demonstrates an end-to-end workflow, from target validation to synthesis planning, that adaptively handles real-world data variability, such as the absence of experimental structures. The framework decomposes discovery into specialized agents for target validation, druggability assessment, molecular generation, lead optimization, ADMET evaluation, literature evidence integration and retrosynthesis, all operating through a Reason Act Observe workflow. Using JAK2 as ",
+    "doi": "10.64898/2026.09.12.751167",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug design",
+      "AlphaFold",
+      "ADMET"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.12.751167"
+  },
+  {
+    "kind": "article",
     "title": "Computational Discovery and Characterization of Cancer-associated Variants in DNA Transaction Enzymes: Impact of a Glioma–associated mutation on Thymine-DNA Glycosylase",
     "url": "https://doi.org/10.26434/chemrxiv.15008985/v1",
     "source": "ChemRxiv",
@@ -31028,5 +31293,329 @@
       "journal": "Frontiers in cardiovascular medicine"
     },
     "dedupe_key": "doi:10.3389/fcvm.2026.1759840"
+  },
+  {
+    "kind": "article",
+    "title": "Identification of multi-target lead compounds from iron-stressed Aspergillus species using LC-MS, in silico analysis, and pharmacokinetics profiling.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758905/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.741498+00:00",
+    "authors": [
+      "Dina Mistry",
+      "Dhara Gamit"
+    ],
+    "summary": "Natural products from soil-derived fungi represent an important source of bioactive compounds with therapeutic potential. In this study, Aspergillus spp. isolated from soil samples were cultured under iron-limited conditions to stimulate siderophore-associated secondary metabolism. Three lead metabolites, Unguisin E, Austalide Q, and Notoamide J, were characterised using LC-MS analysis. Their therapeutic relevance was evaluated through molecular docking against EGFR tyrosine kinase (1M17), PPAR-γ (PDB IDs: 2PRG and 2HNP), and DNA gyrase (1KZN) representing anticancer, antidiabetic and antimicrobial targets. The metabolites exhibited notable binding affinities comparable to standard drugs, including Erlotinib and Rosiglitazone. Austalide Q and Notoamide J showed stable interactions within the active sites of both proteins. Pharmacokinetic and toxicity predictions using SwissADME, pkCSM, and ProTox-3.0 indicated favourable drug-likeness, high intestinal absorption, and no predicted hepatotoxicity or immunotoxicity. Overall, these findings suggest that Aspergillus-derived metabolites may serve as promising candidates for future antimicrobial and therapeutic drug discovery studies.",
+    "doi": "10.1080/14786419.2026.2734558",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "molecular docking",
+      "drug-likeness",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42758905",
+      "journal": "Natural product research"
+    },
+    "dedupe_key": "doi:10.1080/14786419.2026.2734558"
+  },
+  {
+    "kind": "article",
+    "title": "Super-enhancer-driven SGK1 activates polyamine metabolism to promote autoimmune uveitis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758816/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.742125+00:00",
+    "authors": [
+      "He Li",
+      "Lei Zhu",
+      "Zhaohuai Li",
+      "Genxian Zhang",
+      "Gengchen Jiang",
+      "Yihan Zhang",
+      "Jialing Tang",
+      "Xuling Chen",
+      "Yingying Wen",
+      "Shenqian Tian",
+      "Siyun Liu",
+      "Yue Peng",
+      "Qi Jiang",
+      "Xingyu Liu",
+      "Lian Han",
+      "Renbing Jia",
+      "Wenru Su"
+    ],
+    "summary": "Uveitis, a leading cause of blindness, is driven by dysregulated immune responses, particularly autoreactive T cells. Despite advances in understanding its pathogenesis, key regulatory mechanisms remain elusive. Here, we integrate the cleavage under targets and tagmentation (CUT&Tag) and single-cell RNA sequencing (scRNA-seq) to delineate the super-enhancer (SE) landscape and transcriptional profiles of CD4+ T cells in Vogt-Koyanagi-Harada (VKH) disease. We identify serum/glucocorticoid-regulated kinase 1 (SGK1) as a key SE-associated gene, substantially up-regulated in CD4+ T cells of VKH patients. Pharmacological inhibition of SGK1 markedly alleviates uveitis in mice. Mechanistically, SE-driven SGK1 expression activates the MEK1-ERK1/2-ODC1 axis, leading to aberrant polyamine metabolism and a skewed T helper 17 (TH17)/regulatory T (Treg) balance, whereas polyamine supplementation negates these therapeutic benefits, confirming SGK1's role in driving disease progression. Notably, through molecular docking and molecular dynamics simulations, we identified herbacetin as a natural inhibitor of SGK1. Herbacetin restores immune balance and mitigates disease severity, highlighting SGK1 as a promising therapeutic target for autoimmune uveitis.",
+    "doi": "10.1126/sciadv.aea6376",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42758816",
+      "journal": "Science advances"
+    },
+    "dedupe_key": "doi:10.1126/sciadv.aea6376"
+  },
+  {
+    "kind": "article",
+    "title": "Integrated analysis of bulk transcriptomics and single-cell transcriptomics revealed the association characteristics between heart failure and β-hydroxybutyrylation-related genes.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758764/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.742852+00:00",
+    "authors": [
+      "Qingkuan Li",
+      "Xiyong Sheng",
+      "Guihua Li",
+      "Junjun Chen",
+      "Huayuan Zeng",
+      "Kaiyou Liu",
+      "Huating Huang",
+      "Yusheng Long",
+      "Zhihong Lu",
+      "Qingwei Ji"
+    ],
+    "summary": "As a major cause of global mortality, heart failure (HF) has mechanisms that remain elusive. Recent studies suggest β-hydroxybutyrylation (Kbhb) may contribute to its pathogenesis, driving this investigation into Kbhb-associated HF biomarkers. We collected HF-associated data and information on Kbhb-related genes (KRGs) from publicly available databases and published studies. Potential biomarker candidates were identified by determining the overlap between differentially expressed genes (DEGs) and KRGs. Subsequently, machine learning algorithms, ROC curve evaluation, and expression verification were applied to identify robust biomarkers. To investigate the biological roles of these biomarkers in HF, we performed functional enrichment analysis, assessed the immune microenvironment, predicted regulatory networks and therapeutic compounds, and conducted molecular docking simulations. Furthermore, we utilized scRNA-seq data to determine critical cell populations and examine the expression patterns of biomarkers across different cellular contexts. Additionally, we used serum samples from four heart failure patients and four healthy controls to validate the protein expression levels of the identified biomarkers using enzyme-linked immunosorbent assay (ELISA). Three genes-HMOX2, H2AFZ, and KPNA2-were determined as diagnostic biomarkers for HF. Functional enrichment analyses demonstrated that these biomarkers exhibited significant associations with essential biological pathways, such as proteasome-mediated processes, oxidative phosphorylation mechanisms, and amino acid metabolic pathways. Furthermore, neutrophil infiltration showed significant positive correlations with both H2AFZ (cor = 0.42, p < 0.05) and KPNA2 (cor = 0.39, p < 0.05). Moreover, regulatory factor SP1 was predicted to target both KPNA2 and HMOX2. Thereafter, molecular docking confirmed potent binding of Bisphenol A to all 3 biomarkers, especially to HMOX2 (binding energy = -7.3 kcal/mol). Interestingly, T cells were identified as the key cell type in HF, and biomarkers exhibited dynamic changes during their differentiation. ELISA verification further confirmed that protein levels of HMOX2(P< 0.05) and KPNA2(P< 0.05) were significantly downregulated in HF patients, consistent with bioinformatics predictions. By contrast, H2AFZ exhibited a decreasing trend but without statistical significance (p> 0.05). HMOX2 and KPNA2 were identified as Kbhb-related biomarkers in HF, while T cells served as a key cell type in the disease. Meanwhile, this study provided novel therapeutic targets for HF patients.",
+    "doi": "10.1371/journal.pone.0357103",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42758764",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0357103"
+  },
+  {
+    "kind": "article",
+    "title": "Multifunctional Defense of Achelura yunnanensis Cocoon: High-Strength Tough Silk Fiber, Biomineral Reinforcement, and Protease Degradation Resistance.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758544/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.743469+00:00",
+    "authors": [
+      "Nengwu Wang",
+      "Yuying Wang",
+      "Naiyong Liu",
+      "Wenyue Liu",
+      "Yawen Wang",
+      "Xinying Li",
+      "Qin Luo",
+      "Xiaolu Zhang",
+      "Pengchao Guo",
+      "Yan Zhang",
+      "Xin Wang",
+      "Qingyou Xia",
+      "Zhaoming Dong"
+    ],
+    "summary": "Natural silks offer combinations of mechanical performance and biological functionality that synthetic materials still struggle to replicate. Here, we report the structural, mechanical, and biochemical characterization of cocoon silk from Achelura yunnanensis (Lepidoptera: Zygaenidae), a moth that builds a leaf-wrapped cocoon with three integrated defense layers. The silk fiber exhibits an average tensile strength of 1038 ± 434 MPa, a toughness of 81 ± 49 MJ m-3, and an elastic modulus of 22.1 ± 8.8 GPa, approximately twice the respective values for Bombyx mori silk. These properties stem from a β-sheet content of 44.0 ± 1.6% and crystallinity of 59.6%, enabled by an anterior silk gland that occupies 55% of the total gland length (vs 11.3% in B. mori) and imposes prolonged shear-driven molecular alignment during spinning. The fibroin heavy chain carries a chimeric motif architecture: silkworm-type (GAGAGSGSGA)n repeats (17.6%) coexist with (A)n segments (31.4%) and (GXGGXGXX)n motifs (14.1%) closely resembling spider dragline silk sequences. On the exposed side of the A. yunnanensis cocoon, abundant calcium oxalate monohydrate crystals (56.1% COM content) boost the specific puncture strength to 28.9 N/mm, more than double the 13.8 N/mm of B. mori. Proteomic profiling identified 36 putative antimicrobial proteins in the cocoon, dominated by trypsin inhibitor-like (TIL) proteins. Fluorescence-based enzyme inhibition assays show that these silk proteins suppress both microbial serine proteases (proteinase K residual activity: 0.7%; subtilisin: 1.8%) and animal digestive proteases (trypsin: 24.5%; chymotrypsin: 57.5%). Molecular docking of the predominant inhibitor TIL1 against all four target proteases yields binding free energies of -9.3 to -15.4 kcal/mol with extensive salt-bridge networks. A. yunnanensis cocoon silk thus functions as a naturally integrated physical-chemical composite: high-strength fibers, selective biomineral reinforcement, and broad-spectrum resistance to protease degradation, providing a model system for bioinspired material design.",
+    "doi": "10.1021/acsami.6c14733",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42758544",
+      "journal": "ACS applied materials & interfaces"
+    },
+    "dedupe_key": "doi:10.1021/acsami.6c14733"
+  },
+  {
+    "kind": "article",
+    "title": "The bitterness behind sweetness: an integrated 3D-QSAR and molecular modeling approach elucidates the structure determinants of taste purity in natural chalcones.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758485/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.744041+00:00",
+    "authors": [
+      "Shuting Lai",
+      "Lufang Chen",
+      "Qifei Long",
+      "Lingxuan Zhang",
+      "Yang Hu",
+      "Jia Liu",
+      "Hui Ni",
+      "Feng Chen",
+      "Fan He"
+    ],
+    "summary": "The bitter and astringent properties of plant-derived chalcone compounds result in lower sweet taste purity compared to that of sugars such as sucrose, thereby limiting their applications. To elucidate the relationship between the structure of chalcones and their sweet taste purity, a 3D-QSAR model was established according to the sensory experiments that evaluated the sweetness and aftertaste of 22 chalcone compounds. Based on Comparative Molecular Field Analysis (CoMFA) and Comparative Molecular Similarity Index Analysis (CoMSIA), key sites and functional groups affecting the sweet taste purity of chalcones were identified. The model indicated that the sweet taste purity of chalcone compounds can be enhanced by introducing negative charges and hydrophilic groups at the C2 position of ring A, hydrophilic groups at positions C3 and C4 of ring A, and small-volume groups at position C6 of ring A, as well as introducing hydrophilic groups on ring B and large-volume groups at positions C4' and C5' of ring B. Furthermore, the chalcones compatible with the model were selected for sensory evaluations of the sweet taste purity. The results were consistent with model predictions, thereby validating the efficacy of the 3D-QSAR model. Molecular docking studies further corroborated the model's reliability. This study establishes a 3D-QSAR model for evaluating sweet taste purity scores, thereby enhancing the sensory profile of chalcone compounds. It provides novel design concepts for developing sweeteners with high sweet taste purity and offers the food industry access to high-performance sweetener options.",
+    "doi": "10.1039/d6fo02582j",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "QSAR"
+    ],
+    "extra": {
+      "pmid": "42758485",
+      "journal": "Food & function"
+    },
+    "dedupe_key": "doi:10.1039/d6fo02582j"
+  },
+  {
+    "kind": "article",
+    "title": "From Forest Floor to Therapeutic Candidate: Amanita princeps Corner & Bas, 1962 Counters Visceral Leishmaniasis via the NO-Arginase Axis and Mitochondrial Pathway.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758438/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.744642+00:00",
+    "authors": [
+      "Ishita Bhattacharya",
+      "Vandita Verma",
+      "Santanu Paul"
+    ],
+    "summary": "Visceral leishmaniasis (VL), caused by Leishmania donovani, is one of the most lethal parasitic diseases, causing 30000 deaths annually. Pentavalent antimonials, with limited effectiveness, cytotoxicity, drug resistance, and therapeutic limitations, underscore the urgent need for the development of novel, selective, and cost-effective antileishmanial agents. The Indian pharmaceutical industry, a major global economic sector, is showing growing interest in mushrooms in developing alternative drugs against several diseases. Thus, this study focuses on the antileishmanial potential of the hydroalcoholic extract of Amanita princeps, a wild edible mushroom, with detailed mechanistic analysis. In our research, the cell-inhibitory activity of the extract was evaluated by the MTT assay against promastigotes, axenic amastigotes, and intracellular amastigotes, yielding IC₅₀ values of 21.20, 30.26, and 38.93 μg/mL, respectively, with high selectivity indices (>10). A detailed mechanistic study revealed that the extract can disrupt the NO-arginase axis, suppress antioxidant enzymes (SOD and catalase), and elevate lipid peroxidation, ultimately causing intracellular oxidative stress. Further, flow cytometric and fluorescence microscopic study confirmed elevated reactive oxygen species, mitochondrial membrane depolarization, nuclear fragmentation, sub-G0/G1 cell cycle arrest, leading towards apoptosis as evidenced by AO/EtBr dual staining. Furthermore, the extract was able to restore host immunological balance by upregulating pro-inflammatory cytokines (IL-12β, TNF-α) and suppressing anti-inflammatory mediators (IL-10, TGF-β). Finally, GC-MS, network pharmacological and molecular docking study identified Urs-12-en-28-ol, a ursane triterpenoid with the highest affinity against DHFR (-9.7 kcal/mol) and demonstrated significant in vitro antileishmanial activity. Conclusively, our findings establish Amanita princeps as a promising candidate for next-generation antileishmanial drug development.",
+    "doi": "10.1007/s12013-026-02155-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42758438",
+      "journal": "Cell biochemistry and biophysics"
+    },
+    "dedupe_key": "doi:10.1007/s12013-026-02155-4"
+  },
+  {
+    "kind": "article",
+    "title": "Cytotoxic and Apoptotic Effects of Sultamicillin and Cefuroxime Axetil and Their Potential Transformation Products in RTG-2 Fish Gonad Cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758437/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.745248+00:00",
+    "authors": [
+      "Enes Tuzcuoglu",
+      "Muammer Kirici"
+    ],
+    "summary": "Sultamicillin and cefuroxime axetil are orally administered prodrugs that have been detected in aquatic environments, yet limited information is available regarding the cellular responses associated with their exposure in fish models. This study evaluated cytotoxic and apoptosis-related cellular responses following in vitro exposure to sultamicillin and cefuroxime axetil in the rainbow trout gonad cell line (RTG-2). Cell viability was assessed after 48 h exposure to concentrations ranging from 3.125 to 100 µM using the WST-1 assay, and IC50 values were determined. The calculated IC50 values were 22.80 ± 1.72 µM for sultamicillin and 31.33 ± 0.95 µM for cefuroxime axetil. Apoptosis-related responses were evaluated by Western blot analysis of p53 and BCL2 proteins. Exposure under the present experimental conditions was associated with increased p53 expression and decreased BCL2 expression, indicating activation of apoptosis-related pathways. Molecular docking analysis predicted stable interactions of both compounds with p53 and BCL2, with sultamicillin exhibiting stronger predicted binding affinities than cefuroxime axetil. Overall, the findings demonstrate that exposure to sultamicillin and cefuroxime axetil under the present in vitro conditions is associated with reduced cell viability and apoptosis-related protein alterations in RTG-2 cells. Because both compounds are prodrugs that may undergo hydrolysis or transformation during incubation, the observed biological responses should be interpreted as effects associated with the exposure conditions rather than as evidence of the intrinsic toxicity of the intact parent compounds. These findings provide baseline information for future mechanistic studies and environmental risk assessment of antibiotic-related contaminants in aquatic ecosystems.",
+    "doi": "10.1007/s12013-026-02163-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42758437",
+      "journal": "Cell biochemistry and biophysics"
+    },
+    "dedupe_key": "doi:10.1007/s12013-026-02163-4"
+  },
+  {
+    "kind": "article",
+    "title": "Xinmailong Injection Attenuates Doxorubicin-Induced Chronic Heart Failure by Regulating the SIRT1/Caspase-3 Axis and Metabolic Reprogramming: An Integrative Network Pharmacology and Metabolomics Study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758427/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.745915+00:00",
+    "authors": [
+      "Chang-Ling Lv",
+      "Yan-Ni Xue",
+      "De-Xiao Wang",
+      "Lu Jin",
+      "Di Tan",
+      "Ding-Yu Wu",
+      "Fang Peng"
+    ],
+    "summary": "Chronic heart failure (CHF) is characterized by progressive cardiac dysfunction, myocardial remodeling, apoptosis, and metabolic disturbance. Xinmailong injection (XML) has demonstrated therapeutic potential for CHF; however, its underlying mechanisms remain incompletely understood. A total of 40 SPF rats were used to establish a doxorubicin-induced CHF model, with another 8 rats serving as the normal control group. The model rats were randomized into 5 groups (n = 8 per group): model, digoxin (0.025 mg/kg), XML low- (60 mg/kg), XML medium- (120 mg/kg), XML high- (240 mg/kg) groups with a 2-week intervention. Cardiac function, serum biomarkers, histopathology and cardiomyocyte apoptosis were detected. Untargeted metabolomics, network pharmacology, molecular docking and in vivo validation were integrated to explore the mechanisms of XML. XML dose-dependently elevated left ventricular ejection fraction (LVEF), left ventricular fractional shortening (LVFS), left ventricular systolic pressure (LVSP) and maximum rate of left ventricular pressure change (± dp/dtmax), while reducing left ventricular end-diastolic pressure (LVEDP) (P < 0.01). It downregulated serum cardiac stress and myocardial injury markers (BNP, ANP, CK-MB, cTn-I, MYO, and LDH) and enhanced the activity of the antioxidant marker GSH-PX (P < 0.05 or P < 0.01); it alleviated myocardial necrosis, inflammatory infiltration and collagen deposition. Metabolomics indicated that XML reversed CHF-associated metabolic disorders mainly involving glycerophospholipids, linoleic acid, taurine and hypotaurine, pyrimidine metabolism, and the tricarboxylic acid (TCA) cycle. Network pharmacology screened 59 overlapping targets of XML and CHF, with sirtuin 1 (SIRT1) and caspase-3 as core hubs; molecular docking verified favorable binding affinities between XML's main active ingredients and the two targets (binding energy ≤  -4.65 kcal/mol). Consistent with above data, XML upregulated SIRT1 and B-cell lymphoma-2 (Bcl-2), downregulated BCL2-associated X protein (BAX) and cleaved caspase-3, restored the Bcl-2/BAX ratio and suppressed apoptosis of cardiomyocytes (P < 0.01). XML ameliorates doxorubicin-induced CHF via improving cardiac function, mitigating myocardial injury/fibrosis, restoring metabolic homeostasis and inhibiting cardiomyocyte apoptosis, which is closely related to regulating the SIRT1/caspase-3 axis and multiple metabolic pathways.",
+    "doi": "10.1007/s11596-026-00238-0",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42758427",
+      "journal": "Current medical science"
+    },
+    "dedupe_key": "doi:10.1007/s11596-026-00238-0"
+  },
+  {
+    "kind": "article",
+    "title": "Using Brain Organoids to Explore Human Neurobiology.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758369/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.746438+00:00",
+    "authors": [
+      "Hany E Marei",
+      "Anwarul Hasan"
+    ],
+    "summary": "One of the major challenges in neuroscience is understanding how the human brain develops into a highly organized and functionally integrated organ, because many developmental processes cannot be investigated directly in humans and are not fully recapitulated in animal models. Brain organoids derived from human pluripotent stem cells have emerged as powerful three-dimensional (3D) experimental models that recapitulate key features of human neurodevelopment, including regional patterning, cellular diversification, and neural circuit assembly. Recent advances in long-term organoid culture, organoid bioengineering, vascularization, assembloid technology, transplantation, multi-omics, and artificial intelligence have substantially expanded the applications of brain organoids to investigate human neurodevelopment, model neurological disorders, support drug discovery, and advance therapeutic development. Integration of single-cell and spatial multi-omics with computational approaches has enabled robust molecular benchmarking, assessment of developmental fidelity, and evaluation of organoid reproducibility, facilitating direct comparison with primary human fetal brain tissue. However, current organoid systems remain limited owing to incomplete cellular and tissue complexity, inter-organoid variability, limited vascularization, limited functional maturation, and incomplete physiological integration. Continued advances in tissue engineering, computational biology, and standardized differentiation protocols are expected to enhance the biological fidelity and translational utility of brain organoids for basic and translational neuroscience, as well as mechanistic and translational research.",
+    "doi": "10.1007/s10571-026-01808-5",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "pmid": "42758369",
+      "journal": "Cellular and molecular neurobiology"
+    },
+    "dedupe_key": "doi:10.1007/s10571-026-01808-5"
+  },
+  {
+    "kind": "article",
+    "title": "Identification of potential SARS-CoV-2 Mpro inhibitors from a Thai natural product database via interaction fingerprint-based virtual screening.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758356/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.746987+00:00",
+    "authors": [
+      "Aunlika Chimprasit",
+      "Guillaume Bret",
+      "Supa Hannongbua",
+      "Patchreenart Saparpakorn",
+      "Didier Rognan"
+    ],
+    "summary": "The SARS-CoV-2 main protease (Mpro) is a promising target for coronavirus disease 2019 (COVID-19) therapy due to its high conservation and essential role in viral replication. In this study, 148 crystal structures of SARS-CoV-2 Mpro complexed with non-covalent inhibitors from the Protein Data Bank (PDB) were used to map the inhibitor binding site using protein-ligand interaction fingerprints (IFPs). The analysis revealed that the S2 binding site serves as a key region to anchor most non-covalent inhibitors. This mapping was used as a guide to virtually screen an in-house Thai natural product database for potential inhibitors of SARS-CoV-2 Mpro. Seven hit compounds were selected based on docking results, including pose quality, interaction profiles, and energetic criteria. Molecular dynamics simulations confirmed the stability of the SARS-CoV-2 Mpro-hit compound complexes, revealing that panduratin A (CPD3), deacetylmammea E/BA cyclo D (CPD4), and n-pentyl beta-carboline-1-propionate (CPD5) were particularly interesting virtual hits, as they consistently formed strong interactions with key residues at the S2 site through π-π, H-π, and hydrogen bonds.",
+    "doi": "10.1007/s10822-026-00941-z",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42758356",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00941-z"
+  },
+  {
+    "kind": "article",
+    "title": "NLA proteins: Master regulators that integrate nutrient homeostasis, stress adaptation, and plant development.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42758213/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-18T23:33:17.747511+00:00",
+    "authors": [
+      "Tao Wu",
+      "Ziyi Yang",
+      "Surya Kant",
+      "Lei Shi",
+      "Cheng Hu"
+    ],
+    "summary": "As sessile organisms, plants rely on intricate molecular regulatory networks to navigate complex, fluctuating environments and diverse stress conditions. Nitrogen Limitation Adaptation (NLA), a RING-type ubiquitin ligase harboring an SPX domain, has emerged as a central hub integrating plant responses to nutrient availability, pathogen attack, and cold stress. This review provides a systematic overview of the structural features of NLA, with a particular focus on the regulatory role of inositol pyrophosphates (PP-InsPs) in plant phosphorus signaling. We highlight the core functions of NLA in maintaining nitrogen-phosphorus homeostasis and mediating the crosstalk between nutrient status and immune defense. A key mechanism we discuss is the role of maize ZmNLA in \"cold-phosphorus\" trade-off, whereby ZmNLA activates jasmonate signaling to enhance cold tolerance by mediating the ubiquitination and degradation of the signaling repressor ZmJAZ11, while simultaneously restricting phosphate uptake via targeting the phosphate transporter ZmPT4. Notably, the ZmNLAΔ12 variant, which has an impaired PP-InsPs binding site, functionally uncouples this trade-off through structure-guided protein design. Finally, we propose future research directions and discuss the potential for breeding new crop varieties with enhanced stress adaptation and improved nutrient use efficiency.",
+    "doi": "10.1093/jxb/erag476",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein design"
+    ],
+    "extra": {
+      "pmid": "42758213",
+      "journal": "Journal of experimental botany"
+    },
+    "dedupe_key": "doi:10.1093/jxb/erag476"
   }
 ]
