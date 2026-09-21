@@ -1,0 +1,228 @@
+name: Etapa 1b -- Radar e biblioteca (research_export)
+
+# Segundo workflow do alchemia-news. Criado em 2026-09-09 a pedido do fundador.
+#
+# POR QUE ELE EXISTE
+# A coleta (coleta.yml) roda Etapa 1a + Etapa 3 e é auto-suficiente. A Etapa 1b --
+# `pipeline/research_export.py` -- ficou órfã quando a camada LLM saiu: as duas Tarefas Agendadas
+# do Claude que a invocavam foram desabilitadas em 2026-09-08, e o workflow de coleta a exclui de
+# propósito porque ela escreve FORA deste repositório. Consequência medida em 2026-09-09: último
+# radar em `alchemia-science/research/` era de 2026-09-07.
+#
+# O script é DETERMINÍSTICO -- não precisa de modelo de linguagem, só de um agendador que consiga
+# escrever no outro repositório. É exatamente o que este workflow faz.
+#
+# COMO O CHECKOUT DUPLO RESOLVE, SEM TOCAR NO SCRIPT
+# `research_export.py` resolve os destinos subindo a árvore de diretórios:
+#     PIPELINE_DIR = <...>/alchemia-news/pipeline
+#     NEWS_ROOT    = <...>/alchemia-news
+#     COMPANY_ROOT = NEWS_ROOT.parent.parent
+#     SCIENCE_ROOT = COMPANY_ROOT / "alchemia-science"
+# Dando checkout dos dois repositórios NOS CAMINHOS ABAIXO, o runner reproduz a árvore real da
+# empresa e o script roda SEM NENHUMA MODIFICAÇÃO:
+#     <workspace>/alchemia-ai/alchemia-news   <- este repositório
+#     <workspace>/alchemia-science            <- o repositório de destino
+# Verificado em 2026-09-09 reproduzindo a aritmética de caminho, com contraprova: um checkout na
+# raiz (como o do coleta.yml) faria COMPANY_ROOT cair em `/home/runner` -- fora do workspace, e o
+# script escreveria num diretório inexistente EM SILÊNCIO. Se mexer nesses dois `path:`, rode
+# antes com `dry_run: true`.
+#
+# O DESTINO É UM REPOSITÓRIO PARCIAL, E ISSO MUDA COMO ESTE WORKFLOW RODA
+# `alchemia-solutions/alchemia-science` versiona só `research/` e o METADADO de
+# `alchemia-library/`. Os PDFs estão no `.gitignore` de lá -- decisão do fundador em 2026-09-09,
+# com os números medidos: 136 PDFs / 741 MB, e ~2,7 GB/mês de crescimento projetado. Por isso:
+#
+#   1. A colheita roda SEMPRE com `--no-pdf`, sem opção de ligar por input. Se ela rodasse, o
+#      script gravaria uma linha em `manifest.csv` para um PDF que o repositório de destino não
+#      guarda, e a checagem 2 do `check_sync.py` ("entrada de manifest SEM PDF em disco") passaria
+#      a acusar em todo commit -- metadado mentindo sobre o que existe.
+#   2. Pelo mesmo motivo, `check_sync.py` NÃO é executado aqui: num checkout sem PDFs ele acusaria
+#      uma divergência por linha do manifest (136 em 2026-09-09). Ele é a ferramenta certa na
+#      estação de trabalho, onde os PDFs existem, e a ferramenta errada aqui.
+#
+# Consequência aceita e declarada: hoje o `research/` cresce sozinho; a `alchemia-library` não.
+# Ela volta a crescer automaticamente quando houver destino para os arquivos (Cloudflare R2, ainda
+# não provisionado). Quando isso existir, o passo de colheita volta -- e o `.gitignore` do destino
+# muda junto, nunca um sem o outro.
+#
+# PRÉ-REQUISITO OPERACIONAL
+# O repositório local `alchemia-science` foi criado em 2026-09-09 (26 arquivos, 3,0 MB, zero PDF),
+# mas o REMOTO no GitHub e o segredo abaixo dependem do fundador -- `gh` não está instalado nesta
+# estação, e `git remote add`/`git push` estão no `permissions.deny` da empresa. Enquanto o segredo
+# `ALCHEMIA_SCIENCE_TOKEN` não existir, este workflow SE DESLIGA SOZINHO com um aviso, em vez de
+# falhar a cada coleta e virar ruído.
+#
+#   1. Criar `alchemia-solutions/alchemia-science` como repositório PRIVADO e empurrar o commit local.
+#   2. Criar o segredo `ALCHEMIA_SCIENCE_TOKEN` neste repositório: PAT fine-grained com
+#      `Contents: read and write` APENAS no repositório de destino.
+#   3. Opcionalmente, a variável `ALCHEMIA_SCIENCE_REPO`, se o nome não for o padrão abaixo.
+#
+# SEM LLM EM NENHUM PASSO, e sem nenhum segredo além do token de escrita: o radar é montado a
+# partir do `pipeline/data` já coletado, e nada é baixado da internet quando `--no-pdf` está ativo.
+
+on:
+  # Roda logo depois de cada coleta, para exportar o dia com o dado recém-coletado.
+  workflow_run:
+    workflows: ["Coleta Alchemia News"]
+    types: [completed]
+
+  # Disparo manual: backfill de um dia anterior e primeiro teste.
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Dia a exportar (AAAA-MM-DD). Vazio = hoje."
+        required: false
+        type: string
+      dry_run:
+        description: "Não escreve nada, só relata (use para validar caminho)."
+        required: false
+        type: boolean
+        default: false
+
+# O radar é read-modify-write sobre os mesmos arquivos; duas execuções sobrepostas não devem
+# nem começar.
+concurrency:
+  group: alchemia-news-research-export
+  cancel-in-progress: false
+
+permissions:
+  contents: read # a escrita no outro repositório usa o PAT, não o GITHUB_TOKEN
+
+jobs:
+  research-export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    # Em disparo automático, só continua se a coleta que o disparou tiver terminado bem --
+    # exportar em cima de uma coleta que falhou produziria um radar incompleto com cara de completo.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+
+    steps:
+      - name: "Preflight -- o repositório de destino está configurado?"
+        id: preflight
+        env:
+          TOKEN: ${{ secrets.ALCHEMIA_SCIENCE_TOKEN }}
+          DEST: ${{ vars.ALCHEMIA_SCIENCE_REPO || 'alchemia-solutions/alchemia-science' }}
+        run: |
+          if [ -z "${TOKEN}" ]; then
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            {
+              echo "### Etapa 1b dormante"
+              echo ""
+              echo "O segredo \`ALCHEMIA_SCIENCE_TOKEN\` não está configurado, então não há para onde escrever."
+              echo "O radar **não** foi atualizado nesta execução."
+              echo ""
+              echo "Para ativar: criar o repositório privado \`${DEST}\` e o segredo com \`Contents: read and write\` nele."
+            } >> "$GITHUB_STEP_SUMMARY"
+            echo "::notice title=Etapa 1b dormante::ALCHEMIA_SCIENCE_TOKEN ausente -- encerrado sem erro. Ver o resumo da execução."
+          else
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+            echo "destino=${DEST}" >> "$GITHUB_OUTPUT"
+          fi
+
+      # ---- Checkout duplo: reproduz a árvore real da empresa dentro do runner ----
+
+      - name: "Checkout alchemia-news -> alchemia-ai/alchemia-news"
+        if: steps.preflight.outputs.ok == 'true'
+        uses: actions/checkout@v4
+        with:
+          path: alchemia-ai/alchemia-news
+          # `main` e não o head_sha do evento: a coleta commita e empurra ANTES de terminar, então
+          # o que interessa é o topo do branch, que já contém o `pipeline/data` recém-escrito.
+          ref: main
+          fetch-depth: 1
+
+      - name: "Checkout alchemia-science -> alchemia-science"
+        if: steps.preflight.outputs.ok == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ steps.preflight.outputs.destino }}
+          token: ${{ secrets.ALCHEMIA_SCIENCE_TOKEN }}
+          path: alchemia-science
+          fetch-depth: 1
+
+      - name: "Conferir que a árvore ficou com a forma que o script espera"
+        if: steps.preflight.outputs.ok == 'true'
+        run: |
+          set -euo pipefail
+          echo "Workspace: ${GITHUB_WORKSPACE}"
+          for p in \
+            "alchemia-ai/alchemia-news/pipeline/research_export.py" \
+            "alchemia-ai/alchemia-news/pipeline/data" \
+            "alchemia-science/research" \
+            "alchemia-science/alchemia-library"; do
+            if [ ! -e "${GITHUB_WORKSPACE}/${p}" ]; then
+              echo "::error title=Árvore inesperada::Faltou '${p}'. O script resolve os destinos por caminho relativo; sem esta forma ele escreveria no lugar errado, em silêncio."
+              exit 1
+            fi
+            echo "ok  ${p}"
+          done
+
+      - name: Configurar Python
+        if: steps.preflight.outputs.ok == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: alchemia-ai/alchemia-news/pipeline/requirements.txt
+
+      - name: Instalar dependências
+        if: steps.preflight.outputs.ok == 'true'
+        working-directory: alchemia-ai/alchemia-news
+        run: pip install -r pipeline/requirements.txt
+
+      # ---- Etapa 1b propriamente dita ----
+
+      - name: "Etapa 1b -- radar do dia (sem colheita de PDF, ver cabeçalho)"
+        if: steps.preflight.outputs.ok == 'true'
+        working-directory: alchemia-ai/alchemia-news
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          set -euo pipefail
+          # --no-pdf é FIXO, não um input: o repositório de destino não versiona PDF, e colher
+          # aqui faria o manifest registrar arquivo que ele não guarda. Ver cabeçalho, item 1.
+          args="--no-pdf"
+          if [ -n "${{ inputs.date }}" ]; then args="$args --date ${{ inputs.date }}"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then args="$args --dry-run"; fi
+          echo "Executando: python -m pipeline.research_export $args"
+          python -m pipeline.research_export $args
+
+      - name: "Guarda -- nenhum PDF pode ter entrado no destino"
+        if: steps.preflight.outputs.ok == 'true' && inputs.dry_run != true
+        working-directory: alchemia-science
+        run: |
+          set -euo pipefail
+          # Cinto e suspensório: se um PDF aparecer aqui, alguma premissa deste workflow mudou --
+          # melhor falhar alto do que commitar metadado inconsistente com o repositório.
+          n=$(find alchemia-library -name '*.pdf' -type f 2>/dev/null | wc -l)
+          if [ "$n" -ne 0 ]; then
+            echo "::error title=PDF inesperado::Apareceram $n PDF(s) em alchemia-library. Este repositório não os versiona (ver .gitignore de lá) e o manifest ficaria inconsistente. Investigue antes de commitar."
+            exit 1
+          fi
+          echo "ok  nenhum PDF no destino, como esperado"
+
+      - name: "Persistir o radar (commit em alchemia-science)"
+        if: steps.preflight.outputs.ok == 'true' && inputs.dry_run != true
+        working-directory: alchemia-science
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research alchemia-library
+          if git diff --cached --quiet; then
+            echo "Nada novo neste ciclo."
+            echo "Nada novo para commitar nesta execução." >> "$GITHUB_STEP_SUMMARY"
+          else
+            git commit -m "chore(research): radar $(date -u +%Y-%m-%dT%H:%MZ) [skip ci]"
+            git push
+            {
+              echo "### Etapa 1b -- exportado"
+              echo ""
+              echo '```'
+              git show --stat --oneline HEAD | head -20
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi

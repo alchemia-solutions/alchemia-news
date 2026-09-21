@@ -38,6 +38,10 @@ def collect(days_override: int | None = None) -> list[dict]:
     items: list[dict] = []
     cursor = 0
     total_seen = 0
+    pagina = 30          # tamanho real da pagina, confirmado na primeira resposta
+    total_api: int | None = None   # a API DIZ quantos existem -- usar isso em vez de chutar
+    pulados: list[str] = []
+
     for page in range(max_pages):
         try:
             data = _fetch_page(base_url, start, end, cursor)
@@ -48,16 +52,34 @@ def collect(days_override: int | None = None) -> list[dict]:
             # conexão recusada em 27/08 11:17Z) e NENHUMA das três gerou aviso, porque o alarme
             # e a faixa do dashboard olham o campo `error`. Sobe como ColetaParcial: preserva o
             # que as páginas anteriores já trouxeram e registra a falha honestamente.
-            common.log(f"bioRxiv: falha na página cursor={cursor} -- {exc}")
-            raise common.ColetaParcial(
-                f"bioRxiv: falha na página cursor={cursor} após {total_seen} preprints varridos -- {exc}",
-                [it for it in items if it["url"]],
-            ) from exc
+            # 2026-09-18: antes isto ABORTAVA a coleta inteira. Medido no incidente de
+            # 2026-09-18: 25 paginas tinham passado (750 de 1043 na janela) e uma falha
+            # transitoria no cursor=750 descartou as ~10 paginas restantes. `http_get_json`
+            # ja tentou 3x antes de chegar aqui, entao insistir na mesma pagina nao ajuda --
+            # o certo e PULAR o bloco e seguir. Custo de uma pagina ruim cai de "um terco da
+            # janela" para "30 preprints".
+            common.log(f"bioRxiv: página cursor={cursor} falhou, pulando -- {exc}")
+            pulados.append(f"cursor={cursor} ({exc})")
+            cursor += pagina
+            if total_api is not None and cursor >= total_api:
+                break
+            continue
         messages = data.get("messages", [{}])
         status = messages[0].get("status", "") if messages else ""
         collection = data.get("collection", [])
         if not collection:
             break
+        if total_api is None:
+            # A API devolve `total` em `messages[0]` e o coletor ignorava. Sem isso o laco
+            # depende de `max_pages` (60 = 1800 itens) para uma janela que tem ~1000.
+            try:
+                total_api = int(messages[0].get("total") or 0) or None
+            except (TypeError, ValueError):
+                total_api = None
+            pagina = len(collection) or pagina
+            if total_api:
+                common.log(f"bioRxiv: a API declara {total_api} preprints na janela "
+                           f"(~{-(-total_api // pagina)} páginas de {pagina}).")
         total_seen += len(collection)
         for entry in collection:
             title = entry.get("title", "")
@@ -90,9 +112,25 @@ def collect(days_override: int | None = None) -> list[dict]:
         # tamanho fixo -- do contrário a paginação para depois da primeira página (30 itens)
         # mesmo com milhares de preprints na janela, o que produzia falsos "0 relevantes".
         cursor += len(collection)
+        if total_api is not None and cursor >= total_api:
+            break
 
-    common.log(f"bioRxiv: {total_seen} preprints varridos, {len(items)} relevantes ao nicho.")
-    return [it for it in items if it["url"]]
+    resultado = [it for it in items if it["url"]]
+    common.log(
+        f"bioRxiv: {total_seen} preprints varridos"
+        + (f" de {total_api} declarados" if total_api else "")
+        + f", {len(resultado)} relevantes ao nicho."
+        + (f" {len(pulados)} página(s) pulada(s)." if pulados else "")
+    )
+    # Pagina pulada NAO e silenciosa: sobe como ColetaParcial COM os itens que deram certo,
+    # entao `run_all` aproveita a colheita boa e `meta.json` registra o buraco.
+    if pulados:
+        raise common.ColetaParcial(
+            f"bioRxiv: {len(pulados)} página(s) pulada(s) de {page + 1} tentadas "
+            f"({total_seen} preprints varridos): " + "; ".join(pulados),
+            resultado,
+        )
+    return resultado
 
 
 if __name__ == "__main__":

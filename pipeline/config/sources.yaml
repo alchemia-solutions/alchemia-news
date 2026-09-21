@@ -23,9 +23,14 @@ biorxiv:
 
 arxiv:
   enabled: true
-  base_url: "https://export.arxiv.org/api/query"
-  window_days: 200
-  max_results: 60
+  # 2026-09-18: MIGRADO para RSS por categoria. A API Atom (`export.arxiv.org/api/query`)
+  # responde 406 a qualquer search_query com HIFEN, e as 3 categorias monitoradas tem
+  # hifen todas. Ver docs/specs/2026-09-18-coletor-arxiv-via-rss.md.
+  # `base_url`, `window_days` e `max_results` saiam daqui: eram da API antiga e o RSS
+  # entrega o lote de anuncio do dia, sem janela nem paginacao. Config morta confunde.
+  timeout: 25
+  rss_delay_seconds: 3          # cadencia que o proprio arXiv recomenda entre requisicoes
+  announce_types: [new, cross]  # exclui replace/replace-cross (revisao ja anunciada)
 
 chemrxiv_via_crossref:
   enabled: true
@@ -121,6 +126,9 @@ nature_feeds:
 # conteúdo bom); veículo GENERALISTA de biotech/pharma entra com filtro, senão inunda a base.
 newsletter_feeds:
   enabled: true
+  # 2026-09-18: pausa antes da 2a tentativa de um feed que devolveu HTML com HTTP 200
+  # (interstitial / limite de taxa). Maior que delay_seconds de proposito.
+  retry_delay_seconds: 5
   delay_seconds: 1.5
   window_days: 30 # newsletters servem o arquivo inteiro; sem janela a base incharia de conteudo velho
   filter_relevance: true # padrão conservador; cada feed abaixo decide o seu

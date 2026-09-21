@@ -193,6 +193,9 @@ def _collect_section(secao: str, source_type_padrao: str) -> list[dict]:
     # desafio anti-bot — causa provável da queda 38 -> 8 -> 0 observada em 2026-08-18.
     pausa = float(cfg.get("delay_seconds", 1.5))
     janela_padrao = int(cfg.get("window_days", 0))  # 0 = sem janela (feed de periódico)
+    # Pausa antes da 2a tentativa de um feed que devolveu HTML. Maior que `delay_seconds`
+    # de proposito: a causa provavel e limite de taxa, e repetir rapido reproduz a falha.
+    pausa_retry = float(cfg.get("retry_delay_seconds", 5))
 
     items: list[dict] = []
     falhas: list[str] = []
@@ -206,6 +209,27 @@ def _collect_section(secao: str, source_type_padrao: str) -> list[dict]:
         common.log(f"Feed '{name}': buscando {url} ...")
         try:
             entries = fetch_feed(url)
+        except FeedIndisponivel as exc:
+            # 2026-09-18: FeedIndisponivel nao ganhava NENHUMA retentativa, enquanto erro
+            # HTTP ganha 3 dentro de `http_get`. Mas este caso e justamente HTTP 200 com
+            # corpo HTML -- interstitial, limite de taxa, pagina de erro -- e `http_get`
+            # nao ve nada de errado, entao nunca repete.
+            #
+            # Medido no historico de `meta.json`: a secao 'newsletter_feeds' errou em
+            # 8 das 20 ultimas execucoes, SEMPRE 1 feed de 5, e os 5 respondem XML valido
+            # quando testados fora da janela da falha. E transitorio, nao feed morto.
+            #
+            # Uma retentativa com pausa maior. Se persistir, ai sim e falha registrada --
+            # nunca silenciada.
+            common.log(f"Feed '{name}': {exc} -- repetindo em {pausa_retry:.0f}s")
+            time.sleep(pausa_retry)
+            try:
+                entries = fetch_feed(url)
+                common.log(f"Feed '{name}': recuperado na 2a tentativa.")
+            except Exception as exc2:  # noqa: BLE001
+                common.log(f"Feed '{name}': FALHOU nas 2 tentativas -- {exc2}")
+                falhas.append(f"{name}: {exc2} (2 tentativas)")
+                continue
         except Exception as exc:  # noqa: BLE001
             common.log(f"Feed '{name}': FALHOU -- {exc}")
             falhas.append(f"{name}: {exc}")

@@ -31,4 +31,4 @@ em 2026-08-21 e `brand-system` em 2026-08-22/31). Não cite nenhum desses númer
 outro documento, nem o novo — os números do harness mudam quando um setor novo aparece. Confira
 sempre com `ls .claude/agents/` ou rode `harness/check_runtime_integrity.py`.
 
-**Correção/adição futura:** qualquer fato sobre este setor vai em `AGENTS.md`, nunca aqui.
+**Correção/adição futura (regra alterada em 2026-09-18):** `AGENTS.md` passou a ser um **índice** com teto de 150 linhas / 12 KB — fato novo **não** entra nele. Registro datado vai para `docs/HISTORY.md` (append-only); estado vivo, para o `README.md` deste diretório e para o hub no `alchemia-brain`. O índice só muda quando um **ponteiro** muda. Nunca neste `CLAUDE.md`. Contrato: `alchemia-ai/alchemia-agents/docs/specs/2026-09-18-agents-md-index-contract.md`.
