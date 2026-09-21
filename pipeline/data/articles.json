@@ -293,6 +293,61 @@
   },
   {
     "kind": "article",
+    "title": "Integrating structural homology with deep learning to achieve highly accurate protein-protein interface prediction for the human interactome",
+    "url": "https://doi.org/10.1101/2025.06.09.658393",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-21",
+    "collected_at": "2026-09-21T20:09:08.569648+00:00",
+    "authors": [
+      "Xiong, D.",
+      "Torres, M.",
+      "Murray, D.",
+      "Zhang, Z.",
+      "Li, L.",
+      "Naravane, A. C.",
+      "Fragoza, R.",
+      "Honig, B.",
+      "Yu, H."
+    ],
+    "summary": "A significant portion of disease-causing mutations occur at protein-protein interfaces however, the number of structurally resolved multi-protein complexes is extremely small. Here we present a computational pipeline, PIONEER2, that integrates 3D structural similarity with geometric deep learning to accurately predict protein binding partner-specific interfacial residues. We compare the performance of PIONEER2 to that of AlphaFold3 and found, using a test set of PDB structures, that their performance is quite similar. However, about 20% of AlphaFold3 predictions for protein-protein complexes in the PDB have AlphaFold3 ranking scores below 0.5, which indicates an uncertain model. For these structures, PIONEER2 outperforms AlphaFold3 at discriminating interfacial from non-interfacial residues. Further, about half of the AlphaFold3 ranking scores on high confidence protein-protein interactions (PPIs) not associated with a PDB structure are below 0.5 indicating that PIONEER2 offers superior interface prediction for a large number of PPIs for which structures are not available. We created a comprehensive 3D structurally informed interactome encompassing all 352,124 experimentally detect",
+    "doi": "10.1101/2025.06.09.658393",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.1101/2025.06.09.658393"
+  },
+  {
+    "kind": "article",
+    "title": "OpenCRS: an open-source regulated human cardiorespiratory model with large-scale calibration and global sensitivity analysis at rest and during exercise",
+    "url": "https://doi.org/10.64898/2026.09.14.751454",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-21",
+    "collected_at": "2026-09-21T20:09:30.928626+00:00",
+    "authors": [
+      "Wang, S.-Y.",
+      "Saxton, H.",
+      "Balmus, M.",
+      "Niederer, S. A."
+    ],
+    "summary": "Cardiopulmonary exercise testing reveals cardiovascular and respiratory limitations not apparent at rest, but similar measurements can arise from different interacting regulatory mechanisms, preventing physiological causal inference from data alone. Mechanistic computational models can separate these mechanisms in silico. However, whole-body cardiorespiratory models contain hundreds of parameters, making global sensitivity analysis and calibration challenging. We present OpenCRS, an open-source Python cardiorespiratory model coupling closed-loop 0D lumped-parameter circulation with gas exchange and integrated autonomic and respiratory control. The framework incorporates baroreflex, chemoreflex, pulmonary stretch receptors, central command, and neuromuscular drive, together with novel representations of atrial dynamics and exercise baroreflex set-point resetting. We introduce a scalable calibration pipeline that (i) applies a derivative-based global sensitivity measure (DGSM) directly to the simulator, reducing 272 parameters to 72 influential ones; (ii) trains Gaussian process emulator surrogates within iterative History Matching to exclude implausible parameter regions; and (iii) ",
+    "doi": "10.64898/2026.09.14.751454",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "systems biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.14.751454"
+  },
+  {
+    "kind": "article",
     "title": "Peptidyl Protease Inhibitors Block ERM-BP Function and Suppress Entamoeba Encystation",
     "url": "https://doi.org/10.64898/2026.09.16.752027",
     "source": "bioRxiv",
@@ -315,6 +370,128 @@
       "category": "microbiology"
     },
     "dedupe_key": "doi:10.64898/2026.09.16.752027"
+  },
+  {
+    "kind": "article",
+    "title": "Structure-based Antibody Renumbering",
+    "url": "https://doi.org/10.64898/2026.09.16.751788",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-20",
+    "collected_at": "2026-09-21T20:09:06.955229+00:00",
+    "authors": [
+      "del Alamo, D."
+    ],
+    "summary": "Antibody numbering schemes like IMGT and Chothia assign each residue in the variable domain a consistent index based on substructural position. These annotations standardize sequences with different lengths, facilitating tasks ranging from engineering of individual molecules during drug development to large-scale curation of training data for de novo antibody design. Yet existing algorithms for performing this annotation process, termed renumbering, rely exclusively on amino acid sequence for inference. Consequently, these can fail when presented with unnatural or unusual features such as long CDRs or engineered insertions. To address this gap, this work introduces Structure-based Antibody Renumbering, abbreviated SAbR, a method that assigns these annotations from structure alone. SAbR shows comparable performance to sequence-based renumbering methods on held-out expert-annotated structures, as well as high agreement with sequence-based methods in a larger benchmark of diverse structures. It also outperforms peer methods on de novo-designed molecules, and shows higher success rates than renumbering by structural alignment. However, limited generalization performance is observed in ",
+    "doi": "10.64898/2026.09.16.751788",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody design"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.16.751788"
+  },
+  {
+    "kind": "article",
+    "title": "Scaling Network Medicine with LLMs for Combinatorial Drug Repurposing in ER+ Breast Cancer",
+    "url": "https://doi.org/10.64898/2026.09.14.728753",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-20",
+    "collected_at": "2026-09-21T20:09:06.955862+00:00",
+    "authors": [
+      "Hamed, A. A.",
+      "Fandy, T. E.",
+      "Rocha, L. M."
+    ],
+    "summary": "Drug repurposing can accelerate therapy discovery for ER+ breast cancer, but combination selection remains difficult. We developed an LLM-driven network medicine framework that extracts drug--target relationships from 595,122 PubMed abstracts, builds a cross-model consensus network, overlays it onto the KEGG estrogen signaling pathway, and enumerates complementary drug pairs. Candidate combinations are ranked by ComboRank, which aggregates pathway coverage, LLM consensus, RAG validation, cross-method agreement, and ClinicalTrials.gov precedent. The framework identified 166 significant pairs at FDR <= 0.05, including 31 with clinical-trial precedent, with 393 shared drug--target pairs across extraction strategies and 11 exact pairs additionally supported by the pathway overlay.",
+    "doi": "10.64898/2026.09.14.728753",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug repurposing"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.14.728753"
+  },
+  {
+    "kind": "article",
+    "title": "Prediction of pH-sensing histidine residues in human cells",
+    "url": "https://doi.org/10.64898/2026.09.14.751505",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-20",
+    "collected_at": "2026-09-21T20:09:06.956301+00:00",
+    "authors": [
+      "Sallah, S.",
+      "Warwicker, J."
+    ],
+    "summary": "Changes in pH play an important role in human physiology and cell behaviours, evidenced by studies of tissues and gene expression, and the biophysics of individual systems. Bridging between these scales to establish pH-sensing networks has only been partially explored. Here, amino acid conservation and structural context, and benchmarking with known pH-sensors, were used to predict histidine residues within the human proteome that could modulate pH-dependence. Proteins containing these histidines are enriched in many categories, most notably nucleic acid-binding and transcriptional regulation. DNA phosphate backbone interactions are proposed to play a major role in modulating some pH-sensors. Transcription factors with potential pH-sensors and the largest number of documented target genes are highlighted, including those involved in circadian and developmental processes. Certain CDK-cyclin pairs also feature, along with components of SWI/SNF and cohesin complexes. Focussing on histidines, including those that are solvent accessible in AlphaFold protomer models, this study generates benchmarked predictions for possible pH-sensors in the human proteome.",
+    "doi": "10.64898/2026.09.14.751505",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.14.751505"
+  },
+  {
+    "kind": "article",
+    "title": "Shedding light on Gaussia Luciferase conformational space using multi-conformation enhanced sampling simulation",
+    "url": "https://doi.org/10.64898/2026.09.18.752584",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-20",
+    "collected_at": "2026-09-21T20:09:06.957227+00:00",
+    "authors": [
+      "Bori-Bru, B.",
+      "Barcenas, O.",
+      "Crehuet, R."
+    ],
+    "summary": "Gaussia luciferase (GLuc) has broad biotechnological applications owing to its bioluminescence, yet its catalytic mechanism remains poorly understood and rational engineering efforts are hindered by the absence of a structural model. This gap stems from GLuc's highly dynamic nature, which allows it to populate a wide range of conformations rather than adopt a single, well-defined fold. Aiming to bridge this gap, in this work we employ structure predictors and conformational sampling techniques to prod GLuc's structure. Our results indicate that structure predictors such as AlphaFold, as well as ensemble predictors such as BioEmu, fail to adequately sample this conformational space, and even extended molecular dynamics simulations do not yield converged conformational ensembles. However, enhanced sampling via PT-WTE provides a more satisfactory description of GLu's conformational landscape, allowing us to cluster distinct conformational basins, identify loosely defined substrate-binding pockets, and characterize the conformational changes induced by substrate binding. These insights advance our understanding of GLuc's catalytic mechanism and inform future efforts to engineer improve",
+    "doi": "10.64898/2026.09.18.752584",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.18.752584"
+  },
+  {
+    "kind": "article",
+    "title": "Enzyme Activity Regulates Substrate Diffusion by Modulating Viscosity in Crowded Milieu",
+    "url": "https://doi.org/10.1101/2024.09.28.615560",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-20",
+    "collected_at": "2026-09-21T20:09:08.563586+00:00",
+    "authors": [
+      "Bevilacqua, A.",
+      "Maciel, M. R.",
+      "Sullivan, M. V.",
+      "Pascarelli, S.",
+      "Dindo, M.",
+      "Shen, A. Q.",
+      "Laurino, P."
+    ],
+    "summary": "Enzymatic activity and its tight regulation are fundamental to life, yet how enzymes maintain efficient substrate availability within the highly crowded, heterogeneous native cytosol remains poorly understood. Here, we harness liquid-liquid phase separation (LLPS) to generate controlled in vitro protein droplets that mimic the crowding of cytosolic proteins and demonstrate that enzymatic activity enhances substrate diffusion within the crowded environment by up to three-fold. Using fluorescence microscopy, fluorescence recovery after photobleaching (FRAP), molecular docking, and particle-tracking microrheology, we show that this enhanced diffusion arises from a reduction in apparent shear viscosity driven by enzymatic disruption of transient non-covalent interactions between substrate and protein crowder. Our findings reveal a physical feedback mechanism by which enzymatic activity actively reshapes its local environment to sustain substrate availability, providing new insight into how enzymatic activity creates a positive physical feedback on its own substrate supply under the diffusion constraints of the crowded cell.",
+    "doi": "10.1101/2024.09.28.615560",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.1101/2024.09.28.615560"
   },
   {
     "kind": "article",
