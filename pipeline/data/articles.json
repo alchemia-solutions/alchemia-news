@@ -738,6 +738,55 @@
   },
   {
     "kind": "article",
+    "title": "A Temporal Interactome Atlas across RNA Viruses reveals Convergent Vulnerabilities for Antiviral Repurposing",
+    "url": "https://doi.org/10.64898/2026.09.21.753288",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-22",
+    "collected_at": "2026-09-22T23:49:00.558476+00:00",
+    "authors": [
+      "Reed, T. J.",
+      "Tadych, A.",
+      "Troyanskaya, O. G.",
+      "Cristea, I. M."
+    ],
+    "summary": "Viruses remodel host protein interactions to facilitate their replication, yet these dynamic interactomes remain largely unmapped and difficult to compare across infections. Here, to facilitate comparative virology studies, we build the Interactome and Viral Infection Dynamics (InterVir) Atlas, performing thermal proximity coaggregation to profile temporal interactome remodeling across five major RNA viral pathogens. We develop PROTEA, an AI framework that quantifies interactome homology and identifies convergent regulatory hubs. Infection-specific signatures include neuronal SHC1 rewiring associated with altered measles virus replication and dengue-specific secretase interactomes linked to cell-junction remodeling. Comparative virology analyses uncover unexpected interactome convergence between measles and flaviviruses, unobserved in protein-abundance profiling. Mapping these shared regulatory programs to drug targets allowed prioritization of compound repurposing as antivirals. Experimental testing of ten compounds demonstrated antiviral efficacy across multiple infections. Together, InterVir and PROTEA establish an open-access resource for comparative virology, facilitating the ",
+    "doi": "10.64898/2026.09.21.753288",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug repurposing"
+    ],
+    "extra": {
+      "category": "systems biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.21.753288"
+  },
+  {
+    "kind": "article",
+    "title": "A World Model of Molecular Organization Detects Cryptic Pockets from Apo Structure",
+    "url": "https://doi.org/10.64898/2026.09.21.752781",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-22",
+    "collected_at": "2026-09-22T23:49:02.066015+00:00",
+    "authors": [
+      "Shihabi, R.",
+      "Taraman, S.",
+      "Vaughan, B."
+    ],
+    "summary": "A cryptic pocket is a druggable site that is absent from a protein's resting structure and appears only once the backbone moves. It is the reason a target dismissed as undruggable from its crystal structure can still turn out to be druggable, and it is exactly what any method that reads a single static conformation will miss. The problem this paper takes on is finding these sites from an apo structure alone, on any protein rather than only the handful that come with a solved open-state or ligand-bound companion. Every established way of detecting a site that is visible only in the open state builds that state first, whether by sampling conformations or by predicting a bound complex. We do not build it. Our world model of molecular organization has already learned it and carries it in its latent, so we read cryptic pockets straight from that latent, per residue, from a single static apo structure, with no conformational sampling and no protein language model. The representation is never chained onto the output of a separate pocket finder, and a candidate pocket is a grown, disjoint set of residues rather than a ball of fixed radius. On CryptoBench, a set of 231 held-out apo chains, ",
+    "doi": "10.64898/2026.09.21.752781",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "category": "molecular biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.21.752781"
+  },
+  {
+    "kind": "article",
     "title": "Presynaptic mechanism of epileptiform activities in forward-programmed human excitatory neuronal networks",
     "url": "https://doi.org/10.64898/2026.08.04.742761",
     "source": "bioRxiv",
