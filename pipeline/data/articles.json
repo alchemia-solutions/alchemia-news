@@ -40475,5 +40475,297 @@
       "journal": "Inflammopharmacology"
     },
     "dedupe_key": "doi:10.1007/s10787-026-02395-z"
+  },
+  {
+    "kind": "article",
+    "title": "Shared pathogenic genes and therapeutic targets in periodontitis and systemic juvenile idiopathic arthritis: An integrative bioinformatics and machine learning study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776962/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.559553+00:00",
+    "authors": [
+      "Qingao Deng",
+      "Junjie Wang",
+      "Xing Wang",
+      "Lu Qi"
+    ],
+    "summary": "Periodontitis (PD) and systemic juvenile idiopathic arthritis (sJIA) are chronic inflammatory diseases with potential clinical links, yet their shared molecular mechanisms remain unclear-patients with JIA face elevated periodontal risk, the temporomandibular joint affected in JIA shares inflammatory pathways with PD, Th17 cells drive both conditions, and glucocorticoid therapy may exacerbate periodontal vulnerability. This study aimed to explore the shared mechanisms and potential therapeutic targets of PD and sJIA using genetic expression data from the GEO database and performed comprehensive bioinformatics analyses, including differential expression gene analysis, weighted gene co‑expression network analysis (WGCNA), functional enrichment analysis, protein‑protein interaction network construction, and machine learning across 175 predictive models with the Ridge + AdaBoost ensemble identified as the best‑performing combination, followed by SHapley Additive exPlanations (SHAP) for model interpretability, CIBERSORT for immune infiltration assessment, and molecular docking with 100‑ns molecular dynamics simulations for therapeutic target validation. We identified 37 shared candidate genes between PD and sJIA, which were significantly enriched in IL‑17, NF‑κB, rheumatoid arthritis, and lipid atherosclerosis pathways, and machine learning screening further selected six core diagnostic genes (FAM46C, CXCL1, SELP, LGALSL, ELOVL4, VCAN), with SELP demonstrating the most robust cross‑model, cross‑dataset diagnostic value (AUC > 0.8); SHAP analysis confirmed SELP as a stable risk‑driving predictor across all models, while CXCL1 consistently showed protective effects. Immune infiltration revealed shared neutrophil elevation and CD8 ⁺ T‑cell reduction, with conserved CXCL1 and SELP correlations with neutrophils and resting mast cells, and FAM46C with plasma cells.Drug‑target network analysis identified IL1B, MMP1, and ITGAM as core targets, and molecular docking yielded strong binding affinities for deoxycholic acid-MMP1 (-7.6 kcal/mol), kaempferol-IL1B (-7.2 kcal/mol), kaempferol-ITGAM (-6.9 kcal/mol), with MD simulations confirming stable and specific binding. Collectively, this study explores shared genetic and immunological characteristics between PD and sJIA, suggests that SELP may serve as a critical cross‑disease diagnostic biomarker, and offers novel insights into their pathogenesis and potential therapeutic targets that warrant further experimental validation.",
+    "doi": "10.1371/journal.pcbi.1014669",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42776962",
+      "journal": "PLoS computational biology"
+    },
+    "dedupe_key": "doi:10.1371/journal.pcbi.1014669"
+  },
+  {
+    "kind": "article",
+    "title": "The Evolution of Artificial Intelligence in Antibody Design: From Structure-Based Engineering to Generative Models.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776794/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.560218+00:00",
+    "authors": [
+      "Ida Szataniak",
+      "Kacper Packi"
+    ],
+    "summary": "Background/Objectives: Artificial intelligence (AI) has transformed computational antibody engineering by enabling accurate prediction of antibody structures, rational optimization of therapeutic properties, and de novo antibody design. Recent advances in deep learning, protein language models, and generative AI have fundamentally changed the way antibodies are discovered and engineered. This review aims to present the historical evolution of computational antibody engineering, from early structure-based design strategies to modern AI-driven approaches, while highlighting the major computational tools, publicly available databases, current limitations, and future directions of the field. Methods: A comprehensive narrative review of the literature was conducted using PubMed, Scopus, Web of Science, and Google Scholar. Original research articles, methodological studies, and review papers published between 1985 and 2026 were evaluated. Publications were selected according to their scientific relevance, methodological quality, and contribution to the historical development of computational antibody engineering. Results: The review describes the progression of antibody engineering from phage display and structure-based computational methods to machine learning, deep learning, protein language models, and generative artificial intelligence. It summarizes key public databases supporting antibody research, discusses advances in antibody structure prediction and developability assessment, and reviews recent generative models capable of designing antibody sequences and structures. Current challenges, including limited experimental validation, dataset bias, prediction of highly flexible regions, model interpretability, and clinical translation, are also discussed. Conclusions: Artificial intelligence has fundamentally reshaped computational antibody engineering by integrating sequence, structural, and functional information into increasingly accurate predictive and generative frameworks. Although important challenges remain, recent developments indicate that AI-driven approaches will play an increasingly central role in the discovery and optimization of next-generation therapeutic antibodies.",
+    "doi": "10.3390/antib15050081",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model",
+      "antibody engineering",
+      "antibody design"
+    ],
+    "extra": {
+      "pmid": "42776794",
+      "journal": "Antibodies (Basel, Switzerland)"
+    },
+    "dedupe_key": "doi:10.3390/antib15050081"
+  },
+  {
+    "kind": "article",
+    "title": "Discovery of a new SARS-CoV-2 Mpro inhibitor from a natural product and natural product-like compound database using in silico and in vitro studies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776426/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.560806+00:00",
+    "authors": [
+      "Sudesna Das",
+      "Uttam Pal",
+      "Yasmin Begum",
+      "Akshay Joshi",
+      "Nittu Singh",
+      "Krishan Gopal Thakur",
+      "Umesh Prasad Singh"
+    ],
+    "summary": "This current study employs structure-guided virtual screening to identify potential inhibitors from 69,075 natural product or natural product-like compounds in the InterBioscreen (IBS) database against the SARS-CoV-2 Main protease (Mpro), a well-validated target. From high-throughput structure-guided virtual screening, subsequently followed by more rigorous re-docking, top seven compounds were chosen as hits based on their high binding affinity and specific H-bond interactions with the active-site residues of Mpro. All these compounds were new for this target as well as the virus. The stability of the seven protein-ligand complexes was further assessed using molecular dynamics (MD) simulations and the MM-GBSA method. The ADME/Tox profile of these seven compounds was also predicted theoretically. After MD simulation, only three compounds, viz. STOCK1N-86169, STOCK1N-88750, and STOCK1N-65657 were identified as high-potential candidates for Mpro inhibition. To confirm the in silico analysis results, an in vitro FRET-based Mpro inhibition assay and an ELISA-based SARS-CoV-2 inhibition assay were performed. From these in vitro investigations, STOCK1N-86169 was identified as the only potent Mpro inhibitor, exhibiting an IC50 of 3.8 µM. Independent confirmation of STOCK1N-86169 binding to Mpro was obtained by differential scanning calorimetry (DSC), which revealed an increase of approximately 15 °C in the melting temperature (Tm) of the Mpro-STOCK1N-86169 complex relative to the apo-protein. In the cytotoxicity assay, it showed CC50 > 100 µM for HeLa, ~ 100 µM for the Huh-7 cell line, and ~ 33.5 µM for the Vero E6 cell line. In the Vero cell-based SARS-CoV-2 infection assay, it showed an EC50 of ~ 7 µM, with a reasonable Selective Index (S.I.) of ~ 5-fold. Our study suggests that the natural product like compound STOCK1N-86169, which presents a new scaffold for Mpro inhibition and also SARS-CoV-2, may be a promising candidate for further development as an effective inhibitor of SARS-CoV-2 Mpro.",
+    "doi": "10.1007/s11030-026-11724-x",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42776426",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11724-x"
+  },
+  {
+    "kind": "article",
+    "title": "Discovery of potent and selective MAO-B inhibitors from a morpholine-substituted chalcone library for neurodegenerative disorders.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776425/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.561379+00:00",
+    "authors": [
+      "Asmar Taghiyeva",
+      "Jaeyeop Lim",
+      "Abanish Biswas",
+      "Subodh Mondal",
+      "Ritika Uppal Mukherjee",
+      "Vinay N Basavanakatti",
+      "Nilüfer Bayrak",
+      "Venkatesan Jayaprakash",
+      "Man-Jeong Paik",
+      "Hoon Kim",
+      "Amaç Fatih TuYuN"
+    ],
+    "summary": "A series of targeted chalcones (TCs) was designed and synthesised using a microwave-assisted synthetic method to introduce diverse substituents at different positions on the phenyl ring. The structures of all nineteen TC analogues were confirmed by NMR, FTIR, and HRMS. In vitro tests against acetyl- and butyrylcholinesterases (AChE and BuChE), β-Site Amyloid Precursor Protein Cleaving Enzyme 1 (BACE1), and monoamine oxidases (MAO-A and MAO-B) showed that MAO-B was the most potent and selective. Among them, TC12 was the strongest inhibitor (IC50 = 11.00 ± 1.0 nM; SI > 3636) and worked competitively (Ki = 7.16 ± 1.20 nM). In terms of IC50 = 50.0 ± 1.0 nM and SI > 800, TC9 was ranked second. TC12 showed no time-dependent inhibition of MAO-B, and its MAO-B inhibition was reversible. Molecular docking studies revealed that TC12 establishes favourable interactions within the MAO-B active site, particularly through π-π stacking with aromatic cage residues (TYR398 and TYR435), while showing limited engagement with key regions of MAO-A. ADME predictions indicated that TC12 exhibits favourable drug-like properties, including compliance with Lipinski's rules, moderate CNS permeability, and a pharmacokinetic profile supportive of oral bioavailability. In vitro Parallel Artificial Membrane Permeability Assay (PAMPA) and microsomal stability studies revealed that TC9 exhibited high blood-brain barrier (BBB) permeability comparable to carbamazepine, while TC12 showed moderate permeability but was consistent with its predicted CNS penetration. Both TC analogues demonstrated favourable metabolic stability profiles in rat and human liver microsomes, supporting their potential for further pharmacological evaluation. Overall, TC12 represents a promising candidate for selective MAO-B inhibition.",
+    "doi": "10.1007/s11030-026-11733-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42776425",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11733-w"
+  },
+  {
+    "kind": "article",
+    "title": "Exploring the molecular mechanism of benzo[a]pyrene affecting prostate cancer based on network toxicology and external validation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776424/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.561874+00:00",
+    "authors": [
+      "Siqi Zhu",
+      "Zhuang Li",
+      "Kehua Jiang",
+      "Fa Sun",
+      "Jianguo Zhu"
+    ],
+    "summary": "Benzo[a]pyrene (BaP) is a polycyclic fragrant hydrocarbon contaminant commonly establish throughout the surroundings. The International Agency for Research on Cancer has classified it as a Group 1 carcinogen; however, its exact contribution to the onset of prostate cancer (PCa) is still not well defined. This study systematically explores the mechanism underlying the association between BaP exposure and prostate cancer using approaches including network toxicology, machine learning, transcriptomic validation, immune infiltration assessment, single-cell analysis, molecular docking and external validation. The results showed that BaP and prostate cancer shared 975 overlapping targets, which were predominantly enriched in signaling pathways such as PI3K-Akt. Four core genes were screened out through differential analysis and machine learning, namely CAV1, TWIST1, PRKCA, and GDF15. Transcriptome verification showed that TWIST1 and GDF15 were up-regulated, CAV1 and PRKCA were down-regulated, and the AUC of the four-gene combined diagnosis reached 0.990. Core genes are associated with cellular growth and immune cell recruitment, and single-cell sequencing verified their specific cellular distribution and immunological shifts. Molecular docking showed that BaP binds well to the core target. External validation confirmed that BaP may promotes the progression of PCa, with upregulated expression of GDF15 and downregulated expression of PRKCA in PCa. In conclusion, BaP may promote the development of PCa by regulating pathways such as CAV1, TWIST1, GDF15 and PRKCA.",
+    "doi": "10.1007/s11030-026-11729-6",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42776424",
+      "journal": "Molecular diversity"
+    },
+    "dedupe_key": "doi:10.1007/s11030-026-11729-6"
+  },
+  {
+    "kind": "article",
+    "title": "Selective α-Amylase Inhibition by Plant Defensins: Structural Determinants, Engineering Strategies, and Translational Prospects.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776414/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.562434+00:00",
+    "authors": [
+      "Ahmad Ibrahim",
+      "Mohd Shukuri Bin Mohamad Ali",
+      "Adam Thean Chor Leow",
+      "Noor Dina Binti Muhd Noor",
+      "Azira Muhamad",
+      "Fairolniza Mohd Shariff"
+    ],
+    "summary": "Plant defensins are best known as antimicrobial peptides, yet their capacity to inhibit α-amylase, a property relevant to both crop protection and the management of postprandial hyperglycaemia, remains comparatively uncharacterized. These cysteine-rich peptides adopt a conserved cysteine-stabilized αβ fold whose disulfide network confers resistance to proteolysis and thermal denaturation, properties compatible with sustained enzyme inhibition in the insect gut or the human gastrointestinal tract. A small subset shows isoform preference: the cowpea defensin VuD1 inhibits storage-pest enzymes more strongly, though not absolutely, than human isoforms, whereas the 12-residue fragment F3 from Capsicum chinense inhibits human salivary α-amylase. Evidence that a human-active profile is accessible within an intact defensin scaffold therefore remains limited. This review examines how loop architecture and γ-core geometry govern that selectivity. Its central argument is that the limiting problem is selectivity rather than potency, since discriminating insect from mammalian α-amylase is the prerequisite for safe crop protection and for therapeutic use alike. Progress is constrained less by conceptual gaps than by evidentiary ones. Most reported inhibition derives from single-concentration endpoint assays that cannot distinguish competitive from non-competitive mechanisms; formal kinetic parameters exist for one defensin-enzyme pair only, and the mechanism established there is non-competitive; direct binding measurements and co-crystal structures are absent; and in vivo validation is scarce. Mechanistic claims therefore rest largely on molecular docking. We separate what is experimentally established from what is computationally inferred, evaluate engineering and expression strategies against that evidence, and define the kinetic, structural and translational gaps that must be closed.",
+    "doi": "10.1007/s12602-026-11216-2",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42776414",
+      "journal": "Probiotics and antimicrobial proteins"
+    },
+    "dedupe_key": "doi:10.1007/s12602-026-11216-2"
+  },
+  {
+    "kind": "article",
+    "title": "Computational Design Of A Peptide Candidate Targeting NOTCH1 And PI3K/AKT Signaling Pathways In Cancer: A Coarse-Grained Molecular Dynamics Simulation Study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776373/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.563003+00:00",
+    "authors": [
+      "Soheila ParcheBafieh",
+      "Shiva Khezri",
+      "Habib Zarredar",
+      "Leila Rahbarnia",
+      "Safar Farajnia"
+    ],
+    "summary": "The PI3K/AKT and NOTCH1 signaling pathways are key regulators of tumor progression, proliferation, survival, and metastasis in numerous cancers, making them attractive targets for peptide-based anticancer therapies. Dermaseptin-B2 is a well-characterized anticancer peptide known to modulate the PI3K/AKT signaling pathway; however, its therapeutic application may be limited by suboptimal cellular uptake. In contrast, Magainin-2 exhibits strong membrane-interacting and cell-penetrating properties and has been widely employed in the development of hybrid bioactive peptides to enhance membrane permeability and intracellular delivery. In this study, a peptide library was constructed from truncated fragments of Dermaseptin-B2 and Magainin-2 to identify hybrid peptides targeting the PI3K/AKT and NOTCH1 signaling pathways. A five-amino-acid anticancer motif derived from Dermaseptin-B2 was fused to a ten-amino-acid membrane-active fragment of Magainin-2 to improve cellular penetration. Subsequently, three rational amino acid substitutions were introduced into the lead peptide (MD3)-lysine replacing phenylalanine, histidine replacing glycine, and valine replacing serine-to enhance anticancer activity, optimize cell penetration, and reduce potential toxicity. Molecular docking analyses demonstrated favorable binding of MD3 to proteins involved in the PI3K/AKT and NOTCH1 signaling pathways. Molecular dynamics simulations, including RMSD, RMSF, and radius of gyration analyses, confirmed the structural stability of the peptide-protein complexes throughout the simulation period. Binding free-energy calculations using the MM-PBSA method indicated thermodynamically favorable interactions between MD3 and its target proteins. Furthermore, analyses of hydrogen-bond distance and angle distributions supported the formation of stable, geometrically favorable intermolecular interactions. Coarse-grained membrane simulations further demonstrated the efficient membrane-penetrating capability of MD3 in a DOPS-DOPC lipid bilayer model. Collectively, these findings identify MD3 as a promising multifunctional hybrid peptide that targets multiple cancer-associated signaling pathways and exhibits favorable membrane penetration and structural stability, highlighting its potential as a candidate for future peptide-based anticancer therapeutics.",
+    "doi": "10.1007/s12013-026-02160-7",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42776373",
+      "journal": "Cell biochemistry and biophysics"
+    },
+    "dedupe_key": "doi:10.1007/s12013-026-02160-7"
+  },
+  {
+    "kind": "article",
+    "title": "Targeting snake venom metalloproteinases: structural diversity, molecular pathogenesis and therapeutic interventions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776337/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.563518+00:00",
+    "authors": [
+      "Jagadeesh Dodakallanavar",
+      "Darasaguppe R Harish",
+      "Kashinath Hiremath",
+      "Ganesh H Sampat",
+      "Vishal S Patil",
+      "Rashmi K Mahadevamurthy",
+      "Sanjay Ugare",
+      "Kranthi Kiran Akula",
+      "H V Manjunathachar"
+    ],
+    "summary": "Snake venom Metalloproteinases (SVMPs) are Zn²⁺-dependent endopeptidases categorised under metzincin superfamily and are predominantly found in venom of the \"Viperidae\" family snakes. They are key mediators of venom-induced pathology with associated tissue damage including haemorrhage and oedema. SVMPs are classified as P-I, P-II, and P-III depending on the domains, each differing in structural complexity and organization. Further, the conserved HEXXHXXGXXH catalytic motif organizes a Zn2+ ion, essential for the breakdown of peptide bonds and proteins. Given the limitations of conventional antivenom therapy, increasing attention has been directed toward targeted approaches for SVMPs neutralization, including plant-derived phytocompounds, synthetic and repurposed small-molecule inhibitors, recombinant monoclonal antibodies, and camelid-derived nanobodies. Structure-based drug discovery, molecular docking, and mechanistic studies have facilitated the identification of compounds and biologics capable of interfering with SVMP catalytic activity, substrate recognition or functionally relevant epitopes. Emerging technologies such as CRISPR-engineered venom gland organoids and artificial intelligence/machine learning-assisted molecular screening further provide opportunities for functional target validation and rational therapeutic discovery. This review integrates these conventional and emerging strategies, highlighting the structural basis of SVMPs inhibition and their potential to support the development of precise, broad-spectrum, and next-generation therapeutic interventions against SVMP-mediated envenoming.",
+    "doi": "10.1007/s11033-026-12781-z",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42776337",
+      "journal": "Molecular biology reports"
+    },
+    "dedupe_key": "doi:10.1007/s11033-026-12781-z"
+  },
+  {
+    "kind": "article",
+    "title": "NRB-FusePS: A Protein Language Model-Based Multimodal Framework for Predicting Ligand-Binding Residues in Nuclear Receptors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776334/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.564012+00:00",
+    "authors": [
+      "TianXing Qiao",
+      "YongE Feng"
+    ],
+    "summary": "Nuclear receptors (NRs) are ligand-dependent transcriptional regulators whose ligand-binding residues are crucial for receptor activation and drug-target analysis. In this study, we developed NRB-FusePS, a protein language model-based multimodal framework for predicting BioLiP-defined ligand-binding residues in NRs. Nuclear receptor ligand-binding information was collected from the BioLiP database, and residue-level samples were generated using 21-residue sliding windows. A protein-level independent test strategy was used to reduce information leakage caused by overlapping windows from the same protein. Sequence composition, amino acid pair, structural, evolutionary, and ESM2 protein language model descriptors were extracted and evaluated using conventional machine learning models. Based on these results, a three-branch deep learning model called NRB-Fuse was constructed to integrate sequence statistical descriptors, structural descriptors, and ESM2 embeddings, and protein-level probability smoothing was introduced to obtain NRB-FusePS. On the independent test set, NRB-FusePS-Full achieved an area under the receiver operating characteristic curve (AUC) of 0.814, a Matthews correlation coefficient (MCC) of 0.406, and a sensitivity of 0.964. Shapley additive explanations (SHAP) analysis showed that ESM2 was the main information source, and the structural case of O00482 supported the predictive utility. The NRBsite web server provides three prediction modes for different levels of input information and is freely available at http://47.95.115.29:8501/ .",
+    "doi": "10.1007/s10930-026-10354-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42776334",
+      "journal": "The protein journal"
+    },
+    "dedupe_key": "doi:10.1007/s10930-026-10354-4"
+  },
+  {
+    "kind": "article",
+    "title": "Targeting LAMP2 synergizes with gemcitabine to inhibit bladder cancer progression via modulating STING degradation and regulating macrophage phenotypes.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42776282/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-23T23:55:40.564491+00:00",
+    "authors": [
+      "Yue Lv",
+      "Qiang Yin",
+      "Wuheng Li",
+      "Leihong Deng",
+      "Jiasheng Liu",
+      "Haolong Lv",
+      "Peng Zhang",
+      "Yihang Qiu",
+      "Difeng Guo",
+      "Rui Tao",
+      "Xiuguo Gan",
+      "Fanghua Xu",
+      "Zan Liu",
+      "Yongquan Wang"
+    ],
+    "summary": "Bladder cancer (BLCA) is an aggressive malignancy characterized by metastasis and drug resistance, creating an urgent demand for novel therapeutic targets. The lysosomal protein LAMP2 acts as a key oncogenic driver in BLCA and modulates the degradation of STING. As reported in prior studies, mechanistically, p62-mediated macroautophagy and HSC70-dependent chaperone-mediated autophagy (CMA) facilitate STING degradation. LAMP2 increases STING ubiquitination, leading to its lysosomal degradation in BLCA. Moreover, LAMP2 knockdown suppresses BLCA cell proliferation and migration. In our experimental systems, it also induces M1-type tumor-associated macrophages (TAMs) polarization and reduces TAM infiltration. RNF5 and TRIM56 are known to mediate K48/K63-linked ubiquitination of STING. Here, we demonstrate LAMP2 modulates this ubiquitination pattern in BLCA. Via virtual screening, we discover MRGPRX4 modulator-2 (Mm-2), a LAMP2-binding small molecule with anti-tumor activity against BLCA. Combined with gemcitabine (GEM), Mm-2 blocks autophagic flux and activates STING signaling. It also alters TAM phenotypes in our in vitro and in vivo models. The LAMP2-STING-TAMs axis shows potential as a therapeutic target for modulating the tumor immune microenvironment (TME) and affecting drug response in BLCA.",
+    "doi": "10.1007/s10495-026-02446-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening"
+    ],
+    "extra": {
+      "pmid": "42776282",
+      "journal": "Apoptosis : an international journal on programmed cell death"
+    },
+    "dedupe_key": "doi:10.1007/s10495-026-02446-4"
   }
 ]
