@@ -1,6 +1,237 @@
 [
   {
     "kind": "article",
+    "title": "Conductive Polymer Binder for Long-Term Stability of GaN Anode at Elevated Temperatures",
+    "url": "https://doi.org/10.26434/chemrxiv.15009424/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-24",
+    "collected_at": "2026-09-24T14:23:52.913207+00:00",
+    "authors": [
+      "Thuy Thi Bich Tran",
+      "Nicholas P. Hattrup",
+      "John S. Okasinski",
+      "Renuka Hyderkhan",
+      "Gerald J. Wang",
+      "B. Reeja Jayan"
+    ],
+    "summary": "Temperature is a major factor influencing battery cycle life, with elevated temperatures generally accelerating capacity degradation. Here, we employed poly(3,4-ethylenedioxythiophene):poly(styrene sulfonate) (PEDOT:PSS), a conductive polymer, as a binder to stabilize GaN anodes for long-term cycling at 55°C. The GaN anode with the PEDOT:PSS binder (GaN/PE) exhibits over a 40× increase in its electrical conductivity compared to the GaN anode with a conventional polyvinylidene fluoride (PVDF) binder (GaN/PVDF). The GaN/PE anode achieves a specific capacity of up to 855.3 mAh/g at 0.1 A/g, approaching the theoretical capacity of GaN (960 mAh/g) and approximately tripling the maximum capacity of the GaN/PVDF anode under the same operating conditions. In addition, the GaN/PE anode demonstrates long-term stability, retaining about 600 mAh/g after 500 cycles at 55 °C, while the GaN/PVDF anode achieves only half of that value after 500 cycles. Notably, previous reports on Si-based anodes operated within 45-70°C show a dramatic decrease in their capacity, remaining about 600 mAh/g after only 100 cycles. Molecular dynamics (MD) simulations explain the long-term stability of the GaN/PE anode",
+    "doi": "10.26434/chemrxiv.15009424/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15009424/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Integrative metabolomics, molecular networking and in silico analysis reveal bioactive antiplasmodial fractions from Aloe rigens",
+    "url": "https://doi.org/10.26434/chemrxiv.15009417/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-24",
+    "collected_at": "2026-09-24T14:23:52.915702+00:00",
+    "authors": [
+      "Abdirahman Elmi",
+      "A. Said Mohamed",
+      "Kevin Calabro",
+      "Dominique Laurain-Mattar",
+      "Fatouma M. Abdoul Latif",
+      "Philippe Grellier",
+      "Rosella Spina",
+      "abdirahman elmi fourreh"
+    ],
+    "summary": "Aloe rigens Reynolds & Bally (Asphodelaceae) is widely used in traditional medicine against malaria and demonstrated potent biological activity in our previous study. Despite its traditional use, its specific chemical and biological properties have not yet been comprehensively investigated. This study aimed to identify the phytochemical constituents responsible for the antiplasmodial activity of this plant through an integrated bioguided fractionation, untargeted metabolomics, and computational approach. Bioguided fractionation of Aloe rigens leaf extracts was conducted against Plasmodium falciparum (FcB-1 strain) using the SYBR Green fluorescence assay. The bioactive dichloromethane (RD) and ethyl acetate (RE) sub-extracts were profiled by LC-HRMS/MS and GC-MS. Untargeted metabolomic analysis, combining molecular networking (GNPS) with multivariate statistical analyses (PCA and hierarchical cluster analysis, HCA), was applied to characterize the fractions and identify discriminant features associated with antiplasmodial activity. Cytotoxicity was evaluated on AB943 human fibroblast cells using a resazurin-based assay. Additionally, an in silico molecular docking study was performe",
+    "doi": "10.26434/chemrxiv.15009417/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "in silico"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15009417/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Machine-learning force-field scoring rivals free-energy perturbation for congeneric ligand ranking across public benchmarks",
+    "url": "https://doi.org/10.26434/chemrxiv.15008810/v3",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-24",
+    "collected_at": "2026-09-24T14:23:52.918339+00:00",
+    "authors": [
+      "Kevin Ryczko",
+      "Sarah Maier",
+      "Amogh Sood",
+      "Patrick Rowe",
+      "Harish Ramadas",
+      "Lorenzo Boninsegna",
+      "Justin Overhulse",
+      "Hunter La Force",
+      "Mikayla Darrows",
+      "Shiji Zhao",
+      "Andrew Wildman",
+      "Mary Pitman",
+      "Romelia Salomon Ferrer",
+      "Andrea Bortolato"
+    ],
+    "summary": "Relative binding free-energy (RBFE) methods such as free-energy perturbation (FEP) set the accuracy standard for ranking congeneric ligands in structure-based drug design, but their computational cost limits throughput. Machine-learned force fields (MLFFs) now approach quantum-chemical accuracy at a small fraction of that cost, raising the question of whether they can recover much of RBFE’s ranking accuracy while remaining computationally efficient. We introduce a static-score methodology called taqo and benchmark 10 MLFF variants spanning 6 model families (UMA, MACE, Orb, eSEN, AIMNet2, AllScAIP), together with a classical molecular-mechanics force field, on a uniform static-pocket protocol, correlated against experiment across 22 benchmark systems. We find that the ten MLFFs cannot be resolved from one another at this sample size, while every one of them significantly outranks the classical force field reference, at a few seconds per ligand on a single GPU. Against published OpenFE and FEP+ results on the same systems and the same ligand sets, taqo is statistically indistinguishable from OpenFE and significantly below FEP+, at roughly three orders of magnitude lower cost. On the ",
+    "doi": "10.26434/chemrxiv.15008810/v3",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug design",
+      "structure-based drug design"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15008810/v3"
+  },
+  {
+    "kind": "article",
+    "title": "From sequences and structures to fitness, folding and function: challenges in the age of AI",
+    "url": "https://doi.org/10.26434/chemrxiv.15009409/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-24",
+    "collected_at": "2026-09-24T14:23:52.918634+00:00",
+    "authors": [
+      "Ezequiel A. Galpern",
+      "Charles W. J. Pugh",
+      "Mafalda Dias",
+      "Jonathan Frazer"
+    ],
+    "summary": "Deep-learning models have transformed our ability to predict the phenotypic effects of sequence perturbations. Protein language models (pLMs) score the evolutionary propensity of any amino-acid substitution, emerging as fast and accurate predictors of fitness changes. Inverse-folding (IF) models add structural information and are powerful alternatives for estimating folding-stability changes. But these likelihoods are imperfect and sometimes biased predictors of the biological quantities they are used to measure. Scaling pLMs has shown that bigger models do not always outperform smaller ones. IF models sometimes read sequence conservation as a stability constraint, which leads to biases when this signal is used to isolate functional contributions beyond folding. We review here the strategies emerging to mitigate, and where possible overcome, these limitations. Highlights:- Scaling protein language models does not close the likelihood–fitness gap - Inverse-folding models can read functional conservation as lost stability - Disentangling function from stability inherits both biases - Emerging strategies are attempting to address these issues",
+    "doi": "10.26434/chemrxiv.15009409/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15009409/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Operational insights from the front lines of OpenADMET: lessons from our blind challenges",
+    "url": "https://doi.org/10.26434/chemrxiv.15009105/v2",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-24",
+    "collected_at": "2026-09-24T14:23:52.920096+00:00",
+    "authors": [
+      "Hugo MacDermott-Opeskin",
+      "Maria Castellanos",
+      "Jonathan A. Swain",
+      "Jenke Scheen",
+      "Sean Colby",
+      "Georgia Channing",
+      "Scott Simpkins",
+      "Robert Warneford-Thompson",
+      "Galen J. Correy",
+      "L. Naomi Handly",
+      "Sri Kosuri",
+      "John Chodera",
+      "James S. Fraser",
+      "W. Patrick Walters"
+    ],
+    "summary": "The gap between reported machine learning (ML) model performance in drug discovery and the experience of using these models in live discovery projects remains a major hurdle for the field, because the retrospective nature of most benchmarks makes it difficult to objectively assess progress. To address this gap, OpenADMET has hosted a series of blind challenges to benchmark and advance predictive modeling in absorption, distribution, metabolism, excretion, and toxicity (ADMET). In this Perspective, we distill the operational, strategic, and community-level lessons from our first four blind challenges, providing a practical blueprint for designing and running collaborative machine learning competitions in the life sciences. In addition, we open-source our blind challenge infrastructure and data-validation tools to lower the barrier to entry for hosting rigorous, community-driven competitions and to foster a sustainable framework for collective learning in computer-aided drug discovery.",
+    "doi": "10.26434/chemrxiv.15009105/v2",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "ADMET"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15009105/v2"
+  },
+  {
+    "kind": "article",
+    "title": "Accelerating Lead Optimization away from Anti-Targets: Navigating the Structural Complexity of Promiscuous ADMET Proteins",
+    "url": "https://doi.org/10.26434/chemrxiv.15000227/v4",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-24",
+    "collected_at": "2026-09-24T14:23:52.921990+00:00",
+    "authors": [
+      "Howook Hwang",
+      "Mee Shelley",
+      "Andrew Placzek",
+      "Kevin Demarco",
+      "Steven Albanese",
+      "Andreas Verras",
+      "Neelu Kaila",
+      "Joshua Mcelwee",
+      "Sebastien Campos",
+      "Justin A Caravella",
+      "Samantha Carreiro",
+      "Scott D Edmondson",
+      "Kevin D Kreutter",
+      "Sheetal Kumar",
+      "Angela V Toms",
+      "Peter J Tummino",
+      "Lewis Whitehead",
+      "Sung-Sau So",
+      "Daigo Inoyama",
+      "Kyle Konze",
+      "Robert Pelletier",
+      "Tianchuan Xu",
+      "Robert Abel",
+      "Richard A Friesner",
+      "Edward B Miller"
+    ],
+    "summary": "The development of a small-molecule suitable for clinical use involves optimization of ligand binding to an identified target protein but also frequently the reduction of binding to a variety of anti-target proteins known to pose translational risk. These anti-targets, often referred to as ADMET proteins, often contain large, highly flexible binding sites leading to promiscuous binding of small molecules. This property often frustrates efforts to execute structure-based design against these anti-targets. Here we demonstrate the application of a combination of induced fit docking and free energy perturbation to structurally enable several of the most common anti-targets: cytochrome P450 isoforms 3A4 and 2D6, the hERG ion channel, and PXR. Crucially, the enforcement of a consensus binding mode across a congeneric series allowed for the efficient exploration of a wide range of receptor conformation space. Results are presented for both public retrospective datasets and prospective application in active drug discovery programs.",
+    "doi": "10.26434/chemrxiv.15000227/v4",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "ADMET",
+      "free energy perturbation"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15000227/v4"
+  },
+  {
+    "kind": "article",
+    "title": "Molecular Dynamics Studies of Model Ionizable Lipids in an mRNA Vaccine",
+    "url": "https://doi.org/10.26434/chemrxiv.15009394/v1",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-24",
+    "collected_at": "2026-09-24T14:23:52.922336+00:00",
+    "authors": [
+      "Mohsen Farshad",
+      "Jayendran C. Rasaiah"
+    ],
+    "summary": "Effective COVID-19 mRNA vaccines encapsulate nucleoside-modified messenger ribonucleic acid (mRNA), which encodes the prefusion-stabilized SARS-CoV-2 spike protein, inside lipid nanoparticles. Endosomal acidification motivates the study of ionizable-lipid protonation. Here, we isolate how protonation changes hydration, solvent preference, and structural organization of ALC-0315 in simplified model environments. Through molecular dynamics simulations, we identify clear protonationdependent differences in lipid orientation, hydration, and collective organization across three model systems. At a water/hexane interface, the protonated amine headgroup shows a stronger preference for the aqueous phase, reflecting enhanced interactions with water molecules. In 20-lipid assemblies, the protonated assembly remains more hydrated and aqueous-associated over the simulated trajectory, whereas the neutral assembly migrates toward and spreads along the water/hexane interface. In pure ALC-0315 bilayer simulations, protonation strengthens amine hydration and alters bilayerscale structural organization, with the observed morphology depending on the pressurecoupling protocol. Collectively, these find",
+    "doi": "10.26434/chemrxiv.15009394/v1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15009394/v1"
+  },
+  {
+    "kind": "article",
+    "title": "Machine learning-enabled prediction of dynamic vertical triplet energies underscores the role of vibrational anharmonicity in energy transfer",
+    "url": "https://doi.org/10.26434/chemrxiv.15007359/v2",
+    "source": "ChemRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-24",
+    "collected_at": "2026-09-24T14:23:52.923082+00:00",
+    "authors": [
+      "Mihai V. Popescu"
+    ],
+    "summary": "The concept of triplet energy has long served as the operative predictor of energy transfer reactivity in photochemistry, yet its reliable computational determination remains challenging for many organic systems. The recently introduced dynamic vertical triplet energy (DvTE) framework recasts triplet energy as a statistical ensemble of instantaneous vertical gaps sampled from molecular dynamics trajectories, achieving mean absolute errors of 1.7 kcal/mol against experimental data, but at a computational cost that limits its broader application. Here, DvTE-ML is introduced, which extends machine-learned interatomic potentials to dynamic, ensemble-based prediction of excited-state properties. Built by fine-tuning the MACE-OMOL foundation model, DvTE-ML incorporates path integral molecular dynamics to capture nuclear quantum effects explicitly, alongside an iterative filtering workflow that addresses a state-error contamination risk intrinsic to open-shell training data. Applied to a diverse set of 52 organic molecules, including biologically relevant systems previously intractable at the reference level of theory, DvTE-ML matches the accuracy of the original DvTE framework. Beyond th",
+    "doi": "10.26434/chemrxiv.15007359/v2",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {},
+    "dedupe_key": "doi:10.26434/chemrxiv.15007359/v2"
+  },
+  {
+    "kind": "article",
     "title": "Host-dependent salivary effector candidates and predicted plant immune targets in Spodoptera frugiperda",
     "url": "https://doi.org/10.64898/2026.09.21.753394",
     "source": "bioRxiv",
@@ -40767,5 +40998,679 @@
       "journal": "Apoptosis : an international journal on programmed cell death"
     },
     "dedupe_key": "doi:10.1007/s10495-026-02446-4"
+  },
+  {
+    "kind": "article",
+    "title": "Identification of β-ionone as an oviposition preference cue in Spodoptera litura using SlitPBP3-based reverse chemical ecology.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42779141/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.987047+00:00",
+    "authors": [
+      "Chunyan Wu",
+      "Biyun Zhang",
+      "Lijun Ma",
+      "Cheng Gong",
+      "Hangwei Liu",
+      "Yuejun Fu",
+      "Guy Smagghe",
+      "Fengqi Li",
+      "Chen Luo"
+    ],
+    "summary": "Screening and identifying compounds that modulate oviposition by female Spodoptera litura moths is a promising strategy for the selective management of this pest. Reverse chemical ecology provides an efficient and target-oriented approach for identifying bioactive semiochemicals by exploiting the functionally relevant olfactory binding proteins. Scanning electron microscopy revealed the presence of multiple types of sensilla on the ovipositor of female S. litura, providing morphological support for the selection of ovipositor-expressed olfactory genes as screening targets. In the present study, we used SlitPBP3, an olfactory gene expressed in the ovipositor of female S. litura during the calling stage, as a molecular target for screening oviposition-related compounds. Structure-based virtual screening combined with fluorescence competitive binding assays demonstrated that SlitPBP3 showed preferential binding to β-ionone among the tested compounds. Site-directed mutagenesis further revealed that residues F12 and F118 are critical for the interaction between SlitPBP3 and β-ionone. Functional assays showed that RNA interference-mediated silencing of SlitPBP3 significantly reduced the oviposition preference index of female moths for β-ionone-treated substrates. Notably, female moths continued to preferentially oviposit on β-ionone-treated substrates even after antennal ablation, indicating that chemosensory perception during oviposition can occur independently of antennal input. The present study establishes SlitPBP3 as a practical screening target within a reverse chemical ecology framework and identifies β-ionone as an oviposition-stimulatory cue with potential value for developing female-oriented behavioral management strategies against S. litura. © 2026 Society of Chemical Industry.",
+    "doi": "10.1002/ps.71287",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening"
+    ],
+    "extra": {
+      "pmid": "42779141",
+      "journal": "Pest management science"
+    },
+    "dedupe_key": "doi:10.1002/ps.71287"
+  },
+  {
+    "kind": "article",
+    "title": "Integrative analysis of cadmium exposure and osteoarthritis: from population evidence to molecular mechanisms.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778761/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.987661+00:00",
+    "authors": [
+      "Yingjin Luo",
+      "Daqian Zhou",
+      "Mingmin Zhou",
+      "Qianghua Zheng"
+    ],
+    "summary": "This study integrates epidemiological analysis and computational toxicology approaches to systematically investigate the association between cadmium (Cd) exposure and osteoarthritis (OA), as well as the underlying molecular mechanisms. Based on the data from the 2013-2018 National Health and Nutrition Examination Survey (NHANES), multivariate logistic regression models and forest plot analyses revealed that elevated blood cadmium levels were significantly associated with an increased risk of OA, with particularly pronounced effects observed among individuals with diabetes, hypertension, vitamin D deficiency, low income, and smokers. Further, potential cadmium-related targets were identified through network toxicology, and by integrating differentially expressed genes (DEGs) in OA, weighted gene co-expression network analysis (WGCNA), and protein-protein interaction (PPI) networks (STRING), a total of 113 intersection genes were obtained. Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses indicated that cadmium may promote OA progression by regulating pathways, such as cellular senescence, FOXO signaling, and TNF signaling. Through Cytoscape MCC algorithm, forest plot, and Lasso regression analysis, six key hub genes-MYC, FOXO1, FOXO3, ZFP36, AIF1, and KLF4-were identified. Molecular docking simulations further validated the strong binding affinity between cadmium nitrate and these core targets. Overall, this study comprehensively delineates the molecular network by which cadmium exposure may contribute to OA, providing novel insights into the environmental heavy metal toxicity mechanisms and potential therapeutic interventions.",
+    "doi": "10.1007/s00210-026-05830-8",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42778761",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s00210-026-05830-8"
+  },
+  {
+    "kind": "article",
+    "title": "Antibody-drug conjugate engineering: from design to efficacy and safety.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778534/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.988253+00:00",
+    "authors": [
+      "Alberto Ocana",
+      "Jorge R Espinosa",
+      "Carlos Alonso-Moreno",
+      "Balázs Győrffy",
+      "Henry Tong",
+      "Atanasio Pandiella"
+    ],
+    "summary": "Antibody-drug conjugates (ADCs) represent a rapidly expanding class of targeted cancer therapeutics that combine the high selectivity of monoclonal antibodies with the potent cytotoxic activity of small-molecule drugs. Their clinical success relies on the simultaneous optimization of multiple interdependent parameters, including antigen selection, antibody engineering, linker chemistry, and payload pharmacology, which limits the effectiveness of traditional empirical approaches. In this context, recent advances in artificial intelligence (AI) and computational biophysics are transforming the rational design of ADCs. AI enables large-scale integration of genomic, transcriptomic, and proteomic data to identify tumor-selective, surface-accessible antigens and to support patient stratification strategies. Deep learning models enhance antibody engineering by predicting structure, affinity, stability, and developability, while generative algorithms accelerate affinity maturation and specificity optimization. Computational prediction of linker design and conjugation sites improves plasma stability, controlled payload release, and drug-to-antibody ratio, whereas graph-based neural networks facilitate the selection and optimization of cytotoxic payloads with favorable potency, membrane permeability, and bystander effects. Complementary molecular dynamics simulations provide atomistic insight into antibody conformation, linker flexibility, and payload interactions, enabling a deeper mechanistic understanding of ADC stability and function. At the translational level, hybrid physiologically based pharmacokinetic-AI models and digital twin simulations enable virtual evaluation of tumor penetration, systemic exposure and safety, ultimately supporting dose optimization and more efficient clinical development. Although this review places particular emphasis on the application of these approaches in oncology, emerging ADC strategies beyond cancer-including autoimmune, neurodegenerative, cardiovascular, and metabolic diseases-are also discussed. Together, these computational strategies represent a convergence of machine intelligence and molecular biology that is poised to fundamentally transform ADC development, enabling safer, more precise, and effective therapies across oncology and beyond.",
+    "doi": "10.1038/s41392-026-03057-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody engineering",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42778534",
+      "journal": "Signal transduction and targeted therapy"
+    },
+    "dedupe_key": "doi:10.1038/s41392-026-03057-w"
+  },
+  {
+    "kind": "article",
+    "title": "Icariin binds to Hk2 to suppress pro-inflammatory polarization of alveolar macrophages by influencing the Hk2/Hk3/Pgk1/glycolysis axis in HDM-induced asthma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778115/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.988836+00:00",
+    "authors": [
+      "Xiaofei Zhu",
+      "Weifeng Tang",
+      "Lingling Deng",
+      "Bin Wang",
+      "YueRen Wu",
+      "Huahe Zhu",
+      "Wenjing Chen",
+      "Congcong Li",
+      "Nabijan Mohammadtursun",
+      "Mamatjan Abduwaki",
+      "Mammat Nurahmat",
+      "Jingcheng Dong"
+    ],
+    "summary": "Allergic asthma is a common respiratory disorder in which glycolysis-driven pro-inflammatory polarization of alveolar macrophages (AMs) plays an important role. Icariin (ICA), a natural flavonoid glycoside, has mechanisms in house dust mite (HDM)-induced asthma that remain elusive. To investigate the protective effects of ICA against HDM-induced asthma and determine its effects on AMs. A murine model of HDM-induced asthma was established, and mice were treated with ICA. High-purity AMs were isolated for transcriptomic and untargeted metabolomic analyses. Surface plasmon resonance (SPR) and molecular docking were performed to assess the binding affinity between ICA and hexokinase 2 (Hk2). The involvement of the Hk2/Hk3/Pgk1 pathway was further validated in vitro using the Hk2 inhibitor 3-BrPA and lentiviral-mediated Hk2 overexpression. ICA alleviated airway inflammation in asthmatic mice and suppressed the pro-inflammatory activation of AMs. Integrated multi-omics analyses showed that ICA restored glycolytic homeostasis by downregulating the Hk2/Hk3/Pgk1 pathway. SPR and molecular docking analyses confirmed direct binding of ICA to Hk2 with high affinity (KD = 27.65 μM). In vitro, ICA suppressed glycolytic flux and pro-inflammatory activation in AMs, effects that were also observed following intervention with 3-BrPA. Hk2 overexpression attenuated ICA's protective effects on AMs, supporting the involvement of the Hk2-mediated glycolytic pathway in ICA's anti-inflammatory activity. This study is the first to integrate transcriptomic and metabolomic analyses of AMs from ICA-treated asthmatic mice. The findings suggest that ICA alleviates HDM-induced asthma, potentially by binding to Hk2 and modulating the Hk2/Hk3/Pgk1 pathway, regulating glycolysis and inflammatory responses in AMs.",
+    "doi": "10.1016/j.freeradbiomed.2026.09.009",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42778115",
+      "journal": "Free radical biology & medicine"
+    },
+    "dedupe_key": "doi:10.1016/j.freeradbiomed.2026.09.009"
+  },
+  {
+    "kind": "article",
+    "title": "SIRT1-mediated deacetylation of TRIM21 promotes IRF5 degradation and restrains type I interferon signatures in Sjögren's disease.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778089/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.989423+00:00",
+    "authors": [
+      "Yuhao Xuan",
+      "Danqian Cheng",
+      "Qi Xi",
+      "Lejie Sun",
+      "Na Li",
+      "Xiaosheng Lei",
+      "Meng Yang",
+      "Hui Liu",
+      "Lijun Li",
+      "Wei Hu",
+      "Huaxun Wu"
+    ],
+    "summary": "Persistently activated type I interferon (IFN) signaling is a key factor in glandular dysfunction of Sjögren's disease(SjD), with elevated \"type I interferon signatures\" observed in both peripheral blood and salivary gland tissues of affected patients. However, the intrinsic mechanisms suppressing this response remain incompletely understood. This study aims to investigate whether the NAD⁺-dependent deacetylase SIRT1 regulates the type I IFN signatures in salivary gland tissue by enhancing the ubiquitin-mediated degradation of IRF5 through modulation of TRIM21's E3 ubiquitin ligase activity. Expression of SIRT1, TRIM21, IRF5, and interferon-stimulated genes (ISGs) was analyzed in labial gland tissues from SjD patients and validated in an antigen-induced SjD mouse model and human salivary gland epithelial cells (HSGECs). Protein-protein interactions and post-translational modifications were examined using co-immunoprecipitation, molecular docking, and site-directed mutagenesis approaches. In SjD patient tissues, mouse models, and IFN-α-stimulated HSGECs, SIRT1 expression was downregulated, whereas TRIM21, IRF5, and interferon-stimulated genes (ISG15, MX1, IFI44, and IFIT3) were significantly upregulated. Activation of SIRT1 attenuated type I IFN signatures by promoting TRIM21-mediated degradation of IRF5 and restoring secretory function in submandibular glands. Mechanistically, SIRT1 enhanced the E3 ubiquitin ligase activity of TRIM21 through site-specific deacetylation at lysine 374, thereby facilitating IRF5 ubiquitination and degradation. Our study reveals a novel SIRT1-TRIM21-IRF5 regulatory axis that modulates type I IFN responses in SjD, offering a potential therapeutic target for controlling immune-mediated inflammation in autoimmune diseases.",
+    "doi": "10.1016/j.trsl.2026.09.015",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42778089",
+      "journal": "Translational research : the journal of laboratory and clinical medicine"
+    },
+    "dedupe_key": "doi:10.1016/j.trsl.2026.09.015"
+  },
+  {
+    "kind": "article",
+    "title": "Investigating the Therapeutic Mechanism of Leech in Vascular Dementia: An Integrated Approach Combining Network Pharmacology and Experimental Validation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42778072/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.990026+00:00",
+    "authors": [
+      "L I Yanjiao",
+      "Xialin Xue",
+      "Hongyu Luo",
+      "Dan Chen",
+      "Shuxian Yang",
+      "Xuekuan Huang",
+      "L I Yan"
+    ],
+    "summary": "Vascular dementia (VaD), the second leading cause of dementia following Alzheimer's disease, results from the reduction in cerebral blood flow. Medicinal leeches (SZ) in traditional Chinese medicine (TCM), a classic remedy for promoting blood circulation and improving blood stasis, have shown capabilities to relieve neuroinflammation and repair the blood-brain barrier (BBB) integrity. However, the efficacy and the underlying mechanisms of medicinal leeches in treating VaD remain unclear. This study aimed to explore the efficacy of medicinal leeches in treating VaD and its molecular mechanisms. An in vivo VaD model of rats was created via a two-vessel occlusion (2VO) ischemia protocol. Learning and memory functions in rats were assessed via the water maze test, Y-maze test, and novel object recognition test. The neuronal injury in rat hippocampus was assessed by H&E and Nissl staining. Network pharmacology (NP) and molecular docking depicted a \"SZ-Compounds-Targets\" network and visualized the binding pattern between core components of medicinal leeches and key targets of VaD, respectively. Transmission electron microscopy (TEM), ELISA, quantitative PCR, and Western blotting were performed to validate the involvement of the TLR4/NF-κB signaling pathway in leech treatment against VaD. Medicinal leeches alleviated the cognitive deficits and neuronal injuries in VaD rats. Seven key targets were predicted as the leading contributors to the neuroprotective potential of medicinal leeches against VaD. Enrichment analyses further showed that the Toll-like receptor and NF-κB signaling pathways were enriched in the key targets of medicinal leeches. Experimental assays showed that expression levels of TLR4, MyD88, p-p65, and pro-inflammatory mediators were significantly elevated in VaD rats, which were further enhanced by LPS induction. Encouragingly, leech treatment significantly downregulated their levels. Medicinal leeches can effectively alleviate the learning and cognitive impairments, neurological pathology in the hippocampal CA1 region, and the loss of BBB integrity in VaD rats. Moreover, medicinal leeches can suppress the neuroinflammation in VaD rats through inhibiting the TLR4/NF-κB signaling pathway.",
+    "doi": "10.1016/j.brainresbull.2026.112131",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42778072",
+      "journal": "Brain research bulletin"
+    },
+    "dedupe_key": "doi:10.1016/j.brainresbull.2026.112131"
+  },
+  {
+    "kind": "article",
+    "title": "The effect of carrageenan oligosaccharides on the muscle quality and myofibrillar protein stability of sea bass (Lateolabrax japonicus) during freezing storage under different freezing methods.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777990/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.990602+00:00",
+    "authors": [
+      "Qiming Zang",
+      "Meng Xue",
+      "Wenhui Zhu",
+      "Jianrong Li",
+      "Xuepeng Li",
+      "Dan Li",
+      "Shumin Yi"
+    ],
+    "summary": "Frozen storage is widely used for the preservation of seafood quality, but protein denaturation and oxidative damage often lead to a decline in fish meat quality. This study investigated the effects of carrageenan oligosaccharides combined with different freezing treatments on the muscle quality and myofibrillar protein stability of sea bass (Lateolabrax japonicus) during 8 weeks of frozen storage. The results showed that the meat quality of fish stored after carrageenan oligosaccharide treatment was superior to that of the untreated group. Carrageenan oligosaccharides effectively alleviated quality deterioration, particularly when combined with the quick-freezing treatment. After 8 weeks, this combined treatment maintained the highest water hold capacity (79.70%) and the lowest cooking loss (21.69%), indicating improved water retention. It also maintained the highest myofibrillar protein solubility (77.96%) and Ca2+-ATPase activity (1.703 μmolPi/mg protein/h), retained a higher total sulfhydryl content (5.49 mol/105 g pro), and showed the lowest surface hydrophobicity (30.09). These changes were accompanied by reduced water migration, muscle structural deterioration, protein unfolding, oxidation, and aggregation. Raman spectroscopy and sodium dodecyl sulfate-polyacrylamide gel electrophoresis further demonstrated better preservation of protein secondary structure and myosin integrity after frozen storage. Molecular docking indicated that carrageenan oligosaccharides interacted with myosin mainly through hydrogen bonding and electrostatic interactions involving hydroxyl and sulfate groups. This study provides new insights into maintaining muscle quality and myofibrillar protein stability during frozen storage.",
+    "doi": "10.1016/j.ijbiomac.2026.154600",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42777990",
+      "journal": "International journal of biological macromolecules"
+    },
+    "dedupe_key": "doi:10.1016/j.ijbiomac.2026.154600"
+  },
+  {
+    "kind": "article",
+    "title": "Three previously undescribed indole alkaloids from the fruits of Brucea javanica (L.) Merr. with their tyrosinase inhibitory activity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777962/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.991066+00:00",
+    "authors": [
+      "Wen-Ze Yuan",
+      "He-Xuan Wang",
+      "Zhi-Kang Duan",
+      "Mei-Ya Lian",
+      "Shu-Hui Dong",
+      "Shao-Jiang Song"
+    ],
+    "summary": "Brucea javanica (L.) Merr. (Simaroubaceae) is a widely recognized medicinal plant in traditional Chinese medicine, noted for its rich variety of structurally diverse secondary metabolites. As part of our ongoing phytochemical investigation on the fruits of this species, three undescribed indole alkaloids, named Yadanziindoles A-C (1-3), were isolated and identified. Their structures were elucidated based on extensive spectroscopic data (HRESIMS, 1D and 2D NMR). Structurally, compounds 1 and 2 feature a C-2 2-hydroxypropan-2-yl substituent and differ in the oxidation state of the C-3 functionality, whereas compound 3 possesses a distinct, highly oxidized C-2 acyl side chain. In bioactivity assays, compounds 1 and 2 exhibited promising tyrosinase inhibitory activity. To gain deeper insights into the molecular basis of the observed activity, we conducted molecular docking studies to characterize their binding interactions with the target enzyme. These findings suggest that these indole derivatives represent a promising template for the development of novel tyrosinase inhibitors.",
+    "doi": "10.1016/j.fitote.2026.107475",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42777962",
+      "journal": "Fitoterapia"
+    },
+    "dedupe_key": "doi:10.1016/j.fitote.2026.107475"
+  },
+  {
+    "kind": "article",
+    "title": "About Artificial Intelligence Adoption in Antiviral Drug Discovery: Thoughts after ICAR 39.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777865/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.991581+00:00",
+    "authors": [
+      "Vardan Harutyunyan",
+      "Mher Matevosyan",
+      "Andrea Brancale",
+      "Hovakim Zakaryan"
+    ],
+    "summary": "Artificial intelligence (AI) is increasingly discussed across biomedical research, yet its adoption in antiviral drug discovery remains modest. This is paradoxical because antiviral research urgently needs precisely what AI can provide: faster target prioritization, more effective reuse of fragmented datasets, rapid drug repurposing, de novo molecular design and early resistance prediction. Limited adoption, however, does not simply reflect conservatism. Antiviral datasets are frequently small, heterogeneous, and assay-dependent; many models are difficult to interpret; and a substantial part of the literature still relies on docking scores or retrospective benchmarks rather than prospective biological validation. Skepticism among virologists, medicinal chemists, and pharmacologists is therefore understandable, but it should be directed at poorly designed workflows rather than at AI methods themselves. These limitations are not uniform across methods: supervised activity models are constrained mainly by data, generative models by how their objectives are specified, and general-purpose foundation models by domain mismatch and evaluation design, so each requires a different remedy. The field can advance by building curated antiviral datasets with standardized metadata, deploying interpretable and uncertainty-aware models, filtering predictions by pharmacological feasibility, and embedding AI within iterative computation-experiment loops. Sustained investment in training schools, hands-on workshops, and shared benchmark challenges will be essential if AI is to become a routine and trusted component of antiviral discovery.",
+    "doi": "10.1016/j.antiviral.2026.106538",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug repurposing"
+    ],
+    "extra": {
+      "pmid": "42777865",
+      "journal": "Antiviral research"
+    },
+    "dedupe_key": "doi:10.1016/j.antiviral.2026.106538"
+  },
+  {
+    "kind": "article",
+    "title": "Myricetin inhibits porcine circovirus 3 infection by targeting the viral capsid and modulating inflammatory and apoptotic pathways.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777849/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.992036+00:00",
+    "authors": [
+      "Mengzhen Dong",
+      "Chongwei Bi",
+      "Guoqing Zhang",
+      "Peiheng Li",
+      "Jingsong Huang",
+      "Xinyu Du",
+      "Xinwei Zhang",
+      "Ronglan Yin",
+      "Chun Li",
+      "Linzhu Ren"
+    ],
+    "summary": "Porcine circovirus 3 (PCV3) is a prevalent swine pathogen that causes multiple clinical disorders and threatens the global pig industry. This study explored the anti-PCV3 activity and underlying mechanisms of myricetin, a natural flavonoid, in porcine kidney 15 (PK-15) cells. Results showed that myricetin suppressed PCV3 replication in a dose- and time-dependent manner, primarily by interfering with viral attachment and early entry. Molecular docking indicated myricetin binding to the PCV3 capsid. Further Western blotting validation revealed that myricetin also activated the Akt and ERK cascades, remodeled JAK-STAT signaling, and relieved PCV3-induced excessive autophagy and mitochondrial apoptosis. Network pharmacology screened six core host targets involved in the cell cycle, inflammation, autophagy, and apoptosis. Collectively, myricetin exhibited anti-PCV3 activity by targeting the viral capsid and regulating multiple host signaling pathways. This work provides experimental evidence for the development of myricetin as a promising natural agent against PCV3 infection.",
+    "doi": "10.1016/j.micpath.2026.108837",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42777849",
+      "journal": "Microbial pathogenesis"
+    },
+    "dedupe_key": "doi:10.1016/j.micpath.2026.108837"
+  },
+  {
+    "kind": "article",
+    "title": "Gentiopicroside Attenuates Renal Ischemia-Reperfusion Injury through Suppression of JNK/MAPK Signaling.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777801/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.992581+00:00",
+    "authors": [
+      "Lan Luo",
+      "Jia Liu",
+      "Na Zhang",
+      "Wen Meng",
+      "Yu Liu"
+    ],
+    "summary": "Renal ischemia-reperfusion injury (IRI) is a major cause of acute kidney injury (AKI) with significant clinical impact. Gentiopicroside (GPS), a natural secoiridoid glycoside isolated from traditional medicinal plants, has been reported to exert anti-inflammatory and cytoprotective activities, yet its potential role in renal IRI has not been fully explored. Mice underwent bilateral renal ischemia with oral GPS pretreatment. Renal function, histological injury, apoptosis, and inflammation were evaluated. Primary mouse renal tubular epithelial cells (mRTECs) and BUMPT cells were subjected to oxygen-glucose deprivation/reperfusion (OGD/R). Network pharmacology, molecular docking and cellular thermal shift assay (CETSA) were performed to identify potential GPS-associated pathways and targets. JNK signaling was further examined using JNK1-specific siRNA and anisomycin. GPS improved renal function, reduced tubular injury, apoptosis, and inflammation in IRI mice, and increased viability while reducing apoptosis in OGD/R-treated mRTECs and BUMPT cells. Network pharmacology highlighted MAPK signaling, and docking identified MAPK8 (JNK1) as a candidate GPS target. CETSA showed increased JNK1 thermal stability after GPS treatment. JNK1 silencing phenocopied the anti-apoptotic effects of GPS, with no significant additional reduction in JNK phosphorylation or caspase-3 cleavage after GPS treatment. Conversely, anisomycin partially reversed GPS-mediated protection. GPS also attenuated oxidative stress and modulated ferroptosis- and autophagy-associated molecular changes during OGD/R injury. GPS protects against renal IRI and OGD/R-induced tubular injury, with JNK/MAPK signaling serving as an important, but not exclusive, mediator of its anti-apoptotic effects. These findings support further investigation of oral GPS as a potential therapy for AKI.",
+    "doi": "10.1016/j.ejphar.2026.179356",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42777801",
+      "journal": "European journal of pharmacology"
+    },
+    "dedupe_key": "doi:10.1016/j.ejphar.2026.179356"
+  },
+  {
+    "kind": "article",
+    "title": "Chloroxylenol induces hematopoietic bias and immune dysregulation in zebrafish associated with MAPK signaling disruption.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777797/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.993114+00:00",
+    "authors": [
+      "Gongqing Wu",
+      "Xiaoyin Zhong",
+      "Xintong Feng",
+      "Yunhong Yi"
+    ],
+    "summary": "Chloroxylenol (PCMX), a widely used phenolic disinfectant, is an emerging aquatic pollutant whose immunotoxicity remains poorly understood. This study employed zebrafish models to evaluate PCMX toxicity across a concentration range (0.25-7.5 mg/L) spanning environmentally detectable levels to higher, toxicologically informative concentrations. Acute exposure caused dose-dependent developmental defects, oxidative stress, and apoptosis in both embryos and adults. Embryonic toxicological assessment revealed a 96-h LC50 of 3.98 mg/L for larvae, with significant hatching reduction at ≥2 mg/L and malformation elevation at ≥0.5 mg/L. PCMX disrupted innate immunity by depleting neutrophils while paradoxically expanding macrophages, RNA-seq revealed 353 dysregulated genes in adult kidney, with KEGG enrichment identifying the MAPK pathway as a central hub. Network toxicology and molecular docking predicted moderate binding of PCMX to MAPK nodes (TGFBR1, GRB2, AKT1; -6.66 to -4.5 kcal/mol), corroborated by qPCR validation of MAPK and hematopoietic regulators (optn, atf3, irak3, prkcba, tgfbr2a, spi1a, c1qb, fosab). We propose that PCMX-induced oxidative stress converges on MAPK disruption, driving immune dysregulation and biased hematopoiesis, though this causal model is inferred from correlative evidence and requires functional validation. Despite the concentration gap, these findings show that PCMX, even at sublethal doses, can disrupt conserved immune and hematopoietic pathways, raising concern for aquatic organisms.",
+    "doi": "10.1016/j.cbi.2026.112349",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42777797",
+      "journal": "Chemico-biological interactions"
+    },
+    "dedupe_key": "doi:10.1016/j.cbi.2026.112349"
+  },
+  {
+    "kind": "article",
+    "title": "Ligand-based pharmacophore modeling and molecular dynamics driven discovery of novel MEK1 inhibitors targeting KRAS signalling pathway.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777666/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.993695+00:00",
+    "authors": [
+      "Krishna Kalaskar",
+      "Rajasekhar Reddy Alavala"
+    ],
+    "summary": "The KRAS oncogene, which plays a crucial role in numerous human malignancies, remains a significant challenge. It is amongst the most mutated oncogenes within human cancers, specifically in pancreatic, colorectal, and non-small cell lung cancers, where it is a key driver of cancer initiation and growth. Despite its importance, KRAS is difficult to target directly due to the absence of deep binding pockets, its high affinity for GTP/GDP, and rapid cycling between active and inactive states. Thus, an effective strategy will be to target downstream effectors of KRAS, such as MEK, PI3K, and AKT. Mitogen-activated protein kinase 1 (MEK1) emerged as a promising target. In the current study, pharmacophore models were developed via a ligand-based pharmacophore approach and validated by using the Ligand Pharmacophore Mapping tool by calculating the EF1%, EF5%, EF10%, BEDROC and GH scores. Then, pharmacophore-based virtual screening was performed for the identification of novel hit molecules. A total of 22042 novel hit molecules were obtained, further narrowed to 2430 hit molecules through ADMET and Toxicity screening. Molecular Docking studies identified three top ranked compounds, PubChem-125589749 (Rank 1), PubChem-122594448 (Rank 2) and PubChem-49842405 (Rank 3), with score -76.91, -75.54 and -75.3184 kcal/mol, respectively, whereas Avutometinib showed a score of -61.78 kcal/mol. MD simulations over 100 ns and MM-GBSA calculations show that PubChem-125589749 (Rank 1) exhibited the most favourable interaction profile and stability, followed by PubChem-49842405 (Rank 3). MM-GBSA analysis of PubChem-125589749 (Rank 1) and Rank 3 showed average ΔGbinding energy -126.19 ± 15.29 and -114.81 ± 13.33. Further extended MD simulations for 200 ns and MM-GBSA calculations confirmed the binding stability and binding energy over a longer time. The reproducibility of the MD simulations was assessed by performing an independent MD simulation of the complexes and analysing the results.",
+    "doi": "10.1016/j.jmgm.2026.109578",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42777666",
+      "journal": "Journal of molecular graphics & modelling"
+    },
+    "dedupe_key": "doi:10.1016/j.jmgm.2026.109578"
+  },
+  {
+    "kind": "article",
+    "title": "Schisandrin B alleviates hepatic damage and hepatic lipid metabolic dysregulation induced by microcystin-LR.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777652/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.994250+00:00",
+    "authors": [
+      "Xiaxia Yuan",
+      "Shengnan Lv",
+      "Yingtong Li",
+      "Qi Yuan",
+      "Wanqing Chen",
+      "Xinxin Du",
+      "Shuai Yuan",
+      "Meixue Liu",
+      "Chen Li",
+      "Changxiu Hou",
+      "Yunhe Lu",
+      "Jiayu Liu",
+      "Linshan Song",
+      "Zhongqing Ren",
+      "Shasha Hou",
+      "He Bai"
+    ],
+    "summary": "Microcystin-LR (MC-LR) is a common biological pollutant found in aquatic environments; it induces severe liver injury, inflammation and lipid metabolic disorders. The potential mechanisms underlying MC-LR pathogenesis is still unclear, and effective therapeutic drugs remain to be explored through in-depth research. This study was designed to systematically evaluate and clarify the protective effects and mechanisms of Schisandrin B (SchB) against MC-LR-induced hepatotoxicity. The animal study indicated that SchB alleviated MC-LR-triggered body weight loss, hepatomegaly, liver dysfunction, inflammatory responses and histopathological damage (all p＜0.05). Biochemical analysis and qRT-PCR results demonstrated that SchB ameliorated triglyceride and total cholesterol levels by regulating lipogenic and lipolytic gene expression (all p＜0.05). Bioinformatics and molecular docking identified IL-6 as a potential binding target of SchB, with IL-6 was induced by MC-LR. Further, GO and KEGG bioinformatic analysis combined with Western blot demonstrated that SchB attenuated MC-LR-induced excessive AKT-FOXO1 cascade activation (all p＜0.05), and SC79, a selective AKT activator, partially reversed the hepatoprotective effects of SchB, as evidenced by altered serum ALT/AST levels, hepatic inflammatory cytokines (TNF-α, IL-6), lipid metabolism-related genes (SREBP1c、SCD1、ACC1、PPARα), and antioxidant indicators (SOD and CAT), a finding further supported by in vivo animal studies (all p＜0.05). These results indicate that SchB attenuates MC-LR-induced hepatic toxicity and suppresses excessive AKT/FOXO1 activation, suggesting SchB as a promising hepatoprotective candidate against MC-LR exposure.",
+    "doi": "10.1016/j.ecoenv.2026.120799",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42777652",
+      "journal": "Ecotoxicology and environmental safety"
+    },
+    "dedupe_key": "doi:10.1016/j.ecoenv.2026.120799"
+  },
+  {
+    "kind": "article",
+    "title": "Picroside II-mediated mitophagy activation inhibits ischemia-reperfusion-induced pyroptosis and apoptosis to promote ischemic flap survival.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777605/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.994810+00:00",
+    "authors": [
+      "Jialong Yang",
+      "Weilong Song",
+      "Kai Chen",
+      "Jiapeng Deng",
+      "An Wang",
+      "Panshen Xu",
+      "Hebin Pan",
+      "Kaitao Wang",
+      "Zhigang Bian",
+      "Sihan Chen",
+      "Lilin Zhu",
+      "Dingsheng Lin"
+    ],
+    "summary": "Picroside II (P II), a glycoside derivative, exhibits anti-apoptotic and anti-inflammatory activities. However, its role in ischemic flap necrosis has not been fully clarified. This study investigated the therapeutic potential of P II on ischemic flap necrosis and elucidated the underlying mechanisms, focusing on mitophagy regulation. An OGD/R model in HUVECs and a McFarlane flap model in rats were established. The pharmacological effects of P II were assessed both in vitro and in vivo. Network pharmacology combined with molecular docking was applied to screen candidate targets and signaling pathways of P II. Subsequently, the modulatory effects of P II on mitophagy, pyroptosis, and apoptosis were experimentally validated. Bioinformatics linked P II to the modulation of mitophagy, pyroptosis, and apoptosis. Molecular docking, molecular dynamics simulations, and CETSA supported a potential association of P II with AMPK and PINK1. In vitro, P II treatment was associated with increased mitophagy-related activity and reduced NLRP3-inflammasome and Bax/Bak/caspase-3 signaling, while reducing IL-1β, IL-18, and cytochrome c release. These protective effects were attenuated by AMPK inhibition or PINK1 silencing, supporting the involvement of AMPK/PINK1 mediated mitophagy in P II's mechanism of action. In vivo, P II improved flap survival partly through AMPK/PINK1-mediated mitophagy activation and concurrently inhibited pyroptosis and apoptosis, while alleviating inflammation and oxidative stress. P II promotes ischemic skin flap survival partly through AMPK/PINK1-mediated mitophagy activation and inhibition of ischemia-reperfusion-induced pyroptosis and apoptosis. Other P II-related targets and pathways, including NLRP3 and TNF-α, may also contribute synergistically to its protective effects.",
+    "doi": "10.1016/j.phymed.2026.158811",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42777605",
+      "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology"
+    },
+    "dedupe_key": "doi:10.1016/j.phymed.2026.158811"
+  },
+  {
+    "kind": "article",
+    "title": "PDCD4-driven steatosis via the HNF4A/GK axis is attenuated by the natural compound isosinensetin.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777604/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.995305+00:00",
+    "authors": [
+      "Xiaona Cheng",
+      "Kaikai Lu",
+      "Luyun Yang",
+      "Kexin Cheng",
+      "Qian Chen",
+      "Rong Zhao",
+      "Jinmei Niu",
+      "Ruixin Cheng",
+      "Jun Wang",
+      "Litao Wu",
+      "Minghua Zheng",
+      "Chunyan Yin",
+      "Jingru Bai",
+      "Dongmin Li"
+    ],
+    "summary": "Programmed cell death factor 4 (PDCD4) has been implicated in various metabolic disorders. However, its role and underlying mechanisms in metabolic dysfunction-associated steatotic liver disease (MASLD) have not been fully elucidated. This study aimed to define the role of PDCD4 in hepatic steatosis and identify potential therapeutic strategies targeting its downstream metabolic pathway. RNA sequencing was performed on liver tissues from wild-type and PDCD4-knockout mice to identify dysregulated metabolic pathways and candidate downstream genes. The PDCD4-HNF4A-GK regulatory pathway was investigated using genetic, histological, biochemical, and molecular analyses in mouse models and hepatocytes. Virtual screening and molecular docking were used to identify candidate GK-targeting compounds. Hepatocyte-specific PDCD4 deletion increased hepatic GK expression and aggravated lipid accumulation. GK knockout markedly attenuated PDCD4 deficiency-induced lipid accumulation in hepatocytes. Mechanistically, PDCD4 suppressed HNF4A translation, thereby limiting HNF4A-dependent GK transcription. Virtual screening identified isosinensetin as a candidate GK inhibitor. Isosinensetin inhibited GK activity and reduced lipid accumulation in hepatocytes and CDAHFD-fed mice. These results suggest that GK may warrant further investigation for ameliorating hepatic steatosis, and provide preliminary evidence for the PDCD4-HNF4A-GK axis in the regulation of hepatic triglyceride metabolism. Further studies are required to establish the relevance of this axis to the full spectrum of MASLD pathology.",
+    "doi": "10.1016/j.phymed.2026.158810",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42777604",
+      "journal": "Phytomedicine : international journal of phytotherapy and phytopharmacology"
+    },
+    "dedupe_key": "doi:10.1016/j.phymed.2026.158810"
+  },
+  {
+    "kind": "article",
+    "title": "Ameliorating effects and mechanisms of tuna peptides on UVB-induced photoaging and melanogenesis targeting oxidative stress, apoptosis, and tyrosinase inactivation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777471/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.996011+00:00",
+    "authors": [
+      "Yu-Mei Wang",
+      "Yu-Hui Zeng",
+      "Shuo-Lei Zheng",
+      "Bin Wang",
+      "Chang-Feng Chi",
+      "Qi Zeng"
+    ],
+    "summary": "Ultraviolet B (UVB) radiation causes skin photodamage and excessive melanogenesis, but effective multi-target protective agents remain limited. Antioxidant peptides derived from marine by-products are promising; however, it remains unclear whether specific peptides from skipjack tuna skin can simultaneously alleviate UVB-induced photodamage and inhibit melanogenesis, and the underlying molecular mechanisms are poorly defined. Therefore, the primary objective of this study was to systematically investigate the protective efficacy and molecular mechanisms of three antioxidant peptides derived from skipjack tuna skin-Met-Pro-Ala-Gly-Glu (MPAGE), Leu-Asn-Pro-Gly-Ala (LNPGA), and Gly-Thr-Gly-Pro-Ala (GTGPA)-against UVB-induced skin photodamage and excessive melanogenesis. We hypothesized that these peptides exert synergistic photoprotective and anti-melanogenic effects via multi-target regulation of Nrf2-mediated antioxidant pathways, inflammatory and apoptotic cascades, and tyrosinase inhibition. In UVB-irradiated HaCaT cells, MPAGE, LNPGA, and GTGPA significantly upregulate nuclear factor erythroid 2-related factor 2 (Nrf2) protein expression and promote its nuclear translocation, increasing the levels of NAD(P)H quinone dehydrogenase 1 (NQO1), superoxide dismutase (SOD), glutathione peroxidase (GSH-Px) and catalase (CAT) levels, thereby scavenging reactive oxygen species (ROS), reducing malondialdehyde (MDA), and alleviating oxidative damage. Mechanistically, molecular docking predictions suggested that these peptides may activate Nrf2 by interacting with the Kelch domain of kelch-like ECH-associated protein 1 (Keap1) and competitively occupying its ligand-binding pockets. Additionally, the peptides also attenuated apoptosis by reducing bcl-2-associated X protein/b-cell lymphoma 2 (Bax/Bcl-2) ratio and cysteine-dependent aspartate-specific protease 3 (Caspase-3) level. Moreover, they potently inhibited the β-galactosidase and collagenase production and reduced matrix metalloproteinase-1 (MMP-1) and matrix metalloproteinase-3 (MMP-3) levels, suppressing UVB-induced collagen degradation and mitigating skin photoaging. Enzyme-Linked Immunosorbent Assay (ELISA) revealed a marked reduction in interleukin-6 (IL-6), interleukin-1 β (IL-1β), and tumor necrosis factor α (TNF-α) levels, demonstrating significant anti-inflammatory effects. Finally, MPAGE, LNPGA, and GTGPA exhibited dose-dependent inhibitory effects on melanogenesis in B16-F10 cells. In silico docking analysis further predicted that these peptides could deeply embed in the active pocket of tyrosinase by hydrogen bondings interactions (<6 Å) with key catalytic residues. In summary, this work provides the first comprehensive mechanistic characterization of MPAGE, LNPGA, and GTGPA, demonstrating that they alleviate UVB-induced photodamage through synergistic antioxidant, anti-aging, anti-inflammatory, and anti-apoptotic mechanisms, while potentially inhibiting melanogenesis through computationally predicted tyrosinase suppression. These findings provide a basis for further experimental validation of these peptides as multi-target skin-protective agents.",
+    "doi": "10.1016/j.jphotobiol.2026.113572",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42777471",
+      "journal": "Journal of photochemistry and photobiology. B, Biology"
+    },
+    "dedupe_key": "doi:10.1016/j.jphotobiol.2026.113572"
+  },
+  {
+    "kind": "article",
+    "title": "Single-cell transcriptomics and multi-omics integration identify necroptosis-driven core targets and tubular-immune crosstalk in chronic kidney disease.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777444/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.996589+00:00",
+    "authors": [
+      "Siteng Zhang",
+      "Weikun Zhu",
+      "Guofang Huang",
+      "Dinghui Dai",
+      "Shiwei He",
+      "Xikui Zhang"
+    ],
+    "summary": "Current pharmacotherapies for chronic kidney disease (CKD) are limited by adverse effects and a \"one-target-one-drug\" paradigm. Necroptosis is a key driver of renal deterioration, yet its regulatory network remains poorly defined. Modified Da-Huang-Fu-Zi Decoction (DHFZ) has shown clinical efficacy, although its underlying mechanism, particularly in relation to necroptosis, requires further clarification. Bulk and single-cell RNA sequencing data from human kidneys were integrated to screen for necroptosis-related genes in CKD. Systems pharmacology was used to identify key DHFZ targets. SHAP interpretation, an independent GEO cohort, and the Nephroseq database were used to validate these targets. Molecular docking was performed to characterize binding modes between DHFZ bioactive constituents and candidate proteins. Pseudotime trajectory and cell-cell communication analyses were used to map intercellular signaling. The therapeutic effects of DHFZ were evaluated in a 5/6-nephrectomy rat model of CKD by assessing renal function, histopathology, and subcellular ultrastructure. Western blotting, qPCR, and ELISA were used to quantify core targets, necroptosis markers, and oxidative stress indices. Immunofluorescence and qPCR further verified modulation of the THBS1-CD47 axis. Three necroptosis-related hub genes, TP53, SIRT1, and CASP1, were identified and independently validated. Aloe-emodin showed the highest binding affinity for all three proteins. Pseudotime analysis showed that VCAM1+ proximal tubular (PT) cells accumulated in inflamed branches with active CASP1, whereas SIRT1 was enriched in reparative CUBN+ PT subsets. In CKD rats, SIRT1 expression was downregulated, whereas TP53, CASP1, oxidative stress markers (4-HNE, MDA, and 8-OHdG), and necroptosis signatures (p-RIPK1, p-RIPK3, and p-MLKL) were markedly increased. DHFZ and the SIRT1 agonist SRT1720 restored SIRT1 levels and attenuated renal injury. VCAM1+ PT cells highly expressed THBS1, which engaged macrophage CD47 and promoted inflammation. DHFZ disrupted the THBS1-CD47 axis, thereby reducing macrophage infiltration and cytokine production. Multi-omics profiling showed that DHFZ confers nephroprotection by restoring SIRT1-mediated suppression of necroptosis in VCAM1+ PT cells and disrupting maladaptive THBS1-CD47 tubular-macrophage crosstalk. These findings identify SIRT1 as a tractable therapeutic target in CKD.",
+    "doi": "10.1016/j.compbiolchem.2026.109414",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42777444",
+      "journal": "Computational biology and chemistry"
+    },
+    "dedupe_key": "doi:10.1016/j.compbiolchem.2026.109414"
+  },
+  {
+    "kind": "article",
+    "title": "Bu Shen Huo Xue Formula ameliorates chronic kidney disease and suppresses NLRP3 inflammasome-mediated pyroptosis and renal fibrosis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777409/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.997127+00:00",
+    "authors": [
+      "Xinyu Ma",
+      "Yuanyuan Deng",
+      "Jiangyuan Jin",
+      "Shuo An",
+      "Zheng Luo",
+      "Ni Tian",
+      "Sai Zhang",
+      "Minying Zhang",
+      "Mianzhi Zhang"
+    ],
+    "summary": "Bu Shen Huo Xue Formula (BSHX) is used in traditional Chinese medicine for chronic kidney disease (CKD), but its pharmacological mechanisms remain unclear. This study investigated whether effects of BSHX against CKD are associated with modulation of NLRP3 inflammasome-mediated pyroptosis and the inflammation-fibrosis axis. BSHX constituents were characterized by UPLC-MS/MS. Network pharmacology and molecular docking were used to predict potential targets. CKD was induced in mice by unilateral nephrectomy with contralateral ischemia-reperfusion injury. Mice received low- or high-dose BSHX or losartan potassium. Renal function, histopathology, fibrosis, inflammatory responses, and pyroptosis-related markers were assessed by serum biochemistry, staining, Western blotting, qPCR, and immunohistochemistry. Safety was evaluated in healthy mice. UPLC-MS/MS identified multiple BSHX constituents, and bioinformatic analyses suggested involvement of NLRP3-related inflammatory and fibrotic pathways. In CKD mice, BSHX dose-dependently reduced serum creatinine and blood urea nitrogen, attenuated renal injury and interstitial fibrosis, and decreased renal NLRP3, caspase-1, GSDMD, IL-1β, and IL-18 expression. BSHX also suppressed FN, α-SMA, MMP-9, IL-6, TNF-α, and MCP-1. In healthy mice receiving BSHX alone, no significant abnormalities were observed in the evaluated serum biochemical indices of renal or hepatic function. BSHX ameliorated renal dysfunction and injury in CKD mice and was associated with suppression of NLRP3 inflammasome-mediated pyroptosis, inflammation, and fibrosis. Under the present experimental conditions, BSHX did not induce detectable abnormalities in the evaluated serum indices of hepatic or renal function.",
+    "doi": "10.1016/j.prp.2026.156694",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42777409",
+      "journal": "Pathology, research and practice"
+    },
+    "dedupe_key": "doi:10.1016/j.prp.2026.156694"
+  },
+  {
+    "kind": "article",
+    "title": "Solasonine inhibits growth of gastric cancer by targeting FTL-mediated ferroptosis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777387/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:31.997661+00:00",
+    "authors": [
+      "Tengkai Wang",
+      "Xinyang Tian",
+      "Hui Shan",
+      "Yalu Mi",
+      "Bo Wang",
+      "Qing Yang"
+    ],
+    "summary": "Solasonine (SS), a principal bioactive constituent of Solanum nigrum L., has attracted considerable attention due to its pronounced cytotoxic effects on cancer cells. Nevertheless, the precise mechanism of SS against gastric cancer remains inadequately explored. In this study, the therapeutic effects and potential targets of SS against gastric cancer were investigated. The results showed that SS markedly inhibited cell proliferation and promoted cell death in gastric cancer cells. Pharmacological inhibition studies revealed that the antitumor effects of SS predominantly rely on ferroptosis rather than apoptosis, necroptosis, or autophagy. This was corroborated by dysregulation of ferroptosis-related molecular markers, increased intracellular lipid peroxidation (LPO), malondialdehyde (MDA), and Fe2+ levels, and depletion of glutathione (GSH). Proteomic profiling identified ferritin light chain (FTL) as a putative target of SS, which was further supported by molecular docking, molecular dynamics simulation, surface plasmon resonance (SPR), cellular thermal shift assay (CETSA), and western blot. Bioinformatics analyses demonstrated that FTL expression is significantly elevated at both the mRNA and protein levels in gastric cancer tissues. Higher FTL expression correlates with poorer overall survival. Overexpression of FTL in gastric cancer cells promoted the proliferation and mitigated SS-induced ferroptosis. In mice, SS treatment significantly inhibited tumor growth, suppressed FTL protein expression, and induced ferroptosis in gastric cancer xenografts. And the above effects can be rescued by application of a ferroptosis inhibitor. The antitumor activity and ferroptosis induction by SS were further validated using human organoid models. These findings demonstrate that SS inhibits gastric cancer growth by direct binding to FTL and promoting FTL-mediated ferroptosis. This mechanistic insight underscores the clinical applicability of SS for gastric cancer treatment.",
+    "doi": "10.1016/j.bioorg.2026.110571",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42777387",
+      "journal": "Bioorganic chemistry"
+    },
+    "dedupe_key": "doi:10.1016/j.bioorg.2026.110571"
+  },
+  {
+    "kind": "article",
+    "title": "Conventional and microwave-assisted synthesis of pyridine-linked 1,3,4-oxadiazole derivatives as promising antimicrobial agents: Structure-activity relationship and computational investigations using molecular docking, molecular dynamics simulation, MM-GBSA and DFT.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777385/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:33.378363+00:00",
+    "authors": [
+      "Darshan H Divetia",
+      "Devayat R Bhadarka",
+      "Vijay H Dodiya",
+      "Jainish U Joshi",
+      "Tushar J Karkar"
+    ],
+    "summary": "A novel series of pyridine-linked 2,2,5-trisubstituted 1,3,4-oxadiazole derivatives 4(a-o) was synthesized through conventional and microwave-assisted approaches using N-acylhydrazone intermediates derived from isoniazid and substituted acetophenones. Microwave irradiation significantly reduced reaction time while affording moderate to good product yields. The synthesized compounds were structurally characterized by FT-IR, 1H NMR, 13C NMR, mass spectrometry and elemental analysis. Biological evaluation demonstrated promising antibacterial and antifungal activities, with the nature and position of aromatic substituents markedly influencing antimicrobial potency. Molecular docking studies against E. coli DNA gyrase B, S. aureus dihydrofolate reductase and C. albicans lanosterol 14α-demethylase revealed favourable binding interactions consistent with the experimental antimicrobial results. In silico ADMET prediction indicated acceptable pharmacokinetic characteristics and the absence of significant toxicity liabilities, while Density Functional Theory (DFT) calculations provided insights into the electronic properties governing molecular reactivity. Furthermore, molecular dynamics simulation of the most promising DNA gyrase B complex confirmed stable ligand binding through sustained structural stability, compact protein architecture, coordinated residue motions, energetically favourable conformational states, and an effective MM-GBSA binding free energy predominantly driven by van der Waals interactions. Collectively, these findings identify pyridine-linked 1,3,4-oxadiazole derivatives as promising lead scaffolds for the development of new antimicrobial agents.",
+    "doi": "10.1016/j.bioorg.2026.110527",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET",
+      "molecular dynamics",
+      "ADMET prediction",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42777385",
+      "journal": "Bioorganic chemistry"
+    },
+    "dedupe_key": "doi:10.1016/j.bioorg.2026.110527"
+  },
+  {
+    "kind": "article",
+    "title": "Mechanism of tea saponin regulating the Nrf2/HO-1/NQO1 pathway to alleviate Salmonella Enteritidis-induced intestinal pathological injury in chicks.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42777368/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-24T14:23:33.379025+00:00",
+    "authors": [
+      "Bo Zhang",
+      "Ke Li",
+      "Jianyun Feng",
+      "Jiangnan Ni",
+      "Junjie Liu",
+      "Ao Dai",
+      "Hongya Yan",
+      "Rong Zhao",
+      "Zhenju Yuan",
+      "Aiguo Xin"
+    ],
+    "summary": "Previous studies have demonstrated that Salmonella Enteritidis triggers intestinal pyroptosis and pathological damage in hosts. Tea saponin (Ts) exhibits favorable anti-inflammatory, antioxidant and intestinal barrier-protective activities, whereas its protective role and molecular mechanism against Salmonella Enteritidis-induced intestinal injury in chicks remain poorly elucidated. This study explored the protective effects of Ts on Salmonella Enteritidis-caused intestinal damage in chicks and whether the Nrf2/HO-1/NQO1 signaling pathway mediates its function. A total of 60 7-day-old specific pathogen-free (SPF) chicks were randomly assigned to six groups: control, Salmonella Enteritidis-infected model, low, medium and high-dose Ts intervention groups, and florfenicol positive control group. Except the control group, all chicks received intraperitoneal Salmonella Enteritidis injection for model establishment, followed by 7 consecutive days of corresponding treatments. Diarrhea score, histopathological changes in the ileum and liver, serum liver function parameters (ALT, AST, ALP, TBIL), oxidative stress markers (SOD, GSH‑PX, CAT, MDA), and inflammatory cytokines (TNF‑α, IL‑6, IL‑1β, IL‑10) were measured, and the expression levels of Nrf2/HO‑1/NQO1 pathway components were evaluated at both mRNA and protein levels. Network pharmacology combined with molecular docking further validated the binding relationship between Ts and pathway key proteins. The untreated infected group presented aggravated diarrhea, severe intestinal and hepatic lesions, disordered liver function, oxidative stress and inflammation, along with suppressed Nrf2/HO‑1/NQO1 pathway expression. Ts intervention reversed these damages dose‑dependently, with high‑dose Ts showing the optimal efficacy. In conclusion, Ts mitigates diarrhea, inflammation and visceral pathological injury in Salmonella Enteritidis‑infected chicks, and its effects are associated with activation of the Nrf2/HO‑1/NQO1 pathway, improved antioxidant defense and inhibited inflammatory responses.",
+    "doi": "10.1016/j.psj.2026.107815",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42777368",
+      "journal": "Poultry science"
+    },
+    "dedupe_key": "doi:10.1016/j.psj.2026.107815"
   }
 ]
