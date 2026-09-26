@@ -44214,5 +44214,420 @@
       "journal": "Frontiers in veterinary science"
     },
     "dedupe_key": "doi:10.3389/fvets.2026.1816520"
+  },
+  {
+    "kind": "article",
+    "title": "A designed ubiquitin-binding protein selectively enriches and visualizes unanchored ubiquitin.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789724/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.955509+00:00",
+    "authors": [
+      "Shihua Shi",
+      "Alexandra Bendel",
+      "Georg Kempf",
+      "Jacint Sanchez",
+      "Sohei Majima",
+      "Vytautas Iesmantavicius",
+      "Daniel Hess",
+      "Jan Seebacher",
+      "Yong Huang",
+      "Sucheta Ghosh",
+      "Chun Cao",
+      "Gabriele Matthias",
+      "Jeffrey Bode",
+      "Yohei Yamauchi",
+      "Guillaume Diss",
+      "Patrick Matthias",
+      "Longlong Wang"
+    ],
+    "summary": "While protein ubiquitination has been extensively studied, the roles of unanchored ubiquitin and its chains remain less understood, largely due to a lack of specific, high-affinity tools for their enrichment and visualization. To address this, we used high-throughput affinity maturation and computational protein design to engineer novel proteins that selectively bind unanchored ubiquitin. We first enhanced the binding affinity of the zinc finger domain of histone deacetylase 6, a natural unanchored ubiquitin binder, by including its unstructured amino-terminal loop and introducing the V1091L mutation. Using RFdiffusion, we then designed 11 novel ubiquitin-binding proteins (UBiPs), among which UBiP10 showed specificity for unanchored ubiquitin. This protein enriched unanchored ubiquitin from cells and influenza A virions and served as a probe to determine its cellular levels, supporting a relative decrease upon proteasome inhibition. Imaging studies with UBiP10 further revealed a novel unanchored ubiquitin coat around aggresomes, illustrating the potential of UBiP10 as a unique tool to study unanchored ubiquitin in cellular regulation.",
+    "doi": "10.1126/sciadv.aec0818",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein design",
+      "RFdiffusion"
+    ],
+    "extra": {
+      "pmid": "42789724",
+      "journal": "Science advances"
+    },
+    "dedupe_key": "doi:10.1126/sciadv.aec0818"
+  },
+  {
+    "kind": "article",
+    "title": "Fast structural search for classification of gut bacterial mucin O-glycan degrading enzymes.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789669/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.955867+00:00",
+    "authors": [
+      "Mert Erden",
+      "Tyler Schult",
+      "Karin Yanagi",
+      "Jugal Kishore Sahoo",
+      "David L Kaplan",
+      "Lenore J Cowen",
+      "Kyongbum Lee"
+    ],
+    "summary": "The Enzyme Commission (EC) numbering scheme provides a hierarchical way to classify enzymes according to their catalytic functions. While recent protein language model (PLM) based approaches like CLEAN and ProteInter have improved sequence-based EC number prediction, they struggle with fine-grained classification at the deepest hierarchical level. Structure-based approaches for grouping similar proteins using alignment tools excel at finding proteins that share overall global structure, but suffer from high false positive rates when classifying proteins that are globally structurally similar but functional differentiation depends on a localized region. This problem is particularly relevant to EC number prediction, as enzymatic function depends on its catalytic domain, which is a relatively small, specific region of the protein. We introduce Deep Enzyme Function Transfer (DEFT) that harmonizes sequence- and structure-based approaches through the key insight that PLM based annotations of the first two EC number hierarchy levels vastly reduce false positives that are likely to show in purely structure-based EC number prediction. Given an enzyme of interest, DEFT first uses a PLM based method to assign the first two levels of the enzyme's EC number, and then uses a structure-based method to predict the remaining two levels of the EC number. Using benchmarking datasets, we demonstrate that DEFT achieves superior accuracy compared with current state-of-the-art tools for EC number prediction. Furthermore we show that DEFT's computational efficiency enables high-throughput, genome-wide annotations of total enzyme repertoires in organisms. We illustrate this capability by experimentally validating DEFT predicted glycoside hydrolase (GH) profiles of intestinal mucus associated bacteria.",
+    "doi": "10.1371/journal.pcbi.1014034",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42789669",
+      "journal": "PLoS computational biology"
+    },
+    "dedupe_key": "doi:10.1371/journal.pcbi.1014034"
+  },
+  {
+    "kind": "article",
+    "title": "Exploring the cytotoxic potential of Artemisia herba-alba crude extract and key phytoconstituents using in vitro assays and molecular docking insights.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789608/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.956282+00:00",
+    "authors": [
+      "Lidia Kamal Al-Halaseh",
+      "Ali M Al-Samydai",
+      "Said Moshawih",
+      "Moath Al-Qaraleh",
+      "Diana M Al-Zregat",
+      "Zaid S Amareen",
+      "Manal Nahar Al Soub",
+      "Nadine N Abdelhadi",
+      "Samra Qaraghuli"
+    ],
+    "summary": "The aim of the current research project is to evaluate the potential cytotoxicity of the aqueous extract of Artemisia -albaherba aerial parts against selected cancer cell lines. The widely grown plant material was collected and extracted. The crude aqueous extract was subjected to MTT analysis to assess potential cytotoxicity and cell viability. The cell lines utilized include: Normal Human Umbilical Vein Endothelial cell line EA (HUVEC; cat. no. CRL-1730; ATCC), Triple Negative Breast cancer cell line, MDA MB 231 (HTB-26), Human Pancreatic Ductal Adenocarcinoma cell line PANC1 (CRL-1469), Human Colorectal Carcinoma HCT 116 (CCL-247) cell lines. Cisplatin and doxorubicin serve as reference agents, and the media vehicle serves as a negative control. The extract was analysed by UHPLC/MS-MS. Three of the detected bioactive phytoconstituents, namely liquiritigenin, isofraxidin, and artemisinin, were docked against three cancer-associated protein targets corresponding to the three investigated cancer cell lines. The selected targets were TP53/p53 in the HCT-116 colorectal cancer cell line, AKT1 in the MDA cell line, and KRAS in the PANC-1 pancreatic cancer cell line. A marked decrease in cell viability was observed in the human colon and breast cancer cell lines at plant extract concentrations of 0.046-50 mg/mL. The highest cytotoxicity, around 45%, was observed against human colon cancer cells at concentrations of 12.5-50 mg/mL. And the cytotoxicity was around 40% against breast cancer cells at a concentration of 50 mg/mL. The plant remedy exhibited moderate cytotoxicity against pancreatic cancer cells, with an IC50 of approximately 20% at the highest tested concentration. The biocompatibility of the aqueous extract was predicted; hence, normal epithelial cells retained their viability at 1.5 mg/mL and showed a moderate-to-weak effect at higher concentrations. The herbal extract exhibits the highest IC50 values against EA and PANC1 of 220-240 µg/mL, whereas against MDA-MB-231 and HCT-116 cells, the IC50 values are significantly lower at 80-100 µg/mL. This indicates greater sensitivity of breast and colon cancer cell lines to the natural product. The simulation analyses demonstrate that isofraxidin and liquiritigenin have better binding affinity to the selected proteins than artemisinin. The best overall complexes were TP53-isofraxidin and TP53-liquiritigenin, with docking scores around -8 kcal/mol, followed by KRAS-liquiritigenin and AKT1-isofraxidin. To sum up, A. herb alba has a potential selective anticancer effect that may be attributed to the phenolic compounds constituents. These promising findings warrant further study to elucidate its mechanism of action, safety profile, and to predict the optimal dosage formulation.",
+    "doi": "10.1371/journal.pone.0359068",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42789608",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0359068"
+  },
+  {
+    "kind": "article",
+    "title": "β-Galactosidase expression on Lactococcus sp. KTH0-1S as a whole-cell biocatalyst for efficient lactosucrose production.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789597/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.956588+00:00",
+    "authors": [
+      "Nichapat Ariyakajorn",
+      "Napat Sunsern",
+      "Phitsanu Pinmanee",
+      "Boontiwa Ninchan",
+      "Pimsiriya Srila",
+      "Konlarat Phirom-On",
+      "Sivatch Imrattanarak",
+      "Wirat Vanichsriratana",
+      "Nisit Watthanasakphuban"
+    ],
+    "summary": "Lactosucrose is a functional trisaccharide with prebiotic properties and growing potential in food and agricultural applications; however, its industrial production is limited by low conversion efficiency and high downstream processing costs. In this study, a whole-cell biocatalyst was developed by displaying β-galactosidase on Lactococcus sp. KTH0-1S using a nisin-inducible expression system, the USP45 signal peptide, and a LysM anchoring domain. The engineered strain exhibited a maximum whole-cell β-galactosidase activity of 146.0 Miller units after 4 h of induction. The whole-cell enzyme efficiently catalyzed lactosucrose synthesis from lactose and sucrose, with optimal activity observed at pH 6.0 and 50 °C. Substrate molar ratio significantly influenced product formation, and the highest lactosucrose concentration (15,940 mg/L) was achieved at a lactose:sucrose ratio of 1:3. Reusability studies revealed high initial catalytic activity but limited stability upon repeated reaction cycles, likely due to the non-covalent nature of LysM-mediated surface anchoring. Molecular docking analysis supported the experimental observations by identifying a high-affinity substrate-binding pocket capable of accommodating both donor and acceptor substrates, providing a structural rationale for enhanced transgalactosylation under sucrose-enriched conditions. Overall, this study demonstrates the feasibility of using a whole-cell biocatalyst based on Lactococcus sp. for efficient lactosucrose production and highlights its potential as a cost-effective and food-compatible platform for the synthesis of functional oligosaccharides.",
+    "doi": "10.1371/journal.pone.0359091",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42789597",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0359091"
+  },
+  {
+    "kind": "article",
+    "title": "The role of insulin resistance in the development of hepatocellular carcinoma with computational analysis of IRS-1 interaction with HCV genotype 3 core protein.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789558/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.956887+00:00",
+    "authors": [
+      "Dr Tufael",
+      "Mohd Hasan Mujahid",
+      "Most Farhana Akter",
+      "Tahsin Salam",
+      "Md Abu Bakar Siddique",
+      "Kaniz Fatima Bari",
+      "Asim Debnath",
+      "Nabil Deb Nath"
+    ],
+    "summary": "The link between insulin resistance (IR) and hepatocellular carcinoma (HCC), especially in relation to HCV genotype-3 infection, is still poorly understood. In South Asian countries and among the peoples of the United States, this problem remains a major public health concern. According to previous studies, metabolic and viral interactomes have not been analyzed together, and hence this is a limitation of the study. This cross-sectional observational study involved 110 people, categorized into control (n=20), chronic hepatitis C (CHC) (n=45), and hepatocellular carcinoma (HCC) (n=45) groups. Clinical, biochemical, and metabolic parameters-HOMA-IR and HbA1c-were measured. The appropriate statistical tests were used for group comparisons. We performed molecular docking to investigate the interaction between the HCV genotype-3 core protein and human IRS-1 using ClusPro. HCC was independently associated with stage III-V fibrosis (AOR: 24.18), elevated HOMA-IR >4, a key indicator of insulin resistance (AOR: 3.53), and AFP >10 ng/mL (AOR: 3.71). Moreover, HbA1c >7% greater GGT and low albumin level were significantly higher in HCC group (P<0.05). Obese patients had higher IR markers, but CHC-to-HCC progression depended more on combined fibrosis and metabolic dysregulation than obesity alone. Docking analysis, there was a strong hydrophobic and electrostatic interaction between HCV core protein and IRS-1, with a binding energy of -1196.0 kcal/mol, indicating a strong and stable interaction between the two proteins. According to this study, it is possible that the presence of insulin resistance, advanced fibrosis, and viral persistence may interact biochemically and molecularly to contribute to hepatocellular carcinoma in cases of HCV genotype-3 infection.",
+    "doi": "10.1371/journal.pone.0358858",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42789558",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0358858"
+  },
+  {
+    "kind": "article",
+    "title": "Nanocellulose-based drug delivery systems: experimental findings and computational insights with emphasis on cellulose nanofibers.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789368/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.957200+00:00",
+    "authors": [
+      "Ayla Esmaeilzadeh",
+      "Maryam Azimzadeh Irani"
+    ],
+    "summary": "Cellulose nanofibers (CNFs) are emerging as promising candidate materials for drug delivery systems due to their biocompatibility, large surface area, and structural versatility. Their capacity to encapsulate a variety of therapeutic compounds enables controlled and targeted release, although performance depends on formulation and surface characteristics. This structured narrative review article focuses on recent experimental and computational research on CNFs as drug carriers and their roles in small molecule loading, sustained release, and targeting strategies. In addition to CNF-based systems, selected studies on other nanocellulose-based materials and cellulose-based hybrids are also included where they provide mechanistic or comparative insight relevant to CNF drug delivery behavior. Experimental research has demonstrated that CNFs can enhance drug stability and release performance under specific conditions. Computational studies, including molecular docking and molecular dynamics simulations, have provided molecular-level insight into drug-cellulose interactions and nanofiber behavior. Spanning these approaches, this review highlights the complementary role of computational and experimental findings in understanding delivery mechanisms and guiding material design. Also, it discusses current limitations, including variability in CNF preparation, incomplete understanding of biological interactions, limited long-term in vitro and in vivo validation, and the constraints of existing computational models. Finally, emerging opportunities in smart functionalization, multifunctional hybrid systems, and integrated experimental-computational workflows are highlighted as promising directions for the future development of CNF-based therapeutic platforms.",
+    "doi": "10.1080/09205063.2026.2736147",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42789368",
+      "journal": "Journal of biomaterials science. Polymer edition"
+    },
+    "dedupe_key": "doi:10.1080/09205063.2026.2736147"
+  },
+  {
+    "kind": "article",
+    "title": "Molecular docking-guided identification of multi-target anti-inflammatory phytochemicals from almond (Prunus dulcis) gum and experimental validation of almond gum-mediated silver/zinc oxide nanobiocomposites for accelerated wound healing.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789219/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.957545+00:00",
+    "authors": [
+      "Arslan Rasool",
+      "Muhammad Shahid",
+      "Zahid Mushtaq",
+      "Bushra Akhtar"
+    ],
+    "summary": "Wound healing is a complex biological process where uncontrolled inflammation often delays tissue repair, imposing a significant clinical and economic burden worldwide. This study aimed to develop and evaluate almond gum (Prunus dulcis) based silver and zinc oxide nanobiocomposites (AG-Ag and AG-ZnO) through integrated computational, In-vitro and In-vivo studies as a promising therapeutic approach for accelerating wound healing. This study is the first to comparatively evaluate Ag-NPs and ZnO-NPs within the same almond gum matrix. A total of 31 phytoconstituents of Prunus dulcis were screened for ADME properties via pkCSM, and potential bioactive compounds were docked against COX-2, TNF-α, and VEGFR-2. Quercetin-3-diglucoside and Corosolic acid recorded the strongest binding affinities toward COX-2 (- 8.8 kcal/mol), mechanistically supporting the anti-inflammatory basis of Prunus dulcis. The green-synthesized nanobiocomposites were characterized via UV-Vis spectroscopy, FTIR, XRD, SEM, zeta sizer, and zeta potential, with mean particle sizes of 73.33 nm and 225.2 nm for AG-Ag and AG-ZnO, respectively. In-vitro studies revealed strong antioxidant activity, with AG-ZnO exhibiting the highest TPC (342.29 ± 1.18 µg GAE/g) and TFC (158.20 ± 0.40 µg CE/g), and AG-P the lowest DPPH IC50 (47.67 ± 2.01 µg/mL). Both nanobiocomposites further demonstrated potent antibacterial and anti-biofilm activities against Escherichia coli, Staphylococcus aureus, Klebsiella pneumoniae, and Bacillus subtilis, alongside significant anti-inflammatory activity and negligible hemolytic toxicity. In vivo evaluation using a rabbit excisional wound model demonstrated superior wound contraction with AG-Ag (90%) and AG-ZnO (93%) compared to the standard drug Polyfax (68%) and untreated control groups. Treatment groups also showed significant modulation of inflammatory biomarkers (ESR, CRP, IL-6) at Days 7 and 15 compared to controls. Histopathological studies showed active collagen deposition, fibroblast migration, and keratinocyte proliferation. These findings collectively concluded Prunus dulcis gum-stabilized Ag/ZnO nanobiocomposites as safe, mechanistically validated, and biocompatible candidates for advanced wound healing therapeutics.",
+    "doi": "10.1007/s10787-026-02391-3",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42789219",
+      "journal": "Inflammopharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s10787-026-02391-3"
+  },
+  {
+    "kind": "article",
+    "title": "Neuroprotective potential of Prunetin in streptozotocin-induced cognitive dysfunction: insights from computational and experimental studies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789218/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.957859+00:00",
+    "authors": [
+      "Sunil Shukla",
+      "Chanchal Tiwari",
+      "Sunil Sharma",
+      "Neeru Vasudeva",
+      "Ramchander Khatri",
+      "Mohammad Ovais Dar",
+      "Tanuj Hooda",
+      "Amit Lather"
+    ],
+    "summary": "Type 2 diabetes mellitus (T2DM) accounts for over 85% of global diabetes cases and is strongly associated with cognitive decline resulting from chronic hyperglycemia-induced neuronal and oxidative damage. Prunetin, a natural isoflavone known for potent antioxidant and antidiabetic activity, was investigated for its potential to attenuate diabetes-associated cognitive deficits. In silico analysis included molecular docking, MM-GBSA binding free energy, and molecular dynamics simulations (100 ns) to explore interactions between Prunetin and human acetylcholinesterase (AChE; PDB ID: 7D9O). In vivo studies were conducted in streptozotocin (STZ)-induced diabetic rats, with cognition assessed using the Morris water maze. Brain tissues were examined for Aβ(1-42), lipid peroxidation, reduced glutathione (GSH), and AChE activity to determine oxidative status and cholinergic function. Prunetin (0.5 mg/kg/day) administered for 14 (acute) or 28 days (chronic) reduced blood glucose levels, Aβ(1-42) accumulation, and lipid peroxidation while increasing GSH levels and inhibiting AChE activity in a duration-dependent manner. These effects corresponded with significant improvements in Morris water maze performance, with 28-day treatment demonstrating greater efficacy than the 14-day regimen for most parameters. Computational modeling confirmed stable Prunetin-AChE complex formation mediated by hydrogen bonding, hydrophobic interactions, and π-π stacking interactions. Prunetin demonstrates notable antioxidant and AChE-inhibitory properties, attenuating STZ-induced cognitive dysfunction in an experimental rat model. These findings collectively support Prunetin as a promising multitarget candidate warranting further investigation for diabetes-associated neurodegeneration.",
+    "doi": "10.1007/s10787-026-02403-2",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42789218",
+      "journal": "Inflammopharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s10787-026-02403-2"
+  },
+  {
+    "kind": "article",
+    "title": "Myrica esculenta fruit extract as a nutraceutical supplement mitigating LPS-induced inflammation through COX-2 and iNOS modulation: integrated in vitro, in vivo, and docking approaches.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789216/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.958183+00:00",
+    "authors": [
+      "Leena Das",
+      "Manas Das",
+      "Luit M Barkalita",
+      "Probodh Borah",
+      "Ananya Chetia",
+      "Momita Rani Baro",
+      "Ratul Chakraborty",
+      "Aashis Dutta"
+    ],
+    "summary": "Myrica esculenta Buch. -Ham. ex D. Don, traditionally referred to as \"Noga Tenga\" in Assam and \"Soh-Phi\" by the Khasi tribe, holds a longstanding place in Indian medicine for antimicrobial, antidiabetic, and respiratory ailments. This study evaluates the anti-inflammatory potential of the methanolic extract of M. esculenta fruit (MEMEF) in LPS-challenged RAW 264.7 macrophages and a complementary in vivo system. Swiss albino male mice (n = 6) were pre-treated orally with MEMEF for seven days followed by a single intraperitoneal dose of LPS (3 mg/kg bw). Serum AST, ALT, ALP, NO, PGE2, and cytokines were measured, and inos and cox-2 mRNA expression was analyzed by qPCR. In vitro, RAW 264.7 cells were pre-treated with MEMEF (16.7 and 33.5 µg/ml) and stimulated with LPS (1 µg/ml) for 24 h. LC-MS analysis identified major phytoconstituents, and molecular docking examined interactions of epigallocatechin-3-gallate, resveratrol, and myricitrin with COX-2 and iNOS. MEMEF pre-treatment significantly reduced LPS-induced elevations of serum biochemical markers and inflammatory mediators, with qPCR confirming downregulation of inos and cox-2 in treated groups. In vitro, MEMEF markedly decreased NO and PGE2 production and suppressed inos and cox-2 expression in activated RAW 264.7 cells. Docking results showed strong binding of epigallocatechin-3-gallate to both target proteins, suggesting a possible contribution of these interactions to the observed anti-inflammatory effects. Overall, MEMEF exhibited anti-inflammatory activity in cellular and animal models, supporting its promise as a therapeutic candidate for inflammation-related disorders and highlighting its value as a source of nutraceutical supplement derived from a traditionally consumed functional fruit.",
+    "doi": "10.1007/s10787-026-02407-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42789216",
+      "journal": "Inflammopharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s10787-026-02407-y"
+  },
+  {
+    "kind": "article",
+    "title": "Untargeted LC-QTOF-MS/MS metabolomics and integrative pharmacology identify candidate triterpenoids associated with the gastrointestinal activity of Baliospermum montanum root extract.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789214/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.958557+00:00",
+    "authors": [
+      "Kirtan Dave",
+      "Prasenjit More",
+      "Suwarna Meshram"
+    ],
+    "summary": "Baliospermum montanum (Willd.) has been investigated for its gastrointestinal effects, but its metabolite composition and potential mechanisms underlying these effects remain insufficiently characterized. This study employed an integrative framework combining untargeted metabolomics, computational pharmacology, and in vivo evaluation to characterize candidate constituents and potential mechanisms associated with the gastrointestinal effects of B. montanum root extract. Methanolic root extract was profiled using untargeted LC-QTOF-MS/MS in positive and negative electrospray ionization modes. Facility-assisted database/library annotation and manual curation identified 15 prioritized putative metabolite annotations, including the triterpenoid candidates cucurbitacin C, ganoderic acid F, ursolic acid, and 24-hydroxyglycyrrhetic acid. In accordance with the Metabolomics Standards Initiative framework, these compounds were classified as Level 2 putative annotations because authentic reference standards were not analyzed under identical experimental conditions. Network pharmacology, molecular docking, and molecular dynamics simulations were performed against gastrointestinal regulatory targets, including dopamine receptor D2 (DRD2), 5-hydroxytryptamine receptor 1A (5-HT1A), and cystic fibrosis transmembrane conductance regulator (CFTR). Cucurbitacin C showed a comparatively favorable predicted interaction profile among the prioritized candidates, while the corresponding DRD2-associated complex maintained a root-mean-square deviation below 2 Å during molecular dynamics simulation, supporting stability of the simulated complex. In vivo, oral administration of the root extract to Wistar rats for five consecutive days at 300-900 mg/kg produced significant dose-related changes in fecal characteristics, stool output, and defecation frequency, with the greatest responses observed at 900 mg/kg (p < 0.001). No significant changes in body weight or serum AST, ALT, and ALP were observed under the tested conditions, providing no biochemical evidence of hepatocellular injury. Histopathological examination of the colon demonstrated alterations in goblet-cell mucin, crypt morphology, epithelial appearance, edema, and inflammatory features, consistent with changes in colonic secretory activity and mucosal architecture. Collectively, these findings indicate that B. montanum root extract produces measurable gastrointestinal effects accompanied by alterations in intestinal secretory and mucosal parameters. Integrative computational analysis identified potential interactions of prioritized putative metabolites with gastrointestinal regulatory targets, with cucurbitacin C emerging as a candidate constituent for further investigation. These findings provide a basis for future experimental validation of the metabolite-target relationships underlying the gastrointestinal activity of B. montanum root extract.Keywords: Baliospermum montanum; Untargeted LC-MS/MS metabolomics; Molecular dynamics simulation; Cucurbitacin C; Gastrointestinal motility.",
+    "doi": "10.1007/s10787-026-02402-3",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42789214",
+      "journal": "Inflammopharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s10787-026-02402-3"
+  },
+  {
+    "kind": "article",
+    "title": "In silico pathway-based subtractive proteomics for identifying novel drug targets in Candida albicans with structure-guided drug repurposing of aspartate-semialdehyde dehydrogenase inhibitors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789198/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.958850+00:00",
+    "authors": [
+      "Nithyashree Sriram",
+      "Suhadha Parveen Sadiq",
+      "Ravikumar Vilwanathan",
+      "Thirunavukkarasu Sivaraman",
+      "Muthukumar Govindhapriya",
+      "Ravi Kumar Trivedi",
+      "Muthusamy Sureshan"
+    ],
+    "summary": "Candida albicans is the most common cause of candidemia and is classified as a high-priority pathogen due to its increasing prevalence among fragilised and hospital-based patients. In this study, the subtractive proteomics approach identified 12 key targets involved in vital pathways that play a crucial role in metabolism and regulation, supporting fungal growth, maintaining balance, and enabling pathogenicity. These pathways are essential for the pathogen's survival and virulence, highlighting them as potential targets for treatments against C. albicans infections. Notably, aspartate-semialdehyde dehydrogenase (ASADH) plays a role in cell wall construction, stress-associated dormancy, and the production of virulence-associated components, which are critical aspects of C. albicans infections. The structure-guided virtual screening identified five potent hits: Acarbose, Iotrolan, Iodixanol, Nystatin, and Ferric derisomaltose, which exhibit better affinity, ranging from -12.25 to -11.90 kcal/mol with CaASADH and exhibits stable binding during 500 ns MD simulations, highlighting their potential as lead compounds for anti-C. albicans drug development. Subtractive proteomics pipeline was performed in a standalone Linux environment, and the three-stage Schrödinger's Glide docking algorithm was used for molecular docking studies. All MD simulations were conducted using GROMACS for 500 ns, and the conformational dynamic stability was examined using RMSD, RMSF, Rg, SASA, PCA, CD-HIT, BLASTp, DrugBank, BlastKOALA, screening, SiteMap, LigPrep, SwissParam, MMPBSA, and CHARMM36 force field.",
+    "doi": "10.1007/s00894-026-06962-7",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "drug repurposing",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42789198",
+      "journal": "Journal of molecular modeling"
+    },
+    "dedupe_key": "doi:10.1007/s00894-026-06962-7"
+  },
+  {
+    "kind": "article",
+    "title": "Dexmedetomidine attenuates hypoxia/reoxygenation-induced cardiomyocyte injury in association with ADRA2A/ADRA2B and Notch1/Hes1 modulation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789047/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.959162+00:00",
+    "authors": [
+      "Dinghao Xue",
+      "Xinlu Chang",
+      "Mingru Zhang",
+      "Guyan Wang"
+    ],
+    "summary": "This study evaluated whether dexmedetomidine (Dex) attenuates hypoxia/reoxygenation (H/R)-induced injury in H9c2 cells and examined concurrent changes in adrenergic receptor candidates, Notch receptor 1 (Notch1), and hairy and enhancer of split-1 (Hes1) expression to develop a hypothesis-generating model of Dex-associated protection. H9c2 cells underwent 12 h of hypoxia followed by 4 h of reoxygenation. Cell viability, myocardial injury markers, oxidative stress, inflammatory cytokines, apoptosis, candidate-gene expression, and NOTCH1 and HES1 protein abundance were assessed. Notch1 overexpression was used to test the functional relevance of increased Notch1 abundance. Network pharmacology, qRT-PCR profiling of six intersection targets, and molecular docking were integrated to prioritize receptor candidates and generate testable hypotheses. Dex improved cell viability and reduced myocardial injury following H/R. Dex increased alpha-2A adrenergic receptor (Adra2a) and alpha-2B adrenergic receptor (Adra2b) mRNA expression and reduced Notch1/Hes1 expression. Notch1 overexpression weakened several Dex-associated protective effects. Network pharmacology and six-target qRT-PCR validation prioritized ADRA2A and ADRA2B as Dex-responsive receptor candidates. Molecular docking further predicted favorable Dex binding to ADRA2B and ADRA2A, with AutoDock Vina scores of - 8.8 and - 7.4 kcal/mol, respectively. Dex attenuated H/R-induced injury in H9c2 cells. This protective phenotype was accompanied by increased Adra2a and Adra2b mRNA expression and reduced Notch1/Hes1 expression, whereas Notch1 overexpression weakened several Dex-associated protective effects. These correlative findings propose a hypothesis-generating model, providing a focused rationale for future studies to investigate the specific receptor-level mechanisms underlying Dex-mediated cardioprotection.",
+    "doi": "10.1007/s00210-026-05929-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42789047",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s00210-026-05929-y"
+  },
+  {
+    "kind": "article",
+    "title": "Pharmacovigilance and network toxicology analysis of risdiplam-associated adverse events in pediatric patients with spinal muscular atrophy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789045/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.959454+00:00",
+    "authors": [
+      "Ben Liu",
+      "Jingzi Zhong",
+      "Qingqing Zheng",
+      "Wei Zhou"
+    ],
+    "summary": "Risdiplam, a survival motor neuron 2 (SMN2) splicing modifier for pediatric spinal muscular atrophy (SMA), requires a comprehensive real-world safety evaluation. This study analyzed 1059 pediatric adverse event reports from the FDA Adverse Event Reporting System (2020 Q1-2025 Q4) with risdiplam as the primary suspect drug. Female patients slightly predominated, with 50.9% aged 0-5 years. Disproportionality analyses identified 25 positive signals. Infections and infestations, general disorders, and gastrointestinal disorders were most frequent. Pneumonia, pyrexia, diarrhoea, respiratory tract infection, and nasopharyngitis were most commonly reported. Notably, nephrolithiasis emerged as a novel unlabeled signal in pediatric patients (reporting odds ratio = 11.32). Median time-to-onset was 119 days, with approximately one-third of events occurring within 30 days and another one-third after 1 year. The Weibull model revealed that the top 5 most frequently reported PTs and top 5 SOCs all exhibited an early-onset pattern. Network toxicology identified 75 overlapping targets, with CASP3, HDAC1, and PDGFRA as core targets implicated in calcium signaling, mitogen-activated protein kinase (MAPK), phosphatidylinositol 3-kinase-protein kinase B (PI3K-Akt), and apoptosis pathways. Molecular docking confirmed stable binding (- 10.1 to - 8.6 kcal/mol). Risdiplam demonstrates a generally acceptable long-term safety profile in clinical practice, yet vigilant monitoring of respiratory, infectious, gastrointestinal, and renal adverse events remains essential to optimize the benefit-risk balance.",
+    "doi": "10.1007/s00210-026-05907-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42789045",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s00210-026-05907-4"
+  },
+  {
+    "kind": "article",
+    "title": "Ergothioneine Modulates Inflammatory Signaling in LPS-Stimulated RAW 264.7 Macrophages.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42789008/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-26T00:07:46.959716+00:00",
+    "authors": [
+      "Neil Patrick Uy",
+      "Hyeonjun Yu",
+      "Chang-Dae Lee",
+      "Soon Yeong Park",
+      "Hoon Kim",
+      "Sanghyun Lee"
+    ],
+    "summary": "Ergothioneine (EGT), a naturally occurring antioxidant abundant in Hericium erinaceus, has been implicated in inflammation-related disorders, including inflammatory bowel disease (IBD). A validated HPLC-DAD method was developed for EGT quantification in H. erinaceus, demonstrating satisfactory specificity, linearity, precision, and accuracy. Network pharmacology analysis identified shared targets between EGT-associated proteins and IBD-related genes, with HSP90AA1 emerging as a key candidate. Molecular docking revealed stable binding of EGT within the HSP90AA1 active site. In lipopolysaccharide-stimulated RAW 264.7 macrophages, EGT significantly reduced the expression of pro-inflammatory mediators, including inducible nitric oxide synthase and cyclooxygenase-2, while modulating PPARγ expression. These findings provide integrated chemical and mechanistic evidence supporting EGT as a bioactive constituent of H. erinaceus with potential relevance for modulating intestinal inflammation. However, further studies are required to validate its therapeutic relevance in disease-specific models.",
+    "doi": "10.1007/s12013-026-02179-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42789008",
+      "journal": "Cell biochemistry and biophysics"
+    },
+    "dedupe_key": "doi:10.1007/s12013-026-02179-w"
   }
 ]
