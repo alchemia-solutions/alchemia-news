@@ -555,6 +555,86 @@
   },
   {
     "kind": "article",
+    "title": "PRIME: A modular plasmid-based platform for continuous in vivo evolution across bacteria",
+    "url": "https://doi.org/10.64898/2026.09.28.754915",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-28",
+    "collected_at": "2026-09-28T21:22:27.468346+00:00",
+    "authors": [
+      "Erik, D.",
+      "Traeger, L. K.",
+      "Sikanjic, S.",
+      "Varathan, L.",
+      "Otto, M.",
+      "Huguenin-Dezot, N."
+    ],
+    "summary": "Directed evolution enables the engineering of proteins with novel or improved functions, yet existing approaches often require extensive manual intervention and are difficult to sustain over long evolutionary trajectories. Here we introduce PRIME (Protein-primed Replication for In vivo Mutagenesis and Evolution), a plasmid-based orthogonal DNA replication system for continuous directed evolution in Escherichia coli. PRIME harnesses protein-primed DNA replication to establish an autonomous replicon that operates independently of the host genome. Coupling this system to an error-prone DNA polymerase enables targeted diversification of constructs encoded on the orthogonal plasmid while preserving genomic integrity. Using only standard laboratory equipment, we demonstrate the evolution of a construct expressing msfGFP with an 11.8-fold increase in fluorescence. The platform is fully compatible with standard molecular biology workflows and requires no specialised instrumentation. We further demonstrate its portability across bacterial hosts by establishing PRIME in Pseudomonas putida. PRIME thus provides a broadly accessible framework for continuous in vivo evolution, with wide-ranging ",
+    "doi": "10.64898/2026.09.28.754915",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein engineering"
+    ],
+    "extra": {
+      "category": "synthetic biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.28.754915"
+  },
+  {
+    "kind": "article",
+    "title": "Scalable generation of human stem cell-derived ureteric bud and collecting duct organoids in stirred bioreactors",
+    "url": "https://doi.org/10.64898/2026.09.27.754790",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-28",
+    "collected_at": "2026-09-28T21:22:27.473586+00:00",
+    "authors": [
+      "Wolf, K. J.",
+      "Rubins, J.",
+      "van Gaal, R.",
+      "Stevens, K.",
+      "Klaus, A.",
+      "Nair, P.",
+      "Lewis, J. A."
+    ],
+    "summary": "Emerging efforts to engineer multicellular kidney tissues for drug discovery, disease modeling, and therapeutic repair require scalable generation of kidney organoids derived from human induced pluripotent stem cells (hiPSCs). Here, we report a method for generating kidney ureteric bud and collecting duct epithelial organoids in stirred tank bioreactors. We demonstrate that extracellular matrix microcarriers facilitate organoid expansion and are compatible with suspension bioreactor methods. The combination of cell-coated matrix microcarriers with stirred bioreactors promotes maturation marker expression compared to static controls comprising matrix-embedded organoids. Our method offers promise for generating epithelial organoids that serve as multicellular models and organ building blocks for scalable biofabrication.",
+    "doi": "10.64898/2026.09.27.754790",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery"
+    ],
+    "extra": {
+      "category": "bioengineering"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.27.754790"
+  },
+  {
+    "kind": "article",
+    "title": "AF3 Inspector: In-Browser 3D Model Visualization and Confidence Analytics for AlphaFold 3",
+    "url": "https://doi.org/10.64898/2026.09.21.753240",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-28",
+    "collected_at": "2026-09-28T21:22:28.322983+00:00",
+    "authors": [
+      "Gemis-Aebi, X.",
+      "Jimenez, F.",
+      "Joveneche, M. G.",
+      "Abriata, L. A."
+    ],
+    "summary": "AlphaFold 3 (AF3) has broadened the computational structural biology landscape by predicting all-atom complexes across proteins, nucleic acids, small-molecule ligands, and ions, including chemical modifications. For non-experts, Google provides a fully web-based service to utilize AlphaFold 3. Unfortunately, despite a flexible and rich interface for inputs, the server's outputs are incomplete and complicated for many users, as witnessed hands-on. Not all confidence metrics are displayed, and those that are shown do not present much interactivity; besides, only model number 1 is shown among the 5 produced by the software, and upon download the user finds the models are provided only in CIF format, which is not yet well-known especially among highly practical users. Here, we present the AlphaFold 3 Multi-Model Inspector (AF3 Inspector, https://pdbms.altervista.org/af3viewer/afviewer8.html), an open, client-side, zero-install web application designed to dissect, align, and interactively explore the complete ensemble of structural models produced by AlphaFold 3. Part of the PDB Manipulation Suite (https://pdbms.altervista.org/), the AF3 Inspector operates entirely within web browsers, ",
+    "doi": "10.64898/2026.09.21.753240",
+    "company_slug": null,
+    "keywords_matched": [
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.21.753240"
+  },
+  {
+    "kind": "article",
     "title": "DSSNA: An Open-Source GROMACS Module for Automated Analysis of Nucleic Acid Secondary and Tertiary Structure in Molecular Dynamics Simulations",
     "url": "https://doi.org/10.64898/2026.09.25.754511",
     "source": "bioRxiv",
