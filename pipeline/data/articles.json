@@ -635,6 +635,63 @@
   },
   {
     "kind": "article",
+    "title": "Deciphering sepsis molecular subtypes using large-scale data to identify subtype-specific drug repurposing",
+    "url": "https://doi.org/10.64898/2026.03.28.714506",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-28",
+    "collected_at": "2026-09-29T01:14:04.608789+00:00",
+    "authors": [
+      "Smith, L. A.",
+      "Augustin, B.",
+      "Jacob, V.",
+      "Black, L. P.",
+      "Bertrand, A.",
+      "Hopson, C.",
+      "Cagmat, E.",
+      "Datta, S.",
+      "Reddy, S.",
+      "Guirgis, F.",
+      "Graim, K."
+    ],
+    "summary": "Sepsis is a life-threatening dysregulated response to infection, the heterogeneity of which precludes effective targeted therapies. To address this, we created a transcriptomic atlas of publicly available adult sepsis data, on which we performed molecular subtyping and identified potential subtype-specific drug repurposing opportunities. In total, we harmonized data from 3,713 samples across 28 datasets, of which 2,251 were from sepsis patients. Using this data, we identified four molecular subtypes of sepsis (C1 - C4) by clustering the sepsis samples based on expression differences in immune- and lipid-related genes. We next identified gene signatures unique to each molecular subtype. Pathway analysis of these signatures revealed patterns of immune exhaustion and metabolic dysregulation in C1, suggesting potential benefit from corticosteroid treatment. C2 had the youngest patient population and the lowest mortality, and C2 expression patterns were often anti-correlated with those of C1. C3 was enriched for inflammatory and cellular stress pathways, while the highest mortality subtype, C4, showed evidence of immunosuppression and metabolic reprogramming. Gene and pathway-level anal",
+    "doi": "10.64898/2026.03.28.714506",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug repurposing"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.03.28.714506"
+  },
+  {
+    "kind": "article",
+    "title": "Extending the osmophobic effect to protein side chains with a physical transfer model across osmolyte classes",
+    "url": "https://doi.org/10.64898/2026.06.17.732849",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-28",
+    "collected_at": "2026-09-29T01:14:05.411371+00:00",
+    "authors": [
+      "Pereira, A. F.",
+      "Araujo, J. O.",
+      "Tarraga, W.",
+      "Martinez, L."
+    ],
+    "summary": "Understanding the role of the protein backbone and side chains on cosolvent-induced stabilization is essential for a molecular picture of osmolyte action. The prevailing view holds that protecting osmolytes stabilize proteins mainly through unfavorable backbone interactions - the osmophobic effect - with side chains playing a minor or opposing role. By revisiting the decomposition of amino acid transfer free energies to properly account for mutual shielding between backbone and side chains, we derive a transfer model consistent with experimental denaturation m-values for both urea and protecting osmolytes - a feat neither existing model achieves alone. Backbone accessibility is mechanism-dependent: geometric for excluded cosolvents, complete for binders with specific cosolvent-backbone interactions. For strong protecting osmolytes - TMAO, sarcosine, sucrose, trehalose, and sorbitol - both backbone and side chains contribute favorably to stabilization, with side-chain contributions comparable or even greater than the backbone's. For urea, accounting for the preferential binding and directional nature of urea-backbone hydrogen bonding - which makes the backbone accessible regardless ",
+    "doi": "10.64898/2026.06.17.732849",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein engineering"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.06.17.732849"
+  },
+  {
+    "kind": "article",
     "title": "DSSNA: An Open-Source GROMACS Module for Automated Analysis of Nucleic Acid Secondary and Tertiary Structure in Molecular Dynamics Simulations",
     "url": "https://doi.org/10.64898/2026.09.25.754511",
     "source": "bioRxiv",
@@ -51613,5 +51670,180 @@
       "journal": "Bioorganic chemistry"
     },
     "dedupe_key": "doi:10.1016/j.bioorg.2026.110579"
+  },
+  {
+    "kind": "article",
+    "title": "Dioscin attenuates D‑galactose‑induced retinal pigment epithelium senescence and epithelial-mesenchymal transition via the TGF‑β2/PI3K/Akt/β‑catenin pathway.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42804496/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-29T01:13:45.637437+00:00",
+    "authors": [
+      "Qi Ouyang",
+      "Huiqin Zhou",
+      "Chenhao Ji",
+      "Hong Jiang",
+      "Linhui Zhao",
+      "Yiwei Pan",
+      "Shuanglin Xiang",
+      "Xiang Hu"
+    ],
+    "summary": "This study aimed to evaluate the protective effects of Dioscin in an age-related macular degeneration (AMD) -like model and to explore its potential therapeutic mechanisms. The therapeutic potential of Dioscin for AMD was investigated using D-galactose-induced senescence models in ARPE-19 cells (an in vitro preliminary screening model) and C57BL/6J mice using RT-qPCR, western blotting, immunofluorescence, and SA-β-gal staining. Bioinformatic analysis and molecular docking identified TGF-β2 as a computationally predicted potential target of Dioscin in AMD. Key mechanisms involving TGF-β2 and the PI3K/Akt/β-catenin signaling pathway were assessed in vitro using RT-qPCR, western blotting. In D-galactose-induced senescence models, Dioscin significantly alleviated RPE senescence and EMT. Single-cell transcriptome analysis revealed that TGF-β2 is highly expressed in choroidal vascular endothelial cells of AMD patients. Mechanistically, computational predictions (molecular docking and dynamics simulations) identified TGF-β2 as a computationally predicted potential target of Dioscin, and experimental data showed that Dioscin suppressed D-galactose-induced activation of the TGF-β2/PI3K/Akt/β-catenin pathway in RPE cells, suggesting a potential paracrine regulatory mechanism. Dioscin alleviates RPE senescence and EMT through suppression of the TGF-β2/PI3K/Akt/β-catenin pathway. Single-cell transcriptomics reveals that TGF-β2 is specifically upregulated in choroidal vascular endothelial cells in AMD, suggesting a paracrine mechanism linking vascular pathology to RPE dysfunction. These findings suggest that Dioscin may have potential value in mitigating RPE senescence and EMT in an AMD‑like model, although further validation in more clinically relevant AMD models is required.",
+    "doi": "10.1371/journal.pone.0359423",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42804496",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0359423"
+  },
+  {
+    "kind": "article",
+    "title": "Antibacterial and molecular docking studies with protein stability studies into dihydropyrimidinones synthesized via silver nanoparticle catalysis: probing structure-activity relationships.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42804047/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-29T01:13:45.637932+00:00",
+    "authors": [
+      "Rupali Patil",
+      "Manoj Gaware",
+      "Shilpa Sangle",
+      "Savita Thakare",
+      "Ankita Rayate",
+      "Shubham Uphade"
+    ],
+    "summary": "This study reports the green synthesis of eco-friendly silver nanoparticles (AgNPs) using Aloe vera gel extract and their application as an efficient heterogeneous catalyst for the one-pot, three-component Biginelli synthesis of 3,4-dihydropyrimidin-2(1 H)-ones (DHPMs). The biosynthesized AgNPs were thoroughly characterized using UV-Vis, FTIR, XRD, SEM-EDX, and HR-TEM-SAED techniques, confirming crystalline, spherical particles. Catalyst optimization studies revealed that a low catalyst loading of 20 mg at 80 °C yielded maximum product outputs of up to 96% within an optimized reaction time of 1 h. Structural elucidation of the synthesized DHPM derivatives was completed using FTIR, ¹H NMR, ¹³C NMR, and mass spectrometry (MS). Biological screening demonstrated that the derivatives possessed significant antibacterial activity, with compound 4e exhibiting a prominent zone of inhibition (17 mm) against Salmonella typhimurium (MTCC 98). To decode the underlying mechanism, Prediction of Activity Spectra for Substances (PASS) analysis was paired with molecular docking against the Gluconate 2-dehydrogenase receptor (PDB ID: 5GNA). The PASS analysis reveals that the synthesized compounds display considerable activity as both an antieczematic agent and a Gluconate 2-dehydrogenase (acceptor) inhibitor, with a probability value (Pa) exceeding 0.07. Compound 4e demonstrated excellent binding affinity with a docking score of -8.2 kcal/mol. Furthermore, Normal Mode Analysis (NMA)-based Molecular Dynamics (MD) simulations verified the long-term stability of the protein-ligand complex, showing low main-chain deformability and a rigid eigenvalue of 4.18 × 10- 4. These quantitative results establish this green catalytic path as a highly efficient strategy for producing bioactive heterocycles.",
+    "doi": "10.1186/s11671-026-04952-5",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42804047",
+      "journal": "Discover nano"
+    },
+    "dedupe_key": "doi:10.1186/s11671-026-04952-5"
+  },
+  {
+    "kind": "article",
+    "title": "Expanding the chemical space of Bcl-2 inhibitors: a multiscale computational exploration of the benzopyran (chromene) scaffold.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42804025/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-29T01:13:45.638453+00:00",
+    "authors": [
+      "Kritika Sharma",
+      "N D Yash",
+      "Mansi Dangi",
+      "Maitree Kadamb",
+      "Aparna Shrivastava",
+      "J Senthil Kumaran",
+      "Sakshi Yadav",
+      "Monika Jain",
+      "Amit Kumar Singh",
+      "Jayaraman Muthukumaran"
+    ],
+    "summary": "Dysregulation of apoptosis mediated by antiapoptotic Bcl-2 family proteins contributes significantly to cancer progression and treatment resistance. Although the BH3 mimetic venetoclax has demonstrated remarkable clinical efficacy, the emergence of resistance-associated mechanisms has created a need for alternative Bcl-2-targeting scaffolds. Benzopyran derivatives, including 4H-chromene and chromone derivatives, represent a structurally diverse class of compounds with reported anticancer and apoptosis-modulating activities; however, their interaction landscape with Bcl-2 remains insufficiently explored. In the present study, a curated library of 356 benzopyran family compounds was investigated against Bcl-2 to identify potential lead candidates. Three compounds, PM28524659, PM31145889, and PM34262894, exhibited favorable binding characteristics relative to the reference chromene-derived Bcl-2 inhibitor HA14-1. Binding mode analysis indicated occupancy of the BH3-binding groove, with interactions involving ASP49, ARG53, and TYR148 residues. Molecular similarity, scaffold, and pharmacophore analyses revealed preservation of key target recognition features despite low overall structural similarity to HA14-1. Based on their physicochemical, pharmacokinetic, and molecular descriptor profiles, PM28524659 and PM31145889 were selected for further investigation through long-timescale molecular dynamics simulations. Both complexes remained stable throughout the 500-ns MD simulation period and maintained favorable interactions with the binding pocket while preserving the overall structural integrity of Bcl-2 protein. Although the identified compounds exhibited lower predicted binding affinity than venetoclax, their favorable ligand efficiency, relatively simple molecular architecture, and scope for structural optimization support their further evaluation as Bcl-2-targeting scaffolds for apoptosis-directed anticancer drug discovery. A dataset comprising 356 curated benzopyran family compounds was subjected to virtual screening against Bcl-2 (PDB ID: 6O0K) using AutoDock Vina. Protein-ligand interactions were analyzed using Discovery Studio Visualizer and PyMOL. Molecular similarity, scaffold, and pharmacophore analyses were performed using two-dimensional and three-dimensional descriptor-based approaches. Drug-likeness, physicochemical properties, pharmacokinetic parameters, and toxicity profiles were assessed using SwissADME, ProTox-3, and related cheminformatics tools. The selected protein-ligand complexes were further investigated by 500-ns molecular dynamics simulations using GROMACS 2025.3 and the CHARMM36 force field in an explicit solvent environment employing the CHARMM-modified TIP3P water model. Trajectory analyses included root mean square deviation (RMSD), root mean square fluctuation (RMSF), radius of gyration (Rg), solvent-accessible surface area (SASA), intermolecular hydrogen bond analysis, principal component analysis (PCA), and MM/PBSA-based binding free energy analysis to characterize structural stability, residue-level flexibility, compactness, protein-ligand interactions, dominant collective essential motions, and binding affinity. The trajectory-derived parameters were further subjected to descriptive statistical and distributional analyses using Python-based tools, including Pandas, NumPy, Matplotlib, and Seaborn, with correlation and cross-correlation analyses used to examine parameter relationships and variability across the simulated systems.",
+    "doi": "10.1007/s00894-026-06960-9",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "virtual screening",
+      "cheminformatics",
+      "molecular dynamics",
+      "drug-likeness"
+    ],
+    "extra": {
+      "pmid": "42804025",
+      "journal": "Journal of molecular modeling"
+    },
+    "dedupe_key": "doi:10.1007/s00894-026-06960-9"
+  },
+  {
+    "kind": "article",
+    "title": "Chemical language models for early-stage drug discovery: applications, pitfalls, and future directions.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42803993/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-29T01:13:45.638864+00:00",
+    "authors": [
+      "Abdallah Abou Hajal"
+    ],
+    "summary": "Attrition rates in clinical drug development remain above 90%, with most failures rooted in inadequate compound quality at the early discovery stage. Chemical language models (CLMs), neural sequence models pretrained on hundreds of millions of SMILES or SELFIES strings under self-supervised language-modeling objectives, have emerged as a versatile tool class across the early-stage pipeline. This review covers their foundations, including molecular representation, tokenization, and recurrent, encoder, decoder, and encoder-decoder families, before examining three application domains: virtual screening, property prediction, and de novo generation. In virtual screening, CLM embeddings retrieved by approximate nearest-neighbor search offer sub-second triage of billion-scale compound libraries, although reported evaluations remain largely retrospective, and pairing CLMs with protein language models extends this to target-aware ranking at comparable scale. In property prediction, sequence-only transformers including ChemBERTa and MolBERT are competitive on ADMET endpoints without consistently surpassing well-tuned descriptor-based and graph-based baselines, and hybrid architectures fusing sequence embeddings with structural priors represent the most promising direction. In de novo generation, reinforcement learning and scaffold-hopping strategies have advanced CLMs into prospective campaigns, with designs confirmed active in cell-based and biochemical assays across nuclear-receptor and lipid-kinase targets. Persistent limitations include poor interpretability and attendant regulatory uncertainty, performance brittleness under distribution shift without calibrated uncertainty estimates, and computational demands concentrated in well-resourced laboratories. Addressing these constraints may depend less on further architectural refinement than on multimodal foundation models, calibrated uncertainty quantification reported as first-class inference outputs, mandatory scaffold-split evaluation protocols, and integration into agentic closed-loop workflows coupling prediction with physics-based simulation and laboratory automation.",
+    "doi": "10.1007/s10822-026-00946-8",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "virtual screening",
+      "protein language model",
+      "ADMET"
+    ],
+    "extra": {
+      "pmid": "42803993",
+      "journal": "Journal of computer-aided molecular design"
+    },
+    "dedupe_key": "doi:10.1007/s10822-026-00946-8"
+  },
+  {
+    "kind": "article",
+    "title": "Design, green synthesis, and anticancer evaluation of novel sulfaguanidine-based heterocycles as multi-target inhibitors of the VEGFR-2/PI3K/AKT/mTOR pathway.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42803866/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-29T01:13:45.639291+00:00",
+    "authors": [
+      "Walaa K Elabd",
+      "Kurls E Anwer",
+      "Marwa Sharaky",
+      "Rehab Abdel-Hameed"
+    ],
+    "summary": "The pursuit of multi-target anticancer agents is a strategic approach to overcome drug resistance and improve selectivity. This study focuses on the design of novel heterocyclic compounds incorporating a sulfaguanidine moiety, targeting key pathways in cancer progression. A novel diazonium intermediate was synthesized from sulfaguanidine and used to prepare a series of pyrimidine and triazine derivatives 3-8 via both conventional and eco-friendly microwave techniques. All compounds were characterized by spectroscopic methods. The cytotoxic activity was evaluated against five human cancer cell lines (HEPG2, MCF7, A431, A375, and A549) and normal HSF fibroblasts. The mechanism of the lead compounds 3 and 4 was investigated through cell cycle analysis, qPCR analysis of VEGFR-2, PI3K, AKT, mTOR, Caspase-3, and CDC42 genes, and comprehensive molecular docking studies against the corresponding protein targets. ADMET profiles were also predicted. Microwave synthesis significantly improved reaction efficiency. Compounds 3 and 4 exhibited the most potent and selective cytotoxicity, with compound 4 showing activity against A431 cells (IC₅₀ = 4.87 µM). Mechanistic studies revealed compound 3 induced G2/M arrest, while Compound-4 caused G1 arrest. QPCR analysis confirmed significant downregulation of VEGFR-2, PI3K, AKT, mTOR, and CDC42, alongside upregulation of pro-apoptotic Caspase-3. Docking studies supported strong binding affinities to VEGFR-2, PI3K, AKT, and mTOR, correlating with the biological data. The integrated chemical and biological approach identified compounds 3 and 4 as promising multi-target agents. Their ability to disrupt angiogenesis, survival signaling, and cell cycle progression, while inducing apoptosis, highlights their potential as lead compounds for further anticancer development.",
+    "doi": "10.1007/s11010-026-05727-3",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "ADMET"
+    ],
+    "extra": {
+      "pmid": "42803866",
+      "journal": "Molecular and cellular biochemistry"
+    },
+    "dedupe_key": "doi:10.1007/s11010-026-05727-3"
+  },
+  {
+    "kind": "article",
+    "title": "Optimization of a bis-imine scaffold as a glyoxalase I inhibitor: synthesis, SAR, and docking studies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42803812/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-29T01:13:45.639768+00:00",
+    "authors": [
+      "Buthina A Al-Oudat",
+      "Farah B Al-Omari",
+      "Suaad A Audat",
+      "Nizar A Al-Shar'i",
+      "Qosay A Al-Balas"
+    ],
+    "summary": "Glyoxalase I (Glo-I) enzyme is a validated anticancer target due to its role in methylglyoxal detoxification and its association with tumor progression and drug resistance. Inhibition of Glo-I promotes the accumulation of toxic metabolites and can trigger apoptosis in cancer cells. Building on our previously reported bis-imine Glo-I inhibitor N3 (IC50 = 0.89 ± 0.06 µM), which contains two pyrogallol moieties linked via para-positioned imines on a central benzene linker, the present study introduces a focused scaffold-optimization strategy aimed at defining the structural elements required for stronger Glo-I inhibition. Structural simplification of N3, through removal of the central benzene linker, generated compound 8a, a simplified bis-imine analogue with two-fold improved potency (IC50 = 0.46 ± 0.10 µM). This enhancement was attributed to preserved hydrogen bonding capacity and improved Zn²⁺ chelation within Glo-I active site. A comprehensive structure-activity relationship (SAR) investigation of compound 8a and its analogues demonstrated that the number, position, and free phenolic character of the hydroxyl groups are critical determinants of activity, mainly by supporting hydrogen bonding and bidentate Zn²⁺ coordination. Masking the hydroxyl groups abolished activity, whereas selected alternative chelating groups preserved moderate inhibition, highlighting the importance and flexibility of metal-binding interactions. Importantly, replacement of the bis-imine with amide-imine linker, or reduction to mono-imine analogues, reduced potency, confirming that the bis-imine linker is a key pharmacophoric feature for optimal Glo-I inhibition. Molecular docking further rationalized these findings by identifying the essential interactions with Zn²⁺, polar residues at the active site entrance, and the hydrophobic pocket. Overall, this study provides a clear innovative-driven SAR model for bis-imine-based Glo-I inhibitors and identified compound 8a as an optimized lead for the future design of anticancer candidates targeting Glo-I enzyme.Clinical trial number: not applicable. The image presents a chemical structure at the top, connected by arrows to three groups of related chemical structures labeled 8a-p, 11a-f, and 14a-c. The top structure includes two benzene rings each with hydroxyl groups, linked by a diazene group and a phenyl ring. The three groups below show variations of this structure with different substituents labeled as R. The top right includes a molecular surface model showing a ligand bound within a protein pocket, illustrating the interaction between the molecule and the protein.",
+    "doi": "10.1007/s00044-026-03626-2",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42803812",
+      "journal": "Medicinal chemistry research : an international journal for rapid communications on design and mechanisms of action of biologically active agents"
+    },
+    "dedupe_key": "doi:10.1007/s00044-026-03626-2"
   }
 ]
