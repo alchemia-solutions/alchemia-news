@@ -475,6 +475,63 @@
   },
   {
     "kind": "article",
+    "title": "MIMOSA: Guiding De Novo Antibody Design with Natural Interaction Fingerprints",
+    "url": "https://doi.org/10.64898/2026.09.24.753155",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-29",
+    "collected_at": "2026-09-30T00:45:15.024129+00:00",
+    "authors": [
+      "Abanades, B.",
+      "Roncoli, A.",
+      "Bhagawati, M.",
+      "Kessel, P.",
+      "Imhof-Jung, S.",
+      "Doerr, D.",
+      "Schilz, J.",
+      "Vasilaki, S.",
+      "Seeger, F.",
+      "Bonvin, A. M. J. J.",
+      "Bonneau, R.",
+      "Gligorijevic, V.",
+      "Vangone, A."
+    ],
+    "summary": "De novo antibody design promises to transform therapeutic antibody and nanobody discovery. Yet, success remains inconsistent across targets, with generative models often yielding no experimentally validated binders. Here we introduce MIMOSA (MIMic-Oriented Structural Antibody generation), a model-agnostic, inference-time framework that constrains diffusion-based antibody design pipelines to reproduce the interaction geometry and chemistry of a target's known cognate binder interface. Rather than searching for a productive interface from scratch, MIMOSA constrains generation around residue identities and geometries already known to support binding, while allowing the generative model to complete the surrounding antibody interface. We test MIMOSA on different interface topologies: contiguous motifs that fit within a single CDR loop and spatially dispersed hotspots distributed across the paratope. Applied without retraining to two architecturally distinct generators (RFAntibody and BoltzGen), this framework delivers experimentally validated binders-achieving sub-micromolar to single-digit nanomolar affinities-at 20-26% hit rates on three targets on which unconstrained methods produce ",
+    "doi": "10.64898/2026.09.24.753155",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody design"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.24.753155"
+  },
+  {
+    "kind": "article",
+    "title": "Mapping a genome-scale in vivo knockout screen to a mechanistic network model identifies VAV2, RASA1, and LEPR as regulators of cardiomyocyte hypertrophy",
+    "url": "https://doi.org/10.64898/2026.09.24.754086",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-09-29",
+    "collected_at": "2026-09-30T00:45:15.025728+00:00",
+    "authors": [
+      "Watkins, L. D.",
+      "Saucerman, J. J."
+    ],
+    "summary": "Cardiomyocyte hypertrophy is a leading clinical predictor of heart failure, yet newly identified candidate genes often remain disconnected from the signaling mechanisms that govern cardiomyocyte growth. We developed a computational-experimental pipeline that integrates genome-scale mouse knockout phenotypes with a logic-based differential equation model of hypertrophic signaling. Among 9,605 genes evaluated by the International Mouse Phenotyping Consortium, 939 knockout lines induced abnormal heart morphology. Directional curation of hypertrophy-related sub-phenotypes followed by interaction-based network expansion mapped 37 genes to the signaling model. Virtual knockdown screening identified five candidates with concordant in vivo and in silico effects: LRIG1 and CBL as predicted negative regulators and VAV2, RASA1, and LEPR as predicted positive regulators. Mechanistic subnetwork analysis linked these candidates to distinct receptor-proximal, Ras, PI3K-AKT, and MAPK signaling axes. In neonatal rat cardiomyocytes, siRNA-mediated depletion of VAV2, RASA1, or LEPR reduced phenylephrine-induced cell growth, supporting their cell-autonomous contribution to hypertrophy. Quantitative ph",
+    "doi": "10.64898/2026.09.24.754086",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "systems biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.24.754086"
+  },
+  {
+    "kind": "article",
     "title": "Antibodies targeting a conserved cryptic epitope at the influenza hemagglutinin head-stem interface via distinct binding modes",
     "url": "https://doi.org/10.64898/2026.09.24.754278",
     "source": "bioRxiv",
@@ -54155,5 +54212,227 @@
       "journal": "Frontiers in oncology"
     },
     "dedupe_key": "doi:10.3389/fonc.2026.1908974"
+  },
+  {
+    "kind": "article",
+    "title": "FABP5 regulates an immunosuppressive microenvironment in hepatocellular carcinoma through the NF-κB/PD-L1 axis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42809798/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-30T00:44:46.016718+00:00",
+    "authors": [
+      "Rui An",
+      "Shibing Hou",
+      "Min Hong",
+      "Jiaorong Zhen",
+      "Zhijuan Wang",
+      "Haoming Huang",
+      "Weixuan Zhao",
+      "Mianmian Liao",
+      "Weiqu Yuan",
+      "Danping Huang"
+    ],
+    "summary": "Fatty acid binding protein 5 (FABP5) contributes to lipid metabolism and inflammation, but, its immunoregulatory role in hepatocellular carcinoma (HCC) is unclear. Considering the strong metabolic-immune interplay in HCC, elucidating how FABP5 shapes the tumor immune microenvironment may uncover new therapeutic targets. TCGA, CCLE and single-cell RNA-seq datasets were employed to characterize FABP5 expression and clinical relevance. FABP5 knockdown was performed to assess effects on HCC cell proliferation. Immune infiltration, immune checkpoint profiles, TIDE scores and enrichment of immune-related pathways were analyzed. Differentially expressed genes underwent GO and KEGG pathway enrichment analyses. Protein-protein docking, molecular dynamics (MD) simulations and in vitro assays were conducted to explore the regulatory role of FABP5 in the NF-κB/PD-L1 axis. Drug screening, molecular docking and duplicate MD simulations were carried out to identify potential FABP5-targeting compounds. FABP5 was significantly upregulated in HCC and predicted worse survival, serving as an independent prognostic factor. Single-cell analysis identified predominant FABP5 expression in fibroblasts and macrophages. FABP5 knockdown suppressed cell proliferation, colony formation, DNA synthesis and migration, accompanied by decreased expression of epithelial-mesenchymal transition (EMT) markers. FABP5-high tumors exhibited increased immune infiltration but raised immune checkpoint levels and higher TIDE scores, indicative of an immunosuppressive microenvironment. FABP5 correlated positively with NF-κB pathway genes and molecular docking predicted stable complexes between IκBα and P65. Experimental validation confirmed that FABP5 drives PD-L1 upregulation in an NF-κB-dependent manner. Drug screening identified CZS-241 as the most promising FABP5-binding candidate, and duplicate MD simulations demonstrated a stable FABP5-CZS-241 complex. FABP5 drives immunosuppression in HCC by inducing PD-L1 via the NF-κB pathway. CZS-241 is identified as a promising FABP5-targeting compound with therapeutic potential for HCC.",
+    "doi": "10.1371/journal.pone.0356359",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42809798",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0356359"
+  },
+  {
+    "kind": "article",
+    "title": "Bioinspired α-MnO2 Nanostructures Derived from Nyctanthes arbor-tristis: Biointerface-Mediated Selective Anticancer Activity and Mechanistic Insights.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42809751/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-30T00:44:46.017389+00:00",
+    "authors": [
+      "Aarti Jathar",
+      "Ketankumar A Ganure",
+      "Samreen Fatema",
+      "Mazahar Farooqui",
+      "Dattatraya Jirekar",
+      "Pramila Ghumare",
+      "Praful Suresh Patil",
+      "Inamul Hasan Madar"
+    ],
+    "summary": "Biointerface engineering of nanomaterials through sustainable synthesis offers a promising strategy for developing phytochemical-associated functional nanostructures. In this study, a phytochemical-mediated approach was developed for the sustainable synthesis of α-MnO2 nanostructures using Nyctanthes arbor-tristis leaf extract. The synthesized nanostructures were characterized by X-ray diffraction (XRD), Fourier transform infrared (FTIR) spectroscopy, scanning electron microscopy coupled with energy-dispersive spectroscopy (SEM/EDS), high-resolution transmission electron microscopy (HRTEM), and X-ray photoelectron spectroscopy (XPS). HRTEM analysis revealed crystalline α-MnO2 nanostructures with an average particle size of 17.66 nm, while XPS analysis indicated the presence of Mn2+, Mn3+, and Mn+4 surface chemical states. The in vitro cytotoxic activity of the synthesized α-MnO2 nanostructures was evaluated against MCF-7 human breast cancer cells using the MTT assay and phase-contrast microscopy. The nanostructures exhibited a concentration-dependent reduction in MCF-7 cell viability, with an estimated IC50 of approximately 55 μg mL-1 under the experimental conditions employed. Molecular docking and network-pharmacology analyses identified cyclin-dependent kinase 1 (CDK1) as a potential molecular target associated with the investigated phytochemicals; however, this computational prediction requires experimental validation. Overall, this study demonstrates a plant-mediated route for the synthesis of crystalline α-MnO2 nanostructures with a phytochemical-associated surface and provides preliminary in vitro evidence of their cytotoxic activity against MCF-7 cells. Further comparative and mechanistic studies are required to establish the contribution of the phytochemical-associated fraction, α-MnO2 core, and their interfacial interactions to the observed biological activity.",
+    "doi": "10.1021/acsami.6c14749",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42809751",
+      "journal": "ACS applied materials & interfaces"
+    },
+    "dedupe_key": "doi:10.1021/acsami.6c14749"
+  },
+  {
+    "kind": "article",
+    "title": "Network of interactions between the tumor necrosis factor superfamily members and small S100 proteins.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42809589/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-30T00:44:46.017932+00:00",
+    "authors": [
+      "Victoria A Rastrygina",
+      "Evgenia I Deryusheva",
+      "Alexey S Kazakov",
+      "Andrey S Sokolov",
+      "Maria E Permyakova",
+      "Ekaterina A Litus",
+      "Vladimir N Uversky",
+      "Eugene A Permyakov",
+      "Sergei E Permyakov"
+    ],
+    "summary": "Tumor Necrosis Factor Superfamily (TNFSF) comprises 20 members of membrane/soluble signaling proteins regulating cell survival, cell proliferation/differentiation, and innate/adaptive immunity. Targeting signaling of TNFSF members is used clinically to treat several autoimmune and oncological diseases, and bone loss. They and their cognate receptors are in clinical trials as targets for treatment of autoimmune, inflammatory, oncological and other diseases. Recently, some representatives of S100 family of pleiotropic calcium-binding proteins were shown to interact with TNFSF members TNF and TRAIL, thereby suppressing their activity. In this work, we explored selectivity of interactions between soluble forms of 13 TNFSF members and 21 non-fused S100 proteins using surface plasmon resonance spectroscopy. A total of 27 interactions were found between CD70, CD30L, 4-1BBL, TWEAK, APRIL, LIGHT, VEGI and AITRL and Ca2+-loaded forms of S100A1/A2/A4/A5/A6/A12/A16/B/P proteins, with equilibrium dissociation constants from 2 nM to 24 μM. Removal of calcium leads to disruption of the interactions. Molecular docking indicates presence of well-conserved binding sites of the both interaction partners. Mutagenesis of S100P evidences involvement of its 'hinge' region in binding of CD30L, VEGI and AITRL, as well as F89 residue in VEGI recognition. The revealed network of interactions is potentially important for regulation of the cellular communication mediated by TNFSF/S100 proteins, which could be exploited for targeted therapy of socially significant diseases.",
+    "doi": "10.1371/journal.pone.0341400",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42809589",
+      "journal": "PloS one"
+    },
+    "dedupe_key": "doi:10.1371/journal.pone.0341400"
+  },
+  {
+    "kind": "article",
+    "title": "Evaluation of the bioactive constituents, antioxidant potential, and enzyme inhibitory activities of Salvia longipedicellata.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42809220/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-30T00:44:46.018444+00:00",
+    "authors": [
+      "Emine Incilay Torunoglu",
+      "Gökhan Zengin",
+      "Süleyman Doğu",
+      "Abidin Gümrükçüoğlu",
+      "Erdi Can Aytar"
+    ],
+    "summary": "In this study, the phytochemical profile, antioxidant activity, enzyme inhibitory effects, and molecular docking properties of the methanol extract obtained from the aerial parts of Salvia longipedicellata were investigated. The total phenolic and flavonoid contents of the extract were determined as 57.06 mg GAE/g and 23.50 mg RE/g extract, respectively. HPLC-DAD analysis revealed that (-)-epicatechin, hesperetin, trans-caffeic acid, and chlorogenic acid were the major phytochemical constituents. The extract exhibited strong antioxidant activity in DPPH, ABTS, CUPRAC, FRAP, phosphomolybdenum, and metal chelating assays. It also showed inhibitory effects against acetylcholinesterase, tyrosinase, α-amylase, and α-glucosidase enzymes. Molecular docking studies suggested that epicatechin and hesperetin possessed strong binding affinities towards the selected target enzymes. The findings indicate that S. longipedicellata is a promising natural source of bioactive compounds with potential antioxidants, neuroprotective, antidiabetic, and anti-hyperpigmentation properties.",
+    "doi": "10.1080/14786419.2026.2738215",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42809220",
+      "journal": "Natural product research"
+    },
+    "dedupe_key": "doi:10.1080/14786419.2026.2738215"
+  },
+  {
+    "kind": "article",
+    "title": "Analysis of the off-target interaction of amyloid PET tracers with human brain sulfotransferases.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42809165/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-30T00:44:46.019005+00:00",
+    "authors": [
+      "Ludovico Miccoli",
+      "Rosa Fullone",
+      "Stefano Delli Pizzi",
+      "Federica Tomaiuolo",
+      "Stefano L Sensi",
+      "Giuseppe Floresta",
+      "Alberto Granzotto"
+    ],
+    "summary": "Positron emission tomography (PET) tracers targeting amyloid-β (Aβ) are central to the diagnosis and staging of Alzheimer's disease (AD). However, growing evidence indicates that these tracers can engage off-target molecules, complicating signal interpretation. Sulfotransferases (SULTs) have been experimentally identified as binding partners of 11C-Pittsburgh Compound-B (PiB), but whether the clinically used fluorinated PiB derivatives interact with brain-expressed SULTs has not been explored. To assess whether PiB and its fluorinated derivatives flutemetamol and flutafuranol interact with the SULT isoforms expressed in the human brain, and to characterize the structural features of these interactions. We combined multi-omic transcriptomic profiling of the Genotype-Tissue Expression (GTEx) project and the Human Protein Atlas with molecular docking and molecular dynamics (MD) simulations to evaluate the structural interactions of SULT-tracer complexes. SULT1A1, SULT1A3, and SULT4A1 were identified as the SULT isoforms predominantly expressed in the human brain, and all three are expressed in the cerebellum, the region used as a reference for Aβ PET signal normalization. Docking and MD simulations showed that all three tracers form energetically comparable complexes within the catalytic pockets of these isoforms, but their dynamic stability varied in an enzyme- and tracer-specific manner. PiB and flutemetamol were stably accommodated in SULT1A1, whereas PiB lost its initial pose in SULT4A1. Flutafuranol showed weaker binding to SULT1A1 but formed stable complexes in SULT1A3 and SULT4A1. These findings provide a structural framework for off-target interactions between Aβ PET tracers and brain SULTs and suggest that the intracellular enzymatic environment may contribute to variability in Aβ PET signals beyond fibrillar Aβ deposition.",
+    "doi": "10.1007/s10072-026-09431-4",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42809165",
+      "journal": "Neurological sciences : official journal of the Italian Neurological Society and of the Italian Society of Clinical Neurophysiology"
+    },
+    "dedupe_key": "doi:10.1007/s10072-026-09431-4"
+  },
+  {
+    "kind": "article",
+    "title": "In vitro and in silico anti-inflammatory investigation of triterpenoids from combretum trifoliatum.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42809111/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-30T00:44:46.019514+00:00",
+    "authors": [
+      "Cong Thai Son Nguyen",
+      "Hong Nguyen Lien",
+      "Nguyen Kim Tuyen Pham",
+      "Ngoc Thuy Trang Le",
+      "Ngoc Hoi Nguyen",
+      "Nhat Minh Phan",
+      "Diep Xuan Ky Nguyen",
+      "Trong Dat Bui",
+      "Tan Thanh Mai",
+      "Thi Hong Tuoi Do",
+      "Van Son Dang",
+      "Kim Phi Phung Nguyen",
+      "Tan Phat Nguyen",
+      "Dai Hai Nguyen"
+    ],
+    "summary": "A saponin-enriched extract from the Combretum trifoliatum Vent. leaves (SE-CTL) exhibited notable in vitro anti-inflammatory activity, with an IC50 of 46.39 µg/mL against LPS-induced Nitric Oxide (NO) production in RAW264.7 macrophages. Phytochemical investigation of SE-CTL led to the isolation and structure elucidation of nine triterpenoids (1-9) using HRESIMS, NMR, and comparison with literature data. Notably, triterpene acids (1 and 5) were identified for the first time from the Combretum genus. Most compounds showed significant anti-inflammatory activity (IC50 = 25.55-36.87 µM), and triterpene acids (1-3) displayed moderate cytotoxicity against HT-29 and MKN-7 cells (IC50 = 69.94-98.06 µM). In silico studies suggested that their anti-inflammatory effects may involve inhibition of TLR4 and iNOS, with compound 1 showing strong TLR4 binding (ΔGMM-GBSA = -44.84 kcal/mol and stable RMSD during a 100-ns MD simulation). These findings highlight C. trifoliatum as a promising source of bioactive triterpenoids with anti-inflammatory potential.",
+    "doi": "10.1080/14786419.2026.2740610",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42809111",
+      "journal": "Natural product research"
+    },
+    "dedupe_key": "doi:10.1080/14786419.2026.2740610"
+  },
+  {
+    "kind": "article",
+    "title": "A multi-omics and machine-learning framework reveals shared druggable targets for Alzheimer's disease and periodontitis and identifies amentoflavone and taraxerone as potential dual-action natural products.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42809100/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-09-30T00:44:46.020306+00:00",
+    "authors": [
+      "Yeke Wu",
+      "Shuang Li",
+      "Ximei Zhang",
+      "Qianrong Xu",
+      "Bingjun Chen",
+      "Wenbin Yang",
+      "Min Liu",
+      "Jiawei Li",
+      "Xiang He",
+      "Juan Li",
+      "Wenbin Wu"
+    ],
+    "summary": "Alzheimer's disease (AD) and periodontitis (PD) are highly prevalent chronic disorders in ageing populations and share multiple pathological features, particularly persistent inflammatory and immune dysregulation. Despite increasing evidence supporting an association between the two diseases, the shared druggable molecular mechanisms underlying their comorbidity remain incompletely understood, and effective therapeutic strategies capable of simultaneously targeting shared disease-related processes are limited. This study aimed to identify shared druggable molecular candidates associated with AD and PD and to evaluate the potential biological effects of the natural products amentoflavone (AF) and taraxerone (TA) in AD-PD-related inflammatory cell models. An integrative strategy combining Mendelian randomisation (MR), transcriptomic profiling, machine learning, and structure-based virtual screening was used to identify and prioritise shared molecular candidates associated with AD and PD. Molecular docking and molecular dynamics (MD) simulations were performed to evaluate the predicted binding modes and interaction stability of AF and TA with selected core proteins. In vitro experiments were conducted using LPS-induced mouse BV2 microglia and mouse primary gingival fibroblasts (MGFs) to assess the effects of AF and TA, alone and in combination, on core-gene expression, inflammatory mediator secretion, oxidative stress, apoptosis, and iNOS/CD206-defined microglial activation states. MR, transcriptomic, and machine-learning analyses prioritised six shared key genes, including FCGRT, LTBP1, CD59, SPRED1, SURF2, and ZDHHC2, with FCGRT, SPRED1, and SURF2 selected for subsequent structural and cellular investigations. Molecular docking and MD simulations suggested stable predicted interactions of AF and TA with these three proteins. AF formed persistent hydrogen-bond networks, particularly in the SPRED1 and SURF2 complexes, whereas TA interactions were predominantly hydrophobic. MM-PBSA analysis yielded favourable binding free energies ranging from - 62.4 to - 99.7 kJ/mol. AF at 10 µM and TA at 20 µM were selected as non-cytotoxic working concentrations for subsequent cellular experiments. Both compounds partially restored LPS-associated alterations in FCGRT, SPRED1, and SURF2 expression, reduced TNF-α, IL-1β, and IL-6 secretion, increased IL-10 production, attenuated oxidative stress by reducing ROS, MDA, and NO levels while increasing SOD activity, decreased apoptosis, and shifted the iNOS/CD206-defined microglial activation profile away from an LPS-induced pro-inflammatory state toward an anti-inflammatory or repair-associated response. AF + TA co-treatment produced greater combined effects than either single treatment in several assays; however, quantitative combination analyses are required to determine whether these effects represent pharmacological synergy or additive interactions. This study identified FCGRT, SPRED1, and SURF2 as prioritised shared molecular candidates associated with AD and PD and provided computational and cellular evidence supporting further investigation of AF and TA as potential natural-product-based therapeutic candidates. AF and TA showed stable predicted interactions with the selected proteins and modulated gene-expression, inflammatory, oxidative-stress, apoptotic, and microglial-activation-related phenotypes in LPS-induced cellular models. These findings provide additional insight into the shared molecular landscape of AD and PD and support further experimental evaluation of AF and TA, including direct target-engagement studies, quantitative combination analyses, and in vivo validation.",
+    "doi": "10.1007/s00210-026-05953-y",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42809100",
+      "journal": "Naunyn-Schmiedeberg's archives of pharmacology"
+    },
+    "dedupe_key": "doi:10.1007/s00210-026-05953-y"
   }
 ]
