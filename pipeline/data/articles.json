@@ -56131,5 +56131,313 @@
       "journal": "Journal of hazardous materials"
     },
     "dedupe_key": "doi:10.1016/j.jhazmat.2026.143724"
+  },
+  {
+    "kind": "article",
+    "title": "Computational and biophysical validation of tobramycin targeting Mycobacterium MetE(Rv1133c): implications for anti-tuberculosis activity & rifampicin synergy.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814976/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.295449+00:00",
+    "authors": [
+      "Kunal Malik",
+      "Kashish Choudhary",
+      "Waseem Ali",
+      "Sana Tanweer",
+      "Rahul Sharma",
+      "Rahul Verma",
+      "Sana Jamily",
+      "Shivani A Muthu",
+      "Meetu Agarwal",
+      "Abhinav Grover",
+      "Laishram Rajendrakumar Singh",
+      "Basir Ahmad",
+      "Sonam Grover"
+    ],
+    "summary": "The global escalation of multidrug-resistant tuberculosis (MDR-TB) demands identification of novel therapeutic targets. Here, we establish Vitamin B12-independent methionine synthase E 'MetE' (Rv1133c) as a crucial drug target and validate tobramycin as its inhibitor. Through a multi-faceted approach, including virtual screening and MD simulations, we identified interactions between the tobramycin-MetE complex, which were experimentally validated. Through Isothermal calorimetry we found tobramycin binds to MetE with high affinity (Ka⁓10-8M). Subsequent biophysical characterization revealed an interesting mechanism of action: tobramycin binding induces conformational perturbations of the MetE enzyme, as confirmed by changes in intrinsic fluorescence, denaturation patterns and circular dichroism. Under In-vitro conditions tobramycin demonstrated potent anti-mycobacterial activity at concentrations nontoxic to human macrophage cells. We hypothesize that this inhibition involves classical 30S ribosomal binding and MetE disruption. Most significantly, we discovered a powerful synergistic effect between tobramycin and the first-line anti-TB drug, rifampicin. Together, these findings establish a robust preclinical foundation for repurposing tobramycin against management of tuberculosis.",
+    "doi": "10.1080/07391102.2026.2729840",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening"
+    ],
+    "extra": {
+      "pmid": "42814976",
+      "journal": "Journal of biomolecular structure & dynamics"
+    },
+    "dedupe_key": "doi:10.1080/07391102.2026.2729840"
+  },
+  {
+    "kind": "article",
+    "title": "The prevalence of protein misfolding as a mechanism for hereditary deafness.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814786/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.296109+00:00",
+    "authors": [
+      "Rose A Gogal",
+      "Genevieve M Cox",
+      "Diana L Kolbe",
+      "Amanda M Odell",
+      "Chloe E Ovel",
+      "Katherine I McCormick",
+      "Brian Hong",
+      "Hela Azaiez",
+      "Thomas L Casavant",
+      "Richard J H Smith",
+      "Terry A Braun",
+      "Michael J Schnieders"
+    ],
+    "summary": "Hearing loss is the most common sensory deficit impacting ~5% of the world's population. The Deafness Variation Database (DVD) is a public resource of deafness variants, containing 381,924 missense variants across 224 genes, with 303,577 classified as a variant of uncertain significance (VUS). To address the challenge of evaluating each deafness associated VUS, we evaluate a family of probabilistic frameworks to quantify the strength of computational evidence based on ACMG/AMP recommendations. First, CADD and REVEL are compared using Bayesian models parameterized using either a ClinVar 2019 dataset or labeled DVD variants. The REVEL model built using the DVD dataset demonstrates the best accuracy, sensitivity, and specificity. Incorporation of (in)tolerance to missense variation based on sorting each gene into three bins (tolerant, average, intolerant) shows that intolerant DVD genes are consistent with a higher prior probability of being pathogenic (25.7%) than average (10.7%) or tolerant (8.7%) genes. Finally, the impact of protein folding stability was incorporated into the Bayesian model and surpassed the simpler versions while also offering a biophysical rationale for the disease mechanism. The 28,866 VUSs that reach a posterior probability of pathogenicity above 98% based on the protein-folding informed Bayesian model were prioritized as likely to be pathogenic. Overall, 54,752 missense variants (14.3% of 381,924) are predicted to cause modest protein folding destabilization of greater than 1.0 kcal/mol, while 18,706 of these are prioritized VUSs (34% of 54,752). 22,237 missense variants (6.2% of 381,924) are predicted to cause more severe protein folding destabilization of at least 2 kcal/mol with 12,424 being prioritized VUSs (55.8% of 22,237). From these VUSs, we identify twelve probands where the patient's genetic diagnosis is upgraded to likely pathogenic/pathogenic. We highlight two variants that cause clear structural disruption, demonstrating the impact of biophysical characterization on variant evaluation.",
+    "doi": "10.1371/journal.pgen.1012085",
+    "company_slug": null,
+    "keywords_matched": [
+      "CADD"
+    ],
+    "extra": {
+      "pmid": "42814786",
+      "journal": "PLoS genetics"
+    },
+    "dedupe_key": "doi:10.1371/journal.pgen.1012085"
+  },
+  {
+    "kind": "article",
+    "title": "GeoEPred: A multimodal structure-aware geometric deep learning framework for Gram-negative bacterial secreted effector prediction with sequence semantics.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814775/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.296694+00:00",
+    "authors": [
+      "Shouzhen Song",
+      "Hua Shi",
+      "Hongfeng Wu",
+      "Dachen Liu",
+      "Yihang Lin",
+      "Nor Ashidi Mat Isa",
+      "Quan Zou",
+      "Leyi Wei"
+    ],
+    "summary": "Accurate prediction of effector proteins secreted by Gram-negative bacteria is important for elucidating bacterial pathogenic mechanisms and developing precise anti-infective strategies. Although existing methods have benefited from the strong sequence feature extraction capacity of pretrained protein language models, reliance on linear sequence information alone often fails to fully capture the three-dimensional conformational signals required for virulence functions. Meanwhile, conventional structure-based methods are limited by the scarcity of experimentally resolved protein structures. To address these challenges, we propose GeoEPred, a multimodal deep learning framework designed for the synergistic modeling of protein sequence and structure to identify Gram-negative bacterial effector proteins. Specifically, the model integrates sequence-contextual embeddings from a pretrained protein language model with three-dimensional structural representations predicted by ESMFold. A feature projection network refines fine-grained sequence signals associated with effector functions, while geometric vector perceptrons characterize inter-residue orientations, distances, and local spatial topology to capture potential structural conformational motifs. To further enable effective cross-modal fusion, we design a cross-modal alignment and feature-tokenized self-attention module. This module enhances consistency between the sequence-semantic and structural-geometric spaces through contrastive learning and models associations between linear functional motifs and spatial conformational patterns at a fine-grained token level. Extensive evaluations on multiple benchmark datasets show that GeoEPred achieves better predictive performance than existing leading models in T3SE, T4SE, and T6SE prediction tasks, while maintaining stable performance in remote homolog recognition scenarios. Moreover, the modular and extensible architecture of GeoEPred demonstrates strong generalization ability and substantial application potential for genome-scale effector protein discovery.",
+    "doi": "10.1371/journal.pcbi.1014344",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "pmid": "42814775",
+      "journal": "PLoS computational biology"
+    },
+    "dedupe_key": "doi:10.1371/journal.pcbi.1014344"
+  },
+  {
+    "kind": "article",
+    "title": "MMP2Mol: a matched molecular pairs-based framework for ligand-based de novo drug design.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814605/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.297221+00:00",
+    "authors": [
+      "Dekun Chen",
+      "Hui Li",
+      "Jianwang Liu",
+      "Yueping Jiang",
+      "Dongsheng Cao",
+      "Shao Liu"
+    ],
+    "summary": "Designing target-relevant molecules is particularly difficult when only limited bioactivity data are available. We present MMP2Mol, a ligand-based generative framework that combines matched molecular pair (MMP) analysis with a pretrained chemical language model (CLM). MMP2Mol extracts target-specific structure-activity transformations from available ligands, applies the prioritized transformations to construct a virtual focused library, and fine-tunes the CLM toward target-relevant chemical space. The framework was evaluated across ten therapeutic targets and compared with direct CLM fine-tuning, Seq2Seq, and Reinvent 4. In repeated experiments on F2, BRD4, and PARP1, MMP2Mol achieved 92.8%-95.3% validity and 99.5%-99.7% uniqueness. When both methods were evaluated against the same original active-compound reference, molecular novelty increased from 57.8%-64.0% for the CLM baseline to 79.8%-82.0% for MMP2Mol, while internal diversity remained broadly comparable. The gains were most evident for F2 and BRD4, whereas performance varied across the smaller target datasets. These findings indicate that MMP-derived chemical knowledge can improve the focus and reproducibility of ligand-based molecular generation under limited-data conditions. MMP2Mol therefore provides a practical strategy for computational candidate generation and prioritization in early-stage drug discovery.",
+    "doi": "10.1093/bib/bbag548",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "drug design",
+      "de novo drug design"
+    ],
+    "extra": {
+      "pmid": "42814605",
+      "journal": "Briefings in bioinformatics"
+    },
+    "dedupe_key": "doi:10.1093/bib/bbag548"
+  },
+  {
+    "kind": "article",
+    "title": "Targeted extracellular degradation of LRP8 promotes ferroptosis in cancer cells.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814555/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.297712+00:00",
+    "authors": [
+      "Fangzhu Zhao",
+      "Alex Inague",
+      "Trenton M Peters-Clarke",
+      "Yifei Chen",
+      "Snehal D Ganjave",
+      "Yun Zhang",
+      "Kun Miao",
+      "Zi Yao",
+      "Yan Wu",
+      "Madison K C Seto",
+      "Kevin K Leung",
+      "James A Olzmann",
+      "James A Wells"
+    ],
+    "summary": "Tumor reliance on antioxidant defenses creates a vulnerability to ferroptosis, yet strategies to therapeutically disable these systems remain limited. Here, we identify targeted degradation of the selenium uptake receptor lipoprotein receptor-related protein 8 (LRP8) as an effective approach to decrease the abundance of the ferroptosis-protective enzyme glutathione peroxidase 4 (GPX4). Using bispecific cytokine receptor-targeting chimeras (KineTACs) that couple LRP8 to cytokine receptor internalization pathways, we selectively direct LRP8 to the lysosome for degradation. LRP8 degradation reduces the abundance of several selenoproteins, including GPX4, lowering the cellular threshold for lipid peroxidation and sensitizing cancer cells to ferroptosis. These findings establish receptor-mediated selenium uptake as a critical, targetable node in ferroptosis resistance and demonstrate that extracellular protein degradation can be leveraged to reprogram intracellular translational dependencies in cancer cells. More broadly, this work provides a framework for exploiting nutrient acquisition pathways to overcome therapy resistance.",
+    "doi": "10.1073/pnas.2616933123",
+    "company_slug": null,
+    "keywords_matched": [],
+    "extra": {
+      "pmid": "42814555",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America"
+    },
+    "dedupe_key": "doi:10.1073/pnas.2616933123"
+  },
+  {
+    "kind": "article",
+    "title": "Curcumin from Turmeric Alleviates Lipid Metabolism: Network Pharmacology and Cellular Validation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814403/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.298272+00:00",
+    "authors": [
+      "Li-Sha Niu",
+      "Yi-Zhe Zhang",
+      "Feng-Yang Wu",
+      "Wen-Hui Qi",
+      "Chi Ren",
+      "Yi-Shuo Xu",
+      "Yu-Tao Yang",
+      "Zhi-Sheng Zhang"
+    ],
+    "summary": "Curcumin, the primary active compound in turmeric, a widely used medicinal and edible herb in traditional Chinese medicine, exhibits beneficial effects against lipid metabolic dysfunction (LMD). Nevertheless, its comprehensive regulatory network and precise mechanisms remain unclear. In this study, network pharmacology, molecular docking, and in vitro cellular assays were integrated to elucidate the targets and mechanisms by which curcumin acts against LMD. Seven hub targets were identified: AKT1, ALB, INS, IL6, TP53, TNF, and PPARG. Kyoto Encyclopedia of Genes and Genomes analysis revealed significant enrichment of these hub targets in multiple pathways, with a notable emphasis on non-alcoholic fatty liver disease. Molecular docking confirmed that curcumin exhibited a favorable binding affinity to the hub targets. Cellular experiments using oleic acid-induced human hepatocellular carcinoma HepG2 cells demonstrated that curcumin markedly reduced triglyceride and total cholesterol levels, alleviated lipid droplet accumulation, and significantly modulated the mRNA expression of genes involved in lipid metabolism, anti-oxidant defense, and inflammation. These findings were consistent with predictions from network pharmacology. In summary, curcumin may alleviate OA-induced LMD by synergistically modulating lipid metabolism, inhibiting oxidative damage, and diminishing inflammation. This study provides a comprehensive theoretical basis for the application of curcumin in LMD intervention.",
+    "doi": "10.1142/S0192415X26500813",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42814403",
+      "journal": "The American journal of Chinese medicine"
+    },
+    "dedupe_key": "doi:10.1142/s0192415x26500813"
+  },
+  {
+    "kind": "article",
+    "title": "6PPD-Quinone Promotes Metabolic Dysfunction-Associated Steatotic Liver Disease through Immune-Inflammatory Disruption.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814397/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.298799+00:00",
+    "authors": [
+      "Xulei Zuo",
+      "Li Ma",
+      "Xiaoyu Hou",
+      "Cong Zhang",
+      "Shiyi Tan",
+      "Yuxi Zhang",
+      "Yuepu Pu",
+      "Juan Zhang"
+    ],
+    "summary": "6PPD-quinone (6PPDQ), a transformation product of the tire antioxidant 6PPD, is widely detected in environmental and human matrices, yet its relevance to metabolic liver disease remains unclear. We examined its potential contribution to metabolic dysfunction-associated steatotic liver disease (MASLD) by integrating disease-burden analysis, computational toxicology, human transcriptomics, and cross-model validation. The intersection of predicted 6PPDQ targets with MASLD transcriptomic signatures identified 103 candidate genes enriched predominantly in immune and inflammatory pathways. Three machine-learning algorithms prioritized six hub genes, ASPM, ERN1, GADD45B, GINS2, LDLR, and MYPOP, which discriminated MASLD from controls with a combined AUC of 0.997. Immune deconvolution and single-cell analyses were associated with this signature with hepatic immune remodeling and intercellular communication. Molecular docking and 100 ns molecular dynamics simulations predicted stable interactions between 6PPDQ and several targets, particularly ERN1. Environmentally informed low-dose oral exposure produced hepatic steatosis, inflammation, and injury in mice, while LC-MS/MS confirmed internal exposure. Concordant transcriptional responses were reproduced in the hiPSC-derived liver organoids. Integration of these findings supported a provisional adverse outcome pathway linking 6PPDQ exposure to MASLD-related liver injuries. Collectively, these results implicate 6PPDQ as a plausible environmental hazard for metabolic liver injury and support expanding the risk assessment of tire-derived contaminants beyond that of aquatic ecotoxicity.",
+    "doi": "10.1021/acs.est.6c05547",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42814397",
+      "journal": "Environmental science & technology"
+    },
+    "dedupe_key": "doi:10.1021/acs.est.6c05547"
+  },
+  {
+    "kind": "article",
+    "title": "Akkermansia muciniphila WW001 protects against DSS-induced colitis by restoring intestinal barrier integrity and modulating inflammatory responses.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814370/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.299379+00:00",
+    "authors": [
+      "Xin Zhou",
+      "Mai Li",
+      "Yannan Zhang",
+      "Jiaxuan Chen",
+      "Caifeng Li",
+      "Dianbing Wang",
+      "Min Li",
+      "Xian-En Zhang",
+      "Jinsong Gu"
+    ],
+    "summary": "Inflammatory bowel disease (IBD) is a chronic, relapsing disorder intimately linked to impaired intestinal barrier function. Akkermansia muciniphila, a beneficial gut bacterium, has been shown to enhance intestinal barrier function. This study aimed to characterize a newly identified strain, A. muciniphila WW001, and evaluate its protective effects on intestinal barrier integrity in IBD models. Lipopolysaccharide (LPS)-induced Caco-2/HT29-MTX cell model and dextran sulfate sodium (DSS)-induced mouse model were employed to assess its protective effects on intestinal barrier function. Whole-genome sequencing, comparative genomic analysis, and molecular docking were performed to explore the unique genetic characteristics of WW001. In line with these genomic features, WW001 significantly strengthened intestinal barrier function and displayed distinct functional characteristics compared with A. muciniphila ATCC 835, as evidenced by elevated transepithelial electrical resistance (TEER), reduced paracellular permeability, upregulation of tight junction proteins, suppression of pro-inflammatory cytokines, and elevation of anti-inflammatory cytokine levels. Furthermore, WW001 alleviated colitis symptoms and promoted goblet cell proliferation, which were associated with its distinct genomic features and increased short-chain fatty acid (SCFA) concentrations. The enriched glycoside hydrolase repertoire may indicate an enhanced capacity for mucin-derived glycan utilization; however, the causal relationships among these genomic features, mucin utilization, SCFA changes, and barrier protection remain to be established. These findings demonstrate that A. muciniphila WW001 enhances intestinal barrier function and exerts anti-inflammatory effects, while the associated metabolic changes may contribute to its beneficial effects, supporting its potential application as a probiotic candidate for IBD intervention.",
+    "doi": "10.1007/s12223-026-01604-0",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42814370",
+      "journal": "Folia microbiologica"
+    },
+    "dedupe_key": "doi:10.1007/s12223-026-01604-0"
+  },
+  {
+    "kind": "article",
+    "title": "Three new phenolic glycosides from root bark of Periploca sepium and their hypoglycemic activity.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814340/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.299943+00:00",
+    "authors": [
+      "Cai-Lian Fan",
+      "Hang-Hang Wang",
+      "Zhi-Heng Shu",
+      "Wei-Wu Chen"
+    ],
+    "summary": "Three new phenolic glycosides (1-3) and four known compounds were isolated from the ethanol extract of the root bark of Periploca sepium. Their chemical structures were elucidated based on comprehensive spectroscopic analyses, including high-resolution electrospray ionization mass spectrometry (HR-ESI-MS), 1D and 2D nuclear magnetic resonance (NMR) spectra. The sugar moieties were determined via acid hydrolysis followed by comparison with standard sugars. The hypoglycemic activity was evaluated by α-glucosidase and α-amylase inhibition assays. All four phenolic glycosides exhibited inhibitory activity against α-glucosidase and α-amylase with IC₅₀ values below 100 µM. Among them, compound 1 exhibited the strongest α-glucosidase inhibitory activity with an IC₅₀ value of 17.25 ± 1.39 µM, which was significantly better than that of the positive control acarbose (IC₅₀ = 111.2 ± 0.35 µM). Meanwhile, compound 2 showed the most potent α-amylase inhibitory activity with an IC₅₀ value of 30.99 ± 0.92 µM, also superior to acarbose (IC₅₀ = 149.63 ± 0.64 µM). Molecular docking results indicated that compounds 1-4 had strong binding affinity with α-glucosidase and α-amylase (ΔG < -6 kcal/mol), which further demonstrated that the four phenolic glycosides from P. sepium exerted their inhibitory effects on the two key enzymes through stable molecular binding interactions. These results suggested that the phenolic glycosides from P. sepium could be served as potential lead compounds for the development of anti-diabetic agents.",
+    "doi": "10.1007/s11418-026-02088-5",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42814340",
+      "journal": "Journal of natural medicines"
+    },
+    "dedupe_key": "doi:10.1007/s11418-026-02088-5"
+  },
+  {
+    "kind": "article",
+    "title": "A molecular modeling and machine learning-based approach for the identification of potential human ALOX15 inhibitors.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42814179/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-01T00:48:17.300502+00:00",
+    "authors": [
+      "Sonam Grewal",
+      "Biswayan Ghosh",
+      "Roy Karnati",
+      "Tanneru Hemanth Kumar",
+      "Polamarasetty Aparoy"
+    ],
+    "summary": "Arachidonate 15-lipoxygenase (ALOX15) metabolises polyunsaturated fatty acids into lipid mediators that regulate inflammation. Depending on the cell type and substrate, ALOX15 influences both pro-inflammatory and pro-resolving pathways. Its dysregulation is associated with asthma, atherosclerosis, neurodegeneration, ferroptosis, inflammation, oxidative stress and disrupted lipid homeostasis. Therefore, targeting ALOX15 offers a promising strategy for modulating pathological lipid oxidation. In this study, a hybrid ligand-based and structure-based machine learning (ML) framework was developed that combines physicochemical and 3D ligand features with interacting features (including SIFts) derived from protein-ligand interactions for the discovery of putative ALOX15 inhibitors. To identify potent human ALOX15 inhibitors, predictive machine learning (ML) models were developed, a dataset was obtained from BindingDB and multiple molecular representations (1-D, 2-D, 3-D descriptors, fingerprints and post-docking features) were computed. Two classes of ML models, Type A and Type B, were developed using 8 regression algorithms. The best Type A model, XGBoost, achieved training R2 of 0.915 (RMSE = 0.299; MAE = 0.224) and test R2 of 0.688 (RMSE = 0.581; MAE = 0.456), whereas the best Type B model, Random Forest, attained training R2 of 0.938 (RMSE = 0.254; MAE = 0.195) and test R2 of 0.659 (RMSE = 0.607; MAE = 0.473). Over 5 million compounds from various databases were screened, and five compounds were identified. ADME predictions and molecular dynamics simulations suggest favourable pharmacokinetic properties and stable binding within the active site of human ALOX15. These compounds are proposed as putative inhibitors and require further experimental validation.",
+    "doi": "10.1007/s00894-026-06968-1",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42814179",
+      "journal": "Journal of molecular modeling"
+    },
+    "dedupe_key": "doi:10.1007/s00894-026-06968-1"
   }
 ]
