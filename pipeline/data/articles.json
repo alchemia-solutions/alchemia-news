@@ -275,6 +275,83 @@
   },
   {
     "kind": "article",
+    "title": "MetaUmbra: Statistically Controlled Genome-Level Presence Inference from Metaproteomic Peptides",
+    "url": "https://doi.org/10.64898/2026.04.29.721689",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-01",
+    "collected_at": "2026-10-01T20:30:02.689396+00:00",
+    "authors": [
+      "Wu, Q.",
+      "Ning, Z.",
+      "Zhang, A.",
+      "Cheng, K.",
+      "Figeys, D."
+    ],
+    "summary": "Taxonomic interpretation of metaproteomic peptides remains difficult because many peptide sequences are present in proteins from different organisms, reducing taxonomic specificity. Current peptide-centric workflows can report taxonomic summaries or taxon-level confidence scores, but they do not directly provide formal genome-level statistical inference for user-defined genome collections. Here we present MetaUmbra, a tool that derives genome-level statistical evidence from identified peptides. MetaUmbra builds theoretical peptide lists by in silico digestion of genome proteins, matches observed peptides against these references, and evaluates unique and shared peptide evidence within a formal statistical framework that accounts for peptide sharing across the reference panel. In the defined community benchmark SIHUMIx, MetaUmbra recovered the expected genomes without additional significant calls after embedding them in a large gut reference background. In the single-strain benchmark Mix24X, all expected genomes were recovered under near-neighbor and full-background expansion, with additional calls mainly associated with closely related genomes. In a hamster gut genome panel, MetaUm",
+    "doi": "10.64898/2026.04.29.721689",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.04.29.721689"
+  },
+  {
+    "kind": "article",
+    "title": "Scalable saturation mutagenesis reveals gene regulatory architecture and rare variant effects",
+    "url": "https://doi.org/10.64898/2026.09.30.755794",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-01",
+    "collected_at": "2026-10-01T20:30:02.693205+00:00",
+    "authors": [
+      "Yuan, H.",
+      "Huang, X.",
+      "Auerbach, B.",
+      "Linder, J.",
+      "Srivastava, D.",
+      "Kelley, D. R."
+    ],
+    "summary": "Long-context sequence-to-function models enable nucleotide-resolution prediction of regulatory variant effects, motivating comprehensive mutational interrogation across broad genomic contexts. Yet conventional in silico saturation mutagenesis (ISM) scores mutations one at a time, requiring millions of model evaluations for a single gene and billions to trillions at genome scales. Here, we introduce Multi-ISM, a scalable framework that reformulates ISM as a sparse recovery problem. Multi-ISM generates mutational maps using 45-fold fewer model evaluations than exhaustive single-variant ISM and matches or exceeds its accuracy on variant-effect benchmarks. Multi-ISM is architecture-agnostic and transfers across large-scale sequence-to-function models. We applied Multi-ISM to 5,000 protein-coding genes, including 3,317 OMIM disease genes, generating base-pair-resolution, tissue-resolved attribution maps across 500-kb windows. These maps supported enhancer--gene prioritization and identification of cell-type-specific regulatory elements. Gene-level summaries of the maps captured regulatory complexity and showed that more constrained genes had smaller predicted mutational effects. Aggrega",
+    "doi": "10.64898/2026.09.30.755794",
+    "company_slug": null,
+    "keywords_matched": [
+      "in silico"
+    ],
+    "extra": {
+      "category": "genomics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.30.755794"
+  },
+  {
+    "kind": "article",
+    "title": "AmyloCore-ML: AI/Machine Learning Enabled Identification of Amyloid Fibril Core Regions Using Protein Language Models",
+    "url": "https://doi.org/10.64898/2026.09.25.754455",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-01",
+    "collected_at": "2026-10-01T20:30:02.694091+00:00",
+    "authors": [
+      "Singh, J.",
+      "Jangid, R.",
+      "Srivastava, A."
+    ],
+    "summary": "In many neurodegenerative and systemic disorders, proteins can form insoluble protein aggregates called amyloids. Identification of amyloid forming regions in a protein remains central to understanding of its aggregation behaviour. Many predictors have been formed in the past and until recently which to estimate the aggregation-prone regions, which may not correspond to total residues found in actual disease associated fibril structures. To address this, we formed a sequence-based based predictor to ascertain structural amyloid-core propensity. The predictor was developed using experimentally determined fibril structures obtained from Amyloid Atlas. Ordered residues in the experimental structures were designated as core, and unresolved sampled from the same proteins as matched controls as non-core. Core and non-core regions were encoded using various physicochemical descriptors and protein language model (PLM) embeddings (ESM-2, ANKH, ProtT5) and evaluated using protein-grouped cross-validation. PLMs consistently outperformed physicochemical descriptors, with the best models reaching AUROC values of ~0.88 and AUPRC values of ~0.85. Locked full-length protein scans further localized",
+    "doi": "10.64898/2026.09.25.754455",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.25.754455"
+  },
+  {
+    "kind": "article",
     "title": "Deep learning based design of buried hydrogen bond networks with HBDesigner",
     "url": "https://doi.org/10.64898/2026.06.08.730848",
     "source": "bioRxiv",
