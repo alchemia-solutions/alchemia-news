@@ -9,6 +9,8 @@ import { useEffect, useState } from 'react';
  * `/programas` -- é um preparo único da empresa, não algo específico de uma página.
  */
 
+// A chave mantém `alchemia-news:` de propósito (2026-09-28): é identificador gravado no navegador
+// de quem já usou o painel, não nome de produto. Trocá-la apagaria o checklist salvo, em silêncio.
 const STORAGE_KEY = 'alchemia-news:document-checklist';
 
 interface ChecklistItem {

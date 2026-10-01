@@ -1,18 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Exporta o dia do Alchemia News para `alchemia-science` — radar em markdown + PDFs open access.
+"""Exporta o dia do Alchemia Radar para `alchemia-science` — radar em markdown + PDFs open access.
 
 Criado em 2026-08-18 a pedido do fundador: "integrando os artigos com alchemia-science e
 alchemia-library quando possível resgatar o pdf completo, se não, somente como markdown que deve
 ser colocado em research com a data do dia e com todos os artigos e tudo que foi atualizado no
-alchemia-news".
+alchemia-news". (Citação literal; o repositório se chama Alchemia Radar desde 2026-09-28.)
 
 Duas saídas, uma execução:
 
 1. **`alchemia-science/research/AAAA-MM-DD-alchemia-news-radar.md`** — o radar do dia. Contém
-   TUDO que entrou no `alchemia-news` naquela data: artigos/preprints, notícias, atividade de
+   TUDO que entrou no `alchemia-radar` naquela data: artigos/preprints, notícias, atividade de
    empresas, mais os números reais da coleta e a saúde dos 8 coletores. É o registro de pesquisa
-   que sobrevive independente do dashboard e do Discord.
+   que sobrevive independente do dashboard e do Discord. O nome do arquivo mantém
+   `alchemia-news` de propósito (2026-09-28): é contrato com `alchemia-science`, e trocá-lo faria
+   a regeneração de um dia antigo criar um segundo arquivo em vez de reescrever o primeiro.
 
 2. **`alchemia-science/alchemia-library/*.pdf`** — o texto completo, quando (e só quando) ele é
    comprovadamente open access. Cada PDF baixado entra no `manifest.csv` e no
@@ -57,7 +59,7 @@ A licença encontrada é gravada no `manifest.csv` de cada PDF, para nunca se pe
 Idempotente: reexecutar o mesmo dia regenera o markdown e **não** rebaixa PDF já registrado
 (dedupe por DOI e por SHA-256 do conteúdo).
 
-Ver `alchemia-ai/alchemia-news/docs/specs/2026-08-18-research-library-integration.md`.
+Ver `alchemia-ai/softwares/internos/alchemia-radar/docs/specs/2026-08-18-research-library-integration.md`.
 """
 from __future__ import annotations
 
@@ -78,9 +80,35 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 
 PIPELINE_DIR = Path(__file__).resolve().parent
-NEWS_ROOT = PIPELINE_DIR.parent
-COMPANY_ROOT = NEWS_ROOT.parent.parent  # alchemia-news -> alchemia-ai -> Alchemia LTDA
-SCIENCE_ROOT = COMPANY_ROOT / "alchemia-science"
+RADAR_ROOT = PIPELINE_DIR.parent
+MARCADOR_DA_RAIZ = "alchemia-science"
+
+
+def achar_raiz_da_empresa(radar_root: Path, marcador: str = MARCADOR_DA_RAIZ) -> Path | None:
+    """Sobe a partir do pai do repositório até achar a pasta que tem `marcador/` dentro.
+
+    Substitui `NEWS_ROOT.parent.parent`, aritmética de profundidade que quebrou em 2026-09-28:
+    o repositório desceu de `alchemia-ai/alchemia-news` para
+    `alchemia-ai/softwares/internos/alchemia-radar`, e dois `.parent` passaram a cair em
+    `alchemia-ai/softwares/`. Por marcador, o mesmo código acha a raiz da empresa na estação e o
+    workspace do runner no Actions (checkout duplo, `research-export.yml`), em qualquer
+    profundidade.
+
+    Começa no PAI do repositório, nunca nele: uma pasta `alchemia-science/` criada por engano
+    dentro do Radar não pode virar destino. Devolve None quando nenhum ancestral tem o marcador,
+    e `main()` falha alto em vez de escrever num lugar inventado.
+    """
+    for pasta in (radar_root.parent, *radar_root.parent.parents):
+        if (pasta / marcador).is_dir():
+            return pasta
+    return None
+
+
+_RAIZ_ACHADA = achar_raiz_da_empresa(RADAR_ROOT)
+# Sem raiz achada, COMPANY_ROOT fica no pai do repositório só para os caminhos abaixo terem valor;
+# `main()` recusa rodar nesse caso (checagem de `_RAIZ_ACHADA` logo no início).
+COMPANY_ROOT = _RAIZ_ACHADA if _RAIZ_ACHADA is not None else RADAR_ROOT.parent
+SCIENCE_ROOT = COMPANY_ROOT / MARCADOR_DA_RAIZ
 RESEARCH_DIR = SCIENCE_ROOT / "research"
 LIBRARY_DIR = SCIENCE_ROOT / "alchemia-library"
 MANIFEST = LIBRARY_DIR / "manifest.csv"
@@ -577,7 +605,7 @@ def _colher_com_lock(artigos, args, relato, resultado, avisos):
         cid = gerar_id_csl(item, cr, ids_usados)
         obs = (
             f"Colhido automaticamente em {date.today().isoformat()} pelo research_export do "
-            f"alchemia-news; rota open access: {rota.rota}; licenca: {rota.licenca or 'nao declarada pela fonte'}; "
+            f"alchemia-radar; rota open access: {rota.rota}; licenca: {rota.licenca or 'nao declarada pela fonte'}; "
             f"origem: {item.get('source', '?')}."
         )
 
@@ -708,15 +736,15 @@ def montar_markdown(dia: str, buckets: dict, meta: dict, pdfs: dict, avisos: lis
     L.append("---")
     L.append(f"data: {dia}")
     L.append("tags: [setor/science, tipo/radar, fonte/alchemia-news]")
-    L.append("origem: alchemia-ai/alchemia-news (pipeline determinístico, sem LLM)")
+    L.append("origem: alchemia-ai/softwares/internos/alchemia-radar (pipeline determinístico, sem LLM)")
     L.append(f"gerado_em: {datetime.now(timezone.utc).isoformat()}")
     L.append("---")
     L.append("")
-    L.append(f"# Radar Alchemia News — {dia}")
+    L.append(f"# Alchemia Radar — {dia}")
     L.append("")
     L.append(
         "Registro de pesquisa do dia, gerado por `pipeline/research_export.py` a partir do que o "
-        "pipeline determinístico do `alchemia-news` coletou. **Nenhum LLM participa da seleção** — "
+        "pipeline determinístico do `alchemia-radar` coletou. **Nenhum LLM participa da seleção** — "
         "relevância é palavra-chave + fonte, e todo item carrega o termo que o trouxe. Nada aqui "
         "foi resumido, reescrito ou classificado por um modelo: título, autores e resumo são os "
         "da própria fonte."
@@ -876,10 +904,10 @@ def montar_markdown(dia: str, buckets: dict, meta: dict, pdfs: dict, avisos: lis
     L.append("---")
     L.append("")
     L.append(
-        "Gerado por `alchemia-ai/alchemia-news/pipeline/research_export.py`. Regenerar este dia: "
+        "Gerado por `alchemia-ai/softwares/internos/alchemia-radar/pipeline/research_export.py`. Regenerar este dia: "
         f"`python -m pipeline.research_export --date {dia}`. O arquivo é reescrito na íntegra a "
         "cada execução (é derivado, não append-only) — a fonte de verdade continua sendo os JSONs "
-        "do `alchemia-news` e a própria `alchemia-library`."
+        "do `alchemia-radar` e a própria `alchemia-library`."
     )
     L.append("")
     return "\n".join(L)
@@ -887,7 +915,7 @@ def montar_markdown(dia: str, buckets: dict, meta: dict, pdfs: dict, avisos: lis
 
 # --------------------------------------------------------------------------------------------
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Exporta o dia do Alchemia News para alchemia-science")
+    ap = argparse.ArgumentParser(description="Exporta o dia do Alchemia Radar para alchemia-science")
     ap.add_argument("--date", default=date.today().isoformat(), help="Dia a exportar (AAAA-MM-DD, default: hoje)")
     ap.add_argument("--no-pdf", action="store_true", help="Não tenta colher texto completo")
     ap.add_argument("--max-pdf", type=int, default=6, help="Teto de PDFs baixados por execução (default 6; 0 desliga)")
@@ -904,8 +932,12 @@ def main() -> int:
         print(f"--date invalido: {args.date} (esperado AAAA-MM-DD)", file=sys.stderr)
         return 2
 
-    if not SCIENCE_ROOT.is_dir():
-        print(f"alchemia-science nao encontrado em {SCIENCE_ROOT}", file=sys.stderr)
+    if _RAIZ_ACHADA is None or not SCIENCE_ROOT.is_dir():
+        print(
+            f"alchemia-science nao encontrado: nenhuma pasta acima de {RADAR_ROOT} contem "
+            f"'{MARCADOR_DA_RAIZ}/' (busca por marcador em achar_raiz_da_empresa)",
+            file=sys.stderr,
+        )
         return 1
 
     buckets: dict[str, list[dict]] = {"article": [], "news": [], "company": [], "newsletter": []}

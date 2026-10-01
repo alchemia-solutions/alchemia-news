@@ -1,14 +1,17 @@
-name: Coleta Alchemia News
+name: Coleta Alchemia Radar
+# ^ O research-export.yml escuta este `name:` (gatilho workflow_run). Renomear um exige renomear
+#   o outro no mesmo push; os dois eram "Coleta Alchemia News" até 2026-09-28.
 
 # Roda a Etapa 1a (coleta determinística) + Etapa 3 (sync Supabase) na infraestrutura do
 # próprio GitHub -- não depende da máquina local do fundador estar ligada. Escopo deliberadamente
 # igual ao que já rodava local via run_alchemia_news.cmd nessas duas etapas, nada mais.
 #
-# Fora de escopo, de propósito (continuam só na máquina local, ver AGENTS.md deste setor):
-#   - Etapa 1b (research_export -- escreve em alchemia-science/alchemia-library, pasta fora
-#     deste repositório, sem equivalente em nuvem hoje).
-#   - Etapas 2-3 do lado "curadoria"/"newsletter" (rodam como Tarefas Agendadas do Claude,
-#     precisam do app aberto -- migração separada, não pedida ainda).
+# Fora de escopo deste workflow (estado de 2026-09-28):
+#   - Etapa 1b (research_export): roda no research-export.yml desde 2026-09-09, disparado ao fim
+#     de cada coleta, porque escreve em outro repositório (alchemia-science).
+#   - A camada de curadoria/newsletter com LLM: as Tarefas Agendadas do Claude que a rodavam foram
+#     desabilitadas em 2026-09-08, e os bots (Axel, Baker) saíram da empresa em 2026-09-28. O Radar
+#     segue determinístico; "JEV" e a camada estocástica com Claude virão depois, por spec própria.
 #
 # Sem LLM em nenhum passo -- mesma garantia determinística que a spec deste setor exige para
 # coleta. Custo: minutos de GitHub Actions (repositório privado), não crédito de IA.
@@ -16,14 +19,15 @@ name: Coleta Alchemia News
 on:
   schedule:
     # 06:40 / 12:40 / 18:40 America/Sao_Paulo (Brazil/East, UTC-3) == 09:40 / 15:40 / 21:40 UTC.
-    # Mesmos três horários da Tarefa Agendada local "Alchemia News - Coleta".
+    # Mesmos três horários da Tarefa Agendada local "Alchemia News - Coleta" (nome real no Windows;
+    # desabilitada desde 2026-09-07, e o .cmd que ela chamava saiu com alchemia-bots em 2026-09-28).
     - cron: "40 9 * * *"
     - cron: "40 15 * * *"
     - cron: "40 21 * * *"
   workflow_dispatch: {} # permite disparo manual pela aba Actions, para testar
 
 concurrency:
-  group: alchemia-news-coleta
+  group: alchemia-radar-coleta
   cancel-in-progress: false
 
 permissions:

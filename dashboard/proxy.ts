@@ -45,7 +45,7 @@ export function proxy(request: NextRequest) {
     headers: {
       // Valor de header HTTP precisa ser ByteString (Latin1) -- nunca use travessao/emoji/acento
       // fora do ASCII aqui (achado real: travessao (U+2014) quebrava com 500, nao 401).
-      'WWW-Authenticate': 'Basic realm="Alchemia News - acesso da diretoria"',
+      'WWW-Authenticate': 'Basic realm="Alchemia Radar - acesso da diretoria"',
     },
   });
 }

@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Identidade visual Alchemia -- extraída de alchemia-growth/branding/logos/ e da
+        // Identidade visual Alchemia -- extraída de alchemia-branding/branding/logos/ e da
         // convenção já validada em .claude/skills/realtime-dashboard/SKILL.md.
         navy: {
           950: '#060c1e',

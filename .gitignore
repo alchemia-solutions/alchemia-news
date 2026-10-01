@@ -2,27 +2,38 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
-pipeline/.venv/
+# Sem barra final de proposito (2026-09-22): estes caminhos sao JUNCOES do Windows para fora do
+# Drive, e o git do WSL as ve como symlink — 'x/' so casa com pasta e deixava o symlink entrar no indice.
+pipeline/.venv
+.venv
 *.egg-info/
 
 # Node / Next.js
-node_modules/
-dashboard/.next/
+node_modules
+dashboard/.next
+.next
 dashboard/out/
 dashboard/.turbo/
 npm-debug.log*
 
+# Saida de build (2026-09-30, regra 7 da rodada docs-vivos)
+dist/
+build/
+
 # Logs e execução (dado real de output, não fonte -- ver AGENTS.md deste setor)
 pipeline/logs/*.log
 logs/*.log
+*.log
 
 # Editor/OS
 .DS_Store
 Thumbs.db
 
-# Env reais (só .example é versionado)
+# Env reais: só os exemplos são versionados (dashboard/.env.local.example é fonte)
 .env
-.env.local
+.env.*
+!.env.example
+!.env*.example
 dashboard/.env.local
 
 # Snapshot de deploy gerado por scripts/copy-pipeline-data.js (prebuild) -- nunca fonte de
@@ -32,3 +43,18 @@ dashboard/.pipeline-data/
 # Google Drive (a pasta da empresa e sincronizada) — nunca versionar
 desktop.ini
 **/desktop.ini
+
+# Areas de verificacao descartaveis e credencial de MCP (2026-09-30)
+verif-*/
+mcp-token*
+
+# Bancos locais e artefatos pesados: nunca no git (AGENTS.md de alchemia-ai, invariante 3)
+*.sqlite
+*.sqlite-*
+*.db
+*.pglite/
+pglite/
+*.dump
+*.parquet
+*.tar.zst
+*.bundle

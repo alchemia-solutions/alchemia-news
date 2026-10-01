@@ -5,7 +5,7 @@ import Sidebar from '@/components/Sidebar';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Alchemia News — Inteligência de CADD & AI Drug Discovery',
+  title: 'Alchemia Radar — Inteligência de CADD & AI Drug Discovery',
   description:
     'Painel de inteligência da Alchemia Solutions: notícias, artigos e movimentos de empresas no nicho de Computer-Aided Drug Design e AI Drug Discovery, atualizado 3x ao dia.',
 };

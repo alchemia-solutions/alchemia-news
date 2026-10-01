@@ -29,6 +29,8 @@ const STATUS_COLOR: Record<OpportunityStatus, string> = {
   rejeitado: 'text-status-risk border-status-risk/30 bg-status-risk/10',
 };
 
+// A chave mantém `alchemia-news:` de propósito (2026-09-28): é identificador gravado no navegador
+// de quem já usou o painel, não nome de produto. Trocá-la apagaria o status salvo, em silêncio.
 function storageKey(slug: string): string {
   return `alchemia-news:opportunity-status:${slug}`;
 }

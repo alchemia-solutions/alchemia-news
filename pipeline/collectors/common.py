@@ -1,4 +1,4 @@
-"""Utilidades compartilhadas do pipeline Alchemia News.
+"""Utilidades compartilhadas do pipeline Alchemia Radar.
 
 Sem dependência de banco de dados: armazenamento é arquivo JSON versionável (mesmo princípio já
 usado em outros setores da Alchemia -- "dado grande fora do controle de versão, referenciado por
@@ -62,7 +62,7 @@ def sanitize_local_path(text: str) -> str:
     """
     if not text:
         return text
-    return text.replace(str(REPO_ROOT), "<alchemia-news>")
+    return text.replace(str(REPO_ROOT), "<alchemia-radar>")
 
 
 class ColetaParcial(RuntimeError):

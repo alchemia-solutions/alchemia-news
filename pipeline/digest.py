@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Digest determinístico do Alchemia News — a saída que o cron do Hermes entrega no Discord.
+"""Digest determinístico do Alchemia Radar — a saída que o cron do Hermes entrega no Discord.
 
 Roda o pipeline de coleta e imprime um resumo COMPACTO do que é novo. Nunca despeja a base
 inteira (1.700+ notícias): o Discord recebe contagem por coletor e os títulos/links dos itens
@@ -7,7 +7,7 @@ novos mais relevantes, sempre com a fonte e o termo que trouxe cada item.
 
 Contrato com o cron do Hermes (`--no-agent --script`):
   - stdout É a mensagem entregue, verbatim. Sem LLM envolvido — custo zero de token, e nenhuma
-    chance de fabricar relevância (a spec de alchemia-news proíbe LLM na coleta).
+    chance de fabricar relevância (a spec de alchemia-radar proíbe LLM na coleta).
   - **stdout vazio = tick silencioso.** Se nada novo entrou, o Discord não recebe nada. É o
     padrão watchdog documentado pelo Hermes, e evita três mensagens diárias dizendo "nada mudou".
   - Saída em erro (exceção/exit != 0) vira alerta de erro do cron.
@@ -83,7 +83,7 @@ def _fmt(items: list[dict], limit: int) -> list[str]:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Digest compacto do Alchemia News")
+    ap = argparse.ArgumentParser(description="Digest compacto do Alchemia Radar")
     ap.add_argument("--no-collect", action="store_true", help="Não roda a coleta, só resume o estado atual")
     ap.add_argument("--top", type=int, default=5, help="Destaques por seção (default 5)")
     ap.add_argument("--biorxiv-days", type=int, default=None, help="Repassado ao run_all para backfill")
@@ -101,7 +101,7 @@ def main() -> int:
         if proc.returncode != 0:
             # Falha real precisa virar alerta de erro do cron, não silêncio.
             sys.stderr.write(proc.stderr[-2000:] or "run_all falhou sem stderr\n")
-            print(f"⚠️ **Alchemia News — falha na coleta** (exit {proc.returncode}). Ver logs do pipeline.")
+            print(f"⚠️ **Alchemia Radar — falha na coleta** (exit {proc.returncode}). Ver logs do pipeline.")
             return 1
 
     after = _snapshot()
@@ -114,7 +114,7 @@ def main() -> int:
     if total_new <= 0:
         return 0
 
-    parts: list[str] = ["📡 **Alchemia News** — coleta automática"]
+    parts: list[str] = ["📡 **Alchemia Radar** — coleta automática"]
 
     dur = meta.get("duration_seconds")
     cols = meta.get("collectors") or {}
@@ -144,7 +144,7 @@ def main() -> int:
             parts.append(f"\n{label} ({len(fresh)} novos)")
             parts.extend(block)
             if extra > 0:
-                parts.append(f"  _…mais {extra}. Dashboard: `npm run dev` em alchemia-news/dashboard_")
+                parts.append(f"  _…mais {extra}. Dashboard: `npm run dev` em alchemia-ai/softwares/internos/alchemia-radar/dashboard_")
 
     out = "\n".join(parts)
     if len(out) > MAX_CHARS:

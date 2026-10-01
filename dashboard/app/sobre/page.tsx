@@ -8,13 +8,13 @@ export default async function SobrePage() {
 
   return (
     <div>
-      <PageHeader title="Sobre este painel" description="Como o Alchemia News funciona, de onde vêm os dados, e o que ele deliberadamente não cobre ainda." />
+      <PageHeader title="Sobre este painel" description="Como o Alchemia Radar funciona, de onde vêm os dados, e o que ele deliberadamente não cobre ainda." />
 
       <div className="space-y-6">
         <section className="alchemia-card p-5">
           <h2 className="mb-2 font-mono text-[13px] uppercase tracking-wide text-cyan-accent">O que é</h2>
           <p className="text-[14px] leading-relaxed text-slate-300">
-            O Alchemia News nasceu como o radar de nicho do setor que o mantém e, a partir da Fase 2
+            O Alchemia Radar nasceu como o radar de nicho do setor que o mantém e, a partir da Fase 2
             (2026-08-19), passou a ser uma ferramenta de uso da <strong className="text-slate-100">empresa
             inteira</strong> — reúne notícias e artigos científicos sobre Computer-Aided Drug Design
             (CADD), AI Drug Discovery e engenharia de proteínas/anticorpos/vacinas; canais de editais

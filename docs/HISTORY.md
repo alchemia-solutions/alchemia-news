@@ -1631,3 +1631,224 @@ preprints a cada 8 h. Baixar para 2 manteria 6× de redundância e cortaria um t
 **decisão de cobertura, não de correção**. Fica como item aberto no `risk-log` 45.
 
 `pipeline/data/` não foi escrito (é do bot, por decisão de escritor único de 2026-09-07).
+
+
+---
+
+## Addendum — 2026-09-22: o Alchemia System passa a ler o pipeline — e a regra só-escuro vale para o dashboard
+
+`/science` do `alchemia-ai/alchemia-system` lê `pipeline/data/{news,articles,companies_activity,meta}.json`
+(só leitura). Mudar esse formato quebra o sistema: é contrato entre setores. O pipeline não grava o
+coletor dentro de cada item; o filtro por coletor do sistema **infere** pelo formato do item.
+**Regra nova do fundador (2026-09-21): só tema escuro em toda UI** — o `dashboard/` usa a
+identidade navy antiga e precisa ser migrado para o design system vigente (addendum 2026-09-22 da
+skill `brand-system`). Spec: `alchemia-ai/alchemia-system/docs/specs/2026-09-21-alchemia-system-fundacao.md`.
+
+---
+
+## Addendum — 2026-09-28: `alchemia-news` vira Alchemia Radar — back-end do Alchemia System, sem Vercel, sem bots, determinístico
+
+**Decisão do fundador (2026-09-28), literal:** *"o alchemia-news agora vai ser o radar alchemia e vai
+funcionar como o back-end para a visualização no front-end do alchemia-system, não vamos ter mais
+deploy na vercel para o alchemia-news, somente o alchemia radar que agora vai ser toda a parte de
+web-scrapping e o pipeline automatizado, depois vamos implementar o JEV e a parte estocástica com
+Claude mas agora vai continuar sendo determinístico por enquanto"*. Spec aprovada (Portão marcado
+pelo fundador, *"Aprovado, execute"*): `alchemia-ai/ai-engineering/docs/specs/2026-09-28-nova-arvore-da-empresa.md`.
+"JEV" fica literal: não está definido em nenhum documento da empresa.
+
+**No disco.** O fundador moveu a pasta de `alchemia-ai/alchemia-news/` para
+`alchemia-ai/softwares/internos/alchemia-radar/`; o ponteiro `.git` foi reescrito na F0 da spec para
+`../../../../../../alchemia-gitstore/alchemia-news.git`. O nó passou de `alchemia-news` a
+`alchemia-radar` (Kepler). O repositório no gitstore e o remoto `alchemia-solutions/alchemia-news`
+mantêm o nome antigo até o fundador renomeá-los. `alchemia-ai/alchemia-bots/` foi para a Lixeira: os
+bots (Axel, Baker) e o Discord saíram da empresa.
+
+### 1. `research_export.py` achava a empresa por profundidade, e a profundidade mudou
+
+`COMPANY_ROOT = NEWS_ROOT.parent.parent` subia dois níveis a partir do repositório. Na árvore nova
+isso cai em `alchemia-ai/softwares/`, e o script sai com código 1 (`alchemia-science nao encontrado
+em <...>/alchemia-ai/softwares/alchemia-science`). No CI o risco era maior: o aplicador do mapa de
+caminhos (F1 da spec, `alchemia-ai/ai-engineering/harness/migracoes/aplicar_mapa.py`) já tinha
+trocado o `path:` do checkout em `research-export.yml` para `alchemia-ai/softwares/internos/alchemia-radar`
+sem mexer no script. O primeiro `push` quebraria a Etapa 1b assim que o segredo
+`ALCHEMIA_SCIENCE_TOKEN` existisse.
+
+**Correção.** `achar_raiz_da_empresa(radar_root)` sobe a partir do PAI do repositório até a primeira
+pasta que tem `alchemia-science/` dentro. Se não acha, devolve None e `main()` sai 1 dizendo de onde
+procurou. Começar no pai impede que um `alchemia-science/` criado por engano dentro do Radar vire
+destino. `NEWS_ROOT` virou `RADAR_ROOT`, porque nenhum outro arquivo o importava. O `research-export.yml`
+ganhou o cabeçalho que explica a busca, o nome novo do passo de checkout e a mensagem de erro
+corrigida (ela prometia uma escrita "em silêncio" que não acontece mais). O `path:` novo ficou: com a
+busca por marcador, a árvore antiga e a nova resolvem para o mesmo workspace.
+
+**Testado nos dois sentidos**, sem escrever em `pipeline/data/` nem no `alchemia-science` real:
+
+- `pipeline/tests/test_raiz_da_empresa.py` (novo; `unittest` da biblioteca padrão, porque o venv não
+  tem `pytest`): 8 testes. Cobrem a árvore nova, a antiga, a contraprova da aritmética, a falta do
+  marcador, o marcador dentro do repositório, o arquivo com o nome do marcador, o ancestral mais
+  próximo e a árvore real da estação.
+- Mutantes por monkeypatch, num script fora do repositório: a aritmética antiga reprova 3 testes, e a
+  busca que começa dentro do repositório reprova 1.
+- Réplica da árvore do runner (checkout duplo) num diretório temporário: a árvore nova e a antiga
+  resolvem para o workspace; sem `alchemia-science`, sai 1; o código do `HEAD` na árvore nova sai 1,
+  e essa é a contraprova do defeito.
+- Na estação, `--no-pdf --dry-run --date 2026-09-21` resolve para
+  `<raiz>/alchemia-science/research/2026-09-21-alchemia-news-radar.md`, sem escrever.
+
+Saída. As linhas do `unittest` e dos mutantes são literais; as da réplica estão condensadas em
+rótulo, código de saída e a linha que importa.
+
+```
+Ran 8 tests in 0.047s
+OK
+original                         rodados=7 reprovados=0 []
+mutante_aritmetica_antiga        rodados=7 reprovados=3 ['test_arvore_nova', 'test_contraprova_da_aritmetica_antiga', 'test_para_no_ancestral_mais_proximo']
+mutante_comeca_no_repositorio    rodados=7 reprovados=1 ['test_marcador_dentro_do_repositorio_nao_conta']
+arvore nova do runner, --dry-run ........ exit 0  escreveria <sim>\ws-novo\alchemia-science\research\2026-09-21-alchemia-news-radar.md
+arvore nova do runner, escrita real ..... exit 0  escrito: <sim>\ws-novo\alchemia-science\research\2026-09-21-alchemia-news-radar.md
+arvore antiga do runner, --dry-run ...... exit 0  escreveria <sim>\ws-antigo\alchemia-science\research\2026-09-21-alchemia-news-radar.md
+arvore nova sem alchemia-science ........ exit 1  alchemia-science nao encontrado: nenhuma pasta acima de <sim>\ws-sem-science\alchemia-ai\softwares\internos\alchemia-radar contem 'alchemia-science/'
+CONTRAPROVA, codigo do HEAD ............. exit 1  alchemia-science nao encontrado em <sim>\ws-contraprova\alchemia-ai\softwares\alchemia-science
+```
+
+**O CI só muda quando o fundador der `push`.** Até lá o remoto roda o par antigo, que é coerente
+(`path: alchemia-ai/alchemia-news` com `parent.parent`). Os dois arquivos precisam subir juntos: o
+`path:` novo sem o script novo quebra. O mesmo vale para o par de nomes
+`Coleta Alchemia Radar`: o `name:` do `coleta.yml` e o `workflow_run` do `research-export.yml` foram
+renomeados juntos pelo mapa, e um sem o outro desliga a Etapa 1b sem erro.
+
+### 2. O que o mapa de caminhos achatou, e foi devolvido
+
+O aplicador trocou `alchemia-news` por `alchemia-radar` também onde a string não é caminho. Foi
+devolvido, dentro deste repositório:
+
+- `dashboard/components/DocumentChecklist.tsx` e `StatusTracker.tsx`: as chaves de `localStorage`
+  voltaram a `alchemia-news:`. Renomeá-las apagaria em silêncio o checklist e o status salvos no
+  navegador de quem usa o painel.
+- `dashboard/package.json`: o `name` voltou a `alchemia-news-dashboard`, o mesmo do
+  `package-lock.json` (o install da Vercel é `npm ci`). O arquivo voltou a ser igual ao `HEAD`.
+- `supabase/migrations/20260820145152_expand_remaining_tables.sql`: o comentário voltou a citar a
+  tarefa real, `alchemia-news-anuncio-discord`. Migração aplicada é registro, e o arquivo voltou a ser
+  igual ao `HEAD`.
+- `.github/workflows/coleta.yml`: o comentário citava a Tarefa Agendada "Alchemia Radar - Coleta", que
+  não existe. A real é "Alchemia News - Coleta", conferida com `schtasks` e desabilitada. O cabeçalho
+  "fora de escopo", parado antes de 2026-09-09, passou a dizer onde a Etapa 1b roda e que a camada de
+  LLM e os bots acabaram.
+- `pipeline/research_export.py`: a citação literal do fundador (2026-08-18) tinha virado
+  "alchemia-radar" e voltou a "alchemia-news". O título do radar gerado tinha virado "Radar Alchemia
+  Radar" e agora é "Alchemia Radar — <dia>".
+
+**Mantidos de propósito, e agora anotados no código:** o nome do arquivo do radar
+(`AAAA-MM-DD-alchemia-news-radar.md`) e a tag `fonte/alchemia-news`, que são contrato com Science, e
+o `User-Agent` `AlchemiaNewsBot/1.0`. **Ficou como o mapa deixou, por ser inofensivo:** o `realm` do
+Basic Auth em `dashboard/proxy.ts` (o navegador pede a senha de novo uma vez), textos do dashboard e
+docstrings. O comentário de `dashboard/tailwind.config.js` aponta para `alchemia-branding/branding/logos/`,
+que não existe; foi reescrito na reorganização de 2026-09-27, e a origem era `alchemia-growth/branding/logos/`.
+
+### 3. Correção: qual spec está com o Portão aberto
+
+O `AGENTS.md` dizia que a spec de editais de fomento e programas corporativos estava com o Portão não
+marcado. Ela está aprovada (`[x]` em 2026-08-19), e a frase "Fase 1 (esta spec, Portão de Revisão
+pendente)" dentro dela é anterior à aprovação. A spec com o Portão aberto é
+`2026-08-18-research-library-integration.md` (`[ ]`, implementada). A definição do nó repetia o erro.
+
+### 4. Restos dos bots no repositório: listados, nada apagado
+
+Nos workflows não há nenhum. No resto:
+
+| Onde | O que é |
+|---|---|
+| `pipeline/digest.py` | o arquivo inteiro: o digest que o cron do Hermes entregava no Discord; sem chamador |
+| `pipeline/research_export.py` | `DISCORD_DIR` e a seção "Publicado no Discord" do radar (só aparece com arquivo do dia; o último é de 2026-09-04); comentários sobre Axel e Baker |
+| `dashboard/app/newsletter/page.tsx`, `dashboard/app/newsletter/[date]/page.tsx` | a rota `/newsletter`, "publicada pela rotina do Axel" |
+| `dashboard/lib/supabase.ts` (203-204), `dashboard/lib/data.ts` (109, 241) | a tabela `newsletters`, escrita por `alchemia-bots/scripts/sync_newsletter.py`, que foi para a Lixeira |
+| `dashboard/app/sobre/page.tsx` (24, 92) | o "sobre" cita a rotina do Axel e o setor `alchemia-bots` |
+| `dashboard/components/PipelineHealthBanner.tsx` (7-24), `AutoRefresh.tsx` (22) | comentários: a metade "evento" do alarme era a mensagem do Axel no Discord |
+| `pipeline/sync_supabase.py` (20-33), `pipeline/collectors/common.py` (79) | docstrings citam `sync_newsletter.py`, `run_alchemia_news.cmd` e `alert_pipeline_failure.py` |
+| `.claude/settings.local.json` | habilita o MCP `hermes` |
+| `supabase/migrations/20260820145152_expand_remaining_tables.sql` | a tabela `newsletters`; registro aplicado, fica |
+| `pipeline/config/{keywords,companies,sources}.yaml`, `feed_collector.py` (97), `run_all.py` (24) | comentários de proveniência ("rotina do Baker"); ficam |
+| `pipeline/data/.axel_seen.json`, `.alert_state.json`, `discord/`, `newsletter/` | dado do Actions, não mexido; `discord/` e `newsletter/` param em 2026-09-04, e o System lê `newsletter/` como arquivo |
+| `pipeline/logs/cron-*.log` | logs locais, fora do git, das tarefas desligadas (os últimos são de 2026-09-07) |
+
+Fora do repositório, sem tocar em nada: as Tarefas Agendadas `\Alchemia News - Coleta` e
+`\Alchemia News - Pos-Coleta` estão desabilitadas e apontam para `.cmd` de `alchemia-bots`, na Lixeira.
+A tarefa `\Hermes_Gateway` segue **habilitada**, apontando para
+`%LOCALAPPDATA%\hermes\gateway-service\Hermes_Gateway.vbs`; o diretório `hermes` não existe e nenhum
+`wscript` estava rodando. Remover ou desabilitar é decisão do fundador.
+
+### 5. Medido nesta data, para a próxima sessão não refazer
+
+- **O System mostra dado atrasado.** Ele lê o checkout local, que estava 16 commits atrás do remoto: o
+  `meta.json` local terminou em 2026-09-22T14:15Z; o do remoto, no último fetch (2026-09-28, 12:11
+  local), em 2026-09-27T23:57Z. Com o painel da Vercel lendo o Supabase, isso não acontecia. Agora o
+  dado do `/science/radar` só é tão novo quanto o último `git pull` deste checkout.
+- **arXiv:** 0 itens em 14 execuções seguidas, de 2026-09-23T19:22Z a 2026-09-27T23:57Z, sem erro. Em
+  2026-09-22 foram 2 por execução em três execuções; em 2026-09-21, 0 nas duas. Rodado isolado hoje: 3
+  de 3 feeds responderam, 11 preprints anunciados (5 + 4 + 2), 0 relevantes. É zero legítimo pela
+  regra de 2026-09-18, mas a cobertura caiu: o lote diário de três categorias pequenas substituiu a
+  busca por janela. Ampliar é decisão de cobertura do fundador.
+- **Newsletter e Discord:** a última edição em `pipeline/data/newsletter/` é de 2026-09-04, e a última
+  mensagem em `pipeline/data/discord/` também. Pararam antes da saída dos bots.
+- **`alchemia-science` local:** um único commit (2026-09-09) e nenhum remoto configurado; o `research/`
+  local tem 16 radares, o último de 2026-09-07. Se o segredo `ALCHEMIA_SCIENCE_TOKEN` existe, não foi
+  medido.
+- **Vercel:** o último registro é o addendum de 2026-08-26 (produção congelada numa versão anterior,
+  lendo o Supabase ao vivo, e build novo recusado no plano Hobby). O estado de hoje não foi medido.
+
+### 6. Arquivos
+
+Alterados neste repositório: `AGENTS.md` (índice do Radar), `README.md` (estado vivo; o texto
+anterior só diferia do `HEAD` pelo título, então segue em `git show HEAD:README.md`), `CLAUDE.md`
+(texto anterior verbatim abaixo), `docs/HISTORY.md` (este addendum), `pipeline/research_export.py`,
+`.github/workflows/research-export.yml`, `.github/workflows/coleta.yml`,
+`dashboard/components/DocumentChecklist.tsx`, `dashboard/components/StatusTracker.tsx`,
+`dashboard/package.json` e `supabase/migrations/20260820145152_expand_remaining_tables.sql` (os dois
+de volta ao `HEAD`). Criados: `pipeline/tests/test_raiz_da_empresa.py` e `dashboard/README.md`. Fora
+daqui: a skill canônica `alchemia-ai/ai-engineering/.claude/skills/news-intelligence-pipeline/`
+(`SKILL.md`, e o texto anterior verbatim em `references/historico.md`).
+
+Nenhum comando git de escrita foi executado. `pipeline/data/` não foi escrito, porque é do bot desde
+a decisão de escritor único de 2026-09-07. Nenhuma credencial foi lida.
+
+### Texto anterior do `CLAUDE.md`, verbatim
+
+Os caminhos e o nome do nó já tinham sido reescritos pelo mapa da mesma data; o texto de antes do
+mapa está em `git show HEAD:CLAUDE.md`.
+
+````markdown
+@AGENTS.md
+
+## Nota Claude-específica
+
+O import acima carrega `AGENTS.md` deste diretório — documento canônico e completo do setor
+`alchemia-radar`, lido por qualquer ferramenta que suporte o padrão aberto AGENTS.md (Claude Code,
+Codex, Cursor, Cowork e 20+ outras). Este arquivo existe só para o que for genuinamente
+Claude-específico.
+
+**Sub-agente e skill deste setor (criados em 2026-08-17):**
+
+- `.claude/agents/alchemia-radar/alchemia-radar.md` — sub-agente dono do setor. Desde 2026-08-20
+  cada nó é uma **pasta** (`<nome>.md` + `SOUL.md` + `NODE.md`), não um `.md` plano — o caminho
+  antigo `.claude/agents/alchemia-news.md` não existe mais.
+- `.claude/skills/news-intelligence-pipeline/SKILL.md` — como rodar, depurar e estender o
+  pipeline: disparar coleta, investigar coletor com 0 itens ou erro, adicionar empresa/termo/fonte
+  nova, e reconciliar o dashboard com o cron 3x/dia.
+
+Ambos vivem no harness canônico `alchemia-ai/ai-engineering/.claude/`, com espelho byte-idêntico
+em `.claude/` na raiz da empresa — **nunca neste diretório**. Em 2026-08-17, quando este parágrafo
+foi escrito, as contagens do harness eram 13 sub-agentes / 20 skills.
+
+**Nota histórica:** até a manhã de 2026-08-17 este arquivo registrava que o setor **não tinha**
+sub-agente nem skill, apesar de a spec exigir os dois como Critério de Sucesso — as contagens reais
+eram 12/19. Isso foi corrigido no mesmo dia.
+
+**Cuidado com contagem — o próprio "13/20" acima já ficou velho.** Verificado ao vivo em
+2026-08-31 (auditoria deste setor): o harness real é **15 sub-agentes / 24 skills** hoje (cresceu
+com `alchemia-bots` em 2026-08-19, a reestruturação em pastas de 2026-08-20, `alchemia-frontend-gate`
+em 2026-08-21 e `brand-system` em 2026-08-22/31). Não cite nenhum desses números de memória em
+outro documento, nem o novo — os números do harness mudam quando um setor novo aparece. Confira
+sempre com `ls .claude/agents/` ou rode `harness/check_runtime_integrity.py`.
+
+**Correção/adição futura (regra alterada em 2026-09-18):** `AGENTS.md` passou a ser um **índice** com teto de 150 linhas / 12 KB — fato novo **não** entra nele. Registro datado vai para `docs/HISTORY.md` (append-only); estado vivo, para o `README.md` deste diretório e para o hub no `alchemia-brain`. O índice só muda quando um **ponteiro** muda. Nunca neste `CLAUDE.md`. Contrato: `alchemia-ai/ai-engineering/docs/specs/2026-09-18-agents-md-index-contract.md`.
+````

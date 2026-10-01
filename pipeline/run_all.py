@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Orquestrador do pipeline Alchemia News. Roda todos os coletores, funde com o estado
+"""Orquestrador do pipeline Alchemia Radar. Roda todos os coletores, funde com o estado
 persistido (dedupe por DOI/URL), grava os JSONs consumidos pelo dashboard, e produz um snapshot
 de execução para auditoria (o que rodou, quanto tempo levou, quantos itens novos).
 
@@ -66,7 +66,7 @@ def _run_collector(name: str, fn, *args, **kwargs) -> tuple[list[dict], float, s
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Pipeline de coleta Alchemia News")
+    parser = argparse.ArgumentParser(description="Pipeline de coleta Alchemia Radar")
     parser.add_argument("--biorxiv-days", type=int, default=None, help="Backfill bioRxiv em dias (default: incremental_days do sources.yaml)")
     parser.add_argument(
         "--skip",
@@ -78,7 +78,7 @@ def main() -> int:
     skip = {s.strip() for s in args.skip.split(",") if s.strip()}
 
     run_started = datetime.now(timezone.utc)
-    common.log(f"===== Alchemia News pipeline: iniciando execução ({run_started.isoformat()}) =====")
+    common.log(f"===== Alchemia Radar pipeline: iniciando execução ({run_started.isoformat()}) =====")
 
     collector_results: dict[str, dict] = {}
     article_items: list[dict] = []
