@@ -352,6 +352,61 @@
   },
   {
     "kind": "article",
+    "title": "Towards Generalizable Protein-ligand Co-folding with ACER",
+    "url": "https://doi.org/10.64898/2026.06.02.728568",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-01",
+    "collected_at": "2026-10-02T01:07:09.365599+00:00",
+    "authors": [
+      "Vithayapalert, N.",
+      "Grisoni, F."
+    ],
+    "summary": "Predicting protein-ligand complex structures is a central challenge in drug discovery. While recent co-folding models such as AlphaFold-3 achieve accurate structure prediction, they fail to generalize to underexplored binding interfaces - systematically misplacing ligands, particularly for allosteric or structurally novel targets. To address this gap, we present ACER (A daptive Co-folding via pocket E xploration and pose R anking), a training-free framework that (a) enables co-folding models to systematically explore alternative binding pockets, and (b) leverages the discovered pockets to increase pose accuracy. Our method enables the efficient discovery of non-prevalent pockets without prior expert knowledge. ACER improves pocket discovery and pose accuracy on allosteric targets and structurally novel complexes, successfully modeling binding interfaces that are under-represented or absent from the training set. Our results demonstrate how improved sampling dynamics enhance the generalisability of co-folding models without retraining.",
+    "doi": "10.64898/2026.06.02.728568",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.06.02.728568"
+  },
+  {
+    "kind": "article",
+    "title": "A Dynamics-Informed Machine Learning Framework for Inhibitor Optimization Against Quickly Evolving Targets to Avoid Resistance",
+    "url": "https://doi.org/10.64898/2026.09.25.754496",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-01",
+    "collected_at": "2026-10-02T01:07:32.004290+00:00",
+    "authors": [
+      "Intravaia, L. E.",
+      "Kaur, J.",
+      "Shaqra, A. M.",
+      "Henes, M.",
+      "Kosovrasti, K.",
+      "Schroeder, V.",
+      "Nalivaika, E. A.",
+      "Ali, A.",
+      "Kurt Yilmaz, N.",
+      "Schiffer, C. A."
+    ],
+    "summary": "Drug resistance often emerges through mutations that reshape protein conformational ensembles, allowing inhibitor potency to be altered without directly disrupting protein-ligand contacts. Consequently, the molecular mechanisms underlying these effects remain difficult to identify, hindering the design of inhibitors with durable potency against rapidly evolving drug targets. To address this challenge, we developed ROBUST, a physics-informed machine learning framework that integrates experimental measurements, molecular dynamics simulations, and interpretable statistical modeling to identify energetic determinants of inhibitor potency. Using HIV-1 protease as a stringent model system for drug resistance, we determined 157 new inhibition constants and integrated them with prior measurements to establish a comprehensive experimental dataset of 364 protease-inhibitor pairs. Analysis of the corresponding molecular dynamics simulations revealed a compact network of energetic interactions that quantitatively explains how resistance mutations and inhibitor modifications jointly reshape molecular recognition and inhibitor potency across the multidimensional resistance landscape. Models cons",
+    "doi": "10.64898/2026.09.25.754496",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.25.754496"
+  },
+  {
+    "kind": "article",
     "title": "Deep learning based design of buried hydrogen bond networks with HBDesigner",
     "url": "https://doi.org/10.64898/2026.06.08.730848",
     "source": "bioRxiv",
@@ -58443,5 +58498,303 @@
       "journal": "Chemistry & biodiversity"
     },
     "dedupe_key": "doi:10.1002/cbdv.71786"
+  },
+  {
+    "kind": "article",
+    "title": "Plant-Derived Polyphenol Salvianolic Acid B Attenuates Cardiomyocyte Pyroptosis by Modulating the MMP12-NLRP3 Signaling Axis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42819699/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.827748+00:00",
+    "authors": [
+      "Zilong Xie",
+      "Zhi-Kai Yang",
+      "Longhui Zheng",
+      "Pinghua Wu",
+      "Shengxian Chen",
+      "Xiaotong Ye",
+      "Yi Gao"
+    ],
+    "summary": "Plant-derived polyphenols are widely investigated as bioactive compounds with potential relevance to cardiometabolic health. Salvianolic acid B (Sal B), a major phenolic compound from Salvia miltiorrhiza, has been reported to exhibit antioxidant and anti-inflammatory activities; however, its role in cardiomyocyte pyroptosis remains uncertain. In this study, a high glucose (HG)-stimulated AC16 cardiomyocyte injury model was established to recapitulate the hyperglycemic injury phenotype observed in metabolic cardiomyopathy. Combined functional assays, bioinformatic mining, molecular docking, and matrix metalloproteinase 12 (MMP12) overexpression rescue experiments were performed to explore the protective effects and underlying molecular mechanisms of Sal B activity. The results revealed that Sal B mitigated HG-triggered oxidative stress and inflammatory response and repressed nucleotide-binding domain, leucine-rich-containing family, pyrin domain-containing-3 (NLRP3)-dependent cardiomyocyte pyroptosis. MMP12 was identified as a key molecular mediator associated with the protective effects of Sal B, and MMP12 overexpression abrogated the cytoprotective effects of Sal B. These findings provide mechanistic evidence that Sal B modulates MMP12-NLRP3-associated pyroptotic signaling in cardiomyocyte injury models, supporting further investigation of plant-derived polyphenols in cardiometabolic nutrition research.",
+    "doi": "10.1002/fsn3.72300",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42819699",
+      "journal": "Food science & nutrition"
+    },
+    "dedupe_key": "doi:10.1002/fsn3.72300"
+  },
+  {
+    "kind": "article",
+    "title": "MacroTox: A Macroscopic Graph Topology-Based Multimodal Learning Framework for Robust Molecular Toxicity Prediction.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42819392/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.828387+00:00",
+    "authors": [
+      "He Huang",
+      "Qinyi Wang",
+      "Manzhan Zhang",
+      "Pan Dou",
+      "Xiaobo Yang",
+      "Honglin Li",
+      "Shiliang Li"
+    ],
+    "summary": "Despite breakthroughs in predicting acute organ toxicities, advanced computational models continue to struggle with complex, insidious end points like drug-induced bone toxicity. A fundamental limitation of most supervised pipelines is their failure to explicitly model intermolecular similarities during task-specific training. Neglecting this macroscopic topology of the chemical space leads to fragmented latent representations, poor generalization, and high false negative rates. To address this, we propose MacroTox, a macroscopic topology-driven multimodal deep learning framework. Beyond intramolecular fusion, its core innovation is the dynamic construction of an intrabatch drug-drug similarity graph. Guided by a topology-aware synergistic optimization, this mechanism captures latent network correlations, maximizing the utilization of the chemical space to resolve representational fragmentation and enhance the predictive capacity under data scarcity. Evaluated on a rigorously curated bone toxicity data set, MacroTox achieved an area under the receiver operating characteristic curve of 0.93 and a Matthews correlation coefficient of 0.73. Crucially, it effectively balances the sensitivity-specificity trade-off (SEN: 0.88, SPE: 0.86), substantially mitigating the underreporting risks in bone toxicity screening. Notably, ablation studies confirm that these predictive enhancements stem from the synergistic effect of dynamic graph topology and edge loss regularization. Extensive benchmarking of MoleculeNet further confirms its robust transferability. Furthermore, via multilevel feature attribution, MacroTox elucidates chemically intuitive structure-activity relationships. By pinpointing specific toxicophores and resolving complex activity cliffs, the framework proves that it captures authentic toxicological mechanisms rather than memorizing superficial data set biases. Ultimately, MacroTox offers an reliable, generalizable, and interpretable virtual screening engine for early stage drug discovery.",
+    "doi": "10.1021/jacsau.6c01105",
+    "company_slug": null,
+    "keywords_matched": [
+      "drug discovery",
+      "virtual screening"
+    ],
+    "extra": {
+      "pmid": "42819392",
+      "journal": "JACS Au"
+    },
+    "dedupe_key": "doi:10.1021/jacsau.6c01105"
+  },
+  {
+    "kind": "article",
+    "title": "Integrative multi-omics analysis prioritizes ALDH2 as a candidate Puerarin-associated target linked to macrophage infiltration in lung adenocarcinoma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42819377/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.828999+00:00",
+    "authors": [
+      "Yufeng Chen",
+      "Zhujuan Zhong",
+      "Guoyuan Ju",
+      "Yuanyuan Cai",
+      "Lina Zhou",
+      "Qianyu Wang",
+      "Bo Yang"
+    ],
+    "summary": "Puerarin is a bioactive isoflavone with reported anti-tumor and immunomodulatory activities; however, its candidate molecular targets and associations with the immune microenvironment in lung adenocarcinoma(LUAD) remain incompletely defined. This study integrated computational analyses with a murine LUAD model to prioritize candidate puerarin-associated targets and evaluate their relationships with immune-cell changes. We first identified puerarin targets, non-small cell lung cancer (NSCLC)-associated genes, and differentially expressed genes (DEGs). An integrative strategy combining network pharmacology, multi-omics, and machine learning algorithms (Least Absolute Shrinkage and Selection Operator, Support Vector Machine-Recursive Feature Elimination, and Random Forest) was employed to screen feature genes. Feature genes were further evaluated by molecular docking, molecular dynamics simulations, Mendelian randomization(MR), cellular origins and immune infiltration analyses, and in vivo animal experiments using an orthotopic LUAD xenograft model. A comprehensive analysis identified 130 targets associated with puerarin, 10,871 genes related to NSCLC, and 4,690 DEGs, resulting in an intersection comprising 39 candidate genes. Five feature genes (ABCG2, ALDH2, MIF, PTGS1, and SELP) were retained by three machine-learning approaches and ABCG2, ALDH2, MIF, and SELP showed consistent diagnostic performance in the training and validation cohorts. Docking and molecular dynamics simulations predicted favorable and stable modeled interactions of puerarin with ABCG2 and ALDH2, but did not establish direct target engagement. MR using a LUAD outcome dataset suggested an inverse association between genetically predicted ALDH2 expression and LUAD risk. Single-cell analysis indicated relative enrichment of ALDH2 transcripts in macrophages. In vivo, puerarin reduced orthotopic tumor burden and was accompanied by increased total ALDH2 expression and higher proportions of F4/80+CD11b+ cells in peripheral blood and tumor tissue. Puerarin suppressed tumor growth in a murine LUAD model and was associated with ALDH2 upregulation and increased macrophage infiltration. Integrated analyses prioritize ALDH2 as a candidate molecule potentially linking puerarin treatment to changes in the tumor immune microenvironment. Direct puerarin-ALDH2 binding, macrophage-specific ALDH2 regulation, and the functional consequences for macrophage polarization require further experimental validation.",
+    "doi": "10.3389/fimmu.2026.1918481",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42819377",
+      "journal": "Frontiers in immunology"
+    },
+    "dedupe_key": "doi:10.3389/fimmu.2026.1918481"
+  },
+  {
+    "kind": "article",
+    "title": "Conformational Preference Classification of Integrin-Binding Ligands Using Free Energy Perturbation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42819374/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.829519+00:00",
+    "authors": [
+      "Martin Vögele",
+      "Rezvan Shahoei",
+      "Loukas Petridis",
+      "Jing Li",
+      "Fu-Yang Lin",
+      "Lingle Wang",
+      "Timothy A Springer",
+      "Jeremie Vendome"
+    ],
+    "summary": "Integrins are crucial cell adhesion receptors and attractive therapeutic targets, but developing safe small-molecule inhibitors has been challenging, at least in part due to inadvertent partial agonism caused by stabilization of the integrin's open, high-affinity state. To address this challenge, we present a computational approach using Absolute Binding Free Energy Perturbation (AB-FEP) calculations to predict whether a ligand will stabilize the open or closed integrin states, leveraging the difference between the ligand's binding free energy to the respective end states. Despite challenges posed by Ca and Mg ions, metal-coordinating residues in the binding pocket, and the subtlety of structural differences between states, AB-FEP achieved excellent classification performance on a set of known opening and closing ligands, significantly outperforming docking scores and MM-GBSA results. We also showed a good correlation between AB-FEP binding free energy differences and experimental values. Furthermore, AB-FEP provided insights into intermediate integrin states and analysis of simulation trajectories confirmed the formation of a water-mediated hydrogen bond network with an ion in the binding pocket to be characteristic for closing ligands. This work demonstrates AB-FEP as a robust method for classifying integrin ligands by the conformation they stabilize and for understanding their functional mechanisms, offering valuable guidance for designing safe and conformationally selective integrin therapeutics.",
+    "doi": "10.1021/jacsau.6c00653",
+    "company_slug": null,
+    "keywords_matched": [
+      "free energy perturbation"
+    ],
+    "extra": {
+      "pmid": "42819374",
+      "journal": "JACS Au"
+    },
+    "dedupe_key": "doi:10.1021/jacsau.6c00653"
+  },
+  {
+    "kind": "article",
+    "title": "Functional and Structural Characterization of the Erythrina fusca Seed Lectin EFusL: A GalNAc-Binding Lectin with Specificity for Tumor-Associated O‑Glycans.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42819266/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.830133+00:00",
+    "authors": [
+      "Messias V Oliveira",
+      "Francisco W V Martins",
+      "Clara Suarez",
+      "Valeria M S Ferreira",
+      "Vanir R Pinto-Junior",
+      "Vinicius J S Osterne",
+      "Luiz A G Souza",
+      "Els J M Van Damme",
+      "Rodrigo B Leal",
+      "Benildo S Cavada",
+      "Kyria S Nascimento"
+    ],
+    "summary": "Lectins from the genus Erythrina are predominantly galactoside-binding legume lectins with conserved structural features and established use as glycan-recognition tools. However, several species remain incompletely characterized, including the seed lectin from Erythrina fusca (EFusL). Here, EFusL was isolated by single-step lactose-agarose affinity chromatography and characterized by hemagglutination assays, carbohydrate inhibition, physicochemical stability tests, electrophoresis, mass spectrometry-based sequencing, structural modeling, molecular docking, and toxicity assays. EFusL migrated as a 29-31 kDa glycoprotein and contained approximately 4.3% neutral carbohydrates. Hemagglutination inhibition confirmed a galactoside-directed profile, with lactose, galactose, and N-acetyl-d-galactosamine among the effective inhibitors. EFusL showed maximal hemagglutinating activity at pH 8.0, retained activity up to 40 °C, and displayed reduced activity after EDTA treatment with partial recovery following Ca2+/Mn2+ supplementation. Sequence analysis identified a 249-residue mature lectin highly similar to Erythrina corallodendron and Erythrina cristagalli lectins, including conservation of residues associated with galactoside recognition. Structural modeling supported the canonical β-sandwich legume lectin fold, and docking analyses indicated that EFusL accommodates galactoside ligands through a conserved polar interaction network comparable to related Erythrina lectins and legume lectins in general. Under the tested conditions, EFusL did not induce lethality in Artemia salina and did not significantly affect NHDF viability, although moderate reductions in HeLa and HT-1080 viability were observed under selected concentration- and time-dependent conditions. Together, these results define EFusL as a structurally conserved, galactoside-binding Erythrina lectin with moderate physicochemical stability and limited cell-type-dependent effects in the evaluated models, supporting its classification within the canonical Erythrina lectin group with similar biotechnological potential.",
+    "doi": "10.1021/acsomega.6c05946",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42819266",
+      "journal": "ACS omega"
+    },
+    "dedupe_key": "doi:10.1021/acsomega.6c05946"
+  },
+  {
+    "kind": "article",
+    "title": "Enhanced Sampling of Protein Conformations in AlphaFold3 with Repulsive Bias in the Diffusion Generative Model.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42819252/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.830669+00:00",
+    "authors": [
+      "Jun Ohnuki",
+      "Kei-Ichi Okazaki"
+    ],
+    "summary": "Conformational changes in proteins are vital to their function yet remain challenging for state-of-the-art artificial intelligence, such as AlphaFold3 (AF3), to predict. It has been observed that AF3 sometimes fails to capture ligand-induced conformational changes, even though it explicitly includes ligand molecules that induce such changes. To address this challenge, we develop an enhanced sampling scheme that leverages the diffusion-based generative model used in AF3 to predict protein structures. Interpreting the diffusion generative model as a stochastic sampling process analogous to molecular dynamics (MD) simulations, we introduce here a repulsive biasing potential between predicted structures to explore wider conformational space. We demonstrate that the developed sampling scheme, AF3-ReD, successfully samples multiple conformational states in the AF3 distribution, including ligand-bound conformations of motor, kinase, and transporter proteins, which are rarely captured by the default AF3 settings. Consistency with experimentally determined structures not only at the global structural level but also in local ligand-binding poses confirms reliable conformational sampling with AF3-ReD. Notably, AF3-ReD succeeded in sampling conformational states of transporters that were unresolved at the AF3 training cutoff. Compared to another strategy based on multiple sequence alignment (MSA), AF3-ReD predicted intermediate conformations that are relatively closer to the stable states. Thus, AF3-ReD provides a promising approach to predicting dynamic conformational changes of proteins associated with ligand binding, which could be further extended to other diffusion-based generative models, such as those for protein design, potentially expanding their accessible design space.",
+    "doi": "10.1021/jacsau.6c00596",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein design",
+      "AlphaFold",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42819252",
+      "journal": "JACS Au"
+    },
+    "dedupe_key": "doi:10.1021/jacsau.6c00596"
+  },
+  {
+    "kind": "article",
+    "title": "Identification of natural TLR4 modulators through network pharmacology and molecular modeling in SARS-CoV-2 Acinetobacter baumannii co-infection.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42819232/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.831169+00:00",
+    "authors": [
+      "Mebarka Ouassaf",
+      "Shafi Ullah Khan",
+      "Kannan R R Rengasamy",
+      "Nada S Alhaggass",
+      "Bader Y Alhatlani"
+    ],
+    "summary": "Viral-bacterial co-infection with SARS-CoV-2 and Acinetobacter baumannii exacerbates hyperinflammation via Toll-like receptor 4 (TLR4)-mediated immune pathways. Using network pharmacology, an integrated protein-protein interaction network identified 30 key inter-species hubs comprising viral, bacterial, and human host proteins, with TLR4 achieving a high MCC score (722), highlighting its high topological centrality as a host immune target. Virtual screen of 2,820 natural compounds against the TLR4/MD-2 complex identified three top candidates, CID5898023, CID5403474, and CID74977829, with docking scores of -10.46, -10.02, and -9.58 kcal/mol, respectively, compared with -9.10 kcal/mol for the reference antagonist Eritoran. CID5898023 (curcumin-derived) exhibited a more favorable docking score and stable binding behavior during the molecular dynamics simulation compared with the reference antagonist Eritoran. CID74977829 (baicalin-derived) showed stable binding but lower intestinal absorption, while CID5403474 (chrysin-derived) lacked conformational stability despite favorable docking scores. These computational findings prioritize curcumin- and baicalin-derived scaffolds as potential TLR4/MD-2 modulators for further experimental investigation in the context of co-infection-associated inflammation.",
+    "doi": "10.3389/fchem.2026.1916568",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42819232",
+      "journal": "Frontiers in chemistry"
+    },
+    "dedupe_key": "doi:10.3389/fchem.2026.1916568"
+  },
+  {
+    "kind": "article",
+    "title": "Aildenafil citrate with superior PDE5 selectivity ameliorates cognitive and behavioral impairments in APP/PS1 Alzheimer's disease mice: a preclinical phenotypic study.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42818911/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.831767+00:00",
+    "authors": [
+      "Shaowei Han",
+      "Fang Liu",
+      "Dawei Wang",
+      "Gengshen Song"
+    ],
+    "summary": "Alzheimer's disease (AD) imposes a significant global healthcare burden, and current available pharmacotherapies provide limited therapeutic benefits. Disrupted phosphodiesterase 5 (PDE5) signaling has been implicated in the pathogenesis of AD and other neurodegenerative disorders, positioning PDE5 inhibitors (PDE5Is) as a promising therapeutic strategy for AD treatment. This study evaluated the preclinical therapeutic potential of aildenafil citrate (AC), a selective PDE5I approved in China for the treatment of erectile dysfunction (ED), in AD treatment. Molecular docking, molecular dynamics (MD) simulations, and MM-GBSA binding free energy calculations were integrated to explore the molecular mechanisms of aildenafil. The APP/PS1 transgenic mouse model of AD was employed to assess the in vivo efficacy of AC through behavioral, pathological, and oxidative assessments. In silico analyses indicated that aildenafil exhibited a higher predicted affinity through a strengthened electrostatic network anchored by key bidentate hydrogen bonds with Gln817 and enhanced π-π stacking interactions with Phe820. Behavioral assessments, including the Barnes maze and Open field tests, demonstrated that AC significantly ameliorates cognitive dysfunction and anxiety-like impairments. Pathological examinations revealed improved hippocampal morphology, upregulated neprilysin (NEP) expression, and reduced Aβ accumulation. The decreased malondialdehyde (MDA) levels further suggested a potential attenuation of systemic oxidative stress and provided preliminary support for further investigation into its effects on central redox status. These findings offer an initial phenotypic characterization of AC in an AD mouse model, underscoring the need for comprehensive mechanistic studies to fully evaluate its potential as a repurposed AD therapeutic candidate.",
+    "doi": "10.3389/fphar.2026.1933588",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42818911",
+      "journal": "Frontiers in pharmacology"
+    },
+    "dedupe_key": "doi:10.3389/fphar.2026.1933588"
+  },
+  {
+    "kind": "article",
+    "title": "HIST1H2BJ is associated with poor prognosis and an immune-altered tumor microenvironment in glioma.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42818904/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.832345+00:00",
+    "authors": [
+      "Lupeng Zhang",
+      "Yue Li",
+      "Chen Shi",
+      "Yong Zhang",
+      "Ruijuan Liu",
+      "Chiwen Qu",
+      "Sihua Peng",
+      "Xiaoning Peng"
+    ],
+    "summary": "Glioma, the most prevalent and aggressive primary malignant brain tumor, is associated with poor clinical outcomes. There is an urgent need for novel biomarkers to predict survival and therapeutic response, as existing markers offer limited prognostic utility. Single-cell RNA sequencing data from glioma patients were analyzed to identify CD8+ T cell-related genes. Four machine learning algorithms (XGBoost, Gradient Boosting Machine, LASSO, and Random Forest) were employed to screen genes associated with glioma prognosis. The expression of HIST1H2BJ was detected in clinical samples. Flow cytometry was performed to assess cell apoptosis, while Transwell assays were conducted to evaluate cell invasion and migration capabilities, respectively. A novel prognostic model, the Immune and Metabolic Prognostic Model of Glioma (IMPMG), was developed, and its accuracy was evaluated using receiver operating characteristic (ROC) curves and decision curve analysis (DCA). Additionally, potential small-molecule compounds were screened via molecular docking, and the binding stability was evaluated by molecular dynamics (MD) simulations. HIST1H2BJ was identified as a critical gene associated with glioma prognosis. Functional assays confirmed that HIST1H2BJ knockdown promoted cell apoptosis and inhibited cell invasion and migration. Glioma patients with high HIST1H2BJ expression were closely associated with an immunosuppressive tumor microenvironment, with significantly increased infiltration of M2 macrophages and regulatory T cells (Tregs), as well as upregulated immune checkpoint expression. The IMPMG model, integrating HIST1H2BJ, immune-metabolic genes, and clinical variables, demonstrated superior prognostic accuracy (AUC > 0.86) and clinical utility compared to existing models. Furthermore, molecular docking identified VX-680 and A.770041 as candidate compounds associated with HIST1H2BJ-high drug-sensitivity prediction; their direct binding to HIST1H2BJ was assessed only in silico by molecular docking and dynamics simulations and requires experimental validation. This study establishes HIST1H2BJ as an independent prognostic factor for glioma patient survival and a candidate prognostic biomarker whose therapeutic relevance requires further functional and preclinical investigation.",
+    "doi": "10.3389/fimmu.2026.1929885",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42818904",
+      "journal": "Frontiers in immunology"
+    },
+    "dedupe_key": "doi:10.3389/fimmu.2026.1929885"
+  },
+  {
+    "kind": "article",
+    "title": "Mechanistic 5'UTR Variant Scoring Expands Rare Variant Discovery in the UK Biobank.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42818875/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T01:03:40.832904+00:00",
+    "authors": [
+      "Matthieu Chaldebas",
+      "Khoren Ponsin",
+      "Haralambos A Mourelatos",
+      "Yoann Seeleuthner",
+      "Clément Conil",
+      "Jonathan Bohlen",
+      "Jean-Laurent Casanova",
+      "Peng Zhang",
+      "Aurélie Cobat"
+    ],
+    "summary": "The 5' untranslated region (5'UTR) regulates protein output through upstream open reading frames (uORFs) and Kozak context, yet most deleteriousness scores rely heavily on evolutionary conservation of its nucleotide positions. Using 5ULTRA, a machine-learning classifier trained on 5'UTR regulatory biology, we annotated rare and low-frequency 5'UTR variants in 408,423 UK Biobank participants. We tested gene-level associations for all 59 quantitative blood-count and serum biochemistry traits. We identified 58 genome-wide significant gene-phenotype associations and CADD 38, including 24 shared, 34 exclusive to 5ULTRA, and 14 to CADD. Removing 5ULTRA-annotated variants eliminated 15 of 38 CADD associations, indicating that a fraction of CADD's performance depends on uORF and Kozak architecture. The 18 associations absent from a published UK Biobank 5'UTR study included 11 that were exclusive to 5ULTRA. Among these, NELFCD , a subunit of the RNA polymerase II pausing complex with no established role in megakaryopoiesis, reached -log₁₀ P = 50 for platelet distribution width. Associations were most often driven by variants predicted to suppress translation (13 of 16 directionally resolved associations; P = 0.021). Gene-level effects of 5'UTR repressor variants correlated with those of coding protein-truncating variants (r = 0.68, P = 3.7 × 10⁻⁴), placing them on the same phenotypic scale. Associations tested in non-European participants showed 89% directional concordance (r = 0.84), supporting shared regulatory effects across ancestries. Mechanistic 5'UTR annotation therefore recovers a translational layer of phenotypic variation that generic deleteriousness scores based on evolutionary constraints miss.",
+    "doi": "10.64898/2026.09.09.26362607",
+    "company_slug": null,
+    "keywords_matched": [
+      "CADD"
+    ],
+    "extra": {
+      "pmid": "42818875",
+      "journal": "medRxiv : the preprint server for health sciences"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.09.26362607"
   }
 ]
