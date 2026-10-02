@@ -379,6 +379,127 @@
   },
   {
     "kind": "article",
+    "title": "A kinetic-aware approach to infer metabolic variations and flux using transcriptomics and metabolomics data",
+    "url": "https://doi.org/10.64898/2026.09.27.754711",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-02",
+    "collected_at": "2026-10-02T20:08:15.868425+00:00",
+    "authors": [
+      "Zhu, H.",
+      "Wan, C.",
+      "Yang, M.",
+      "Fang, Y.",
+      "An, Z.",
+      "Swaminathan, P.",
+      "Dang, P.",
+      "Li, Z.",
+      "Wang, J.",
+      "Wang, Y.",
+      "Chen, Y.",
+      "Ma, A.",
+      "Ma, Q.",
+      "Kelley, M. R.",
+      "Cao, S.",
+      "Fishel, M. L.",
+      "Zhang, C."
+    ],
+    "summary": "Assessing metabolic variations and flux quantities enable systematic understandings of metabolic shifts, reprogramming, adaptation and interactions in human diseases. However, omics-based estimation of metabolic flux and its variation remains challenging due to several fundamental limitations: the need for disease and tissue context specific metabolic model; nonlinear enzyme kinetic model that links enzyme and substrate changes to reaction flux; partial, unpaired, and snap-shot measurements across omics modalities; and uncertainty in computational prediction. Here, we present Michaelis-Menten model-based Flux Estimation Analysis (mmFEA), a Monte Carlo framework for estimating condition-specific flux changes by integrating paired or unpaired metabolomics and transcriptomics (or proteomics) data. mmFEA separates each reaction-rate change into enzyme- and substrate-associated components and assess reaction rate using Michaelis-Menten kinetics equation. A baseline metabolite saturation rate is introduced by integrating protein language model predicted kinetic parameters and human baseline level metabolic concentration to enable kinetic-aware integration of unpaired substrate and enzyme",
+    "doi": "10.64898/2026.09.27.754711",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "category": "systems biology"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.27.754711"
+  },
+  {
+    "kind": "article",
+    "title": "Auditing Protein-Protein Interaction Signals with Sparse Autoencoder Fingerprints",
+    "url": "https://doi.org/10.64898/2026.09.27.754758",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-02",
+    "collected_at": "2026-10-02T20:08:17.515548+00:00",
+    "authors": [
+      "Zhu, W.",
+      "Wang, S.",
+      "Liu, X.",
+      "Xue, Y.",
+      "Shen, H.-B.",
+      "Chen, B.",
+      "Pan, X."
+    ],
+    "summary": "Protein language models have become a dominant foundation for sequence-based protein-protein interaction (PPI) prediction, but their generalization remains limited under stringent evaluation, and benchmark accuracy alone cannot reveal whether a PPI predictor learns partner-specific biological signals or exploits contextual shortcuts. Here we introduce AuditPPI, an interpretable framework that transforms sparse-autoencoder (SAE) features from a frozen protein language model into order-invariant pair fingerprints, recasting PPI prediction as an auditable tabular-learning problem. AuditPPI achieves competitive predictive performance across diverse PPI benchmarks while enabling multiscale auditing of the information supporting its predictions. Protein-level audits show that partner-independent participation signals remain substantial in conventional benchmarks, including protein-disjoint benchmark, but are largely insufficient for pair-level discrimination in topology- and degree-controlled benchmark. Pair-level analyses further show that removing protein identity overlap does not eliminate contextual structure: protein-disjoint benchmarking retains strong subcellular co-localization s",
+    "doi": "10.64898/2026.09.27.754758",
+    "company_slug": null,
+    "keywords_matched": [
+      "protein language model"
+    ],
+    "extra": {
+      "category": "bioinformatics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.27.754758"
+  },
+  {
+    "kind": "article",
+    "title": "Simulating Bead-Tethered Biomolecules: Force-Probe Coupled Steered Molecular Dynamics (fp-SMD) in Optical Tweezers Force Spectroscopy",
+    "url": "https://doi.org/10.64898/2026.09.27.754810",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-02",
+    "collected_at": "2026-10-02T20:08:17.516222+00:00",
+    "authors": [
+      "Zhang, G.",
+      "Leng, Y."
+    ],
+    "summary": "Interpreting single-molecule force spectroscopy (SMFS) data from optical tweezers with steered molecular dynamics (SMD) is hindered by a severe timescale mismatch: SMD trajectories span nanoseconds to microseconds, while SMFS experiments unfold over milliseconds to seconds, forcing SMD to pull six to nine orders of magnitude faster than experiment and systematically distorting rupture forces, molecular pathways, and kinetic intermediates. We introduce force-probe coupled steered molecular dynamics (fp-SMD), which explicitly propagates the force probe (the optically trapped bead) alongside the biomolecule within a single classical Hamiltonian description of the coupled molecule-linker-bead system. A Predict-Correct Trajectory Propagation (PCTP) scheme resolves the resulting computational bottleneck by decoupling the fast molecular relaxation from the slow, macroscopic bead motion, using metadynamics and transition-state theory to identify the kinetically resolved molecular intermediate reached at each macroscopic time step. On the cholesterol-{beta}-cyclodextrin ({beta}-CD) host-guest complex, fp-SMD reproduces the experimental rupture-force histogram directly at matched conditions,",
+    "doi": "10.64898/2026.09.27.754810",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular dynamics"
+    ],
+    "extra": {
+      "category": "biophysics"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.27.754810"
+  },
+  {
+    "kind": "article",
+    "title": "KPB82 potently and selectively inhibits ACER2 and protects tumor and primary cells from doxorubicin-induced cytotoxicity",
+    "url": "https://doi.org/10.64898/2026.09.29.754712",
+    "source": "bioRxiv",
+    "source_type": "preprint",
+    "published_date": "2026-10-02",
+    "collected_at": "2026-10-02T20:08:17.517763+00:00",
+    "authors": [
+      "Devi, A.",
+      "Xu, R.",
+      "Szulc, Z.",
+      "Kim, I.",
+      "Salama, M.",
+      "Bhabak, K. P.",
+      "Arenz, C.",
+      "Canals, D.",
+      "Hannun, Y. A.",
+      "Mao, C."
+    ],
+    "summary": "Alkaline ceramidase 2 (ACER2) catalyzes the hydrolysis of ceramides into sphingosine and free fatty acids, playing crucial roles in regulating various biological processes, including but not limited to cell proliferation, survival, and the DNA damage response. However, a pharmacological tool that regulates its catalytic and signaling functions remains to be developed. In this study, N-[(1S,2R)-1-hydroxy-1-phenylpropan-2-yl]dodecane-1-sulfonamide (KPB82) was identified as a potent and selective ACER2 inhibitor. In vitro enzymatic assays showed that KPB82 inhibited ACER2 with an IC50 of 190 nM, while displaying minimal activity against acid and neutral ceramidases (IC50> 100 {micro}M) and no significant inhibition of alkaline ceramidase 1 or alkaline ceramidase 3. Enzymatic kinetic studies revealed that KPB82 is a competitive inhibitor of ACER2. The three-dimensional structure of ACER2 was modeled in the AlphaFold3 server, revealing key Zn2+-coordinating histidine residues and a substrate-binding pocket. Molecular docking studies demonstrated that KPB82 binds ACER2 within this pocket, forming hydrogen bonds with the catalytically important amino residues, Asp93 and His215, and intera",
+    "doi": "10.64898/2026.09.29.754712",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "AlphaFold"
+    ],
+    "extra": {
+      "category": "biochemistry"
+    },
+    "dedupe_key": "doi:10.64898/2026.09.29.754712"
+  },
+  {
+    "kind": "article",
     "title": "3D confinement reshapes RNA folding and enhances circularisation in the Zika virus",
     "url": "https://doi.org/10.64898/2026.01.10.698690",
     "source": "bioRxiv",
@@ -60816,5 +60937,368 @@
       "journal": "Memorias do Instituto Oswaldo Cruz"
     },
     "dedupe_key": "doi:10.1590/0074-02760250315"
+  },
+  {
+    "kind": "article",
+    "title": "Bioactive constituent profiling of brown sugar and functional evaluation of an isolated oligosaccharide with iron absorption-promoting and anti-anemia effects.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42825595/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.310437+00:00",
+    "authors": [
+      "Die Cao",
+      "Mengyi Yan",
+      "Zeyuan Deng",
+      "Bingyan Hong",
+      "Yadong Miao",
+      "Hailing Song",
+      "Yifei Li",
+      "Liufeng Zheng"
+    ],
+    "summary": "Brown sugar is a widely consumed non-centrifugal cane sugar with a complex chemical composition, but the constituents responsible for its potential effects on iron homeostasis remain poorly defined. Here, non-targeted UPLC-Q-Exactive MS/MS profiling identified 84 compounds beyond sucrose and glucose, among which 49 were bioactive constituents, including the cyclic peptide cyclo(Pro-Leu), flavonoids, phenolic acids, and itaconic acid. An oligosaccharide present at a relatively high abundance (3.31%, w/w) was isolated through sucrose hydrolysis, macroporous resin adsorption, and 300 Da membrane separation, reaching a purity of over 98%. Combined UPLC-Q-TOF-MS, FTIR, NMR, and differential scanning calorimetry analyses identified it as raffinose. In mice with iron-deficiency anemia, intragastric administration of the purified oligosaccharide restored red blood cell counts, hemoglobin, hematocrit, and serum ferritin, normalized the spleen index and red pulp architecture, and did not affect fasting blood glucose. The purified oligosaccharide also restored splenic ferroportin protein without changing its mRNA level. Molecular docking suggested that it occupies the hepcidin-binding cavity of ferroportin (-8.3 kcal mol-1), which may competitively prevent hepcidin-mediated ferroportin degradation and thus sustain splenic iron recycling. It also remained largely intact after simulated gastrointestinal digestion. In Ussing chamber experiments, it enhanced intestinal iron transport and was itself transported across the epithelium, pointing to a co-transport process supported by a stable 3 : 1 oligosaccharide-iron complex (ipTM = 0.87). These results suggest that this oligosaccharide, as a functional food ingredient, may support iron homeostasis by coupling ferroportin-mediated splenic iron recycling with chelation-assisted intestinal iron absorption.",
+    "doi": "10.1039/d6fo03825e",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42825595",
+      "journal": "Food & function"
+    },
+    "dedupe_key": "doi:10.1039/d6fo03825e"
+  },
+  {
+    "kind": "article",
+    "title": "The Dephospho-CoA Kinase of Mycobacterium tuberculosis: Molecular Mechanism and Function.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42825154/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.310907+00:00",
+    "authors": [
+      "Dafeng Liu",
+      "Huashui Deng",
+      "Hongjun Song"
+    ],
+    "summary": "Tuberculosis (TB) continues to represent a significant global health danger, with the bacillus Mycobacterium tuberculosis (Mtb) identified as its causative agent. An essential metabolic helper, Coenzyme A (CoA) engages in multiple core cellular processes that are pivotal for both Mtb survival and its ability to cause disease. The terminal step of CoA biosynthesis is catalyzed by dephospho-CoA kinase CoaE, which phosphorylates dephospho-CoA to generate the active cofactor. However, the molecular mechanisms regulating Mtb CoaE catalytic activity remain poorly understood. Here, AlphaFold 3 was used to predict CoaE model. The Ramachandran plot and ProSA were used to validate the model. Subsequently, we performed molecular docking, followed by site-directed mutagenesis. We found that the S15A, R145A or N175A mutants showed markedly reduced activity, whereas the K14A mutation completely abolished activity. Additionally, deletion of residues 27-101 (Δ27-101) led to a significant loss of function. Our findings offer new insights into the structure and mechanism of Mtb CoaE, a promising target for designing selective antituberculosis agents.",
+    "doi": "10.1021/acsomega.6c05535",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "AlphaFold"
+    ],
+    "extra": {
+      "pmid": "42825154",
+      "journal": "ACS omega"
+    },
+    "dedupe_key": "doi:10.1021/acsomega.6c05535"
+  },
+  {
+    "kind": "article",
+    "title": "Machine Learning-Guided Discovery of Natural BACE1 Inhibitors with Enzymatic and Cellular Validation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824999/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.311385+00:00",
+    "authors": [
+      "Yiming Bai",
+      "Jun Zhao",
+      "Shurong Zhang",
+      "Caiqin Yan",
+      "Yiheng Chen",
+      "Guanhua Du",
+      "Ailin Liu"
+    ],
+    "summary": "Alzheimer's disease (AD) is a progressive neurodegenerative disease characterized by excessive accumulation of β-amyloid (Aβ) peptides in the brain. Beta-secretase 1 (BACE1), the rate-limiting enzyme in the amyloidogenic processing pathway of amyloid precursor protein (APP), has been widely recognized as an important therapeutic target for reducing Aβ production. In the present study, nine machine learning-based predictive models for BACE1 inhibitors were constructed using Naïve Bayes (NB) and Recursive Partitioning (RP) algorithms. Subsequently, internal and external validations were conducted to evaluate predictive performance. The optimized models were subsequently applied to screen an in-house natural product library containing 452 compounds. Based on consensus prediction criteria, 171 compounds were identified as potential BACE1 inhibitors and subjected to fluorescence resonance energy transfer (FRET)-based enzymatic assays. Among them, 33 compounds exhibited inhibitory rates greater than 50% at an initial concentration of 50 μg/mL. Further dose-response evaluation identified five compounds with IC50 values below 50 μM, including Theaflavin-3,3'-digallate, γ-mangostin, Licoagrochalcone B, Chicoric acid, and Resveratrol. Cell-based validation using APPswe-HEK293T cells demonstrated that Theaflavin-3,3'-digallate significantly reduced extracellular Aβ1-42 secretion. Molecular docking analysis further revealed that Theaflavin-3,3'-digallate could stably bind to BACE1 through multiple hydrogen-bond and hydrophobic interactions. Collectively, this study demonstrates that integrating machine learning-assisted virtual screening with natural product libraries is an effective strategy for discovering novel BACE1 inhibitors. Theaflavin-3,3'-digallate was identified as a promising natural BACE1 inhibitor with both enzymatic and cellular activities. This research provides new technology and potential lead compound for the development of future anti-Alzheimer's disease drug.",
+    "doi": "10.1021/acsomega.6c07963",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening",
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42824999",
+      "journal": "ACS omega"
+    },
+    "dedupe_key": "doi:10.1021/acsomega.6c07963"
+  },
+  {
+    "kind": "article",
+    "title": "Hinge-region Cys-to-Ser mutation enables homogeneous DAR6 anti-c-Met biparatopic ADCs with tolerable O-glycosylation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824815/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.311782+00:00",
+    "authors": [
+      "Deyong Song",
+      "Zhenduo Shen",
+      "Xiaolin Zhu",
+      "Haifeng Zhao",
+      "Yingdi Wang",
+      "Junmei Zhang",
+      "Rui Li",
+      "Hongguang Xu",
+      "Zengjin Cheng",
+      "Xiaoju Ma",
+      "Haixia Lin",
+      "Changlin Dou",
+      "Min Xiao"
+    ],
+    "summary": "Antibody-drug conjugates (ADCs) with homogeneous drug-to-antibody ratios (DARs) are increasingly favored for their improved physicochemical and pharmacokinetic properties; however, strategies to reliably generate homogeneous DAR6 ADCs remain limited. In this study, we investigate hinge-region cysteine engineering as an approach to constrain conjugation stoichiometry, using a potent biparatopic anti-c-Met antibody as a model. Various biological and physicochemical assays were used for its characterization. We show that substitution of a hinge-region cysteine within a CPPC (Cysteine - Proline - Proline - Cysteine) motif reduces the number of accessible conjugation sites, allowing reproducible generation of homogeneous DAR6 ADCs. During characterization of Ser- or Thr-substituted hinge variants, we observed additional mass species consistent with mucin-type O-linked glycosylation. Site-specific mass spectrometry analyses localized these modifications to a serine residue within hinge-region and identified the core structures of the O-glycans. Analysis of additional antibodies carrying analogous mutations demonstrated that hinge-associated O-glycosylation is not restricted to a single antibody scaffold. These results demonstrate that hinge-region cysteine engineering can serve as a rational and adaptable approach for DAR6 ADC development while highlighting the need for case-by-case evaluation of associated post-translational modifications during antibody engineering.",
+    "doi": "10.1093/abt/tbag040",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody engineering"
+    ],
+    "extra": {
+      "pmid": "42824815",
+      "journal": "Antibody therapeutics"
+    },
+    "dedupe_key": "doi:10.1093/abt/tbag040"
+  },
+  {
+    "kind": "article",
+    "title": "Comparative Evaluation of White Quinoa and Tri-Color Quinoa on Indomethacin-Induced Gastrointestinal Damage.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824804/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.312208+00:00",
+    "authors": [
+      "Nasser S Alqahtani",
+      "Hanaa M Hassan",
+      "Hanaa M Mohamed",
+      "Fawzia M Gazaly",
+      "Ragaa A Sadeek"
+    ],
+    "summary": "Nonsteroidal anti-inflammatory drugs (NSAIDs), such as indomethacin, frequently cause gastric injury, often characterized by ulceration. This study investigated the comparative gastroprotective effects of white quinoa and tri-color quinoa (a combination of red, black, and white varieties) in mitigating indomethacin-induced gastric damage in male rats. Thirty-six male rats were divided into dietary groups and administered quinoa-supplemented diets for 21 days before gastric injury was induced using indomethacin. Biochemical markers, including TNF-α and IL-6, were assessed, and molecular docking was employed to examine the interactions of quinoa-derived compounds, such as procyanidin B2 and cinchonain IB, with target proteins Atp4a, COX-2, and NF-κB. Tri-color quinoa demonstrated greater efficacy than white quinoa, reducing mucosal necrosis by 83%, attenuating oxidative stress, and significantly enhancing anti-inflammatory markers (p < 0.05). Furthermore, bioactive compounds showed strong binding affinities (-7.1 to -8.9 kcal/mol) to target proteins through hydrogen and hydrophobic interactions. Histological examination confirmed superior protection for the tri-color group, displaying near-normal mucosa (lesion score 0.4 vs. 2.4) and minimal submucosal edema. In conclusion, tri-color quinoa provides more effective protection against NSAID-induced gastric injury than white quinoa, likely due to its enhanced phytochemical profile and broader range of plant-derived compounds that collectively reduce inflammation and preserve gastric mucosal integrity.",
+    "doi": "10.1002/fsn3.72418",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42824804",
+      "journal": "Food science & nutrition"
+    },
+    "dedupe_key": "doi:10.1002/fsn3.72418"
+  },
+  {
+    "kind": "article",
+    "title": "An IgG-like fusion protein comprising an anti-spike S2 antibody and ACE2 exhibits potent and broad neutralization against SARS-CoV-2 and variants of concern.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824800/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.312620+00:00",
+    "authors": [
+      "Zhizhong Wei",
+      "Ximing Liu",
+      "Kailun Wang",
+      "Lan Chen",
+      "Xia Xiao",
+      "Yinyan Sun",
+      "Wei Wang",
+      "Yizhe Chen",
+      "Linqiang Fang",
+      "Yonghe Qi",
+      "Fang Yang",
+      "Xinyan Hao",
+      "Ruihua Fan",
+      "Sanduo Zheng",
+      "Lili Ren",
+      "Wenhui Li",
+      "Xinxin Tian",
+      "Jianhua Sui"
+    ],
+    "summary": "The continuous evolution of severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) highlights the value of broad-spectrum antiviral strategies. Antibody-engineering approaches targeting conserved regions of the Spike protein may enhance neutralizing potency and breadth. A human antibody (P23) against the Spike protein of SARS-CoV-2 was identified using a human antibody phage display library panning and screening for binding affinity and breadth against multiple coronavirus Spike proteins using surface plasmon resonance (SPR). The epitope of P23 was characterized using the S1 and S2 subunits of SARS-CoV-2 Spike protein and hydrogen-deuterium exchange mass spectrometry (HDX-MS). An IgG-like bispecific fusion protein (Bs-ACE2-P23) was engineered by fusing the extracellular domain (ECD) of human angiotensin-converting enzyme 2 (ACE2) to the N-terminus of the P23 heavy chain (HC). Neutralizing activity was evaluated against both pseudotyped and authentic SARS-CoV-2 variants. P23 cross-bound Spike proteins from SARS-CoV-2 wild type (WT), D614G and JN.1 variants, Pangolin-CoV, Bat coronavirus RaTG13, and SARS-CoV-1, recognizing an epitope on the S2 subunit adjacent to the fusion peptide (FP). While P23 was ineffective against D614G-containing SARS-CoV-2 variants, Bs-ACE2-P23 exhibited markedly enhanced neutralization potency. This bispecific architecture also improved the neutralizing activity of another FP-targeting antibody. We developed a bispecific fusion protein with potent broad-spectrum neutralizing activity against SARS-CoV-2 variants. This architecture provides a promising strategy for next-generation coronavirus biologics.",
+    "doi": "10.1093/abt/tbag041",
+    "company_slug": null,
+    "keywords_matched": [],
+    "extra": {
+      "pmid": "42824800",
+      "journal": "Antibody therapeutics"
+    },
+    "dedupe_key": "doi:10.1093/abt/tbag041"
+  },
+  {
+    "kind": "article",
+    "title": "Beyond affinity: AI-supported developability assessment and multi-objective optimization in antibody development.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824780/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.313015+00:00",
+    "authors": [
+      "Qianhui Jiang",
+      "Jiahui Guan",
+      "Dan Yu",
+      "Pradeep Singh",
+      "George Pelekos",
+      "Edward Chin Man Lo",
+      "Junwen Wang"
+    ],
+    "summary": "Therapeutic antibodies are a major class of medicines, but high target affinity alone does not ensure manufacturability, stability, safety, or clinical success. Developability has therefore become a central constraint in antibody engineering and has pushed the field beyond affinity-first screening toward multi-objective decision-making. Machine-learning-based models increasingly integrate antibody sequence, structure, interaction, and assay data to estimate properties such as affinity, specificity, aggregation, viscosity, solubility, stability, immunogenicity, and pharmacokinetics before experimental testing. In practice, these models are most useful when they help prioritize experiments rather than replace empirical evaluation. Here, we review the data resources used for antibody developability modeling, the main classes of property predictors, and optimization frameworks that balance competing design objectives. We cover Pareto optimization, Bayesian optimization, active learning, and conditional generative modeling, and discuss how these approaches are being adapted to bispecific antibodies and nanobodies. We argue that AI is most useful when model outputs are interpreted in the context of assay design, uncertainty, and antibody format, and when they are used to guide candidate selection and experimental design rather than serve as stand-alone surrogates for developability.",
+    "doi": "10.1093/abt/tbag039",
+    "company_slug": null,
+    "keywords_matched": [
+      "antibody engineering"
+    ],
+    "extra": {
+      "pmid": "42824780",
+      "journal": "Antibody therapeutics"
+    },
+    "dedupe_key": "doi:10.1093/abt/tbag039"
+  },
+  {
+    "kind": "article",
+    "title": "Analysis of novel umami peptides in Dengchuan beef and their taste mechanism: Integrated peptidomics, machine learning and molecular simulation studies.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824709/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.313372+00:00",
+    "authors": [
+      "Wentao Zheng",
+      "Yunmei Chai",
+      "Yuzhu Wang",
+      "Xue Yang",
+      "Jinze He",
+      "Qing Li",
+      "Guangqiang Wei",
+      "Aixiang Huang",
+      "Yufang Li"
+    ],
+    "summary": "This study revealed the umami peptides in Dengchuan beef (DB) and its umami mechanism through peptidomics combined with molecular simulation technology. A total of 4220 peptides were identified by LC-MS/MS, among which five novel umami peptides (ER-10, GK-10, DR-11, EA-11, and HY-12) were screened via virtual screening. Sensory evaluation and electronic tongue analysis confirmed the umami properties of these peptides, with ER-10 and DR-11 exhibiting significant umami-enhancing effects. Molecular simulations revealed that Lys155, Gln52, Ser109, Ser216, Arg255, Ser217 and Met151 were identified as the potential key residues for the stable binding of the five peptides to the T1R1/T1R3 receptor. Among these interactions, hydrogen bonding played a dominant role, followed by hydrophobic and electrostatic interactions. Notably, the residues such as Arg, Phe, Trp and Lys are considered to be key contributors to the umami activity of peptides. This study provides new insights into the structure-activity relationships of meat-derived umami peptides.",
+    "doi": "10.1016/j.crfs.2026.101570",
+    "company_slug": null,
+    "keywords_matched": [
+      "virtual screening"
+    ],
+    "extra": {
+      "pmid": "42824709",
+      "journal": "Current research in food science"
+    },
+    "dedupe_key": "doi:10.1016/j.crfs.2026.101570"
+  },
+  {
+    "kind": "article",
+    "title": "QbD aided optimization and molecular docking of pH-sensitive hydrogels for targeted colon delivery in ulcerative colitis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824549/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.313795+00:00",
+    "authors": [
+      "Muhammad Zeeshan Shamshair",
+      "Waqar Siddique",
+      "Muhammad Zaman",
+      "Badarqa Tul Ayesha",
+      "Hayaa M Alhuthali",
+      "Abdullah R Alzahrani",
+      "Zia Ur Rehman",
+      "Mohd Imran"
+    ],
+    "summary": "Oral formulations of aminosalicylates are widely used in the treatment of ulcerative colitis (UC), but their efficacy is limited by low absorption and bioavailability due to first-pass metabolism and gastric degradation. pH-sensitive hydrogels were formulated for colon-targeted, delayed drug release to address this concern. Moreover, molecular docking was conducted to evaluate the binding affinity between β-cyclodextrin (oligomer) and balsalazide disodium. 15 formulations were developed using a Box-Behnken design in Design-Expert® 11, varying the concentrations of cross-linker, oligomer, and monomer while keeping the initiator constant. Hydrogels were developed via free radical polymerization using N,N-methylene bisacrylamide (MBA), β-cyclodextrin, potassium persulfate (KPS), and acrylic acid. Formulations were evaluated for swelling behavior, drug release, entrapment efficiency, porosity, and sol-gel fraction. The hydrogels exhibited maximum swelling at pH 7.2 (3783.4%) and a low sol fraction (10%), achieving 96% drug entrapment. FTIR suggested no interaction between the drug and excipients used. DSC and SEM analyses revealed stable thermal behavior and porous morphology. Molecular docking confirmed promising binding between balsalazide disodium and β-cyclodextrin. In vitro release studies showed sustained drug release for up to 8 hours, with kinetic modeling best fitting the Hixson-Crowell model, indicating drug release by change in geometry, surface area, and swelling of the hydrogel matrix. In the current research work, the optimized pH-sensitive hydrogel providing an effective sustained-release system for balsalazide disodium has been successfully developed, exhibiting promising pH-responsive drug-release characteristics.",
+    "doi": "10.1039/d6ra07673d",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42824549",
+      "journal": "RSC advances"
+    },
+    "dedupe_key": "doi:10.1039/d6ra07673d"
+  },
+  {
+    "kind": "article",
+    "title": "Computational identification of B- and T-cell epitopes: a unified task taxonomy and review of databases, datasets, predictive pipelines, and gaps.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824475/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.314293+00:00",
+    "authors": [
+      "Muhammad Ali Ibrahim",
+      "Arooj Zaib",
+      "Tayyaba Asif",
+      "Andreas Dengel",
+      "Jens Posma",
+      "Wolfram Ruf",
+      "Muhammad Nabeel Asim"
+    ],
+    "summary": "The immune system leverages B and T cells to recognize specific molecular patterns, known as epitopes, on pathogens and cancer cells to effectively combat infections and diseases. The critical success of immunotherapies in cancer treatment and COVID-19 vaccine development has established precise epitope identification as a central and rapidly growing priority in therapeutic design. Because traditional wet-lab based identification of B- and T-cell epitopes is expensive and timeconsuming, our systematic literature search (2015-2026) identified 148 Artificial Intelligence (AI) based linear B-cell, conformational B-cell, and T-cell epitope prediction models within the stated search scope. However, the true potential of these models remains unclear due to fragmented evaluation practices, with models rarely tested across a comprehensive range of datasets, insufficient comparison with existing predictors, systematic under-utilization of available public databases, and other methodological inconsistencies across five different stages of the predictive pipeline. Moreover, the 7 existing review papers fail to adequately highlight these research gaps or to support the development of robust AI models. This review paper consolidates the computational landscape of B-cell and T-cell epitope recognition and introduces a unified taxonomy that organises the field into twelve prediction tasks: linear and conformational B-cell prediction together with ten T-cell subtasks (T1-T10) that span the antigen-recognition cascade from human leukocyte antigen (HLA) typing to vaccine design. It analyses these twelve tasks across five major stages of a shared predictive pipeline. Within this taxonomy, the recognition sub-tasks (T1-T7) apply to the epitopes of any antigen, whereas neoantigen identification (T8) and tumor T-cell antigen (TTCA) classification (T9) are oncology-specific translational applications and multi-epitope vaccine design (T10) spans infectious-disease and cancer targets. It systematically examines 155 studies published from 2015 to 2026 to perform comprehensive categorization of 43 dedicated epitope/immunology databases, 144 benchmark datasets, 272 representation learning approaches, 148 classifiers, 54 evaluation and optimization approaches, and 148 predictive models accessibility status across all twelve prediction tasks. Additionally, it highlights persistent challenges across each stage of the predictive pipeline and offers key directions for improvement. This comprehensive analysis provides actionable recommendations for developing more robust, generalizable epitope predictors, and it ultimately accelerates the translation of computational predictions into effective immunotherapies against diverse diseases.",
+    "doi": "10.3389/fimmu.2026.1873135",
+    "company_slug": null,
+    "keywords_matched": [
+      "vaccine design"
+    ],
+    "extra": {
+      "pmid": "42824475",
+      "journal": "Frontiers in immunology"
+    },
+    "dedupe_key": "doi:10.3389/fimmu.2026.1873135"
+  },
+  {
+    "kind": "article",
+    "title": "Global research trends in tuberculosis drug-resistance mechanisms: a bibliometric and cross-database analysis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824403/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.314769+00:00",
+    "authors": [
+      "Jiali Lian",
+      "Hailiang Nan",
+      "Yongqiang Xing",
+      "Zhanli Wang",
+      "Jinqi Hao",
+      "Yanqin Yu"
+    ],
+    "summary": "Drug-resistant tuberculosis (DR-TB) remains a major challenge to global tuberculosis control. In 2024, approximately 390,000 individuals developed multidrug- or rifampicin-resistant tuberculosis (MDR/RR-TB) worldwide, while treatment coverage remained limited to 42%, highlighting persistent gaps in DR-TB management. The mechanisms underlying DR-TB involve resistance-associated mutations, bacterial adaptation, host-pathogen interactions, and drug-target-related processes. A comprehensive evaluation of research trends is needed to clarify the evolution and future directions of this field. This bibliometric review was conducted with reference to the Preferred Reporting Items for Systematic Reviews and Meta-Analyzes (PRISMA) 2020 statement. Publications related to DR-TB mechanisms from January 1, 2006, to May 10, 2026, were retrieved from the Web of Science Core Collection (WoSCC), yielding 1,043 eligible records. VOSviewer, CiteSpace, and bibliometric methods were applied to analyze countries/regions, institutions, authors, journals, keywords, and co-citation networks. An independent PubMed dataset (n = 787) was used for cross-database validation to assess the consistency and robustness of major findings. Annual publications increased markedly after 2015. The dataset included 6,129 authors from 1,581 institutions across 60 countries/regions. The United States was the leading contributor, with the highest number of publications (248) and citations (2,460). Keyword and thematic analyzes revealed that major research areas included drug resistance mechanisms, combination therapy, microbiological analysis, antitubercular agents, and Mycobacterium tuberculosis. Research evolution demonstrated a transition from traditional studies of bacterial pathology and biosynthesis toward computer-aided target discovery, molecular docking, and host-directed therapies involving programmed cell death pathways such as autophagy. Descriptive country-institution-keyword mapping showed regionally patterned thematic associations, with natural products, nanomaterials, and quorum-sensing inhibition represented among associations involving institutions from Asia and Latin America, and clinical microbiology, genomics, and pathway regulation represented among those involving institutions from North America and Europe. PubMed validation demonstrated comparable publication trends, geographic distributions, and thematic patterns. The bibliometric landscape of DR-TB mechanism research has broadened from individual molecular targets to bacterial, host-related, and computational themes. Recent studies show increasing attention to host-directed approaches, molecular modeling, and multidimensional analyzes. These trends may inform future mechanistic and translational research, although their biological and clinical relevance requires independent validation.",
+    "doi": "10.3389/fmicb.2026.1942089",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking"
+    ],
+    "extra": {
+      "pmid": "42824403",
+      "journal": "Frontiers in microbiology"
+    },
+    "dedupe_key": "doi:10.3389/fmicb.2026.1942089"
+  },
+  {
+    "kind": "article",
+    "title": "Chaenomeles speciosa-derived extracellular vesicles accelerate fracture healing via orchestrating immuno-angiogenic coupling.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42824352/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-02T20:07:09.315207+00:00",
+    "authors": [
+      "Jingxiang Chen",
+      "Kaihan Zhuang",
+      "Yongpeng Wang",
+      "Shengjin Yuan",
+      "Zikun Xie",
+      "Qinghua Fan",
+      "Tao Liu"
+    ],
+    "summary": "Fracture nonunion remains a major orthopaedic challenge, and dysregulation of the bone immune microenvironment is increasingly recognized as a key pathological driver. Chaenomeles speciosa is a medicinal plant with documented anti-inflammatory properties, making it a promising candidate for immune-modulatory therapy. This study investigated whether extracellular vesicles derived from Chaenomeles speciosa could reshape the immune microenvironment to promote fracture healing. Single-cell RNA sequencing was performed on human nonunion tissues to characterize cellular heterogeneity. Network pharmacology and molecular docking analyses were used to identify potential therapeutic targets of Chaenomeles speciosa. Extracellular vesicles were isolated by ultracentrifugation and characterized by transmission electron microscopy. Macrophage polarization, angiogenesis, and inflammatory signaling were assessed in vitro using RAW 264.7 macrophages and human umbilical vein endothelial cells. Bone regeneration was evaluated in a rat femoral fracture model using micro-computed tomography and histology. Single-cell RNA sequencing revealed M1 macrophage dominance and enhanced M1-mediated communication with osteoblasts and endothelial cells in nonunion tissues. The IL-17 signaling pathway and matrix metalloproteinase-3 were identified as key therapeutic targets. Isolated extracellular vesicles exhibited excellent biocompatibility, promoted M2 macrophage polarization, attenuated inflammation, and enhanced angiogenesis in vitro. In the rat fracture model, treatment with these extracellular vesicles significantly accelerated bone regeneration, as evidenced by increased bone bridging and callus formation. These findings establish a macrophage-centric pathological network in nonunion and demonstrate that Chaenomeles speciosa-derived extracellular vesicles promote bone repair through immuno-angiogenic coupling, supporting their potential as a multi-targeted therapeutic strategy for fracture healing.",
+    "doi": "10.1016/j.bonr.2026.101951",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42824352",
+      "journal": "Bone reports"
+    },
+    "dedupe_key": "doi:10.1016/j.bonr.2026.101951"
   }
 ]
