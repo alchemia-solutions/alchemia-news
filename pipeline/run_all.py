@@ -1,16 +1,21 @@
 #!/usr/bin/env python
-"""Orquestrador do pipeline Alchemia Radar. Roda todos os coletores, funde com o estado
-persistido (dedupe por DOI/URL), grava os JSONs consumidos pelo dashboard, e produz um snapshot
-de execução para auditoria (o que rodou, quanto tempo levou, quantos itens novos).
+"""Orquestrador do pipeline Alchemia Radar. Roda todos os coletores e grava o resultado num de dois destinos:
+
+- `json` (padrão enquanto o GitHub Actions for o escritor): funde com o estado persistido (dedupe por DOI/URL),
+  grava os JSON de `pipeline/data/` e um snapshot de execução para auditoria;
+- `postgres` (a VM, spec docs/specs/2026-10-02-radar-na-vm-postgres.md): grava no esquema `radar` do banco do
+  System pelo papel `alchemia_radar` (`armazenamento_pg.executar`), com trava, contrato e uma transação.
 
 Uso:
-    python -m pipeline.run_all                  # execução incremental normal (chamada pelo cron)
+    python -m pipeline.run_all                  # execução incremental normal, destino de RADAR_DESTINO ou json
+    python -m pipeline.run_all --destino postgres --origem agendada   # o que o agendador da VM chama
     python -m pipeline.run_all --biorxiv-days 60 # backfill bioRxiv mais profundo, sob demanda
     python -m pipeline.run_all --skip companies,scielo   # pula coletores específicos (debug)
 """
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 import time
 import traceback
@@ -42,6 +47,34 @@ ARTICLES_PATH = DATA_DIR / "articles.json"
 COMPANIES_ACTIVITY_PATH = DATA_DIR / "companies_activity.json"
 META_PATH = DATA_DIR / "meta.json"
 
+# A ordem é a de sempre; o terceiro campo diz em que arquivo JSON o item caía (article, news ou companies).
+COLETORES = (
+    ("pubmed", "PubMed", "article"),
+    ("biorxiv", "bioRxiv", "article"),
+    ("arxiv", "arXiv", "article"),
+    ("chemrxiv", "ChemRxiv", "article"),
+    ("scielo", "SciELO", "article"),
+    ("nature", "Nature feeds", "news"),
+    ("newsletters", "Newsletters do nicho", "news"),
+    ("googlenews", "Google News (geral)", "news"),
+    ("companies", "Empresas", "companies"),
+)
+
+
+def _funcao(chave: str, biorxiv_days: int | None):
+    """A função de cada coletor, resolvida na hora da chamada (os testes trocam o módulo por um dublê sem rede)."""
+    return {
+        "pubmed": pubmed_collector.collect,
+        "biorxiv": lambda: biorxiv_collector.collect(days_override=biorxiv_days),
+        "arxiv": arxiv_collector.collect,
+        "chemrxiv": chemrxiv_collector.collect,
+        "scielo": scielo_collector.collect,
+        "nature": feed_collector.collect_nature_feeds,
+        "newsletters": feed_collector.collect_newsletter_feeds,
+        "googlenews": googlenews_collector.collect_general,
+        "companies": companies_collector.collect,
+    }[chave]
+
 
 def _run_collector(name: str, fn, *args, **kwargs) -> tuple[list[dict], float, str | None]:
     start = time.time()
@@ -65,50 +98,26 @@ def _run_collector(name: str, fn, *args, **kwargs) -> tuple[list[dict], float, s
     return items, elapsed, error
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description="Pipeline de coleta Alchemia Radar")
-    parser.add_argument("--biorxiv-days", type=int, default=None, help="Backfill bioRxiv em dias (default: incremental_days do sources.yaml)")
-    parser.add_argument(
-        "--skip",
-        type=str,
-        default="",
-        help="Lista separada por vírgula de coletores a pular (pubmed,biorxiv,arxiv,chemrxiv,scielo,nature,newsletters,googlenews,companies)",
-    )
-    args = parser.parse_args()
-    skip = {s.strip() for s in args.skip.split(",") if s.strip()}
+def coletar(skip: set[str], biorxiv_days: int | None) -> tuple[dict[str, dict], list[tuple[str, list[dict]]]]:
+    """Roda os coletores na ordem de `COLETORES`. Devolve o relatório por coletor e a colheita de cada um."""
+    resultados: dict[str, dict] = {}
+    colheitas: list[tuple[str, list[dict]]] = []
+    for chave, rotulo, _ in COLETORES:
+        if chave in skip:
+            common.log(f"[{rotulo}] pulado (--skip)")
+            resultados[chave] = {"skipped": True}
+            continue
+        items, elapsed, error = _run_collector(rotulo, _funcao(chave, biorxiv_days))
+        colheitas.append((chave, items))
+        resultados[chave] = {"count": len(items), "seconds": round(elapsed, 1), "error": error}
+    return resultados, colheitas
 
-    run_started = datetime.now(timezone.utc)
-    common.log(f"===== Alchemia Radar pipeline: iniciando execução ({run_started.isoformat()}) =====")
 
-    collector_results: dict[str, dict] = {}
-    article_items: list[dict] = []
-    news_items: list[dict] = []
-    company_items: list[dict] = []
-
-    def maybe_run(key: str, label: str, fn, *fn_args, bucket: list[dict], **fn_kwargs):
-        if key in skip:
-            common.log(f"[{label}] pulado (--skip)")
-            collector_results[key] = {"skipped": True}
-            return
-        items, elapsed, error = _run_collector(label, fn, *fn_args, **fn_kwargs)
-        bucket.extend(items)
-        collector_results[key] = {"count": len(items), "seconds": round(elapsed, 1), "error": error}
-
-    maybe_run("pubmed", "PubMed", pubmed_collector.collect, bucket=article_items)
-    maybe_run(
-        "biorxiv",
-        "bioRxiv",
-        biorxiv_collector.collect,
-        days_override=args.biorxiv_days,
-        bucket=article_items,
-    )
-    maybe_run("arxiv", "arXiv", arxiv_collector.collect, bucket=article_items)
-    maybe_run("chemrxiv", "ChemRxiv", chemrxiv_collector.collect, bucket=article_items)
-    maybe_run("scielo", "SciELO", scielo_collector.collect, bucket=article_items)
-    maybe_run("nature", "Nature feeds", feed_collector.collect_nature_feeds, bucket=news_items)
-    maybe_run("newsletters", "Newsletters do nicho", feed_collector.collect_newsletter_feeds, bucket=news_items)
-    maybe_run("googlenews", "Google News (geral)", googlenews_collector.collect_general, bucket=news_items)
-    maybe_run("companies", "Empresas", companies_collector.collect, bucket=company_items)
+def _gravar_json(run_started: datetime, collector_results: dict, colheitas: list[tuple[str, list[dict]]]) -> int:
+    destino = {chave: arquivo for chave, _, arquivo in COLETORES}
+    article_items = [it for c, its in colheitas if destino[c] == "article" for it in its]
+    news_items = [it for c, its in colheitas if destino[c] == "news" for it in its]
+    company_items = [it for c, its in colheitas if destino[c] == "companies" for it in its]
 
     # Merge incremental contra o estado persistido (dedupe por DOI/URL -- ver common.merge_items)
     existing_articles = common.load_json(ARTICLES_PATH, [])
@@ -150,6 +159,50 @@ def main() -> int:
         f"Empresas: {len(merged_companies)} (+{new_comp}) ====="
     )
     return 0
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Pipeline de coleta Alchemia Radar")
+    parser.add_argument("--biorxiv-days", type=int, default=None, help="Backfill bioRxiv em dias (default: incremental_days do sources.yaml)")
+    parser.add_argument(
+        "--skip",
+        type=str,
+        default="",
+        help="Lista separada por vírgula de coletores a pular (pubmed,biorxiv,arxiv,chemrxiv,scielo,nature,newsletters,googlenews,companies)",
+    )
+    parser.add_argument(
+        "--destino",
+        choices=("json", "postgres"),
+        default=os.environ.get("RADAR_DESTINO") or "json",
+        help="json: pipeline/data/ (o Actions, até a virada); postgres: o esquema radar via DATABASE_URL_RADAR (a VM)",
+    )
+    parser.add_argument(
+        "--origem",
+        choices=("manual", "agendada"),
+        default="manual",
+        help="Só no destino postgres: o que vai em radar.execucao.origem",
+    )
+    args = parser.parse_args(argv)
+    skip = {s.strip() for s in args.skip.split(",") if s.strip()}
+
+    if args.destino == "postgres":
+        from armazenamento_pg import Colheita, evento, executar  # noqa: PLC0415 - psycopg só no modo postgres
+
+        url = (os.environ.get("DATABASE_URL_RADAR") or "").strip()
+        if not url:
+            evento("radar.execucao.falhou", motivo="DATABASE_URL_RADAR ausente no ambiente")
+            return 1
+        return executar(
+            url,
+            lambda: Colheita(*coletar(skip, args.biorxiv_days)),
+            origem=args.origem,
+            versao=(os.environ.get("RADAR_VERSAO") or "").strip() or None,
+        )
+
+    run_started = datetime.now(timezone.utc)
+    common.log(f"===== Alchemia Radar pipeline: iniciando execução ({run_started.isoformat()}) =====")
+    collector_results, colheitas = coletar(skip, args.biorxiv_days)
+    return _gravar_json(run_started, collector_results, colheitas)
 
 
 if __name__ == "__main__":

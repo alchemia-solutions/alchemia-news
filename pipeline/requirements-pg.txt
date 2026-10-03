@@ -1,0 +1,5 @@
+# O modo postgres do Radar (a VM; spec docs/specs/2026-10-02-radar-na-vm-postgres.md, D8). Separado de
+# requirements.txt de proposito: o GitHub Actions instala so aquele e segue intocado ate o desligamento.
+# psycopg 3 e LGPL-3.0, usado como biblioteca e nao redistribuido; o extra [binary] traz a libpq (ha wheel aarch64).
+-r requirements.txt
+psycopg[binary]>=3.2,<4

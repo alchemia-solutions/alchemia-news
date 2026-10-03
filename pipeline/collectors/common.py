@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -41,12 +42,20 @@ LOGS_DIR = PIPELINE_DIR / "logs"
 
 USER_AGENT = "AlchemiaNewsBot/1.0 (+https://alchemia.solutions; contato: company@alchemia.solutions)"
 
-for _d in (DATA_DIR, STATE_DIR, RUNS_DIR, LOGS_DIR):
-    _d.mkdir(parents=True, exist_ok=True)
+# 2026-10-02 (spec 2026-10-02-radar-na-vm-postgres): as pastas de `pipeline/data/` deixaram de ser criadas na
+# importação. Na VM o contêiner roda com o sistema de arquivos só-leitura e grava no Postgres; o `mkdir` aqui
+# derrubava o import antes de qualquer coleta. Quem grava arquivo cria a pasta na hora (`save_json`).
+
+# Com RADAR_LOG_JSON=1 (o contêiner da VM), cada linha de log vira um objeto JSON, no mesmo stdout dos eventos
+# de `armazenamento_pg.evento`: um só formato para o `docker compose logs radar`.
+_LOG_JSON = os.environ.get("RADAR_LOG_JSON") == "1"
 
 
 def log(msg: str) -> None:
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    if _LOG_JSON:
+        print(json.dumps({"evento": "radar.log", "ts": ts, "msg": msg}, ensure_ascii=False), flush=True)
+        return
     line = f"[{ts}] {msg}"
     print(line, flush=True)
 

@@ -1852,3 +1852,33 @@ sempre com `ls .claude/agents/` ou rode `harness/check_runtime_integrity.py`.
 
 **Correção/adição futura (regra alterada em 2026-09-18):** `AGENTS.md` passou a ser um **índice** com teto de 150 linhas / 12 KB — fato novo **não** entra nele. Registro datado vai para `docs/HISTORY.md` (append-only); estado vivo, para o `README.md` deste diretório e para o hub no `alchemia-brain`. O índice só muda quando um **ponteiro** muda. Nunca neste `CLAUDE.md`. Contrato: `alchemia-ai/ai-engineering/docs/specs/2026-09-18-agents-md-index-contract.md`.
 ````
+
+---
+
+## Addendum — 2026-10-02: o escritor no Postgres, a carga do acervo e a imagem da VM (frente D da v7), sem ligar nada
+
+Spec: `docs/specs/2026-10-02-radar-na-vm-postgres.md` (aprovada, decisions-log (ee)); o detalhe, com cada critério e a
+evidência, está no addendum da mesma data na spec. Aqui fica o registro do que mudou neste diretório.
+
+**Novo:** `pipeline/armazenamento_pg.py` (o escritor, `psycopg` 3, papel `alchemia_radar`), `pipeline/agendador.py`,
+`pipeline/migrar_para_postgres.py`, `pipeline/exportar_supabase.py` (para o fundador rodar; nenhum agente rodou),
+`pipeline/requirements-pg.txt`, `Dockerfile`, `.dockerignore`, `deploy/README.md` (o roteiro R0 a R6 para o Gabriel),
+`docs/qc/segredos-permitidos.txt`, e os testes `pipeline/tests/test_armazenamento_pg.py`, `test_migrar_para_postgres.py`,
+`test_agendador.py`, `test_exportar_supabase.py` e `pg_descartavel.py` (esquema e concessões sempre do System).
+
+**Mudado:** `pipeline/run_all.py` ganhou `--destino json|postgres` (padrão `RADAR_DESTINO`, senão `json`: o Actions
+roda igual) e `--origem`; a coleta virou a função `coletar()`, separada da gravação. `pipeline/collectors/common.py`
+deixou de criar `pipeline/data/` e mais três pastas na importação (o contêiner é só-leitura) e ganhou `RADAR_LOG_JSON`.
+`AGENTS.md` ganhou o ponteiro para o `deploy/README.md`.
+
+**Não mudou:** o GitHub Actions continua escritor único de `pipeline/data/`; `coleta.yml`, `research-export.yml`,
+`sync_supabase.py`, `supabase/` e o Supabase seguem como estavam. Nada rodou na VM. Desligar é do fundador (R6).
+
+**Medido:** 56 testes passam contra um Postgres 18.3 descartável montado com a migração `0024_radar` e o `papeis.sql`
+reais do System; sem o banco, 36 passam e 20 são pulados. A carga do `origin/main` (`ca5cff0`) com o histórico do git dá
+8.879 itens (5.386 dos JSON de hoje e 3.493 recuperados do histórico), e a segunda carga, 0 inserções e 0 atualizações.
+
+**Correção de contagem:** as "3.464 chaves perdidas em 2026-09-07" da spec são a união das ausências por arquivo. Em
+itens, `6800a38` tem 3.310 que não existem em nenhum JSON de hoje; 154 só perderam a empresa (seguem em `news.json`).
+O histórico trouxe ainda 183 itens de `9bdfbd8`, a coleta local do mesmo dia, o outro lado do merge `d5eb59a` que não
+parseia: a mesma perda, que nenhuma contagem anterior via.

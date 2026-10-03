@@ -1,0 +1,3 @@
+# Excecoes da varredura de segredos deste repositorio (skill security-baseline), uma por linha, com o motivo.
+#   python alchemia-ai/ai-engineering/.claude/skills/security-baseline/scripts/security_baseline.py segredos alchemia-ai/softwares/internos/alchemia-radar --permitir alchemia-ai/softwares/internos/alchemia-radar/docs/qc/segredos-permitidos.txt
+docs/specs/2026-10-02-radar-na-vm-postgres.md:url-com-senha  # a linha cita a interpolacao do Compose (PG_SENHA_RADAR entre chaves), nao uma senha; a spec e append-only e nao se reescreve

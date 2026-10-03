@@ -56,6 +56,7 @@ repositório no `alchemia-gitstore` e a URL do `origin` local.
 | Cadência real | `.github/workflows/coleta.yml` e `.github/workflows/research-export.yml` | live |
 | O que o System lê (o contrato) | `alchemia-ai/softwares/internos/alchemia-system/packages/core/src/connectors/radar.ts` e `radar-remoto.ts` · `alchemia-system/docs/architecture/fontes-de-dado.md` | live |
 | Estado operacional no vault | `alchemia-brain/03-Softwares/internos/radar/alchemia-radar-state.md` | live |
+| A coleta na VM gravando no Postgres do System (pronta, **não ligada**; spec `docs/specs/2026-10-02-radar-na-vm-postgres.md`) | [`deploy/README.md`](deploy/README.md) + `Dockerfile` + `pipeline/armazenamento_pg.py` | live |
 
 ⚠️ **Escritor único.** Desde 2026-09-07 o **GitHub Actions** é o único escritor de `pipeline/data/`.
 As duas Tarefas Agendadas do Windows, que mantêm o nome antigo ("Alchemia News - Coleta" e "- Pos-Coleta"),

@@ -1,0 +1,14 @@
+# O contexto de build da imagem `radar` (Dockerfile): só o pipeline, sem dado, sem segredo, sem o painel congelado.
+*
+!Dockerfile
+!pipeline/
+pipeline/data/
+pipeline/logs/
+pipeline/.venv
+pipeline/**/__pycache__/
+pipeline/collectors/data/
+pipeline/collectors/logs/
+pipeline/tests/
+pipeline/**/desktop.ini
+**/.env
+**/.env.*
