@@ -7,7 +7,24 @@
       "Bash(git reset --hard *)",
       "Bash(git clean -f *)",
       "Bash(git branch -D *)",
-      "Bash(rm -rf *)"
+      "Bash(rm -rf *)",
+      "Bash(rclone config)",
+      "Bash(rclone config *)",
+      "Bash(rclone authorize *)",
+      "Bash(gcloud auth login*)",
+      "Bash(gcloud auth application-default login*)",
+      "Read(**/producao.env)",
+      "Read(**/pg_super.txt)",
+      "Read(**/*.key)",
+      "Read(**/.ssh/**)",
+      "Read(~/.ssh/**)",
+      "Read(**/rclone.conf)",
+      "Read(~/.config/rclone/**)",
+      "CronCreate",
+      "CronDelete",
+      "mcp__scheduled-tasks__create_scheduled_task",
+      "mcp__scheduled-tasks__update_scheduled_task",
+      "mcp__scheduled-tasks__delete_scheduled_task"
     ]
   },
   "_comment": "Mirror de alchemia-ai/ai-engineering/.claude/settings.json -- .claude/settings.json nao herda de diretorios ancestrais, por isso cada projeto Cowork de setor recebe sua propria copia. Ver alchemia-ai/ai-engineering/docs/specs/2026-07-23-dotclaude-conversion.md."
