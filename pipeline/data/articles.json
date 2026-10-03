@@ -61300,5 +61300,93 @@
       "journal": "Bone reports"
     },
     "dedupe_key": "doi:10.1016/j.bonr.2026.101951"
+  },
+  {
+    "kind": "article",
+    "title": "Linsitinib: a tyrosine kinase inhibitor with dual host-parasite targeting potential against leishmaniasis.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42825988/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-03T00:42:36.345511+00:00",
+    "authors": [
+      "Lalit Nharwal",
+      "Mirza Adil Beg",
+      "Rahul Singh",
+      "Vivek Dhar Dwivedi",
+      "Farhan Jalees Ahmad",
+      "Angamuthu Selvapandiyan",
+      "Garima Chouhan"
+    ],
+    "summary": "Leishmaniasis is a vector-borne parasitic disease caused by Leishmania spp., that contributes substantially to global morbidity. Considering the toxicity, drug resistance and limited efficacy of current therapies, drug repositioning represents an efficient approach for identifying novel antileishmanial agents from existing pool of drugs. In this context, we evaluated antileishmanial potential of Linsitinib, a known tyrosine kinase inhibitor and an anticancer molecule in advance stages of development. Linsitinib demonstrated potent anti-proliferative activity with IC50 values of 1.308 ± 0.1267µM against L. donovani and 3.865 ± 0.9688µM against L. mexicana promastigotes with marginal toxicity against human THP-1 macrophages at same doses. Linsitinib exhibited pronounced anti-amastigote activity with IC50 values of 0.8788µM and 1.014µM, against L. donovani and L. mexicana respectively. Selectivity index (SI) values of 51.77 (L. donovani) and 44.87 (L. mexicana) further corroborated the selective activity of Linsitinib, against Leishmania amastigotes over host cells. To ascertain the mechanistic details of in vitro inhibition, in silico studies were performed against, N-myristoyltransferase (NMT) enzyme, as a key parasite target and human PI3K to establish host-directed immunomodulatory activity. In silico molecular docking and molecular dynamics simulations demonstrated stable binding of Linsitinib with both targets, supported by hydrogen bonding, hydrophobic interactions and favorable stability parameters (RMSD, RMSF, radius of gyration and solvent-accessible surface area). Overall, Linsitinib demonstrates marked inhibition of Leishmania parasites, and this activity is supported through NMT-mediated disruption of parasite viability and PI3K/Akt-driven host immune modulation, supporting its candidacy as a dual-targeting broad-spectrum therapeutic alternative for leishmaniasis.",
+    "doi": "10.1007/s12223-026-01597-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics",
+      "in silico"
+    ],
+    "extra": {
+      "pmid": "42825988",
+      "journal": "Folia microbiologica"
+    },
+    "dedupe_key": "doi:10.1007/s12223-026-01597-w"
+  },
+  {
+    "kind": "article",
+    "title": "Bisphenol A Exposure Perturbs the Immune Microenvironment in Alzheimer's Disease: Insights from Network Toxicology and Single-Cell Transcriptomics.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42825974/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-03T00:42:36.346269+00:00",
+    "authors": [
+      "Jinpu Wu",
+      "Yitong Wang",
+      "Ming Zhao",
+      "Jian Liu",
+      "Weimin Zhao"
+    ],
+    "summary": "Alzheimer's disease (AD) is a multifactorial neurodegenerative disorder in which exposure to environmental endocrine-disrupting chemicals may contribute to disease susceptibility. Here, we integrated network toxicology, bulk transcriptomics, machine learning, immune deconvolution, single-nucleus transcriptomics, competing endogenous RNA (ceRNA) analysis, molecular docking, and 100-ns molecular dynamics (MD) simulations to investigate the potential molecular links between bisphenol A (BPA) exposure and AD. Cross-database integration identified 248 shared BPA-AD targets, from which 47 network-central genes and 19 differentially expressed genes were prioritized. Five genes-GSK3B, BCL2, EGFR, APP, and PPARD-were subsequently retained as a candidate gene signature. Although the resulting model showed strong discriminatory performance in the discovery cohort, substantially lower performance in validation cohorts indicated limited generalizability and potential overfitting. Functional analyses implicated neuroinflammatory signaling, mitochondrial apoptosis, amyloid-related processes, and lipid and metabolic dysregulation in the molecular association between BPA and AD. LM22-based CIBERSORT analysis revealed alterations in peripheral leukocyte-like immune signatures, which were interpreted cautiously because this reference matrix does not directly represent resident brain immune populations. Single-nucleus transcriptomic analysis of GSE163577 further localized key genes across biologically plausible cerebrovascular and neuroimmune cell populations. CeRNA analysis suggested potential post-transcriptional regulatory relationships associated with the identified hub genes, while molecular docking identified putative interactions between BPA and candidate target proteins. Subsequent 100-ns MD simulations further characterized the dynamic behavior and conformational stability of the selected BPA-protein complexes, providing complementary evidence for the docking-derived structural hypotheses. Collectively, these findings suggest that BPA-related molecular targets may converge on immune, vascular, metabolic, and neurodegenerative processes relevant to AD. However, the present findings remain primarily computational and hypothesis-generating, and experimental studies are required to establish causal and mechanistic relationships.",
+    "doi": "10.1007/s12031-026-02606-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "molecular dynamics"
+    ],
+    "extra": {
+      "pmid": "42825974",
+      "journal": "Journal of molecular neuroscience : MN"
+    },
+    "dedupe_key": "doi:10.1007/s12031-026-02606-w"
+  },
+  {
+    "kind": "article",
+    "title": "Mechanistic insights into gallic acid-induced autophagy in triple negative breast cancer through network pharmacology, molecular docking, and in vitro validation.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42825943/",
+    "source": "PubMed",
+    "source_type": "journal",
+    "published_date": null,
+    "collected_at": "2026-10-03T00:42:36.346943+00:00",
+    "authors": [
+      "Essha Chatterjee",
+      "Biswajit Dey",
+      "Ankush Bansode",
+      "Santanu Basak",
+      "Anamika Sharma",
+      "Santosh Kumar Guru"
+    ],
+    "summary": "Gallic acid (GA), a natural polyphenol, has been enormously recognized for its anticancer properties across multiple cancer types, including triple-negative breast cancer (TNBC), yet its precise molecular mechanisms underlying its effects on TNBC, particularly those related to autophagy, remain unclear. This investigation sought to elucidate the autophagy-related targets and pathways modulated by GA in TNBC by integrating network pharmacology, bioinformatics, molecular docking, and in vitro validation. Network pharmacology identified 23 overlapping targets between GA, TNBC, and autophagy-related gene sets, including key genes such as CASP3, TP53, AKT1, PIK3CA, and HIF-1 A. Protein-Protein Interaction network analysis revealed ten hub genes as central nodes in GA's action mechanism. Gene Ontology enrichment highlighted biological processes such as DNA damage response, protein phosphorylation, and regulation of apoptosis and autophagy. KEGG pathway analysis further indicated enrichment in pathways related to EGFR inhibitor resistance, insulin signaling, autophagy, and apoptosis, among others. Molecular docking demonstrated strong binding affinities between GA and the identified autophagy modulatory genes. In vitro experiments showed that GA inhibited the proliferation and migration of BT-549 and HCC1395 TNBC cells while inducing autophagy. Induction of autophagy by GA in the BT-549 and HCC1395 cell lines was proved by acridine orange, MAP1LC3B fluorescence, and western blotting of key autophagy regulators. Taken together, this integrated approach, combining network pharmacology and experimental validation, identified key targets and signaling pathways through which GA regulates autophagy in TNBC. These findings enhance our understanding of GA's anticancer mechanisms and support its plausible development as a therapeutic entity for TNBC.",
+    "doi": "10.1007/s10142-026-02058-w",
+    "company_slug": null,
+    "keywords_matched": [
+      "molecular docking",
+      "network pharmacology"
+    ],
+    "extra": {
+      "pmid": "42825943",
+      "journal": "Functional & integrative genomics"
+    },
+    "dedupe_key": "doi:10.1007/s10142-026-02058-w"
   }
 ]
